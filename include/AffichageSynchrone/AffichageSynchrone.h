@@ -5,7 +5,6 @@
 #include "../raymedia/raymedia.h"
 #include <string>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -64,6 +63,8 @@ class AffichageSynchrone {
     void afficherVideo() const;
 
     void afficherListeFichiers();
+
+    void updateLayout();
 
 public:
     explicit AffichageSynchrone();

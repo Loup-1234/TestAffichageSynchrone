@@ -12,23 +12,13 @@
 namespace fs = filesystem;
 
 AffichageSynchrone::AffichageSynchrone() {
-    SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
+    SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_RESIZABLE);
     InitWindow(784, 432, "Test affichage synchrone");
     InitAudioDevice();
     chargerListeVideos();
     SetTargetFPS(60);
 
-    // Initialisation de la mise en page
-    rectangles[0] = (Rectangle){0, 0, 144, 384}; // Vue en liste
-    rectangles[1] = (Rectangle){0, 384, 144, 48}; // Bouton Générer
-    rectangles[2] = (Rectangle){144, 0, 640, 360}; // Zone vidéo
-    rectangles[3] = (Rectangle){144, 360, 640, 2}; // Ligne de délimitation (sous la vidéo)
-    rectangles[4] = (Rectangle){152, 392, 32, 32}; // Bouton Lecture/Pause
-    rectangles[5] = (Rectangle){192, 360, 408, 32}; // Étiquette d'horodatage
-    rectangles[6] = (Rectangle){192, 392, 408, 32}; // Curseur de progression
-    rectangles[7] = (Rectangle){608, 392, 32, 32}; // Bouton Muet
-    rectangles[8] = (Rectangle){648, 360, 128, 32}; // Étiquette de volume
-    rectangles[9] = (Rectangle){648, 392, 128, 32}; // Curseur de volume
+    updateLayout();
 }
 
 AffichageSynchrone::~AffichageSynchrone() {
@@ -37,6 +27,23 @@ AffichageSynchrone::~AffichageSynchrone() {
     }
     CloseAudioDevice();
     CloseWindow();
+}
+
+void AffichageSynchrone::updateLayout() {
+    const auto screenWidth = static_cast<float>(GetScreenWidth());
+    const auto screenHeight = static_cast<float>(GetScreenHeight());
+
+    // Initialisation de la mise en page
+    rectangles[0] = (Rectangle){0, 0, 144, screenHeight - 48}; // Vue en liste
+    rectangles[1] = (Rectangle){0, screenHeight - 48, 144, 48}; // Bouton Générer
+    rectangles[2] = (Rectangle){144, 0, screenWidth - 144, screenHeight - 72}; // Zone vidéo
+    rectangles[3] = (Rectangle){144, screenHeight - 72, screenWidth - 144, 2}; // Ligne de délimitation (sous la vidéo)
+    rectangles[4] = (Rectangle){152, screenHeight - 40, 32, 32}; // Bouton Lecture/Pause
+    rectangles[5] = (Rectangle){192, screenHeight - 72, screenWidth - 376, 32}; // Étiquette d'horodatage
+    rectangles[6] = (Rectangle){192, screenHeight - 40, screenWidth - 376, 32}; // Curseur de progression
+    rectangles[7] = (Rectangle){screenWidth - 176, screenHeight - 40, 32, 32}; // Bouton Muet
+    rectangles[8] = (Rectangle){screenWidth - 136, screenHeight - 72, 128, 32}; // Étiquette de volume
+    rectangles[9] = (Rectangle){screenWidth - 136, screenHeight - 40, 128, 32}; // Curseur de volume
 }
 
 void AffichageSynchrone::chargerListeVideos() {
@@ -214,9 +221,9 @@ void AffichageSynchrone::afficherListeFichiers() {
 
             int order = 0;
             if (videoSelected[i]) {
-                 auto it = std::find(selectionOrder.begin(), selectionOrder.end(), i);
+                 auto it = find(selectionOrder.begin(), selectionOrder.end(), i);
                  if (it != selectionOrder.end()) {
-                     order = std::distance(selectionOrder.begin(), it) + 1;
+                     order = distance(selectionOrder.begin(), it) + 1;
                  }
             }
 
@@ -234,7 +241,7 @@ void AffichageSynchrone::afficherListeFichiers() {
                 if (checked) {
                     selectionOrder.push_back(i);
                 } else {
-                    auto it = std::find(selectionOrder.begin(), selectionOrder.end(), i);
+                    auto it = find(selectionOrder.begin(), selectionOrder.end(), i);
                     if (it != selectionOrder.end()) {
                         selectionOrder.erase(it);
                     }
@@ -250,6 +257,10 @@ void AffichageSynchrone::executer() {
     float delaiRecherche = 0.0f;
 
     while (!WindowShouldClose()) {
+        if (IsWindowResized()) {
+            updateLayout();
+        }
+
         if (IsMediaValid(video)) {
             UpdateMedia(&video);
         }
