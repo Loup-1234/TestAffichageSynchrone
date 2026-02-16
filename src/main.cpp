@@ -1,7 +1,7 @@
 #include "../include/AffichageSynchrone/AffichageSynchrone.h"
 
 int main() {
-    AffichageSynchrone app("sortie_synchro.mp4");
+    AffichageSynchrone app;
 
     app.executer();
 

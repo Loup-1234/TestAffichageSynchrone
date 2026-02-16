@@ -7,7 +7,7 @@
 
 class AffichageSynchrone {
     MediaStream video{};
-    std::string cheminVideoComplexe;
+    std::string cheminVideoComplexe = "sortie_synchro.mp4";
 
     float duree{};
     int tailleTampon = 500;
@@ -56,7 +56,7 @@ class AffichageSynchrone {
     void afficherVideo() const;
 
 public:
-    explicit AffichageSynchrone(const char *cheminFichier);
+    explicit AffichageSynchrone();
 
     ~AffichageSynchrone();
 

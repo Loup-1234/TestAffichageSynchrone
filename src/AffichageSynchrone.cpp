@@ -1,4 +1,5 @@
 #include "../include/AffichageSynchrone/AffichageSynchrone.h"
+#include "../include/SynchroniseurMultiVideo/SynchroniseurMultiVideo.h"
 
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
@@ -9,11 +10,10 @@
 
 namespace fs = std::filesystem;
 
-AffichageSynchrone::AffichageSynchrone(const char *cheminFichier) : cheminVideoComplexe(cheminFichier) {
+AffichageSynchrone::AffichageSynchrone() {
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
-    InitWindow(784, 432, "Lecteur Video");
+    InitWindow(784, 432, "Test affichage synchrone");
     InitAudioDevice();
-    chargerVideo();
     chargerListeVideos();
     SetTargetFPS(60);
 
@@ -88,7 +88,26 @@ void AffichageSynchrone::chargerVideo() {
 }
 
 void AffichageSynchrone::generer() {
-    // TODO: Implémenter la logique de génération
+    std::vector<std::string> videos;
+    std::string path = "videos";
+
+    if (fs::exists(path) && fs::is_directory(path)) {
+        for (const auto &entry : fs::directory_iterator(path)) {
+            if (entry.is_regular_file()) {
+                std::string ext = entry.path().extension().string();
+                if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov") {
+                    videos.push_back(entry.path().string());
+                }
+            }
+        }
+    }
+
+    if (videos.size() >= 2) {
+        SynchroniseurMultiVideo synchroniseur;
+        if (synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe)) {
+            chargerVideo();
+        }
+    }
 }
 
 void AffichageSynchrone::playPause() const {
@@ -113,14 +132,17 @@ void AffichageSynchrone::son() {
 }
 
 void AffichageSynchrone::sliderProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche) {
-    const bool estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
+    bool estEnLecture = false;
+    if (IsMediaValid(video)) {
+        estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
+    }
 
     if (CheckCollisionPointRec(GetMousePosition(), rectangles[6])) {
         if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
             enGlissement = true;
             etaitEnLecture = estEnLecture;
-            SetMediaState(video, MEDIA_STATE_PAUSED);
             if (IsMediaValid(video)) {
+                SetMediaState(video, MEDIA_STATE_PAUSED);
                 SetAudioStreamVolume(video.audioStream, 0.0f);
             }
         }
@@ -131,21 +153,23 @@ void AffichageSynchrone::sliderProgression(bool &enGlissement, bool &etaitEnLect
 
     if (enGlissement) {
         if (valeurSliderProgression != ancienneValeur) {
-            SetMediaPosition(video, valeurSliderProgression);
-            SetMediaState(video, MEDIA_STATE_PLAYING);
-            UpdateMedia(&video);
-            SetMediaState(video, MEDIA_STATE_PAUSED);
+            if (IsMediaValid(video)) {
+                SetMediaPosition(video, valeurSliderProgression);
+                SetMediaState(video, MEDIA_STATE_PLAYING);
+                UpdateMedia(&video);
+                SetMediaState(video, MEDIA_STATE_PAUSED);
+            }
         }
 
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON) || !IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
             enGlissement = false;
-            if (etaitEnLecture) {
-                SetMediaState(video, MEDIA_STATE_PLAYING);
-            }
-            delaiRecherche = 0.2f;
             if (IsMediaValid(video)) {
+                if (etaitEnLecture) {
+                    SetMediaState(video, MEDIA_STATE_PLAYING);
+                }
                 SetAudioStreamVolume(video.audioStream, valeurSliderSon / 100.0f);
             }
+            delaiRecherche = 0.2f;
         }
     }
 }
@@ -207,39 +231,34 @@ void AffichageSynchrone::executer() {
         BeginDrawing();
         ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
 
-        try {
-            if (!IsMediaValid(video)) {
-                throw std::runtime_error(MSG_ERREUR);
-            }
+        if (IsMediaValid(video)) afficherVideo();
 
-            afficherVideo();
+        DrawRectangleRec(rectangles[3], GRAY);
 
-            DrawRectangleRec(rectangles[3], GRAY);
+        GuiListView(rectangles[0], listeVideos.c_str(), &indexListeVides, &etatListeVideos);
 
-            GuiListView(rectangles[0], listeVideos.c_str(), &indexListeVides, &etatListeVideos);
+        if (GuiButton(rectangles[1], BOUTTON_GENERER)) generer();
 
-            if (GuiButton(rectangles[1], BOUTTON_GENERER)) generer();
-
-            bool estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
-
-            if (GuiButton(rectangles[4], estEnLecture ? "#133#" : "#131#")) playPause();
-
-            const int minutes = (int)valeurSliderProgression / 60;
-            const int seconds = (int)valeurSliderProgression % 60;
-            const int dureeMinutes = (int)duree / 60;
-            const int dureeSeconds = (int)duree % 60;
-            GuiLabel(rectangles[5], TextFormat("%02d:%02d / %02d:%02d", minutes, seconds, dureeMinutes, dureeSeconds));
-
-            sliderProgression(enGlissement, etaitEnLecture, delaiRecherche);
-
-            if (GuiButton(rectangles[7], estMuet ? "#128#" : "#122#")) son();
-
-            GuiLabel(rectangles[8], TextFormat("%d%%", (int)valeurSliderSon));
-
-            sliderVolume();
-        } catch (const std::exception &e) {
-            DrawText(e.what(), 10, 10, 20, RED);
+        bool estEnLecture = false;
+        if (IsMediaValid(video)) {
+            estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
         }
+
+        if (GuiButton(rectangles[4], estEnLecture ? "#133#" : "#131#")) playPause();
+
+        const int minutes = (int)valeurSliderProgression / 60;
+        const int seconds = (int)valeurSliderProgression % 60;
+        const int dureeMinutes = (int)duree / 60;
+        const int dureeSeconds = (int)duree % 60;
+        GuiLabel(rectangles[5], TextFormat("%02d:%02d / %02d:%02d", minutes, seconds, dureeMinutes, dureeSeconds));
+
+        sliderProgression(enGlissement, etaitEnLecture, delaiRecherche);
+
+        if (GuiButton(rectangles[7], estMuet ? "#128#" : "#122#")) son();
+
+        GuiLabel(rectangles[8], TextFormat("%d%%", (int)valeurSliderSon));
+
+        sliderVolume();
 
         EndDrawing();
     }

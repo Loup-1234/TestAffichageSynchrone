@@ -9,11 +9,13 @@ set(SOURCE_FILES
         src/main.cpp
         src/AffichageSynchrone.cpp
         include/raymedia/raymedia.c
+        include/SynchroniseurMultiVideo/SynchroniseurMultiVideo.cpp
 )
 
 set(HEADER_FILES
         include/AffichageSynchrone/AffichageSynchrone.h
         include/raymedia/raymedia.h
+        include/SynchroniseurMultiVideo/SynchroniseurMultiVideo.h
 )
 
 add_executable(TestAffichageSynchrone ${SOURCE_FILES} ${HEADER_FILES})
