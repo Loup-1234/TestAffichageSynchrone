@@ -7,6 +7,7 @@
 #include <filesystem>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 namespace fs = filesystem;
 
@@ -41,9 +42,9 @@ AffichageSynchrone::~AffichageSynchrone() {
 void AffichageSynchrone::chargerListeVideos() {
     videoFiles.clear();
     videoSelected.clear();
-    string path = "videos";
+    selectionOrder.clear();
 
-    if (fs::exists(path) && fs::is_directory(path)) {
+    if (string path = "videos"; fs::exists(path) && fs::is_directory(path)) {
         for (const auto &entry : fs::directory_iterator(path)) {
             if (entry.is_regular_file()) {
                 string ext = entry.path().extension().string();
@@ -72,6 +73,8 @@ void AffichageSynchrone::chargerVideo() {
             throw runtime_error("Echec du chargement de la vidéo");
         }
 
+        SetMediaState(video, MEDIA_STATE_PAUSED);
+
         const MediaProperties props = GetMediaProperties(video);
         duree = static_cast<float>(props.durationSec);
 
@@ -85,9 +88,9 @@ void AffichageSynchrone::generer() {
     vector<string> videos;
     string path = "videos";
 
-    for (size_t i = 0; i < videoFiles.size(); ++i) {
-        if (videoSelected[i]) {
-            videos.push_back(path + "/" + videoFiles[i]);
+    for (int index : selectionOrder) {
+        if (index >= 0 && index < videoFiles.size()) {
+            videos.push_back(path + "/" + videoFiles[index]);
         }
     }
 
@@ -202,6 +205,45 @@ void AffichageSynchrone::afficherVideo() const {
     }
 }
 
+void AffichageSynchrone::afficherListeFichiers() {
+    Rectangle view = {0};
+    GuiScrollPanel(rectangles[0], nullptr, (Rectangle){0, 0, rectangles[0].width - 16, static_cast<float>(videoFiles.size()) * 30}, &scrollPosition, &view);
+    BeginScissorMode(view.x, view.y, view.width, view.height);
+        for (size_t i = 0; i < videoFiles.size(); ++i) {
+            Rectangle itemRect = {rectangles[0].x + 10 + scrollPosition.x, rectangles[0].y + 10 + i * 30 + scrollPosition.y, 20, 20};
+
+            int order = 0;
+            if (videoSelected[i]) {
+                 auto it = std::find(selectionOrder.begin(), selectionOrder.end(), i);
+                 if (it != selectionOrder.end()) {
+                     order = std::distance(selectionOrder.begin(), it) + 1;
+                 }
+            }
+
+            string label = videoFiles[i];
+            if (order > 0) {
+                label += " (" + to_string(order) + ")";
+            }
+
+            bool checked = videoSelected[i];
+            bool prevChecked = checked;
+            GuiCheckBox(itemRect, label.c_str(), &checked);
+
+            if (checked != prevChecked) {
+                videoSelected[i] = checked;
+                if (checked) {
+                    selectionOrder.push_back(i);
+                } else {
+                    auto it = std::find(selectionOrder.begin(), selectionOrder.end(), i);
+                    if (it != selectionOrder.end()) {
+                        selectionOrder.erase(it);
+                    }
+                }
+            }
+        }
+    EndScissorMode();
+}
+
 void AffichageSynchrone::executer() {
     bool enGlissement = false;
     bool etaitEnLecture = false;
@@ -225,17 +267,7 @@ void AffichageSynchrone::executer() {
 
         DrawRectangleRec(rectangles[3], GRAY);
 
-        // Remplacement de GuiListView par GuiScrollPanel avec des CheckBox
-        Rectangle view = {0};
-        GuiScrollPanel(rectangles[0], nullptr, (Rectangle){0, 0, rectangles[0].width - 16, static_cast<float>(videoFiles.size()) * 30}, &scrollPosition, &view);
-        BeginScissorMode(view.x, view.y, view.width, view.height);
-            for (size_t i = 0; i < videoFiles.size(); ++i) {
-                Rectangle itemRect = {rectangles[0].x + 10 + scrollPosition.x, rectangles[0].y + 10 + i * 30 + scrollPosition.y, 20, 20};
-                bool checked = videoSelected[i];
-                GuiCheckBox(itemRect, videoFiles[i].c_str(), &checked);
-                videoSelected[i] = checked;
-            }
-        EndScissorMode();
+        afficherListeFichiers();
 
         if (GuiButton(rectangles[1], BOUTTON_GENERER)) generer();
 

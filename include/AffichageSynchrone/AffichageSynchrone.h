@@ -5,6 +5,7 @@
 #include "../raymedia/raymedia.h"
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -27,6 +28,7 @@ class AffichageSynchrone {
     string listeVideos;
     vector<string> videoFiles;
     vector<bool> videoSelected;
+    vector<int> selectionOrder;
     Vector2 scrollPosition = {0, 0};
 
     const char *BOUTTON_GENERER = "Générer";
@@ -60,6 +62,8 @@ class AffichageSynchrone {
     void sliderVolume();
 
     void afficherVideo() const;
+
+    void afficherListeFichiers();
 
 public:
     explicit AffichageSynchrone();
