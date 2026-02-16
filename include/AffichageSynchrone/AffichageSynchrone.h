@@ -4,10 +4,13 @@
 #include "raylib.h"
 #include "../raymedia/raymedia.h"
 #include <string>
+#include <vector>
+
+using namespace std;
 
 class AffichageSynchrone {
     MediaStream video{};
-    std::string cheminVideoComplexe = "sortie_synchro.mp4";
+    string cheminVideoComplexe = "sortie_synchro.mp4";
 
     float duree{};
     int tailleTampon = 500;
@@ -21,7 +24,10 @@ class AffichageSynchrone {
     float valeurSliderSonPrecedent{};
     bool estMuet = false;
 
-    std::string listeVideos;
+    string listeVideos;
+    vector<string> videoFiles;
+    vector<bool> videoSelected;
+    Vector2 scrollPosition = {0, 0};
 
     const char *BOUTTON_GENERER = "Générer";
 

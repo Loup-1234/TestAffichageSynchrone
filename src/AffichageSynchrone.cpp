@@ -8,7 +8,7 @@
 #include <vector>
 #include <string>
 
-namespace fs = std::filesystem;
+namespace fs = filesystem;
 
 AffichageSynchrone::AffichageSynchrone() {
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
@@ -39,26 +39,20 @@ AffichageSynchrone::~AffichageSynchrone() {
 }
 
 void AffichageSynchrone::chargerListeVideos() {
-    std::vector<std::string> videos;
-    std::string path = "videos";
+    videoFiles.clear();
+    videoSelected.clear();
+    string path = "videos";
 
     if (fs::exists(path) && fs::is_directory(path)) {
         for (const auto &entry : fs::directory_iterator(path)) {
             if (entry.is_regular_file()) {
-                std::string ext = entry.path().extension().string();
+                string ext = entry.path().extension().string();
                 // Vérification simple des extensions vidéo courantes
                 if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov") {
-                    videos.push_back(entry.path().filename().string());
+                    videoFiles.push_back(entry.path().filename().string());
+                    videoSelected.push_back(false);
                 }
             }
-        }
-    }
-
-    listeVideos = "";
-    for (size_t i = 0; i < videos.size(); ++i) {
-        listeVideos += videos[i];
-        if (i < videos.size() - 1) {
-            listeVideos += ";";
         }
     }
 }
@@ -75,35 +69,31 @@ void AffichageSynchrone::chargerVideo() {
 
     try {
         if (!IsMediaValid(video)) {
-            throw std::runtime_error("Echec du chargement de la vidéo");
+            throw runtime_error("Echec du chargement de la vidéo");
         }
 
         const MediaProperties props = GetMediaProperties(video);
         duree = static_cast<float>(props.durationSec);
 
         SetAudioStreamVolume(video.audioStream, valeurSliderSon / 100.0f);
-    } catch (const std::exception &e) {
+    } catch (const exception &e) {
         duree = 0.0f;
     }
 }
 
 void AffichageSynchrone::generer() {
-    std::vector<std::string> videos;
-    std::string path = "videos";
+    vector<string> videos;
+    string path = "videos";
 
-    if (fs::exists(path) && fs::is_directory(path)) {
-        for (const auto &entry : fs::directory_iterator(path)) {
-            if (entry.is_regular_file()) {
-                std::string ext = entry.path().extension().string();
-                if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov") {
-                    videos.push_back(entry.path().string());
-                }
-            }
+    for (size_t i = 0; i < videoFiles.size(); ++i) {
+        if (videoSelected[i]) {
+            videos.push_back(path + "/" + videoFiles[i]);
         }
     }
 
     if (videos.size() >= 2) {
         SynchroniseurMultiVideo synchroniseur;
+        synchroniseur.configurerAnalyse(60.0, 30.0, 100);
         if (synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe)) {
             chargerVideo();
         }
@@ -235,7 +225,17 @@ void AffichageSynchrone::executer() {
 
         DrawRectangleRec(rectangles[3], GRAY);
 
-        GuiListView(rectangles[0], listeVideos.c_str(), &indexListeVides, &etatListeVideos);
+        // Remplacement de GuiListView par GuiScrollPanel avec des CheckBox
+        Rectangle view = {0};
+        GuiScrollPanel(rectangles[0], nullptr, (Rectangle){0, 0, rectangles[0].width - 16, static_cast<float>(videoFiles.size()) * 30}, &scrollPosition, &view);
+        BeginScissorMode(view.x, view.y, view.width, view.height);
+            for (size_t i = 0; i < videoFiles.size(); ++i) {
+                Rectangle itemRect = {rectangles[0].x + 10 + scrollPosition.x, rectangles[0].y + 10 + i * 30 + scrollPosition.y, 20, 20};
+                bool checked = videoSelected[i];
+                GuiCheckBox(itemRect, videoFiles[i].c_str(), &checked);
+                videoSelected[i] = checked;
+            }
+        EndScissorMode();
 
         if (GuiButton(rectangles[1], BOUTTON_GENERER)) generer();
 
@@ -246,17 +246,17 @@ void AffichageSynchrone::executer() {
 
         if (GuiButton(rectangles[4], estEnLecture ? "#133#" : "#131#")) playPause();
 
-        const int minutes = (int)valeurSliderProgression / 60;
-        const int seconds = (int)valeurSliderProgression % 60;
-        const int dureeMinutes = (int)duree / 60;
-        const int dureeSeconds = (int)duree % 60;
+        const int minutes = static_cast<int>(valeurSliderProgression) / 60;
+        const int seconds = static_cast<int>(valeurSliderProgression) % 60;
+        const int dureeMinutes = static_cast<int>(duree) / 60;
+        const int dureeSeconds = static_cast<int>(duree) % 60;
         GuiLabel(rectangles[5], TextFormat("%02d:%02d / %02d:%02d", minutes, seconds, dureeMinutes, dureeSeconds));
 
         sliderProgression(enGlissement, etaitEnLecture, delaiRecherche);
 
         if (GuiButton(rectangles[7], estMuet ? "#128#" : "#122#")) son();
 
-        GuiLabel(rectangles[8], TextFormat("%d%%", (int)valeurSliderSon));
+        GuiLabel(rectangles[8], TextFormat("%d%%", static_cast<int>(valeurSliderSon)));
 
         sliderVolume();
 
