@@ -8,17 +8,19 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <thread>
 
 namespace fs = filesystem;
 
 AffichageSynchrone::AffichageSynchrone() {
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_RESIZABLE);
-    InitWindow(784, 432, "Test affichage synchrone");
+    InitWindow(800, 450, "Test affichage synchrone");
+    SetWindowMinSize(800, 450);
     InitAudioDevice();
     chargerListeVideos();
     SetTargetFPS(60);
 
-    updateLayout();
+    miseAJourDisposition();
 }
 
 AffichageSynchrone::~AffichageSynchrone() {
@@ -29,36 +31,36 @@ AffichageSynchrone::~AffichageSynchrone() {
     CloseWindow();
 }
 
-void AffichageSynchrone::updateLayout() {
-    const auto screenWidth = static_cast<float>(GetScreenWidth());
-    const auto screenHeight = static_cast<float>(GetScreenHeight());
+void AffichageSynchrone::miseAJourDisposition() {
+    const auto largeurEcran = static_cast<float>(GetScreenWidth());
+    const auto hauteurEcran = static_cast<float>(GetScreenHeight());
 
     // Initialisation de la mise en page
-    rectangles[0] = (Rectangle){0, 0, 144, screenHeight - 48}; // Vue en liste
-    rectangles[1] = (Rectangle){0, screenHeight - 48, 144, 48}; // Bouton Générer
-    rectangles[2] = (Rectangle){144, 0, screenWidth - 144, screenHeight - 72}; // Zone vidéo
-    rectangles[3] = (Rectangle){144, screenHeight - 72, screenWidth - 144, 2}; // Ligne de délimitation (sous la vidéo)
-    rectangles[4] = (Rectangle){152, screenHeight - 40, 32, 32}; // Bouton Lecture/Pause
-    rectangles[5] = (Rectangle){192, screenHeight - 72, screenWidth - 376, 32}; // Étiquette d'horodatage
-    rectangles[6] = (Rectangle){192, screenHeight - 40, screenWidth - 376, 32}; // Curseur de progression
-    rectangles[7] = (Rectangle){screenWidth - 176, screenHeight - 40, 32, 32}; // Bouton Muet
-    rectangles[8] = (Rectangle){screenWidth - 136, screenHeight - 72, 128, 32}; // Étiquette de volume
-    rectangles[9] = (Rectangle){screenWidth - 136, screenHeight - 40, 128, 32}; // Curseur de volume
+    rectangles[0] = (Rectangle){0, 0, 150, hauteurEcran - 48}; // Vue en liste
+    rectangles[1] = (Rectangle){0, hauteurEcran - 48, 150, 48}; // Bouton Générer
+    rectangles[2] = (Rectangle){150, 0, largeurEcran - 150, hauteurEcran - 72}; // Zone vidéo
+    rectangles[3] = (Rectangle){150, hauteurEcran - 72, largeurEcran - 150, 2}; // Ligne de délimitation (sous la vidéo)
+    rectangles[4] = (Rectangle){158, hauteurEcran - 40, 32, 32}; // Bouton Lecture/Pause
+    rectangles[5] = (Rectangle){198, hauteurEcran - 72, largeurEcran - 382, 32}; // Étiquette d'horodatage
+    rectangles[6] = (Rectangle){198, hauteurEcran - 40, largeurEcran - 382, 32}; // Curseur de progression
+    rectangles[7] = (Rectangle){largeurEcran - 176, hauteurEcran - 40, 32, 32}; // Bouton Muet
+    rectangles[8] = (Rectangle){largeurEcran - 136, hauteurEcran - 72, 128, 32}; // Étiquette de volume
+    rectangles[9] = (Rectangle){largeurEcran - 136, hauteurEcran - 40, 128, 32}; // Curseur de volume
 }
 
 void AffichageSynchrone::chargerListeVideos() {
-    videoFiles.clear();
-    videoSelected.clear();
-    selectionOrder.clear();
+    fichiersVideo.clear();
+    videosSelectionnees.clear();
+    ordreSelection.clear();
 
-    if (string path = "videos"; fs::exists(path) && fs::is_directory(path)) {
-        for (const auto &entry : fs::directory_iterator(path)) {
-            if (entry.is_regular_file()) {
-                string ext = entry.path().extension().string();
+    if (string chemin = "videos"; fs::exists(chemin) && fs::is_directory(chemin)) {
+        for (const auto &entree: fs::directory_iterator(chemin)) {
+            if (entree.is_regular_file()) {
+                string ext = entree.path().extension().string();
                 // Vérification simple des extensions vidéo courantes
                 if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov") {
-                    videoFiles.push_back(entry.path().filename().string());
-                    videoSelected.push_back(false);
+                    fichiersVideo.push_back(entree.path().filename().string());
+                    videosSelectionnees.push_back(false);
                 }
             }
         }
@@ -92,25 +94,39 @@ void AffichageSynchrone::chargerVideo() {
 }
 
 void AffichageSynchrone::generer() {
-    vector<string> videos;
-    string path = "videos";
+    if (generationEnCours) return;
 
-    for (int index : selectionOrder) {
-        if (index >= 0 && index < videoFiles.size()) {
-            videos.push_back(path + "/" + videoFiles[index]);
+    vector<string> videos;
+    string chemin = "videos";
+
+    for (int index: ordreSelection) {
+        if (index >= 0 && index < fichiersVideo.size()) {
+            videos.push_back(chemin + "/" + fichiersVideo[index]);
         }
     }
 
     if (videos.size() >= 2) {
-        SynchroniseurMultiVideo synchroniseur;
-        synchroniseur.configurerAnalyse(60.0, 30.0, 100);
-        if (synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe)) {
-            chargerVideo();
+        // Décharger la vidéo actuelle avant de commencer la génération
+        if (IsMediaValid(video)) {
+            UnloadMedia(&video);
+            // Réinitialiser les variables liées à la vidéo
+            duree = 0.0f;
+            valeurSliderProgression = 0.0f;
         }
+
+        generationEnCours = true;
+        thread([this, videos]() {
+            SynchroniseurMultiVideo synchroniseur;
+            synchroniseur.configurerAnalyse(60.0, 30.0, 100);
+            if (synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe)) {
+                videoGeneree = true;
+            }
+            generationEnCours = false;
+        }).detach();
     }
 }
 
-void AffichageSynchrone::playPause() const {
+void AffichageSynchrone::lecturePause() const {
     if (IsMediaValid(video)) {
         if (GetMediaState(video) == MEDIA_STATE_PLAYING) {
             SetMediaState(video, MEDIA_STATE_PAUSED);
@@ -131,7 +147,7 @@ void AffichageSynchrone::son() {
     setVolume(valeurSliderSon);
 }
 
-void AffichageSynchrone::sliderProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche) {
+void AffichageSynchrone::barreProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche) {
     bool estEnLecture = false;
     if (IsMediaValid(video)) {
         estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
@@ -149,7 +165,7 @@ void AffichageSynchrone::sliderProgression(bool &enGlissement, bool &etaitEnLect
     }
 
     float ancienneValeur = valeurSliderProgression;
-    GuiSliderBar(rectangles[6], SLIDER_PROGRESSION, nullptr, &valeurSliderProgression, 0.0f, duree);
+    GuiSliderBar(rectangles[6], BARRE_PROGRESSION, nullptr, &valeurSliderProgression, 0.0f, duree);
 
     if (enGlissement) {
         if (valeurSliderProgression != ancienneValeur) {
@@ -174,9 +190,9 @@ void AffichageSynchrone::sliderProgression(bool &enGlissement, bool &etaitEnLect
     }
 }
 
-void AffichageSynchrone::sliderVolume() {
+void AffichageSynchrone::barreVolume() {
     float nouveauVolume = valeurSliderSon;
-    GuiSliderBar(rectangles[9], SLIDER_SON, nullptr, &nouveauVolume, 0.0f, 100.0f);
+    GuiSliderBar(rectangles[9], BARRE_SON, nullptr, &nouveauVolume, 0.0f, 100.0f);
     if (nouveauVolume != valeurSliderSon) {
         valeurSliderSon = nouveauVolume;
         if (valeurSliderSon > 0.0f) {
@@ -187,67 +203,75 @@ void AffichageSynchrone::sliderVolume() {
 }
 
 void AffichageSynchrone::afficherVideo() const {
-    const auto videoWidth = static_cast<float>(video.videoTexture.width);
-    const auto videoHeight = static_cast<float>(video.videoTexture.height);
+    const auto largeurVideo = static_cast<float>(video.videoTexture.width);
+    const auto hauteurVideo = static_cast<float>(video.videoTexture.height);
 
-    if (videoWidth > 0 && videoHeight > 0) {
-        const float scaleX = rectangles[2].width / videoWidth;
-        const float scaleY = rectangles[2].height / videoHeight;
+    if (largeurVideo > 0 && hauteurVideo > 0) {
+        const float echelleX = rectangles[2].width / largeurVideo;
+        const float echelleY = rectangles[2].height / hauteurVideo;
 
         // On prend la plus petite échelle pour que ça rentre sans être étiré
-        const float scale = (scaleX < scaleY) ? scaleX : scaleY;
+        const float echelle = (echelleX < echelleY) ? echelleX : echelleY;
 
-        const float destWidth = videoWidth * scale;
-        const float destHeight = videoHeight * scale;
+        const float destLargeur = largeurVideo * echelle;
+        const float destHauteur = hauteurVideo * echelle;
 
         // Centrage dans la zone
-        const float destX = rectangles[2].x + (rectangles[2].width - destWidth) / 2.0f;
-        const float destY = rectangles[2].y + (rectangles[2].height - destHeight) / 2.0f;
+        const float destX = rectangles[2].x + (rectangles[2].width - destLargeur) / 2.0f;
+        const float destY = rectangles[2].y + (rectangles[2].height - destHauteur) / 2.0f;
 
-        const Rectangle source = {0.0f, 0.0f, videoWidth, videoHeight};
-        const Rectangle dest = {destX, destY, destWidth, destHeight};
-        constexpr Vector2 origin = {0.0f, 0.0f};
+        const Rectangle source = {0.0f, 0.0f, largeurVideo, hauteurVideo};
+        const Rectangle dest = {destX, destY, destLargeur, destHauteur};
+        constexpr Vector2 origine = {0.0f, 0.0f};
 
-        DrawTexturePro(video.videoTexture, source, dest, origin, 0.0f, WHITE);
+        DrawTexturePro(video.videoTexture, source, dest, origine, 0.0f, WHITE);
     }
 }
 
 void AffichageSynchrone::afficherListeFichiers() {
-    Rectangle view = {0};
-    GuiScrollPanel(rectangles[0], nullptr, (Rectangle){0, 0, rectangles[0].width - 16, static_cast<float>(videoFiles.size()) * 30}, &scrollPosition, &view);
-    BeginScissorMode(view.x, view.y, view.width, view.height);
-        for (size_t i = 0; i < videoFiles.size(); ++i) {
-            Rectangle itemRect = {rectangles[0].x + 10 + scrollPosition.x, rectangles[0].y + 10 + i * 30 + scrollPosition.y, 20, 20};
+    Rectangle vue = {0};
 
-            int order = 0;
-            if (videoSelected[i]) {
-                 auto it = find(selectionOrder.begin(), selectionOrder.end(), i);
-                 if (it != selectionOrder.end()) {
-                     order = distance(selectionOrder.begin(), it) + 1;
-                 }
+    GuiScrollPanel(rectangles[0], nullptr,
+                   (Rectangle){0, 0,
+                       rectangles[0].width - 16,
+                       static_cast<float>(fichiersVideo.size()) * 30}, &positionDefilement, &vue);
+
+    BeginScissorMode(vue.x, vue.y, vue.width, vue.height);
+
+    for (size_t i = 0; i < fichiersVideo.size(); ++i) {
+        Rectangle itemRect = {
+            rectangles[0].x + 10 + positionDefilement.x, rectangles[0].y + 10 + i * 30 + positionDefilement.y, 20, 20
+        };
+
+        int ordre = 0;
+        if (videosSelectionnees[i]) {
+            auto it = find(ordreSelection.begin(), ordreSelection.end(), i);
+            if (it != ordreSelection.end()) {
+                ordre = distance(ordreSelection.begin(), it) + 1;
             }
+        }
 
-            string label = videoFiles[i];
-            if (order > 0) {
-                label += " (" + to_string(order) + ")";
-            }
+        string etiquette = fichiersVideo[i];
+        if (ordre > 0) {
+            etiquette += " (" + to_string(ordre) + ")";
+        }
 
-            bool checked = videoSelected[i];
-            bool prevChecked = checked;
-            GuiCheckBox(itemRect, label.c_str(), &checked);
+        bool coche = videosSelectionnees[i];
+        bool etaitCoche = coche;
+        GuiCheckBox(itemRect, etiquette.c_str(), &coche);
 
-            if (checked != prevChecked) {
-                videoSelected[i] = checked;
-                if (checked) {
-                    selectionOrder.push_back(i);
-                } else {
-                    auto it = find(selectionOrder.begin(), selectionOrder.end(), i);
-                    if (it != selectionOrder.end()) {
-                        selectionOrder.erase(it);
-                    }
+        if (coche != etaitCoche) {
+            videosSelectionnees[i] = coche;
+            if (coche) {
+                ordreSelection.push_back(i);
+            } else {
+                auto it = find(ordreSelection.begin(), ordreSelection.end(), i);
+                if (it != ordreSelection.end()) {
+                    ordreSelection.erase(it);
                 }
             }
         }
+    }
     EndScissorMode();
 }
 
@@ -255,21 +279,22 @@ void AffichageSynchrone::executer() {
     bool enGlissement = false;
     bool etaitEnLecture = false;
     float delaiRecherche = 0.0f;
+    float rotationChargement = 0.0f;
 
     while (!WindowShouldClose()) {
-        if (IsWindowResized()) {
-            updateLayout();
+        if (IsWindowResized()) miseAJourDisposition();
+
+        if (videoGeneree) {
+            chargerVideo();
+            videoGeneree = false;
         }
 
-        if (IsMediaValid(video)) {
-            UpdateMedia(&video);
-        }
+        if (IsMediaValid(video)) UpdateMedia(&video);
 
         if (delaiRecherche > 0) delaiRecherche -= GetFrameTime();
 
-        if (!enGlissement && delaiRecherche <= 0 && IsMediaValid(video)) {
+        if (!enGlissement && delaiRecherche <= 0 && IsMediaValid(video))
             valeurSliderProgression = static_cast<float>(GetMediaPosition(video));
-        }
 
         BeginDrawing();
         ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
@@ -280,28 +305,50 @@ void AffichageSynchrone::executer() {
 
         afficherListeFichiers();
 
-        if (GuiButton(rectangles[1], BOUTTON_GENERER)) generer();
-
-        bool estEnLecture = false;
-        if (IsMediaValid(video)) {
-            estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
+        if (generationEnCours) {
+            GuiDisable();
+        }
+        if (GuiButton(rectangles[1], BOUTON_GENERER)) generer();
+        if (generationEnCours) {
+            GuiEnable();
         }
 
-        if (GuiButton(rectangles[4], estEnLecture ? "#133#" : "#131#")) playPause();
+        bool estEnLecture = false;
+
+        if (IsMediaValid(video)) estEnLecture = (GetMediaState(video) == MEDIA_STATE_PLAYING);
+
+        if (GuiButton(rectangles[4], estEnLecture ? "#132#" : "#131#")) lecturePause();
 
         const int minutes = static_cast<int>(valeurSliderProgression) / 60;
-        const int seconds = static_cast<int>(valeurSliderProgression) % 60;
+        const int secondes = static_cast<int>(valeurSliderProgression) % 60;
         const int dureeMinutes = static_cast<int>(duree) / 60;
-        const int dureeSeconds = static_cast<int>(duree) % 60;
-        GuiLabel(rectangles[5], TextFormat("%02d:%02d / %02d:%02d", minutes, seconds, dureeMinutes, dureeSeconds));
+        const int dureeSecondes = static_cast<int>(duree) % 60;
+        GuiLabel(rectangles[5], TextFormat("%02d:%02d / %02d:%02d", minutes, secondes, dureeMinutes, dureeSecondes));
 
-        sliderProgression(enGlissement, etaitEnLecture, delaiRecherche);
+        barreProgression(enGlissement, etaitEnLecture, delaiRecherche);
 
         if (GuiButton(rectangles[7], estMuet ? "#128#" : "#122#")) son();
 
         GuiLabel(rectangles[8], TextFormat("%d%%", static_cast<int>(valeurSliderSon)));
 
-        sliderVolume();
+        barreVolume();
+
+        // Écran de chargement
+        if (generationEnCours) {
+            DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), Fade(BLACK, 0.5f));
+
+            const char* texteChargement = "Génération en cours...";
+            int tailleTexte = MeasureText(texteChargement, 20);
+            DrawText(texteChargement, GetScreenWidth() / 2 - tailleTexte / 2, GetScreenHeight() / 2, 20, WHITE);
+
+            rotationChargement += 4.0f;
+            Rectangle rectChargement = {
+                (float)GetScreenWidth() / 2,
+                (float)GetScreenHeight() / 2 - 40,
+                20, 20
+            };
+            DrawRectanglePro(rectChargement, {10, 10}, rotationChargement, WHITE);
+        }
 
         EndDrawing();
     }
@@ -314,7 +361,5 @@ void AffichageSynchrone::setTailleTampon(const int taille) {
 
 void AffichageSynchrone::setVolume(const float volume) {
     valeurSliderSon = volume;
-    if (IsMediaValid(video)) {
-        SetAudioStreamVolume(video.audioStream, valeurSliderSon / 100.0f);
-    }
+    if (IsMediaValid(video)) SetAudioStreamVolume(video.audioStream, valeurSliderSon / 100.0f);
 }

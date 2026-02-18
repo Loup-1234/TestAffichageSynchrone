@@ -133,7 +133,8 @@ double SynchroniseurMultiVideo::calculerDecalage(const vector<float> &ref, const
     }
 }
 
-bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos, const string &fichierSortie, const string &fichierAudioRef) const {
+bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos, const string &fichierSortie,
+                                           const string &fichierAudioRef) const {
     cout << "[3/3] Génération de la vidéo finale..." << endl;
 
     stringstream cmd;
@@ -173,13 +174,14 @@ bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos,
     // Calcul des dimensions de la grille (lignes x colonnes).
     // On cherche à obtenir une grille la plus carrée possible (ex: 4 vidéos -> 2x2, 6 vidéos -> 3x2).
     int cols = ceil(sqrt(nbVideos));
-    int rows = ceil((double)nbVideos / cols);
+    int rows = ceil((double) nbVideos / cols);
 
     // Étape 1 : Redimensionnement de chaque vidéo.
     // Chaque vidéo est redimensionnée à la taille cible (LARGEUR_CIBLE x HAUTEUR_CIBLE).
     // On attribue une étiquette temporaire [v0], [v1], etc. à chaque sortie redimensionnée.
     for (int i = 0; i < nbVideos; ++i) {
-        cmd << "[" << (i + indexVideoStart) << ":v]scale=" << LARGEUR_CIBLE << ":" << HAUTEUR_CIBLE << "[v" << i << "];";
+        cmd << "[" << (i + indexVideoStart) << ":v]scale=" << LARGEUR_CIBLE << ":" << HAUTEUR_CIBLE << "[v" << i <<
+                "];";
     }
 
     // Étape 2 : Assemblage des vidéos avec le filtre xstack.
@@ -248,7 +250,9 @@ bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos,
     // -pix_fmt yuv420p : Format de pixel standard pour la compatibilité.
     // -preset fast : Compromis vitesse/compression (ultrafast, superfast, veryfast, fast, medium, slow...).
     // -movflags +faststart : Déplace les métadonnées au début du fichier.
-    cmd << "-c:v libx264 -profile:v baseline -tune zerolatency -g 60 -pix_fmt yuv420p -preset fast -movflags +faststart \"" << fichierSortie << "\"";
+    cmd <<
+            "-c:v libx264 -profile:v baseline -tune zerolatency -g 60 -pix_fmt yuv420p -preset fast -movflags +faststart \""
+            << fichierSortie << "\"";
 
     // Exécution de la commande système.
     if (system(cmd.str().c_str()) == 0) {

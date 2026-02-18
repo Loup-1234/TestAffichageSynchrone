@@ -58,8 +58,8 @@ class SynchroniseurMultiVideo {
      * @brief Structure stockant les informations relatives à une vidéo.
      */
     struct InfoVideo {
-        string chemin;          /**< Chemin d'accès au fichier vidéo. */
-        double retardSecondes;  /**< Retard calculé en secondes par rapport à la vidéo de référence. */
+        string chemin; /**< Chemin d'accès au fichier vidéo. */
+        double retardSecondes; /**< Retard calculé en secondes par rapport à la vidéo de référence. */
     };
 
     /**
@@ -105,7 +105,8 @@ class SynchroniseurMultiVideo {
      * @param fichierAudioRef Chemin du fichier audio de référence (optionnel).
      * @return true si succès, false sinon.
      */
-    bool genererVideo(const vector<InfoVideo> &listeVideos, const string &fichierSortie, const string &fichierAudioRef = "") const;
+    bool genererVideo(const vector<InfoVideo> &listeVideos, const string &fichierSortie,
+                      const string &fichierAudioRef = "") const;
 
 public:
     /**
@@ -143,5 +144,6 @@ public:
      * @param fichierSortie Chemin du fichier vidéo de sortie.
      * @return true si la génération a réussi, false sinon.
      */
-    bool genererVideoSynchronisee(const string &fichierAudioRef, const vector<string> &fichiersVideo, const string &fichierSortie) const;
+    bool genererVideoSynchronisee(const string &fichierAudioRef, const vector<string> &fichiersVideo,
+                                  const string &fichierSortie) const;
 };

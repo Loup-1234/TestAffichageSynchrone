@@ -5,6 +5,7 @@
 #include "../raymedia/raymedia.h"
 #include <string>
 #include <vector>
+#include <atomic>
 
 using namespace std;
 
@@ -24,23 +25,26 @@ class AffichageSynchrone {
     float valeurSliderSonPrecedent{};
     bool estMuet = false;
 
-    string listeVideos;
-    vector<string> videoFiles;
-    vector<bool> videoSelected;
-    vector<int> selectionOrder;
-    Vector2 scrollPosition = {0, 0};
+    atomic<bool> videoGeneree{false};
+    atomic<bool> generationEnCours{false};
 
-    const char *BOUTTON_GENERER = "Générer";
+    string listeVideos;
+    vector<string> fichiersVideo;
+    vector<bool> videosSelectionnees;
+    vector<int> ordreSelection;
+    Vector2 positionDefilement = {0, 0};
+
+    const char *BOUTON_GENERER = "Générer";
 
     const char *ZONE_VIDEOS = "";
 
-    const char *BOUTTON_PLAY_PAUSE = "#131#";
+    const char *BOUTON_LECTURE_PAUSE = "#131#";
     const char *HORODATAGE = "";
-    const char *SLIDER_PROGRESSION = "";
+    const char *BARRE_PROGRESSION = "";
 
-    const char *BOUTTON_SON = "#122#";
+    const char *BOUTON_SON = "#122#";
     const char *VOLUME = "";
-    const char *SLIDER_SON = "";
+    const char *BARRE_SON = "";
 
     const char *MSG_ERREUR = "Erreur: Média non chargé";
 
@@ -52,19 +56,19 @@ class AffichageSynchrone {
 
     void generer();
 
-    void playPause() const;
+    void lecturePause() const;
 
     void son();
 
-    void sliderProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche);
+    void barreProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche);
 
-    void sliderVolume();
+    void barreVolume();
 
     void afficherVideo() const;
 
     void afficherListeFichiers();
 
-    void updateLayout();
+    void miseAJourDisposition();
 
 public:
     explicit AffichageSynchrone();
