@@ -16,7 +16,7 @@ class SynchroniseurMultiVideo {
     /**
      * @brief Fréquence d'échantillonnage audio utilisée pour l'analyse (en Hz).
      */
-    const int FREQUENCE_ECHANTILLONNAGE = 40000;
+    const int FREQUENCE_ECHANTILLONNAGE = 44100;
 
     /**
      * @brief Durée de l'audio à extraire pour l'analyse (en secondes).
