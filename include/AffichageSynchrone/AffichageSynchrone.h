@@ -35,6 +35,7 @@ class AffichageSynchrone {
     Vector2 positionDefilement = {0, 0};
 
     const char *BOUTON_GENERER = "Générer";
+    const char *BOUTON_OUVRIR_DOSSIER = "Ouvrir dossier";
 
     const char *ZONE_VIDEOS = "";
 
@@ -48,13 +49,15 @@ class AffichageSynchrone {
 
     const char *MSG_ERREUR = "Erreur: Média non chargé";
 
-    Rectangle rectangles[10]{};
+    Rectangle rectangles[11]{};
 
     void chargerListeVideos();
 
     void chargerVideo();
 
     void generer();
+
+    void ouvrirDossierVideos();
 
     void lecturePause() const;
 

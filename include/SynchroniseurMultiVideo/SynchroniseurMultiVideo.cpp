@@ -244,12 +244,12 @@ bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos,
 
     // Options d'encodage vidéo :
 
-    cmd << "-c:v libx264" // Encodeur H.264.
-            << "-profile:v baseline" // Profil simple pour la compatibilité.
-            << "-tune zerolatency" // Optimisation pour réduire la latence.
-            << "-g 60" // 60 fps.
-            << "-pix_fmt yuv420p" // Format de pixel standard pour la compatibilité.
-            << "-preset fast" // (ultrafast, superfast, veryfast, fast, medium, slow...)
+    cmd << "-c:v libx264 " // Encodeur H.264.
+            << "-profile:v baseline " // Profil simple pour la compatibilité.
+            << "-tune zerolatency " // Optimisation pour réduire la latence.
+            << "-g 60 " // 60 fps.
+            << "-pix_fmt yuv420p " // Format de pixel standard pour la compatibilité.
+            << "-preset fast " // (ultrafast, superfast, veryfast, fast, medium, slow...)
             << "-movflags +faststart \"" // Déplace les métadonnées au début du fichier.
             << fichierSortie << "\"";
 

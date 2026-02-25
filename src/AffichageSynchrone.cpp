@@ -9,6 +9,7 @@
 #include <string>
 #include <algorithm>
 #include <thread>
+#include <cstdlib>
 
 namespace fs = filesystem;
 
@@ -36,7 +37,7 @@ void AffichageSynchrone::miseAJourDisposition() {
     const auto hauteurEcran = static_cast<float>(GetScreenHeight());
 
     // Initialisation de la mise en page
-    rectangles[0] = (Rectangle){0, 0, 150, hauteurEcran - 48}; // Vue en liste
+    rectangles[0] = (Rectangle){0, 48, 150, hauteurEcran - 96}; // Vue en liste (décalée vers le bas)
     rectangles[1] = (Rectangle){0, hauteurEcran - 48, 150, 48}; // Bouton Générer
     rectangles[2] = (Rectangle){150, 0, largeurEcran - 150, hauteurEcran - 72}; // Zone vidéo
     rectangles[3] = (Rectangle){150, hauteurEcran - 72, largeurEcran - 150, 2}; // Ligne de délimitation (sous la vidéo)
@@ -46,6 +47,7 @@ void AffichageSynchrone::miseAJourDisposition() {
     rectangles[7] = (Rectangle){largeurEcran - 176, hauteurEcran - 40, 32, 32}; // Bouton Muet
     rectangles[8] = (Rectangle){largeurEcran - 136, hauteurEcran - 72, 128, 32}; // Étiquette de volume
     rectangles[9] = (Rectangle){largeurEcran - 136, hauteurEcran - 40, 128, 32}; // Curseur de volume
+    rectangles[10] = (Rectangle){0, 0, 150, 48}; // Bouton Ouvrir dossier (au-dessus de la liste)
 }
 
 void AffichageSynchrone::chargerListeVideos() {
@@ -124,6 +126,23 @@ void AffichageSynchrone::generer() {
             generationEnCours = false;
         }).detach();
     }
+}
+
+void AffichageSynchrone::ouvrirDossierVideos() {
+    string chemin = "videos";
+    if (!fs::exists(chemin)) {
+        fs::create_directory(chemin);
+    }
+
+    #ifdef _WIN32
+        string commande = "explorer " + chemin;
+    #elif __APPLE__
+        string commande = "open " + chemin;
+    #else
+        string commande = "xdg-open " + chemin;
+    #endif
+
+    system(commande.c_str());
 }
 
 void AffichageSynchrone::lecturePause() const {
@@ -309,6 +328,7 @@ void AffichageSynchrone::executer() {
             GuiDisable();
         }
         if (GuiButton(rectangles[1], BOUTON_GENERER)) generer();
+        if (GuiButton(rectangles[10], BOUTON_OUVRIR_DOSSIER)) ouvrirDossierVideos();
         if (generationEnCours) {
             GuiEnable();
         }
