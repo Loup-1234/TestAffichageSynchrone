@@ -24,11 +24,8 @@ if (WIN32) # WINDOWS
 
     message(STATUS "Configuration pour Windows...")
 
-    # TODO: Change this path to where you extracted the VLC zip (e.g. C:/Libraries/vlc-3.0.20)
-    set(VLC_HOME "C:/path/to/vlc-3.0.20")
-
-    target_include_directories(TestAffichageSynchrone PRIVATE "${VLC_HOME}/sdk/include")
-    target_link_directories(TestAffichageSynchrone PRIVATE "${VLC_HOME}/sdk/lib")
+    target_include_directories(TestAffichageSynchrone PRIVATE "include/LibVLC/include")
+    target_link_directories(TestAffichageSynchrone PRIVATE "include/LibVLC/lib")
 
     target_link_libraries(TestAffichageSynchrone PRIVATE
             raylib
