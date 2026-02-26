@@ -1,17 +1,31 @@
-#ifndef AFFICHAGE_SYNCHRONE_H
-#define AFFICHAGE_SYNCHRONE_H
+#pragma once
 
 #include "raylib.h"
-#include "../raymedia/raymedia.h"
+#include <vlc/vlc.h>
 #include <string>
 #include <vector>
 #include <atomic>
+#include <mutex>
+#include <thread>
 
-using namespace std;
+static void *verrouiller(void *donnees, void **p_pixels);
+static void deverrouiller(void *donnees);
+static void afficherPixels(const void *donnees);
 
 class AffichageSynchrone {
-    MediaStream video{};
-    string cheminVideoComplexe = "sortie_synchro.mp4";
+    libvlc_instance_t *instanceVLC = nullptr;
+    libvlc_media_player_t *lecteurVLC = nullptr;
+    Texture2D textureVideo{};
+    std::vector<unsigned char> pixelsVideo;
+    std::mutex mutexImage;
+    unsigned int largeurVideo = 0;
+    unsigned int hauteurVideo = 0;
+
+    friend void *verrouiller(void *donnees, void **p_pixels);
+    friend void deverrouiller(void *donnees);
+    friend void afficherPixels(const void *donnees);
+
+    std::string cheminVideoComplexe = "sortie_synchro.mp4";
 
     float duree{};
     int tailleTampon = 500;
@@ -25,31 +39,33 @@ class AffichageSynchrone {
     float valeurSliderSonPrecedent{};
     bool estMuet = false;
 
-    atomic<bool> videoGeneree{false};
-    atomic<bool> generationEnCours{false};
+    std::atomic<bool> videoGeneree{false};
+    std::atomic<bool> generationEnCours{false};
+    std::atomic<bool> framePrete{false};
+    std::thread threadGeneration;
 
-    string listeVideos;
-    vector<string> fichiersVideo;
-    vector<bool> videosSelectionnees;
-    vector<int> ordreSelection;
+    std::string listeVideos;
+    std::vector<std::string> fichiersVideo;
+    std::vector<bool> videosSelectionnees;
+    std::vector<int> ordreSelection;
     Vector2 positionDefilement = {0, 0};
 
-    const char *BOUTON_GENERER = "Générer";
-    const char *BOUTON_OUVRIR_DOSSIER = "Ouvrir dossier";
+    const char *TEXTE_BOUTON_GENERER = "Générer";
+    const char *TEXTE_BOUTON_OUVRIR_DOSSIER = "Ouvrir dossier";
 
     const char *ZONE_VIDEOS = "";
 
-    const char *BOUTON_LECTURE_PAUSE = "#131#";
+    const char *TEXTE_BOUTON_LECTURE_PAUSE = "#131#";
     const char *HORODATAGE = "";
     const char *BARRE_PROGRESSION = "";
 
-    const char *BOUTON_SON = "#122#";
+    const char *TEXTE_BOUTON_SON = "#122#";
     const char *VOLUME = "";
     const char *BARRE_SON = "";
 
     const char *MSG_ERREUR = "Erreur: Média non chargé";
 
-    Rectangle rectangles[11]{};
+    Rectangle zones[11]{};
 
     void chargerListeVideos();
 
@@ -57,7 +73,7 @@ class AffichageSynchrone {
 
     void generer();
 
-    void ouvrirDossierVideos();
+    static void ouvrirDossierVideos();
 
     void lecturePause() const;
 
@@ -67,7 +83,7 @@ class AffichageSynchrone {
 
     void barreVolume();
 
-    void afficherVideo() const;
+    void afficherVideo();
 
     void afficherListeFichiers();
 
@@ -84,5 +100,3 @@ public:
 
     void setVolume(float volume);
 };
-
-#endif

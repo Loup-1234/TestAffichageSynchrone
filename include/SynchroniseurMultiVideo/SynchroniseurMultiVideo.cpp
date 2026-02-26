@@ -174,7 +174,6 @@ bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos,
     // Calcul des dimensions de la grille (lignes x colonnes).
     // On cherche à obtenir une grille la plus carrée possible (ex: 4 vidéos -> 2x2, 6 vidéos -> 3x2).
     int cols = ceil(sqrt(nbVideos));
-    int rows = ceil((double) nbVideos / cols);
 
     // Étape 1 : Redimensionnement de chaque vidéo.
     // Chaque vidéo est redimensionnée à la taille cible (LARGEUR_CIBLE x HAUTEUR_CIBLE).
@@ -245,9 +244,9 @@ bool SynchroniseurMultiVideo::genererVideo(const vector<InfoVideo> &listeVideos,
     // Options d'encodage vidéo :
 
     cmd << "-c:v libx264 " // Encodeur H.264.
+            << "-r 30 " // Définir le framerate à 30 FPS
             << "-profile:v baseline " // Profil simple pour la compatibilité.
             << "-tune zerolatency " // Optimisation pour réduire la latence.
-            << "-g 60 " // 60 fps.
             << "-pix_fmt yuv420p " // Format de pixel standard pour la compatibilité.
             << "-preset fast " // (ultrafast, superfast, veryfast, fast, medium, slow...)
             << "-movflags +faststart \"" // Déplace les métadonnées au début du fichier.

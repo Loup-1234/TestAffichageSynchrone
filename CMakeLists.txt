@@ -8,13 +8,11 @@ find_package(raylib CONFIG REQUIRED)
 set(SOURCE_FILES
         src/main.cpp
         src/AffichageSynchrone.cpp
-        include/raymedia/raymedia.c
         include/SynchroniseurMultiVideo/SynchroniseurMultiVideo.cpp
 )
 
 set(HEADER_FILES
         include/AffichageSynchrone/AffichageSynchrone.h
-        include/raymedia/raymedia.h
         include/SynchroniseurMultiVideo/SynchroniseurMultiVideo.h
 )
 
@@ -26,23 +24,11 @@ if (WIN32) # WINDOWS
 
     message(STATUS "Configuration pour Windows...")
 
-    set(FFMPEG_DIR "${CMAKE_SOURCE_DIR}/include/ffmpeg")
-
-    target_include_directories(TestAffichageSynchrone PRIVATE ${FFMPEG_DIR}/include)
-
-    target_link_directories(TestAffichageSynchrone PRIVATE ${FFMPEG_DIR}/lib)
-
-    target_compile_definitions(TestAffichageSynchrone PRIVATE RAYMEDIA_STATIC)
-
     target_link_libraries(TestAffichageSynchrone PRIVATE
             raylib
-            avcodec
-            avformat
-            avutil
-            swscale
-            swresample
             winmm
             gdi32
+            libvlc
     )
 
 else () # LINUX
@@ -54,17 +40,13 @@ else () # LINUX
     find_package(OpenGL REQUIRED)
     find_package(Threads REQUIRED)
 
-    pkg_check_modules(FFMPEG REQUIRED IMPORTED_TARGET
-            libavcodec
-            libavformat
-            libavutil
-            libswscale
-            libswresample
-    )
+    pkg_check_modules(LIBVLC REQUIRED libvlc)
+
+    target_include_directories(TestAffichageSynchrone PRIVATE ${LIBVLC_INCLUDE_DIRS})
 
     target_link_libraries(TestAffichageSynchrone PRIVATE
             raylib
-            PkgConfig::FFMPEG
+            ${LIBVLC_LIBRARIES}
             glfw
             OpenGL::GL
             Threads::Threads
