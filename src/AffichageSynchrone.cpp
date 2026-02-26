@@ -10,10 +10,11 @@
 #include <thread>
 #include <chrono>
 #include <cstdlib>
-#include <iostream>
 
-namespace fs = std::filesystem;
 using namespace std;
+namespace fs = filesystem;
+
+// --- Callbacks VLC ---
 
 static void *verrouiller(void *donnees, void **p_pixels) {
     auto *app = static_cast<AffichageSynchrone *>(donnees);
@@ -28,9 +29,22 @@ static void deverrouiller(void *donnees) {
     app->framePrete = true;
 }
 
-static void afficherPixels(const void *donnees) {
-    (void)donnees;
+static unsigned configurerVideo(void **donnees, char *chroma, const unsigned *largeur, const unsigned *hauteur, unsigned *pas, unsigned *lignes) {
+    auto *app = static_cast<AffichageSynchrone *>(*donnees);
+    app->mutexImage.lock();
+    app->largeurVideo = *largeur;
+    app->hauteurVideo = *hauteur;
+    // Redimensionne le buffer de pixels pour correspondre à la nouvelle taille vidéo
+    app->pixelsVideo.resize(app->largeurVideo * app->hauteurVideo * 4);
+    memcpy(chroma, "RGBA", 4);
+    *pas = app->largeurVideo * 4;
+    *lignes = app->hauteurVideo;
+    app->textureDoitEtreRedimensionnee = true;
+    app->mutexImage.unlock();
+    return 1;
 }
+
+// --- Implémentation AffichageSynchrone ---
 
 AffichageSynchrone::AffichageSynchrone() {
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_RESIZABLE);
@@ -44,17 +58,13 @@ AffichageSynchrone::AffichageSynchrone() {
     instanceVLC = libvlc_new(0, nullptr);
     lecteurVLC = libvlc_media_player_new(instanceVLC);
 
-    // Configuration du tampon vidéo (HD par défaut)
-    largeurVideo = 1280;
-    hauteurVideo = 720;
-    pixelsVideo.resize(largeurVideo * hauteurVideo * 4);
-
-    // Création d'une texture vide
-    const Image img = GenImageColor(static_cast<int>(largeurVideo), static_cast<int>(hauteurVideo), BLACK);
-    textureVideo = LoadTextureFromImage(img);
-    UnloadImage(img);
+    textureVideo = {0};
 
     miseAJourDisposition();
+
+    if (fs::exists(cheminVideoComplexe)) {
+        chargerVideo();
+    }
 }
 
 AffichageSynchrone::~AffichageSynchrone() {
@@ -77,6 +87,7 @@ void AffichageSynchrone::miseAJourDisposition() {
     const auto largeurEcran = static_cast<float>(GetScreenWidth());
     const auto hauteurEcran = static_cast<float>(GetScreenHeight());
 
+    // Définition des zones de l'interface (liste, boutons, vidéo, contrôles)
     zones[0] = {0, 48, 150, hauteurEcran - 96}; // Vue en liste
     zones[1] = {0, hauteurEcran - 48, 150, 48}; // Bouton Générer
     zones[2] = {150, 0, largeurEcran - 150, hauteurEcran - 72}; // Zone vidéo
@@ -100,7 +111,7 @@ void AffichageSynchrone::chargerListeVideos() {
         for (const auto &entree: fs::directory_iterator(chemin)) {
             if (entree.is_regular_file()) {
                 string ext = entree.path().extension().string();
-                if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov") {
+                if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov" || ext == ".webm") {
                     fichiersVideo.push_back(entree.path().filename().string());
                     videosSelectionnees.push_back(false);
                 }
@@ -119,13 +130,14 @@ void AffichageSynchrone::chargerVideo() {
     libvlc_media_player_set_media(lecteurVLC, media);
     libvlc_media_release(media);
 
-    libvlc_video_set_callbacks(lecteurVLC, verrouiller, reinterpret_cast<libvlc_video_unlock_cb>(deverrouiller), reinterpret_cast<libvlc_video_display_cb>(afficherPixels), this);
-    libvlc_video_set_format(lecteurVLC, "RGBA", largeurVideo, hauteurVideo, largeurVideo * 4);
+    // Configuration des callbacks pour le rendu vidéo dans une texture Raylib
+    libvlc_video_set_callbacks(lecteurVLC, verrouiller, reinterpret_cast<libvlc_video_unlock_cb>(deverrouiller), nullptr, this);
+    libvlc_video_set_format_callbacks(lecteurVLC, reinterpret_cast<libvlc_video_format_cb>(configurerVideo), nullptr);
 
     libvlc_media_player_play(lecteurVLC);
 
     // Attendre un peu pour que VLC initialise la vidéo
-    this_thread::sleep_for(chrono::milliseconds(100));
+    this_thread::sleep_for(chrono::milliseconds(200));
     libvlc_media_player_set_pause(lecteurVLC, 1);
 
     const libvlc_time_t len = libvlc_media_player_get_length(lecteurVLC);
@@ -138,11 +150,11 @@ void AffichageSynchrone::generer() {
     if (generationEnCours) return;
 
     vector<string> videos;
-    const string chemin = "videos";
+    const fs::path cheminBase = "videos";
 
-    for (const int index: ordreSelection) {
+    for (const int index : ordreSelection) {
         if (index >= 0 && index < fichiersVideo.size()) {
-            videos.push_back(chemin + "/" + fichiersVideo[index]);
+            videos.push_back((cheminBase / fichiersVideo[index]).string());
         }
     }
 
@@ -157,6 +169,7 @@ void AffichageSynchrone::generer() {
             threadGeneration.join();
         }
 
+        // Lancement de la génération dans un thread séparé pour ne pas bloquer l'UI
         threadGeneration = thread([this, videos]() {
             SynchroniseurMultiVideo synchroniseur;
             synchroniseur.configurerAnalyse(60.0, 30.0, 100);
@@ -207,6 +220,7 @@ void AffichageSynchrone::son() {
 void AffichageSynchrone::barreProgression(bool &enGlissement, bool &etaitEnLecture, float &delaiRecherche) {
     const bool estEnLecture = libvlc_media_player_is_playing(lecteurVLC);
 
+    // Gestion du clic sur la barre de progression
     if (CheckCollisionPointRec(GetMousePosition(), zones[6])) {
         if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
             enGlissement = true;
@@ -217,11 +231,11 @@ void AffichageSynchrone::barreProgression(bool &enGlissement, bool &etaitEnLectu
     }
 
     const float ancienneValeur = valeurSliderProgression;
-    GuiSliderBar(zones[6], BARRE_PROGRESSION, nullptr, &valeurSliderProgression, 0.0f, duree);
+    GuiSliderBar(zones[6], "", nullptr, &valeurSliderProgression, 0.0f, duree);
 
     if (enGlissement) {
         if (valeurSliderProgression != ancienneValeur) {
-            libvlc_media_player_set_time(lecteurVLC, valeurSliderProgression * 1000);
+            libvlc_media_player_set_time(lecteurVLC, static_cast<libvlc_time_t>(valeurSliderProgression * 1000));
         }
 
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON) || !IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
@@ -237,7 +251,7 @@ void AffichageSynchrone::barreProgression(bool &enGlissement, bool &etaitEnLectu
 
 void AffichageSynchrone::barreVolume() {
     float nouveauVolume = valeurSliderSon;
-    GuiSliderBar(zones[9], BARRE_SON, nullptr, &nouveauVolume, 0.0f, 100.0f);
+    GuiSliderBar(zones[9], "", nullptr, &nouveauVolume, 0.0f, 100.0f);
     if (nouveauVolume != valeurSliderSon) {
         valeurSliderSon = nouveauVolume;
         estMuet = (valeurSliderSon <= 0.0f);
@@ -246,13 +260,19 @@ void AffichageSynchrone::barreVolume() {
 }
 
 void AffichageSynchrone::afficherVideo() {
+    // Mise à jour de la texture si une nouvelle frame est prête
     if (framePrete) {
         mutexImage.lock();
-        UpdateTexture(textureVideo, pixelsVideo.data());
+        if (largeurVideo > 0 && hauteurVideo > 0) {
+            UpdateTexture(textureVideo, pixelsVideo.data());
+        }
         mutexImage.unlock();
         framePrete = false;
     }
 
+    if (largeurVideo == 0 || hauteurVideo == 0) return;
+
+    // Calcul de l'échelle pour garder le ratio d'aspect
     const float echelleX = zones[2].width / static_cast<float>(largeurVideo);
     const float echelleY = zones[2].height / static_cast<float>(hauteurVideo);
     const float echelle = min(echelleX, echelleY);
@@ -288,7 +308,7 @@ void AffichageSynchrone::afficherListeFichiers() {
             20, 20
         };
 
-        // Vérifier si l'élément est visible avant de le dessiner
+        // Vérifier si l'élément est visible avant de le dessiner (optimisation)
         if (itemRect.y + itemRect.height < vue.y || itemRect.y > vue.y + vue.height) {
             continue;
         }
@@ -297,7 +317,7 @@ void AffichageSynchrone::afficherListeFichiers() {
         if (videosSelectionnees[i]) {
             auto it = ranges::find(ordreSelection, static_cast<int>(i));
             if (it != ordreSelection.end()) {
-                ordre = static_cast<int>(std::distance(ordreSelection.begin(), it)) + 1;
+                ordre = static_cast<int>(distance(ordreSelection.begin(), it)) + 1;
             }
         }
 
@@ -339,6 +359,23 @@ void AffichageSynchrone::executer() {
             videoGeneree = false;
         }
 
+        // Redimensionnement de la texture si la vidéo change de résolution
+        if (textureDoitEtreRedimensionnee) {
+            mutexImage.lock();
+            if (textureVideo.id > 0) {
+                UnloadTexture(textureVideo);
+            }
+            if (largeurVideo > 0 && hauteurVideo > 0) {
+                Image img = GenImageColor(static_cast<int>(largeurVideo), static_cast<int>(hauteurVideo), BLACK);
+                textureVideo = LoadTextureFromImage(img);
+                UnloadImage(img);
+            } else {
+                textureVideo = {0};
+            }
+            textureDoitEtreRedimensionnee = false;
+            mutexImage.unlock();
+        }
+
         if (delaiRecherche > 0) delaiRecherche -= GetFrameTime();
 
         if (!enGlissement && delaiRecherche <= 0) {
@@ -351,7 +388,7 @@ void AffichageSynchrone::executer() {
         BeginDrawing();
         ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
 
-        if (duree > 0) afficherVideo();
+        if (duree > 0 && textureVideo.id > 0) afficherVideo();
 
         DrawRectangleRec(zones[3], GRAY);
         afficherListeFichiers();
@@ -389,11 +426,6 @@ void AffichageSynchrone::executer() {
 
         EndDrawing();
     }
-}
-
-void AffichageSynchrone::setTailleTampon(const int taille) {
-    tailleTampon = taille;
-    chargerVideo();
 }
 
 void AffichageSynchrone::setVolume(const float volume) {
