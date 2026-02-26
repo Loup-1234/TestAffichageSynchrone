@@ -38,7 +38,7 @@ AffichageSynchrone::AffichageSynchrone() {
     SetWindowMinSize(800, 450);
     InitAudioDevice();
     chargerListeVideos();
-    SetTargetFPS(60);
+    SetTargetFPS(30);
 
     // Initialisation de VLC
     instanceVLC = libvlc_new(0, nullptr);
