@@ -111,7 +111,7 @@ void AffichageSynchrone::chargerListeVideos() {
         for (const auto &entree: fs::directory_iterator(chemin)) {
             if (entree.is_regular_file()) {
                 string ext = entree.path().extension().string();
-                if (ext == ".mp4" || ext == ".avi" || ext == ".mkv" || ext == ".mov" || ext == ".webm") {
+                if (ext == ".mp4" || ext == ".mp3") {
                     fichiersVideo.push_back(entree.path().filename().string());
                     videosSelectionnees.push_back(false);
                 }
@@ -158,27 +158,46 @@ void AffichageSynchrone::generer() {
         }
     }
 
-    if (videos.size() >= 2) {
-        libvlc_media_player_stop(lecteurVLC);
-        duree = 0.0f;
-        valeurSliderProgression = 0.0f;
+    if (videos.empty()) return;
 
-        generationEnCours = true;
+    string extension = fs::path(videos[0]).extension().string();
+    bool estMp3 = (extension == ".mp3");
 
-        if (threadGeneration.joinable()) {
-            threadGeneration.join();
+    // Vérification du nombre de fichiers requis
+    // Si le premier est un MP3, il faut au moins 3 fichiers (1 MP3 + 2 vidéos)
+    // Sinon, il faut au moins 2 fichiers (2 vidéos)
+    if ((estMp3 && videos.size() < 3) || (!estMp3 && videos.size() < 2)) {
+        return;
+    }
+
+    libvlc_media_player_stop(lecteurVLC);
+    duree = 0.0f;
+    valeurSliderProgression = 0.0f;
+
+    generationEnCours = true;
+
+    if (threadGeneration.joinable()) {
+        threadGeneration.join();
+    }
+
+    // Lancement de la génération dans un thread séparé pour ne pas bloquer l'UI
+    threadGeneration = thread([this, videos, estMp3]() {
+        SynchroniseurMultiVideo synchroniseur;
+        synchroniseur.configurerAnalyse(60.0, 30.0, 100);
+
+        bool succes = false;
+        if (estMp3) {
+            const vector<string> videosSeules(videos.begin() + 1, videos.end());
+            succes = synchroniseur.genererVideoSynchronisee(videos[0], videosSeules, cheminVideoComplexe);
+        } else {
+            succes = synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe);
         }
 
-        // Lancement de la génération dans un thread séparé pour ne pas bloquer l'UI
-        threadGeneration = thread([this, videos]() {
-            SynchroniseurMultiVideo synchroniseur;
-            synchroniseur.configurerAnalyse(60.0, 30.0, 100);
-            if (synchroniseur.genererVideoSynchronisee(videos, cheminVideoComplexe)) {
-                videoGeneree = true;
-            }
-            generationEnCours = false;
-        });
-    }
+        if (succes) {
+            videoGeneree = true;
+        }
+        generationEnCours = false;
+    });
 }
 
 void AffichageSynchrone::ouvrirDossierVideos() {
