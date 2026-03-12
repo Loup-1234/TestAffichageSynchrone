@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu" kind="group">
+    <compoundname>lavu</compoundname>
+    <title>libavutil</title>
+    <innerfile refid="avutil_8h">avutil.h</innerfile>
+    <innerfile refid="macros_8h">macros.h</innerfile>
+    <innerfile refid="libavutil_2version_8h">version.h</innerfile>
+    <innergroup refid="group__lavu__crypto">Crypto and Hashing</innergroup>
+    <innergroup refid="group__lavu__math">Mathematics</innergroup>
+    <innergroup refid="group__lavu__string">String Manipulation</innergroup>
+    <innergroup refid="group__lavu__mem">Memory Management</innergroup>
+    <innergroup refid="group__lavu__data">Data Structures</innergroup>
+    <innergroup refid="group__lavu__video">Video related</innergroup>
+    <innergroup refid="group__lavu__audio">Audio related</innergroup>
+    <innergroup refid="group__lavu__error">Error Codes</innergroup>
+    <innergroup refid="group__lavu__log">Logging Facility</innergroup>
+    <innergroup refid="group__lavu__misc">Other</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Common code shared across all FFmpeg libraries.</para>
+<para><simplesect kind="note"><para>libavutil is designed to be modular. In most cases, in order to use the functions provided by one component of libavutil you must explicitly include the specific header containing that feature. If you are only using media-related components, you could simply include <ref refid="avutil_8h" kindref="compound">libavutil/avutil.h</ref>, which brings in most of the &quot;core&quot; components. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

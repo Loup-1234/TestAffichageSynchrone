@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__parsing" kind="group">
+    <compoundname>lavc_parsing</compoundname>
+    <title>Frame parsing</title>
+    <innerclass refid="struct_a_v_codec_parser_context" prot="public">AVCodecParserContext</innerclass>
+    <innerclass refid="struct_a_v_codec_parser" prot="public">AVCodecParser</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavc__parsing_1gaad2e1cb6faa858b3558c5182d3ec56aa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVPictureStructure</name>
+        <enumvalue id="group__lavc__parsing_1ggaad2e1cb6faa858b3558c5182d3ec56aaa88e5d6e12b558d4d015fa2b3b043cb91" prot="public">
+          <name>AV_PICTURE_STRUCTURE_UNKNOWN</name>
+          <briefdescription>
+<para>unknown </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavc__parsing_1ggaad2e1cb6faa858b3558c5182d3ec56aaa86a376b542e532a5f2be40b56a79f161" prot="public">
+          <name>AV_PICTURE_STRUCTURE_TOP_FIELD</name>
+          <briefdescription>
+<para>coded as top field </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavc__parsing_1ggaad2e1cb6faa858b3558c5182d3ec56aaa6d82ada133fd9cff3e9577a2134dba5b" prot="public">
+          <name>AV_PICTURE_STRUCTURE_BOTTOM_FIELD</name>
+          <briefdescription>
+<para>coded as bottom field </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavc__parsing_1ggaad2e1cb6faa858b3558c5182d3ec56aaa1b90bcaf885c0721b70702a14fec481c" prot="public">
+          <name>AV_PICTURE_STRUCTURE_FRAME</name>
+          <briefdescription>
+<para>coded as frame </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2582" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2582" bodyend="2587"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__parsing_1ga57652881997ee5d2046caac9824d8fc8" prot="public" static="no">
+        <type>struct AVCodecParserContext</type>
+        <definition>typedef struct AVCodecParserContext AVCodecParserContext</definition>
+        <argsstring></argsstring>
+        <name>AVCodecParserContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2746" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavc__parsing_1gad4a6d60e14ff0b808353ae5befe0f341" prot="public" static="no">
+        <type>struct AVCodecParser</type>
+        <definition>typedef struct AVCodecParser AVCodecParser</definition>
+        <argsstring></argsstring>
+        <name>AVCodecParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2778" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__parsing_1ga9c6109817de4bd69807cad12a029db21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_codec_parser" kindref="compound">AVCodecParser</ref> *</type>
+        <definition>const AVCodecParser * av_parser_iterate</definition>
+        <argsstring>(void **opaque)</argsstring>
+        <name>av_parser_iterate</name>
+        <param>
+          <type>void **</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all registered codec parsers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where libavcodec will store the iteration state. Must point to NULL to start the iteration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next registered codec parser or NULL when the iteration is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2789" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2789" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__parsing_1ga716362c2dbeed1d660f9cfe0e597ef1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_codec_parser_context" kindref="compound">AVCodecParserContext</ref> *</type>
+        <definition>AVCodecParserContext * av_parser_init</definition>
+        <argsstring>(int codec_id)</argsstring>
+        <name>av_parser_init</name>
+        <param>
+          <type>int</type>
+          <declname>codec_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2792" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2792" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__parsing_1ga691ca0258e91f99297e7726f56d8c247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parser_parse2</definition>
+        <argsstring>(AVCodecParserContext *s, AVCodecContext *avctx, uint8_t **poutbuf, int *poutbuf_size, const uint8_t *buf, int buf_size, int64_t pts, int64_t dts, int64_t pos)</argsstring>
+        <name>av_parser_parse2</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_parser_context" kindref="compound">AVCodecParserContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>avctx</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>poutbuf</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>poutbuf_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>dts</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parser context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>avctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poutbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to pointer to parsed buffer or NULL if not yet finished. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poutbuf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to size of parsed buffer or zero if not yet finished. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size in bytes without the padding. I.e. the full buffer size is assumed to be buf_size + AV_INPUT_BUFFER_PADDING_SIZE. To signal EOF, this should be 0 (so that the last frame can be output). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input presentation timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input decoding timestamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input byte position in stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes of the input bitstream used.</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="normal">while(in_len){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>len<sp/>=<sp/>av_parser_parse2(myparser,<sp/>AVCodecContext,<sp/>&amp;data,<sp/>&amp;size,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_data,<sp/>in_len,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts,<sp/>dts,<sp/>pos);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>in_data<sp/>+=<sp/>len;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>in_len<sp/><sp/>-=<sp/>len;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if(size)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>decode_frame(data,<sp/>size);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2828" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2828" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__parsing_1ga325e84c53b8c0dfcb2d933d126f76dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_parser_close</definition>
+        <argsstring>(AVCodecParserContext *s)</argsstring>
+        <name>av_parser_close</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_parser_context" kindref="compound">AVCodecParserContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2835" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2835" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

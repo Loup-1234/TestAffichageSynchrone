@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_probe_data" kind="struct" language="C++" prot="public">
+    <compoundname>AVProbeData</compoundname>
+    <includes refid="avformat_8h" local="no">avformat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_probe_data_1a0e8504127aff8af25cc9f3c6400b9651" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVProbeData::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>AVProbeData::filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="452" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_probe_data_1a814cca49dda3f578ebb32d4b2f74368a" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVProbeData::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>AVProbeData::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer must have AVPROBE_PADDING_SIZE of extra allocated bytes filled with zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="453" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_probe_data_1a30309e4de25c1a411c635eab767e1e53" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVProbeData::buf_size</definition>
+        <argsstring></argsstring>
+        <name>buf_size</name>
+        <qualifiedname>AVProbeData::buf_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of buf except extra allocated bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="454" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_probe_data_1a20533bdafa6230d2ef8392cb7cb38382" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVProbeData::mime_type</definition>
+        <argsstring></argsstring>
+        <name>mime_type</name>
+        <qualifiedname>AVProbeData::mime_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mime_type, when known. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="455" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains the data a format has to probe a file. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="451" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="451" bodyend="456"/>
+    <listofallmembers>
+      <member refid="struct_a_v_probe_data_1a814cca49dda3f578ebb32d4b2f74368a" prot="public" virt="non-virtual"><scope>AVProbeData</scope><name>buf</name></member>
+      <member refid="struct_a_v_probe_data_1a30309e4de25c1a411c635eab767e1e53" prot="public" virt="non-virtual"><scope>AVProbeData</scope><name>buf_size</name></member>
+      <member refid="struct_a_v_probe_data_1a0e8504127aff8af25cc9f3c6400b9651" prot="public" virt="non-virtual"><scope>AVProbeData</scope><name>filename</name></member>
+      <member refid="struct_a_v_probe_data_1a20533bdafa6230d2ef8392cb7cb38382" prot="public" virt="non-virtual"><scope>AVProbeData</scope><name>mime_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__channel__mask__c" kind="group">
+    <compoundname>channel_mask_c</compoundname>
+    <title>Audio channel layouts</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__channel__mask__c_1gabd576ea664e3ac5d31f3362064fe13e6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVMatrixEncoding</name>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a04179fd7b3339556603020ae88e02793" prot="public">
+          <name>AV_MATRIX_ENCODING_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a0578f715ed49986a6e4c40884c174dbd" prot="public">
+          <name>AV_MATRIX_ENCODING_DOLBY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a068d30f3ce95f82781b0052bf86bc10e" prot="public">
+          <name>AV_MATRIX_ENCODING_DPLII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a03124652d3e9efb6ce687971c7abbfa1" prot="public">
+          <name>AV_MATRIX_ENCODING_DPLIIX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a927893de2c83ddb117fb89dcc579e363" prot="public">
+          <name>AV_MATRIX_ENCODING_DPLIIZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6aa155505a7fb9f2b45778b1d7776dcfb7" prot="public">
+          <name>AV_MATRIX_ENCODING_DOLBYEX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6ad9089736c1dd449617a2805d37e502d3" prot="public">
+          <name>AV_MATRIX_ENCODING_DOLBYHEADPHONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__channel__mask__c_1ggabd576ea664e3ac5d31f3362064fe13e6a3a3acaf62825a3b21c7631ddf1dcc648" prot="public">
+          <name>AV_MATRIX_ENCODING_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="260" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="260" bodyend="269"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__channel__mask__c_1ga53d6da2dcd56f5f87c7afd8b33fa15ba" prot="public" static="no">
+        <name>AV_CH_LAYOUT_MONO</name>
+        <initializer>(AV_CH_FRONT_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="217" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gabc6d6651bba254cd0fa2c42a57228e65" prot="public" static="no">
+        <name>AV_CH_LAYOUT_STEREO</name>
+        <initializer>(AV_CH_FRONT_LEFT|AV_CH_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="218" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga03f59e18b3598aa0cab9ed675c287a36" prot="public" static="no">
+        <name>AV_CH_LAYOUT_2POINT1</name>
+        <initializer>(AV_CH_LAYOUT_STEREO|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="219" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gad0badd9c9984bc74290f26c2edfdfe44" prot="public" static="no">
+        <name>AV_CH_LAYOUT_2_1</name>
+        <initializer>(AV_CH_LAYOUT_STEREO|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="220" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga625aec7f2285dc35e3ed801e91889564" prot="public" static="no">
+        <name>AV_CH_LAYOUT_SURROUND</name>
+        <initializer>(AV_CH_LAYOUT_STEREO|AV_CH_FRONT_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="221" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gae3fc8d83d40cfbd4910b16d526beb294" prot="public" static="no">
+        <name>AV_CH_LAYOUT_3POINT1</name>
+        <initializer>(AV_CH_LAYOUT_SURROUND|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="222" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga0bcbe41f2d3214b0a3fd2698ebe0caf9" prot="public" static="no">
+        <name>AV_CH_LAYOUT_4POINT0</name>
+        <initializer>(AV_CH_LAYOUT_SURROUND|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="223" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gacc48c498c05b3b3c2549f715ba4f1d1b" prot="public" static="no">
+        <name>AV_CH_LAYOUT_4POINT1</name>
+        <initializer>(AV_CH_LAYOUT_4POINT0|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="224" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga5c25ee8b976d0cb15e0b6d2cf923d19d" prot="public" static="no">
+        <name>AV_CH_LAYOUT_2_2</name>
+        <initializer>(AV_CH_LAYOUT_STEREO|AV_CH_SIDE_LEFT|AV_CH_SIDE_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="225" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga0982ce29eced939dfcfb5b52416810ae" prot="public" static="no">
+        <name>AV_CH_LAYOUT_QUAD</name>
+        <initializer>(AV_CH_LAYOUT_STEREO|AV_CH_BACK_LEFT|AV_CH_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="226" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga10eddec555bcf849efce5158b0cbdb50" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT0</name>
+        <initializer>(AV_CH_LAYOUT_SURROUND|AV_CH_SIDE_LEFT|AV_CH_SIDE_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="227" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gac36a042dc21866f9043ce930f300d0df" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT1</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="228" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gab057e9fd36b7e929d000d663badbafc6" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT0_BACK</name>
+        <initializer>(AV_CH_LAYOUT_SURROUND|AV_CH_BACK_LEFT|AV_CH_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="229" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gae9da5d6069701241a22f3af19b152662" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT1_BACK</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0_BACK|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="230" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga0fbea70d397140a524b55018128fca77" prot="public" static="no">
+        <name>AV_CH_LAYOUT_6POINT0</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="231" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga735985d89e38896a0cb9e5a1e96cb9b8" prot="public" static="no">
+        <name>AV_CH_LAYOUT_6POINT0_FRONT</name>
+        <initializer>(AV_CH_LAYOUT_2_2|AV_CH_FRONT_LEFT_OF_CENTER|AV_CH_FRONT_RIGHT_OF_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="232" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga44e719835fe17c5af5e619083918d1ca" prot="public" static="no">
+        <name>AV_CH_LAYOUT_HEXAGONAL</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0_BACK|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="233" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga6dbefa26161d04a1b102d439432b6d91" prot="public" static="no">
+        <name>AV_CH_LAYOUT_3POINT1POINT2</name>
+        <initializer>(AV_CH_LAYOUT_3POINT1|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="234" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga0b63b18f49c294bfbc22afa8b59b6685" prot="public" static="no">
+        <name>AV_CH_LAYOUT_6POINT1</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="235" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gaaf1920f827888aeb99540f3ee5a78cea" prot="public" static="no">
+        <name>AV_CH_LAYOUT_6POINT1_BACK</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1_BACK|AV_CH_BACK_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="236" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga934ec29833f0cbc4a1fe8f97cc914664" prot="public" static="no">
+        <name>AV_CH_LAYOUT_6POINT1_FRONT</name>
+        <initializer>(AV_CH_LAYOUT_6POINT0_FRONT|AV_CH_LOW_FREQUENCY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="237" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gab843d4e87bc747c7a81f082589023f98" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT0</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0|AV_CH_BACK_LEFT|AV_CH_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="238" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gaa4c21d7abb460730295f99c7f0098259" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT0_FRONT</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0|AV_CH_FRONT_LEFT_OF_CENTER|AV_CH_FRONT_RIGHT_OF_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="239" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga2006ce652a95bad74291db52fa346464" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1|AV_CH_BACK_LEFT|AV_CH_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="240" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga883478469aa86f5c3f57ce864a12745b" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1_WIDE</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1|AV_CH_FRONT_LEFT_OF_CENTER|AV_CH_FRONT_RIGHT_OF_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="241" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga9702d40a7d1f6e2b00e02d8ecb83bd63" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1_WIDE_BACK</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1_BACK|AV_CH_FRONT_LEFT_OF_CENTER|AV_CH_FRONT_RIGHT_OF_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="242" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga96f247e9e470106f699bc569a4571738" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT1POINT2</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="243" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga00eed225303fbc74472bfe57cfd44e56" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT1POINT2_BACK</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1_BACK|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="244" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gaa760931c084e33a254fca038b7de8dae" prot="public" static="no">
+        <name>AV_CH_LAYOUT_OCTAGONAL</name>
+        <initializer>(AV_CH_LAYOUT_5POINT0|AV_CH_BACK_LEFT|AV_CH_BACK_CENTER|AV_CH_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="245" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga49f2047fa543276deb13fc26fdc7506a" prot="public" static="no">
+        <name>AV_CH_LAYOUT_CUBE</name>
+        <initializer>(AV_CH_LAYOUT_QUAD|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT|AV_CH_TOP_BACK_LEFT|AV_CH_TOP_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="246" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gade586e87c19d7d75619a1097c8f3a1e2" prot="public" static="no">
+        <name>AV_CH_LAYOUT_5POINT1POINT4_BACK</name>
+        <initializer>(AV_CH_LAYOUT_5POINT1POINT2|AV_CH_TOP_BACK_LEFT|AV_CH_TOP_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="247" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gaf2e42ba27a2fe0c87f743f53ac230201" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1POINT2</name>
+        <initializer>(AV_CH_LAYOUT_7POINT1|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="248" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga2318b4b2377593a950e8a3c891769c98" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1POINT4_BACK</name>
+        <initializer>(AV_CH_LAYOUT_7POINT1POINT2|AV_CH_TOP_BACK_LEFT|AV_CH_TOP_BACK_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="249" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga0e0e2f41ed5eb81362b2b980d177223a" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT2POINT3</name>
+        <initializer>(AV_CH_LAYOUT_7POINT1POINT2|AV_CH_TOP_BACK_CENTER|AV_CH_LOW_FREQUENCY_2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="250" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga629777547e40fb2772821e9e2775f02f" prot="public" static="no">
+        <name>AV_CH_LAYOUT_9POINT1POINT4_BACK</name>
+        <initializer>(AV_CH_LAYOUT_7POINT1POINT4_BACK|AV_CH_FRONT_LEFT_OF_CENTER|AV_CH_FRONT_RIGHT_OF_CENTER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="251" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gac614ee87e5592f12bffaa29f6a593356" prot="public" static="no">
+        <name>AV_CH_LAYOUT_9POINT1POINT6</name>
+        <initializer>(AV_CH_LAYOUT_9POINT1POINT4_BACK|AV_CH_TOP_SIDE_LEFT|AV_CH_TOP_SIDE_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="252" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gafdbfe62b38dd3c6b1f89023f7aa6994c" prot="public" static="no">
+        <name>AV_CH_LAYOUT_HEXADECAGONAL</name>
+        <initializer>(AV_CH_LAYOUT_OCTAGONAL|AV_CH_WIDE_LEFT|AV_CH_WIDE_RIGHT|AV_CH_TOP_BACK_LEFT|AV_CH_TOP_BACK_RIGHT|AV_CH_TOP_BACK_CENTER|AV_CH_TOP_FRONT_CENTER|AV_CH_TOP_FRONT_LEFT|AV_CH_TOP_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="253" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gae781ac565afbfa53574d6591d82fe170" prot="public" static="no">
+        <name>AV_CH_LAYOUT_BINAURAL</name>
+        <initializer>(AV_CH_BINAURAL_LEFT|AV_CH_BINAURAL_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="254" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga3004e784b29fd907a0d4aebeca0e6933" prot="public" static="no">
+        <name>AV_CH_LAYOUT_STEREO_DOWNMIX</name>
+        <initializer>(AV_CH_STEREO_LEFT|AV_CH_STEREO_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="255" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1gac0d3e73d4dfb8b647e069acaba644115" prot="public" static="no">
+        <name>AV_CH_LAYOUT_22POINT2</name>
+        <initializer>(AV_CH_LAYOUT_9POINT1POINT6|AV_CH_BACK_CENTER|AV_CH_LOW_FREQUENCY_2|AV_CH_TOP_FRONT_CENTER|AV_CH_TOP_CENTER|AV_CH_TOP_BACK_CENTER|AV_CH_BOTTOM_FRONT_CENTER|AV_CH_BOTTOM_FRONT_LEFT|AV_CH_BOTTOM_FRONT_RIGHT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="256" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__channel__mask__c_1ga702c20179f2e483e34f8ca3311d3d56e" prot="public" static="no">
+        <name>AV_CH_LAYOUT_7POINT1_TOP_BACK</name>
+        <initializer>AV_CH_LAYOUT_5POINT1POINT2_BACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="258" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

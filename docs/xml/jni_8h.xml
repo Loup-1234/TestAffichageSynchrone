@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="jni_8h" kind="file" language="C++">
+    <compoundname>jni.h</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="jni_8h_1a76eef69bbf6f59433855cb42a55fd5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_jni_set_java_vm</definition>
+        <argsstring>(void *vm, void *log_ctx)</argsstring>
+        <name>av_jni_set_java_vm</name>
+        <param>
+          <type>void *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" line="36" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" declline="36" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="jni_8h_1ad07c79d829259a1a893aeb859c7ad404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_jni_get_java_vm</definition>
+        <argsstring>(void *log_ctx)</argsstring>
+        <name>av_jni_get_java_vm</name>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" line="44" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="jni_8h_1a2b95ddfaa5ac3e3d643d0df8fe30bb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_jni_set_android_app_ctx</definition>
+        <argsstring>(void *app_ctx, void *log_ctx)</argsstring>
+        <name>av_jni_set_android_app_ctx</name>
+        <param>
+          <type>void *</type>
+          <declname>app_ctx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" line="55" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" declline="55" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="jni_8h_1a53cbe217af7d64ac839da77f60d601e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_jni_get_android_app_ctx</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_jni_get_android_app_ctx</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" line="65" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h" declline="65" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>JNI<sp/>public<sp/>API<sp/>functions</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2016<sp/>Matthieu<sp/>Bouron<sp/>&lt;matthieu.bouron<sp/>stupeflix.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_JNI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_JNI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>Manually<sp/>set<sp/>a<sp/>Java<sp/>virtual<sp/>machine<sp/>which<sp/>will<sp/>be<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>JNI</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>environment.<sp/>Once<sp/>a<sp/>Java<sp/>VM<sp/>is<sp/>set<sp/>it<sp/>cannot<sp/>be<sp/>changed<sp/>afterwards,<sp/>meaning</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>you<sp/>can<sp/>call<sp/>multiple<sp/>times<sp/>av_jni_set_java_vm<sp/>with<sp/>the<sp/>same<sp/>Java<sp/>VM<sp/>pointer</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>however<sp/>it<sp/>will<sp/>error<sp/>out<sp/>if<sp/>you<sp/>try<sp/>to<sp/>set<sp/>a<sp/>different<sp/>Java<sp/>VM.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>@param<sp/>vm<sp/>Java<sp/>virtual<sp/>machine</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>@param<sp/>log_ctx<sp/>context<sp/>used<sp/>for<sp/>logging,<sp/>can<sp/>be<sp/>NULL</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>@return<sp/>0<sp/>on<sp/>success,<sp/>&lt;<sp/>0<sp/>otherwise</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_jni_set_java_vm(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*vm,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>Java<sp/>virtual<sp/>machine<sp/>which<sp/>has<sp/>been<sp/>set<sp/>with<sp/>av_jni_set_java_vm.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>@param<sp/>vm<sp/>Java<sp/>virtual<sp/>machine</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>@return<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>Java<sp/>virtual<sp/>machine</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_jni_get_java_vm(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>Set<sp/>the<sp/>Android<sp/>application<sp/>context<sp/>which<sp/>will<sp/>be<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>Android</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>content<sp/>resolver<sp/>to<sp/>handle<sp/>content<sp/>uris.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>is<sp/>only<sp/>available<sp/>on<sp/>Android.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>@param<sp/>app_ctx<sp/>global<sp/>JNI<sp/>reference<sp/>to<sp/>the<sp/>Android<sp/>application<sp/>context</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>@return<sp/>0<sp/>on<sp/>success,<sp/>&lt;<sp/>0<sp/>otherwise</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_jni_set_android_app_ctx(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*app_ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>Android<sp/>application<sp/>context<sp/>that<sp/>has<sp/>been<sp/>set<sp/>with</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>av_jni_set_android_app_ctx.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>is<sp/>only<sp/>available<sp/>on<sp/>Android.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>@return<sp/>a<sp/>pointer<sp/>the<sp/>the<sp/>Android<sp/>application<sp/>context</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_jni_get_android_app_ctx(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVCODEC_JNI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/jni.h"/>
+  </compounddef>
+</doxygen>

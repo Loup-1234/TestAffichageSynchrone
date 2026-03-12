@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d3_d11_v_a_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVD3D11VAContext</compoundname>
+    <includes refid="d3d11va_8h" local="no">d3d11va.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a8ac56b0cbe384482dec2d367c19c932c" prot="public" static="no" mutable="no">
+        <type>ID3D11VideoDecoder *</type>
+        <definition>ID3D11VideoDecoder* AVD3D11VAContext::decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <qualifiedname>AVD3D11VAContext::decoder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D3D11 decoder object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="60" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a14f4a1d42cb3d7f315c474ad0799fa1d" prot="public" static="no" mutable="no">
+        <type>ID3D11VideoContext *</type>
+        <definition>ID3D11VideoContext* AVD3D11VAContext::video_context</definition>
+        <argsstring></argsstring>
+        <name>video_context</name>
+        <qualifiedname>AVD3D11VAContext::video_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D3D11 VideoContext </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="65" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a06418fa3d9d4e26d27c0ddfbaff8f1d0" prot="public" static="no" mutable="no">
+        <type>D3D11_VIDEO_DECODER_CONFIG *</type>
+        <definition>D3D11_VIDEO_DECODER_CONFIG* AVD3D11VAContext::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <qualifiedname>AVD3D11VAContext::cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D3D11 configuration used to create the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="70" column="32" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a390b7bb7aef410174833ec50cd890a32" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVD3D11VAContext::surface_count</definition>
+        <argsstring></argsstring>
+        <name>surface_count</name>
+        <qualifiedname>AVD3D11VAContext::surface_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of surface in the surface array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="75" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a1f81c5d101cf91cfb3eb962d4b0d17a7" prot="public" static="no" mutable="no">
+        <type>ID3D11VideoDecoderOutputView **</type>
+        <definition>ID3D11VideoDecoderOutputView** AVD3D11VAContext::surface</definition>
+        <argsstring></argsstring>
+        <name>surface</name>
+        <qualifiedname>AVD3D11VAContext::surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of Direct3D surfaces used to create the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="80" column="34" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1ab38ae8996b3861726f809d616a4ace88" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVD3D11VAContext::workaround</definition>
+        <argsstring></argsstring>
+        <name>workaround</name>
+        <qualifiedname>AVD3D11VAContext::workaround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A bit field configuring the workarounds needed for using the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="85" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1a0dd2a5ee2fd8c07ba425814f7ca2fd79" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVD3D11VAContext::report_id</definition>
+        <argsstring></argsstring>
+        <name>report_id</name>
+        <qualifiedname>AVD3D11VAContext::report_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private to the FFmpeg <ref refid="struct_a_v_h_w_accel" kindref="compound">AVHWAccel</ref> implementation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="90" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_context_1aacaa0c50499a31fe55f4f19d2f856aa3" prot="public" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE AVD3D11VAContext::context_mutex</definition>
+        <argsstring></argsstring>
+        <name>context_mutex</name>
+        <qualifiedname>AVD3D11VAContext::context_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mutex to access video_context </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="95" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure is used to provides the necessary configurations and data to the Direct3D11 FFmpeg HWAccel implementation.</para>
+<para>The application must make it available as <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref>.</para>
+<para>Use <ref refid="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" kindref="member">av_d3d11va_alloc_context()</ref> exclusively to allocate an <ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="56" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="56" bodyend="96"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a06418fa3d9d4e26d27c0ddfbaff8f1d0" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>cfg</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1aacaa0c50499a31fe55f4f19d2f856aa3" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>context_mutex</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a8ac56b0cbe384482dec2d367c19c932c" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>decoder</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a0dd2a5ee2fd8c07ba425814f7ca2fd79" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>report_id</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a1f81c5d101cf91cfb3eb962d4b0d17a7" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>surface</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a390b7bb7aef410174833ec50cd890a32" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>surface_count</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1a14f4a1d42cb3d7f315c474ad0799fa1d" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>video_context</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_context_1ab38ae8996b3861726f809d616a4ace88" prot="public" virt="non-virtual"><scope>AVD3D11VAContext</scope><name>workaround</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

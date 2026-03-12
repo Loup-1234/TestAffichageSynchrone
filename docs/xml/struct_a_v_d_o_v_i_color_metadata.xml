@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_o_v_i_color_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>AVDOVIColorMetadata</compoundname>
+    <includes refid="dovi__meta_8h" local="no">dovi_meta.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1aca621d178fb68cb939e4af82227d0718" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::dm_metadata_id</definition>
+        <argsstring></argsstring>
+        <name>dm_metadata_id</name>
+        <qualifiedname>AVDOVIColorMetadata::dm_metadata_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="172" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a71652428c605e8f9a1171edd2532be00" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::scene_refresh_flag</definition>
+        <argsstring></argsstring>
+        <name>scene_refresh_flag</name>
+        <qualifiedname>AVDOVIColorMetadata::scene_refresh_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="173" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a471ed5ab32427d9019b8d7b3836faf89" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDOVIColorMetadata::ycc_to_rgb_matrix[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>ycc_to_rgb_matrix</name>
+        <qualifiedname>AVDOVIColorMetadata::ycc_to_rgb_matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficients of the custom Dolby Vision IPT-PQ matrices. These are to be used instead of the matrices indicated by the frame&apos;s colorspace tags. The output of rgb_to_lms_matrix is to be fed into a BT.2020 LMS-&gt;RGB matrix based on a Hunt-Pointer-Estevez transform, but without any crosstalk. (See the definition of the ICtCp colorspace for more information.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="183" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1affb4d14ac293bec5b5f8519c3becef0a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDOVIColorMetadata::ycc_to_rgb_offset[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>ycc_to_rgb_offset</name>
+        <qualifiedname>AVDOVIColorMetadata::ycc_to_rgb_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="184" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a244baef64e9b7f7f2e3169a35ae847a4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDOVIColorMetadata::rgb_to_lms_matrix[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>rgb_to_lms_matrix</name>
+        <qualifiedname>AVDOVIColorMetadata::rgb_to_lms_matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="185" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a139e51cd0facab097aa1cea908c24dfc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::signal_eotf</definition>
+        <argsstring></argsstring>
+        <name>signal_eotf</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_eotf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra signal metadata (see Dolby patents for more info). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="190" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a4afaf14f361f18e6a9665f584c46dc74" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::signal_eotf_param0</definition>
+        <argsstring></argsstring>
+        <name>signal_eotf_param0</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_eotf_param0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="191" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a51f560ffec34402545d6982e4e86507f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::signal_eotf_param1</definition>
+        <argsstring></argsstring>
+        <name>signal_eotf_param1</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_eotf_param1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="192" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1ad1c34758316abceb089a8b68d75ba497" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVDOVIColorMetadata::signal_eotf_param2</definition>
+        <argsstring></argsstring>
+        <name>signal_eotf_param2</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_eotf_param2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="193" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a4603f110372964c255783071a5316b60" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::signal_bit_depth</definition>
+        <argsstring></argsstring>
+        <name>signal_bit_depth</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_bit_depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="194" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1ad6bf3f5b663f50d685829e0a07deee90" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::signal_color_space</definition>
+        <argsstring></argsstring>
+        <name>signal_color_space</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_color_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="195" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1aaffbdf4a09caa5593019f449010156ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::signal_chroma_format</definition>
+        <argsstring></argsstring>
+        <name>signal_chroma_format</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_chroma_format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="196" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1af721a7f8a3dff0456eb1c8f75764c5d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIColorMetadata::signal_full_range_flag</definition>
+        <argsstring></argsstring>
+        <name>signal_full_range_flag</name>
+        <qualifiedname>AVDOVIColorMetadata::signal_full_range_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="197" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1a725112652cdfb7159c9ead7c79d91f20" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::source_min_pq</definition>
+        <argsstring></argsstring>
+        <name>source_min_pq</name>
+        <qualifiedname>AVDOVIColorMetadata::source_min_pq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="198" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1acd3da9a63c9a53fbc407d23ae267d102" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::source_max_pq</definition>
+        <argsstring></argsstring>
+        <name>source_max_pq</name>
+        <qualifiedname>AVDOVIColorMetadata::source_max_pq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="199" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_color_metadata_1abf552ca732bc981ba9950c11d03b4115" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIColorMetadata::source_diagonal</definition>
+        <argsstring></argsstring>
+        <name>source_diagonal</name>
+        <qualifiedname>AVDOVIColorMetadata::source_diagonal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="200" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Dolby Vision RPU colorspace metadata parameters.</para>
+<para><simplesect kind="note"><para>sizeof(AVDOVIColorMetadata) is not part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDOVIColorMetadata</label>
+        <link refid="struct_a_v_d_o_v_i_color_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rgb_to_lms_matrix</edgelabel>
+          <edgelabel>ycc_to_rgb_matrix</edgelabel>
+          <edgelabel>ycc_to_rgb_offset</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="171" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="171" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1aca621d178fb68cb939e4af82227d0718" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>dm_metadata_id</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a244baef64e9b7f7f2e3169a35ae847a4" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>rgb_to_lms_matrix</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a71652428c605e8f9a1171edd2532be00" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>scene_refresh_flag</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a4603f110372964c255783071a5316b60" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_bit_depth</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1aaffbdf4a09caa5593019f449010156ab" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_chroma_format</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1ad6bf3f5b663f50d685829e0a07deee90" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_color_space</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a139e51cd0facab097aa1cea908c24dfc" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_eotf</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a4afaf14f361f18e6a9665f584c46dc74" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_eotf_param0</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a51f560ffec34402545d6982e4e86507f" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_eotf_param1</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1ad1c34758316abceb089a8b68d75ba497" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_eotf_param2</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1af721a7f8a3dff0456eb1c8f75764c5d5" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>signal_full_range_flag</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1abf552ca732bc981ba9950c11d03b4115" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>source_diagonal</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1acd3da9a63c9a53fbc407d23ae267d102" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>source_max_pq</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a725112652cdfb7159c9ead7c79d91f20" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>source_min_pq</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1a471ed5ab32427d9019b8d7b3836faf89" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>ycc_to_rgb_matrix</name></member>
+      <member refid="struct_a_v_d_o_v_i_color_metadata_1affb4d14ac293bec5b5f8519c3becef0a" prot="public" virt="non-virtual"><scope>AVDOVIColorMetadata</scope><name>ycc_to_rgb_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

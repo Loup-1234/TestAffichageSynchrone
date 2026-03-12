@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="buffer_8h" kind="file" language="C++">
+    <compoundname>buffer.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="exif_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h</includedby>
+    <includedby refid="packet_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h</includedby>
+    <includedby refid="qsv_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h</includedby>
+    <includedby refid="avfilter_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</includedby>
+    <includedby refid="frame_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</includedby>
+    <includedby refid="hwcontext_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h</label>
+        <link refid="exif_8h"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h</label>
+        <link refid="packet_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h</label>
+        <link refid="qsv_8h_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_buffer_ref" prot="public">AVBufferRef</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavu__buffer_1gaa818f8f1011d69acc50c1f29cb85e576" kind="define"><name>AV_BUFFER_FLAG_READONLY</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kind="typedef"><name>AVBuffer</name></member>
+      <member refid="group__lavu__buffer_1ga7a4e1b9f08ad932631e15ff01adf2085" kind="typedef"><name>AVBufferRef</name></member>
+      <member refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kind="typedef"><name>AVBufferPool</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kind="function"><name>av_buffer_alloc</name></member>
+      <member refid="group__lavu__buffer_1ga5bd498f1a8e537c06c419c6345e061ae" kind="function"><name>av_buffer_allocz</name></member>
+      <member refid="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" kind="function"><name>av_buffer_create</name></member>
+      <member refid="group__lavu__buffer_1ga37d620e8cfc9f2f3261c2b4c5d4adfe0" kind="function"><name>av_buffer_default_free</name></member>
+      <member refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kind="function"><name>av_buffer_ref</name></member>
+      <member refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" kind="function"><name>av_buffer_unref</name></member>
+      <member refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kind="function"><name>av_buffer_is_writable</name></member>
+      <member refid="group__lavu__buffer_1gaa68265370a808d3b9f55a518a958ba3c" kind="function"><name>av_buffer_get_opaque</name></member>
+      <member refid="group__lavu__buffer_1ga7b16c3976dc555f71d0843bbd023dfcd" kind="function"><name>av_buffer_get_ref_count</name></member>
+      <member refid="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" kind="function"><name>av_buffer_make_writable</name></member>
+      <member refid="group__lavu__buffer_1ga20c1c0e1b0c606451fb2e12ef27d65f3" kind="function"><name>av_buffer_realloc</name></member>
+      <member refid="group__lavu__buffer_1ga8029fa24636791cc93cc05ad8f7ee44b" kind="function"><name>av_buffer_replace</name></member>
+      <member refid="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" kind="function"><name>av_buffer_pool_init</name></member>
+      <member refid="group__lavu__bufferpool_1gabe67d225e59399d5265381f58fb77896" kind="function"><name>av_buffer_pool_init2</name></member>
+      <member refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" kind="function"><name>av_buffer_pool_uninit</name></member>
+      <member refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" kind="function"><name>av_buffer_pool_get</name></member>
+      <member refid="group__lavu__bufferpool_1ga27fc679dbb39e3fb2953bded0f4ee404" kind="function"><name>av_buffer_pool_buffer_get_opaque</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>refcounted data buffer API </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_BUFFER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_BUFFER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref><sp/><ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="struct_a_v_buffer_ref" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref><sp/>*buffer;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="struct_a_v_buffer_ref_1acb8452e99cd75074b93800b532c6ea4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="struct_a_v_buffer_ref_1acb8452e99cd75074b93800b532c6ea4b" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="94" refid="struct_a_v_buffer_ref_1ad291cf97a52ce333842c429d3df78fb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref_1ad291cf97a52ce333842c429d3df78fb8" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="95" refid="group__lavu__buffer_1ga7a4e1b9f08ad932631e15ff01adf2085" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="group__lavu__buffer_1ga5bd498f1a8e537c06c419c6345e061ae" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__buffer_1ga5bd498f1a8e537c06c419c6345e061ae" kindref="member">av_buffer_allocz</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="group__lavu__buffer_1gaa818f8f1011d69acc50c1f29cb85e576" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_BUFFER_FLAG_READONLY<sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" kindref="member">av_buffer_create</ref>(uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/>uint8_t<sp/>*data),</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="group__lavu__buffer_1ga37d620e8cfc9f2f3261c2b4c5d4adfe0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga37d620e8cfc9f2f3261c2b4c5d4adfe0" kindref="member">av_buffer_default_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/>uint8_t<sp/>*data);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" kindref="member">av_buffer_unref</ref>(<ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**buf);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kindref="member">av_buffer_is_writable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group__lavu__buffer_1gaa68265370a808d3b9f55a518a958ba3c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__buffer_1gaa68265370a808d3b9f55a518a958ba3c" kindref="member">av_buffer_get_opaque</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_buffer_get_ref_count(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" kindref="member">av_buffer_make_writable</ref>(<ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**buf);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group__lavu__buffer_1ga20c1c0e1b0c606451fb2e12ef27d65f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga20c1c0e1b0c606451fb2e12ef27d65f3" kindref="member">av_buffer_realloc</ref>(<ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="group__lavu__buffer_1ga8029fa24636791cc93cc05ad8f7ee44b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__buffer_1ga8029fa24636791cc93cc05ad8f7ee44b" kindref="member">av_buffer_replace</ref>(<ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref><sp/><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" refkind="member"><highlight class="normal"><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref><sp/>*<ref refid="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" kindref="member">av_buffer_pool_init</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>*<sp/>(*alloc)(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="group__lavu__bufferpool_1gabe67d225e59399d5265381f58fb77896" refkind="member"><highlight class="normal"><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref><sp/>*<ref refid="group__lavu__bufferpool_1gabe67d225e59399d5265381f58fb77896" kindref="member">av_buffer_pool_init2</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>*<sp/>(*alloc)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size),</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*pool_free)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque));</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" kindref="member">av_buffer_pool_uninit</ref>(<ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref><sp/>**pool);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" kindref="member">av_buffer_pool_get</ref>(<ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref><sp/>*pool);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="group__lavu__bufferpool_1ga27fc679dbb39e3fb2953bded0f4ee404" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__bufferpool_1ga27fc679dbb39e3fb2953bded0f4ee404" kindref="member">av_buffer_pool_buffer_get_opaque</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*ref);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_BUFFER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h"/>
+  </compounddef>
+</doxygen>

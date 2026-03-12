@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__hash__generic" kind="group">
+    <compoundname>lavu_hash_generic</compoundname>
+    <title>Generic Hashing API</title>
+    <innerfile refid="hash_8h">hash.h</innerfile>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__hash__generic_1gad1e018687f3a0e9baf3fb6d3af0dd10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_hash_alloc</definition>
+        <argsstring>(struct AVHashContext **ctx, const char *name)</argsstring>
+        <name>av_hash_alloc</name>
+        <param>
+          <type>struct AVHashContext **</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a hash context for the algorithm specified by name.</para>
+<para><simplesect kind="return"><para>&gt;= 0 for success, a negative error code for failure</para>
+</simplesect>
+<simplesect kind="note"><para>The context is not initialized after a call to this function; you must call <ref refid="group__lavu__hash__generic_1ga84ef872a731eb5c2637ddcd0f0976bca" kindref="member">av_hash_init()</ref> to do so. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="125" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="125" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1gadd204c00234c1f0ed710376a448bc77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_hash_names</definition>
+        <argsstring>(int i)</argsstring>
+        <name>av_hash_names</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of available hash algorithms.</para>
+<para>This function can be used to enumerate the algorithms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the hash algorithm, starting from 0 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a static string or <computeroutput>NULL</computeroutput> if <computeroutput>i</computeroutput> is out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="135" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="135" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga5e12e548f508b11d02ec29abbabe8cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_hash_get_name</definition>
+        <argsstring>(const struct AVHashContext *ctx)</argsstring>
+        <name>av_hash_get_name</name>
+        <param>
+          <type>const struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of the algorithm corresponding to the given hash context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="140" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="140" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_hash_get_size</definition>
+        <argsstring>(const struct AVHashContext *ctx)</argsstring>
+        <name>av_hash_get_size</name>
+        <param>
+          <type>const struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size of the resulting hash value in bytes.</para>
+<para>The maximum value this function will currently return is available as macro <ref refid="group__lavu__hash__generic_1gaff5173f8837eb3afbd20b52528833d72" kindref="member">AV_HASH_MAX_SIZE</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size of the hash value in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="167" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="167" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga84ef872a731eb5c2637ddcd0f0976bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_init</definition>
+        <argsstring>(struct AVHashContext *ctx)</argsstring>
+        <name>av_hash_init</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize or reset a hash context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="174" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="174" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1gaa94897ebd6e994788dbc1bf98fb935f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_update</definition>
+        <argsstring>(struct AVHashContext *ctx, const uint8_t *src, size_t len)</argsstring>
+        <name>av_hash_update</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a hash context with additional data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be added to the hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the additional data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="183" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="183" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1gaeff9a69f576f8f94e33a0b43a08baa70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_final</definition>
+        <argsstring>(struct AVHashContext *ctx, uint8_t *dst)</argsstring>
+        <name>av_hash_final</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize a hash context and compute the actual hash value.</para>
+<para>The minimum size of <computeroutput>dst</computeroutput> buffer is given by <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref> or <ref refid="group__lavu__hash__generic_1gaff5173f8837eb3afbd20b52528833d72" kindref="member">AV_HASH_MAX_SIZE</ref>. The use of the latter macro is discouraged.</para>
+<para>It is not safe to update or finalize a hash context again, if it has already been finalized.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the final hash value will be stored</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__hash__generic_1ga65e1a59bf9c2076eda5884e89249af12" kindref="member">av_hash_final_bin()</ref> provides an alternative API </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="199" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="199" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga65e1a59bf9c2076eda5884e89249af12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_final_bin</definition>
+        <argsstring>(struct AVHashContext *ctx, uint8_t *dst, int size)</argsstring>
+        <name>av_hash_final_bin</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize a hash context and store the actual hash value in a buffer.</para>
+<para>It is not safe to update or finalize a hash context again, if it has already been finalized.</para>
+<para>If <computeroutput>size</computeroutput> is smaller than the hash size (given by <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref>), the hash is truncated; if size is larger, the buffer is padded with 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the final hash value will be stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to write to <computeroutput>dst</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="214" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="214" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga8316ebcbe11caebc88b4c4afc0eef16c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_final_hex</definition>
+        <argsstring>(struct AVHashContext *ctx, uint8_t *dst, int size)</argsstring>
+        <name>av_hash_final_hex</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize a hash context and store the hexadecimal representation of the actual hash value as a string.</para>
+<para>It is not safe to update or finalize a hash context again, if it has already been finalized.</para>
+<para>The string is always 0-terminated.</para>
+<para>If <computeroutput>size</computeroutput> is smaller than <computeroutput>2 * hash_size + 1</computeroutput>, where <computeroutput>hash_size</computeroutput> is the value returned by <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref>, the string will be truncated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the string will be stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to write to <computeroutput>dst</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="232" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="232" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga2300a29e15fd439bcac2f9bc35b730ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_final_b64</definition>
+        <argsstring>(struct AVHashContext *ctx, uint8_t *dst, int size)</argsstring>
+        <name>av_hash_final_b64</name>
+        <param>
+          <type>struct AVHashContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize a hash context and store the Base64 representation of the actual hash value as a string.</para>
+<para>It is not safe to update or finalize a hash context again, if it has already been finalized.</para>
+<para>The string is always 0-terminated.</para>
+<para>If <computeroutput>size</computeroutput> is smaller than <ref refid="group__lavu__base64_1gaa79f39ca3f737b662ae6711d2cbecd20" kindref="member">AV_BASE64_SIZE(hash_size)</ref>, where <computeroutput>hash_size</computeroutput> is the value returned by <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref>, the string will be truncated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the final hash value will be stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to write to <computeroutput>dst</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="250" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="250" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hash__generic_1ga1e8bac529966e9af25f3608d3a1515ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hash_freep</definition>
+        <argsstring>(struct AVHashContext **ctx)</argsstring>
+        <name>av_hash_freep</name>
+        <param>
+          <type>struct AVHashContext **</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free hash context and set hash context pointer to <computeroutput>NULL</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to hash context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="257" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" declline="257" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__hash__generic_1gaff5173f8837eb3afbd20b52528833d72" prot="public" static="no">
+        <name>AV_HASH_MAX_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum value that <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref> will currently return.</para>
+<para>You can use this if you absolutely want or need to use static allocation for the output buffer and are fine with not supporting hashes newly added to libavutil without recompilation.</para>
+<para><simplesect kind="warning"><para>Adding new hashes with larger sizes, and increasing the macro while doing so, will not be considered an ABI change. To prevent your code from overflowing a buffer, either dynamically allocate the output buffer with <ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size()</ref>, or limit your use of the Hashing API to hashes that are already in FFmpeg during the time of compilation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" line="156" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hash.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An abstraction layer for all hash functions supported by libavutil.</para>
+<para>If your application needs to support a wide range of different hash functions, then the Generic Hashing API is for you. It provides a generic, reusable API for <ref refid="group__lavu__hash" kindref="compound">all hash functions</ref> implemented in libavutil. If you just need to use one particular hash function, use the <ref refid="group__lavu__hash" kindref="compound">individual hash</ref> directly.</para>
+<sect1 id="group__lavu__hash__generic_1Sample">
+<title>Code</title><para>A basic template for using the Generic Hashing API follows:</para>
+<para><programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVHashContext<sp/>*ctx<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*hash_name<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>*output_buf<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Select<sp/>from<sp/>a<sp/>string<sp/>returned<sp/>by<sp/>av_hash_names()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">hash_name<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>a<sp/>hash<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/><ref refid="group__lavu__hash__generic_1gad1e018687f3a0e9baf3fb6d3af0dd10b" kindref="member">av_hash_alloc</ref>(&amp;ctx,<sp/>hash_name);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>hash<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__hash__generic_1ga84ef872a731eb5c2637ddcd0f0976bca" kindref="member">av_hash_init</ref>(ctx);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>hash<sp/>context<sp/>with<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(data_left)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__hash__generic_1gaa94897ebd6e994788dbc1bf98fb935f3" kindref="member">av_hash_update</ref>(ctx,<sp/>data,<sp/>size);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>we<sp/>have<sp/>no<sp/>more<sp/>data,<sp/>so<sp/>it<sp/>is<sp/>time<sp/>to<sp/>finalize<sp/>the<sp/>hash<sp/>and<sp/>get<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>output.<sp/>But<sp/>we<sp/>need<sp/>to<sp/>first<sp/>allocate<sp/>an<sp/>output<sp/>buffer.<sp/>Note<sp/>that<sp/>you<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>use<sp/>any<sp/>memory<sp/>allocation<sp/>function,<sp/>including<sp/>malloc(),<sp/>not<sp/>just</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>av_malloc().</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">output_buf<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc</ref>(<ref refid="group__lavu__hash__generic_1ga8bf8f94e3ebf73f838d017f83352d880" kindref="member">av_hash_get_size</ref>(ctx));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!output_buf)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Finalize<sp/>the<sp/>hash<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>use<sp/>any<sp/>of<sp/>the<sp/>av_hash_final*()<sp/>functions<sp/>provided,<sp/>for<sp/>other</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>output<sp/>formats.<sp/>If<sp/>you<sp/>do<sp/>so,<sp/>be<sp/>sure<sp/>to<sp/>adjust<sp/>the<sp/>memory<sp/>allocation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>above.<sp/>See<sp/>the<sp/>function<sp/>documentation<sp/>below<sp/>for<sp/>the<sp/>exact<sp/>amount<sp/>of<sp/>extra</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>memory<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__hash__generic_1gaeff9a69f576f8f94e33a0b43a08baa70" kindref="member">av_hash_final</ref>(ctx,<sp/>output_buffer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Free<sp/>the<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__hash__generic_1ga1e8bac529966e9af25f3608d3a1515ab" kindref="member">av_hash_freep</ref>(&amp;ctx);</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="group__lavu__hash__generic_1Hash">
+<title>Function-Specific Information</title><para>If the CRC32 hash is selected, the #AV_CRC_32_IEEE polynomial will be used.</para>
+<para>If the Murmur3 hash is selected, the default seed will be used. See <ref refid="group__lavu__murmur3_1lavu_murmur3_seedinfo" kindref="member">Murmur3</ref> for more information. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

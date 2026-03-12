@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__riff__fourcc" kind="group">
+    <compoundname>riff_fourcc</compoundname>
+    <title>RIFF FourCCs</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__riff__fourcc_1gaf875273bf4a35b33251cfca63e20d6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct AVCodecTag *</type>
+        <definition>const struct AVCodecTag * avformat_get_riff_video_tags</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_get_riff_video_tags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the table mapping RIFF FourCCs for video to libavcodec <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2920" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2920" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__riff__fourcc_1ga8cbb43e6d57f1692212488b98d70b505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct AVCodecTag *</type>
+        <definition>const struct AVCodecTag * avformat_get_riff_audio_tags</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_get_riff_audio_tags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the table mapping RIFF FourCCs for audio to <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2924" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2924" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__riff__fourcc_1ga96f10176e7a8028b8afb3de1a3d7476c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct AVCodecTag *</type>
+        <definition>const struct AVCodecTag * avformat_get_mov_video_tags</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_get_mov_video_tags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the table mapping MOV FourCCs for video to libavcodec <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2928" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2928" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__riff__fourcc_1ga8bee63248fe1d1dd98a03f401c3325aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct AVCodecTag *</type>
+        <definition>const struct AVCodecTag * avformat_get_mov_audio_tags</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_get_mov_audio_tags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the table mapping MOV FourCCs for audio to <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2932" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2932" declcolumn="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Get the tables mapping RIFF FourCCs to libavcodec AVCodecIDs. The tables are meant to be passed to <ref refid="group__lavf__misc_1ga27b89fa8286af6efb5a69e8db4033b09" kindref="member">av_codec_get_id()</ref>/av_codec_get_tag() as in the following code: <programlisting><codeline><highlight class="normal">uint32_t<sp/>tag<sp/>=<sp/>MKTAG(</highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;6&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;4&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVCodecTag<sp/>*table[]<sp/>=<sp/>{<sp/><ref refid="group__riff__fourcc_1gaf875273bf4a35b33251cfca63e20d6d4" kindref="member">avformat_get_riff_video_tags</ref>(),<sp/>0<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="group__lavf__misc_1ga27b89fa8286af6efb5a69e8db4033b09" kindref="member">av_codec_get_id</ref>(table,<sp/>tag);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

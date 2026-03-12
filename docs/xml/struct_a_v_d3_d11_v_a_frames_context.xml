@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d3_d11_v_a_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVD3D11VAFramesContext</compoundname>
+    <includes refid="hwcontext__d3d11va_8h" local="no">hwcontext_d3d11va.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_frames_context_1a359e4ccfa46c05a225947aea7ce7ac17" prot="public" static="no" mutable="no">
+        <type>ID3D11Texture2D *</type>
+        <definition>ID3D11Texture2D* AVD3D11VAFramesContext::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <qualifiedname>AVD3D11VAFramesContext::texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The canonical texture used for pool allocation. If this is set to NULL on init, the hwframes implementation will allocate and set an array texture if initial_pool_size &gt; 0.</para>
+<para>The only situation when the API user should set this is:<itemizedlist>
+<listitem><para>the user wants to do manual pool allocation (setting <ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref>), instead of letting <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref> allocate the pool</para>
+</listitem><listitem><para>of an array texture</para>
+</listitem><listitem><para>and wants it to use it for decoding</para>
+</listitem><listitem><para>this has to be done before calling av_hwframe_ctx_init()</para>
+</listitem></itemizedlist>
+</para>
+<para>Deallocating the <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref> will always release this interface, and it does not matter whether it was user-allocated.</para>
+<para>This is in particular used by the libavcodec D3D11VA hwaccel, which requires a single array texture. It will create ID3D11VideoDecoderOutputView objects for each array texture element on decoder initialization. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" line="152" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_frames_context_1aec047f8d786efadffc38c558e8792884" prot="public" static="no" mutable="no">
+        <type>UINT</type>
+        <definition>UINT AVD3D11VAFramesContext::BindFlags</definition>
+        <argsstring></argsstring>
+        <name>BindFlags</name>
+        <qualifiedname>AVD3D11VAFramesContext::BindFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D3D11_TEXTURE2D_DESC.BindFlags used for texture creation. The user must at least set D3D11_BIND_DECODER if the frames context is to be used for video decoding. This field is ignored/invalid if a user-allocated texture is provided. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" line="160" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_frames_context_1a0dd15f99a1112be3fa04d08b57775bd6" prot="public" static="no" mutable="no">
+        <type>UINT</type>
+        <definition>UINT AVD3D11VAFramesContext::MiscFlags</definition>
+        <argsstring></argsstring>
+        <name>MiscFlags</name>
+        <qualifiedname>AVD3D11VAFramesContext::MiscFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D3D11_TEXTURE2D_DESC.MiscFlags used for texture creation. This field is ignored/invalid if a user-allocated texture is provided. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" line="166" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d11_v_a_frames_context_1ac3922d497a5869e2e40a5b08ab2477dc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_d3_d11_frame_descriptor" kindref="compound">AVD3D11FrameDescriptor</ref> *</type>
+        <definition>AVD3D11FrameDescriptor* AVD3D11VAFramesContext::texture_infos</definition>
+        <argsstring></argsstring>
+        <name>texture_infos</name>
+        <qualifiedname>AVD3D11VAFramesContext::texture_infos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In case if texture structure member above is not NULL contains the same texture pointer for all elements and different indexes into the array texture. In case if texture structure member above is NULL, all elements contains pointers to separate non-array textures and 0 indexes. This field is ignored/invalid if a user-allocated texture is provided. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" line="175" column="28" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVD3D11FrameDescriptor</label>
+        <link refid="struct_a_v_d3_d11_frame_descriptor"/>
+      </node>
+      <node id="1">
+        <label>AVD3D11VAFramesContext</label>
+        <link refid="struct_a_v_d3_d11_v_a_frames_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>texture_infos</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" line="131" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d11va.h" bodystart="131" bodyend="176"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d3_d11_v_a_frames_context_1aec047f8d786efadffc38c558e8792884" prot="public" virt="non-virtual"><scope>AVD3D11VAFramesContext</scope><name>BindFlags</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_frames_context_1a0dd15f99a1112be3fa04d08b57775bd6" prot="public" virt="non-virtual"><scope>AVD3D11VAFramesContext</scope><name>MiscFlags</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_frames_context_1a359e4ccfa46c05a225947aea7ce7ac17" prot="public" virt="non-virtual"><scope>AVD3D11VAFramesContext</scope><name>texture</name></member>
+      <member refid="struct_a_v_d3_d11_v_a_frames_context_1ac3922d497a5869e2e40a5b08ab2477dc" prot="public" virt="non-virtual"><scope>AVD3D11VAFramesContext</scope><name>texture_infos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

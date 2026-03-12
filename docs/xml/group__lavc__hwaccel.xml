@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__hwaccel" kind="group">
+    <compoundname>lavc_hwaccel</compoundname>
+    <title>AVHWAccel</title>
+    <innerclass refid="struct_a_v_h_w_accel" prot="public">AVHWAccel</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__hwaccel_1gadd38f7760cae323937bb145fc832c33d" prot="public" static="no">
+        <type>struct AVHWAccel</type>
+        <definition>typedef struct AVHWAccel AVHWAccel</definition>
+        <argsstring></argsstring>
+        <name>AVHWAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="1985" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavc__hwaccel_1ga376002731d42f3c5f52f38db2b317ff2" prot="public" static="no">
+        <name>AV_HWACCEL_CODEC_CAP_EXPERIMENTAL</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HWAccel is experimental and is thus avoided in favor of non experimental codecs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="1991" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__hwaccel_1ga1d7645e07cfdd50151a096c34e462a69" prot="public" static="no">
+        <name>AV_HWACCEL_FLAG_IGNORE_LEVEL</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware acceleration should be used for decoding even if the codec level used is unknown or higher than the maximum supported level reported by the hardware driver.</para>
+<para>It&apos;s generally a good idea to pass this flag unless you have a specific reason not to, as hardware tends to under-report supported levels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2001" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__hwaccel_1ga981093d126d9935f74f420ac79badd11" prot="public" static="no">
+        <name>AV_HWACCEL_FLAG_ALLOW_HIGH_DEPTH</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware acceleration can output YUV pixel formats with a different chroma sampling than 4:2:0 and/or other than 8 bits per component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2007" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__hwaccel_1ga7403e00bf9dc00ed3d06579611075994" prot="public" static="no">
+        <name>AV_HWACCEL_FLAG_ALLOW_PROFILE_MISMATCH</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware acceleration should still be attempted for decoding when the codec profile does not match the reported capabilities of the hardware.</para>
+<para>For example, this can be used to try to decode baseline profile H.264 streams in hardware - it will often succeed, because many streams marked as baseline profile actually conform to constrained baseline profile.</para>
+<para><simplesect kind="warning"><para>If the stream is actually not supported then the behaviour is undefined, and may include returning entirely incorrect output while indicating success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2021" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__hwaccel_1ga91bed0eb4145c681c060c917fddda1e8" prot="public" static="no">
+        <name>AV_HWACCEL_FLAG_UNSAFE_OUTPUT</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Some hardware decoders (namely nvdec) can either output direct decoder surfaces, or make an on-device copy and return said copy. There is a hard limit on how many decoder surfaces there can be, and it cannot be accurately guessed ahead of time. For some processing chains, this can be okay, but others will run into the limit and in turn produce very confusing errors that require fine tuning of more or less obscure options by the user, or in extreme cases cannot be resolved at all without inserting an avfilter that forces a copy.</para>
+<para>Thus, the hwaccel will by default make a copy for safety and resilience. If a users really wants to minimize the amount of copies, they can set this flag and ensure their processing chain does not exhaust the surface pool. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2037" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2037" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Nothing in this structure should be accessed by the user. At some point in future it will not be externally visible at all. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

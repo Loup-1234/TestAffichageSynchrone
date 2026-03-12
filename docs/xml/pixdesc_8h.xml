@@ -1,0 +1,1569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="pixdesc_8h" kind="file" language="C++">
+    <compoundname>pixdesc.h</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="pixfmt_8h" local="yes">pixfmt.h</includes>
+    <includedby refid="imgutils_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="5">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="7">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h</label>
+        <link refid="pixdesc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h</label>
+        <link refid="imgutils_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h</label>
+        <link refid="pixdesc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_component_descriptor" prot="public">AVComponentDescriptor</innerclass>
+    <innerclass refid="struct_a_v_pix_fmt_descriptor" prot="public">AVPixFmtDescriptor</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="pixdesc_8h_1ac7c7d0be16fb9b6f05b3e0d463cd037b" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_BE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pixel format is big-endian. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="116" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1af30af160970132a3a31c4738629e4495" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_PAL</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pixel format has a palette in data[1], values are indexes in this palette. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="120" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a0c6b423a11928d3ec5d2cd3f3b64ee81" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_BITSTREAM</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All values of a component are bit-wise packed end to end. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="124" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a76f6211b2404231bd7d206ebf4ae46f6" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_HWACCEL</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pixel format is an HW accelerated format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="128" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1ab2dcf0e479980cad6c8477d5a53a3638" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_PLANAR</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At least one pixel component is not in the first data plane. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="132" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a4c4e95f659b1e131480c1e98d70c57de" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_RGB</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format contains RGB-like data (as opposed to YUV/grayscale). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="136" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a06924ef0ebf07d8742ff8994e3a948bf" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_ALPHA</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format has an alpha channel. This is set on all formats that support alpha in some way, including AV_PIX_FMT_PAL8. The alpha is always straight, never pre-multiplied.</para>
+<para>If a codec or a filter does not support alpha, it should set all alpha to opaque, or use the equivalent pixel formats without alpha component, e.g. AV_PIX_FMT_RGB0 (or AV_PIX_FMT_RGB24 etc.) instead of AV_PIX_FMT_RGBA. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="147" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1af285711ffd4882b91ba991fb306b1d16" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_BAYER</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format is following a Bayer pattern </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="152" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a69737f410137149657fcb56667071146" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_FLOAT</name>
+        <initializer>(1 &lt;&lt; 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format contains IEEE-754 floating point values. Precision (double, single, or half) should be determined by the pixel size (64, 32, or 16 bits). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="158" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1adf3446408a957f6cdd2f3b7daaa491a0" prot="public" static="no">
+        <name>AV_PIX_FMT_FLAG_XYZ</name>
+        <initializer>(1 &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format contains XYZ-like data (as opposed to YUV/RGB/grayscale). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="163" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a445e6541dde2408332c216b8d0accb2d" prot="public" static="no">
+        <name>FF_LOSS_RESOLUTION</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to resolution change </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="397" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a979c0713dde53e85a56a83c8094f30a9" prot="public" static="no">
+        <name>FF_LOSS_DEPTH</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to color depth change </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="398" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a4701dd352b2a194eaed493399ccdca47" prot="public" static="no">
+        <name>FF_LOSS_COLORSPACE</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to color space conversion </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="399" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a5e5683a0c698af4701cc768f2944b6f4" prot="public" static="no">
+        <name>FF_LOSS_ALPHA</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss of alpha bits </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="400" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1ae4dedba75cbb41704ce6794f966f10a6" prot="public" static="no">
+        <name>FF_LOSS_COLORQUANT</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to color quantization </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="401" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a769162ddb5b87080ab7a39291837f832" prot="public" static="no">
+        <name>FF_LOSS_CHROMA</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss of chroma (e.g. RGB to gray conversion) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="402" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1ade179f1e5679ac083b66f7c54bb05389" prot="public" static="no">
+        <name>FF_LOSS_EXCESS_RESOLUTION</name>
+        <initializer>0x0040</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to unneeded extra resolution </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="403" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pixdesc_8h_1a6bebbdb358ce4dc303b4867814828572" prot="public" static="no">
+        <name>FF_LOSS_EXCESS_DEPTH</name>
+        <initializer>0x0080</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>loss due to unneeded extra color depth </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="404" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pixdesc_8h_1a2ec49a9d220e93b7f0fd8c9fd03d0a80" prot="public" static="no">
+        <type>struct AVComponentDescriptor</type>
+        <definition>typedef struct AVComponentDescriptor AVComponentDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVComponentDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="58" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pixdesc_8h_1a69cd4b11e42ddfc38a047c91a208bdea" prot="public" static="no">
+        <type>struct AVPixFmtDescriptor</type>
+        <definition>typedef struct AVPixFmtDescriptor AVPixFmtDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVPixFmtDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descriptor that unambiguously describes how the bits of a pixel are stored in the up to 4 data planes of an image. It also stores the subsampling factors and number of components.</para>
+<para><simplesect kind="note"><para>This is separate of the colorspace (RGB, YCbCr, YPbPr, JPEG-style YUV and all the YUV variants) <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> just stores how values are stored not what these values represent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="111" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="pixdesc_8h_1a7b24a65f6bf07585396da3bd301799b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_bits_per_pixel</definition>
+        <argsstring>(const AVPixFmtDescriptor *pixdesc)</argsstring>
+        <name>av_get_bits_per_pixel</name>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>pixdesc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of bits per pixel used by the pixel format described by pixdesc. Note that this is not the same as the number of bits per sample.</para>
+<para>The returned number of bits refers to the number of bits actually used for storing the pixel information, that is padding bits are not counted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="174" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="174" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a89cf35c5ef18c9e996c7784e1a893b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_padded_bits_per_pixel</definition>
+        <argsstring>(const AVPixFmtDescriptor *pixdesc)</argsstring>
+        <name>av_get_padded_bits_per_pixel</name>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>pixdesc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of bits per pixel for the pixel format described by pixdesc, including any padding or unused bits. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="180" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="180" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ac95c2231a5facc3c6e9d5e9358f62d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+        <definition>const AVPixFmtDescriptor * av_pix_fmt_desc_get</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>av_pix_fmt_desc_get</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a pixel format descriptor for provided pixel format or NULL if this pixel format is unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="186" column="26" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="186" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a306ca99958727a7c45fab6131261f0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+        <definition>const AVPixFmtDescriptor * av_pix_fmt_desc_next</definition>
+        <argsstring>(const AVPixFmtDescriptor *prev)</argsstring>
+        <name>av_pix_fmt_desc_next</name>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all pixel format descriptors known to libavutil.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>previous descriptor. NULL to get the first descriptor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>next descriptor or NULL after the last descriptor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="195" column="26" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="195" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a01dfb93fb0e28e789922e9199a4fdb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat av_pix_fmt_desc_get_id</definition>
+        <argsstring>(const AVPixFmtDescriptor *desc)</argsstring>
+        <name>av_pix_fmt_desc_get_id</name>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>an <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> id described by desc, or AV_PIX_FMT_NONE if desc is not a valid pointer to a pixel format descriptor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="201" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="201" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a76e011cf53b51ea14a002a206f6ca05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_pix_fmt_get_chroma_sub_sample</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt, int *h_shift, int *v_shift)</argsstring>
+        <name>av_pix_fmt_get_chroma_sub_sample</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>h_shift</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>v_shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Utility function to access log2_chroma_w log2_chroma_h from the pixel format <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">h_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store log2_chroma_w (horizontal/width shift) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">v_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store log2_chroma_h (vertical/height shift)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR(ENOSYS) on invalid or unknown pixel format </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="213" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="213" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a118df1d607abd7484f874b3d7ea8823a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_pix_fmt_count_planes</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>av_pix_fmt_count_planes</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of planes in pix_fmt, a negative AVERROR if pix_fmt is not a valid pixel format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="220" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="220" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a5061f4d8e192876cbb6f67cb40563f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_color_range_name</definition>
+        <argsstring>(enum AVColorRange range)</argsstring>
+        <name>av_color_range_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided color range or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="225" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="225" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1aad2f67625f55b7b4cb69ddf36f491892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_color_range_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_color_range_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="230" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="230" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1abe891f0e7303e21b29a45b459c666588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_color_primaries_name</definition>
+        <argsstring>(enum AVColorPrimaries primaries)</argsstring>
+        <name>av_color_primaries_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+          <declname>primaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided color primaries or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="235" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="235" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ac0b9aef4e5964c08aff0158a011d3ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_color_primaries_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_color_primaries_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="240" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="240" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ab49ea9645d7f49ec12c1a37ab6419cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_color_transfer_name</definition>
+        <argsstring>(enum AVColorTransferCharacteristic transfer)</argsstring>
+        <name>av_color_transfer_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>transfer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided color transfer or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="245" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="245" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a2edac6eeb4fd282c26f79d78f242ef3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_color_transfer_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_color_transfer_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="250" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="250" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a45f45b7c4285c7202173aafbc2273371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_color_space_name</definition>
+        <argsstring>(enum AVColorSpace space)</argsstring>
+        <name>av_color_space_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided color space or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="255" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="255" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a0c7d0a9d7470c49397a72e1169d2a8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_color_space_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_color_space_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="260" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="260" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a94a7fd3dfa60ba3460377803ef94dcc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_chroma_location_name</definition>
+        <argsstring>(enum AVChromaLocation location)</argsstring>
+        <name>av_chroma_location_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref></type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided chroma location or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="265" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="265" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a1c3d987e885a212e0d122de27af43d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_chroma_location_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_chroma_location_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="270" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="270" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ad635455b0dc0c4885e530968a83aeb04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_chroma_location_enum_to_pos</definition>
+        <argsstring>(int *xpos, int *ypos, enum AVChromaLocation pos)</argsstring>
+        <name>av_chroma_location_enum_to_pos</name>
+        <param>
+          <type>int *</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ypos</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref> to swscale x/y chroma position.</para>
+<para>The positions represent the chroma (0,0) position in a coordinates system with luma (0,0) representing the origin and luma(1,1) representing 256,256</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>horizontal chroma sample position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vertical chroma sample position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="281" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="281" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1abcd918671f73cb59a733d6842a527221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref></type>
+        <definition>enum AVChromaLocation av_chroma_location_pos_to_enum</definition>
+        <argsstring>(int xpos, int ypos)</argsstring>
+        <name>av_chroma_location_pos_to_enum</name>
+        <param>
+          <type>int</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts swscale x/y chroma position to <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref>.</para>
+<para>The positions represent the chroma (0,0) position in a coordinates system with luma (0,0) representing the origin and luma(1,1) representing 256,256</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>horizontal chroma sample position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vertical chroma sample position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="292" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="292" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a74f538cb12e32fd93f306c86926d2e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_alpha_mode_name</definition>
+        <argsstring>(enum AVAlphaMode mode)</argsstring>
+        <name>av_alpha_mode_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name for provided alpha mode or NULL if unknown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="297" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="297" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ae64591e82a2644068aa397a00df290d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref></type>
+        <definition>enum AVAlphaMode av_alpha_mode_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_alpha_mode_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the <ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref> value for name or an AVError if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="302" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="302" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a925ef18d69c24c3be8c53d5a7dc0660e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat av_get_pix_fmt</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_get_pix_fmt</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the pixel format corresponding to name.</para>
+<para>If there is no pixel format with name name, then looks for a pixel format with the name corresponding to the native endian format of name. For example in a little-endian system, first looks for &quot;gray16&quot;, then for &quot;gray16le&quot;.</para>
+<para>Finally if no pixel format has been found, returns AV_PIX_FMT_NONE. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="315" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="315" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a8526f80ba2f0bb50e3606e5866df522c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_get_pix_fmt_name</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>av_get_pix_fmt_name</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the short name for a pixel format, NULL in case pix_fmt is unknown.</para>
+<para><simplesect kind="see"><para>av_get_pix_fmt(), av_get_pix_fmt_string() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="323" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="323" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ac348f19512365a8bc7234c1b5e4f1e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * av_get_pix_fmt_string</definition>
+        <argsstring>(char *buf, int buf_size, enum AVPixelFormat pix_fmt)</argsstring>
+        <name>av_get_pix_fmt_string</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print in buf the string corresponding to the pixel format with number pix_fmt, or a header if pix_fmt is negative.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer where to write the string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of buf </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of the pixel format to print the corresponding info string, or a negative value to print the corresponding header. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="335" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="335" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a86f41b8d713918855424c9f7108c59d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_read_image_line2</definition>
+        <argsstring>(void *dst, const uint8_t *data[4], const int linesize[4], const AVPixFmtDescriptor *desc, int x, int y, int c, int w, int read_pal_component, int dst_element_size)</argsstring>
+        <name>av_read_image_line2</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>read_pal_component</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_element_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a line from an image, and write the values of the pixel format component c to dst.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the pointers to the planes of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the linesizes of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format descriptor for the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the horizontal coordinate of the first pixel to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vertical coordinate of the first pixel to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the line to read, that is the number of values to write to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>read_pal_component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not zero and the format is a paletted format writes the values corresponding to the palette component c in data[1] to dst, rather than the palette indexes in data[0]. The behavior is undefined if the format is not paletted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_element_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of elements in dst array (2 or 4 byte) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="355" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="355" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a8f9e6735f65eec892931823f55280bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_read_image_line</definition>
+        <argsstring>(uint16_t *dst, const uint8_t *data[4], const int linesize[4], const AVPixFmtDescriptor *desc, int x, int y, int c, int w, int read_pal_component)</argsstring>
+        <name>av_read_image_line</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>read_pal_component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="360" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="360" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a0e53c808eaaa9985269c0ede96415dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_write_image_line2</definition>
+        <argsstring>(const void *src, uint8_t *data[4], const int linesize[4], const AVPixFmtDescriptor *desc, int x, int y, int c, int w, int src_element_size)</argsstring>
+        <name>av_write_image_line2</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_element_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the values from src to the pixel format component c of an image line.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array containing the values to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the pointers to the planes of the image to write into. It is supposed to be zeroed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the linesizes of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format descriptor for the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the horizontal coordinate of the first pixel to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vertical coordinate of the first pixel to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the line to write, that is the number of values to write to the image line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_element_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of elements in src array (2 or 4 byte) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="379" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="379" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a899e2c005100bb2169096bb672e46310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_write_image_line</definition>
+        <argsstring>(const uint16_t *src, uint8_t *data[4], const int linesize[4], const AVPixFmtDescriptor *desc, int x, int y, int c, int w)</argsstring>
+        <name>av_write_image_line</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="383" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="383" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1ac2e098ff3b5373af99be8ea954c4f72e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat av_pix_fmt_swap_endianness</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>av_pix_fmt_swap_endianness</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Utility function to swap the endianness of a pixel format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pixel format with swapped endianness if it exists, otherwise AV_PIX_FMT_NONE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="395" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="395" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a69ba6ef97543b19a15236a513e56dffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_pix_fmt_loss</definition>
+        <argsstring>(enum AVPixelFormat dst_pix_fmt, enum AVPixelFormat src_pix_fmt, int has_alpha)</argsstring>
+        <name>av_get_pix_fmt_loss</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>dst_pix_fmt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>src_pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>has_alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute what kind of losses will occur when converting from one specific pixel format to another. When converting from one pixel format to another, information loss may occur. For example, when converting from RGB24 to GRAY, the color information will be lost. Similarly, other losses occur when converting from some formats to other formats. These losses can involve loss of chroma, but also loss of resolution, loss of color depth, loss due to the color space conversion, loss of the alpha bits or loss due to color quantization. av_get_fix_fmt_loss() informs you about the various types of losses which will occur when converting from one pixel format to another.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst_pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">has_alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the source pixel format alpha channel is used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Combination of flags informing you what kind of losses will occur (maximum loss for an invalid dst_pix_fmt). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="425" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="425" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="pixdesc_8h_1a875f1e7a15d882d4cd9d38dde093939b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat av_find_best_pix_fmt_of_2</definition>
+        <argsstring>(enum AVPixelFormat dst_pix_fmt1, enum AVPixelFormat dst_pix_fmt2, enum AVPixelFormat src_pix_fmt, int has_alpha, int *loss_ptr)</argsstring>
+        <name>av_find_best_pix_fmt_of_2</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>dst_pix_fmt1</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>dst_pix_fmt2</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>src_pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>has_alpha</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>loss_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute what kind of losses will occur when converting from one specific pixel format to another. When converting from one pixel format to another, information loss may occur. For example, when converting from RGB24 to GRAY, the color information will be lost. Similarly, other losses occur when converting from some formats to other formats. These losses can involve loss of chroma, but also loss of resolution, loss of color depth, loss due to the color space conversion, loss of the alpha bits or loss due to color quantization. av_get_fix_fmt_loss() informs you about the various types of losses which will occur when converting from one pixel format to another.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst_pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">has_alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the source pixel format alpha channel is used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Combination of flags informing you what kind of losses will occur (maximum loss for an invalid dst_pix_fmt). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="447" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" declline="447" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>pixel<sp/>format<sp/>descriptor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2009<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_PIXDESC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_PIXDESC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pixfmt_8h" kindref="compound">pixfmt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_a_v_component_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_component_descriptor" kindref="compound">AVComponentDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="struct_a_v_component_descriptor_1a3508603e4efd7a1fcecab1da7b9ae4c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_component_descriptor_1a3508603e4efd7a1fcecab1da7b9ae4c2" kindref="member">plane</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="struct_a_v_component_descriptor_1a964c2627fc25fef179ea006c88becf5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_component_descriptor_1a964c2627fc25fef179ea006c88becf5b" kindref="member">step</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="struct_a_v_component_descriptor_1a1ad69ad2ebfc3045bf56fd8a98aa4439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_component_descriptor_1a1ad69ad2ebfc3045bf56fd8a98aa4439" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="struct_a_v_component_descriptor_1a10c6ab5726f0f666cbe801b5308960aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_component_descriptor_1a10c6ab5726f0f666cbe801b5308960aa" kindref="member">shift</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_a_v_component_descriptor_1ae504ab46ea3719e9930f91491af593dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_component_descriptor_1ae504ab46ea3719e9930f91491af593dc" kindref="member">depth</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><ref refid="struct_a_v_component_descriptor" kindref="compound">AVComponentDescriptor</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct_a_v_pix_fmt_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="71" refid="struct_a_v_pix_fmt_descriptor_1ae83de203f97288c9f4070212a5eac5de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_pix_fmt_descriptor_1ae83de203f97288c9f4070212a5eac5de" kindref="member">nb_components</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_a_v_pix_fmt_descriptor_1a4abca4534188ff94627e88c0d8362058" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_pix_fmt_descriptor_1a4abca4534188ff94627e88c0d8362058" kindref="member">log2_chroma_w</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="struct_a_v_pix_fmt_descriptor_1abea8ed308fe00644fc066a00018afa95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_pix_fmt_descriptor_1abea8ed308fe00644fc066a00018afa95" kindref="member">log2_chroma_h</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="struct_a_v_pix_fmt_descriptor_1a5047d1e6b045f637345dbc305bf4357d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_pix_fmt_descriptor_1a5047d1e6b045f637345dbc305bf4357d" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="struct_a_v_pix_fmt_descriptor_1a17569c9349766c3b5201b33f84f19a25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_component_descriptor" kindref="compound">AVComponentDescriptor</ref><sp/><ref refid="struct_a_v_pix_fmt_descriptor_1a17569c9349766c3b5201b33f84f19a25" kindref="member">comp</ref>[4];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="struct_a_v_pix_fmt_descriptor_1a85163c36645d2f372a4e98b314fa964b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_a_v_pix_fmt_descriptor_1a85163c36645d2f372a4e98b314fa964b" kindref="member">alias</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_BE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_PAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_BITSTREAM<sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_HWACCEL<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_PLANAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_RGB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_ALPHA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_BAYER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_FLOAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PIX_FMT_FLAG_XYZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_get_bits_per_pixel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*pixdesc);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_get_padded_bits_per_pixel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*pixdesc);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*av_pix_fmt_desc_get(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*av_pix_fmt_desc_next(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*prev);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>av_pix_fmt_desc_get_id(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_pix_fmt_get_chroma_sub_sample(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*h_shift,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*v_shift);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_pix_fmt_count_planes(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_color_range_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref><sp/>range);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_color_range_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_color_primaries_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref><sp/>primaries);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_color_primaries_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_color_transfer_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>transfer);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_color_transfer_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_color_space_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref><sp/>space);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_color_space_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_chroma_location_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref><sp/>location);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_chroma_location_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_chroma_location_enum_to_pos(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*xpos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ypos,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref><sp/>pos);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref><sp/>av_chroma_location_pos_to_enum(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xpos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ypos);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_alpha_mode_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref><sp/>av_alpha_mode_from_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>av_get_pix_fmt(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_get_pix_fmt_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_get_pix_fmt_string(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_size,</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_read_image_line2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data[4],</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesize[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*desc,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>read_pal_component,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_element_size);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_read_image_line(uint16_t<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data[4],</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesize[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*desc,</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>read_pal_component);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_write_image_line2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*src,<sp/>uint8_t<sp/>*data[4],</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesize[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*desc,</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_element_size);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_write_image_line(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>*src,<sp/>uint8_t<sp/>*data[4],</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesize[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*desc,</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>av_pix_fmt_swap_endianness(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_RESOLUTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_DEPTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_COLORSPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_ALPHA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_COLORQUANT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_CHROMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0020<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_EXCESS_RESOLUTION<sp/>0x0040<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_LOSS_EXCESS_DEPTH<sp/><sp/><sp/><sp/><sp/><sp/>0x0080<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_get_pix_fmt_loss(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>dst_pix_fmt,</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>src_pix_fmt,</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>has_alpha);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>av_find_best_pix_fmt_of_2(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>dst_pix_fmt1,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>dst_pix_fmt2,</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>src_pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>has_alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*loss_ptr);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_PIXDESC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h"/>
+  </compounddef>
+</doxygen>

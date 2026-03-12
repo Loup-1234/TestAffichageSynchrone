@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__ver" kind="group">
+    <compoundname>lavu_ver</compoundname>
+    <title>Version and Build diagnostics</title>
+    <innergroup refid="group__lavu__depr__guards">Deprecation Guards</innergroup>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__ver_1ga9a979c78d33d8767b51952f7f5c61541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned avutil_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>avutil_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the LIBAVUTIL_VERSION_INT constant. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="170" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" declline="170" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ver_1ga1124bfdd0e7fd6ee1aeeef4ebffebca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_version_info</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_version_info</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an informative version string. This usually is the actual release version number or a git commit description. This string has no fixed format and can change any time. It should never be parsed by code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="177" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" declline="177" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ver_1ga5f1205d8bf110f597580b49ae43420c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avutil_configuration</definition>
+        <argsstring>(void)</argsstring>
+        <name>avutil_configuration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavutil build-time configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="182" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" declline="182" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ver_1ga1a05049e8d684432f3c399657d66f002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avutil_license</definition>
+        <argsstring>(void)</argsstring>
+        <name>avutil_license</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavutil license. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="187" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" declline="187" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__ver_1gaa29a3ad3376b8050d9ef4779045f745e" prot="public" static="no">
+        <name>LIBAVUTIL_VERSION_MAJOR</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="81" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1ga9848c90e4ea707cb0732db0de569452a" prot="public" static="no">
+        <name>LIBAVUTIL_VERSION_MINOR</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="82" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1gad5484c7f1208de134ba538874d2c04fd" prot="public" static="no">
+        <name>LIBAVUTIL_VERSION_MICRO</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="83" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1ga36e17e3fc9bcbe5c55820a8ac8b47e3c" prot="public" static="no">
+        <name>LIBAVUTIL_VERSION_INT</name>
+        <initializer>                                               AV_VERSION_INT(LIBAVUTIL_VERSION_MAJOR, \
+                                               LIBAVUTIL_VERSION_MINOR, \
+                                               LIBAVUTIL_VERSION_MICRO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="85" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1gaee2664f9bb9d1285534db2a40f6fa8af" prot="public" static="no">
+        <name>LIBAVUTIL_VERSION</name>
+        <initializer>                                           AV_VERSION(LIBAVUTIL_VERSION_MAJOR,     \
+                                           LIBAVUTIL_VERSION_MINOR,     \
+                                           LIBAVUTIL_VERSION_MICRO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="88" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1ga960fb7dfd268c4c6e7b0c005f81350a9" prot="public" static="no">
+        <name>LIBAVUTIL_BUILD</name>
+        <initializer>LIBAVUTIL_VERSION_INT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="91" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__ver_1gacaac95c8d6dca9f3efeba6b5ae02ac02" prot="public" static="no">
+        <name>LIBAVUTIL_IDENT</name>
+        <initializer>&quot;Lavu&quot; AV_STRINGIFY(LIBAVUTIL_VERSION)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="93" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Macros and function useful to check at compile time and at runtime which version of libavutil is in use.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

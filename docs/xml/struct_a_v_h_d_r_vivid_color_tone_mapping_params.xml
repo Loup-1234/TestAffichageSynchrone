@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_d_r_vivid_color_tone_mapping_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVHDRVividColorToneMappingParams</compoundname>
+    <includes refid="hdr__dynamic__vivid__metadata_8h" local="no">hdr_dynamic_vivid_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1ab444e9d0312f4a29eabb7ece24f8efba" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::targeted_system_display_maximum_luminance</definition>
+        <argsstring></argsstring>
+        <name>targeted_system_display_maximum_luminance</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::targeted_system_display_maximum_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The nominal maximum display luminance of the targeted system display, in multiples of 1.0/4095 candelas per square metre. The value shall be in the range of 0.0 to 1.0, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="83" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aea1550e08ceb628998ec3de1f4949df7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::base_enable_flag</definition>
+        <argsstring></argsstring>
+        <name>base_enable_flag</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_enable_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag indicates that transfer the base parameter(for value of 1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="88" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a40bf34f7a154f78fe59972996d9d1afd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_m_p</definition>
+        <argsstring></argsstring>
+        <name>base_param_m_p</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_m_p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_m_p in the base parameter, in multiples of 1.0/16383. The value shall be in the range of 0.0 to 1.0, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="95" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a406eaa04f958e4407f9074eabd249ac8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_m_m</definition>
+        <argsstring></argsstring>
+        <name>base_param_m_m</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_m_m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_m_m in the base parameter, in multiples of 1.0/10. The value shall be in the range of 0.0 to 6.3, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="102" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a5889fc286c0f73a512a53d8cdc5e69c8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_m_a</definition>
+        <argsstring></argsstring>
+        <name>base_param_m_a</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_m_a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_m_a in the base parameter, in multiples of 1.0/1023. The value shall be in the range of 0.0 to 1.0 inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="109" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a580da5e0c12cf0b35de733ea200cc96f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_m_b</definition>
+        <argsstring></argsstring>
+        <name>base_param_m_b</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_m_b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_m_b in the base parameter, in multiples of 1/1023. The value shall be in the range of 0.0 to 1.0, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="116" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a72067ea4ce82bbaa4bb7f8a8fdbbc801" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_m_n</definition>
+        <argsstring></argsstring>
+        <name>base_param_m_n</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_m_n</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_m_n in the base parameter, in multiples of 1.0/10. The value shall be in the range of 0.0 to 6.3, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="123" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a324ecaeae1c1f11eaa92a83a51264e65" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::base_param_k1</definition>
+        <argsstring></argsstring>
+        <name>base_param_k1</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_k1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicates k1_0 in the base parameter, base_param_k1 &lt;= 1: k1_0 = base_param_k1 base_param_k1 &gt; 1: reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="130" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a937ff7be8c932d77896100e4ee6c4d3f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::base_param_k2</definition>
+        <argsstring></argsstring>
+        <name>base_param_k2</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_k2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicates k2_0 in the base parameter, base_param_k2 &lt;= 1: k2_0 = base_param_k2 base_param_k2 &gt; 1: reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="137" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a4d46a9af35a3ef191e2b24f309d1591e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::base_param_k3</definition>
+        <argsstring></argsstring>
+        <name>base_param_k3</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_k3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicates k3_0 in the base parameter, base_param_k3 == 1: k3_0 = base_param_k3 base_param_k3 == 2: k3_0 = maximum_maxrgb base_param_k3 &gt; 2: reserved </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="145" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1af7a18da7046c580c12853264a387924a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::base_param_Delta_enable_mode</definition>
+        <argsstring></argsstring>
+        <name>base_param_Delta_enable_mode</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_Delta_enable_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag indicates that delta mode of base parameter(for value of 1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="150" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a60524ca67bdc61206a26c4749f3cb0dd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorToneMappingParams::base_param_Delta</definition>
+        <argsstring></argsstring>
+        <name>base_param_Delta</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::base_param_Delta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>base_param_Delta in the base parameter, in multiples of 1.0/127. The value shall be in the range of 0.0 to 1.0, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="157" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a14f626a654ce05d0b013f9ba41ca35ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::three_Spline_enable_flag</definition>
+        <argsstring></argsstring>
+        <name>three_Spline_enable_flag</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::three_Spline_enable_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicates 3Spline_enable_flag in the base parameter, This flag indicates that transfer three Spline of base parameter(for value of 1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="163" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a69e5d71571ecf4330f2bac92d3cf647a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorToneMappingParams::three_Spline_num</definition>
+        <argsstring></argsstring>
+        <name>three_Spline_num</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::three_Spline_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of three Spline. The value shall be in the range of 1 to 2, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="169" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aafeeede0a39a2e82adbc10b137c08f53" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_d_r_vivid3_spline_params" kindref="compound">AVHDRVivid3SplineParams</ref></type>
+        <definition>AVHDRVivid3SplineParams AVHDRVividColorToneMappingParams::three_spline[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>three_spline</name>
+        <qualifiedname>AVHDRVividColorToneMappingParams::three_spline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="171" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color tone mapping parameters at a processing window in a dynamic metadata for CUVA 005.1:2021. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AVHDRVivid3SplineParams</label>
+        <link refid="struct_a_v_h_d_r_vivid3_spline_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>enable_strength</edgelabel>
+          <edgelabel>th_delta1</edgelabel>
+          <edgelabel>th_delta2</edgelabel>
+          <edgelabel>th_enable</edgelabel>
+          <edgelabel>th_enable_mb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVHDRVividColorToneMappingParams</label>
+        <link refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base_param_Delta</edgelabel>
+          <edgelabel>base_param_m_a</edgelabel>
+          <edgelabel>base_param_m_b</edgelabel>
+          <edgelabel>base_param_m_m</edgelabel>
+          <edgelabel>base_param_m_n</edgelabel>
+          <edgelabel>base_param_m_p</edgelabel>
+          <edgelabel>targeted_system_display_maximum_luminance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>three_spline</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="77" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="77" bodyend="172"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aea1550e08ceb628998ec3de1f4949df7" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_enable_flag</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a60524ca67bdc61206a26c4749f3cb0dd" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_Delta</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1af7a18da7046c580c12853264a387924a" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_Delta_enable_mode</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a324ecaeae1c1f11eaa92a83a51264e65" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_k1</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a937ff7be8c932d77896100e4ee6c4d3f" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_k2</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a4d46a9af35a3ef191e2b24f309d1591e" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_k3</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a5889fc286c0f73a512a53d8cdc5e69c8" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_m_a</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a580da5e0c12cf0b35de733ea200cc96f" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_m_b</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a406eaa04f958e4407f9074eabd249ac8" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_m_m</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a72067ea4ce82bbaa4bb7f8a8fdbbc801" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_m_n</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a40bf34f7a154f78fe59972996d9d1afd" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>base_param_m_p</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1ab444e9d0312f4a29eabb7ece24f8efba" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>targeted_system_display_maximum_luminance</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aafeeede0a39a2e82adbc10b137c08f53" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>three_spline</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a14f626a654ce05d0b013f9ba41ca35ba" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>three_Spline_enable_flag</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a69e5d71571ecf4330f2bac92d3cf647a" prot="public" virt="non-virtual"><scope>AVHDRVividColorToneMappingParams</scope><name>three_Spline_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

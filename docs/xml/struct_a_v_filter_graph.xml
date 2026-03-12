@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_filter_graph" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilterGraph</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1af00925dd69b474fac48887efc0e1ac94" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVFilterGraph::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVFilterGraph::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="590" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a1dafd3d239f7c2f5e3ac109578ef926d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> **</type>
+        <definition>AVFilterContext** AVFilterGraph::filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <qualifiedname>AVFilterGraph::filters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="591" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a0ba5c820c760788ea5f8e40c476f9704" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVFilterGraph::nb_filters</definition>
+        <argsstring></argsstring>
+        <name>nb_filters</name>
+        <qualifiedname>AVFilterGraph::nb_filters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="592" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a17ced656602d33101ec4f46f6a9bdc53" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterGraph::scale_sws_opts</definition>
+        <argsstring></argsstring>
+        <name>scale_sws_opts</name>
+        <qualifiedname>AVFilterGraph::scale_sws_opts</qualifiedname>
+        <briefdescription>
+<para>sws options to use for the auto-inserted scale filters </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="594" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a7fd96bbd6d1a3b730681dc0bf5107a5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterGraph::thread_type</definition>
+        <argsstring></argsstring>
+        <name>thread_type</name>
+        <qualifiedname>AVFilterGraph::thread_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of multithreading allowed for filters in this graph. A combination of AVFILTER_THREAD_* flags.</para>
+<para>May be set by the caller at any point, the setting will apply to all filters initialized after that. The default is allowing everything.</para>
+<para>When a filter in this graph is initialized, this field is combined using bit AND with <ref refid="struct_a_v_filter_context_1a07b5e1a4c3cbde993e54bcc4873401a9" kindref="member">AVFilterContext.thread_type</ref> to get the final mask used for determining allowed threading types. I.e. a threading type needs to be set in both to be allowed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="608" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1ac28dcbf76e6fdd800295a2738d41660e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterGraph::nb_threads</definition>
+        <argsstring></argsstring>
+        <name>nb_threads</name>
+        <qualifiedname>AVFilterGraph::nb_threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of threads used by filters in this graph. May be set by the caller before adding any filters to the filtergraph. Zero (the default) means that the number of threads is determined automatically. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="615" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a2e9ac166e2d259bdd0b0c6b1a21f702c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVFilterGraph::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVFilterGraph::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opaque user data. May be set by the caller to an arbitrary value, e.g. to be used from callbacks like <ref refid="struct_a_v_filter_graph_1abbabdacc9b11e239ec24c969549d62ec" kindref="member">AVFilterGraph::execute</ref>. Libavfilter will not touch this field in any way. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="622" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1abbabdacc9b11e239ec24c969549d62ec" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lavfi_1gade98daa6925168ffad07e1c819ce7639" kindref="member">avfilter_execute_func</ref> *</type>
+        <definition>avfilter_execute_func* AVFilterGraph::execute</definition>
+        <argsstring></argsstring>
+        <name>execute</name>
+        <qualifiedname>AVFilterGraph::execute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback may be set by the caller immediately after allocating the graph and before adding any filters to it, to provide a custom multithreading implementation.</para>
+<para>If set, filters with slice threading capability will call this callback to execute multiple jobs in parallel.</para>
+<para>If this field is left unset, libavfilter will use its internal implementation, which may or may not be multithreaded depending on the platform and build options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="636" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a34c3bdd638ffba56d89ad7f5e84601e1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterGraph::aresample_swr_opts</definition>
+        <argsstring></argsstring>
+        <name>aresample_swr_opts</name>
+        <qualifiedname>AVFilterGraph::aresample_swr_opts</qualifiedname>
+        <briefdescription>
+<para>swr options to use for the auto-inserted aresample filters, Access ONLY through AVOptions </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="638" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_1a27983cb70845ac1fbf848e4d02a17cd6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVFilterGraph::max_buffered_frames</definition>
+        <argsstring></argsstring>
+        <name>max_buffered_frames</name>
+        <qualifiedname>AVFilterGraph::max_buffered_frames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the maximum number of buffered frames in the filtergraph combined.</para>
+<para>Zero means no limit. This field must be set before calling <ref refid="group__lavfi_1ga1896c46b7bc6ff1bdb1a4815faa9ad07" kindref="member">avfilter_graph_config()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="646" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="10">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="9">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVFilter</label>
+        <link refid="struct_a_v_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVFilterContext</label>
+        <link refid="struct_a_v_filter_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>hw_device_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AVFilterFormatsConfig</label>
+        <link refid="struct_a_v_filter_formats_config"/>
+      </node>
+      <node id="1">
+        <label>AVFilterGraph</label>
+        <link refid="struct_a_v_filter_graph"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AVFilterLink</label>
+        <link refid="struct_a_v_filter_link"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>dst</edgelabel>
+          <edgelabel>src</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>incfg</edgelabel>
+          <edgelabel>outcfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="589" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="589" bodyend="647"/>
+    <listofallmembers>
+      <member refid="struct_a_v_filter_graph_1a34c3bdd638ffba56d89ad7f5e84601e1" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>aresample_swr_opts</name></member>
+      <member refid="struct_a_v_filter_graph_1af00925dd69b474fac48887efc0e1ac94" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>av_class</name></member>
+      <member refid="struct_a_v_filter_graph_1abbabdacc9b11e239ec24c969549d62ec" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>execute</name></member>
+      <member refid="struct_a_v_filter_graph_1a1dafd3d239f7c2f5e3ac109578ef926d" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>filters</name></member>
+      <member refid="struct_a_v_filter_graph_1a27983cb70845ac1fbf848e4d02a17cd6" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>max_buffered_frames</name></member>
+      <member refid="struct_a_v_filter_graph_1a0ba5c820c760788ea5f8e40c476f9704" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>nb_filters</name></member>
+      <member refid="struct_a_v_filter_graph_1ac28dcbf76e6fdd800295a2738d41660e" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>nb_threads</name></member>
+      <member refid="struct_a_v_filter_graph_1a2e9ac166e2d259bdd0b0c6b1a21f702c" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>opaque</name></member>
+      <member refid="struct_a_v_filter_graph_1a17ced656602d33101ec4f46f6a9bdc53" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>scale_sws_opts</name></member>
+      <member refid="struct_a_v_filter_graph_1a7fd96bbd6d1a3b730681dc0bf5107a5e" prot="public" virt="non-virtual"><scope>AVFilterGraph</scope><name>thread_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

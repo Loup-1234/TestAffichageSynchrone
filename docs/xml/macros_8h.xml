@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="macros_8h" kind="file" language="C++">
+    <compoundname>macros.h</compoundname>
+    <includes refid="avconfig_8h" local="yes">libavutil/avconfig.h</includes>
+    <includedby refid="avassert_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avassert.h</includedby>
+    <includedby refid="avutil_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</includedby>
+    <includedby refid="common_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h</includedby>
+    <includedby refid="error_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h</includedby>
+    <includedby refid="libavutil_2version_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h</label>
+        <link refid="avdct_8h_source"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_desc.h</label>
+        <link refid="codec__desc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h</label>
+        <link refid="dirac_8h"/>
+      </node>
+      <node id="55">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dv_profile.h</label>
+        <link refid="dv__profile_8h_source"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="44">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h</label>
+        <link refid="packet_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="45">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/version.h</label>
+        <link refid="libavcodec_2version_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="46">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/version.h</label>
+        <link refid="libavdevice_2version_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="47">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/version.h</label>
+        <link refid="libavfilter_2version_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h</label>
+        <link refid="avio_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/version.h</label>
+        <link refid="libavformat_2version_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h</label>
+        <link refid="cpu_8h_source"/>
+      </node>
+      <node id="56">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h</label>
+        <link refid="csp_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="57">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h</label>
+        <link refid="dovi__meta_8h"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="42">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="58">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_cuda.h</label>
+        <link refid="hwcontext__cuda_8h"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h</label>
+        <link refid="iamf_8h"/>
+      </node>
+      <node id="59">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h</label>
+        <link refid="imgutils_8h"/>
+      </node>
+      <node id="51">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="38">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</label>
+        <link refid="opt_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h</label>
+        <link refid="pixdesc_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h</label>
+        <link refid="tdrdi_8h"/>
+      </node>
+      <node id="40">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/timestamp.h</label>
+        <link refid="timestamp_8h"/>
+      </node>
+      <node id="43">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="36">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="61">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/version.h</label>
+        <link refid="libswresample_2version_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+      <node id="62">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/version.h</label>
+        <link refid="libswscale_2version_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="macros_8h_1a309bdca20f6a78431379fc69442d98ea" prot="public" static="no">
+        <name>AV_NE</name>
+        <param><defname>be</defname></param>
+        <param><defname>le</defname></param>
+        <initializer>(le)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="33" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1add8913a6f8e5714b6174eeaad5751006" prot="public" static="no">
+        <name>FFDIFFSIGN</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(((x)&gt;(y)) - ((x)&lt;(y)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comparator. For two numerical expressions x and y, gives 1 if x &gt; y, -1 if x &lt; y, and 0 if x == y. This is useful for instance in a qsort comparator callback. Furthermore, compilers are able to optimize this to branchless code, and there is no risk of overflow with signed types. As with many macros, this evaluates its argument multiple times, it thus must not have a side-effect. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="45" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a9960bd6780a9b16a216a57be1ee04359" prot="public" static="no">
+        <name>FFMAX</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a) &gt; (b) ? (a) : (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="47" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a013fdaa079045ec5632fe121e211e516" prot="public" static="no">
+        <name>FFMAX3</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>FFMAX(FFMAX(a,b),c)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="48" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a0f84cbd7fd810cd678157c98cbfad4b0" prot="public" static="no">
+        <name>FFMIN</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a) &gt; (b) ? (b) : (a))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1af6afbffa12562b076c34055bdcb3ad65" prot="public" static="no">
+        <name>FFMIN3</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>FFMIN(FFMIN(a,b),c)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="50" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a09a0bb7d8fcfac416de7a5fe7fd8b0f1" prot="public" static="no">
+        <name>FFSWAP</name>
+        <param><defname>type</defname></param>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>do{type SWAP_tmp= b; b= a; a= SWAP_tmp;}while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a3508a98d3ee7e2c9a4841fe264cf70f7" prot="public" static="no">
+        <name>FF_ARRAY_ELEMS</name>
+        <param><defname>a</defname></param>
+        <initializer>(sizeof(a) / sizeof((a)[0]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="53" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a19c68e2b5efcbab914d79db1e4fee734" prot="public" static="no">
+        <name>MKTAG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>((a) | ((b) &lt;&lt; 8) | ((c) &lt;&lt; 16) | ((unsigned)(d) &lt;&lt; 24))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="55" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1a1e233db224cd0a3079fd4572d1a3d717" prot="public" static="no">
+        <name>MKBETAG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>((d) | ((c) &lt;&lt; 8) | ((b) &lt;&lt; 16) | ((unsigned)(a) &lt;&lt; 24))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__preproc__misc_1ga700cb39b719fc7069d15c134129b1ca0" kind="define"><name>AV_STRINGIFY</name></member>
+      <member refid="group__preproc__misc_1gab84735755e42325d114a7b857051ad3e" kind="define"><name>AV_TOSTRING</name></member>
+      <member refid="group__preproc__misc_1ga6b8f87a77e64c17b77f724369ac1d9ab" kind="define"><name>AV_GLUE</name></member>
+      <member refid="group__preproc__misc_1ga27b8f6fda860b2b08779de5d633e3623" kind="define"><name>AV_JOIN</name></member>
+      <memberdef kind="define" id="macros_8h_1a8f9c515e62a884f5d083e58edf2dffe7" prot="public" static="no">
+        <name>AV_PRAGMA</name>
+        <param><defname>s</defname></param>
+        <initializer>_Pragma(#s)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="macros_8h_1acae4ba605b3a7d535b7ac058ffe96892" prot="public" static="no">
+        <name>FFALIGN</name>
+        <param><defname>x</defname></param>
+        <param><defname>a</defname></param>
+        <initializer>(((x)+(a)-1)&amp;~((a)-1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility Preprocessor macros </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_MACROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_MACROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libavutil/avconfig.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>AV_HAVE_BIGENDIAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AV_NE(be,<sp/>le)<sp/>(be)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AV_NE(be,<sp/>le)<sp/>(le)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="macros_8h_1add8913a6f8e5714b6174eeaad5751006" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFDIFFSIGN(x,y)<sp/>(((x)&gt;(y))<sp/>-<sp/>((x)&lt;(y)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFMAX(a,b)<sp/>((a)<sp/>&gt;<sp/>(b)<sp/>?<sp/>(a)<sp/>:<sp/>(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFMAX3(a,b,c)<sp/>FFMAX(FFMAX(a,b),c)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFMIN(a,b)<sp/>((a)<sp/>&gt;<sp/>(b)<sp/>?<sp/>(b)<sp/>:<sp/>(a))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFMIN3(a,b,c)<sp/>FFMIN(FFMIN(a,b),c)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFSWAP(type,a,b)<sp/>do{type<sp/>SWAP_tmp=<sp/>b;<sp/>b=<sp/>a;<sp/>a=<sp/>SWAP_tmp;}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_ARRAY_ELEMS(a)<sp/>(sizeof(a)<sp/>/<sp/>sizeof((a)[0]))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MKTAG(a,b,c,d)<sp/><sp/><sp/>((a)<sp/>|<sp/>((b)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>((c)<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>((unsigned)(d)<sp/>&lt;&lt;<sp/>24))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MKBETAG(a,b,c,d)<sp/>((d)<sp/>|<sp/>((c)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>((b)<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>((unsigned)(a)<sp/>&lt;&lt;<sp/>24))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_STRINGIFY(s)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AV_TOSTRING(s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_TOSTRING(s)<sp/>#s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_GLUE(a,<sp/>b)<sp/>a<sp/>##<sp/>b</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_JOIN(a,<sp/>b)<sp/>AV_GLUE(a,<sp/>b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PRAGMA(s)<sp/>_Pragma(#s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFALIGN(x,<sp/>a)<sp/>(((x)+(a)-1)&amp;~((a)-1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_MACROS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/macros.h"/>
+  </compounddef>
+</doxygen>

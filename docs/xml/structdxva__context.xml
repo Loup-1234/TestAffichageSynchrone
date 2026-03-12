@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="structdxva__context" kind="struct" language="C++" prot="public">
+    <compoundname>dxva_context</compoundname>
+    <includes refid="dxva2_8h" local="no">dxva2.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdxva__context_1a1029d27444d680f4a35ff5645231121a" prot="public" static="no" mutable="no">
+        <type>IDirectXVideoDecoder *</type>
+        <definition>IDirectXVideoDecoder* dxva_context::decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <qualifiedname>dxva_context::decoder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DXVA2 decoder object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="58" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdxva__context_1aa384da68277dd76f744c4ed23d27c4be" prot="public" static="no" mutable="no">
+        <type>const DXVA2_ConfigPictureDecode *</type>
+        <definition>const DXVA2_ConfigPictureDecode* dxva_context::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <qualifiedname>dxva_context::cfg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DXVA2 configuration used to create the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="63" column="37" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdxva__context_1a850b67a58a1925ea525461f7e2899384" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned dxva_context::surface_count</definition>
+        <argsstring></argsstring>
+        <name>surface_count</name>
+        <qualifiedname>dxva_context::surface_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of surface in the surface array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="68" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdxva__context_1a68afa12df83019834d8ff22a08788054" prot="public" static="no" mutable="no">
+        <type>LPDIRECT3DSURFACE9 *</type>
+        <definition>LPDIRECT3DSURFACE9* dxva_context::surface</definition>
+        <argsstring></argsstring>
+        <name>surface</name>
+        <qualifiedname>dxva_context::surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of Direct3D surfaces used to create the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="73" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdxva__context_1a5d10a13f859a2a39ef586786e2f836ea" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t dxva_context::workaround</definition>
+        <argsstring></argsstring>
+        <name>workaround</name>
+        <qualifiedname>dxva_context::workaround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A bit field configuring the workarounds needed for using the decoder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="78" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdxva__context_1ab523653754a6a6eba2fa2782fa6ca8f2" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned dxva_context::report_id</definition>
+        <argsstring></argsstring>
+        <name>report_id</name>
+        <qualifiedname>dxva_context::report_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private to the FFmpeg <ref refid="struct_a_v_h_w_accel" kindref="compound">AVHWAccel</ref> implementation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="83" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure is used to provides the necessary configurations and data to the DXVA2 FFmpeg HWAccel implementation.</para>
+<para>The application must make it available as <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" line="54" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dxva2.h" bodystart="54" bodyend="84"/>
+    <listofallmembers>
+      <member refid="structdxva__context_1aa384da68277dd76f744c4ed23d27c4be" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>cfg</name></member>
+      <member refid="structdxva__context_1a1029d27444d680f4a35ff5645231121a" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>decoder</name></member>
+      <member refid="structdxva__context_1ab523653754a6a6eba2fa2782fa6ca8f2" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>report_id</name></member>
+      <member refid="structdxva__context_1a68afa12df83019834d8ff22a08788054" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>surface</name></member>
+      <member refid="structdxva__context_1a850b67a58a1925ea525461f7e2899384" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>surface_count</name></member>
+      <member refid="structdxva__context_1a5d10a13f859a2a39ef586786e2f836ea" prot="public" virt="non-virtual"><scope>dxva_context</scope><name>workaround</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

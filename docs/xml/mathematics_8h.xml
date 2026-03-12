@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="mathematics_8h" kind="file" language="C++">
+    <compoundname>mathematics.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <includes refid="intfloat_8h" local="yes">intfloat.h</includes>
+    <includedby refid="avutil_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="7">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h</label>
+        <link refid="avdct_8h_source"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_desc.h</label>
+        <link refid="codec__desc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</label>
+        <link refid="opt_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="37">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/timestamp.h</label>
+        <link refid="timestamp_8h"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="mathematics_8h_1a9bf5d952c5c93c70f9e66c9794d406c9" prot="public" static="no">
+        <name>M_E</name>
+        <initializer>2.7182818284590452354   /* e */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="37" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a684f12386ff5c830e067304ed743f74e" prot="public" static="no">
+        <name>M_Ef</name>
+        <initializer>2.7182818284590452354f  /* e */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="40" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a92428112a5d24721208748774a4f23e6" prot="public" static="no">
+        <name>M_LN2</name>
+        <initializer>0.69314718055994530942  /* log_e 2 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="43" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1acaee8ea501d30f1e0e5142fea72b9a65" prot="public" static="no">
+        <name>M_LN2f</name>
+        <initializer>0.69314718055994530942f /* log_e 2 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a0a53871497a155afe91424c28a8ec3c4" prot="public" static="no">
+        <name>M_LN10</name>
+        <initializer>2.30258509299404568402  /* log_e 10 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1af0d421d6bcc5f450bb55d84eaf0100a6" prot="public" static="no">
+        <name>M_LN10f</name>
+        <initializer>2.30258509299404568402f /* log_e 10 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1acff9e2147736afc56953d382f2627a7f" prot="public" static="no">
+        <name>M_LOG2_10</name>
+        <initializer>3.32192809488736234787  /* log_2 10 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="55" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a5e11ef8cd473509936bce509a6117100" prot="public" static="no">
+        <name>M_LOG2_10f</name>
+        <initializer>3.32192809488736234787f /* log_2 10 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a0b670a815abc4a54faea56cb74b9723e" prot="public" static="no">
+        <name>M_PHI</name>
+        <initializer>1.61803398874989484820   /* phi / golden ratio */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="61" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1ad1fb1fca15e583f13de7f4b6b93fe22a" prot="public" static="no">
+        <name>M_PHIf</name>
+        <initializer>1.61803398874989484820f  /* phi / golden ratio */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="64" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1ae71449b1cc6e6250b91f539153a7a0d3" prot="public" static="no">
+        <name>M_PI</name>
+        <initializer>3.14159265358979323846  /* pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="67" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1acbb42dc053fedc161079f0a4d20a64e8" prot="public" static="no">
+        <name>M_PIf</name>
+        <initializer>3.14159265358979323846f /* pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="70" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a958e4508ed28ee5cc04249144312c15f" prot="public" static="no">
+        <name>M_PI_2</name>
+        <initializer>1.57079632679489661923  /* pi/2 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="73" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a777ba8065498a31f7a3c11c5aac8aa2f" prot="public" static="no">
+        <name>M_PI_2f</name>
+        <initializer>1.57079632679489661923f /* pi/2 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1aeb24420b096a677f3a2dc5a72b36bf22" prot="public" static="no">
+        <name>M_PI_4</name>
+        <initializer>0.78539816339744830962  /* pi/4 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="79" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a3456dcadffd6d1c2106877ae572e0d95" prot="public" static="no">
+        <name>M_PI_4f</name>
+        <initializer>0.78539816339744830962f /* pi/4 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="82" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a08dfac3cca9601a02fc88356cc078e1d" prot="public" static="no">
+        <name>M_1_PI</name>
+        <initializer>0.31830988618379067154  /* 1/pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="85" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1ac1d95533cc25fb1e588f74ffdd15a99c" prot="public" static="no">
+        <name>M_1_PIf</name>
+        <initializer>0.31830988618379067154f /* 1/pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="88" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a97f6d6514d3d3dd50c3a2a6d622673db" prot="public" static="no">
+        <name>M_2_PI</name>
+        <initializer>0.63661977236758134308  /* 2/pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="91" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1ac49c40082a93d5bf7244721597ff55f6" prot="public" static="no">
+        <name>M_2_PIf</name>
+        <initializer>0.63661977236758134308f /* 2/pi */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="94" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a631ff334c4a1a6db2e8a7ff4acbe48a5" prot="public" static="no">
+        <name>M_2_SQRTPI</name>
+        <initializer>1.12837916709551257390  /* 2/sqrt(pi) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="97" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a9e28ebca167c870dee28ed556d0823f9" prot="public" static="no">
+        <name>M_2_SQRTPIf</name>
+        <initializer>1.12837916709551257390f /* 2/sqrt(pi) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="100" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1acdbb2c2f9429f08916f03c8786d2d2d7" prot="public" static="no">
+        <name>M_SQRT1_2</name>
+        <initializer>0.70710678118654752440  /* 1/sqrt(2) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="103" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a5330d4737f89cfaec639a6e07202b0e0" prot="public" static="no">
+        <name>M_SQRT1_2f</name>
+        <initializer>0.70710678118654752440f /* 1/sqrt(2) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="106" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a66b3ab30f1332874326ed93969e496e0" prot="public" static="no">
+        <name>M_SQRT2</name>
+        <initializer>1.41421356237309504880  /* sqrt(2) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="109" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1adcd469193a884030dcec679e5a77c4bf" prot="public" static="no">
+        <name>M_SQRT2f</name>
+        <initializer>1.41421356237309504880f /* sqrt(2) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="112" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a8abfcc76130f3f991d124dd22d7e69bc" prot="public" static="no">
+        <name>NAN</name>
+        <initializer>av_int2float(0x7fc00000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="115" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mathematics_8h_1a956e2723d559858d08644ac99146e910" prot="public" static="no">
+        <name>INFINITY</name>
+        <initializer>av_int2float(0x7f800000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="118" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kind="enum"><name>AVRounding</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__math_1ga952147c7a40c48a05c39e918b153ba99" kind="function"><name>av_gcd</name></member>
+      <member refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" kind="function"><name>av_rescale</name></member>
+      <member refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kind="function"><name>av_rescale_rnd</name></member>
+      <member refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kind="function"><name>av_rescale_q</name></member>
+      <member refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kind="function"><name>av_rescale_q_rnd</name></member>
+      <member refid="group__lavu__math_1ga151744358fff630942b926e67e67c415" kind="function"><name>av_compare_ts</name></member>
+      <member refid="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" kind="function"><name>av_compare_mod</name></member>
+      <member refid="group__lavu__math_1ga29b7c3d60d68ef678ee1f4adc61a25dc" kind="function"><name>av_rescale_delta</name></member>
+      <member refid="group__lavu__math_1ga0c4f9ed3f4102125be7451ad4d848a2f" kind="function"><name>av_add_stable</name></member>
+      <member refid="group__lavu__math_1gac6df8ff9fa00f5daf9f16cc46038f064" kind="function"><name>av_bessel_i0</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2005-2012<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_MATHEMATICS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_MATHEMATICS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;intfloat.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_E<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.7182818284590452354<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>e<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_Ef</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_Ef<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.7182818284590452354f<sp/><sp/></highlight><highlight class="comment">/*<sp/>e<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LN2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LN2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.69314718055994530942<sp/><sp/></highlight><highlight class="comment">/*<sp/>log_e<sp/>2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LN2f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LN2f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.69314718055994530942f<sp/></highlight><highlight class="comment">/*<sp/>log_e<sp/>2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LN10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LN10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.30258509299404568402<sp/><sp/></highlight><highlight class="comment">/*<sp/>log_e<sp/>10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LN10f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LN10f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.30258509299404568402f<sp/></highlight><highlight class="comment">/*<sp/>log_e<sp/>10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LOG2_10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LOG2_10<sp/><sp/><sp/><sp/><sp/><sp/>3.32192809488736234787<sp/><sp/></highlight><highlight class="comment">/*<sp/>log_2<sp/>10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_LOG2_10f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_LOG2_10f<sp/><sp/><sp/><sp/><sp/>3.32192809488736234787f<sp/></highlight><highlight class="comment">/*<sp/>log_2<sp/>10<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PHI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PHI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.61803398874989484820<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>phi<sp/>/<sp/>golden<sp/>ratio<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PHIf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PHIf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.61803398874989484820f<sp/><sp/></highlight><highlight class="comment">/*<sp/>phi<sp/>/<sp/>golden<sp/>ratio<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.14159265358979323846<sp/><sp/></highlight><highlight class="comment">/*<sp/>pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PIf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PIf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.14159265358979323846f<sp/></highlight><highlight class="comment">/*<sp/>pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.57079632679489661923<sp/><sp/></highlight><highlight class="comment">/*<sp/>pi/2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI_2f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI_2f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.57079632679489661923f<sp/></highlight><highlight class="comment">/*<sp/>pi/2<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.78539816339744830962<sp/><sp/></highlight><highlight class="comment">/*<sp/>pi/4<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI_4f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI_4f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.78539816339744830962f<sp/></highlight><highlight class="comment">/*<sp/>pi/4<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_1_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_1_PI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.31830988618379067154<sp/><sp/></highlight><highlight class="comment">/*<sp/>1/pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_1_PIf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_1_PIf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.31830988618379067154f<sp/></highlight><highlight class="comment">/*<sp/>1/pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_2_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_2_PI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.63661977236758134308<sp/><sp/></highlight><highlight class="comment">/*<sp/>2/pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_2_PIf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_2_PIf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.63661977236758134308f<sp/></highlight><highlight class="comment">/*<sp/>2/pi<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_2_SQRTPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_2_SQRTPI<sp/><sp/><sp/><sp/><sp/>1.12837916709551257390<sp/><sp/></highlight><highlight class="comment">/*<sp/>2/sqrt(pi)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_2_SQRTPIf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_2_SQRTPIf<sp/><sp/><sp/><sp/>1.12837916709551257390f<sp/></highlight><highlight class="comment">/*<sp/>2/sqrt(pi)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_SQRT1_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_SQRT1_2<sp/><sp/><sp/><sp/><sp/><sp/>0.70710678118654752440<sp/><sp/></highlight><highlight class="comment">/*<sp/>1/sqrt(2)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_SQRT1_2f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_SQRT1_2f<sp/><sp/><sp/><sp/><sp/>0.70710678118654752440f<sp/></highlight><highlight class="comment">/*<sp/>1/sqrt(2)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_SQRT2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_SQRT2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.41421356237309504880<sp/><sp/></highlight><highlight class="comment">/*<sp/>sqrt(2)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_SQRT2f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_SQRT2f<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.41421356237309504880f<sp/></highlight><highlight class="comment">/*<sp/>sqrt(2)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_int2float(0x7fc00000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INFINITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INFINITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_int2float(0x7f800000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref><sp/>{</highlight></codeline>
+<codeline lineno="131" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a35e291756025351803b97f7522b56eab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a35e291756025351803b97f7522b56eab" kindref="member">AV_ROUND_ZERO</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="132" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a0ac08aede35de739ec5d0c1ba6217126" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a0ac08aede35de739ec5d0c1ba6217126" kindref="member">AV_ROUND_INF</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="133" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a4a4b2c2c77b7e20884440f7e57cfdb98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a4a4b2c2c77b7e20884440f7e57cfdb98" kindref="member">AV_ROUND_DOWN</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="134" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aa1d28e08e2f8b49b256e056f93038c1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aa1d28e08e2f8b49b256e056f93038c1a" kindref="member">AV_ROUND_UP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="135" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aea95b00154ff83c740b46376dfa06e11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aea95b00154ff83c740b46376dfa06e11" kindref="member">AV_ROUND_NEAR_INF</ref><sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="159" refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a7fcb56631d6898b282d6c78ce6c14a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a7fcb56631d6898b282d6c78ce6c14a43" kindref="member">AV_ROUND_PASS_MINMAX</ref><sp/>=<sp/>8192,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group__lavu__math_1ga952147c7a40c48a05c39e918b153ba99" refkind="member"><highlight class="normal">int64_t<sp/>av_const<sp/><ref refid="group__lavu__math_1ga952147c7a40c48a05c39e918b153ba99" kindref="member">av_gcd</ref>(int64_t<sp/>a,<sp/>int64_t<sp/>b);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" kindref="member">av_rescale</ref>(int64_t<sp/>a,<sp/>int64_t<sp/>b,<sp/>int64_t<sp/>c)<sp/>av_const;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group__lavu__math_1ga82d40664213508918093822461cc597e" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd</ref>(int64_t<sp/>a,<sp/>int64_t<sp/>b,<sp/>int64_t<sp/>c,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref><sp/>rnd)<sp/>av_const;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kindref="member">av_rescale_q</ref>(int64_t<sp/>a,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>bq,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>cq)<sp/>av_const;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kindref="member">av_rescale_q_rnd</ref>(int64_t<sp/>a,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>bq,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>cq,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref><sp/>rnd)<sp/>av_const;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="group__lavu__math_1ga151744358fff630942b926e67e67c415" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math_1ga151744358fff630942b926e67e67c415" kindref="member">av_compare_ts</ref>(int64_t<sp/>ts_a,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>tb_a,<sp/>int64_t<sp/>ts_b,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>tb_b);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" kindref="member">av_compare_mod</ref>(uint64_t<sp/>a,<sp/>uint64_t<sp/>b,<sp/>uint64_t<sp/>mod);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="group__lavu__math_1ga29b7c3d60d68ef678ee1f4adc61a25dc" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1ga29b7c3d60d68ef678ee1f4adc61a25dc" kindref="member">av_rescale_delta</ref>(<ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>in_tb,<sp/>int64_t<sp/>in_ts,<sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>fs_tb,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration,<sp/>int64_t<sp/>*last,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>out_tb);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="group__lavu__math_1ga0c4f9ed3f4102125be7451ad4d848a2f" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lavu__math_1ga0c4f9ed3f4102125be7451ad4d848a2f" kindref="member">av_add_stable</ref>(<ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>ts_tb,<sp/>int64_t<sp/>ts,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>inc_tb,<sp/>int64_t<sp/>inc);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="group__lavu__math_1gac6df8ff9fa00f5daf9f16cc46038f064" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math_1gac6df8ff9fa00f5daf9f16cc46038f064" kindref="member">av_bessel_i0</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_MATHEMATICS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_output_format" kind="struct" language="C++" prot="public">
+    <compoundname>AVOutputFormat</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_output_format_1ac3abc5f47f3465b6b7eec89c9476351c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVOutputFormat::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVOutputFormat::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="506" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1a4ff98d90aac0047a204a35a758a363fc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVOutputFormat::long_name</definition>
+        <argsstring></argsstring>
+        <name>long_name</name>
+        <qualifiedname>AVOutputFormat::long_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descriptive name for the format, meant to be more human-readable than name. You should use the NULL_IF_CONFIG_SMALL() macro to define it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="512" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1ad94e0c8bd362cb9ffbfc44514481fc75" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVOutputFormat::mime_type</definition>
+        <argsstring></argsstring>
+        <name>mime_type</name>
+        <qualifiedname>AVOutputFormat::mime_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="513" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1a10f19abe463890063659723c90c15335" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVOutputFormat::extensions</definition>
+        <argsstring></argsstring>
+        <name>extensions</name>
+        <qualifiedname>AVOutputFormat::extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>comma-separated filename extensions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="514" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1a2e4fff0aa061984d586ea08ecad96141" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVOutputFormat::audio_codec</definition>
+        <argsstring></argsstring>
+        <name>audio_codec</name>
+        <qualifiedname>AVOutputFormat::audio_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default audio codec </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="516" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1a1354a9c8542b1b698157218336bd4754" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVOutputFormat::video_codec</definition>
+        <argsstring></argsstring>
+        <name>video_codec</name>
+        <qualifiedname>AVOutputFormat::video_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default video codec </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="517" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1adc8b4d7a5f6610e1816dd522e362217c" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVOutputFormat::subtitle_codec</definition>
+        <argsstring></argsstring>
+        <name>subtitle_codec</name>
+        <qualifiedname>AVOutputFormat::subtitle_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default subtitle codec </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="518" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1aad55a00e728a020c1dcfaaf695320445" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVOutputFormat::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVOutputFormat::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>can use flags: AVFMT_NOFILE, AVFMT_NEEDNUMBER, AVFMT_GLOBALHEADER, AVFMT_NOTIMESTAMPS, AVFMT_VARIABLE_FPS, AVFMT_NODIMENSIONS, AVFMT_NOSTREAMS, AVFMT_TS_NONSTRICT, AVFMT_TS_NEGATIVE </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="525" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1ac55f4c21dd75c8c48b9de5080681eed4" prot="public" static="no" mutable="no">
+        <type>const struct AVCodecTag *const  *</type>
+        <definition>const struct AVCodecTag* const* AVOutputFormat::codec_tag</definition>
+        <argsstring></argsstring>
+        <name>codec_tag</name>
+        <qualifiedname>AVOutputFormat::codec_tag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of supported codec_id-codec_tag pairs, ordered by &quot;better
+choice first&quot;. The arrays are all terminated by AV_CODEC_ID_NONE. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="531" column="34" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_output_format_1ae030463c5c08de99f8c9e727c822ca87" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVOutputFormat::priv_class</definition>
+        <argsstring></argsstring>
+        <name>priv_class</name>
+        <qualifiedname>AVOutputFormat::priv_class</qualifiedname>
+        <briefdescription>
+<para><ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for the private context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="534" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="1">
+        <label>AVOutputFormat</label>
+        <link refid="struct_a_v_output_format"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="505" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="505" bodyend="535"/>
+    <listofallmembers>
+      <member refid="struct_a_v_output_format_1a2e4fff0aa061984d586ea08ecad96141" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>audio_codec</name></member>
+      <member refid="struct_a_v_output_format_1ac55f4c21dd75c8c48b9de5080681eed4" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>codec_tag</name></member>
+      <member refid="struct_a_v_output_format_1a10f19abe463890063659723c90c15335" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>extensions</name></member>
+      <member refid="struct_a_v_output_format_1aad55a00e728a020c1dcfaaf695320445" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>flags</name></member>
+      <member refid="struct_a_v_output_format_1a4ff98d90aac0047a204a35a758a363fc" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>long_name</name></member>
+      <member refid="struct_a_v_output_format_1ad94e0c8bd362cb9ffbfc44514481fc75" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>mime_type</name></member>
+      <member refid="struct_a_v_output_format_1ac3abc5f47f3465b6b7eec89c9476351c" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>name</name></member>
+      <member refid="struct_a_v_output_format_1ae030463c5c08de99f8c9e727c822ca87" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>priv_class</name></member>
+      <member refid="struct_a_v_output_format_1adc8b4d7a5f6610e1816dd522e362217c" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>subtitle_codec</name></member>
+      <member refid="struct_a_v_output_format_1a1354a9c8542b1b698157218336bd4754" prot="public" virt="non-virtual"><scope>AVOutputFormat</scope><name>video_codec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

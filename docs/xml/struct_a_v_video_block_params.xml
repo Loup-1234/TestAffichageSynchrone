@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_video_block_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVVideoBlockParams</compoundname>
+    <includes refid="video__enc__params_8h" local="no">video_enc_params.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_video_block_params_1a37deac45760c78df344517c038449f09" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVideoBlockParams::src_x</definition>
+        <argsstring></argsstring>
+        <name>src_x</name>
+        <qualifiedname>AVVideoBlockParams::src_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance in luma pixels from the top-left corner of the visible frame to the top-left corner of the block. Can be negative if top/right padding is present on the coded frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="126" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_block_params_1a328ac9726b83f9e0f501c81a57c9984d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVideoBlockParams::src_y</definition>
+        <argsstring></argsstring>
+        <name>src_y</name>
+        <qualifiedname>AVVideoBlockParams::src_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="126" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_block_params_1a7f89b04da2c30fdde7e43e8942f63195" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVideoBlockParams::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>AVVideoBlockParams::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width and height of the block in luma pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="130" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_block_params_1a1cd722cf2f7ea97287da8fc33c7dc3de" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVideoBlockParams::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>AVVideoBlockParams::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="130" column="11" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_block_params_1ae126d6a1b80fbabf268245fbf589a3fa" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVVideoBlockParams::delta_qp</definition>
+        <argsstring></argsstring>
+        <name>delta_qp</name>
+        <qualifiedname>AVVideoBlockParams::delta_qp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Difference between this block&apos;s final quantization parameter and the corresponding per-frame value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="136" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure for storing block-level encoding information. It is allocated as a part of <ref refid="struct_a_v_video_enc_params" kindref="compound">AVVideoEncParams</ref> and should be retrieved with av_video_enc_params_block().</para>
+<para>sizeof(AVVideoBlockParams) is not a part of the ABI and new fields may be added to it. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="120" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="120" bodyend="137"/>
+    <listofallmembers>
+      <member refid="struct_a_v_video_block_params_1ae126d6a1b80fbabf268245fbf589a3fa" prot="public" virt="non-virtual"><scope>AVVideoBlockParams</scope><name>delta_qp</name></member>
+      <member refid="struct_a_v_video_block_params_1a1cd722cf2f7ea97287da8fc33c7dc3de" prot="public" virt="non-virtual"><scope>AVVideoBlockParams</scope><name>h</name></member>
+      <member refid="struct_a_v_video_block_params_1a37deac45760c78df344517c038449f09" prot="public" virt="non-virtual"><scope>AVVideoBlockParams</scope><name>src_x</name></member>
+      <member refid="struct_a_v_video_block_params_1a328ac9726b83f9e0f501c81a57c9984d" prot="public" virt="non-virtual"><scope>AVVideoBlockParams</scope><name>src_y</name></member>
+      <member refid="struct_a_v_video_block_params_1a7f89b04da2c30fdde7e43e8942f63195" prot="public" virt="non-virtual"><scope>AVVideoBlockParams</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

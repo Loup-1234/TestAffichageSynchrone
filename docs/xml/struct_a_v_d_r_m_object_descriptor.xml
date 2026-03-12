@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_r_m_object_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVDRMObjectDescriptor</compoundname>
+    <includes refid="hwcontext__drm_8h" local="no">hwcontext_drm.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_r_m_object_descriptor_1a3732e73e288f10965cae373c70e8402e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDRMObjectDescriptor::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <qualifiedname>AVDRMObjectDescriptor::fd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM PRIME fd for the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_object_descriptor_1a4eeb1aad28f187c3c3e4f9d547a55a3d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVDRMObjectDescriptor::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVDRMObjectDescriptor::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total size of the object.</para>
+<para>(This includes any parts not which do not contain image data.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="58" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_object_descriptor_1ab193fb14460d5a5f90578a80608e82ae" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVDRMObjectDescriptor::format_modifier</definition>
+        <argsstring></argsstring>
+        <name>format_modifier</name>
+        <qualifiedname>AVDRMObjectDescriptor::format_modifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Format modifier applied to the object (DRM_FORMAT_MOD_*).</para>
+<para>If the format modifier is unknown then this should be set to DRM_FORMAT_MOD_INVALID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="65" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DRM object descriptor.</para>
+<para>Describes a single DRM object, addressing it as a PRIME file descriptor. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="48" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="48" bodyend="66"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_r_m_object_descriptor_1a3732e73e288f10965cae373c70e8402e" prot="public" virt="non-virtual"><scope>AVDRMObjectDescriptor</scope><name>fd</name></member>
+      <member refid="struct_a_v_d_r_m_object_descriptor_1ab193fb14460d5a5f90578a80608e82ae" prot="public" virt="non-virtual"><scope>AVDRMObjectDescriptor</scope><name>format_modifier</name></member>
+      <member refid="struct_a_v_d_r_m_object_descriptor_1a4eeb1aad28f187c3c3e4f9d547a55a3d" prot="public" virt="non-virtual"><scope>AVDRMObjectDescriptor</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

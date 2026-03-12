@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="csp_8h" kind="file" language="C++">
+    <compoundname>csp.h</compoundname>
+    <includes refid="pixfmt_8h" local="yes">pixfmt.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <includedby refid="dovi__meta_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="3">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h</label>
+        <link refid="csp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h</label>
+        <link refid="csp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h</label>
+        <link refid="dovi__meta_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_luma_coefficients" prot="public">AVLumaCoefficients</innerclass>
+    <innerclass refid="struct_a_v_c_i_exy" prot="public">AVCIExy</innerclass>
+    <innerclass refid="struct_a_v_primary_coefficients" prot="public">AVPrimaryCoefficients</innerclass>
+    <innerclass refid="struct_a_v_color_primaries_desc" prot="public">AVColorPrimariesDesc</innerclass>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__math__csp_1ga1b6b9baa08e2a33adc6443d8cf4a28b5" kind="typedef"><name>AVLumaCoefficients</name></member>
+      <member refid="group__lavu__math__csp_1ga785d12705463c0a64fc213487c17a6d3" kind="typedef"><name>AVCIExy</name></member>
+      <member refid="group__lavu__math__csp_1ga853d992bb10f40150dc982bd6594a896" kind="typedef"><name>AVPrimaryCoefficients</name></member>
+      <member refid="group__lavu__math__csp_1ga5a11f2862052a01f3a5777b939237752" kind="typedef"><name>AVWhitepointCoefficients</name></member>
+      <member refid="group__lavu__math__csp_1ga6dff72b62d340afbde5f5a5f248a4608" kind="typedef"><name>AVColorPrimariesDesc</name></member>
+      <member refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kind="typedef"><name>av_csp_trc_function</name></member>
+      <member refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kind="typedef"><name>av_csp_eotf_function</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__math__csp_1ga034901e0adcbebacb871f52a855a602a" kind="function"><name>av_csp_luma_coeffs_from_avcsp</name></member>
+      <member refid="group__lavu__math__csp_1ga70f19e851f0f0bfa24c56e62a540e477" kind="function"><name>av_csp_primaries_desc_from_id</name></member>
+      <member refid="group__lavu__math__csp_1ga1ad5a7e4fce153b115cbe23e405ea145" kind="function"><name>av_csp_primaries_id_from_desc</name></member>
+      <member refid="group__lavu__math__csp_1gaee369159d52aec550c6aa2e5d9a0e65f" kind="function"><name>av_csp_approximate_trc_gamma</name></member>
+      <member refid="group__lavu__math__csp_1gada7dfc457f1f433cc50381f51fb5a846" kind="function"><name>av_csp_approximate_eotf_gamma</name></member>
+      <member refid="group__lavu__math__csp_1ga55f130f366f96e0e2059811d575c2f03" kind="function"><name>av_csp_trc_func_from_id</name></member>
+      <member refid="group__lavu__math__csp_1gad725a18975d463093079b5a97c59b095" kind="function"><name>av_csp_trc_func_inv_from_id</name></member>
+      <member refid="group__lavu__math__csp_1gaee1601d6e7fac83548989aa7bed50cda" kind="function"><name>av_csp_itu_eotf</name></member>
+      <member refid="group__lavu__math__csp_1gaa2e4fdd448becf7f104ea10914a7e290" kind="function"><name>av_csp_itu_eotf_inv</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Colorspace value utility functions for libavutil.</para>
+<para><simplesect kind="author"><para>Ronald S. Bultje <ulink url="mailto:rsbultje@gmail.com">rsbultje@gmail.com</ulink> </para>
+</simplesect>
+<simplesect kind="author"><para>Leo Izen <ulink url="mailto:leo.izen@gmail.com">leo.izen@gmail.com</ulink> </para>
+</simplesect>
+<simplesect kind="author"><para>Kevin Wheatley <ulink url="mailto:kevin.j.wheatley@gmail.com">kevin.j.wheatley@gmail.com</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015<sp/>Kevin<sp/>Wheatley<sp/>&lt;kevin.j.wheatley@gmail.com&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016<sp/>Ronald<sp/>S.<sp/>Bultje<sp/>&lt;rsbultje@gmail.com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Leo<sp/>Izen<sp/>&lt;leo.izen@gmail.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_CSP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_CSP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pixfmt_8h" kindref="compound">pixfmt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_a_v_luma_coefficients" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_luma_coefficients" kindref="compound">AVLumaCoefficients</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>cr,<sp/>cg,<sp/>cb;</highlight></codeline>
+<codeline lineno="50" refid="group__lavu__math__csp_1ga1b6b9baa08e2a33adc6443d8cf4a28b5" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_luma_coefficients" kindref="compound">AVLumaCoefficients</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_a_v_c_i_exy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_c_i_exy" kindref="compound">AVCIExy</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>x,<sp/>y;</highlight></codeline>
+<codeline lineno="58" refid="group__lavu__math__csp_1ga785d12705463c0a64fc213487c17a6d3" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_c_i_exy" kindref="compound">AVCIExy</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct_a_v_primary_coefficients" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_primary_coefficients" kindref="compound">AVPrimaryCoefficients</ref><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_c_i_exy" kindref="compound">AVCIExy</ref><sp/>r,<sp/>g,<sp/>b;</highlight></codeline>
+<codeline lineno="66" refid="group__lavu__math__csp_1ga853d992bb10f40150dc982bd6594a896" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_primary_coefficients" kindref="compound">AVPrimaryCoefficients</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group__lavu__math__csp_1ga5a11f2862052a01f3a5777b939237752" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_c_i_exy" kindref="compound">AVCIExy</ref><sp/><ref refid="group__lavu__math__csp_1ga5a11f2862052a01f3a5777b939237752" kindref="member">AVWhitepointCoefficients</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct_a_v_color_primaries_desc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__math__csp_1ga5a11f2862052a01f3a5777b939237752" kindref="member">AVWhitepointCoefficients</ref><sp/>wp;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_primary_coefficients" kindref="compound">AVPrimaryCoefficients</ref><sp/>prim;</highlight></codeline>
+<codeline lineno="81" refid="group__lavu__math__csp_1ga6dff72b62d340afbde5f5a5f248a4608" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>double<sp/>(*<ref refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kindref="member">av_csp_trc_function</ref>)(double);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="group__lavu__math__csp_1ga034901e0adcbebacb871f52a855a602a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_luma_coefficients" kindref="compound">AVLumaCoefficients</ref><sp/>*<ref refid="group__lavu__math__csp_1ga034901e0adcbebacb871f52a855a602a" kindref="member">av_csp_luma_coeffs_from_avcsp</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref><sp/>csp);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="group__lavu__math__csp_1ga70f19e851f0f0bfa24c56e62a540e477" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref><sp/>*<ref refid="group__lavu__math__csp_1ga70f19e851f0f0bfa24c56e62a540e477" kindref="member">av_csp_primaries_desc_from_id</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref><sp/>prm);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="group__lavu__math__csp_1ga1ad5a7e4fce153b115cbe23e405ea145" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref><sp/><ref refid="group__lavu__math__csp_1ga1ad5a7e4fce153b115cbe23e405ea145" kindref="member">av_csp_primaries_id_from_desc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref><sp/>*prm);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="group__lavu__math__csp_1gaee369159d52aec550c6aa2e5d9a0e65f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math__csp_1gaee369159d52aec550c6aa2e5d9a0e65f" kindref="member">av_csp_approximate_trc_gamma</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="group__lavu__math__csp_1gada7dfc457f1f433cc50381f51fb5a846" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="group__lavu__math__csp_1gada7dfc457f1f433cc50381f51fb5a846" kindref="member">av_csp_approximate_eotf_gamma</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="group__lavu__math__csp_1ga55f130f366f96e0e2059811d575c2f03" refkind="member"><highlight class="normal"><ref refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kindref="member">av_csp_trc_function</ref><sp/><ref refid="group__lavu__math__csp_1ga55f130f366f96e0e2059811d575c2f03" kindref="member">av_csp_trc_func_from_id</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group__lavu__math__csp_1gad725a18975d463093079b5a97c59b095" refkind="member"><highlight class="normal"><ref refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kindref="member">av_csp_trc_function</ref><sp/><ref refid="group__lavu__math__csp_1gad725a18975d463093079b5a97c59b095" kindref="member">av_csp_trc_func_inv_from_id</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kindref="member">av_csp_eotf_function</ref>)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Lw,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Lb,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c[3]);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="group__lavu__math__csp_1gaee1601d6e7fac83548989aa7bed50cda" refkind="member"><highlight class="normal"><ref refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kindref="member">av_csp_eotf_function</ref><sp/><ref refid="group__lavu__math__csp_1gaee1601d6e7fac83548989aa7bed50cda" kindref="member">av_csp_itu_eotf</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="group__lavu__math__csp_1gaa2e4fdd448becf7f104ea10914a7e290" refkind="member"><highlight class="normal"><ref refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kindref="member">av_csp_eotf_function</ref><sp/><ref refid="group__lavu__math__csp_1gaa2e4fdd448becf7f104ea10914a7e290" kindref="member">av_csp_itu_eotf_inv</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_CSP_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h"/>
+  </compounddef>
+</doxygen>

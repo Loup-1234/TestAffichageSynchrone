@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_r_t_c_p_sender_report" kind="struct" language="C++" prot="public">
+    <compoundname>AVRTCPSenderReport</compoundname>
+    <includes refid="defs_8h" local="no">defs.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_r_t_c_p_sender_report_1a37b1ae7a7397ca264c4e045aae914c24" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVRTCPSenderReport::ssrc</definition>
+        <argsstring></argsstring>
+        <name>ssrc</name>
+        <qualifiedname>AVRTCPSenderReport::ssrc</qualifiedname>
+        <briefdescription>
+<para>Synchronization source identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="346" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_r_t_c_p_sender_report_1a7c2cdcfe4700d885c8ecdaad97de5551" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVRTCPSenderReport::ntp_timestamp</definition>
+        <argsstring></argsstring>
+        <name>ntp_timestamp</name>
+        <qualifiedname>AVRTCPSenderReport::ntp_timestamp</qualifiedname>
+        <briefdescription>
+<para>NTP time when the report was sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="347" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_r_t_c_p_sender_report_1ad84eb7a56d999ff867701d7017630d4c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVRTCPSenderReport::rtp_timestamp</definition>
+        <argsstring></argsstring>
+        <name>rtp_timestamp</name>
+        <qualifiedname>AVRTCPSenderReport::rtp_timestamp</qualifiedname>
+        <briefdescription>
+<para>RTP time when the report was sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="348" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_r_t_c_p_sender_report_1a4920ead169faa039bede8f4127532019" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVRTCPSenderReport::sender_nb_packets</definition>
+        <argsstring></argsstring>
+        <name>sender_nb_packets</name>
+        <qualifiedname>AVRTCPSenderReport::sender_nb_packets</qualifiedname>
+        <briefdescription>
+<para>Total number of packets sent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="349" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_r_t_c_p_sender_report_1a6f8e44440a210b1f3ddc6b5373d89efe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVRTCPSenderReport::sender_nb_bytes</definition>
+        <argsstring></argsstring>
+        <name>sender_nb_bytes</name>
+        <qualifiedname>AVRTCPSenderReport::sender_nb_bytes</qualifiedname>
+        <briefdescription>
+<para>Total number of bytes sent (excluding headers or padding) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="350" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RTCP SR (Sender Report) information</para>
+<para>The received sender report information for an RTSP stream, exposed as AV_PKT_DATA_RTCP_SR side data. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="345" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="345" bodyend="351"/>
+    <listofallmembers>
+      <member refid="struct_a_v_r_t_c_p_sender_report_1a7c2cdcfe4700d885c8ecdaad97de5551" prot="public" virt="non-virtual"><scope>AVRTCPSenderReport</scope><name>ntp_timestamp</name></member>
+      <member refid="struct_a_v_r_t_c_p_sender_report_1ad84eb7a56d999ff867701d7017630d4c" prot="public" virt="non-virtual"><scope>AVRTCPSenderReport</scope><name>rtp_timestamp</name></member>
+      <member refid="struct_a_v_r_t_c_p_sender_report_1a6f8e44440a210b1f3ddc6b5373d89efe" prot="public" virt="non-virtual"><scope>AVRTCPSenderReport</scope><name>sender_nb_bytes</name></member>
+      <member refid="struct_a_v_r_t_c_p_sender_report_1a4920ead169faa039bede8f4127532019" prot="public" virt="non-virtual"><scope>AVRTCPSenderReport</scope><name>sender_nb_packets</name></member>
+      <member refid="struct_a_v_r_t_c_p_sender_report_1a37b1ae7a7397ca264c4e045aae914c24" prot="public" virt="non-virtual"><scope>AVRTCPSenderReport</scope><name>ssrc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

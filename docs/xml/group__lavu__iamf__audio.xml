@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__iamf__audio" kind="group">
+    <compoundname>lavu_iamf_audio</compoundname>
+    <title>Audio Element</title>
+    <innerclass refid="struct_a_v_i_a_m_f_layer" prot="public">AVIAMFLayer</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_audio_element" prot="public">AVIAMFAudioElement</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__iamf__audio_1ga352218f0df623d2b4247f1bde835c990" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVIAMFAmbisonicsMode</name>
+        <enumvalue id="group__lavu__iamf__audio_1gga352218f0df623d2b4247f1bde835c990aa5ac34f870143fb992d50acd7d8c936d" prot="public">
+          <name>AV_IAMF_AMBISONICS_MODE_MONO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__iamf__audio_1gga352218f0df623d2b4247f1bde835c990affae194a0b6f6b9287e91ae2d2171285" prot="public">
+          <name>AV_IAMF_AMBISONICS_MODE_PROJECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="272" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__iamf__audio_1ga782d2fa607a401cf5318c27611e8e4c9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVIAMFAudioElementType</name>
+        <enumvalue id="group__lavu__iamf__audio_1gga782d2fa607a401cf5318c27611e8e4c9af3e74a8293dd072000c9a6120d1a7dba" prot="public">
+          <name>AV_IAMF_AUDIO_ELEMENT_TYPE_CHANNEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__iamf__audio_1gga782d2fa607a401cf5318c27611e8e4c9a6a484cb4b081cc13f19abad293c7dc7d" prot="public">
+          <name>AV_IAMF_AUDIO_ELEMENT_TYPE_SCENE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="347" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="347" bodyend="350"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__iamf__audio_1ga150dabcca55c590b9a708189b59e2e3a" prot="public" static="no">
+        <type>struct AVIAMFLayer</type>
+        <definition>typedef struct AVIAMFLayer AVIAMFLayer</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A layer defining a Channel Layout in the Audio Element.</para>
+<para>When <ref refid="struct_a_v_i_a_m_f_audio_element_1a3199850332a351361748c92b6cb8f8ad" kindref="member">the parent&apos;s Audio Element type</ref> is AV_IAMF_AUDIO_ELEMENT_TYPE_CHANNEL, this corresponds to an Scalable Channel Layout layer as defined in section 3.6.2 of IAMF. For AV_IAMF_AUDIO_ELEMENT_TYPE_SCENE, it is an Ambisonics channel layout as defined in section 3.6.3 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" kindref="member">av_iamf_audio_element_add_layer()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="344" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__iamf__audio_1ga340b05d4295a72cb3f905f2acd93dd3a" prot="public" static="no">
+        <type>struct AVIAMFAudioElement</type>
+        <definition>typedef struct AVIAMFAudioElement AVIAMFAudioElement</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFAudioElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information on how to combine one or more audio streams, as defined in section 3.6 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__audio_1gae7d6f530919a1283c776f420f979b180" kindref="member">av_iamf_audio_element_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="397" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__iamf__audio_1ga3b633299b5895f9eb04a1dfe315e6769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_iamf_audio_element_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_iamf_audio_element_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="399" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="399" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__audio_1gae7d6f530919a1283c776f420f979b180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> *</type>
+        <definition>AVIAMFAudioElement * av_iamf_audio_element_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_iamf_audio_element_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref>, and initializes its fields with default values. No layers are allocated. Must be freed with <ref refid="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" kindref="member">av_iamf_audio_element_free()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" kindref="member">av_iamf_audio_element_add_layer()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="407" column="20" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="407" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_layer" kindref="compound">AVIAMFLayer</ref> *</type>
+        <definition>AVIAMFLayer * av_iamf_audio_element_add_layer</definition>
+        <argsstring>(AVIAMFAudioElement *audio_element)</argsstring>
+        <name>av_iamf_audio_element_add_layer</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> *</type>
+          <declname>audio_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a layer and add it to a given <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref>. It is freed by <ref refid="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" kindref="member">av_iamf_audio_element_free()</ref> alongside the rest of the parent <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref>.</para>
+<para><simplesect kind="return"><para>a pointer to the allocated layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="416" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="416" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_iamf_audio_element_free</definition>
+        <argsstring>(AVIAMFAudioElement **audio_element)</argsstring>
+        <name>av_iamf_audio_element_free</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> **</type>
+          <declname>audio_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> and all its contents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>audio_element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to pointer to an allocated <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref>. upon return, *audio_element will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="424" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="424" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__iamf__audio_1ga82a6fc997aae8aceaf26d53473c26e67" prot="public" static="no">
+        <name>AV_IAMF_LAYER_FLAG_RECON_GAIN</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recon gain information for the layer is present in <ref refid="struct_a_v_i_a_m_f_recon_gain" kindref="compound">AVIAMFReconGain</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="280" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Audio Elements as defined in section 3.6 of IAMF.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

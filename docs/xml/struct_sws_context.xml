@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_sws_context" kind="struct" language="C++" prot="public">
+    <compoundname>SwsContext</compoundname>
+    <includes refid="swscale_8h" local="no">swscale.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sws_context_1a6866f52574bc730833d2580abc806261" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* SwsContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>SwsContext::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="190" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a90a448639c27486dc88b3ef4fa1252de" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SwsContext::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>SwsContext::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private data of the user, can be used to carry app specific stuff. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="195" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aef45de443b59978fd38ad1531c618574" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned SwsContext::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>SwsContext::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitmask of SWS_*. See <computeroutput><ref refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" kindref="member">SwsFlags</ref></computeroutput> for details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="200" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aebfe8c01f9ea0bb80c7ae4d433cc5062" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SwsContext::scaler_params[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>scaler_params</name>
+        <qualifiedname>SwsContext::scaler_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra parameters for fine-tuning certain scalers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="205" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a3cc13e08b01c1152405b3a0e4313b255" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::threads</definition>
+        <argsstring></argsstring>
+        <name>threads</name>
+        <qualifiedname>SwsContext::threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How many threads to use for processing, or 0 for automatic selection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="210" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1abdb353dd741ba1ff0bfab6bcb133c682" prot="public" static="no" mutable="no">
+        <type>SwsDither</type>
+        <definition>SwsDither SwsContext::dither</definition>
+        <argsstring></argsstring>
+        <name>dither</name>
+        <qualifiedname>SwsContext::dither</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dither mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="215" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a8179d7c46f6e0acf4541abe42d03d743" prot="public" static="no" mutable="no">
+        <type>SwsAlphaBlend</type>
+        <definition>SwsAlphaBlend SwsContext::alpha_blend</definition>
+        <argsstring></argsstring>
+        <name>alpha_blend</name>
+        <qualifiedname>SwsContext::alpha_blend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alpha blending mode. See <computeroutput>SwsAlphaBlend</computeroutput> for details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="220" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a28ec4f81a1e3dcce7c92f2e7be8e9bd1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::gamma_flag</definition>
+        <argsstring></argsstring>
+        <name>gamma_flag</name>
+        <qualifiedname>SwsContext::gamma_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use gamma correct scaling. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="225" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aa7dc7a4f9ec57a7c37957259a51cd920" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_w</definition>
+        <argsstring></argsstring>
+        <name>src_w</name>
+        <qualifiedname>SwsContext::src_w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated frame property overrides, for the legacy API only.</para>
+<para>Ignored by <ref refid="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" kindref="member">sws_scale_frame()</ref> when used in dynamic mode, in which case all properties are instead taken from the frame directly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="233" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a0dbc8c02bd3b4cd472e07008009751ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_h</definition>
+        <argsstring></argsstring>
+        <name>src_h</name>
+        <qualifiedname>SwsContext::src_h</qualifiedname>
+        <briefdescription>
+<para>Width and height of the source frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="233" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a883a891c8a2d4ea7a15a3a7055f64386" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_w</definition>
+        <argsstring></argsstring>
+        <name>dst_w</name>
+        <qualifiedname>SwsContext::dst_w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="234" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a7facd34608c9258dae8c2942e3dce78f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_h</definition>
+        <argsstring></argsstring>
+        <name>dst_h</name>
+        <qualifiedname>SwsContext::dst_h</qualifiedname>
+        <briefdescription>
+<para>Width and height of the destination frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="234" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aab113373f157ee3b255ad97481af0cd9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_format</definition>
+        <argsstring></argsstring>
+        <name>src_format</name>
+        <qualifiedname>SwsContext::src_format</qualifiedname>
+        <briefdescription>
+<para>Source pixel format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="235" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a0ff71c9ef5ab6dabf90378fa7bf836ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_format</definition>
+        <argsstring></argsstring>
+        <name>dst_format</name>
+        <qualifiedname>SwsContext::dst_format</qualifiedname>
+        <briefdescription>
+<para>Destination pixel format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="236" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1af10043377f39ca25a7af39f214c3fdff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_range</definition>
+        <argsstring></argsstring>
+        <name>src_range</name>
+        <qualifiedname>SwsContext::src_range</qualifiedname>
+        <briefdescription>
+<para>Source is full range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="237" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1ac8b4b166f254ccb8def6ce21deead82b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_range</definition>
+        <argsstring></argsstring>
+        <name>dst_range</name>
+        <qualifiedname>SwsContext::dst_range</qualifiedname>
+        <briefdescription>
+<para>Destination is full range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="238" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aadaa2cfcdba987b8a231612f180ae8ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_v_chr_pos</definition>
+        <argsstring></argsstring>
+        <name>src_v_chr_pos</name>
+        <qualifiedname>SwsContext::src_v_chr_pos</qualifiedname>
+        <briefdescription>
+<para>Source vertical chroma position in luma grid / 256. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="239" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1af1c9fa89159377a7949d9a1a9586f44f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::src_h_chr_pos</definition>
+        <argsstring></argsstring>
+        <name>src_h_chr_pos</name>
+        <qualifiedname>SwsContext::src_h_chr_pos</qualifiedname>
+        <briefdescription>
+<para>Source horizontal chroma position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="240" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1aaf85ed903dff37c5768867dd296ba92c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_v_chr_pos</definition>
+        <argsstring></argsstring>
+        <name>dst_v_chr_pos</name>
+        <qualifiedname>SwsContext::dst_v_chr_pos</qualifiedname>
+        <briefdescription>
+<para>Destination vertical chroma position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="241" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a8d5fc2f5fa1e0f15b0a5b45b82b14c1a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::dst_h_chr_pos</definition>
+        <argsstring></argsstring>
+        <name>dst_h_chr_pos</name>
+        <qualifiedname>SwsContext::dst_h_chr_pos</qualifiedname>
+        <briefdescription>
+<para>Destination horizontal chroma position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="242" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_context_1a1c26a06608196ce7b73a34f7d20e2c13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SwsContext::intent</definition>
+        <argsstring></argsstring>
+        <name>intent</name>
+        <qualifiedname>SwsContext::intent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desired ICC intent for color space conversions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="247" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main external API structure. New fields can be added to the end with minor version bumps. Removal, reordering and changes to existing fields require a major version bump. sizeof(SwsContext) is not part of the ABI. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>SwsContext</label>
+        <link refid="struct_sws_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="189" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="189" bodyend="250"/>
+    <listofallmembers>
+      <member refid="struct_sws_context_1a8179d7c46f6e0acf4541abe42d03d743" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>alpha_blend</name></member>
+      <member refid="struct_sws_context_1a6866f52574bc730833d2580abc806261" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>av_class</name></member>
+      <member refid="struct_sws_context_1abdb353dd741ba1ff0bfab6bcb133c682" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dither</name></member>
+      <member refid="struct_sws_context_1a0ff71c9ef5ab6dabf90378fa7bf836ec" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_format</name></member>
+      <member refid="struct_sws_context_1a7facd34608c9258dae8c2942e3dce78f" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_h</name></member>
+      <member refid="struct_sws_context_1a8d5fc2f5fa1e0f15b0a5b45b82b14c1a" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_h_chr_pos</name></member>
+      <member refid="struct_sws_context_1ac8b4b166f254ccb8def6ce21deead82b" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_range</name></member>
+      <member refid="struct_sws_context_1aaf85ed903dff37c5768867dd296ba92c" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_v_chr_pos</name></member>
+      <member refid="struct_sws_context_1a883a891c8a2d4ea7a15a3a7055f64386" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>dst_w</name></member>
+      <member refid="struct_sws_context_1aef45de443b59978fd38ad1531c618574" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>flags</name></member>
+      <member refid="struct_sws_context_1a28ec4f81a1e3dcce7c92f2e7be8e9bd1" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>gamma_flag</name></member>
+      <member refid="struct_sws_context_1a1c26a06608196ce7b73a34f7d20e2c13" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>intent</name></member>
+      <member refid="struct_sws_context_1a90a448639c27486dc88b3ef4fa1252de" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>opaque</name></member>
+      <member refid="struct_sws_context_1aebfe8c01f9ea0bb80c7ae4d433cc5062" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>scaler_params</name></member>
+      <member refid="struct_sws_context_1aab113373f157ee3b255ad97481af0cd9" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_format</name></member>
+      <member refid="struct_sws_context_1a0dbc8c02bd3b4cd472e07008009751ff" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_h</name></member>
+      <member refid="struct_sws_context_1af1c9fa89159377a7949d9a1a9586f44f" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_h_chr_pos</name></member>
+      <member refid="struct_sws_context_1af10043377f39ca25a7af39f214c3fdff" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_range</name></member>
+      <member refid="struct_sws_context_1aadaa2cfcdba987b8a231612f180ae8ca" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_v_chr_pos</name></member>
+      <member refid="struct_sws_context_1aa7dc7a4f9ec57a7c37957259a51cd920" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>src_w</name></member>
+      <member refid="struct_sws_context_1a3cc13e08b01c1152405b3a0e4313b255" prot="public" virt="non-virtual"><scope>SwsContext</scope><name>threads</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

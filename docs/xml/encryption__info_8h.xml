@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="encryption__info_8h" kind="file" language="C++">
+    <compoundname>encryption_info.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h</label>
+        <link refid="encryption__info_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_subsample_encryption_info" prot="public">AVSubsampleEncryptionInfo</innerclass>
+    <innerclass refid="struct_a_v_encryption_info" prot="public">AVEncryptionInfo</innerclass>
+    <innerclass refid="struct_a_v_encryption_init_info" prot="public">AVEncryptionInitInfo</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="encryption__info_8h_1a8287e845b9a7db1ed5d17eecfb30cdd5" prot="public" static="no">
+        <type>struct AVSubsampleEncryptionInfo</type>
+        <definition>typedef struct AVSubsampleEncryptionInfo AVSubsampleEncryptionInfo</definition>
+        <argsstring></argsstring>
+        <name>AVSubsampleEncryptionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This file is part of FFmpeg.</para>
+<para>FFmpeg is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</para>
+<para>FFmpeg is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</para>
+<para>You should have received a copy of the GNU Lesser General Public License along with FFmpeg; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="35" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="encryption__info_8h_1a8953bc7257930dd6770eed47a30a8363" prot="public" static="no">
+        <type>struct AVEncryptionInfo</type>
+        <definition>typedef struct AVEncryptionInfo AVEncryptionInfo</definition>
+        <argsstring></argsstring>
+        <name>AVEncryptionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This describes encryption info for a packet. This contains frame-specific info for how to decrypt the packet before passing it to the decoder.</para>
+<para>The size of this struct is not part of the public ABI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="81" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="encryption__info_8h_1a37a0ad4e35ffe73c78c83a2e1cd5df32" prot="public" static="no">
+        <type>struct AVEncryptionInitInfo</type>
+        <definition>typedef struct AVEncryptionInitInfo AVEncryptionInitInfo</definition>
+        <argsstring></argsstring>
+        <name>AVEncryptionInitInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This describes info used to initialize an encryption key system.</para>
+<para>The size of this struct is not part of the public ABI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="123" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="encryption__info_8h_1a29cf4778757e5eb6a3459b09439feffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+        <definition>AVEncryptionInfo * av_encryption_info_alloc</definition>
+        <argsstring>(uint32_t subsample_count, uint32_t key_id_size, uint32_t iv_size)</argsstring>
+        <name>av_encryption_info_alloc</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>subsample_count</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iv_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates an <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> structure and sub-pointers to hold the given number of subsamples. This will allocate pointers for the key ID, IV, and subsample entries, set the size members, and zero-initialize the rest.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subsample_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of subsamples. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_id_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes in the key ID, should be 16. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes in the IV, should be 16.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> structure, or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="136" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="136" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1a46ddaa50e0a86abc63fe379b28842fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+        <definition>AVEncryptionInfo * av_encryption_info_clone</definition>
+        <argsstring>(const AVEncryptionInfo *info)</argsstring>
+        <name>av_encryption_info_clone</name>
+        <param>
+          <type>const <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates an <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> structure with a copy of the given data. <simplesect kind="return"><para>The new <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> structure, or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="142" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="142" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1ae49dc2ef6b84e80914f401bba34d4410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_encryption_info_free</definition>
+        <argsstring>(AVEncryptionInfo *info)</argsstring>
+        <name>av_encryption_info_free</name>
+        <param>
+          <type><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frees the given encryption info object. This MUST NOT be used to free the side-data data pointer, that should use normal side-data methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="148" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="148" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1ae36d9a50634fd52765c7d6eda7ab7d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+        <definition>AVEncryptionInfo * av_encryption_info_get_side_data</definition>
+        <argsstring>(const uint8_t *side_data, size_t side_data_size)</argsstring>
+        <name>av_encryption_info_get_side_data</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>side_data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>side_data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a copy of the <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> that is contained in the given side data. The resulting object should be passed to av_encryption_info_free() when done.</para>
+<para><simplesect kind="return"><para>The new <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> structure, or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="157" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="157" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1aa46723fc8518521d9ad1d4d2242b6008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * av_encryption_info_add_side_data</definition>
+        <argsstring>(const AVEncryptionInfo *info, size_t *side_data_size)</argsstring>
+        <name>av_encryption_info_add_side_data</name>
+        <param>
+          <type>const <ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>side_data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates and initializes side data that holds a copy of the given encryption info. The resulting pointer should be either freed using av_free or given to <ref refid="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" kindref="member">av_packet_add_side_data()</ref>.</para>
+<para><simplesect kind="return"><para>The new side-data pointer, or NULL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="166" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="166" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1ac460920c1e7c16c32f5007d917245dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> *</type>
+        <definition>AVEncryptionInitInfo * av_encryption_init_info_alloc</definition>
+        <argsstring>(uint32_t system_id_size, uint32_t num_key_ids, uint32_t key_id_size, uint32_t data_size)</argsstring>
+        <name>av_encryption_init_info_alloc</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>system_id_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>num_key_ids</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>key_id_size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates an <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> structure and sub-pointers to hold the given sizes. This will allocate pointers and set all the fields.</para>
+<para><simplesect kind="return"><para>The new <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> structure, or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="176" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="176" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1ad5b99e780657d38504da850e7d621921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_encryption_init_info_free</definition>
+        <argsstring>(AVEncryptionInitInfo *info)</argsstring>
+        <name>av_encryption_init_info_free</name>
+        <param>
+          <type><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frees the given encryption init info object. This MUST NOT be used to free the side-data data pointer, that should use normal side-data methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="183" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="183" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1a47e86dc29b7c62ef3b8657475915d80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> *</type>
+        <definition>AVEncryptionInitInfo * av_encryption_init_info_get_side_data</definition>
+        <argsstring>(const uint8_t *side_data, size_t side_data_size)</argsstring>
+        <name>av_encryption_init_info_get_side_data</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>side_data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>side_data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a copy of the <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> that is contained in the given side data. The resulting object should be passed to av_encryption_init_info_free() when done.</para>
+<para><simplesect kind="return"><para>The new <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> structure, or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="192" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="192" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="encryption__info_8h_1a8aa1474343c7a631e5ce5c36a8ee6f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * av_encryption_init_info_add_side_data</definition>
+        <argsstring>(const AVEncryptionInitInfo *info, size_t *side_data_size)</argsstring>
+        <name>av_encryption_init_info_add_side_data</name>
+        <param>
+          <type>const <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>side_data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates and initializes side data that holds a copy of the given encryption init info. The resulting pointer should be either freed using av_free or given to <ref refid="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" kindref="member">av_packet_add_side_data()</ref>.</para>
+<para><simplesect kind="return"><para>The new side-data pointer, or NULL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="202" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" declline="202" declcolumn="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_ENCRYPTION_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_ENCRYPTION_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct_a_v_subsample_encryption_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_subsample_encryption_info" kindref="compound">AVSubsampleEncryptionInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="struct_a_v_subsample_encryption_info_1aae4b75d9e9948da9de53b0e419eef3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_subsample_encryption_info_1aae4b75d9e9948da9de53b0e419eef3f8" kindref="member">bytes_of_clear_data</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="struct_a_v_subsample_encryption_info_1ad6dd17f1be1daf4f5982689a5debb935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_subsample_encryption_info_1ad6dd17f1be1daf4f5982689a5debb935" kindref="member">bytes_of_protected_data</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="struct_a_v_subsample_encryption_info" kindref="compound">AVSubsampleEncryptionInfo</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="struct_a_v_encryption_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="struct_a_v_encryption_info_1ae0525acdfc0976caa7824da69e69108c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_info_1ae0525acdfc0976caa7824da69e69108c" kindref="member">scheme</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="struct_a_v_encryption_info_1a419cb6a7096045c0d17eb57ad5de5c5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_info_1a419cb6a7096045c0d17eb57ad5de5c5a" kindref="member">crypt_byte_block</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_a_v_encryption_info_1a07101d72147615f4e794630b5003fdb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_info_1a07101d72147615f4e794630b5003fdb3" kindref="member">skip_byte_block</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="struct_a_v_encryption_info_1a63649ca3be8a587136decc7837d8f0b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="struct_a_v_encryption_info_1a63649ca3be8a587136decc7837d8f0b0" kindref="member">key_id</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>key_id_size;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="struct_a_v_encryption_info_1a36258773710a13cbe7e652853dd65709" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="struct_a_v_encryption_info_1a36258773710a13cbe7e652853dd65709" kindref="member">iv</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iv_size;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="struct_a_v_encryption_info_1a7512fb530e6dfad559d46f6c3832ef6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_subsample_encryption_info" kindref="compound">AVSubsampleEncryptionInfo</ref><sp/>*<ref refid="struct_a_v_encryption_info_1a7512fb530e6dfad559d46f6c3832ef6a" kindref="member">subsamples</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>subsample_count;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_a_v_encryption_init_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="94" refid="struct_a_v_encryption_init_info_1a382a65e2db4592a799ae4701bd29b81e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/><ref refid="struct_a_v_encryption_init_info_1a382a65e2db4592a799ae4701bd29b81e" kindref="member">system_id</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>system_id_size;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="struct_a_v_encryption_init_info_1a2a3b7706913ff0ecba8e75db35ef931f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t**<sp/><ref refid="struct_a_v_encryption_init_info_1a2a3b7706913ff0ecba8e75db35ef931f" kindref="member">key_ids</ref>;</highlight></codeline>
+<codeline lineno="103" refid="struct_a_v_encryption_init_info_1aa146edb2a56bd1123318373cd36f1e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_init_info_1aa146edb2a56bd1123318373cd36f1e5b" kindref="member">num_key_ids</ref>;</highlight></codeline>
+<codeline lineno="108" refid="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" kindref="member">key_id_size</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="struct_a_v_encryption_init_info_1a057b7260a55099838ecee4278a6b69cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t*<sp/><ref refid="struct_a_v_encryption_init_info_1a057b7260a55099838ecee4278a6b69cb" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>data_size;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="struct_a_v_encryption_init_info_1a25a89671f39c5b8d3813df00f0576753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref><sp/>*<ref refid="struct_a_v_encryption_init_info_1a25a89671f39c5b8d3813df00f0576753" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}<sp/><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*av_encryption_info_alloc(uint32_t<sp/>subsample_count,<sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" kindref="member">key_id_size</ref>,<sp/>uint32_t<sp/>iv_size);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*av_encryption_info_clone(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_encryption_info_free(<ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*av_encryption_info_get_side_data(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*side_data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>side_data_size);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">uint8_t<sp/>*av_encryption_info_add_side_data(</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_encryption_info" kindref="compound">AVEncryptionInfo</ref><sp/>*info,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*side_data_size);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref><sp/>*av_encryption_init_info_alloc(</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>system_id_size,<sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_init_info_1aa146edb2a56bd1123318373cd36f1e5b" kindref="member">num_key_ids</ref>,<sp/>uint32_t<sp/><ref refid="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" kindref="member">key_id_size</ref>,<sp/>uint32_t<sp/>data_size);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_encryption_init_info_free(<ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref>*<sp/>info);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref><sp/>*av_encryption_init_info_get_side_data(</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>side_data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>side_data_size);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">uint8_t<sp/>*av_encryption_init_info_add_side_data(</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref><sp/>*info,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*side_data_size);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_ENCRYPTION_INFO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_codec_h_w_config" kind="struct" language="C++" prot="public">
+    <compoundname>AVCodecHWConfig</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_codec_h_w_config_1a9352b11d6d6b315fe3c61b65447d5174" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat AVCodecHWConfig::pix_fmt</definition>
+        <argsstring></argsstring>
+        <name>pix_fmt</name>
+        <qualifiedname>AVCodecHWConfig::pix_fmt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For decoders, a hardware pixel format which that decoder may be able to decode to if suitable hardware is available.</para>
+<para>For encoders, a pixel format which the encoder may be able to accept. If set to AV_PIX_FMT_NONE, this applies to all pixel formats supported by the codec. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="339" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_h_w_config_1a208c924c3f626b01bf2020eef9eb4905" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecHWConfig::methods</definition>
+        <argsstring></argsstring>
+        <name>methods</name>
+        <qualifiedname>AVCodecHWConfig::methods</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit set of AV_CODEC_HW_CONFIG_METHOD_* flags, describing the possible setup methods which can be used with this configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="344" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_h_w_config_1a1474cb73c1f41e377dc5070ae373ac40" prot="public" static="no" mutable="no">
+        <type>enum AVHWDeviceType</type>
+        <definition>enum AVHWDeviceType AVCodecHWConfig::device_type</definition>
+        <argsstring></argsstring>
+        <name>device_type</name>
+        <qualifiedname>AVCodecHWConfig::device_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The device type associated with the configuration.</para>
+<para>Must be set for AV_CODEC_HW_CONFIG_METHOD_HW_DEVICE_CTX and AV_CODEC_HW_CONFIG_METHOD_HW_FRAMES_CTX, otherwise unused. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="351" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="330" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="330" bodyend="352"/>
+    <listofallmembers>
+      <member refid="struct_a_v_codec_h_w_config_1a1474cb73c1f41e377dc5070ae373ac40" prot="public" virt="non-virtual"><scope>AVCodecHWConfig</scope><name>device_type</name></member>
+      <member refid="struct_a_v_codec_h_w_config_1a208c924c3f626b01bf2020eef9eb4905" prot="public" virt="non-virtual"><scope>AVCodecHWConfig</scope><name>methods</name></member>
+      <member refid="struct_a_v_codec_h_w_config_1a9352b11d6d6b315fe3c61b65447d5174" prot="public" virt="non-virtual"><scope>AVCodecHWConfig</scope><name>pix_fmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

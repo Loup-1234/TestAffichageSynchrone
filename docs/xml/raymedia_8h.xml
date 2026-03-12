@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="raymedia_8h" kind="file" language="C++">
+    <compoundname>raymedia.h</compoundname>
+    <includes local="no">raylib.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="AfficheurVideo_8h" local="yes">/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h</includedby>
+    <includedby refid="raymedia_8c" local="yes">/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h</label>
+        <link refid="raymedia_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>raylib.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h</label>
+        <link refid="AfficheurVideo_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h</label>
+        <link refid="raymedia_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structMediaStream" prot="public">MediaStream</innerclass>
+    <innerclass refid="structMediaProperties" prot="public">MediaProperties</innerclass>
+    <innerclass refid="structMediaStreamReader" prot="public">MediaStreamReader</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MediaLoadFlag</name>
+        <enumvalue id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50a9a121437b01ff2c9d9c8ca04f1e95b9c" prot="public">
+          <name>MEDIA_LOAD_AV</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50a5781e7daaeb84bc37e5d94d06bb7bb46" prot="public">
+          <name>MEDIA_LOAD_NO_AUDIO</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50a5d3684abc83d3d81d7b0c42996be3844" prot="public">
+          <name>MEDIA_LOAD_NO_VIDEO</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50ac17905115787b96c5ca10300cb91d1de" prot="public">
+          <name>MEDIA_FLAG_LOOP</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a022e723ecffa1e5fcc55ebe4b60f6d50a50d1c7e1ca8797c4b3fed759eefdce2e" prot="public">
+          <name>MEDIA_FLAG_NO_AUTOPLAY</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags for LoadMediaEx() to customize media loading. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="86" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="enum" id="raymedia_8h_1a8cf818f723ac1109e78b96ca75121d66" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MediaState</name>
+        <enumvalue id="raymedia_8h_1a8cf818f723ac1109e78b96ca75121d66abec5477cd8ba5733f48ba7d46de65e75" prot="public">
+          <name>MEDIA_STATE_INVALID</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a8cf818f723ac1109e78b96ca75121d66a234962feb6790b9266baa12be90133a1" prot="public">
+          <name>MEDIA_STATE_STOPPED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a8cf818f723ac1109e78b96ca75121d66aea0d52370d510641e67248f8d47e1a49" prot="public">
+          <name>MEDIA_STATE_PAUSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a8cf818f723ac1109e78b96ca75121d66a88bd48378b6cfbc780d8b6a25c4ce6ae" prot="public">
+          <name>MEDIA_STATE_PLAYING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible states of a <ref refid="structMediaStream" kindref="compound">MediaStream</ref>. Use SetMediaState() to change the <ref refid="structMediaStream" kindref="compound">MediaStream</ref>&apos;s state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="99" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MediaConfigFlag</name>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2afd85cedabe4bcdbe5963a34136418106" prot="public">
+          <name>MEDIA_IO_BUFFER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a02a065b4eb1733996bc40f34fea25e65" prot="public">
+          <name>MEDIA_VIDEO_QUEUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2aae6bcb1ee7af54b27e4dd24fe0932bc8" prot="public">
+          <name>MEDIA_AUDIO_QUEUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a90cd47e866373fab2125c20e1bf95828" prot="public">
+          <name>MEDIA_AUDIO_DECODED_BUFFER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a60f757d1b54cc6e608358b9c5e14bd0a" prot="public">
+          <name>MEDIA_AUDIO_STREAM_BUFFER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2ae936e40bc1a43e76fe17882f951b374d" prot="public">
+          <name>MEDIA_AUDIO_FORMAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a3a0dc1b31fdb03be3223178ac9f0eec4" prot="public">
+          <name>MEDIA_AUDIO_CHANNELS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a565c2a202d8a216465c750dd459ec8de" prot="public">
+          <name>MEDIA_VIDEO_MAX_DELAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a484e56109c47fe649e5a7ed24abba46f" prot="public">
+          <name>MEDIA_AUDIO_MAX_DELAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1aac9fbf3b6602d0154034265ab31207e2a6a87a77b4cce83eac4b4d252700fcf60" prot="public">
+          <name>MEDIA_AUDIO_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global properties flags for media configuration. Use SetMediaFlag() and GetMediaFlag() to configure. <simplesect kind="note"><para>: Affects MediaStreams loaded after setting. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="112" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="113" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MediaAudioFormat</name>
+        <enumvalue id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0a3b413f47b57010357cd935989215d32f" prot="public">
+          <name>AUDIO_FMT_U8</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0aabe597a9701d2af3533a39460781bbd0" prot="public">
+          <name>AUDIO_FMT_S16</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0af416486b37b48471b7bab01ec6f9e5f5" prot="public">
+          <name>AUDIO_FMT_S32</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0adf46ed28557af16132002e0447e9cf70" prot="public">
+          <name>AUDIO_FMT_FLT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1a3902c9d1daad75e38382e67eb6fc18f0a63cc47d19d9b2279614c9102d7bcec82" prot="public">
+          <name>AUDIO_FMT_DBL</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Supported audio formats for AudioStream output. Configured using SetMediaFlag(MEDIA_AUDIO_FORMAT, AUDIO_FMT_*). <simplesect kind="note"><para>Increasing output format quality may require adjustments to audio buffer capacities via SetMediaFlag. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="132" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="133" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="enum" id="raymedia_8h_1ac4115214702b4c8d5f073c16e8721580" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MediaStreamIOResult</name>
+        <enumvalue id="raymedia_8h_1ac4115214702b4c8d5f073c16e8721580a107dac7aa7ec00a60ada71642c2990bc" prot="public">
+          <name>MEDIA_IO_EOF</name>
+          <initializer>= -541478725</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="raymedia_8h_1ac4115214702b4c8d5f073c16e8721580a29e88fe0e049f8d067884f31726def7e" prot="public">
+          <name>MEDIA_IO_INVALID</name>
+          <initializer>= -22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status values for <ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref> callback functions. These values indicate the outcome of custom IO operations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="145" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="raymedia_8h_1abdacfbf597fc3667fd45d30e04f480d1" prot="public" static="no">
+        <type>struct MediaStream</type>
+        <definition>typedef struct MediaStream MediaStream</definition>
+        <argsstring></argsstring>
+        <name>MediaStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores video and/or audio data from a movie file. Usage:<orderedlist>
+<listitem><para>Initialize with LoadMedia() / LoadMediaEx()</para>
+</listitem><listitem><para>Call UpdateMedia() each frame</para>
+</listitem><listitem><para>Access videoTexture and audioStream for playback</para>
+</listitem><listitem><para>Free with UnloadMedia() </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="53" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="raymedia_8h_1ad935ee3cf176ef14348b6125ca511d00" prot="public" static="no">
+        <type>struct MediaProperties</type>
+        <definition>typedef struct MediaProperties MediaProperties</definition>
+        <argsstring></argsstring>
+        <name>MediaProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Holds <ref refid="structMediaStream" kindref="compound">MediaStream</ref> properties. Use GetMediaProperties() to retrieve details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="65" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="raymedia_8h_1a9355f8fb41f5ec320b5aea024c137aa5" prot="public" static="no">
+        <type>struct MediaStreamReader</type>
+        <definition>typedef struct MediaStreamReader MediaStreamReader</definition>
+        <argsstring></argsstring>
+        <name>MediaStreamReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Holds the data needed to implement a custom stream reader. Used to define custom read and seek behaviors for media input streams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="76" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="raymedia_8h_1a500a817021904a0ee9913464c95c9cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI <ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+        <definition>RLAPI MediaStream LoadMedia</definition>
+        <argsstring>(const char *fileName)</argsstring>
+        <name>LoadMedia</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> from a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the movie file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structMediaStream" kindref="compound">MediaStream</ref> on success; empty structure on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="167" column="23" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1025" bodyend="1028" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="167" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a0493f0ec06a642ac71d257d76df576de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI <ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+        <definition>RLAPI MediaStream LoadMediaEx</definition>
+        <argsstring>(const char *fileName, int flags)</argsstring>
+        <name>LoadMediaEx</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> from a file with flags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the movie file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of MediaLoadFlag values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structMediaStream" kindref="compound">MediaStream</ref> on success; empty structure on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="175" column="23" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1030" bodyend="1034" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="175" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a25c70526b76ee4c3fc69155502e73e08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI <ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+        <definition>RLAPI MediaStream LoadMediaFromStream</definition>
+        <argsstring>(MediaStreamReader streamReader, int flags)</argsstring>
+        <name>LoadMediaFromStream</name>
+        <param>
+          <type><ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref></type>
+          <declname>streamReader</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> from a custom stream with flags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streamReader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref> with callback functions and context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of MediaLoadFlag values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structMediaStream" kindref="compound">MediaStream</ref> on success; empty structure on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="183" column="23" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1036" bodyend="1046" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="183" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1acc06c3eb089a80385019528fba7ba176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI bool</type>
+        <definition>RLAPI bool IsMediaValid</definition>
+        <argsstring>(MediaStream media)</argsstring>
+        <name>IsMediaValid</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> is valid (loaded and initialized). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structMediaStream" kindref="compound">MediaStream</ref> structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if media is valid; false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="190" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1048" bodyend="1051" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="190" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a76556f7c70279e8951bbb59b94ece156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI <ref refid="structMediaProperties" kindref="compound">MediaProperties</ref></type>
+        <definition>RLAPI MediaProperties GetMediaProperties</definition>
+        <argsstring>(MediaStream media)</argsstring>
+        <name>GetMediaProperties</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve properties of the loaded media. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Filled <ref refid="structMediaProperties" kindref="compound">MediaProperties</ref> structure on success; empty structure on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="197" column="27" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="476" bodyend="498" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="197" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a56c8ad5c7920dba6bcc12834f0c45132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI bool</type>
+        <definition>RLAPI bool UpdateMedia</definition>
+        <argsstring>(MediaStream *media)</argsstring>
+        <name>UpdateMedia</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref> *</type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a <ref refid="structMediaStream" kindref="compound">MediaStream</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success; false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="204" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1156" bodyend="1159" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="204" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a375feb24ec31a1508bab33ade48e014a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI bool</type>
+        <definition>RLAPI bool UpdateMediaEx</definition>
+        <argsstring>(MediaStream *media, double deltaTime)</argsstring>
+        <name>UpdateMediaEx</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref> *</type>
+          <declname>media</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> with a specified deltaTime. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time in seconds since the last update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success; false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="212" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1161" bodyend="1262" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="212" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a87914100f8bff139ff5c21eea1b2bc96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI int</type>
+        <definition>RLAPI int GetMediaState</definition>
+        <argsstring>(MediaStream media)</argsstring>
+        <name>GetMediaState</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of a <ref refid="structMediaStream" kindref="compound">MediaStream</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current state; MEDIA_STATE_INVALID on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="219" column="15" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1081" bodyend="1084" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="219" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1ae247253c93a6a014f04e542b48889eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI int</type>
+        <definition>RLAPI int SetMediaState</definition>
+        <argsstring>(MediaStream media, int newState)</argsstring>
+        <name>SetMediaState</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the state of a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> (play, pause, or stop). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new state on success; MEDIA_STATE_INVALID on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="227" column="15" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1086" bodyend="1150" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="227" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1ae07b54656966f92babc584590dc24f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI double</type>
+        <definition>RLAPI double GetMediaPosition</definition>
+        <argsstring>(MediaStream media)</argsstring>
+        <name>GetMediaPosition</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the playback position of a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> in seconds. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Playback position in seconds; negative on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="234" column="18" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="519" bodyend="533" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="234" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a5593f5665baf7a26556f2cf1b146aea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI bool</type>
+        <definition>RLAPI bool SetMediaPosition</definition>
+        <argsstring>(MediaStream media, double timeSec)</argsstring>
+        <name>SetMediaPosition</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeSec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the playback position of a <ref refid="structMediaStream" kindref="compound">MediaStream</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeSec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired position in seconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success; false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="242" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="506" bodyend="517" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="242" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1adb08e5a410d2345f7488e90bba0de3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI bool</type>
+        <definition>RLAPI bool SetMediaLooping</definition>
+        <argsstring>(MediaStream media, bool loopPlay)</argsstring>
+        <name>SetMediaLooping</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+          <declname>media</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>loopPlay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable loop playback for a <ref refid="structMediaStream" kindref="compound">MediaStream</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loopPlay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to enable looping; false to disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success; false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="250" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="535" bodyend="550" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="250" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1a7aea8eddd1ea23f9480eeac4b1bde715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI int</type>
+        <definition>RLAPI int SetMediaFlag</definition>
+        <argsstring>(int flag, int value)</argsstring>
+        <name>SetMediaFlag</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a global configuration property. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of MediaConfigFlag values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New property value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success; -1 on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="258" column="15" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="357" bodyend="417" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="258" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1ac8b631dae6923f2966fedd656407f178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI int</type>
+        <definition>RLAPI int GetMediaFlag</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>GetMediaFlag</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a global configuration property. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of MediaConfigFlag values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Property value; negative on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="265" column="15" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="419" bodyend="470" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="265" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="raymedia_8h_1ae2ffabbc7df817413a40db03a142f769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RLAPI void</type>
+        <definition>RLAPI void UnloadMedia</definition>
+        <argsstring>(MediaStream *media)</argsstring>
+        <name>UnloadMedia</name>
+        <param>
+          <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref> *</type>
+          <declname>media</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unload a <ref refid="structMediaStream" kindref="compound">MediaStream</ref> and free its associated memory. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>media</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a valid <ref refid="structMediaStream" kindref="compound">MediaStream</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="271" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="1053" bodyend="1074" declfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" declline="271" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>LICENSE:<sp/>zlib</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2024<sp/>Claudio<sp/>Z.<sp/>(@cloudofoz)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&quot;as-is,&quot;<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied<sp/>warranty.<sp/>In<sp/>no<sp/>event</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,<sp/>including<sp/>commercial</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>and<sp/>redistribute<sp/>it<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not<sp/>claim<sp/>that<sp/>you</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software<sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be<sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such<sp/>and<sp/>must<sp/>not<sp/>be<sp/>misrepresented</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">***************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RAYMEDIA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAYMEDIA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;raylib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Structures<sp/>Definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMediaContext" kindref="compound">MediaContext</ref><sp/><ref refid="structMediaContext" kindref="compound">MediaContext</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Context<sp/>holding<sp/>implementation<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structMediaStream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMediaStream" kindref="compound">MediaStream</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>Texture<sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoTexture;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>video<sp/>frame<sp/>texture<sp/>(if<sp/>available)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>AudioStream<sp/><sp/><sp/>audioStream;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Audio<sp/>stream<sp/>for<sp/>playback<sp/>(if<sp/>available)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structMediaContext" kindref="compound">MediaContext</ref>*<sp/>ctx;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Internal<sp/>use<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="structMediaStream" kindref="compound">MediaStream</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structMediaProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMediaProperties" kindref="compound">MediaProperties</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>durationSec;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Media<sp/>duration<sp/>in<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/>avgFPS;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Average<sp/>video<sp/>FPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/>hasVideo;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>True<sp/>if<sp/>video<sp/>is<sp/>present</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/>hasAudio;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>True<sp/>if<sp/>audio<sp/>is<sp/>present</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="structMediaProperties" kindref="compound">MediaProperties</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structMediaStreamReader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/><sp/><sp/><sp/><sp/>(*readFn)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userData,<sp/>uint8_t*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Custom<sp/>read<sp/>function<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>(*seekFn)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userData,<sp/>int64_t<sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>whence);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Custom<sp/>seek<sp/>function<sp/>pointer<sp/>(optional,<sp/>can<sp/>be<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userData;<sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>user-defined<sp/>context,<sp/>passed<sp/>to<sp/>the<sp/>callback<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Enumerators<sp/>Definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_LOAD_AV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>audio<sp/>and<sp/>video<sp/>(default)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_LOAD_NO_AUDIO<sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,<sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>load<sp/>audio</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_LOAD_NO_VIDEO<sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,<sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>load<sp/>video</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_FLAG_LOOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,<sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>playback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_FLAG_NO_AUTOPLAY<sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4<sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>without<sp/>starting<sp/>playback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<sp/>MediaLoadFlag;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_STATE_INVALID<sp/><sp/><sp/><sp/><sp/>=<sp/>-1,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Not<sp/>loaded<sp/>or<sp/>initialized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_STATE_STOPPED,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stopped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_STATE_PAUSED,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Paused</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_STATE_PLAYING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Playing<sp/>(call<sp/>UpdateMedia()<sp/>each<sp/>frame)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/>MediaState;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_IO_BUFFER,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Size<sp/>of<sp/>the<sp/>buffer<sp/>used<sp/>for<sp/>media<sp/>IO<sp/>operations<sp/>(only<sp/>applies<sp/>to<sp/>custom<sp/>read<sp/>callbacks)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_VIDEO_QUEUE,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Video<sp/>packet<sp/>queue<sp/>capacity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_QUEUE,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Audio<sp/>packet<sp/>queue<sp/>capacity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_DECODED_BUFFER,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>decoded<sp/>audio<sp/>buffer<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_STREAM_BUFFER,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Audio<sp/>stream<sp/>buffer<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_FORMAT,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Output<sp/>audio<sp/>format<sp/>(refer<sp/>to<sp/>MediaAudioFormat)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_CHANNELS,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>audio<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_VIDEO_MAX_DELAY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>delay<sp/>(ms)<sp/>before<sp/>discarding<sp/>a<sp/>video<sp/>packet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_MAX_DELAY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>delay<sp/>(ms)<sp/>before<sp/>discarding<sp/>an<sp/>audio<sp/>packet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_AUDIO_UPDATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Max<sp/>bytes<sp/>uploaded<sp/>to<sp/>AudioStream<sp/>per<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}<sp/>MediaConfigFlag;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>AUDIO_FMT_U8<sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unsigned<sp/>8-bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>AUDIO_FMT_S16<sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Signed<sp/>16-bit<sp/>(default)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>AUDIO_FMT_S32<sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Signed<sp/>32-bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>AUDIO_FMT_FLT<sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Float</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>AUDIO_FMT_DBL<sp/>=<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/>MediaAudioFormat;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_IO_EOF<sp/><sp/><sp/><sp/><sp/>=<sp/>-541478725,<sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>the<sp/>stream<sp/>reached<sp/>(matches<sp/>AVERROR_EOF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>MEDIA_IO_INVALID<sp/>=<sp/>-22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Invalid<sp/>call<sp/>or<sp/>operation<sp/>(matches<sp/>AVERROR(EINVAL))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}<sp/>MediaStreamIOResult;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MediaStream<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/><ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>LoadMedia(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fileName);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/><ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>LoadMediaEx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fileName,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/><ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>LoadMediaFromStream(<ref refid="structMediaStreamReader" kindref="compound">MediaStreamReader</ref><sp/>streamReader,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsMediaValid(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/><ref refid="structMediaProperties" kindref="compound">MediaProperties</ref><sp/>GetMediaProperties(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UpdateMedia(<ref refid="structMediaStream" kindref="compound">MediaStream</ref>*<sp/>media);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UpdateMediaEx(<ref refid="structMediaStream" kindref="compound">MediaStream</ref>*<sp/>media,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaTime);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMediaState(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SetMediaState(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newState);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetMediaPosition(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetMediaPosition(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeSec);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetMediaLooping(<ref refid="structMediaStream" kindref="compound">MediaStream</ref><sp/>media,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loopPlay);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SetMediaFlag(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMediaFlag(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>RLAPI<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UnloadMedia(<ref refid="structMediaStream" kindref="compound">MediaStream</ref>*<sp/>media);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>RAYMEDIA_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h"/>
+  </compounddef>
+</doxygen>

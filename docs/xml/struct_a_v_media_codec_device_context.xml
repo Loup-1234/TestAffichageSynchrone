@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_media_codec_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVMediaCodecDeviceContext</compoundname>
+    <includes refid="hwcontext__mediacodec_8h" local="no">hwcontext_mediacodec.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_media_codec_device_context_1aa11ea198d48b024bf2c39e9a605fc06b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVMediaCodecDeviceContext::surface</definition>
+        <argsstring></argsstring>
+        <name>surface</name>
+        <qualifiedname>AVMediaCodecDeviceContext::surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>android/view/Surface handle, to be filled by the user.</para>
+<para>This is the default surface used by decoders on this device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" line="33" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_media_codec_device_context_1a13e86e093db715714c09e1f3a12b97df" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVMediaCodecDeviceContext::native_window</definition>
+        <argsstring></argsstring>
+        <name>native_window</name>
+        <qualifiedname>AVMediaCodecDeviceContext::native_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to ANativeWindow.</para>
+<para>It both surface and native_window is NULL, try to create it automatically if create_window is true and OS support createPersistentInputSurface.</para>
+<para>It can be used as output surface for decoder and input surface for encoder. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" line="45" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_media_codec_device_context_1ad6ac8883a7f652c5e997f66055fe7cb2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVMediaCodecDeviceContext::create_window</definition>
+        <argsstring></argsstring>
+        <name>create_window</name>
+        <qualifiedname>AVMediaCodecDeviceContext::create_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable createPersistentInputSurface automatically.</para>
+<para>Disabled by default.</para>
+<para>It can be enabled by setting this flag directly, or by setting AVDictionary of av_hwdevice_ctx_create(), with &quot;create_window&quot; as key. The second method is useful for ffmpeg cmdline, e.g., we can enable it via: -init_hw_device mediacodec=mediacodec,create_window=1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MediaCodec details.</para>
+<para>Allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" line="27" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_mediacodec.h" bodystart="27" bodyend="59"/>
+    <listofallmembers>
+      <member refid="struct_a_v_media_codec_device_context_1ad6ac8883a7f652c5e997f66055fe7cb2" prot="public" virt="non-virtual"><scope>AVMediaCodecDeviceContext</scope><name>create_window</name></member>
+      <member refid="struct_a_v_media_codec_device_context_1a13e86e093db715714c09e1f3a12b97df" prot="public" virt="non-virtual"><scope>AVMediaCodecDeviceContext</scope><name>native_window</name></member>
+      <member refid="struct_a_v_media_codec_device_context_1aa11ea198d48b024bf2c39e9a605fc06b" prot="public" virt="non-virtual"><scope>AVMediaCodecDeviceContext</scope><name>surface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

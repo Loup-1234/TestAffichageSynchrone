@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="samplefmt_8h" kind="file" language="C++">
+    <compoundname>samplefmt.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="codec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</includedby>
+    <includedby refid="codec__id_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</includedby>
+    <includedby refid="audio__fifo_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/audio_fifo.h</includedby>
+    <includedby refid="frame_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</includedby>
+    <includedby refid="opt_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</includedby>
+    <includedby refid="swresample_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h</label>
+        <link refid="samplefmt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h</label>
+        <link refid="avdct_8h_source"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_desc.h</label>
+        <link refid="codec__desc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/audio_fifo.h</label>
+        <link refid="audio__fifo_8h"/>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="35">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</label>
+        <link refid="opt_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h</label>
+        <link refid="samplefmt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <member refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kind="enum"><name>AVSampleFormat</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__sampfmts_1gadc5fce5ceabec01026645c7c160ca82f" kind="function"><name>av_get_sample_fmt_name</name></member>
+      <member refid="group__lavu__sampfmts_1ga655c989b749667468e5e839e26fe63db" kind="function"><name>av_get_sample_fmt</name></member>
+      <member refid="group__lavu__sampfmts_1ga8e66c3f813ea02afcaa56a8a964c749a" kind="function"><name>av_get_alt_sample_fmt</name></member>
+      <member refid="group__lavu__sampfmts_1ga7817ec0eff4dc6fc0962f31e6d138bca" kind="function"><name>av_get_packed_sample_fmt</name></member>
+      <member refid="group__lavu__sampfmts_1ga82caf838259d95cc6c4fd87633bb0e19" kind="function"><name>av_get_planar_sample_fmt</name></member>
+      <member refid="group__lavu__sampfmts_1gacf7a32f84e3508ee52ab30d85b8237bf" kind="function"><name>av_get_sample_fmt_string</name></member>
+      <member refid="group__lavu__sampfmts_1ga0c3c218e1dd570ad4917c69a35a6c77d" kind="function"><name>av_get_bytes_per_sample</name></member>
+      <member refid="group__lavu__sampfmts_1ga06ba8a64dc4382c422789a5d0b6bf592" kind="function"><name>av_sample_fmt_is_planar</name></member>
+      <member refid="group__lavu__sampfmts_1gaa7368bc4e3a366b688e81938ed55eb06" kind="function"><name>av_samples_get_buffer_size</name></member>
+      <member refid="group__lavu__sampmanip_1ga673254a62fa75dab3211caf17c73c6eb" kind="function"><name>av_samples_fill_arrays</name></member>
+      <member refid="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" kind="function"><name>av_samples_alloc</name></member>
+      <member refid="group__lavu__sampmanip_1gae8b9f22f2f659d023f111390d9545273" kind="function"><name>av_samples_alloc_array_and_samples</name></member>
+      <member refid="group__lavu__sampmanip_1gabd511e1a989de02e7cb174a1169f2951" kind="function"><name>av_samples_copy</name></member>
+      <member refid="group__lavu__sampmanip_1gabcb166e22938c7d93c2d609529c458bb" kind="function"><name>av_samples_set_silence</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_SAMPLEFMT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_SAMPLEFMT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SAMPLE_FMT_NONE<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="57" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5adf0f66f21492f8fd5db6debb8b3f932a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5adf0f66f21492f8fd5db6debb8b3f932a" kindref="member">AV_SAMPLE_FMT_U8</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5aea6132df57aebc3f76e10665395c46af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5aea6132df57aebc3f76e10665395c46af" kindref="member">AV_SAMPLE_FMT_S16</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ab7ae6bb6718c07cd316778783a57a63b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ab7ae6bb6718c07cd316778783a57a63b" kindref="member">AV_SAMPLE_FMT_S32</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a5251d62cc3c7f18e56bc8e0c48a27903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a5251d62cc3c7f18e56bc8e0c48a27903" kindref="member">AV_SAMPLE_FMT_FLT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ae35a2a6a7593723d9fe4bcefb2876606" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ae35a2a6a7593723d9fe4bcefb2876606" kindref="member">AV_SAMPLE_FMT_DBL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a6ab0109a23af37e29ea3a7282c00d311" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a6ab0109a23af37e29ea3a7282c00d311" kindref="member">AV_SAMPLE_FMT_U8P</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a35eaaad9da207aa4e63fa02fd67fae68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a35eaaad9da207aa4e63fa02fd67fae68" kindref="member">AV_SAMPLE_FMT_S16P</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5aa215d25dfbf927aa362c837fed4b15a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5aa215d25dfbf927aa362c837fed4b15a8" kindref="member">AV_SAMPLE_FMT_S32P</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a2d21c520e4ab21100b6440ec2d81ba1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a2d21c520e4ab21100b6440ec2d81ba1b" kindref="member">AV_SAMPLE_FMT_FLTP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5adf1348382a7c7473a425e05530989ae5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5adf1348382a7c7473a425e05530989ae5" kindref="member">AV_SAMPLE_FMT_DBLP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a59a56ed0ec7b70ecda41c5ae943f256e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a59a56ed0ec7b70ecda41c5ae943f256e" kindref="member">AV_SAMPLE_FMT_S64</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ae65e3ba3ffdf813b45fccab87f3588a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5ae65e3ba3ffdf813b45fccab87f3588a1" kindref="member">AV_SAMPLE_FMT_S64P</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a8c2ef4962274b33e2828fb9629c104fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__sampfmts_1ggaf9a51ca15301871723577c730b5865c5a8c2ef4962274b33e2828fb9629c104fd" kindref="member">AV_SAMPLE_FMT_NB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group__lavu__sampfmts_1gadc5fce5ceabec01026645c7c160ca82f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__sampfmts_1gadc5fce5ceabec01026645c7c160ca82f" kindref="member">av_get_sample_fmt_name</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="group__lavu__sampfmts_1ga655c989b749667468e5e839e26fe63db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/><ref refid="group__lavu__sampfmts_1ga655c989b749667468e5e839e26fe63db" kindref="member">av_get_sample_fmt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="group__lavu__sampfmts_1ga8e66c3f813ea02afcaa56a8a964c749a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/><ref refid="group__lavu__sampfmts_1ga8e66c3f813ea02afcaa56a8a964c749a" kindref="member">av_get_alt_sample_fmt</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>planar);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group__lavu__sampfmts_1ga7817ec0eff4dc6fc0962f31e6d138bca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/><ref refid="group__lavu__sampfmts_1ga7817ec0eff4dc6fc0962f31e6d138bca" kindref="member">av_get_packed_sample_fmt</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="group__lavu__sampfmts_1ga82caf838259d95cc6c4fd87633bb0e19" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/><ref refid="group__lavu__sampfmts_1ga82caf838259d95cc6c4fd87633bb0e19" kindref="member">av_get_planar_sample_fmt</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="group__lavu__sampfmts_1gacf7a32f84e3508ee52ab30d85b8237bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__sampfmts_1gacf7a32f84e3508ee52ab30d85b8237bf" kindref="member">av_get_sample_fmt_string</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_size,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group__lavu__sampfmts_1ga0c3c218e1dd570ad4917c69a35a6c77d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1ga0c3c218e1dd570ad4917c69a35a6c77d" kindref="member">av_get_bytes_per_sample</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="group__lavu__sampfmts_1ga06ba8a64dc4382c422789a5d0b6bf592" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1ga06ba8a64dc4382c422789a5d0b6bf592" kindref="member">av_sample_fmt_is_planar</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="group__lavu__sampfmts_1gaa7368bc4e3a366b688e81938ed55eb06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaa7368bc4e3a366b688e81938ed55eb06" kindref="member">av_samples_get_buffer_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*linesize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="group__lavu__sampmanip_1ga673254a62fa75dab3211caf17c73c6eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampmanip_1ga673254a62fa75dab3211caf17c73c6eb" kindref="member">av_samples_fill_arrays</ref>(uint8_t<sp/>**audio_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*linesize,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*buf,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" kindref="member">av_samples_alloc</ref>(uint8_t<sp/>**audio_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*linesize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="group__lavu__sampmanip_1gae8b9f22f2f659d023f111390d9545273" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampmanip_1gae8b9f22f2f659d023f111390d9545273" kindref="member">av_samples_alloc_array_and_samples</ref>(uint8_t<sp/>***audio_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*linesize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="group__lavu__sampmanip_1gabd511e1a989de02e7cb174a1169f2951" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampmanip_1gabd511e1a989de02e7cb174a1169f2951" kindref="member">av_samples_copy</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*dst,<sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_offset,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="group__lavu__sampmanip_1gabcb166e22938c7d93c2d609529c458bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampmanip_1gabcb166e22938c7d93c2d609529c458bb" kindref="member">av_samples_set_silence</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*audio_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_channels,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_SAMPLEFMT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h"/>
+  </compounddef>
+</doxygen>

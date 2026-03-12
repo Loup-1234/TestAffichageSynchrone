@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="eval_8h" kind="file" language="C++">
+    <compoundname>eval.h</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="eval_8h_1ac09a495d176de152a38347ca8ba069a8" prot="public" static="no">
+        <type>struct AVExpr</type>
+        <definition>typedef struct AVExpr AVExpr</definition>
+        <argsstring></argsstring>
+        <name>AVExpr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="29" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="eval_8h_1a2d19271d518d49f3cb2df8c347856b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_expr_parse_and_eval</definition>
+        <argsstring>(double *res, const char *s, const char *const *const_names, const double *const_values, const char *const *func1_names, double(*const *funcs1)(void *, double), const char *const *func2_names, double(*const *funcs2)(void *, double, double), void *opaque, int log_offset, void *log_ctx)</argsstring>
+        <name>av_expr_parse_and_eval</name>
+        <param>
+          <type>double *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>const_names</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>const_values</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>func1_names</declname>
+        </param>
+        <param>
+          <type>double(**)(void *, double)</type>
+          <declname>funcs1</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>func2_names</declname>
+        </param>
+        <param>
+          <type>double(**)(void *, double, double)</type>
+          <declname>funcs2</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>log_offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse and evaluate an expression. Note, this is significantly slower than <ref refid="eval_8h_1a569b6171b99e02f899d9ba8b5545cc27" kindref="member">av_expr_eval()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a double where is put the result value of the expression, or NAN in case of error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>expression as a zero terminated string, for example &quot;1+2^3+5*5+sin(2/3)&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of constant identifiers, for example {&quot;PI&quot;, &quot;E&quot;, 0} </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a zero terminated array of values for the identifiers from const_names </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func1_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of funcs1 identifiers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcs1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of function pointers for functions which take 1 argument </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func2_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of funcs2 identifiers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcs2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of function pointers for functions which take 2 arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer which will be passed to all functions from funcs1 and funcs2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log level offset, can be used to silence error messages </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parent logging context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative value corresponding to an AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="50" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="50" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_expr_parse</definition>
+        <argsstring>(AVExpr **expr, const char *s, const char *const *const_names, const char *const *func1_names, double(*const *funcs1)(void *, double), const char *const *func2_names, double(*const *funcs2)(void *, double, double), int log_offset, void *log_ctx)</argsstring>
+        <name>av_expr_parse</name>
+        <param>
+          <type>AVExpr **</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>const_names</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>func1_names</declname>
+        </param>
+        <param>
+          <type>double(**)(void *, double)</type>
+          <declname>funcs1</declname>
+        </param>
+        <param>
+          <type>const char *const *</type>
+          <declname>func2_names</declname>
+        </param>
+        <param>
+          <type>double(**)(void *, double, double)</type>
+          <declname>funcs2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>log_offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse an expression.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where is put an AVExpr containing the parsed value in case of successful parsing, or NULL otherwise. The pointed to AVExpr must be freed with <ref refid="eval_8h_1a01c05d7049a9208c2b22147a3f16c58c" kindref="member">av_expr_free()</ref> by the user when it is not needed anymore. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>expression as a zero terminated string, for example &quot;1+2^3+5*5+sin(2/3)&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of constant identifiers, for example {&quot;PI&quot;, &quot;E&quot;, 0} </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func1_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of funcs1 identifiers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcs1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of function pointers for functions which take 1 argument </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func2_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of zero terminated strings of funcs2 identifiers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>funcs2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL terminated array of function pointers for functions which take 2 arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log level offset, can be used to silence error messages </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parent logging context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative value corresponding to an AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="74" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="74" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1a569b6171b99e02f899d9ba8b5545cc27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_expr_eval</definition>
+        <argsstring>(AVExpr *e, const double *const_values, void *opaque)</argsstring>
+        <name>av_expr_eval</name>
+        <param>
+          <type>AVExpr *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>const_values</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate a previously parsed expression.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the AVExpr to evaluate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a zero terminated array of values for the identifiers from <ref refid="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" kindref="member">av_expr_parse()</ref> const_names </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer which will be passed to all functions from funcs1 and funcs2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of the expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="88" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="88" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1a3b78fa7b09ddce03ea821f479c218fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_expr_count_vars</definition>
+        <argsstring>(AVExpr *e, unsigned *counter, int size)</argsstring>
+        <name>av_expr_count_vars</name>
+        <param>
+          <type>AVExpr *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>counter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Track the presence of variables and their number of occurrences in a parsed expression</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the AVExpr to track variables in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a zero-initialized array where the count of each variable will be stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value indicates that no expression or array was passed or size was zero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="99" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="99" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1af6ef984527887871b9a0c38cc8d42dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_expr_count_func</definition>
+        <argsstring>(AVExpr *e, unsigned *counter, int size, int arg)</argsstring>
+        <name>av_expr_count_func</name>
+        <param>
+          <type>AVExpr *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>counter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Track the presence of user provided functions and their number of occurrences in a parsed expression.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the AVExpr to track user provided functions in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a zero-initialized array where the count of each function will be stored if you passed 5 functions with 2 arguments to <ref refid="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" kindref="member">av_expr_parse()</ref> then for arg=2 this will use up to 5 entries. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of arguments the counted functions have </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value indicates that no expression or array was passed or size was zero </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="114" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="114" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1a01c05d7049a9208c2b22147a3f16c58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_expr_free</definition>
+        <argsstring>(AVExpr *e)</argsstring>
+        <name>av_expr_free</name>
+        <param>
+          <type>AVExpr *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a parsed expression previously created with <ref refid="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" kindref="member">av_expr_parse()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="119" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="eval_8h_1a7d21905c92ee5af0bb529d2daf8cb7c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_strtod</definition>
+        <argsstring>(const char *numstr, char **tail)</argsstring>
+        <name>av_strtod</name>
+        <param>
+          <type>const char *</type>
+          <declname>numstr</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the string in numstr and return its value as a double. If the string is empty, contains only whitespaces, or does not contain an initial substring that has the expected syntax for a floating-point number, no conversion is performed. In this case, returns a value of zero and the value returned in tail is the value of numstr.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numstr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string representing a number, may contain one of the International System number postfixes, for example &apos;K&apos;, &apos;M&apos;, &apos;G&apos;. If &apos;i&apos; is appended after the postfix, powers of 2 are used instead of powers of 10. The &apos;B&apos; postfix multiplies the value by 8, and can be appended after another postfix or used alone. This allows using for example &apos;KB&apos;, &apos;MiB&apos;, &apos;G&apos; and &apos;B&apos; as postfix. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL puts here the pointer to the char next after the last parsed character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" line="138" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h" declline="138" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>simple arithmetic expression evaluator </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2002<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_EVAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_EVAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVExpr<sp/>AVExpr;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="eval_8h_1a2d19271d518d49f3cb2df8c347856b18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1a2d19271d518d49f3cb2df8c347856b18" kindref="member">av_expr_parse_and_eval</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*res,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*const_names,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*const_values,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*func1_names,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*funcs1)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*func2_names,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*funcs2)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1ad3bf8f3330d1fd139de2ca156c313f34" kindref="member">av_expr_parse</ref>(AVExpr<sp/>**expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*const_names,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*func1_names,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*funcs1)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*func2_names,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>(*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*funcs2)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="eval_8h_1a569b6171b99e02f899d9ba8b5545cc27" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1a569b6171b99e02f899d9ba8b5545cc27" kindref="member">av_expr_eval</ref>(AVExpr<sp/>*e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*const_values,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="eval_8h_1a3b78fa7b09ddce03ea821f479c218fa1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1a3b78fa7b09ddce03ea821f479c218fa1" kindref="member">av_expr_count_vars</ref>(AVExpr<sp/>*e,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>*counter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="eval_8h_1af6ef984527887871b9a0c38cc8d42dc3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1af6ef984527887871b9a0c38cc8d42dc3" kindref="member">av_expr_count_func</ref>(AVExpr<sp/>*e,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>*counter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arg);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="eval_8h_1a01c05d7049a9208c2b22147a3f16c58c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1a01c05d7049a9208c2b22147a3f16c58c" kindref="member">av_expr_free</ref>(AVExpr<sp/>*e);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="eval_8h_1a7d21905c92ee5af0bb529d2daf8cb7c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="eval_8h_1a7d21905c92ee5af0bb529d2daf8cb7c3" kindref="member">av_strtod</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*numstr,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**tail);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_EVAL_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/eval.h"/>
+  </compounddef>
+</doxygen>

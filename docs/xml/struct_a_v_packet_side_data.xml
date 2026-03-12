@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_packet_side_data" kind="struct" language="C++" prot="public">
+    <compoundname>AVPacketSideData</compoundname>
+    <includes refid="packet_8h" local="no">packet.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_packet_side_data_1a7d43e1011586e6c987f418b604b57ec3" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVPacketSideData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>AVPacketSideData::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="410" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_side_data_1ae9be662eca108df322f370bc8d12c649" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVPacketSideData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVPacketSideData::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="411" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_side_data_1ae943cb6d9d40d6a5d49e590bc20f2652" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref></type>
+        <definition>enum AVPacketSideDataType AVPacketSideData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVPacketSideData::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="412" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure stores auxiliary information for decoding, presenting, or otherwise processing the coded stream. It is typically exported by demuxers and encoders and can be fed to decoders and muxers either in a per packet basis, or as global side data (applying to the entire coded stream).</para>
+<para>Global side data is handled as follows:<itemizedlist>
+<listitem><para>During demuxing, it may be exported through <ref refid="struct_a_v_codec_parameters_1ad54da9241deabb3601e6e0e8fa832c19" kindref="member">AVStream&apos;s codec parameters</ref>, which can then be passed as input to decoders through the <ref refid="struct_a_v_codec_context_1a0d9375d5c81895b9048644e547b33d32" kindref="member">decoder context&apos;s side data</ref>, for initialization.</para>
+</listitem><listitem><para>For muxing, it can be fed through <ref refid="struct_a_v_codec_parameters_1ad54da9241deabb3601e6e0e8fa832c19" kindref="member">AVStream&apos;s codec parameters</ref>, typically the output of encoders through the <ref refid="struct_a_v_codec_context_1a0d9375d5c81895b9048644e547b33d32" kindref="member">encoder context&apos;s side data</ref>, for initialization.</para>
+</listitem></itemizedlist>
+</para>
+<para>Packet specific side data is handled as follows:<itemizedlist>
+<listitem><para>During demuxing, it may be exported through <ref refid="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" kindref="member">AVPacket&apos;s side data</ref>, which can then be passed as input to decoders.</para>
+</listitem><listitem><para>For muxing, it can be fed through <ref refid="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" kindref="member">AVPacket&apos;s</ref> side data", typically the output of encoders.</para>
+</listitem></itemizedlist>
+</para>
+<para>Different modules may accept or export different types of side data depending on media type and codec. Refer to <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref> for a list of defined types and where they may be found or used. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="409" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="409" bodyend="413"/>
+    <listofallmembers>
+      <member refid="struct_a_v_packet_side_data_1a7d43e1011586e6c987f418b604b57ec3" prot="public" virt="non-virtual"><scope>AVPacketSideData</scope><name>data</name></member>
+      <member refid="struct_a_v_packet_side_data_1ae9be662eca108df322f370bc8d12c649" prot="public" virt="non-virtual"><scope>AVPacketSideData</scope><name>size</name></member>
+      <member refid="struct_a_v_packet_side_data_1ae943cb6d9d40d6a5d49e590bc20f2652" prot="public" virt="non-virtual"><scope>AVPacketSideData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

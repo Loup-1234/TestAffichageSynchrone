@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_input_format" kind="struct" language="C++" prot="public">
+    <compoundname>AVInputFormat</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_input_format_1a850db3eb225e22b64f3304d72134ca0c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVInputFormat::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVInputFormat::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A comma separated list of short names for the format. New names may be appended with a minor bump. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="549" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1a1f67064a527941944017f1dfe65d3aa9" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVInputFormat::long_name</definition>
+        <argsstring></argsstring>
+        <name>long_name</name>
+        <qualifiedname>AVInputFormat::long_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descriptive name for the format, meant to be more human-readable than name. You should use the NULL_IF_CONFIG_SMALL() macro to define it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="556" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1a1b30f6647d0c2faf38ba8786d7c3a838" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVInputFormat::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVInputFormat::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Can use flags: AVFMT_NOFILE, AVFMT_NEEDNUMBER, AVFMT_SHOW_IDS, AVFMT_NOTIMESTAMPS, AVFMT_GENERIC_INDEX, AVFMT_TS_DISCONT, AVFMT_NOBINSEARCH, AVFMT_NOGENSEARCH, AVFMT_NO_BYTE_SEEK, AVFMT_SEEK_TO_PTS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="563" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1ae692e27e532f664f26e2501967b09eab" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVInputFormat::extensions</definition>
+        <argsstring></argsstring>
+        <name>extensions</name>
+        <qualifiedname>AVInputFormat::extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If extensions are defined, then no probe is done. You should usually not use extension format guessing because it is not reliable enough </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="570" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1a88738bb721c18df24fb4207aa2d4924a" prot="public" static="no" mutable="no">
+        <type>const struct AVCodecTag *const  *</type>
+        <definition>const struct AVCodecTag* const* AVInputFormat::codec_tag</definition>
+        <argsstring></argsstring>
+        <name>codec_tag</name>
+        <qualifiedname>AVInputFormat::codec_tag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="572" column="34" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1afaac829559ad9e07618c01a51d8a4c5f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVInputFormat::priv_class</definition>
+        <argsstring></argsstring>
+        <name>priv_class</name>
+        <qualifiedname>AVInputFormat::priv_class</qualifiedname>
+        <briefdescription>
+<para><ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for the private context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="574" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_input_format_1a963cd77aa525517dcfdc18227dae788f" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVInputFormat::mime_type</definition>
+        <argsstring></argsstring>
+        <name>mime_type</name>
+        <qualifiedname>AVInputFormat::mime_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comma-separated list of mime types. It is used check for matching mime types while probing. <simplesect kind="see"><para><ref refid="group__lavf__decoding_1gacdbc37c36c5949d0a38cd82dbca1b0c1" kindref="member">av_probe_input_format2</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="581" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVInputFormat</label>
+        <link refid="struct_a_v_input_format"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="544" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="544" bodyend="582"/>
+    <listofallmembers>
+      <member refid="struct_a_v_input_format_1a88738bb721c18df24fb4207aa2d4924a" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>codec_tag</name></member>
+      <member refid="struct_a_v_input_format_1ae692e27e532f664f26e2501967b09eab" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>extensions</name></member>
+      <member refid="struct_a_v_input_format_1a1b30f6647d0c2faf38ba8786d7c3a838" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>flags</name></member>
+      <member refid="struct_a_v_input_format_1a1f67064a527941944017f1dfe65d3aa9" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>long_name</name></member>
+      <member refid="struct_a_v_input_format_1a963cd77aa525517dcfdc18227dae788f" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>mime_type</name></member>
+      <member refid="struct_a_v_input_format_1a850db3eb225e22b64f3304d72134ca0c" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>name</name></member>
+      <member refid="struct_a_v_input_format_1afaac829559ad9e07618c01a51d8a4c5f" prot="public" virt="non-virtual"><scope>AVInputFormat</scope><name>priv_class</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavd" kind="group">
+    <compoundname>lavd</compoundname>
+    <title>libavdevice</title>
+    <innerfile refid="avdevice_8h">avdevice.h</innerfile>
+    <innerfile refid="libavdevice_2version_8h">version.h</innerfile>
+    <innerfile refid="libavdevice_2version__major_8h">version_major.h</innerfile>
+    <innerclass refid="struct_a_v_device_rect" prot="public">AVDeviceRect</innerclass>
+    <innerclass refid="struct_a_v_device_info" prot="public">AVDeviceInfo</innerclass>
+    <innerclass refid="struct_a_v_device_info_list" prot="public">AVDeviceInfoList</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavd_1ga16d549a25f11693a06a211f00864fed8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVAppToDevMessageType</name>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a635d820c2098c4f58feff50b7d6c2811" prot="public">
+          <name>AV_APP_TO_DEV_NONE</name>
+          <initializer>= MKBETAG(&apos;N&apos;,&apos;O&apos;,&apos;N&apos;,&apos;E&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dummy message. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8ace5fb49b2638f933e758fed3dcb07249" prot="public">
+          <name>AV_APP_TO_DEV_WINDOW_SIZE</name>
+          <initializer>= MKBETAG(&apos;G&apos;,&apos;E&apos;,&apos;O&apos;,&apos;M&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Window size change message.</para>
+<para>Message is sent to the device every time the application changes the size of the window device renders to. Message should also be sent right after window is created.</para>
+<para>data: <ref refid="struct_a_v_device_rect" kindref="compound">AVDeviceRect</ref>: new window size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a9f4006d75c6e368d9d0224d973d57710" prot="public">
+          <name>AV_APP_TO_DEV_WINDOW_REPAINT</name>
+          <initializer>= MKBETAG(&apos;R&apos;,&apos;E&apos;,&apos;P&apos;,&apos;A&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Repaint request message.</para>
+<para>Message is sent to the device when window has to be repainted.</para>
+<para>data: <ref refid="struct_a_v_device_rect" kindref="compound">AVDeviceRect</ref>: area required to be repainted. NULL: whole area is required to be repainted. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a89a46eae01f8ff45ec1f200e6738d804" prot="public">
+          <name>AV_APP_TO_DEV_PAUSE</name>
+          <initializer>= MKBETAG(&apos;P&apos;, &apos;A&apos;, &apos;U&apos;, &apos; &apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request pause/play.</para>
+<para>Application requests pause/unpause playback. Mostly usable with devices that have internal buffer. By default devices are not paused.</para>
+<para>data: NULL </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a344983cb9068e56d3f847162081a9747" prot="public">
+          <name>AV_APP_TO_DEV_PLAY</name>
+          <initializer>= MKBETAG(&apos;P&apos;, &apos;L&apos;, &apos;A&apos;, &apos;Y&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a754ae9e6688b1de6f92140415e56b40c" prot="public">
+          <name>AV_APP_TO_DEV_TOGGLE_PAUSE</name>
+          <initializer>= MKBETAG(&apos;P&apos;, &apos;A&apos;, &apos;U&apos;, &apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8abac3d409c36e4774717f9a8ecf24ada9" prot="public">
+          <name>AV_APP_TO_DEV_SET_VOLUME</name>
+          <initializer>= MKBETAG(&apos;S&apos;, &apos;V&apos;, &apos;O&apos;, &apos;L&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Volume control message.</para>
+<para>Set volume level. It may be device-dependent if volume is changed per stream or system wide. Per stream volume change is expected when possible.</para>
+<para>data: double: new volume with range of 0.0 - 1.0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a93114a33bcd20f06d39fb9a64febf751" prot="public">
+          <name>AV_APP_TO_DEV_MUTE</name>
+          <initializer>= MKBETAG(&apos; &apos;, &apos;M&apos;, &apos;U&apos;, &apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mute control messages.</para>
+<para>Change mute state. It may be device-dependent if mute status is changed per stream or system wide. Per stream mute status change is expected when possible.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8ad8c2e96b8cf1ebd5e85c5fd171eecc3f" prot="public">
+          <name>AV_APP_TO_DEV_UNMUTE</name>
+          <initializer>= MKBETAG(&apos;U&apos;, &apos;M&apos;, &apos;U&apos;, &apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8ad83bcf41ae7e0d09e46bdc2b240afb4b" prot="public">
+          <name>AV_APP_TO_DEV_TOGGLE_MUTE</name>
+          <initializer>= MKBETAG(&apos;T&apos;, &apos;M&apos;, &apos;U&apos;, &apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a5caaa1fda2910d345270d8ac1710c138" prot="public">
+          <name>AV_APP_TO_DEV_GET_VOLUME</name>
+          <initializer>= MKBETAG(&apos;G&apos;, &apos;V&apos;, &apos;O&apos;, &apos;L&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get volume/mute messages.</para>
+<para>Force the device to send AV_DEV_TO_APP_VOLUME_LEVEL_CHANGED or AV_DEV_TO_APP_MUTE_STATE_CHANGED command respectively.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1gga16d549a25f11693a06a211f00864fed8a8219697bb3af980fa778ffb1e11606b3" prot="public">
+          <name>AV_APP_TO_DEV_GET_MUTE</name>
+          <initializer>= MKBETAG(&apos;G&apos;, &apos;M&apos;, &apos;U&apos;, &apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message types used by <ref refid="group__lavd_1ga62f5a22de09f0bc7fd2380d39ee1bc45" kindref="member">avdevice_app_to_dev_control_message()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="125" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="125" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavd_1gac379d3691ce091da6387a461a158a690" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVDevToAppMessageType</name>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a64ccc494050138379bd52b62159ea4ce" prot="public">
+          <name>AV_DEV_TO_APP_NONE</name>
+          <initializer>= MKBETAG(&apos;N&apos;,&apos;O&apos;,&apos;N&apos;,&apos;E&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dummy message. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a0c4bc0ff29547bc0dc4bd5d0aba95020" prot="public">
+          <name>AV_DEV_TO_APP_CREATE_WINDOW_BUFFER</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;C&apos;,&apos;R&apos;,&apos;E&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Create window buffer message.</para>
+<para>Device requests to create a window buffer. Exact meaning is device- and application-dependent. Message is sent before rendering first frame and all one-shot initializations should be done here. Application is allowed to ignore preferred window buffer size.</para>
+<para><simplesect kind="note"><para>: Application is obligated to inform about window buffer size with AV_APP_TO_DEV_WINDOW_SIZE message.</para>
+</simplesect>
+data: <ref refid="struct_a_v_device_rect" kindref="compound">AVDeviceRect</ref>: preferred size of the window buffer. NULL: no preferred size of the window buffer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a7d665015d93c6f6f0bf6bdb3d86c619e" prot="public">
+          <name>AV_DEV_TO_APP_PREPARE_WINDOW_BUFFER</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;P&apos;,&apos;R&apos;,&apos;E&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Prepare window buffer message.</para>
+<para>Device requests to prepare a window buffer for rendering. Exact meaning is device- and application-dependent. Message is sent before rendering of each frame.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a1108397b3605ed9aff591de55a3c27bd" prot="public">
+          <name>AV_DEV_TO_APP_DISPLAY_WINDOW_BUFFER</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;D&apos;,&apos;I&apos;,&apos;S&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Display window buffer message.</para>
+<para>Device requests to display a window buffer. Message is sent when new frame is ready to be displayed. Usually buffers need to be swapped in handler of this message.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690abd200e116b23c39311db9661d9221b04" prot="public">
+          <name>AV_DEV_TO_APP_DESTROY_WINDOW_BUFFER</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;D&apos;,&apos;E&apos;,&apos;S&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destroy window buffer message.</para>
+<para>Device requests to destroy a window buffer. Message is sent when device is about to be destroyed and window buffer is not required anymore.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a037a21369f35dd608f54fb34022de229" prot="public">
+          <name>AV_DEV_TO_APP_BUFFER_OVERFLOW</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;O&apos;,&apos;F&apos;,&apos;L&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Buffer fullness status messages.</para>
+<para>Device signals buffer overflow/underflow.</para>
+<para>data: NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690ac3652337ce29a2bb83a57ae9b76196c1" prot="public">
+          <name>AV_DEV_TO_APP_BUFFER_UNDERFLOW</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;U&apos;,&apos;F&apos;,&apos;L&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a1fe6ba0b4093fb06244e342105d9c1a2" prot="public">
+          <name>AV_DEV_TO_APP_BUFFER_READABLE</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;R&apos;,&apos;D&apos;,&apos; &apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Buffer readable/writable.</para>
+<para>Device informs that buffer is readable/writable. When possible, device informs how many bytes can be read/write.</para>
+<para><simplesect kind="warning"><para>Device may not inform when number of bytes than can be read/write changes.</para>
+</simplesect>
+data: int64_t: amount of bytes available to read/write. NULL: amount of bytes available to read/write is not known. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a0cf06e453ce4b8618573bf9fbeca07f4" prot="public">
+          <name>AV_DEV_TO_APP_BUFFER_WRITABLE</name>
+          <initializer>= MKBETAG(&apos;B&apos;,&apos;W&apos;,&apos;R&apos;,&apos; &apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a3e4c4485f83fa9818ce1e9a559a7dc02" prot="public">
+          <name>AV_DEV_TO_APP_MUTE_STATE_CHANGED</name>
+          <initializer>= MKBETAG(&apos;C&apos;,&apos;M&apos;,&apos;U&apos;,&apos;T&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mute state change message.</para>
+<para>Device informs that mute state has changed.</para>
+<para>data: int: 0 for not muted state, non-zero for muted state. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavd_1ggac379d3691ce091da6387a461a158a690a19abbd0fc9488541fd4df18660120e0c" prot="public">
+          <name>AV_DEV_TO_APP_VOLUME_LEVEL_CHANGED</name>
+          <initializer>= MKBETAG(&apos;C&apos;,&apos;V&apos;,&apos;O&apos;,&apos;L&apos;)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Volume level change message.</para>
+<para>Device informs that volume level has changed.</para>
+<para>data: double: new volume with range of 0.0 - 1.0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message types used by <ref refid="group__lavd_1gaf426838f78fb5bcdc2095c4d3162cf6e" kindref="member">avdevice_dev_to_app_control_message()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="204" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="204" bodyend="300"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavd_1gac5dcbcb2a8238700bfe55d6c915521db" prot="public" static="no">
+        <type>struct AVDeviceRect</type>
+        <definition>typedef struct AVDeviceRect AVDeviceRect</definition>
+        <argsstring></argsstring>
+        <name>AVDeviceRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="120" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavd_1ga6ad5d0ce867c3e09e365ca7c68bdaf75" prot="public" static="no">
+        <type>struct AVDeviceInfo</type>
+        <definition>typedef struct AVDeviceInfo AVDeviceInfo</definition>
+        <argsstring></argsstring>
+        <name>AVDeviceInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure describes basic parameters of the device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="338" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavd_1ga8e3d0b839593decff198f8b4e1140325" prot="public" static="no">
+        <type>struct AVDeviceInfoList</type>
+        <definition>typedef struct AVDeviceInfoList AVDeviceInfoList</definition>
+        <argsstring></argsstring>
+        <name>AVDeviceInfoList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="347" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavd_1ga6a111710c7b02c2a11d8b6c43e0dd63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned avdevice_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>avdevice_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the LIBAVDEVICE_VERSION_INT constant. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="62" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="62" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga788d54225eca6950259630999a92dfd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avdevice_configuration</definition>
+        <argsstring>(void)</argsstring>
+        <name>avdevice_configuration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavdevice build-time configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="67" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="67" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gaee7745bf393a9e5dbf0959457f9a3427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avdevice_license</definition>
+        <argsstring>(void)</argsstring>
+        <name>avdevice_license</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavdevice license. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="72" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="72" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga7c90a3585267b55941ae2f7388c006b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void avdevice_register_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>avdevice_register_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize libavdevice and register all the input and output devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="77" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gad5df91268b335891110e8cf2580b65af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+        <definition>const AVInputFormat * av_input_audio_device_next</definition>
+        <argsstring>(const AVInputFormat *d)</argsstring>
+        <name>av_input_audio_device_next</name>
+        <param>
+          <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio input devices iterator.</para>
+<para>If d is NULL, returns the first registered input audio/video device, if d is non-NULL, returns the next registered input audio/video device after d or NULL if d is the last one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="86" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="86" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gab69e789f47503d54b5dc448cc8355fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+        <definition>const AVInputFormat * av_input_video_device_next</definition>
+        <argsstring>(const AVInputFormat *d)</argsstring>
+        <name>av_input_video_device_next</name>
+        <param>
+          <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video input devices iterator.</para>
+<para>If d is NULL, returns the first registered input audio/video device, if d is non-NULL, returns the next registered input audio/video device after d or NULL if d is the last one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="95" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="95" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga408630f905799d7335f92918fe0cbed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+        <definition>const AVOutputFormat * av_output_audio_device_next</definition>
+        <argsstring>(const AVOutputFormat *d)</argsstring>
+        <name>av_output_audio_device_next</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio output devices iterator.</para>
+<para>If d is NULL, returns the first registered output audio/video device, if d is non-NULL, returns the next registered output audio/video device after d or NULL if d is the last one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="104" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="104" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga317e8f53ee75a85ad68d87b00be331a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+        <definition>const AVOutputFormat * av_output_video_device_next</definition>
+        <argsstring>(const AVOutputFormat *d)</argsstring>
+        <name>av_output_video_device_next</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video output devices iterator.</para>
+<para>If d is NULL, returns the first registered output audio/video device, if d is non-NULL, returns the next registered output audio/video device after d or NULL if d is the last one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="113" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="113" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga62f5a22de09f0bc7fd2380d39ee1bc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avdevice_app_to_dev_control_message</definition>
+        <argsstring>(struct AVFormatContext *s, enum AVAppToDevMessageType type, void *data, size_t data_size)</argsstring>
+        <name>avdevice_app_to_dev_control_message</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavd_1ga16d549a25f11693a06a211f00864fed8" kindref="member">AVAppToDevMessageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send control message from application to device.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message data. Exact type depends on message type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of message data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, negative on error. AVERROR(ENOSYS) when device doesn&apos;t implement handler of the message. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="312" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="312" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gaf426838f78fb5bcdc2095c4d3162cf6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avdevice_dev_to_app_control_message</definition>
+        <argsstring>(struct AVFormatContext *s, enum AVDevToAppMessageType type, void *data, size_t data_size)</argsstring>
+        <name>avdevice_dev_to_app_control_message</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavd_1gac379d3691ce091da6387a461a158a690" kindref="member">AVDevToAppMessageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send control message from device to application.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message data. Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of message data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, negative on error. AVERROR(ENOSYS) when application doesn&apos;t implement handler of the message. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="326" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="326" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga4bf9cc38ae904b9104fda1e4def71474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avdevice_list_devices</definition>
+        <argsstring>(struct AVFormatContext *s, AVDeviceInfoList **device_list)</argsstring>
+        <name>avdevice_list_devices</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_device_info_list" kindref="compound">AVDeviceInfoList</ref> **</type>
+          <declname>device_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List devices.</para>
+<para>Returns available device names and their parameters.</para>
+<para><simplesect kind="note"><para>: Some devices may accept system-dependent device names that cannot be autodetected. The list returned by this function cannot be assumed to be always completed.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">device_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of autodetected devices. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>count of autodetected devices, negative on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="362" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="362" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1ga52dcbb2d9ae0f33b7a89548b5a0c87bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void avdevice_free_list_devices</definition>
+        <argsstring>(AVDeviceInfoList **device_list)</argsstring>
+        <name>avdevice_free_list_devices</name>
+        <param>
+          <type><ref refid="struct_a_v_device_info_list" kindref="compound">AVDeviceInfoList</ref> **</type>
+          <declname>device_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenient function to free result of <ref refid="group__lavd_1ga4bf9cc38ae904b9104fda1e4def71474" kindref="member">avdevice_list_devices()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device list to be freed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="369" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="369" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gad15c05ace8090682b947211c76189388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avdevice_list_input_sources</definition>
+        <argsstring>(const AVInputFormat *device, const char *device_name, AVDictionary *device_options, AVDeviceInfoList **device_list)</argsstring>
+        <name>avdevice_list_input_sources</name>
+        <param>
+          <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>device_name</declname>
+        </param>
+        <param>
+          <type>AVDictionary *</type>
+          <declname>device_options</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_device_info_list" kindref="compound">AVDeviceInfoList</ref> **</type>
+          <declname>device_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List devices.</para>
+<para>Returns available device names and their parameters. These are convenient wrappers for <ref refid="group__lavd_1ga4bf9cc38ae904b9104fda1e4def71474" kindref="member">avdevice_list_devices()</ref>. Device context is allocated and deallocated internally.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device format. May be NULL if device name is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device name. May be NULL if device format is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An AVDictionary filled with device-private options. May be NULL. The same options must be passed later to <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> for output devices or <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> for input devices, or at any other place that affects device-private options. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">device_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of autodetected devices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>count of autodetected devices, negative on error. </para>
+</simplesect>
+<simplesect kind="note"><para>device argument takes precedence over device_name when both are set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="388" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="388" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavd_1gac38572c5ba27b5cf6d3943cb97233309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avdevice_list_output_sinks</definition>
+        <argsstring>(const AVOutputFormat *device, const char *device_name, AVDictionary *device_options, AVDeviceInfoList **device_list)</argsstring>
+        <name>avdevice_list_output_sinks</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>device_name</declname>
+        </param>
+        <param>
+          <type>AVDictionary *</type>
+          <declname>device_options</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_device_info_list" kindref="compound">AVDeviceInfoList</ref> **</type>
+          <declname>device_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="390" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" declline="390" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Special devices muxing/demuxing library.</para>
+<para>Libavdevice is a complementary library to <ref refid="group__libavf" kindref="compound">libavformat</ref>. It provides various &quot;special&quot; platform-specific muxers and demuxers, e.g. for grabbing devices, audio capture and playback etc. As a consequence, the (de)muxers in libavdevice are of the AVFMT_NOFILE type (they use their own I/O functions). The filename passed to <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> often does not refer to an actually existing file, but has some special device-specific meaning - e.g. for xcbgrab it is the display name.</para>
+<para>To use libavdevice, simply call <ref refid="group__lavd_1ga7c90a3585267b55941ae2f7388c006b6" kindref="member">avdevice_register_all()</ref> to register all compiled muxers and demuxers. They all use standard libavformat API. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

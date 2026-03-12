@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_x_v_a2_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVDXVA2FramesContext</compoundname>
+    <includes refid="hwcontext__dxva2_8h" local="no">hwcontext_dxva2.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_x_v_a2_frames_context_1abc67fe5747f160bf1f0bb98a506057ba" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD AVDXVA2FramesContext::surface_type</definition>
+        <argsstring></argsstring>
+        <name>surface_type</name>
+        <qualifiedname>AVDXVA2FramesContext::surface_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The surface type (e.g. DXVA2_VideoProcessorRenderTarget or DXVA2_VideoDecoderRenderTarget). Must be set by the caller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="51" column="25" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_x_v_a2_frames_context_1a2025b21fc7ec906713c525a702fd6eb7" prot="public" static="no" mutable="no">
+        <type>IDirect3DSurface9 **</type>
+        <definition>IDirect3DSurface9** AVDXVA2FramesContext::surfaces</definition>
+        <argsstring></argsstring>
+        <name>surfaces</name>
+        <qualifiedname>AVDXVA2FramesContext::surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The surface pool. When an external pool is not provided by the caller, this will be managed (allocated and filled on init, freed on uninit) by libavutil. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="58" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_x_v_a2_frames_context_1a867fec347dd21aa778948df67cf00450" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDXVA2FramesContext::nb_surfaces</definition>
+        <argsstring></argsstring>
+        <name>nb_surfaces</name>
+        <qualifiedname>AVDXVA2FramesContext::nb_surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="59" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_x_v_a2_frames_context_1afcac8ee4311bbced10a5abd138f89bf7" prot="public" static="no" mutable="no">
+        <type>IDirectXVideoDecoder *</type>
+        <definition>IDirectXVideoDecoder* AVDXVA2FramesContext::decoder_to_release</definition>
+        <argsstring></argsstring>
+        <name>decoder_to_release</name>
+        <qualifiedname>AVDXVA2FramesContext::decoder_to_release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Certain drivers require the decoder to be destroyed before the surfaces. To allow internally managed pools to work properly in such cases, this field is provided.</para>
+<para>If it is non-NULL, libavutil will call IDirectXVideoDecoder_Release() on it just before the internal surface pool is freed.</para>
+<para>This is for convenience only. Some code uses other methods to manage the decoder reference. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="72" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="46" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" bodystart="46" bodyend="73"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_x_v_a2_frames_context_1afcac8ee4311bbced10a5abd138f89bf7" prot="public" virt="non-virtual"><scope>AVDXVA2FramesContext</scope><name>decoder_to_release</name></member>
+      <member refid="struct_a_v_d_x_v_a2_frames_context_1a867fec347dd21aa778948df67cf00450" prot="public" virt="non-virtual"><scope>AVDXVA2FramesContext</scope><name>nb_surfaces</name></member>
+      <member refid="struct_a_v_d_x_v_a2_frames_context_1abc67fe5747f160bf1f0bb98a506057ba" prot="public" virt="non-virtual"><scope>AVDXVA2FramesContext</scope><name>surface_type</name></member>
+      <member refid="struct_a_v_d_x_v_a2_frames_context_1a2025b21fc7ec906713c525a702fd6eb7" prot="public" virt="non-virtual"><scope>AVDXVA2FramesContext</scope><name>surfaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

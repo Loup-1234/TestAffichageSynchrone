@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__blowfish" kind="group">
+    <compoundname>lavu_blowfish</compoundname>
+    <title>Blowfish</title>
+    <innerclass refid="struct_a_v_blowfish" prot="public">AVBlowfish</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__blowfish_1ga6bd1329d9c3dade0a570059fa4a86a24" prot="public" static="no">
+        <type>struct AVBlowfish</type>
+        <definition>typedef struct AVBlowfish AVBlowfish</definition>
+        <argsstring></argsstring>
+        <name>AVBlowfish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="38" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__blowfish_1gace33b53217edd238435f0d9a7b2647b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> *</type>
+        <definition>AVBlowfish * av_blowfish_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_blowfish_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="43" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" declline="43" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__blowfish_1gabdeab79ba02586b6c06240eeb3472837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_blowfish_init</definition>
+        <argsstring>(struct AVBlowfish *ctx, const uint8_t *key, int key_len)</argsstring>
+        <name>av_blowfish_init</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="52" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__blowfish_1ga7b57de27a9aa26b67ac1f0d67fea781b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_blowfish_crypt_ecb</definition>
+        <argsstring>(struct AVBlowfish *ctx, uint32_t *xl, uint32_t *xr, int decrypt)</argsstring>
+        <name>av_blowfish_crypt_ecb</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>xl</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>xr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encrypt or decrypt a buffer using a previously initialized context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>left four bytes halves of input to be encrypted </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>right four bytes halves of input to be encrypted </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="62" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__blowfish_1gaad9e1113615df7f3e883ad48e7ee764b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_blowfish_crypt</definition>
+        <argsstring>(struct AVBlowfish *ctx, uint8_t *dst, const uint8_t *src, int count, uint8_t *iv, int decrypt)</argsstring>
+        <name>av_blowfish_crypt</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encrypt or decrypt a buffer using a previously initialized context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_blowfish" kindref="compound">AVBlowfish</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 8 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization vector for CBC mode, if NULL ECB will be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="75" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" declline="75" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__blowfish_1ga9ed9747b44cc2737a74a37f80e5cc269" prot="public" static="no">
+        <name>AV_BF_ROUNDS</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" line="33" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/blowfish.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

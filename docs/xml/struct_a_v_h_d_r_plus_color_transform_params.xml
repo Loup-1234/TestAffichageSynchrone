@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_d_r_plus_color_transform_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVHDRPlusColorTransformParams</compoundname>
+    <includes refid="hdr__dynamic__metadata_8h" local="no">hdr_dynamic_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a833d18029d732f86a0ec4c029a7da42f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::window_upper_left_corner_x</definition>
+        <argsstring></argsstring>
+        <name>window_upper_left_corner_x</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::window_upper_left_corner_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The relative x coordinate of the top left pixel of the processing window. The value shall be in the range of 0 and 1, inclusive and in multiples of 1/(width of Picture - 1). The value 1 corresponds to the absolute coordinate of width of Picture - 1. The value for first processing window shall be 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="67" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a8006c018b5fbe184fa4a26bcc52e2dc6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::window_upper_left_corner_y</definition>
+        <argsstring></argsstring>
+        <name>window_upper_left_corner_y</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::window_upper_left_corner_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The relative y coordinate of the top left pixel of the processing window. The value shall be in the range of 0 and 1, inclusive and in multiples of 1/(height of Picture - 1). The value 1 corresponds to the absolute coordinate of height of Picture - 1. The value for first processing window shall be 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="76" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a4be54ddced4fe5a8d024d291bc65749a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::window_lower_right_corner_x</definition>
+        <argsstring></argsstring>
+        <name>window_lower_right_corner_x</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::window_lower_right_corner_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The relative x coordinate of the bottom right pixel of the processing window. The value shall be in the range of 0 and 1, inclusive and in multiples of 1/(width of Picture - 1). The value 1 corresponds to the absolute coordinate of width of Picture - 1. The value for first processing window shall be 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="85" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a07fa3b7fb0be0b93b6d95ca9d9a1fa25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::window_lower_right_corner_y</definition>
+        <argsstring></argsstring>
+        <name>window_lower_right_corner_y</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::window_lower_right_corner_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The relative y coordinate of the bottom right pixel of the processing window. The value shall be in the range of 0 and 1, inclusive and in multiples of 1/(height of Picture - 1). The value 1 corresponds to the absolute coordinate of height of Picture - 1. The value for first processing window shall be 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="94" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a26fffeac222cba512e7255119a054f0a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVHDRPlusColorTransformParams::center_of_ellipse_x</definition>
+        <argsstring></argsstring>
+        <name>center_of_ellipse_x</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::center_of_ellipse_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The x coordinate of the center position of the concentric internal and external ellipses of the elliptical pixel selector in the processing window. The value shall be in the range of 0 to (width of Picture - 1), inclusive and in multiples of 1 pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="102" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1ac7f7e03a4b08143ad03a2232425dfac3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVHDRPlusColorTransformParams::center_of_ellipse_y</definition>
+        <argsstring></argsstring>
+        <name>center_of_ellipse_y</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::center_of_ellipse_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The y coordinate of the center position of the concentric internal and external ellipses of the elliptical pixel selector in the processing window. The value shall be in the range of 0 to (height of Picture - 1), inclusive and in multiples of 1 pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="110" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a18f23a30fba19eff68496aad64cd38a9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusColorTransformParams::rotation_angle</definition>
+        <argsstring></argsstring>
+        <name>rotation_angle</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::rotation_angle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The clockwise rotation angle in degree of arc with respect to the positive direction of the x-axis of the concentric internal and external ellipses of the elliptical pixel selector in the processing window. The value shall be in the range of 0 to 180, inclusive and in multiples of 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="118" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a218dacd1c86e8c6357c491f0f3b0f855" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVHDRPlusColorTransformParams::semimajor_axis_internal_ellipse</definition>
+        <argsstring></argsstring>
+        <name>semimajor_axis_internal_ellipse</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::semimajor_axis_internal_ellipse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The semi-major axis value of the internal ellipse of the elliptical pixel selector in amount of pixels in the processing window. The value shall be in the range of 1 to 65535, inclusive and in multiples of 1 pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="125" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a2c8efbbb1812d0c1a11b11e99e784cdb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVHDRPlusColorTransformParams::semimajor_axis_external_ellipse</definition>
+        <argsstring></argsstring>
+        <name>semimajor_axis_external_ellipse</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::semimajor_axis_external_ellipse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The semi-major axis value of the external ellipse of the elliptical pixel selector in amount of pixels in the processing window. The value shall not be less than semimajor_axis_internal_ellipse of the current processing window. The value shall be in the range of 1 to 65535, inclusive and in multiples of 1 pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="134" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1aa0bea0324f7b95bbacdcdf06d0504edf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVHDRPlusColorTransformParams::semiminor_axis_external_ellipse</definition>
+        <argsstring></argsstring>
+        <name>semiminor_axis_external_ellipse</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::semiminor_axis_external_ellipse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The semi-minor axis value of the external ellipse of the elliptical pixel selector in amount of pixels in the processing window. The value shall be in the range of 1 to 65535, inclusive and in multiples of 1 pixel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="141" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1ad7fcfbfd8167724c9fda3b6a5b2ebf6a" prot="public" static="no" mutable="no">
+        <type>enum AVHDRPlusOverlapProcessOption</type>
+        <definition>enum AVHDRPlusOverlapProcessOption AVHDRPlusColorTransformParams::overlap_process_option</definition>
+        <argsstring></argsstring>
+        <name>overlap_process_option</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::overlap_process_option</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overlap process option indicates one of the two methods of combining rendered pixels in the processing window in an image with at least one elliptical pixel selector. For overlapping elliptical pixel selectors in an image, overlap_process_option shall have the same value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="149" column="39" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a291012e029b09282caad1c1399e0b1b8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::maxscl[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>maxscl</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::maxscl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum of the color components of linearized RGB values in the processing window in the scene. The values should be in the range of 0 to 1, inclusive and in multiples of 0.00001. maxscl[ 0 ], maxscl[ 1 ], and maxscl[ 2 ] are corresponding to R, G, B color components respectively. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="157" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a21bb186cad82079311029fdbfc9d8634" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::average_maxrgb</definition>
+        <argsstring></argsstring>
+        <name>average_maxrgb</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::average_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The average of linearized maxRGB values in the processing window in the scene. The value should be in the range of 0 to 1, inclusive and in multiples of 0.00001. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="164" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a50ec72b9b9c718fcbe77bff97bfa272e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusColorTransformParams::num_distribution_maxrgb_percentiles</definition>
+        <argsstring></argsstring>
+        <name>num_distribution_maxrgb_percentiles</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::num_distribution_maxrgb_percentiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of linearized maxRGB values at given percentiles in the processing window in the scene. The maximum value shall be 15. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="170" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a368c274bb7d9999fb6436f527e5b3f88" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_d_r_plus_percentile" kindref="compound">AVHDRPlusPercentile</ref></type>
+        <definition>AVHDRPlusPercentile AVHDRPlusColorTransformParams::distribution_maxrgb[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>distribution_maxrgb</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::distribution_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The linearized maxRGB values at given percentiles in the processing window in the scene. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="176" column="25" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a0b8acc98ae2020d2578efe9761bb89e9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::fraction_bright_pixels</definition>
+        <argsstring></argsstring>
+        <name>fraction_bright_pixels</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::fraction_bright_pixels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The fraction of selected pixels in the image that contains the brightest pixel in the scene. The value shall be in the range of 0 to 1, inclusive and in multiples of 0.001. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="183" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a030e8abd2a965bf9bb36ef87aa00ba22" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusColorTransformParams::tone_mapping_flag</definition>
+        <argsstring></argsstring>
+        <name>tone_mapping_flag</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::tone_mapping_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag indicates that the metadata for the tone mapping function in the processing window is present (for value of 1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="189" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1ac3d809a287fa4e915384075b78252927" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::knee_point_x</definition>
+        <argsstring></argsstring>
+        <name>knee_point_x</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::knee_point_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The x coordinate of the separation point between the linear part and the curved part of the tone mapping function. The value shall be in the range of 0 to 1, excluding 0 and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="196" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a200c599bed02c3e498426a5f75a4fae1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::knee_point_y</definition>
+        <argsstring></argsstring>
+        <name>knee_point_y</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::knee_point_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The y coordinate of the separation point between the linear part and the curved part of the tone mapping function. The value shall be in the range of 0 to 1, excluding 0 and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="203" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a863cb83c97afabe33b40609d21586c27" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusColorTransformParams::num_bezier_curve_anchors</definition>
+        <argsstring></argsstring>
+        <name>num_bezier_curve_anchors</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::num_bezier_curve_anchors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of the intermediate anchor parameters of the tone mapping function in the processing window. The maximum value shall be 15. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="209" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1af36d5ee6dc3443fe771875d2f6b804ef" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::bezier_curve_anchors[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>bezier_curve_anchors</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::bezier_curve_anchors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The intermediate anchor parameters of the tone mapping function in the processing window in the scene. The values should be in the range of 0 to 1, inclusive and in multiples of 1/1023. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="216" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1a4c683c17f2049a6d49675e52f71b3f46" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusColorTransformParams::color_saturation_mapping_flag</definition>
+        <argsstring></argsstring>
+        <name>color_saturation_mapping_flag</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::color_saturation_mapping_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag shall be equal to 0 in bitstreams conforming to this version of this Specification. Other values are reserved for future use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="222" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_color_transform_params_1aea97c3d086ce533e4d117204725716d4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusColorTransformParams::color_saturation_weight</definition>
+        <argsstring></argsstring>
+        <name>color_saturation_weight</name>
+        <qualifiedname>AVHDRPlusColorTransformParams::color_saturation_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The color saturation gain in the processing window in the scene. The value shall be in the range of 0 to 63/8, inclusive and in multiples of 1/8. The default value shall be 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="229" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color transform parameters at a processing window in a dynamic metadata for SMPTE 2094-40. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVHDRPlusColorTransformParams</label>
+        <link refid="struct_a_v_h_d_r_plus_color_transform_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>average_maxrgb</edgelabel>
+          <edgelabel>bezier_curve_anchors</edgelabel>
+          <edgelabel>color_saturation_weight</edgelabel>
+          <edgelabel>fraction_bright_pixels</edgelabel>
+          <edgelabel>knee_point_x</edgelabel>
+          <edgelabel>knee_point_y</edgelabel>
+          <edgelabel>maxscl</edgelabel>
+          <edgelabel>window_lower_right_corner_x</edgelabel>
+          <edgelabel>window_lower_right_corner_y</edgelabel>
+          <edgelabel>window_upper_left_corner_x</edgelabel>
+          <edgelabel>  ...</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>distribution_maxrgb</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVHDRPlusPercentile</label>
+        <link refid="struct_a_v_h_d_r_plus_percentile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>percentile</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="59" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="59" bodyend="230"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a21bb186cad82079311029fdbfc9d8634" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>average_maxrgb</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1af36d5ee6dc3443fe771875d2f6b804ef" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>bezier_curve_anchors</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a26fffeac222cba512e7255119a054f0a" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>center_of_ellipse_x</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1ac7f7e03a4b08143ad03a2232425dfac3" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>center_of_ellipse_y</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a4c683c17f2049a6d49675e52f71b3f46" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>color_saturation_mapping_flag</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1aea97c3d086ce533e4d117204725716d4" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>color_saturation_weight</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a368c274bb7d9999fb6436f527e5b3f88" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>distribution_maxrgb</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a0b8acc98ae2020d2578efe9761bb89e9" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>fraction_bright_pixels</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1ac3d809a287fa4e915384075b78252927" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>knee_point_x</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a200c599bed02c3e498426a5f75a4fae1" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>knee_point_y</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a291012e029b09282caad1c1399e0b1b8" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>maxscl</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a863cb83c97afabe33b40609d21586c27" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>num_bezier_curve_anchors</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a50ec72b9b9c718fcbe77bff97bfa272e" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>num_distribution_maxrgb_percentiles</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1ad7fcfbfd8167724c9fda3b6a5b2ebf6a" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>overlap_process_option</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a18f23a30fba19eff68496aad64cd38a9" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>rotation_angle</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a2c8efbbb1812d0c1a11b11e99e784cdb" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>semimajor_axis_external_ellipse</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a218dacd1c86e8c6357c491f0f3b0f855" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>semimajor_axis_internal_ellipse</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1aa0bea0324f7b95bbacdcdf06d0504edf" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>semiminor_axis_external_ellipse</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a030e8abd2a965bf9bb36ef87aa00ba22" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>tone_mapping_flag</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a4be54ddced4fe5a8d024d291bc65749a" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>window_lower_right_corner_x</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a07fa3b7fb0be0b93b6d95ca9d9a1fa25" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>window_lower_right_corner_y</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a833d18029d732f86a0ec4c029a7da42f" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>window_upper_left_corner_x</name></member>
+      <member refid="struct_a_v_h_d_r_plus_color_transform_params_1a8006c018b5fbe184fa4a26bcc52e2dc6" prot="public" virt="non-virtual"><scope>AVHDRPlusColorTransformParams</scope><name>window_upper_left_corner_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

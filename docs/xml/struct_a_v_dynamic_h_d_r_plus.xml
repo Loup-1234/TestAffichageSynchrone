@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_dynamic_h_d_r_plus" kind="struct" language="C++" prot="public">
+    <compoundname>AVDynamicHDRPlus</compoundname>
+    <includes refid="hdr__dynamic__metadata_8h" local="no">hdr_dynamic_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a542d3e84988be3dd95095ee685a52dfd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::itu_t_t35_country_code</definition>
+        <argsstring></argsstring>
+        <name>itu_t_t35_country_code</name>
+        <qualifiedname>AVDynamicHDRPlus::itu_t_t35_country_code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Country code by Rec. ITU-T T.35 Annex A. The value shall be 0xB5. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="247" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a6bd7e091e09d60fc8b17943229bc6ec1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::application_version</definition>
+        <argsstring></argsstring>
+        <name>application_version</name>
+        <qualifiedname>AVDynamicHDRPlus::application_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Application version in the application defining document in ST-2094 suite. The value shall be set to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="253" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1ada14d43b68ecc6b366c73396e3db1105" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::num_windows</definition>
+        <argsstring></argsstring>
+        <name>num_windows</name>
+        <qualifiedname>AVDynamicHDRPlus::num_windows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of processing windows. The value shall be in the range of 1 to 3, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="259" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a4cc208698b88819c89a2b6ab3aa6114c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_d_r_plus_color_transform_params" kindref="compound">AVHDRPlusColorTransformParams</ref></type>
+        <definition>AVHDRPlusColorTransformParams AVDynamicHDRPlus::params[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>params</name>
+        <qualifiedname>AVDynamicHDRPlus::params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The color transform parameters for every processing window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="264" column="35" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a25826b3f1d87674f8f6d0c0d6f863466" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDynamicHDRPlus::targeted_system_display_maximum_luminance</definition>
+        <argsstring></argsstring>
+        <name>targeted_system_display_maximum_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::targeted_system_display_maximum_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The nominal maximum display luminance of the targeted system display, in units of 0.0001 candelas per square metre. The value shall be in the range of 0 to 10000, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="271" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a0553f17b8f180efd741709690ee3e1c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::targeted_system_display_actual_peak_luminance_flag</definition>
+        <argsstring></argsstring>
+        <name>targeted_system_display_actual_peak_luminance_flag</name>
+        <qualifiedname>AVDynamicHDRPlus::targeted_system_display_actual_peak_luminance_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag shall be equal to 0 in bit streams conforming to this version of this Specification. The value 1 is reserved for future use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="277" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a6a00dbc267e541a3322f0eb084026c7d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::num_rows_targeted_system_display_actual_peak_luminance</definition>
+        <argsstring></argsstring>
+        <name>num_rows_targeted_system_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::num_rows_targeted_system_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of rows in the targeted system_display_actual_peak_luminance array. The value shall be in the range of 2 to 25, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="283" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a1faa52f67d0e3fcd1423485aacdc8e72" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::num_cols_targeted_system_display_actual_peak_luminance</definition>
+        <argsstring></argsstring>
+        <name>num_cols_targeted_system_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::num_cols_targeted_system_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of columns in the targeted_system_display_actual_peak_luminance array. The value shall be in the range of 2 to 25, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="290" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a7fe063411dd667a1f1fd36fce954029b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDynamicHDRPlus::targeted_system_display_actual_peak_luminance[25][25]</definition>
+        <argsstring>[25][25]</argsstring>
+        <name>targeted_system_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::targeted_system_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The normalized actual peak luminance of the targeted system display. The values should be in the range of 0 to 1, inclusive and in multiples of 1/15. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="297" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a451d78a371c455b52120989c0f615b71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::mastering_display_actual_peak_luminance_flag</definition>
+        <argsstring></argsstring>
+        <name>mastering_display_actual_peak_luminance_flag</name>
+        <qualifiedname>AVDynamicHDRPlus::mastering_display_actual_peak_luminance_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag shall be equal to 0 in bitstreams conforming to this version of this Specification. The value 1 is reserved for future use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="303" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1aeb49639fba2d887f7603f57caf424957" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::num_rows_mastering_display_actual_peak_luminance</definition>
+        <argsstring></argsstring>
+        <name>num_rows_mastering_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::num_rows_mastering_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of rows in the mastering_display_actual_peak_luminance array. The value shall be in the range of 2 to 25, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="309" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1a9f2be54195dff09266de1537c59cae27" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRPlus::num_cols_mastering_display_actual_peak_luminance</definition>
+        <argsstring></argsstring>
+        <name>num_cols_mastering_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::num_cols_mastering_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of columns in the mastering_display_actual_peak_luminance array. The value shall be in the range of 2 to 25, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="315" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_plus_1aa00e06482c2cab8a9f89ce2dcf47b90f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDynamicHDRPlus::mastering_display_actual_peak_luminance[25][25]</definition>
+        <argsstring>[25][25]</argsstring>
+        <name>mastering_display_actual_peak_luminance</name>
+        <qualifiedname>AVDynamicHDRPlus::mastering_display_actual_peak_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The normalized actual peak luminance of the mastering display used for mastering the image essence. The values should be in the range of 0 to 1, inclusive and in multiples of 1/15. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="322" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct represents dynamic metadata for color volume transform - application 4 of SMPTE 2094-40:2016 standard.</para>
+<para>To be used as payload of a <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> or <ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> with the appropriate type.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with av_dynamic_hdr_plus_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDynamicHDRPlus</label>
+        <link refid="struct_a_v_dynamic_h_d_r_plus"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mastering_display_actual_peak_luminance</edgelabel>
+          <edgelabel>targeted_system_display_actual_peak_luminance</edgelabel>
+          <edgelabel>targeted_system_display_maximum_luminance</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVHDRPlusColorTransformParams</label>
+        <link refid="struct_a_v_h_d_r_plus_color_transform_params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>average_maxrgb</edgelabel>
+          <edgelabel>bezier_curve_anchors</edgelabel>
+          <edgelabel>color_saturation_weight</edgelabel>
+          <edgelabel>fraction_bright_pixels</edgelabel>
+          <edgelabel>knee_point_x</edgelabel>
+          <edgelabel>knee_point_y</edgelabel>
+          <edgelabel>maxscl</edgelabel>
+          <edgelabel>window_lower_right_corner_x</edgelabel>
+          <edgelabel>window_lower_right_corner_y</edgelabel>
+          <edgelabel>window_upper_left_corner_x</edgelabel>
+          <edgelabel>  ...</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>distribution_maxrgb</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVHDRPlusPercentile</label>
+        <link refid="struct_a_v_h_d_r_plus_percentile"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>percentile</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="243" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="243" bodyend="323"/>
+    <listofallmembers>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a6bd7e091e09d60fc8b17943229bc6ec1" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>application_version</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a542d3e84988be3dd95095ee685a52dfd" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>itu_t_t35_country_code</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1aa00e06482c2cab8a9f89ce2dcf47b90f" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>mastering_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a451d78a371c455b52120989c0f615b71" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>mastering_display_actual_peak_luminance_flag</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a9f2be54195dff09266de1537c59cae27" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>num_cols_mastering_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a1faa52f67d0e3fcd1423485aacdc8e72" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>num_cols_targeted_system_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1aeb49639fba2d887f7603f57caf424957" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>num_rows_mastering_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a6a00dbc267e541a3322f0eb084026c7d" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>num_rows_targeted_system_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1ada14d43b68ecc6b366c73396e3db1105" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>num_windows</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a4cc208698b88819c89a2b6ab3aa6114c" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>params</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a7fe063411dd667a1f1fd36fce954029b" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>targeted_system_display_actual_peak_luminance</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a0553f17b8f180efd741709690ee3e1c7" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>targeted_system_display_actual_peak_luminance_flag</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_plus_1a25826b3f1d87674f8f6d0c0d6f863466" prot="public" virt="non-virtual"><scope>AVDynamicHDRPlus</scope><name>targeted_system_display_maximum_luminance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

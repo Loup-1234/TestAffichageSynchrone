@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="video__hint_8h" kind="file" language="C++">
+    <compoundname>video_hint.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="avassert_8h" local="yes">libavutil/avassert.h</includes>
+    <includes refid="frame_8h" local="yes">libavutil/frame.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4">
+        <label>libavutil/avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="13">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>errno.h</label>
+      </node>
+      <node id="16">
+        <label>inttypes.h</label>
+      </node>
+      <node id="17">
+        <label>limits.h</label>
+      </node>
+      <node id="18">
+        <label>math.h</label>
+      </node>
+      <node id="8">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="19">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="20">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_video_rect" prot="public">AVVideoRect</innerclass>
+    <innerclass refid="struct_a_v_video_hint" prot="public">AVVideoHint</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="video__hint_8h_1a7581582ffbf26aeb2916a37622707899" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVVideoHintType</name>
+        <enumvalue id="video__hint_8h_1a7581582ffbf26aeb2916a37622707899a641bc7d7bf96d6389bae520896373b76" prot="public">
+          <name>AV_VIDEO_HINT_TYPE_CONSTANT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="video__hint_8h_1a7581582ffbf26aeb2916a37622707899af452ca3604b557ec4c288182c559953c" prot="public">
+          <name>AV_VIDEO_HINT_TYPE_CHANGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="34" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="34" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="video__hint_8h_1af6005d87b58aa228ac75186b632f15c4" prot="public" static="no">
+        <type>struct AVVideoRect</type>
+        <definition>typedef struct AVVideoRect AVVideoRect</definition>
+        <argsstring></argsstring>
+        <name>AVVideoRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright 2023 Elias Carotti &lt;eliascrt at amazon dot it&gt;</para>
+<para>This file is part of FFmpeg.</para>
+<para>FFmpeg is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</para>
+<para>FFmpeg is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</para>
+<para>You should have received a copy of the GNU Lesser General Public License along with FFmpeg; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="32" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="video__hint_8h_1a02b6d30ba6a852991e383d6758b5c55a" prot="public" static="no">
+        <type>enum AVVideoHintType</type>
+        <definition>typedef enum AVVideoHintType AVVideoHintType</definition>
+        <argsstring></argsstring>
+        <name>AVVideoHintType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="40" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="video__hint_8h_1a1f816b9aa38d5681bfcfabf18d193793" prot="public" static="no">
+        <type>struct AVVideoHint</type>
+        <definition>typedef struct AVVideoHint AVVideoHint</definition>
+        <argsstring></argsstring>
+        <name>AVVideoHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="64" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="video__hint_8h_1ac582663b78204aecd0261feeb17f2d50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref> *</type>
+        <definition>static av_always_inline AVVideoRect * av_video_hint_rects</definition>
+        <argsstring>(const AVVideoHint *hints)</argsstring>
+        <name>av_video_hint_rects</name>
+        <param>
+          <type>const <ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="67" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="video__hint_8h_1aa2c188a0da1e47ac224556c9ef951e26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref> *</type>
+        <definition>static av_always_inline AVVideoRect * av_video_hint_get_rect</definition>
+        <argsstring>(const AVVideoHint *hints, size_t idx)</argsstring>
+        <name>av_video_hint_get_rect</name>
+        <param>
+          <type>const <ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="72" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="video__hint_8h_1ac58afc13f449cc401c0ea164e993a7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> *</type>
+        <definition>AVVideoHint * av_video_hint_alloc</definition>
+        <argsstring>(size_t nb_rects, size_t *out_size)</argsstring>
+        <name>av_video_hint_alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>nb_rects</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>out_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate memory for the <ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> struct along with an nb_rects-sized arrays of <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref>.</para>
+<para>The side data contains a list of rectangles for the portions of the frame which changed from the last encoded one (and the remainder are assumed to be changed), or, alternately (depending on the type parameter) the unchanged ones (and the remaining ones are those which changed). Macroblocks will thus be hinted either to be P_SKIP-ped or go through the regular encoding procedure.</para>
+<para>It&apos;s responsibility of the caller to fill the AVRects accordingly, and to set the proper AVVideoHintType field.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL, the size in bytes of the resulting data array is written here</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly allocated <ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> struct (must be freed by the caller using <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>) on success, NULL on memory allocation failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="96" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" declline="96" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="video__hint_8h_1a6ab91db18e71dddd21246f221ddd8f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> *</type>
+        <definition>AVVideoHint * av_video_hint_create_side_data</definition>
+        <argsstring>(AVFrame *frame, size_t nb_rects)</argsstring>
+        <name>av_video_hint_create_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb_rects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as av_video_hint_alloc(), except newly-allocated <ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref> is attached as side data of type AV_FRAME_DATA_VIDEO_HINT_INFO to frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="103" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" declline="103" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_VIDEO_HINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_VIDEO_HINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avassert_8h" kindref="compound">libavutil/avassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">libavutil/frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_a_v_video_rect" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>x,<sp/>y;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>width,<sp/>height;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVVideoHintType<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>rectangled<sp/>delimit<sp/>the<sp/>constant<sp/>areas<sp/>(unchanged),<sp/>default<sp/>is<sp/>changed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_VIDEO_HINT_TYPE_CONSTANT,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>rectangled<sp/>delimit<sp/>the<sp/>constant<sp/>areas<sp/>(changed),<sp/>default<sp/>is<sp/>not<sp/>changed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_VIDEO_HINT_TYPE_CHANGED,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/>AVVideoHintType;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="struct_a_v_video_hint" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="struct_a_v_video_hint_1a8c59948afe07c6ea6306d5c9cb1e6864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_video_hint_1a8c59948afe07c6ea6306d5c9cb1e6864" kindref="member">nb_rects</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" kindref="member">rect_offset</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct_a_v_video_hint_1aafab719d7fc4de8c93e4948ca2a8c825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_video_hint_1aafab719d7fc4de8c93e4948ca2a8c825" kindref="member">rect_size</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>AVVideoHintType<sp/>type;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref><sp/>*</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">av_video_hint_rects(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref><sp/>*hints)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref><sp/>*)((uint8_t<sp/>*)hints<sp/>+<sp/>hints-&gt;<ref refid="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" kindref="member">rect_offset</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref><sp/>*</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">av_video_hint_get_rect(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref><sp/>*hints,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref><sp/>*)((uint8_t<sp/>*)hints<sp/>+<sp/>hints-&gt;<ref refid="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" kindref="member">rect_offset</ref><sp/>+<sp/>idx<sp/>*<sp/>hints-&gt;<ref refid="struct_a_v_video_hint_1aafab719d7fc4de8c93e4948ca2a8c825" kindref="member">rect_size</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref><sp/>*av_video_hint_alloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nb_rects,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*out_size);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><ref refid="struct_a_v_video_hint" kindref="compound">AVVideoHint</ref><sp/>*av_video_hint_create_side_data(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nb_rects);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_VIDEO_HINT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h"/>
+  </compounddef>
+</doxygen>

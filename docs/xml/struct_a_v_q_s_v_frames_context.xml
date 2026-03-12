@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_q_s_v_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVQSVFramesContext</compoundname>
+    <includes refid="hwcontext__qsv_8h" local="no">hwcontext_qsv.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_q_s_v_frames_context_1a748121791d286d4099c8073152973d70" prot="public" static="no" mutable="no">
+        <type>mfxFrameSurface1 *</type>
+        <definition>mfxFrameSurface1* AVQSVFramesContext::surfaces</definition>
+        <argsstring></argsstring>
+        <name>surfaces</name>
+        <qualifiedname>AVQSVFramesContext::surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to a mfxFrameSurface1 struct</para>
+<para>It is available when nb_surfaces is non-zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="59" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_frames_context_1a80ce1c761479c7fe226d1eeed5f131ed" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVFramesContext::nb_surfaces</definition>
+        <argsstring></argsstring>
+        <name>nb_surfaces</name>
+        <qualifiedname>AVQSVFramesContext::nb_surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of frames in the pool</para>
+<para>It is 0 for dynamic frame pools or <ref refid="struct_a_v_h_w_frames_context_1a9c3a94dcd9c96e19059b56a6bae9c764" kindref="member">AVHWFramesContext.initial_pool_size</ref> for fixed frame pools.</para>
+<para>Note only oneVPL GPU runtime 2.9+ can support dynamic frame pools on d3d11va or vaapi </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="70" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_frames_context_1aadf9983d5965bd4c2cbe09c25fa2757a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVFramesContext::frame_type</definition>
+        <argsstring></argsstring>
+        <name>frame_type</name>
+        <qualifiedname>AVQSVFramesContext::frame_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of MFX_MEMTYPE_* describing the frame pool. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="75" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_frames_context_1ac3115fe52af858a5e37123560dad3538" prot="public" static="no" mutable="no">
+        <type>mfxFrameInfo *</type>
+        <definition>mfxFrameInfo* AVQSVFramesContext::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <qualifiedname>AVQSVFramesContext::info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to a mfxFrameInfo struct</para>
+<para>It is available when nb_surfaces is 0, all buffers allocated from the pool have the same mfxFrameInfo. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="83" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="53" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="53" bodyend="84"/>
+    <listofallmembers>
+      <member refid="struct_a_v_q_s_v_frames_context_1aadf9983d5965bd4c2cbe09c25fa2757a" prot="public" virt="non-virtual"><scope>AVQSVFramesContext</scope><name>frame_type</name></member>
+      <member refid="struct_a_v_q_s_v_frames_context_1ac3115fe52af858a5e37123560dad3538" prot="public" virt="non-virtual"><scope>AVQSVFramesContext</scope><name>info</name></member>
+      <member refid="struct_a_v_q_s_v_frames_context_1a80ce1c761479c7fe226d1eeed5f131ed" prot="public" virt="non-virtual"><scope>AVQSVFramesContext</scope><name>nb_surfaces</name></member>
+      <member refid="struct_a_v_q_s_v_frames_context_1a748121791d286d4099c8073152973d70" prot="public" virt="non-virtual"><scope>AVQSVFramesContext</scope><name>surfaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_mix_gain" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFMixGain</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1aa16b261c9971055d1eea5f418f1c2eff" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFMixGain::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFMixGain::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="78" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1a29e55522680e62a41f7f151d9f720d76" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFMixGain::subblock_duration</definition>
+        <argsstring></argsstring>
+        <name>subblock_duration</name>
+        <qualifiedname>AVIAMFMixGain::subblock_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration for the given subblock, in units of 1 / <ref refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" kindref="member">parameter_rate</ref>. It must not be 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="85" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1a950e1a5bd65fb2b1bf1b824e9b7db848" prot="public" static="no" mutable="no">
+        <type>enum AVIAMFAnimationType</type>
+        <definition>enum AVIAMFAnimationType AVIAMFMixGain::animation_type</definition>
+        <argsstring></argsstring>
+        <name>animation_type</name>
+        <qualifiedname>AVIAMFMixGain::animation_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of animation applied to the parameter values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="89" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1a2ba66abdb812640cf30960326d818957" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFMixGain::start_point_value</definition>
+        <argsstring></argsstring>
+        <name>start_point_value</name>
+        <qualifiedname>AVIAMFMixGain::start_point_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter value that is applied at the start of the subblock. Applies to all defined Animation Types.</para>
+<para>Valid range of values is -128.0 to 128.0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="96" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1a8c0f314634e8f723756459dd599ca2ff" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFMixGain::end_point_value</definition>
+        <argsstring></argsstring>
+        <name>end_point_value</name>
+        <qualifiedname>AVIAMFMixGain::end_point_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter value that is applied at the end of the subblock. Applies only to AV_IAMF_ANIMATION_TYPE_LINEAR and AV_IAMF_ANIMATION_TYPE_BEZIER Animation Types.</para>
+<para>Valid range of values is -128.0 to 128.0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="104" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1a58dcb3aa73c04961cac199b2d64802fa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFMixGain::control_point_value</definition>
+        <argsstring></argsstring>
+        <name>control_point_value</name>
+        <qualifiedname>AVIAMFMixGain::control_point_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter value of the middle control point of a quadratic Bezier curve, i.e., its y-axis value. Applies only to AV_IAMF_ANIMATION_TYPE_BEZIER Animation Type.</para>
+<para>Valid range of values is -128.0 to 128.0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="112" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_gain_1ad211212077e3e55460f3ddfba697356a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFMixGain::control_point_relative_time</definition>
+        <argsstring></argsstring>
+        <name>control_point_relative_time</name>
+        <qualifiedname>AVIAMFMixGain::control_point_relative_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter value of the time of the middle control point of a quadratic Bezier curve, i.e., its x-axis value. Applies only to AV_IAMF_ANIMATION_TYPE_BEZIER Animation Type.</para>
+<para>Valid range of values is 0.0 to 1.0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="120" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mix Gain Parameter Data as defined in section 3.8.1 of IAMF.</para>
+<para><simplesect kind="note"><para>This struct&apos;s size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFMixGain</label>
+        <link refid="struct_a_v_i_a_m_f_mix_gain"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>control_point_relative_time</edgelabel>
+          <edgelabel>control_point_value</edgelabel>
+          <edgelabel>end_point_value</edgelabel>
+          <edgelabel>start_point_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="77" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="77" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1a950e1a5bd65fb2b1bf1b824e9b7db848" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>animation_type</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1aa16b261c9971055d1eea5f418f1c2eff" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1ad211212077e3e55460f3ddfba697356a" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>control_point_relative_time</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1a58dcb3aa73c04961cac199b2d64802fa" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>control_point_value</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1a8c0f314634e8f723756459dd599ca2ff" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>end_point_value</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1a2ba66abdb812640cf30960326d818957" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>start_point_value</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_gain_1a29e55522680e62a41f7f151d9f720d76" prot="public" virt="non-virtual"><scope>AVIAMFMixGain</scope><name>subblock_duration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

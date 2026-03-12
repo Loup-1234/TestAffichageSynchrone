@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__des" kind="group">
+    <compoundname>lavu_des</compoundname>
+    <title>DES</title>
+    <innerclass refid="struct_a_v_d_e_s" prot="public">AVDES</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__des_1ga0a88b1c9850450cd0ddc853f33fa989d" prot="public" static="no">
+        <type>struct AVDES</type>
+        <definition>typedef struct AVDES AVDES</definition>
+        <argsstring></argsstring>
+        <name>AVDES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" line="36" column="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__des_1gae2dc433f8f70fce5c740c3384c5a9a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> *</type>
+        <definition>AVDES * av_des_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_des_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" line="41" column="7" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" declline="41" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__des_1gae8ebc22ff06f4624f4ff9a60b974eb27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_des_init</definition>
+        <argsstring>(struct AVDES *d, const uint8_t *key, int key_bits, int decrypt)</argsstring>
+        <name>av_des_init</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key_bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+<para>Initializes an <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> structure to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the key to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be 64 or 192 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption/CBC-MAC, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>zero on success, negative value otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" line="52" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" declline="52" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__des_1gaf728cddab7963246ec519c8c123b5412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_des_crypt</definition>
+        <argsstring>(struct AVDES *d, uint8_t *dst, const uint8_t *src, int count, uint8_t *iv, int decrypt)</argsstring>
+        <name>av_des_crypt</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+<para>Encrypts / decrypts using the DES algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src, must be 8-byte aligned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst, must be 8-byte aligned, may be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 8 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization vector for CBC mode, if NULL then ECB will be used, must be 8-byte aligned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" line="65" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__des_1gada639d868e744c18622f4e89b1e5833e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_des_mac</definition>
+        <argsstring>(struct AVDES *d, uint8_t *dst, const uint8_t *src, int count)</argsstring>
+        <name>av_des_mac</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Calculates CBC-MAC using the DES algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <ref refid="struct_a_v_d_e_s" kindref="compound">AVDES</ref> structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src, must be 8-byte aligned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst, must be 8-byte aligned, may be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 8 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" line="75" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/des.h" declline="75" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

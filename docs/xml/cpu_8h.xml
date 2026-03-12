@@ -1,0 +1,1045 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="cpu_8h" kind="file" language="C++">
+    <compoundname>cpu.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes refid="libavutil_2version_8h" local="yes">version.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h</label>
+        <link refid="cpu_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="cpu_8h_1af73205a325a7353debd757a40d379064" prot="public" static="no">
+        <name>AV_CPU_FLAG_FORCE</name>
+        <initializer>0x80000000 /* @deprecated, should not be used */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="28" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1aeab63e0c708c2c8cf519adb924306273" prot="public" static="no">
+        <name>AV_CPU_FLAG_MMX</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>standard MMX </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="32" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a821273926dc2c8282d9b0990582e3e3f" prot="public" static="no">
+        <name>AV_CPU_FLAG_MMXEXT</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>SSE integer functions or AMD MMX ext. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="33" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a53053dcf8c045b05ca3b5326db518b49" prot="public" static="no">
+        <name>AV_CPU_FLAG_MMX2</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>SSE integer functions or AMD MMX ext. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="34" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1afa9fdb485b595b4d3b2358ae46e7cc90" prot="public" static="no">
+        <name>AV_CPU_FLAG_3DNOW</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+<para>AMD 3DNOW. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="35" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a4cbf9faebf34070327d31989da5f14be" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+<para>SSE functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="36" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a0f19ba5104672eb4065f56f9a3877dc6" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE2</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+<para>PIV SSE2 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="37" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a7e90443f6a8a3f65c01d2a034c4a2cfd" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE2SLOW</name>
+        <initializer>0x40000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSE2 supported, but usually not faster than regular MMX/SSE (e.g. Core1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="38" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a9bb0453b7c1a5e10e049c435240edb25" prot="public" static="no">
+        <name>AV_CPU_FLAG_3DNOWEXT</name>
+        <initializer>0x0020</initializer>
+        <briefdescription>
+<para>AMD 3DNowExt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="40" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a87b1633fbec64188f3eadb1bffd7703d" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE3</name>
+        <initializer>0x0040</initializer>
+        <briefdescription>
+<para>Prescott SSE3 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="41" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a20f4702905f3ca20721afa834a4ab81d" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE3SLOW</name>
+        <initializer>0x20000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSE3 supported, but usually not faster than regular MMX/SSE (e.g. Core1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="42" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1aba281a8be7e4c8f87624c30ab227d1b6" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSSE3</name>
+        <initializer>0x0080</initializer>
+        <briefdescription>
+<para>Conroe SSSE3 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="44" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ad58ec14888ae9ebe1fc599e587ef3ea5" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSSE3SLOW</name>
+        <initializer>0x4000000</initializer>
+        <briefdescription>
+<para>SSSE3 supported, but usually not faster. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="45" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ab11e6283f7f8b3f5bbc34fcb0eb20fc5" prot="public" static="no">
+        <name>AV_CPU_FLAG_ATOM</name>
+        <initializer>0x10000000</initializer>
+        <briefdescription>
+<para>Atom processor, some SSSE3 instructions are slower. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a5dbc718bec5f578602a7854d05db76de" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE4</name>
+        <initializer>0x0100</initializer>
+        <briefdescription>
+<para>Penryn SSE4.1 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="47" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a2e3bc1f71c16c5fe8975c10f30d69be7" prot="public" static="no">
+        <name>AV_CPU_FLAG_SSE42</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+<para>Nehalem SSE4.2 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="48" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a8bf5352ec0d64bbb19fc0fa1bdeb9201" prot="public" static="no">
+        <name>AV_CPU_FLAG_AESNI</name>
+        <initializer>0x80000</initializer>
+        <briefdescription>
+<para>Advanced Encryption Standard functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1acb035a430f774e80a7b7cf0122a2e912" prot="public" static="no">
+        <name>AV_CPU_FLAG_CLMUL</name>
+        <initializer>0x400000</initializer>
+        <briefdescription>
+<para>Carry-less Multiplication instruction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="50" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1afb5537bbc8fc14343de2b2ec15eeba17" prot="public" static="no">
+        <name>AV_CPU_FLAG_AVX</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+<para>AVX functions: requires OS support even if YMM registers aren&apos;t used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="51" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1adfe16e24b7016bbb64fa1937e04389f2" prot="public" static="no">
+        <name>AV_CPU_FLAG_AVXSLOW</name>
+        <initializer>0x8000000</initializer>
+        <briefdescription>
+<para>AVX supported, but slow when using YMM registers (e.g. Bulldozer) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a9db899a1c86c9ff8d05bbb667d2ffb21" prot="public" static="no">
+        <name>AV_CPU_FLAG_XOP</name>
+        <initializer>0x0400</initializer>
+        <briefdescription>
+<para>Bulldozer XOP functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="53" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a5fc98ebd0ad5759f823070c0604a6778" prot="public" static="no">
+        <name>AV_CPU_FLAG_FMA4</name>
+        <initializer>0x0800</initializer>
+        <briefdescription>
+<para>Bulldozer FMA4 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="54" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a422f69279d4c977d660b72a47fa3478b" prot="public" static="no">
+        <name>AV_CPU_FLAG_CMOV</name>
+        <initializer>0x1000</initializer>
+        <briefdescription>
+<para>supports cmov instruction </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="55" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ab5be3b16a597bf9cbd489968ce36e082" prot="public" static="no">
+        <name>AV_CPU_FLAG_AVX2</name>
+        <initializer>0x8000</initializer>
+        <briefdescription>
+<para>AVX2 functions: requires OS support even if YMM registers aren&apos;t used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a0bd7cc622a20c9007b534f6f3d6813d0" prot="public" static="no">
+        <name>AV_CPU_FLAG_FMA3</name>
+        <initializer>0x10000</initializer>
+        <briefdescription>
+<para>Haswell FMA3 functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a0ff82a9bfc71daaeb7cc820eb3de4ddc" prot="public" static="no">
+        <name>AV_CPU_FLAG_BMI1</name>
+        <initializer>0x20000</initializer>
+        <briefdescription>
+<para>Bit Manipulation Instruction Set 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a6da0856fda17125587965fe12f64c4f4" prot="public" static="no">
+        <name>AV_CPU_FLAG_BMI2</name>
+        <initializer>0x40000</initializer>
+        <briefdescription>
+<para>Bit Manipulation Instruction Set 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="59" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a24e3fdeb1ce8fccd6944502003570f8a" prot="public" static="no">
+        <name>AV_CPU_FLAG_AVX512</name>
+        <initializer>0x100000</initializer>
+        <briefdescription>
+<para>AVX-512 functions: requires OS support even if YMM/ZMM registers aren&apos;t used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="60" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ac437dfd82c9f1800341df17227e6f3e8" prot="public" static="no">
+        <name>AV_CPU_FLAG_AVX512ICL</name>
+        <initializer>0x200000</initializer>
+        <briefdescription>
+<para>F/CD/BW/DQ/VL/VNNI/IFMA/VBMI/VBMI2/VPOPCNTDQ/BITALG/GFNI/VAES/VPCLMULQDQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="61" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ad75ab2a6c4944802e8290aa893edb294" prot="public" static="no">
+        <name>AV_CPU_FLAG_SLOW_GATHER</name>
+        <initializer>0x2000000</initializer>
+        <briefdescription>
+<para>CPU has slow gathers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1aa6791350072da71e22a7dc3b3ddc6a0e" prot="public" static="no">
+        <name>AV_CPU_FLAG_ALTIVEC</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>standard </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="64" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a65baf7beab71a0678e6374ea3d110f12" prot="public" static="no">
+        <name>AV_CPU_FLAG_VSX</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>ISA 2.06. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="65" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a65d7913cdb148cd898ae1bd602de4551" prot="public" static="no">
+        <name>AV_CPU_FLAG_POWER8</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+<para>ISA 2.07. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="66" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a0ba37cad66b79c3ddf88693c2784359d" prot="public" static="no">
+        <name>AV_CPU_FLAG_ARMV5TE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="68" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ae5d6618c7fff92e08b04d6106328ae2a" prot="public" static="no">
+        <name>AV_CPU_FLAG_ARMV6</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="69" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a9a7b76aa259dc33fa13f76340e071a35" prot="public" static="no">
+        <name>AV_CPU_FLAG_ARMV6T2</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="70" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a283a152bbb636275c23d01a18b9bdc7b" prot="public" static="no">
+        <name>AV_CPU_FLAG_VFP</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="71" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a1bc3bbebdc0195433b08cba3453c512f" prot="public" static="no">
+        <name>AV_CPU_FLAG_VFPV3</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="72" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a2fc7de5c42009f68624e5dd1c77d7390" prot="public" static="no">
+        <name>AV_CPU_FLAG_NEON</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="73" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1acbf2841ca197280ccbaa56405f768025" prot="public" static="no">
+        <name>AV_CPU_FLAG_ARMV8</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ab308fffe2a6135b661900584d48c539d" prot="public" static="no">
+        <name>AV_CPU_FLAG_VFP_VM</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+<para>VFPv2 vector mode, deprecated in ARMv7-A and unavailable in various CPUs implementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="75" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a036c9eb261cf76295b48253cb94ecf5f" prot="public" static="no">
+        <name>AV_CPU_FLAG_DOTPROD</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a3004a53046a98b9a1ff237f8a9aee849" prot="public" static="no">
+        <name>AV_CPU_FLAG_I8MM</name>
+        <initializer>(1 &lt;&lt; 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="77" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a125a904ea4cbf80b06118fd605912f5d" prot="public" static="no">
+        <name>AV_CPU_FLAG_SVE</name>
+        <initializer>(1 &lt;&lt;10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a4b4b39c424c2d43998f83cb05e03b9e2" prot="public" static="no">
+        <name>AV_CPU_FLAG_SVE2</name>
+        <initializer>(1 &lt;&lt;11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="79" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ae8afb8f60bd7dab1dce1f1d96d6bc383" prot="public" static="no">
+        <name>AV_CPU_FLAG_SME</name>
+        <initializer>(1 &lt;&lt;12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="80" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ac3248a2e1f3e9dadca1f13c7fd784511" prot="public" static="no">
+        <name>AV_CPU_FLAG_ARM_CRC</name>
+        <initializer>(1 &lt;&lt;13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="81" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a66d259974ecca8f1f846a40bb79f8520" prot="public" static="no">
+        <name>AV_CPU_FLAG_SETEND</name>
+        <initializer>(1 &lt;&lt;16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="82" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1af6fb6574243a8c0e235ac3bb3fc5cea9" prot="public" static="no">
+        <name>AV_CPU_FLAG_MMI</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="84" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1adde6152dbfce491e442d690659c4380e" prot="public" static="no">
+        <name>AV_CPU_FLAG_MSA</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="85" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a94a1b7b80abf80f2707b8052a72f2bc6" prot="public" static="no">
+        <name>AV_CPU_FLAG_LSX</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="88" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a1d2b75410cea34c0257d1d381a57b7d0" prot="public" static="no">
+        <name>AV_CPU_FLAG_LASX</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="89" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a12aa96b10726167b7a86735b7fc0d1e9" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVI</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>I (full GPR bank) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="92" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a77fa74b826c84f1e152b2433fab2263c" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVF</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>F (single precision FP) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="94" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a6045c41335017664b2b03807755f9099" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVD</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+<para>D (double precision FP) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="95" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a62142d831915d5cf3d86cbc613c5622c" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVV_I32</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+<para>Vectors of 8/16/32-bit int&apos;s *<zwj/>/. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="97" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ae1410ba738a14980f1cb668b38282a6e" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVV_F32</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+<para>Vectors of float&apos;s *<zwj/>/. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="98" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a074daf3210aed4fe0d7afab105688c43" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVV_I64</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+<para>Vectors of 64-bit int&apos;s *<zwj/>/. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="99" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1afa4928f97d42ffa24e2183b36dde43f5" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVV_F64</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+<para>Vectors of double&apos;s. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="100" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a535b7b6f8529850a9711425cbe2d9f7a" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVB_BASIC</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+<para>Basic bit-manipulations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="101" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a3aff345a1e5487cca8011c1b6e5f24ed" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVB_ADDR</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+<para>Address bit-manipulations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="103" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1adf9902d0c95a4e66a6e4721bb81cda2a" prot="public" static="no">
+        <name>AV_CPU_FLAG_RV_ZVBB</name>
+        <initializer>(1 &lt;&lt; 9)</initializer>
+        <briefdescription>
+<para>Vector basic bit-manipulations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="105" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1afe33763fcce98584a6a7ff8205177865" prot="public" static="no">
+        <name>AV_CPU_FLAG_RV_MISALIGNED</name>
+        <initializer>(1 &lt;&lt;10)</initializer>
+        <briefdescription>
+<para>Fast misaligned accesses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="106" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1a4f4304fc9c517a2503c13e6d96c8ef16" prot="public" static="no">
+        <name>AV_CPU_FLAG_RVB</name>
+        <initializer>(1 &lt;&lt;11)</initializer>
+        <briefdescription>
+<para>B (bit manipulations) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="107" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cpu_8h_1ada76e38effe9b9c800e6bf57e6105f49" prot="public" static="no">
+        <name>AV_CPU_FLAG_SIMD128</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="110" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="cpu_8h_1af731555385cb4808386a716504d5fcc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_cpu_flags</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_get_cpu_flags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the flags which specify extensions supported by the CPU. The returned value is affected by av_force_cpu_flags() if that was used before. So av_get_cpu_flags() can easily be used in an application to detect the enabled cpu flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="118" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="118" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="cpu_8h_1a07015a8f8d5e73558e5deb683ad55823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_force_cpu_flags</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>av_force_cpu_flags</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disables cpu detection and forces the specified flags. -1 is a special case that disables forcing of specific flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="124" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="124" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="cpu_8h_1a851439bc19de673484e788402734b1a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_cpu_caps</definition>
+        <argsstring>(unsigned *flags, const char *s)</argsstring>
+        <name>av_parse_cpu_caps</name>
+        <param>
+          <type>unsigned *</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse CPU caps from a string and update the given AV_CPU_* flags based on that.</para>
+<para><simplesect kind="return"><para>negative on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="131" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="131" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="cpu_8h_1af8bdb502bd3964052fc8595b0fe721a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_cpu_count</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_cpu_count</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of logical CPU cores present. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="136" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="136" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="cpu_8h_1a8dd0b023c2cd11ddf533a6f5f1556ce4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_cpu_force_count</definition>
+        <argsstring>(int count)</argsstring>
+        <name>av_cpu_force_count</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides cpu count detection and forces the specified count. Count &lt; 1 disables forcing of specific count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="142" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="142" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="cpu_8h_1a3734434485a24830c49ffb56b06d30b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t av_cpu_max_align</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_cpu_max_align</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum data alignment that may be required by FFmpeg.</para>
+<para>Note that this is affected by the build configuration and the CPU flags mask, so e.g. if the CPU supports AVX, but libavutil has been built with <ndash/>disable-avx or the AV_CPU_FLAG_AVX flag has been disabled through av_set_cpu_flags_mask(), then this function will behave as if AVX is not present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" line="153" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h" declline="153" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2000,<sp/>2001,<sp/>2002<sp/>Fabrice<sp/>Bellard</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_CPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_CPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavutil_2version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_CPU_FLAG_FORCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_FORCE<sp/><sp/><sp/><sp/>0x80000000<sp/></highlight><highlight class="comment">/*<sp/>@deprecated,<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>lower<sp/>16<sp/>bits<sp/>-<sp/>CPU<sp/>features<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_MMX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_MMXEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_MMX2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_3DNOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE2SLOW<sp/>0x40000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_3DNOWEXT<sp/><sp/><sp/><sp/><sp/>0x0020<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0040<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE3SLOW<sp/>0x20000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSSE3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0080<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSSE3SLOW<sp/>0x4000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ATOM<sp/><sp/><sp/><sp/><sp/>0x10000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SSE42<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0200<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AESNI<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_CLMUL<sp/><sp/><sp/><sp/><sp/><sp/>0x400000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AVX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AVXSLOW<sp/><sp/><sp/>0x8000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_XOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0400<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_FMA4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0800<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_CMOV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AVX2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_FMA3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_BMI1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_BMI2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AVX512<sp/><sp/><sp/><sp/><sp/>0x100000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_AVX512ICL<sp/><sp/>0x200000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SLOW_GATHER<sp/><sp/>0x2000000<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ALTIVEC<sp/><sp/><sp/><sp/><sp/><sp/>0x0001<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_VSX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_POWER8<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ARMV5TE<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ARMV6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ARMV6T2<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_VFP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_VFPV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_NEON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ARMV8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_VFP_VM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>7)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_DOTPROD<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_I8MM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SVE2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_ARM_CRC<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SETEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_MMI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_MSA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//Loongarch<sp/>SIMD<sp/>extension.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_LSX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_LASX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RISC-V<sp/>extensions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_RISCV_FD_ZBA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVV_I32<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVV_F32<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVV_I64<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>5)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVV_F64<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>6)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVB_BASIC<sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>7)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_RISCV_FD_ZBA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVB_ADDR<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>8)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RV_ZVBB<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>9)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RV_MISALIGNED<sp/>(1<sp/>&lt;&lt;10)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_RVB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;11)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WASM<sp/>extensions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CPU_FLAG_SIMD128<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_get_cpu_flags(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_force_cpu_flags(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_parse_cpu_caps(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>*flags,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_cpu_count(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_cpu_force_count(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>av_cpu_max_align(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_CPU_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/cpu.h"/>
+  </compounddef>
+</doxygen>

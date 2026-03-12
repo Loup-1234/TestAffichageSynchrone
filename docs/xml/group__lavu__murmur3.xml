@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__murmur3" kind="group">
+    <compoundname>lavu_murmur3</compoundname>
+    <title>Murmur3</title>
+    <innerfile refid="murmur3_8h">murmur3.h</innerfile>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__murmur3_1ga136a791b3e1ace3d7dd54d7539af7bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVMurMur3 *</type>
+        <definition>struct AVMurMur3 * av_murmur3_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_murmur3_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVMurMur3 hash context.</para>
+<para><simplesect kind="return"><para>Uninitialized hash context or <computeroutput>NULL</computeroutput> in case of error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" line="67" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" declline="67" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__murmur3_1ga8870f1e1d537790bc224c04e955d357b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_murmur3_init_seeded</definition>
+        <argsstring>(struct AVMurMur3 *c, uint64_t seed)</argsstring>
+        <name>av_murmur3_init_seeded</name>
+        <param>
+          <type>struct AVMurMur3 *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize or reinitialize an AVMurMur3 hash context with a seed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random seed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__murmur3_1ga403fc40619831d043c444bf1df0b893d" kindref="member">av_murmur3_init()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__murmur3_1lavu_murmur3_seedinfo" kindref="member">Detailed description</ref> on a discussion of seeds for MurmurHash3. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" line="79" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__murmur3_1ga403fc40619831d043c444bf1df0b893d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_murmur3_init</definition>
+        <argsstring>(struct AVMurMur3 *c)</argsstring>
+        <name>av_murmur3_init</name>
+        <param>
+          <type>struct AVMurMur3 *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize or reinitialize an AVMurMur3 hash context.</para>
+<para>Equivalent to <ref refid="group__lavu__murmur3_1ga8870f1e1d537790bc224c04e955d357b" kindref="member">av_murmur3_init_seeded()</ref> with a built-in seed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__murmur3_1ga8870f1e1d537790bc224c04e955d357b" kindref="member">av_murmur3_init_seeded()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__murmur3_1lavu_murmur3_seedinfo" kindref="member">Detailed description</ref> on a discussion of seeds for MurmurHash3. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" line="92" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" declline="92" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__murmur3_1ga267125b7374138187085b0e9eb737571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_murmur3_update</definition>
+        <argsstring>(struct AVMurMur3 *c, const uint8_t *src, size_t len)</argsstring>
+        <name>av_murmur3_update</name>
+        <param>
+          <type>struct AVMurMur3 *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update hash context with new data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input data to update hash with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read from <computeroutput>src</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" line="101" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__murmur3_1gaf11c74aa0af4c0d6d422eb627b96a0c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_murmur3_final</definition>
+        <argsstring>(struct AVMurMur3 *c, uint8_t dst[16])</argsstring>
+        <name>av_murmur3_final</name>
+        <param>
+          <type>struct AVMurMur3 *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dst</declname>
+          <array>[16]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish hashing and output digest value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer where output digest value is stored </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" line="109" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/murmur3.h" declline="109" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MurmurHash3 hash function implementation.</para>
+<para>MurmurHash3 is a non-cryptographic hash function, of which three incompatible versions were created by its inventor Austin Appleby:</para>
+<para><itemizedlist>
+<listitem><para>32-bit output</para>
+</listitem><listitem><para>128-bit output for 32-bit platforms</para>
+</listitem><listitem><para>128-bit output for 64-bit platforms</para>
+</listitem></itemizedlist>
+</para>
+<para>FFmpeg only implements the last variant: 128-bit output designed for 64-bit platforms. Even though the hash function was designed for 64-bit platforms, the function in reality works on 32-bit systems too, only with reduced performance.</para>
+<para><anchor id="group__lavu__murmur3_1lavu_murmur3_seedinfo"/>By design, MurmurHash3 requires a seed to operate. In response to this, libavutil provides two functions for hash initiation, one that requires a seed (<ref refid="group__lavu__murmur3_1ga8870f1e1d537790bc224c04e955d357b" kindref="member">av_murmur3_init_seeded()</ref>) and one that uses a fixed arbitrary integer as the seed, and therefore does not (<ref refid="group__lavu__murmur3_1ga403fc40619831d043c444bf1df0b893d" kindref="member">av_murmur3_init()</ref>).</para>
+<para>To make hashes comparable, you should provide the same seed for all calls to this hash function <ndash/> if you are supplying one yourself, that is. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

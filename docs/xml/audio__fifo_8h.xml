@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="audio__fifo_8h" kind="file" language="C++">
+    <compoundname>audio_fifo.h</compoundname>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="samplefmt_8h" local="yes">samplefmt.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/audio_fifo.h</label>
+        <link refid="audio__fifo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kind="typedef"><name>AVAudioFifo</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__audiofifo_1ga74e029e47f7aa99217ad1f315c434875" kind="function"><name>av_audio_fifo_free</name></member>
+      <member refid="group__lavu__audiofifo_1ga26cec528c9abdf59adb70b305304346e" kind="function"><name>av_audio_fifo_alloc</name></member>
+      <member refid="group__lavu__audiofifo_1ga27c1e16e5f09940d6016b1971c0b5742" kind="function"><name>av_audio_fifo_realloc</name></member>
+      <member refid="group__lavu__audiofifo_1ga51d81a165872919bbfdee3f00f6d6530" kind="function"><name>av_audio_fifo_write</name></member>
+      <member refid="group__lavu__audiofifo_1ga0637c3f22ea0844bfd2eaf52eb1172a9" kind="function"><name>av_audio_fifo_peek</name></member>
+      <member refid="group__lavu__audiofifo_1ga292151ecdbe6437f32f832cc57d33fc1" kind="function"><name>av_audio_fifo_peek_at</name></member>
+      <member refid="group__lavu__audiofifo_1ga5e2c87bbeefba0d229b4109b4b755529" kind="function"><name>av_audio_fifo_read</name></member>
+      <member refid="group__lavu__audiofifo_1gacac9b187b9c27c5a0374f6f83224a77b" kind="function"><name>av_audio_fifo_drain</name></member>
+      <member refid="group__lavu__audiofifo_1ga3f070386d11d425302437a3b60fc5dd0" kind="function"><name>av_audio_fifo_reset</name></member>
+      <member refid="group__lavu__audiofifo_1gaa0a4742ecac52a999e8b4478d27f3b9b" kind="function"><name>av_audio_fifo_size</name></member>
+      <member refid="group__lavu__audiofifo_1ga2bed2f01fe34228ee8a73617b3177d00" kind="function"><name>av_audio_fifo_space</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Audio FIFO Buffer </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Audio<sp/>FIFO</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2012<sp/>Justin<sp/>Ruggles<sp/>&lt;justin.ruggles@gmail.com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_AUDIO_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_AUDIO_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;samplefmt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/><ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="group__lavu__audiofifo_1ga74e029e47f7aa99217ad1f315c434875" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga74e029e47f7aa99217ad1f315c434875" kindref="member">av_audio_fifo_free</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group__lavu__audiofifo_1ga26cec528c9abdf59adb70b305304346e" refkind="member"><highlight class="normal"><ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*<ref refid="group__lavu__audiofifo_1ga26cec528c9abdf59adb70b305304346e" kindref="member">av_audio_fifo_alloc</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">av_warn_unused_result</highlight></codeline>
+<codeline lineno="76" refid="group__lavu__audiofifo_1ga27c1e16e5f09940d6016b1971c0b5742" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga27c1e16e5f09940d6016b1971c0b5742" kindref="member">av_audio_fifo_realloc</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group__lavu__audiofifo_1ga51d81a165872919bbfdee3f00f6d6530" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga51d81a165872919bbfdee3f00f6d6530" kindref="member">av_audio_fifo_write</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="group__lavu__audiofifo_1ga0637c3f22ea0844bfd2eaf52eb1172a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga0637c3f22ea0844bfd2eaf52eb1172a9" kindref="member">av_audio_fifo_peek</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="group__lavu__audiofifo_1ga292151ecdbe6437f32f832cc57d33fc1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga292151ecdbe6437f32f832cc57d33fc1" kindref="member">av_audio_fifo_peek_at</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*data,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="group__lavu__audiofifo_1ga5e2c87bbeefba0d229b4109b4b755529" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga5e2c87bbeefba0d229b4109b4b755529" kindref="member">av_audio_fifo_read</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group__lavu__audiofifo_1gacac9b187b9c27c5a0374f6f83224a77b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1gacac9b187b9c27c5a0374f6f83224a77b" kindref="member">av_audio_fifo_drain</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_samples);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="group__lavu__audiofifo_1ga3f070386d11d425302437a3b60fc5dd0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga3f070386d11d425302437a3b60fc5dd0" kindref="member">av_audio_fifo_reset</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="group__lavu__audiofifo_1gaa0a4742ecac52a999e8b4478d27f3b9b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1gaa0a4742ecac52a999e8b4478d27f3b9b" kindref="member">av_audio_fifo_size</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="group__lavu__audiofifo_1ga2bed2f01fe34228ee8a73617b3177d00" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__audiofifo_1ga2bed2f01fe34228ee8a73617b3177d00" kindref="member">av_audio_fifo_space</ref>(<ref refid="group__lavu__audiofifo_1ga328abb21e9abb2c455d2d9c212d5230f" kindref="member">AVAudioFifo</ref><sp/>*af);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_AUDIO_FIFO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/audio_fifo.h"/>
+  </compounddef>
+</doxygen>

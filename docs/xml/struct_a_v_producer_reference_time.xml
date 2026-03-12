@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_producer_reference_time" kind="struct" language="C++" prot="public">
+    <compoundname>AVProducerReferenceTime</compoundname>
+    <includes refid="defs_8h" local="no">defs.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_producer_reference_time_1aa44842dba607b9947fc6e1c1d9638faf" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVProducerReferenceTime::wallclock</definition>
+        <argsstring></argsstring>
+        <name>wallclock</name>
+        <qualifiedname>AVProducerReferenceTime::wallclock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A UTC timestamp, in microseconds, since Unix epoch (e.g, av_gettime()). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="335" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_producer_reference_time_1a05ccbc7140b41059cccbaa06ad8910f8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVProducerReferenceTime::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVProducerReferenceTime::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="336" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure supplies correlation between a packet timestamp and a wall clock production time. The definition follows the Producer Reference Time (&apos;prft&apos;) as defined in ISO/IEC 14496-12 </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="331" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="331" bodyend="337"/>
+    <listofallmembers>
+      <member refid="struct_a_v_producer_reference_time_1a05ccbc7140b41059cccbaa06ad8910f8" prot="public" virt="non-virtual"><scope>AVProducerReferenceTime</scope><name>flags</name></member>
+      <member refid="struct_a_v_producer_reference_time_1aa44842dba607b9947fc6e1c1d9638faf" prot="public" virt="non-virtual"><scope>AVProducerReferenceTime</scope><name>wallclock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

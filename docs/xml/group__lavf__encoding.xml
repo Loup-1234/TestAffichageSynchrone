@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavf__encoding" kind="group">
+    <compoundname>lavf_encoding</compoundname>
+    <title>Muxing</title>
+    <innerclass refid="struct_a_v_output_format" prot="public">AVOutputFormat</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavf__encoding_1gaf31ccdb28224d5bc7e23e308e0dadc0b" prot="public" static="no">
+        <type>struct AVOutputFormat</type>
+        <definition>typedef struct AVOutputFormat AVOutputFormat</definition>
+        <argsstring></argsstring>
+        <name>AVOutputFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="535" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int avformat_write_header</definition>
+        <argsstring>(AVFormatContext *s, AVDictionary **options)</argsstring>
+        <name>avformat_write_header</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate the stream private data and write the stream header to an output media file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media file handle, must be allocated with <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref>. Its <ref refid="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" kindref="member">oformat</ref> field must be set to the desired output format; Its <ref refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" kindref="member">pb</ref> field must be set to an already opened <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ::AVDictionary filled with <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> and muxer-private options. On return this parameter will be destroyed and replaced with a dict containing options that were not found. May be NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>AVSTREAM_INIT_IN_WRITE_HEADER</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success, if the codec had not already been fully initialized in <ref refid="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" kindref="member">avformat_init_output()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVSTREAM_INIT_IN_INIT_OUTPUT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success, if the codec had already been fully initialized in <ref refid="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" kindref="member">avformat_init_output()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A negative AVERROR on failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find</ref>, <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set</ref>, <ref refid="avio_8h_1a371a670112abc5f3e15bc570da076301" kindref="member">avio_open</ref>, av_oformat_next, <ref refid="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" kindref="member">avformat_init_output</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2411" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2411" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int avformat_init_output</definition>
+        <argsstring>(AVFormatContext *s, AVDictionary **options)</argsstring>
+        <name>avformat_init_output</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate the stream private data and initialize the codec, but do not write the header. May optionally be used before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> to initialize stream parameters before actually writing the header. If using this function, do not pass the same options to <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Media file handle, must be allocated with <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref>. Its <ref refid="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" kindref="member">oformat</ref> field must be set to the desired output format; Its <ref refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" kindref="member">pb</ref> field must be set to an already opened <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ::AVDictionary filled with <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> and muxer-private options. On return this parameter will be destroyed and replaced with a dict containing options that were not found. May be NULL.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>AVSTREAM_INIT_IN_WRITE_HEADER</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success, if the codec requires avformat_write_header to fully initialize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVSTREAM_INIT_IN_INIT_OUTPUT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On success, if the codec has been fully initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Anegative AVERROR on failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find</ref>, <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set</ref>, <ref refid="avio_8h_1a371a670112abc5f3e15bc570da076301" kindref="member">avio_open</ref>, av_oformat_next, <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2439" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2439" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_write_frame</definition>
+        <argsstring>(AVFormatContext *s, AVPacket *pkt)</argsstring>
+        <name>av_write_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a packet to an output media file.</para>
+<para>This function passes the packet directly to the muxer, without any buffering or reordering. The caller is responsible for correctly interleaving the packets if the format requires it. Callers that want libavformat to handle the interleaving should call <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref> instead of this function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The packet containing the data to be written. Note that unlike <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref>, this function does not take ownership of the packet passed to it (though some muxers may make an internal reference to the input packet). <linebreak/>
+ This parameter can be NULL (at any time, not just at the end), in order to immediately flush data buffered within the muxer, for muxers that buffer up data internally before writing it to the output. <linebreak/>
+ Packet&apos;s stream_index field must be set to the index of the corresponding stream in <ref refid="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" kindref="member">s-&gt;streams</ref>. <linebreak/>
+ The timestamps (<ref refid="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" kindref="member">pts</ref>, <ref refid="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" kindref="member">dts</ref>) must be set to correct values in the stream&apos;s timebase (unless the output format is flagged with the AVFMT_NOTIMESTAMPS flag, then they can be set to AV_NOPTS_VALUE). The dts for subsequent packets passed to this function must be strictly increasing when compared in their respective timebases (unless the output format is flagged with the AVFMT_TS_NONSTRICT, then they merely have to be nondecreasing). <ref refid="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" kindref="member">duration</ref>) should also be set if known. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 on error, = 0 if OK, 1 if flushed and there is no more data to flush</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2478" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2478" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_interleaved_write_frame</definition>
+        <argsstring>(AVFormatContext *s, AVPacket *pkt)</argsstring>
+        <name>av_interleaved_write_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a packet to an output media file ensuring correct interleaving.</para>
+<para>This function will buffer the packets internally as needed to make sure the packets in the output file are properly interleaved, usually ordered by increasing dts. Callers doing their own interleaving should call <ref refid="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" kindref="member">av_write_frame()</ref> instead of this function.</para>
+<para>Using this function instead of <ref refid="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" kindref="member">av_write_frame()</ref> can give muxers advance knowledge of future packets, improving e.g. the behaviour of the mp4 muxer for VFR content in fragmenting mode.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The packet containing the data to be written. <linebreak/>
+ If the packet is reference-counted, this function will take ownership of this reference and unreference it later when it sees fit. If the packet is not reference-counted, libavformat will make a copy. The returned packet will be blank (as if returned from <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref>), even on error. <linebreak/>
+ This parameter can be NULL (at any time, not just at the end), to flush the interleaving queues. <linebreak/>
+ Packet&apos;s stream_index field must be set to the index of the corresponding stream in <ref refid="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" kindref="member">s-&gt;streams</ref>. <linebreak/>
+ The timestamps (<ref refid="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" kindref="member">pts</ref>, <ref refid="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" kindref="member">dts</ref>) must be set to correct values in the stream&apos;s timebase (unless the output format is flagged with the AVFMT_NOTIMESTAMPS flag, then they can be set to AV_NOPTS_VALUE). The dts for subsequent packets in one stream must be strictly increasing (unless the output format is flagged with the AVFMT_TS_NONSTRICT, then they merely have to be nondecreasing). <ref refid="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" kindref="member">duration</ref> should also be set if known.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" kindref="member">av_write_frame()</ref>, <ref refid="struct_a_v_format_context_1a00edb6b7a31f8dabfa668334ca1f92d7" kindref="member">AVFormatContext.max_interleave_delta</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2522" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2522" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga5c1d07c778698f0c9dd3b8ad2f0f46b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_write_uncoded_frame</definition>
+        <argsstring>(AVFormatContext *s, int stream_index, struct AVFrame *frame)</argsstring>
+        <name>av_write_uncoded_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream_index</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write an uncoded frame to an output media file.</para>
+<para>The frame must be correctly interleaved according to the container specification; if not, <ref refid="group__lavf__encoding_1ga504f87e288e76ac4f72f3dbb7e35ec5f" kindref="member">av_interleaved_write_uncoded_frame()</ref> must be used.</para>
+<para>See <ref refid="group__lavf__encoding_1ga504f87e288e76ac4f72f3dbb7e35ec5f" kindref="member">av_interleaved_write_uncoded_frame()</ref> for details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2532" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2532" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga504f87e288e76ac4f72f3dbb7e35ec5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_interleaved_write_uncoded_frame</definition>
+        <argsstring>(AVFormatContext *s, int stream_index, struct AVFrame *frame)</argsstring>
+        <name>av_interleaved_write_uncoded_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream_index</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write an uncoded frame to an output media file.</para>
+<para>If the muxer supports it, this function makes it possible to write an <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> structure directly, without encoding it into a packet. It is mostly useful for devices and similar special muxers that use raw video or PCM data and will not serialize it into a byte stream.</para>
+<para>To test whether it is possible to use it with a given muxer and stream, use <ref refid="group__lavf__encoding_1ga5f6bebdc8c234a5ad9740de89acb15e6" kindref="member">av_write_uncoded_frame_query()</ref>.</para>
+<para>The caller gives up ownership of the frame and must not access it afterwards.</para>
+<para><simplesect kind="return"><para>&gt;=0 for success, a negative code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2551" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2551" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga5f6bebdc8c234a5ad9740de89acb15e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_write_uncoded_frame_query</definition>
+        <argsstring>(AVFormatContext *s, int stream_index)</argsstring>
+        <name>av_write_uncoded_frame_query</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test whether a muxer supports uncoded frame.</para>
+<para><simplesect kind="return"><para>&gt;=0 if an uncoded frame can be written to that muxer and stream, &lt;0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2560" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2560" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga7f14007e7dc8f481f054b21614dfec13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_write_trailer</definition>
+        <argsstring>(AVFormatContext *s)</argsstring>
+        <name>av_write_trailer</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the stream trailer to an output media file and free the file private data.</para>
+<para>May only be called after a successful call to avformat_write_header.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if OK, AVERROR_xxx on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2571" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2571" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga8a557e58672434f7e42d1cfd43c98149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+        <definition>const AVOutputFormat * av_guess_format</definition>
+        <argsstring>(const char *short_name, const char *filename, const char *mime_type)</argsstring>
+        <name>av_guess_format</name>
+        <param>
+          <type>const char *</type>
+          <declname>short_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mime_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the output format in the list of registered output formats which best matches the provided parameters, or return NULL if there is no match.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>short_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL checks if short_name matches with the names of the registered formats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL checks if filename terminates with the extensions of the registered formats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mime_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL checks if mime_type matches with the MIME type of the registered formats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2585" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2585" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga074f2d4c5b6389216b48d4a5cb5aa452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID av_guess_codec</definition>
+        <argsstring>(const AVOutputFormat *fmt, const char *short_name, const char *filename, const char *mime_type, enum AVMediaType type)</argsstring>
+        <name>av_guess_codec</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>short_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mime_type</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__misc_1ga9a84bba4713dfced21a1a56163be1f48" kindref="member">AVMediaType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guess the codec ID based upon muxer and filename. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2592" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2592" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__encoding_1ga661ee0b2f3dbcaaef5d68f2f5d75e2d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_output_timestamp</definition>
+        <argsstring>(struct AVFormatContext *s, int stream, int64_t *dts, int64_t *wall)</argsstring>
+        <name>av_get_output_timestamp</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>dts</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>wall</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get timing information for the data currently output. The exact meaning of &quot;currently output&quot; depends on the format. It is mostly relevant for devices that have an internal buffer and/or work in real time. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream in the media file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTS of the last packet output for the stream, in stream time_base units </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">wall</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>absolute time when that packet whas output, in microsecond </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Success </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVERROR(ENOSYS)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format does not support it</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Some formats or devices may not allow to measure dts and wall atomically. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2613" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2613" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavf__encoding_1ga5396ff79e3c1ec7220765499f2efc74d" prot="public" static="no">
+        <name>AVSTREAM_INIT_IN_WRITE_HEADER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>stream parameters initialized in avformat_write_header </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2386" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="2384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavf__encoding_1ga5268e4fbbb73b5ed1e4083f44f565ffd" prot="public" static="no">
+        <name>AVSTREAM_INIT_IN_INIT_OUTPUT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>stream parameters initialized in avformat_init_output </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2387" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="2385" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Muxers take encoded data in the form of <ref refid="struct_a_v_packet" kindref="compound">AVPackets</ref> and write it into files or other output bytestreams in the specified container format.</para>
+<para>The main API functions for muxing are <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> for writing the file header, <ref refid="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" kindref="member">av_write_frame()</ref> / <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref> for writing the packets and <ref refid="group__lavf__encoding_1ga7f14007e7dc8f481f054b21614dfec13" kindref="member">av_write_trailer()</ref> for finalizing the file.</para>
+<para>At the beginning of the muxing process, the caller must first call <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref> to create a muxing context. The caller then sets up the muxer by filling the various fields in this context:</para>
+<para><itemizedlist>
+<listitem><para>The <ref refid="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" kindref="member">oformat</ref> field must be set to select the muxer that will be used.</para>
+</listitem><listitem><para>Unless the format is of the AVFMT_NOFILE type, the <ref refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" kindref="member">pb</ref> field must be set to an opened IO context, either returned from <ref refid="avio_8h_1ade8a63980569494c99593ebf0d1e891b" kindref="member">avio_open2()</ref> or a custom one.</para>
+</listitem><listitem><para>Unless the format is of the AVFMT_NOSTREAMS type, at least one stream must be created with the <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref> function. The caller should fill the <ref refid="struct_a_v_stream_1a12826d21779289356722971d362c583c" kindref="member">stream codec parameters</ref> information, such as the codec <ref refid="struct_a_v_codec_parameters_1a58369c3a8a986935b572df5aa6361ce2" kindref="member">type</ref>, <ref refid="struct_a_v_codec_parameters_1a9f76f2475ef24ff4c9771dd53072d040" kindref="member">id</ref> and other parameters (e.g. width / height, the pixel or sample format, etc.) as known. The <ref refid="struct_a_v_stream_1a9db755451f14e2bf590d4b85d82b32e6" kindref="member">stream timebase</ref> should be set to the timebase that the caller desires to use for this stream (note that the timebase actually used by the muxer can be different, as will be described later).</para>
+</listitem><listitem><para>It is advised to manually initialize only the relevant fields in <ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref>, rather than using <ref refid="group__lavc__core_1ga6d02e640ccc12c783841ce51d09b9fa7" kindref="member">avcodec_parameters_copy()</ref> during remuxing: there is no guarantee that the codec context values remain valid for both input and output format contexts.</para>
+</listitem><listitem><para>The caller may fill in additional information, such as <ref refid="struct_a_v_format_context_1a3019a56080ed2e3297ff25bc2ff88adf" kindref="member">global</ref> or per-stream metadata, chapters, programs, etc. as described in the <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> documentation. Whether such information will actually be stored in the output depends on what the container format and the muxer support.</para>
+</listitem></itemizedlist>
+</para>
+<para>When the muxing context is fully set up, the caller must call <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> to initialize the muxer internals and write the file header. Whether anything actually is written to the IO context at this step depends on the muxer, but this function must always be called. Any muxer private options must be passed in the options parameter to this function.</para>
+<para>The data is then sent to the muxer by repeatedly calling <ref refid="group__lavf__encoding_1gaa85cc1774f18f306cd20a40fc50d0b36" kindref="member">av_write_frame()</ref> or <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref> (consult those functions&apos; documentation for discussion on the difference between them; only one of them may be used with a single muxing context, they should not be mixed). Do note that the timing information on the packets sent to the muxer must be in the corresponding <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref>&apos;s timebase. That timebase is set by the muxer (in the <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> step) and may be different from the timebase requested by the caller.</para>
+<para>Once all the data has been written, the caller must call <ref refid="group__lavf__encoding_1ga7f14007e7dc8f481f054b21614dfec13" kindref="member">av_write_trailer()</ref> to flush any buffered packets and finalize the output file, then close the IO context (if any) and finally free the muxing context with <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

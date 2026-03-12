@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__buffer" kind="group">
+    <compoundname>lavu_buffer</compoundname>
+    <title>AVBuffer</title>
+    <innerfile refid="buffer_8h">buffer.h</innerfile>
+    <innerclass refid="struct_a_v_buffer_ref" prot="public">AVBufferRef</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" prot="public" static="no">
+        <type>struct <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref></type>
+        <definition>typedef struct AVBuffer AVBuffer</definition>
+        <argsstring></argsstring>
+        <name>AVBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A reference counted buffer type. It is opaque and is meant to be used through references (<ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="74" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__buffer_1ga7a4e1b9f08ad932631e15ff01adf2085" prot="public" static="no">
+        <type>struct AVBufferRef</type>
+        <definition>typedef struct AVBufferRef AVBufferRef</definition>
+        <argsstring></argsstring>
+        <name>AVBufferRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A reference to a data buffer.</para>
+<para>The size of this struct is not a part of the public ABI and it is not meant to be allocated directly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="95" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_buffer_alloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>av_buffer_alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> of the given size using <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>.</para>
+<para><simplesect kind="return"><para>an <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> of given size or NULL when out of memory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="102" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="102" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga5bd498f1a8e537c06c419c6345e061ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_buffer_allocz</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>av_buffer_allocz</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref>, except the returned buffer will be initialized to zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="108" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="108" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_buffer_create</definition>
+        <argsstring>(uint8_t *data, size_t size, void(*free)(void *opaque, uint8_t *data), void *opaque, int flags)</argsstring>
+        <name>av_buffer_create</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>void(*)(void *opaque, uint8_t *data)</type>
+          <declname>free</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> from an existing array.</para>
+<para>If this function is successful, data is owned by the <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>. The caller may only access data through the returned <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> and references derived from it. If this function fails, data is left untouched. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a callback for freeing this buffer&apos;s data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter to be got for processing or passed to free </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AV_BUFFER_FLAG_*</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> referring to data on success, NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="131" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="131" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga37d620e8cfc9f2f3261c2b4c5d4adfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_buffer_default_free</definition>
+        <argsstring>(void *opaque, uint8_t *data)</argsstring>
+        <name>av_buffer_default_free</name>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default free callback, which calls <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref> on the buffer data. This function is meant to be passed to <ref refid="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" kindref="member">av_buffer_create()</ref>, not called directly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="140" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="140" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_buffer_ref</definition>
+        <argsstring>(const AVBufferRef *buf)</argsstring>
+        <name>av_buffer_ref</name>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new reference to an <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>.</para>
+<para><simplesect kind="return"><para>a new <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> referring to the same <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> as buf or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="148" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="148" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_buffer_unref</definition>
+        <argsstring>(AVBufferRef **buf)</argsstring>
+        <name>av_buffer_unref</name>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a given reference and automatically free the buffer if there are no more references to it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the reference to be freed. The pointer is set to NULL on return. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="156" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="156" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffer_is_writable</definition>
+        <argsstring>(const AVBufferRef *buf)</argsstring>
+        <name>av_buffer_is_writable</name>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1 if the caller may write to the data referred to by buf (which is true if and only if buf is the only reference to the underlying <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>). Return 0 otherwise. A positive answer is valid until <ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref()</ref> is called on buf. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="164" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="164" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1gaa68265370a808d3b9f55a518a958ba3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_buffer_get_opaque</definition>
+        <argsstring>(const AVBufferRef *buf)</argsstring>
+        <name>av_buffer_get_opaque</name>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the opaque parameter set by av_buffer_create. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="169" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="169" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga7b16c3976dc555f71d0843bbd023dfcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffer_get_ref_count</definition>
+        <argsstring>(const AVBufferRef *buf)</argsstring>
+        <name>av_buffer_get_ref_count</name>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="171" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="171" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffer_make_writable</definition>
+        <argsstring>(AVBufferRef **buf)</argsstring>
+        <name>av_buffer_make_writable</name>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a writable reference from a given buffer reference, avoiding data copy if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer reference to make writable. On success, buf is either left untouched, or it is unreferenced and a new writable <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> is written in its place. On failure, buf is left untouched. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="182" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="182" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga20c1c0e1b0c606451fb2e12ef27d65f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffer_realloc</definition>
+        <argsstring>(AVBufferRef **buf, size_t size)</argsstring>
+        <name>av_buffer_realloc</name>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocate a given buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a buffer reference to reallocate. On success, buf will be unreferenced and a new reference with the required size will be written in its place. On failure buf will be left untouched. *buf may be NULL, then a new buffer is allocated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>required new buffer size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on failure.</para>
+</simplesect>
+<simplesect kind="note"><para>the buffer is actually reallocated with <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> only if it was initially allocated through av_buffer_realloc(NULL) and there is only one reference to it (i.e. the one passed to this function). In all other cases a new buffer is allocated and the data is copied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="199" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="199" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__buffer_1ga8029fa24636791cc93cc05ad8f7ee44b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffer_replace</definition>
+        <argsstring>(AVBufferRef **dst, const AVBufferRef *src)</argsstring>
+        <name>av_buffer_replace</name>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure dst refers to the same data as src.</para>
+<para>When *dst is already equivalent to src, do nothing. Otherwise unreference dst and replace it with a new reference to src.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to either a valid buffer reference or NULL. On success, this will point to a buffer reference equivalent to src. On failure, dst will be left untouched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer reference to replace dst with. May be NULL, then this function is equivalent to av_buffer_unref(dst). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success AVERROR(ENOMEM) on memory allocation failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="215" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="215" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__buffer_1gaa818f8f1011d69acc50c1f29cb85e576" prot="public" static="no">
+        <name>AV_BUFFER_FLAG_READONLY</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Always treat the buffer as read-only, even when it has only one reference. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="114" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> is an API for reference-counted data buffers.</para>
+<para>There are two core objects in this API <ndash/> <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> and <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>. <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> represents the data buffer itself; it is opaque and not meant to be accessed by the caller directly, but only through <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>. However, the caller may e.g. compare two <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> pointers to check whether two different references are describing the same data buffer. <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> represents a single reference to an <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> and it is the object that may be manipulated by the caller directly.</para>
+<para>There are two functions provided for creating a new <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> with a single reference <ndash/> <ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref> to just allocate a new buffer, and <ref refid="group__lavu__buffer_1gaea0e35a6528430214f3807ce88e82c6e" kindref="member">av_buffer_create()</ref> to wrap an existing array in an <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>. From an existing reference, additional references may be created with <ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref()</ref>. Use <ref refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" kindref="member">av_buffer_unref()</ref> to free a reference (this will automatically free the data once all the references are freed).</para>
+<para>The convention throughout this API and the rest of FFmpeg is such that the buffer is considered writable if there exists only one reference to it (and it has not been marked as read-only). The <ref refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kindref="member">av_buffer_is_writable()</ref> function is provided to check whether this is true and <ref refid="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" kindref="member">av_buffer_make_writable()</ref> will automatically create a new writable buffer when necessary. Of course nothing prevents the calling code from violating this convention, however that is safe only when all the existing references are under its control.</para>
+<para><simplesect kind="note"><para>Referencing and unreferencing the buffers is thread-safe and thus may be done from multiple threads simultaneously without any need for additional locking.</para>
+</simplesect>
+<simplesect kind="note"><para>Two different references to the same buffer can point to different parts of the buffer (i.e. their <ref refid="struct_a_v_buffer_ref_1acb8452e99cd75074b93800b532c6ea4b" kindref="member">AVBufferRef.data</ref> will not be equal). </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

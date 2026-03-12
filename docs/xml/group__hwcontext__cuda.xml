@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__hwcontext__cuda" kind="group">
+    <compoundname>hwcontext_cuda</compoundname>
+    <title>Device context creation flags</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__hwcontext__cuda_1gac337193d74f3f4d20edfdc2e63fae7b8" prot="public" static="no">
+        <name>AV_CUDA_USE_PRIMARY_CONTEXT</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use primary device context instead of creating a new one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_cuda.h" line="63" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_cuda.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__hwcontext__cuda_1ga0818ea4319baa9d023d854aa13e7b47f" prot="public" static="no">
+        <name>AV_CUDA_USE_CURRENT_CONTEXT</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use current device context instead of creating a new one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_cuda.h" line="68" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_cuda.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref> is currently not used</para>
+<para>Flags for av_hwdevice_ctx_create. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

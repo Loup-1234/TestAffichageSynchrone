@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_r_m_layer_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVDRMLayerDescriptor</compoundname>
+    <includes refid="hwcontext__drm_8h" local="no">hwcontext_drm.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_r_m_layer_descriptor_1abe9b4585e3ad357cf058dada850c3226" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVDRMLayerDescriptor::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AVDRMLayerDescriptor::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Format of the layer (DRM_FORMAT_*). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="100" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_layer_descriptor_1aa71ce914f53563be8207d8bc08fbfe92" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDRMLayerDescriptor::nb_planes</definition>
+        <argsstring></argsstring>
+        <name>nb_planes</name>
+        <qualifiedname>AVDRMLayerDescriptor::nb_planes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of planes in the layer.</para>
+<para>This must match the number of planes required by format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="106" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_layer_descriptor_1a7fbaf03f401c451e82021487fefef159" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_d_r_m_plane_descriptor" kindref="compound">AVDRMPlaneDescriptor</ref></type>
+        <definition>AVDRMPlaneDescriptor AVDRMLayerDescriptor::planes[AV_DRM_MAX_PLANES]</definition>
+        <argsstring>[AV_DRM_MAX_PLANES]</argsstring>
+        <name>planes</name>
+        <qualifiedname>AVDRMLayerDescriptor::planes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of planes in this layer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="110" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DRM layer descriptor.</para>
+<para>Describes a single layer within a frame. This has the structure defined by its format, and will contain one or more planes. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDRMLayerDescriptor</label>
+        <link refid="struct_a_v_d_r_m_layer_descriptor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>planes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVDRMPlaneDescriptor</label>
+        <link refid="struct_a_v_d_r_m_plane_descriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="96" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="96" bodyend="111"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_r_m_layer_descriptor_1abe9b4585e3ad357cf058dada850c3226" prot="public" virt="non-virtual"><scope>AVDRMLayerDescriptor</scope><name>format</name></member>
+      <member refid="struct_a_v_d_r_m_layer_descriptor_1aa71ce914f53563be8207d8bc08fbfe92" prot="public" virt="non-virtual"><scope>AVDRMLayerDescriptor</scope><name>nb_planes</name></member>
+      <member refid="struct_a_v_d_r_m_layer_descriptor_1a7fbaf03f401c451e82021487fefef159" prot="public" virt="non-virtual"><scope>AVDRMLayerDescriptor</scope><name>planes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

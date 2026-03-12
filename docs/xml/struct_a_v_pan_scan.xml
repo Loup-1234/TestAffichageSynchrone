@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_pan_scan" kind="struct" language="C++" prot="public">
+    <compoundname>AVPanScan</compoundname>
+    <includes refid="defs_8h" local="no">defs.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_pan_scan_1a34dfbcbb6c9582d0a10d9592a3d2eed2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPanScan::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>AVPanScan::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id<itemizedlist>
+<listitem><para>encoding: Set by user.</para>
+</listitem><listitem><para>decoding: Set by libavcodec. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="259" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pan_scan_1a3963c714ee5ab0209f74de43bb2ef97b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPanScan::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVPanScan::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>width and height in 1/16 pel<itemizedlist>
+<listitem><para>encoding: Set by user.</para>
+</listitem><listitem><para>decoding: Set by libavcodec. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="266" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pan_scan_1a76e1fcfbecaf034b5c4d6604d602e474" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPanScan::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVPanScan::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="267" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pan_scan_1abfbf6d829276b4a73b97995827832eba" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVPanScan::position[3][2]</definition>
+        <argsstring>[3][2]</argsstring>
+        <name>position</name>
+        <qualifiedname>AVPanScan::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position of the top left corner in 1/16 pel for up to 3 fields/frames<itemizedlist>
+<listitem><para>encoding: Set by user.</para>
+</listitem><listitem><para>decoding: Set by libavcodec. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="274" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Pan Scan area. This specifies the area which should be displayed. Note there may be multiple such areas for one frame. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="253" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="253" bodyend="275"/>
+    <listofallmembers>
+      <member refid="struct_a_v_pan_scan_1a76e1fcfbecaf034b5c4d6604d602e474" prot="public" virt="non-virtual"><scope>AVPanScan</scope><name>height</name></member>
+      <member refid="struct_a_v_pan_scan_1a34dfbcbb6c9582d0a10d9592a3d2eed2" prot="public" virt="non-virtual"><scope>AVPanScan</scope><name>id</name></member>
+      <member refid="struct_a_v_pan_scan_1abfbf6d829276b4a73b97995827832eba" prot="public" virt="non-virtual"><scope>AVPanScan</scope><name>position</name></member>
+      <member refid="struct_a_v_pan_scan_1a3963c714ee5ab0209f74de43bb2ef97b" prot="public" virt="non-virtual"><scope>AVPanScan</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

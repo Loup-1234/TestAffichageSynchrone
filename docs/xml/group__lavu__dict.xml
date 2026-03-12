@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__dict" kind="group">
+    <compoundname>lavu_dict</compoundname>
+    <title>AVDictionary</title>
+    <innerclass refid="struct_a_v_dictionary_entry" prot="public">AVDictionaryEntry</innerclass>
+    <sectiondef kind="user-defined">
+      <header>AVDictionary Flags</header>
+      <description><para>Flags that influence behavior of the matching of keys or insertion to the dictionary. </para>
+</description>
+      <memberdef kind="define" id="group__lavu__dict_1gad9cbc53cec515b72ae7caa2e194c6bc0" prot="public" static="no">
+        <name>AV_DICT_MATCH_CASE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only get an entry with exact-case key match. Only relevant in <ref refid="group__lavu__dict_1ga246f5c0ff557f9585bbc8c36efb57537" kindref="member">av_dict_get()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1ga341bbd1ea599dfb0510f419e5272fecc" prot="public" static="no">
+        <name>AV_DICT_IGNORE_SUFFIX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return first entry in a dictionary whose first part corresponds to the search key, ignoring the suffix of the found key string. Only relevant in <ref refid="group__lavu__dict_1ga246f5c0ff557f9585bbc8c36efb57537" kindref="member">av_dict_get()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1gacb0ce4f20c15bf174f93590ace0fc8fd" prot="public" static="no">
+        <name>AV_DICT_DONT_STRDUP_KEY</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Take ownership of a key that&apos;s been allocated with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> or another memory allocation function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1ga7a9a991cb7837b10ffd44725263de425" prot="public" static="no">
+        <name>AV_DICT_DONT_STRDUP_VAL</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Take ownership of a value that&apos;s been allocated with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> or another memory allocation function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="80" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1ga8ed4237acfc3d68484301a5d1859936c" prot="public" static="no">
+        <name>AV_DICT_DONT_OVERWRITE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Don&apos;t overwrite existing entries. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="81" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1ga64018c01d1e8c44d1d8c03dfb099f2c2" prot="public" static="no">
+        <name>AV_DICT_APPEND</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the entry already exists, append to it. Note that no delimiter is added, the strings are simply concatenated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="83" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1ga14e9f9a502fbd2990028fc47b494dc34" prot="public" static="no">
+        <name>AV_DICT_MULTIKEY</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allow to store several equal keys in the dictionary </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="84" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__dict_1gafab1a503680b8cbbdb37ced142e32b6d" prot="public" static="no">
+        <name>AV_DICT_DEDUP</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If inserting a value that already exists for a key, do nothing. Only relevant with AV_DICT_MULTIKEY. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="85" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__dict_1ga74b18f99d6a784605ca1db4404dcdac3" prot="public" static="no">
+        <type>struct AVDictionaryEntry</type>
+        <definition>typedef struct AVDictionaryEntry AVDictionaryEntry</definition>
+        <argsstring></argsstring>
+        <name>AVDictionaryEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="93" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__dict_1ga1d7cc0833bee918994a600556410315f" prot="public" static="no">
+        <type>struct AVDictionary</type>
+        <definition>typedef struct AVDictionary AVDictionary</definition>
+        <argsstring></argsstring>
+        <name>AVDictionary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="95" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__dict_1ga246f5c0ff557f9585bbc8c36efb57537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref> *</type>
+        <definition>AVDictionaryEntry * av_dict_get</definition>
+        <argsstring>(const AVDictionary *m, const char *key, const AVDictionaryEntry *prev, int flags)</argsstring>
+        <name>av_dict_get</name>
+        <param>
+          <type>const AVDictionary *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref> *</type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a dictionary entry with matching key.</para>
+<para>The returned entry key or value must not be changed, or it will cause undefined behavior.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to the previous matching element to find the next. If set to NULL the first matching element is returned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matching key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A collection of AV_DICT_* flags controlling how the entry is retrieved</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Found entry or NULL in case no matching entry was found in the dictionary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="111" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="111" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1ga363d73ef1c14dbbad5f40988809ac57a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref> *</type>
+        <definition>const AVDictionaryEntry * av_dict_iterate</definition>
+        <argsstring>(const AVDictionary *m, const AVDictionaryEntry *prev)</argsstring>
+        <name>av_dict_iterate</name>
+        <param>
+          <type>const AVDictionary *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref> *</type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over a dictionary</para>
+<para>Iterates through all entries in the dictionary.</para>
+<para><simplesect kind="warning"><para>The returned <ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref> key/value must not be changed.</para>
+</simplesect>
+<simplesect kind="warning"><para>As <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set()</ref> invalidates all previous entries returned by this function, it must not be called while iterating over the dict.</para>
+</simplesect>
+Typical usage: <programlisting><codeline><highlight class="normal">const<sp/>AVDictionaryEntry<sp/>*e<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>((e<sp/>=<sp/>av_dict_iterate(m,<sp/>e)))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary to iterate over </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the previous <ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref>, NULL initially</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>AVDictionaryEntry*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The next element in the dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No more elements in the dictionary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="138" column="25" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="138" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1gad21456d6601aa096c7c78dce8848d50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_count</definition>
+        <argsstring>(const AVDictionary *m)</argsstring>
+        <name>av_dict_count</name>
+        <param>
+          <type>const AVDictionary *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get number of entries in dictionary.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictionary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of entries in dictionary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="147" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="147" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_set</definition>
+        <argsstring>(AVDictionary **pm, const char *key, const char *value, int flags)</argsstring>
+        <name>av_dict_set</name>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the given entry in *pm, overwriting an existing entry.</para>
+<para>Note: If AV_DICT_DONT_STRDUP_KEY or AV_DICT_DONT_STRDUP_VAL is set, these arguments will be freed on error.</para>
+<para><simplesect kind="warning"><para>Adding a new entry to a dictionary invalidates all existing entries previously returned with <ref refid="group__lavu__dict_1ga246f5c0ff557f9585bbc8c36efb57537" kindref="member">av_dict_get()</ref> or <ref refid="group__lavu__dict_1ga363d73ef1c14dbbad5f40988809ac57a" kindref="member">av_dict_iterate()</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer to a dictionary struct. If *pm is NULL a dictionary struct is allocated and put in *pm. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry key to add to *pm (will either be av_strduped or added as a new key depending on flags) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry value to add to *pm (will be av_strduped or added as a new key depending on flags). Passing a NULL value will cause an existing entry to be deleted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success otherwise an error code &lt;0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="166" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="166" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1gafd013a88620b2da7d497b083f6ea7d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_set_int</definition>
+        <argsstring>(AVDictionary **pm, const char *key, int64_t value, int flags)</argsstring>
+        <name>av_dict_set_int</name>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience wrapper for <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set()</ref> that converts the value to a string and stores it.</para>
+<para>Note: If <ref refid="group__lavu__dict_1gacb0ce4f20c15bf174f93590ace0fc8fd" kindref="member">AV_DICT_DONT_STRDUP_KEY</ref> is set, key will be freed on error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="174" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="174" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1gaca5ff7c251e60bd13164d13c82f21b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_parse_string</definition>
+        <argsstring>(AVDictionary **pm, const char *str, const char *key_val_sep, const char *pairs_sep, int flags)</argsstring>
+        <name>av_dict_parse_string</name>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key_val_sep</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pairs_sep</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse the key/value pairs list and add the parsed entries to a dictionary.</para>
+<para>In case of failure, all the successfully set entries are stored in *pm. You may need to manually free the created dictionary.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key_val_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 0-terminated list of characters used to separate key from value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pairs_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 0-terminated list of characters used to separate two pairs from each other </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags to use when adding to the dictionary. <ref refid="group__lavu__dict_1gacb0ce4f20c15bf174f93590ace0fc8fd" kindref="member">AV_DICT_DONT_STRDUP_KEY</ref> and <ref refid="group__lavu__dict_1ga7a9a991cb7837b10ffd44725263de425" kindref="member">AV_DICT_DONT_STRDUP_VAL</ref> are ignored since the key/value tokens will always be duplicated.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative AVERROR code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="193" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="193" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1ga59a6372b124b306e3a2233723c5cdc78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_copy</definition>
+        <argsstring>(AVDictionary **dst, const AVDictionary *src, int flags)</argsstring>
+        <name>av_dict_copy</name>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const AVDictionary *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy entries from one AVDictionary struct into another.</para>
+<para><simplesect kind="note"><para>Metadata is read using the <ref refid="group__lavu__dict_1ga341bbd1ea599dfb0510f419e5272fecc" kindref="member">AV_DICT_IGNORE_SUFFIX</ref> flag</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer to a AVDictionary struct to copy into. If *dst is NULL, this function will allocate a struct for you and put it in *dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the source AVDictionary struct to copy items from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags to use when setting entries in *dst</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative AVERROR code on failure. If dst was allocated by this function, callers should free the associated memory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="210" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="210" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1ga1bafd682b1fbb90e48a4cc3814b820f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_dict_free</definition>
+        <argsstring>(AVDictionary **m)</argsstring>
+        <name>av_dict_free</name>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free all the memory allocated for an AVDictionary struct and all keys and values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="216" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="216" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__dict_1ga480ab3fb3ac6cae8e60e97f58ec30b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_dict_get_string</definition>
+        <argsstring>(const AVDictionary *m, char **buffer, const char key_val_sep, const char pairs_sep)</argsstring>
+        <name>av_dict_get_string</name>
+        <param>
+          <type>const AVDictionary *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>key_val_sep</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>pairs_sep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get dictionary entries as a string.</para>
+<para>Create a string containing dictionary&apos;s entries. Such string may be passed back to <ref refid="group__lavu__dict_1gaca5ff7c251e60bd13164d13c82f21b79" kindref="member">av_dict_parse_string()</ref>. <simplesect kind="note"><para>String is escaped with backslashes (&apos;\&apos;).</para>
+</simplesect>
+<simplesect kind="warning"><para>Separators cannot be neither &apos;\&apos; nor &apos;\0&apos;. They also cannot be the same.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to buffer that will be allocated with string containing entries. Buffer must be freed by the caller when is no longer needed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key_val_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character used to separate key from value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pairs_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character used to separate two pairs from each other</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, negative on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" line="235" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dict.h" declline="235" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple key:value store. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Dictionaries are used for storing key-value pairs.</para>
+<para><itemizedlist>
+<listitem><para>To <bold>create an AVDictionary</bold>, simply pass an address of a NULL pointer to <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set()</ref>. NULL can be used as an empty dictionary wherever a pointer to an AVDictionary is required.</para>
+</listitem><listitem><para>To <bold>insert an entry</bold>, use <ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set()</ref>.</para>
+</listitem><listitem><para>Use <ref refid="group__lavu__dict_1ga246f5c0ff557f9585bbc8c36efb57537" kindref="member">av_dict_get()</ref> to <bold>retrieve an entry</bold>.</para>
+</listitem><listitem><para>To <bold>iterate over all entries</bold>, use <ref refid="group__lavu__dict_1ga363d73ef1c14dbbad5f40988809ac57a" kindref="member">av_dict_iterate()</ref>.</para>
+</listitem><listitem><para>In order to <bold>free the dictionary and all its contents</bold>, use <ref refid="group__lavu__dict_1ga1bafd682b1fbb90e48a4cc3814b820f7" kindref="member">av_dict_free()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">AVDictionary<sp/>*d<sp/>=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;create&quot;<sp/>an<sp/>empty<sp/>dictionary</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_a_v_dictionary_entry" kindref="compound">AVDictionaryEntry</ref><sp/>*t<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set</ref>(&amp;d,<sp/></highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bar&quot;</highlight><highlight class="normal">,<sp/>0);<sp/></highlight><highlight class="comment">//<sp/>add<sp/>an<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*k<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1ga669091e689cc330998001d79edca9b3e" kindref="member">av_strdup</ref>(</highlight><highlight class="stringliteral">&quot;key&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>your<sp/>strings<sp/>are<sp/>already<sp/>allocated,</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*v<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1ga669091e689cc330998001d79edca9b3e" kindref="member">av_strdup</ref>(</highlight><highlight class="stringliteral">&quot;value&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>you<sp/>can<sp/>avoid<sp/>copying<sp/>them<sp/>like<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__dict_1ga8d9c2de72b310cef8e6a28c9cd3acbbe" kindref="member">av_dict_set</ref>(&amp;d,<sp/>k,<sp/>v,<sp/><ref refid="group__lavu__dict_1gacb0ce4f20c15bf174f93590ace0fc8fd" kindref="member">AV_DICT_DONT_STRDUP_KEY</ref><sp/>|<sp/><ref refid="group__lavu__dict_1ga7a9a991cb7837b10ffd44725263de425" kindref="member">AV_DICT_DONT_STRDUP_VAL</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((t<sp/>=<sp/><ref refid="group__lavu__dict_1ga363d73ef1c14dbbad5f40988809ac57a" kindref="member">av_dict_iterate</ref>(d,<sp/>t)))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;....&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>iterate<sp/>over<sp/>all<sp/>entries<sp/>in<sp/>d</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__dict_1ga1bafd682b1fbb90e48a4cc3814b820f7" kindref="member">av_dict_free</ref>(&amp;d);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_channel_custom" kind="struct" language="C++" prot="public">
+    <compoundname>AVChannelCustom</compoundname>
+    <includes refid="channel__layout_8h" local="no">channel_layout.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_channel_custom_1abb9f1be3504cb7fca63ab732e17c312c" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+        <definition>enum AVChannel AVChannelCustom::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>AVChannelCustom::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="284" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_channel_custom_1a8947d83b48c1c580c0d9bab3a9f7d92a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AVChannelCustom::name[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>name</name>
+        <qualifiedname>AVChannelCustom::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="285" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_channel_custom_1a70ea9fc0242eb1dfbd37e0dd44c189b7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVChannelCustom::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVChannelCustom::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="286" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An <ref refid="struct_a_v_channel_custom" kindref="compound">AVChannelCustom</ref> defines a single channel within a custom order layout</para>
+<para>Unlike most structures in FFmpeg, sizeof(AVChannelCustom) is a part of the public ABI.</para>
+<para>No new fields may be added to it without a major version bump. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="283" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="283" bodyend="287"/>
+    <listofallmembers>
+      <member refid="struct_a_v_channel_custom_1abb9f1be3504cb7fca63ab732e17c312c" prot="public" virt="non-virtual"><scope>AVChannelCustom</scope><name>id</name></member>
+      <member refid="struct_a_v_channel_custom_1a8947d83b48c1c580c0d9bab3a9f7d92a" prot="public" virt="non-virtual"><scope>AVChannelCustom</scope><name>name</name></member>
+      <member refid="struct_a_v_channel_custom_1a70ea9fc0242eb1dfbd37e0dd44c189b7" prot="public" virt="non-virtual"><scope>AVChannelCustom</scope><name>opaque</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

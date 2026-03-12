@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavf__core" kind="group">
+    <compoundname>lavf_core</compoundname>
+    <title>Core functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavf__core_1gaf2d4e0fee66cef99dea2153933e6b907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned avformat_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the LIBAVFORMAT_VERSION_INT constant. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1899" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1899" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga2585a302cd25efceb303645bc82d32f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avformat_configuration</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_configuration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavformat build-time configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1904" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1904" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga9af383726447472e7cd832b0ca6c7a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avformat_license</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_license</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libavformat license. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1909" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1909" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga84542023693d61e8564c5d457979c932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_network_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_network_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do global initialization of network libraries. This is optional, and not recommended anymore.</para>
+<para>This functions only exists to work around thread-safety issues with older GnuTLS or OpenSSL libraries. If libavformat is linked to newer versions of those libraries, or if you do not use them, calling this function is unnecessary. Otherwise, you need to call this function before any other threads using them are started.</para>
+<para>This function will be deprecated once support for older GnuTLS and OpenSSL libraries is removed, and this function has no purpose anymore. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1925" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1925" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga245f2875f80ce67ec3d1e0f54dacf2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_network_deinit</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_network_deinit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Undo the initialization done by avformat_network_init. Call it only once for each time you called avformat_network_init. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1931" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1931" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga8065a9f6d686610bd8dba40a154bfba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+        <definition>const AVOutputFormat * av_muxer_iterate</definition>
+        <argsstring>(void **opaque)</argsstring>
+        <name>av_muxer_iterate</name>
+        <param>
+          <type>void **</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all registered muxers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where libavformat will store the iteration state. Must point to NULL to start the iteration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next registered muxer or NULL when the iteration is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1942" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1942" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1gabbe7e591144175133299a6673b122add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+        <definition>const AVInputFormat * av_demuxer_iterate</definition>
+        <argsstring>(void **opaque)</argsstring>
+        <name>av_demuxer_iterate</name>
+        <param>
+          <type>void **</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all registered demuxers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where libavformat will store the iteration state. Must point to NULL to start the iteration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next registered demuxer or NULL when the iteration is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1953" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1953" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+        <definition>AVFormatContext * avformat_alloc_context</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_alloc_context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>. <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref> can be used to free the context and everything allocated by the framework within it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1960" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1960" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void avformat_free_context</definition>
+        <argsstring>(AVFormatContext *s)</argsstring>
+        <name>avformat_free_context</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> and all its streams. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context to free </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1966" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1966" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1gaee1ff1d03f39701790ce034febf7a3b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * avformat_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>avformat_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>. It can be used in combination with AV_OPT_SEARCH_FAKE_OBJ for examining options.</para>
+<para><simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1974" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1974" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga5869af44771e0ff7b150861b6e3304f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_stream_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_stream_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref>. It can be used in combination with AV_OPT_SEARCH_FAKE_OBJ for examining options.</para>
+<para><simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1982" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1982" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga1e6340c32d2d765573d89266efaa8125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_stream_group_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_stream_group_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for <ref refid="struct_a_v_stream_group" kindref="compound">AVStreamGroup</ref>. It can be used in combination with AV_OPT_SEARCH_FAKE_OBJ for examining options.</para>
+<para><simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1990" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1990" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga28329212f73f3e1d42af71a4c704a280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * avformat_stream_group_name</definition>
+        <argsstring>(enum AVStreamGroupParamsType type)</argsstring>
+        <name>avformat_stream_group_name</name>
+        <param>
+          <type>enum AVStreamGroupParamsType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a string identifying the stream group type, or NULL if unknown </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1995" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="1995" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_stream_group" kindref="compound">AVStreamGroup</ref> *</type>
+        <definition>AVStreamGroup * avformat_stream_group_create</definition>
+        <argsstring>(AVFormatContext *s, enum AVStreamGroupParamsType type, AVDictionary **options)</argsstring>
+        <name>avformat_stream_group_create</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>enum AVStreamGroupParamsType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new empty stream group to a media file.</para>
+<para>When demuxing, it may be called by the demuxer in read_header(). If the flag AVFMTCTX_NOHEADER is set in s.ctx_flags, then it may also be called in read_packet().</para>
+<para>When muxing, may be called by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+<para>User is required to call <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref> to clean up the allocation by <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create()</ref>.</para>
+<para>New streams can be added to the group with <ref refid="group__lavf__core_1ga71ea58a4c7ce40295a0d2e35ae48405f" kindref="member">avformat_stream_group_add_stream()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly created group or NULL on error. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream</ref>, <ref refid="group__lavf__core_1ga71ea58a4c7ce40295a0d2e35ae48405f" kindref="member">avformat_stream_group_add_stream</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2016" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2016" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+        <definition>AVStream * avformat_new_stream</definition>
+        <argsstring>(AVFormatContext *s, const struct AVCodec *c)</argsstring>
+        <name>avformat_new_stream</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new stream to a media file.</para>
+<para>When demuxing, it is called by the demuxer in read_header(). If the flag AVFMTCTX_NOHEADER is set in s.ctx_flags, then it may also be called in read_packet().</para>
+<para>When muxing, should be called by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+<para>User is required to call <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref> to clean up the allocation by <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>media file handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unused, does nothing</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly created stream or NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2037" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2037" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga71ea58a4c7ce40295a0d2e35ae48405f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_stream_group_add_stream</definition>
+        <argsstring>(AVStreamGroup *stg, AVStream *st)</argsstring>
+        <name>avformat_stream_group_add_stream</name>
+        <param>
+          <type><ref refid="struct_a_v_stream_group" kindref="compound">AVStreamGroup</ref> *</type>
+          <declname>stg</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an already allocated stream to a stream group.</para>
+<para>When demuxing, it may be called by the demuxer in read_header(). If the flag AVFMTCTX_NOHEADER is set in s.ctx_flags, then it may also be called in read_packet().</para>
+<para>When muxing, may be called by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> after having allocated a new group with <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create()</ref> and stream with <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref>.</para>
+<para>User is required to call <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref> to clean up the allocation by <ref refid="group__lavf__core_1ga71ea58a4c7ce40295a0d2e35ae48405f" kindref="member">avformat_stream_group_add_stream()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream group belonging to a media file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream in the media file to add to the group.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVERROR(EEXIST)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream was already in the group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>another negative error code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>legitimate errors</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream</ref>, <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2062" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2062" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__core_1ga32816bc1c7d8d8b09dea1a7da1867af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_program" kindref="compound">AVProgram</ref> *</type>
+        <definition>AVProgram * av_new_program</definition>
+        <argsstring>(AVFormatContext *s, int id)</argsstring>
+        <name>av_new_program</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2064" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2064" declcolumn="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions for querying libavformat capabilities, allocating core structures, etc. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

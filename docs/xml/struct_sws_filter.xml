@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_sws_filter" kind="struct" language="C++" prot="public">
+    <compoundname>SwsFilter</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sws_filter_1a6eefe9f0f67a9f24d282ed32bb9725d2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector* SwsFilter::lumH</definition>
+        <argsstring></argsstring>
+        <name>lumH</name>
+        <qualifiedname>SwsFilter::lumH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="403" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_filter_1abe07a7a5d01eba45fe6120691b078109" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector* SwsFilter::lumV</definition>
+        <argsstring></argsstring>
+        <name>lumV</name>
+        <qualifiedname>SwsFilter::lumV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="404" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_filter_1af0a5dbf3ce675d51ac2531a0e7ee58bf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector* SwsFilter::chrH</definition>
+        <argsstring></argsstring>
+        <name>chrH</name>
+        <qualifiedname>SwsFilter::chrH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="405" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sws_filter_1a4e196620d61289c6369acc4cf0b732bb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector* SwsFilter::chrV</definition>
+        <argsstring></argsstring>
+        <name>chrV</name>
+        <qualifiedname>SwsFilter::chrV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="406" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SwsFilter</label>
+        <link refid="struct_sws_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>chrH</edgelabel>
+          <edgelabel>chrV</edgelabel>
+          <edgelabel>lumH</edgelabel>
+          <edgelabel>lumV</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SwsVector</label>
+        <link refid="struct_sws_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="402" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="402" bodyend="407"/>
+    <listofallmembers>
+      <member refid="struct_sws_filter_1af0a5dbf3ce675d51ac2531a0e7ee58bf" prot="public" virt="non-virtual"><scope>SwsFilter</scope><name>chrH</name></member>
+      <member refid="struct_sws_filter_1a4e196620d61289c6369acc4cf0b732bb" prot="public" virt="non-virtual"><scope>SwsFilter</scope><name>chrV</name></member>
+      <member refid="struct_sws_filter_1a6eefe9f0f67a9f24d282ed32bb9725d2" prot="public" virt="non-virtual"><scope>SwsFilter</scope><name>lumH</name></member>
+      <member refid="struct_sws_filter_1abe07a7a5d01eba45fe6120691b078109" prot="public" virt="non-virtual"><scope>SwsFilter</scope><name>lumV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

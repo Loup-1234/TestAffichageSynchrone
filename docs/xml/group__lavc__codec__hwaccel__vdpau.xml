@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__codec__hwaccel__vdpau" kind="group">
+    <compoundname>lavc_codec_hwaccel_vdpau</compoundname>
+    <title>VDPAU Decoder and Renderer</title>
+    <innerfile refid="vdpau_8h">vdpau.h</innerfile>
+    <innerclass refid="struct_a_v_v_d_p_a_u_context" prot="public">AVVDPAUContext</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__codec__hwaccel__vdpau_1ga1f243045ef2673ebe2a50a8431f3dfa7" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* AVVDPAU_Render2) (struct AVCodecContext *, struct AVFrame *, const VdpPictureInfo *, uint32_t, const VdpBitstreamBuffer *)</definition>
+        <argsstring>)(struct AVCodecContext *, struct AVFrame *, const VdpPictureInfo *, uint32_t, const VdpBitstreamBuffer *)</argsstring>
+        <name>AVVDPAU_Render2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavc__codec__hwaccel__vdpau_1gad70cdc6d639f2d1a6a9342969837df64" prot="public" static="no">
+        <type>struct AVVDPAUContext</type>
+        <definition>typedef struct AVVDPAUContext AVVDPAUContext</definition>
+        <argsstring></argsstring>
+        <name>AVVDPAUContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure is used to share data between the libavcodec library and the client video application. This structure will be allocated and stored in <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref> by <ref refid="group__lavc__codec__hwaccel__vdpau_1gac56d6b1b4478056afc0e0a8f52271afa" kindref="member">av_vdpau_bind_context()</ref>. Members can be set by the user once during initialization or through each AVCodecContext.get_buffer() function call. In any case, they must be valid prior to calling decoding functions.</para>
+<para>The size of this structure is not a part of the public ABI and must not be used outside of libavcodec. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="94" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__codec__hwaccel__vdpau_1gac56d6b1b4478056afc0e0a8f52271afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_vdpau_bind_context</definition>
+        <argsstring>(AVCodecContext *avctx, VdpDevice device, VdpGetProcAddress *get_proc_address, unsigned flags)</argsstring>
+        <name>av_vdpau_bind_context</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>avctx</declname>
+        </param>
+        <param>
+          <type>VdpDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>VdpGetProcAddress *</type>
+          <declname>get_proc_address</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Associate a VDPAU device with a codec context for hardware acceleration. This function is meant to be called from the get_format() codec callback, or earlier. It can also be called after <ref refid="group__lavc__misc_1gaf60b0e076f822abcb2700eb601d352a6" kindref="member">avcodec_flush_buffers()</ref> to change the underlying VDPAU device mid-stream (e.g. to recover from non-transparent display preemption).</para>
+<para><simplesect kind="note"><para>get_format() must return AV_PIX_FMT_VDPAU if this function completes successfully.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>decoding context whose get_format() callback is invoked </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VDPAU device handle to use for hardware acceleration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>get_proc_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VDPAU device driver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zero of more OR&apos;d AV_HWACCEL_FLAG_* flags</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, an AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="113" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" declline="113" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__codec__hwaccel__vdpau_1gad4354a22f2f4d44000515e836b7863af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_vdpau_get_surface_parameters</definition>
+        <argsstring>(AVCodecContext *avctx, VdpChromaType *type, uint32_t *width, uint32_t *height)</argsstring>
+        <name>av_vdpau_get_surface_parameters</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>avctx</declname>
+        </param>
+        <param>
+          <type>VdpChromaType *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the parameters to create an adequate VDPAU video surface for the codec context using VDPAU hardware decoding acceleration.</para>
+<para><simplesect kind="note"><para>Behavior is undefined if the context was not successfully bound to a VDPAU device using <ref refid="group__lavc__codec__hwaccel__vdpau_1gac56d6b1b4478056afc0e0a8f52271afa" kindref="member">av_vdpau_bind_context()</ref>.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the codec context being used for decoding the stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage space for the VDPAU video surface chroma type (or NULL to ignore) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage space for the VDPAU video surface pixel width (or NULL to ignore) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>storage space for the VDPAU video surface pixel height (or NULL to ignore)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="133" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" declline="133" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>VDPAU hardware acceleration has two modules<itemizedlist>
+<listitem><para>VDPAU decoding</para>
+</listitem><listitem><para>VDPAU presentation</para>
+</listitem></itemizedlist>
+</para>
+<para>The VDPAU decoding module parses all headers using FFmpeg parsing mechanisms and uses VDPAU for the actual decoding.</para>
+<para>As per the current implementation, the actual decoding and rendering (API calls) are done as part of the VDPAU presentation (vo_vdpau.c) module. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

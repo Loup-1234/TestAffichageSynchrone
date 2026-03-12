@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__video__spherical" kind="group">
+    <compoundname>lavu_video_spherical</compoundname>
+    <title>Spherical video mapping</title>
+    <innerfile refid="spherical_8h">spherical.h</innerfile>
+    <innerclass refid="struct_a_v_spherical_mapping" prot="public">AVSphericalMapping</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVSphericalProjection</name>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08a55efbae149ee7a6e327a66be7061d146" prot="public">
+          <name>AV_SPHERICAL_EQUIRECTANGULAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Video represents a sphere mapped on a flat surface using equirectangular projection. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08aa0a8bc866354ecb619493db502c4d103" prot="public">
+          <name>AV_SPHERICAL_CUBEMAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Video frame is split into 6 faces of a cube, and arranged on a 3x2 layout. Faces are oriented upwards for the front, left, right, and back faces. The up face is oriented so the top of the face is forwards and the down face is oriented so the top of the face is to the back. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08a768257247d4090b959ee1678f67bc9d3" prot="public">
+          <name>AV_SPHERICAL_EQUIRECTANGULAR_TILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Video represents a portion of a sphere mapped on a flat surface using equirectangular projection. The <ref refid="struct_a_v_spherical_mapping_1bounding" kindref="member">bounding</ref> fields indicate the position of the current video in a larger surface. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08ace661d0bac9b5872b6d5764cec07a106" prot="public">
+          <name>AV_SPHERICAL_HALF_EQUIRECTANGULAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Video frame displays as a 180 degree equirectangular projection. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08a2579e0b67dc996049d9ce5b0fedd704b" prot="public">
+          <name>AV_SPHERICAL_RECTILINEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Video frame displays on a flat, rectangular 2D surface. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08ae5f2ec120e5880ece6850c3e63ad4be4" prot="public">
+          <name>AV_SPHERICAL_FISHEYE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Fisheye projection (Apple). See: <ulink url="https://developer.apple.com/documentation/coremedia/cmprojectiontype/fisheye">https://developer.apple.com/documentation/coremedia/cmprojectiontype/fisheye</ulink> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08ad4e90c2fabdb7c37fdcf20588166f454" prot="public">
+          <name>AV_SPHERICAL_PARAMETRIC_IMMERSIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Parametric Immersive projection (Apple). See: <ulink url="https://developer.apple.com/documentation/coremedia/cmprojectiontype/parametricimmersive">https://developer.apple.com/documentation/coremedia/cmprojectiontype/parametricimmersive</ulink> </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Projection of the video surface(s) on a sphere. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="47" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="47" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__video__spherical_1gafa6b8950d48d0b56ae869e5cf0bcc94e" prot="public" static="no">
+        <type>struct AVSphericalMapping</type>
+        <definition>typedef struct AVSphericalMapping AVSphericalMapping</definition>
+        <argsstring></argsstring>
+        <name>AVSphericalMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure describes how to handle spherical videos, outlining information about projection, initial layout, and any other view modifier.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="group__lavu__video__spherical_1ga2c987049465600d3a50e760fdaee9c60" kindref="member">av_spherical_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="201" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__video__spherical_1ga2c987049465600d3a50e760fdaee9c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_spherical_mapping" kindref="compound">AVSphericalMapping</ref> *</type>
+        <definition>AVSphericalMapping * av_spherical_alloc</definition>
+        <argsstring>(size_t *size)</argsstring>
+        <name>av_spherical_alloc</name>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a AVSphericalVideo structure and initialize its fields to default values.</para>
+<para><simplesect kind="return"><para>the newly allocated struct or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="209" column="20" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" declline="209" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__spherical_1ga9c9a5f996f41bd0fe6f4c9908a70f98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_spherical_tile_bounds</definition>
+        <argsstring>(const AVSphericalMapping *map, size_t width, size_t height, size_t *left, size_t *top, size_t *right, size_t *bottom)</argsstring>
+        <name>av_spherical_tile_bounds</name>
+        <param>
+          <type>const <ref refid="struct_a_v_spherical_mapping" kindref="compound">AVSphericalMapping</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert the <ref refid="struct_a_v_spherical_mapping_1bounding" kindref="member">bounding</ref> fields from an AVSphericalVideo from 0.32 fixed point to pixels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVSphericalVideo map to read bound values from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the current frame or stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the current frame or stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixels from the left edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixels from the top edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixels from the right edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bottom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixels from the bottom edge. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="223" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" declline="223" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__spherical_1ga9b1f15e9eed3750144ec8322b9777c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_spherical_projection_name</definition>
+        <argsstring>(enum AVSphericalProjection projection)</argsstring>
+        <name>av_spherical_projection_name</name>
+        <param>
+          <type>enum <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref></type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provide a human-readable name of a given <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of the <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref>, or &quot;unknown&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="235" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" declline="235" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__spherical_1ga539173e8b22176710e1e0b728e4bd22f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_spherical_from_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_spherical_from_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref> form a human-readable name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref> value, or -1 if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="244" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" declline="244" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A spherical video file contains surfaces that need to be mapped onto a sphere. Depending on how the frame was converted, a different distortion transformation or surface recomposition function needs to be applied before the video should be mapped and displayed. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

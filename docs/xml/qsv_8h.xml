@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="qsv_8h" kind="file" language="C++">
+    <compoundname>qsv.h</compoundname>
+    <includes local="no">mfxvideo.h</includes>
+    <includes refid="buffer_8h" local="yes">libavutil/buffer.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h</label>
+        <link refid="qsv_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mfxvideo.h</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_q_s_v_context" prot="public">AVQSVContext</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="qsv_8h_1a973ae2cf4442719590fb115cfce56d8d" prot="public" static="no">
+        <type>struct AVQSVContext</type>
+        <definition>typedef struct AVQSVContext AVQSVContext</definition>
+        <argsstring></argsstring>
+        <name>AVQSVContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct is used for communicating QSV parameters between libavcodec and the caller. It is managed by the caller and must be assigned to <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref>.<itemizedlist>
+<listitem><para>decoding: hwaccel_context must be set on return from the get_format() callback</para>
+</listitem><listitem><para>encoding: hwaccel_context must be set before <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref> </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="100" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="qsv_8h_1a37324c2ff1ceeb47fcf1048fde8dd4fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_q_s_v_context" kindref="compound">AVQSVContext</ref> *</type>
+        <definition>AVQSVContext * av_qsv_alloc_context</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_qsv_alloc_context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a new context.</para>
+<para>It must be freed by the caller with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="107" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" declline="107" declcolumn="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Intel<sp/>MediaSDK<sp/>QSV<sp/>public<sp/>API</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_QSV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_QSV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mfxvideo.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buffer_8h" kindref="compound">libavutil/buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="struct_a_v_q_s_v_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_q_s_v_context" kindref="compound">AVQSVContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="struct_a_v_q_s_v_context_1aa88e55219891596ee8205ae78cbca275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>mfxSession<sp/><ref refid="struct_a_v_q_s_v_context_1aa88e55219891596ee8205ae78cbca275" kindref="member">session</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="struct_a_v_q_s_v_context_1a6190ff613bf400fa6d7e5c78bacb4c00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_q_s_v_context_1a6190ff613bf400fa6d7e5c78bacb4c00" kindref="member">iopattern</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="struct_a_v_q_s_v_context_1a3c92105313bccdc0b7f63170ed9f992f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>mfxExtBuffer<sp/>**<ref refid="struct_a_v_q_s_v_context_1a3c92105313bccdc0b7f63170ed9f992f" kindref="member">ext_buffers</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_ext_buffers;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="struct_a_v_q_s_v_context_1a00b4f91c36429e719743c5a080856e33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_q_s_v_context_1a00b4f91c36429e719743c5a080856e33" kindref="member">opaque_alloc</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct_a_v_q_s_v_context_1a31ff5ab3cbbde801fdc264a6660e55e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_q_s_v_context_1a31ff5ab3cbbde801fdc264a6660e55e9" kindref="member">nb_opaque_surfaces</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="struct_a_v_q_s_v_context_1ae9a2a1e951ebdfc2640ea33077f0c67e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_q_s_v_context_1ae9a2a1e951ebdfc2640ea33077f0c67e" kindref="member">opaque_surfaces</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="struct_a_v_q_s_v_context_1a06f2493cfd72f41162e788e5247f5b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_q_s_v_context_1a06f2493cfd72f41162e788e5247f5b90" kindref="member">opaque_alloc_type</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/><ref refid="struct_a_v_q_s_v_context" kindref="compound">AVQSVContext</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="struct_a_v_q_s_v_context" kindref="compound">AVQSVContext</ref><sp/>*av_qsv_alloc_context(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVCODEC_QSV_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h"/>
+  </compounddef>
+</doxygen>

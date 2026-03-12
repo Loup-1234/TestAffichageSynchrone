@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_videotoolbox_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVideotoolboxContext</compoundname>
+    <includes refid="videotoolbox_8h" local="no">videotoolbox.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_videotoolbox_context_1ad2cb91b738049bee6245c312005f1e1c" prot="public" static="no" mutable="no">
+        <type>VTDecompressionSessionRef</type>
+        <definition>VTDecompressionSessionRef AVVideotoolboxContext::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>AVVideotoolboxContext::session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Videotoolbox decompression session object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="61" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_videotoolbox_context_1aca00ad4366a7446934e3b6571ed26e79" prot="public" static="no" mutable="no">
+        <type>OSType</type>
+        <definition>OSType AVVideotoolboxContext::cv_pix_fmt_type</definition>
+        <argsstring></argsstring>
+        <name>cv_pix_fmt_type</name>
+        <qualifiedname>AVVideotoolboxContext::cv_pix_fmt_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CVPixelBuffer Format Type that Videotoolbox will use for decoded frames. set by the caller. If this is set to 0, then no specific format is requested from the decoder, and its native format is output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="68" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_videotoolbox_context_1aa250940fe1997a68a739522f82ff36cf" prot="public" static="no" mutable="no">
+        <type>CMVideoFormatDescriptionRef</type>
+        <definition>CMVideoFormatDescriptionRef AVVideotoolboxContext::cm_fmt_desc</definition>
+        <argsstring></argsstring>
+        <name>cm_fmt_desc</name>
+        <qualifiedname>AVVideotoolboxContext::cm_fmt_desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreMedia Format Description that Videotoolbox will use to create the decompression session. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="73" column="33" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_videotoolbox_context_1a7d2a6770ceb12cf07948b1e6c9ad6916" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVideotoolboxContext::cm_codec_type</definition>
+        <argsstring></argsstring>
+        <name>cm_codec_type</name>
+        <qualifiedname>AVVideotoolboxContext::cm_codec_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoreMedia codec type that Videotoolbox will use to create the decompression session. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct holds all the information that needs to be passed between the caller and libavcodec for initializing Videotoolbox decoding. Its size is not a part of the public ABI, it must be allocated with av_videotoolbox_alloc_context() and freed with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="57" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="57" bodyend="79"/>
+    <listofallmembers>
+      <member refid="struct_a_v_videotoolbox_context_1a7d2a6770ceb12cf07948b1e6c9ad6916" prot="public" virt="non-virtual"><scope>AVVideotoolboxContext</scope><name>cm_codec_type</name></member>
+      <member refid="struct_a_v_videotoolbox_context_1aa250940fe1997a68a739522f82ff36cf" prot="public" virt="non-virtual"><scope>AVVideotoolboxContext</scope><name>cm_fmt_desc</name></member>
+      <member refid="struct_a_v_videotoolbox_context_1aca00ad4366a7446934e3b6571ed26e79" prot="public" virt="non-virtual"><scope>AVVideotoolboxContext</scope><name>cv_pix_fmt_type</name></member>
+      <member refid="struct_a_v_videotoolbox_context_1ad2cb91b738049bee6245c312005f1e1c" prot="public" virt="non-virtual"><scope>AVVideotoolboxContext</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

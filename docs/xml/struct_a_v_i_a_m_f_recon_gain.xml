@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_recon_gain" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFReconGain</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_recon_gain_1aa3aa06e3bf2c3f3ca73ccfe3af5e01c7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFReconGain::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFReconGain::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="149" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_recon_gain_1a6b86341dbc3b719fc10fded4b4c86ab8" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFReconGain::subblock_duration</definition>
+        <argsstring></argsstring>
+        <name>subblock_duration</name>
+        <qualifiedname>AVIAMFReconGain::subblock_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration for the given subblock, in units of 1 / <ref refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" kindref="member">parameter_rate</ref>. It must not be 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="156" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_recon_gain_1a8ce89f8e2616b8407f7a322c05b8b53d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVIAMFReconGain::recon_gain[6][12]</definition>
+        <argsstring>[6][12]</argsstring>
+        <name>recon_gain</name>
+        <qualifiedname>AVIAMFReconGain::recon_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of gain values to be applied to each channel for each layer defined in the Audio Element referencing the parent Parameter Definition. Values for layers where the AV_IAMF_LAYER_FLAG_RECON_GAIN flag is not set are undefined.</para>
+<para>Channel order is: FL, C, FR, SL, SR, TFL, TFR, BL, BR, TBL, TBR, LFE </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="166" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Recon Gain Info Parameter Data as defined in section 3.8.3 of IAMF.</para>
+<para><simplesect kind="note"><para>This struct&apos;s size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFReconGain</label>
+        <link refid="struct_a_v_i_a_m_f_recon_gain"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="148" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="148" bodyend="167"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_recon_gain_1aa3aa06e3bf2c3f3ca73ccfe3af5e01c7" prot="public" virt="non-virtual"><scope>AVIAMFReconGain</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_recon_gain_1a8ce89f8e2616b8407f7a322c05b8b53d" prot="public" virt="non-virtual"><scope>AVIAMFReconGain</scope><name>recon_gain</name></member>
+      <member refid="struct_a_v_i_a_m_f_recon_gain_1a6b86341dbc3b719fc10fded4b4c86ab8" prot="public" virt="non-virtual"><scope>AVIAMFReconGain</scope><name>subblock_duration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

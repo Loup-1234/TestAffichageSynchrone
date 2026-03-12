@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__frame__flags" kind="group">
+    <compoundname>lavu_frame_flags</compoundname>
+    <title>AV_FRAME_FLAGS</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__frame__flags_1gadddbce4ec0cc2ad4298cf6f266f97f6a" prot="public" static="no">
+        <name>AV_FRAME_FLAG_CORRUPT</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The frame data may be corrupted, e.g. due to decoding errors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="638" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame__flags_1gafe155269fc8dc3a484490bd19b86cc40" prot="public" static="no">
+        <name>AV_FRAME_FLAG_KEY</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag to mark frames that are keyframes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="642" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame__flags_1gaa0c693c70705b18c1c1346f520b6f9cc" prot="public" static="no">
+        <name>AV_FRAME_FLAG_DISCARD</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag to mark the frames which need to be decoded, but shouldn&apos;t be output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="646" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame__flags_1ga079e6fe667e9a3933c4a9fa1ea63a773" prot="public" static="no">
+        <name>AV_FRAME_FLAG_INTERLACED</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag to mark frames whose content is interlaced. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="650" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame__flags_1ga09c41b9f4fc18d6be1d9eedc81129016" prot="public" static="no">
+        <name>AV_FRAME_FLAG_TOP_FIELD_FIRST</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag to mark frames where the top field is displayed first if the content is interlaced. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="655" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame__flags_1ga401b6f93cd0449876b5407fbfb69555c" prot="public" static="no">
+        <name>AV_FRAME_FLAG_LOSSLESS</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A decoder can use this flag to mark frames which were originally encoded losslessly.</para>
+<para>For coding bitstream formats which support both lossless and lossy encoding, it is sometimes possible for a decoder to determine which method was used when the bitsream was encoded. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="663" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Flags describing additional frame properties. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

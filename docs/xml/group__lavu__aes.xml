@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__aes" kind="group">
+    <compoundname>lavu_aes</compoundname>
+    <title>AES</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__lavu__aes_1ga33e4afb2c0eb4d7ead8a5b0a7fed4142" prot="public" static="no" extern="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int av_aes_size</definition>
+        <argsstring></argsstring>
+        <name>av_aes_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" line="34" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" declline="34" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__aes_1ga4122428256b177af257a30a2438ecf25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVAES *</type>
+        <definition>struct AVAES * av_aes_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_aes_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVAES context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" line="41" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" declline="41" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes_1ga54975ad71f0eab2287e3e94d561d0aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_aes_init</definition>
+        <argsstring>(struct AVAES *a, const uint8_t *key, int key_bits, int decrypt)</argsstring>
+        <name>av_aes_init</name>
+        <param>
+          <type>struct AVAES *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key_bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an AVAES context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVAES context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>128, 192 or 256 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" line="51" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" declline="51" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes_1gae2572febc1bdf0b6dcb8b313da69e06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_crypt</definition>
+        <argsstring>(struct AVAES *a, uint8_t *dst, const uint8_t *src, int count, uint8_t *iv, int decrypt)</argsstring>
+        <name>av_aes_crypt</name>
+        <param>
+          <type>struct AVAES *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encrypt or decrypt a buffer using a previously initialized context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVAES context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 16 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization vector for CBC mode, if NULL then ECB will be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" line="63" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes.h" declline="63" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

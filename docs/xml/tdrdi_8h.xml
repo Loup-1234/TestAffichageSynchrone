@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="tdrdi_8h" kind="file" language="C++">
+    <compoundname>tdrdi.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="avassert_8h" local="yes">libavutil/avassert.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4">
+        <label>libavutil/avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="7">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h</label>
+        <link refid="tdrdi_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v3_d_reference_displays_info" prot="public">AV3DReferenceDisplaysInfo</innerclass>
+    <innerclass refid="struct_a_v3_d_reference_display" prot="public">AV3DReferenceDisplay</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavu__video__3d__reference__displays__info_1gaba5fc73f72c9172044043daed26c503f" kind="define"><name>AV_TDRDI_MAX_NUM_REF_DISPLAY</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__video__3d__reference__displays__info_1gaa0599facf2d339a3798679ae6ae48d86" kind="typedef"><name>AV3DReferenceDisplaysInfo</name></member>
+      <member refid="group__lavu__video__3d__reference__displays__info_1ga2254fb090a813e4f27c77ab6c9763571" kind="typedef"><name>AV3DReferenceDisplay</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__video__3d__reference__displays__info_1gad155446607de0ef57306cc65996ec88a" kind="function"><name>av_tdrdi_get_display</name></member>
+      <member refid="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" kind="function"><name>av_tdrdi_alloc</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Spherical video </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_TDRDI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_TDRDI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avassert_8h" kindref="compound">libavutil/avassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_TDRDI_MAX_NUM_REF_DISPLAY<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="struct_a_v3_d_reference_displays_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="struct_a_v3_d_reference_displays_info_1a32fb1649cdead7cb165dd07ed18e9f71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_displays_info_1a32fb1649cdead7cb165dd07ed18e9f71" kindref="member">prec_ref_display_width</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="struct_a_v3_d_reference_displays_info_1a93e382f060d36cef57df8c7a23e69a4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_displays_info_1a93e382f060d36cef57df8c7a23e69a4d" kindref="member">ref_viewing_distance_flag</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_a_v3_d_reference_displays_info_1a1962409930401cca59a216f7ec4de1df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_displays_info_1a1962409930401cca59a216f7ec4de1df" kindref="member">prec_ref_viewing_dist</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct_a_v3_d_reference_displays_info_1aad8223f953bd8ec4c5b4376a13155c56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_displays_info_1aad8223f953bd8ec4c5b4376a13155c56" kindref="member">num_ref_displays</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="struct_a_v3_d_reference_displays_info_1aca0152d7f06d69a92ba4c148fd10198c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v3_d_reference_displays_info_1aca0152d7f06d69a92ba4c148fd10198c" kindref="member">entries_offset</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="struct_a_v3_d_reference_displays_info_1a862d2e781c89b290a2363fa174004cb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v3_d_reference_displays_info_1a862d2e781c89b290a2363fa174004cb7" kindref="member">entry_size</ref>;</highlight></codeline>
+<codeline lineno="90" refid="group__lavu__video__3d__reference__displays__info_1gaa0599facf2d339a3798679ae6ae48d86" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="struct_a_v3_d_reference_display" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v3_d_reference_display" kindref="compound">AV3DReferenceDisplay</ref><sp/>{</highlight></codeline>
+<codeline lineno="104" refid="struct_a_v3_d_reference_display_1a22e583815ee5ad286e5ed36c095751b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_a_v3_d_reference_display_1a22e583815ee5ad286e5ed36c095751b1" kindref="member">left_view_id</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="struct_a_v3_d_reference_display_1a9f2ccd038663cab04fcfb3bb054300fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_a_v3_d_reference_display_1a9f2ccd038663cab04fcfb3bb054300fa" kindref="member">right_view_id</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="struct_a_v3_d_reference_display_1a70fbbe80c7a5fcf2ff756ca3a1c67e53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_display_1a70fbbe80c7a5fcf2ff756ca3a1c67e53" kindref="member">exponent_ref_display_width</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="struct_a_v3_d_reference_display_1a6e46cc50e6fd7971e23a9fe769cce7c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_display_1a6e46cc50e6fd7971e23a9fe769cce7c1" kindref="member">mantissa_ref_display_width</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="struct_a_v3_d_reference_display_1aaf59f38499f5a543d4e547c416bee660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_display_1aaf59f38499f5a543d4e547c416bee660" kindref="member">exponent_ref_viewing_distance</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="struct_a_v3_d_reference_display_1a202cf3dd3ae3e2daf30c2b71d6129420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_display_1a202cf3dd3ae3e2daf30c2b71d6129420" kindref="member">mantissa_ref_viewing_distance</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="struct_a_v3_d_reference_display_1a00d3e6bf2ec9072eb7f204a686a01721" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v3_d_reference_display_1a00d3e6bf2ec9072eb7f204a686a01721" kindref="member">additional_shift_present_flag</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="struct_a_v3_d_reference_display_1a26547f99ca25cda004994c8050450b7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_a_v3_d_reference_display_1a26547f99ca25cda004994c8050450b7b" kindref="member">num_sample_shift</ref>;</highlight></codeline>
+<codeline lineno="142" refid="group__lavu__video__3d__reference__displays__info_1ga2254fb090a813e4f27c77ab6c9763571" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v3_d_reference_display" kindref="compound">AV3DReferenceDisplay</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v3_d_reference_display" kindref="compound">AV3DReferenceDisplay</ref>*</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">av_tdrdi_get_display(<ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref><sp/>*tdrdi,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="avassert_8h_1aae204192396f78cc8c5cd7ad5c57c23f" kindref="member">av_assert0</ref>(idx<sp/>&lt;<sp/>tdrdi-&gt;num_ref_displays);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v3_d_reference_display" kindref="compound">AV3DReferenceDisplay</ref><sp/>*)((uint8_t<sp/>*)tdrdi<sp/>+<sp/>tdrdi-&gt;<ref refid="struct_a_v3_d_reference_displays_info_1aca0152d7f06d69a92ba4c148fd10198c" kindref="member">entries_offset</ref><sp/>+</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>*<sp/>tdrdi-&gt;<ref refid="struct_a_v3_d_reference_displays_info_1a862d2e781c89b290a2363fa174004cb7" kindref="member">entry_size</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" refkind="member"><highlight class="normal"><ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref><sp/>*<ref refid="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" kindref="member">av_tdrdi_alloc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_displays,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_TDRDI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h"/>
+  </compounddef>
+</doxygen>

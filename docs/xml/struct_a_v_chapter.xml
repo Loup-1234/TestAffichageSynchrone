@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_chapter" kind="struct" language="C++" prot="public">
+    <compoundname>AVChapter</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_chapter_1a067d8f6d76affe31403f99877b1c94bb" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVChapter::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>AVChapter::id</qualifiedname>
+        <briefdescription>
+<para>unique ID to identify the chapter </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1224" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_chapter_1acb5cb6ce9bb6b9f4b970a919f4899818" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVChapter::time_base</definition>
+        <argsstring></argsstring>
+        <name>time_base</name>
+        <qualifiedname>AVChapter::time_base</qualifiedname>
+        <briefdescription>
+<para>time base in which the start/end timestamps are specified </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1225" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_chapter_1a499a5062224e22249be6f2d16f74c449" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVChapter::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>AVChapter::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1226" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_chapter_1ab68f32dc07fac89b4364e86483b00f3e" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVChapter::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>AVChapter::end</qualifiedname>
+        <briefdescription>
+<para>chapter start/end time in time_base units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1226" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_chapter_1a998ea9c9f86547970d58f0b405d55332" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVChapter::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>AVChapter::metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1227" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVChapter</label>
+        <link refid="struct_a_v_chapter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1223" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1223" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="struct_a_v_chapter_1ab68f32dc07fac89b4364e86483b00f3e" prot="public" virt="non-virtual"><scope>AVChapter</scope><name>end</name></member>
+      <member refid="struct_a_v_chapter_1a067d8f6d76affe31403f99877b1c94bb" prot="public" virt="non-virtual"><scope>AVChapter</scope><name>id</name></member>
+      <member refid="struct_a_v_chapter_1a998ea9c9f86547970d58f0b405d55332" prot="public" virt="non-virtual"><scope>AVChapter</scope><name>metadata</name></member>
+      <member refid="struct_a_v_chapter_1a499a5062224e22249be6f2d16f74c449" prot="public" virt="non-virtual"><scope>AVChapter</scope><name>start</name></member>
+      <member refid="struct_a_v_chapter_1acb5cb6ce9bb6b9f4b970a919f4899818" prot="public" virt="non-virtual"><scope>AVChapter</scope><name>time_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_video_hint" kind="struct" language="C++" prot="public">
+    <compoundname>AVVideoHint</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_video_hint_1a8c59948afe07c6ea6306d5c9cb1e6864" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVideoHint::nb_rects</definition>
+        <argsstring></argsstring>
+        <name>nb_rects</name>
+        <qualifiedname>AVVideoHint::nb_rects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref> present.</para>
+<para>May be 0, in which case no per-rectangle information is present. In this case the values of rect_offset / rect_size are unspecified and should not be accessed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="50" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVideoHint::rect_offset</definition>
+        <argsstring></argsstring>
+        <name>rect_offset</name>
+        <qualifiedname>AVVideoHint::rect_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in bytes from the beginning of this structure at which the array of <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref> starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="56" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_hint_1aafab719d7fc4de8c93e4948ca2a8c825" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVideoHint::rect_size</definition>
+        <argsstring></argsstring>
+        <name>rect_size</name>
+        <qualifiedname>AVVideoHint::rect_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size in bytes of <ref refid="struct_a_v_video_rect" kindref="compound">AVVideoRect</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="61" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_hint_1a7db84ebdee0d01020dcc32a3bd57f5f5" prot="public" static="no" mutable="no">
+        <type>AVVideoHintType</type>
+        <definition>AVVideoHintType AVVideoHint::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVVideoHint::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="63" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" line="42" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h" bodystart="42" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct_a_v_video_hint_1a8c59948afe07c6ea6306d5c9cb1e6864" prot="public" virt="non-virtual"><scope>AVVideoHint</scope><name>nb_rects</name></member>
+      <member refid="struct_a_v_video_hint_1add47f99a03f1c06fe6898f5d569ab086" prot="public" virt="non-virtual"><scope>AVVideoHint</scope><name>rect_offset</name></member>
+      <member refid="struct_a_v_video_hint_1aafab719d7fc4de8c93e4948ca2a8c825" prot="public" virt="non-virtual"><scope>AVVideoHint</scope><name>rect_size</name></member>
+      <member refid="struct_a_v_video_hint_1a7db84ebdee0d01020dcc32a3bd57f5f5" prot="public" virt="non-virtual"><scope>AVVideoHint</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

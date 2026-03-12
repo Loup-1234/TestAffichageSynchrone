@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__math__csp" kind="group">
+    <compoundname>lavu_math_csp</compoundname>
+    <title>Colorspace Utility</title>
+    <innerfile refid="csp_8h">csp.h</innerfile>
+    <innerclass refid="struct_a_v_luma_coefficients" prot="public">AVLumaCoefficients</innerclass>
+    <innerclass refid="struct_a_v_c_i_exy" prot="public">AVCIExy</innerclass>
+    <innerclass refid="struct_a_v_primary_coefficients" prot="public">AVPrimaryCoefficients</innerclass>
+    <innerclass refid="struct_a_v_color_primaries_desc" prot="public">AVColorPrimariesDesc</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga1b6b9baa08e2a33adc6443d8cf4a28b5" prot="public" static="no">
+        <type>struct AVLumaCoefficients</type>
+        <definition>typedef struct AVLumaCoefficients AVLumaCoefficients</definition>
+        <argsstring></argsstring>
+        <name>AVLumaCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct containing luma coefficients to be used for RGB to YUV/YCoCg, or similar calculations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="50" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga785d12705463c0a64fc213487c17a6d3" prot="public" static="no">
+        <type>struct AVCIExy</type>
+        <definition>typedef struct AVCIExy AVCIExy</definition>
+        <argsstring></argsstring>
+        <name>AVCIExy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct containing chromaticity x and y values for the standard CIE 1931 chromaticity definition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="58" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga853d992bb10f40150dc982bd6594a896" prot="public" static="no">
+        <type>struct AVPrimaryCoefficients</type>
+        <definition>typedef struct AVPrimaryCoefficients AVPrimaryCoefficients</definition>
+        <argsstring></argsstring>
+        <name>AVPrimaryCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct defining the red, green, and blue primary locations in terms of CIE 1931 chromaticity x and y. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="66" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga5a11f2862052a01f3a5777b939237752" prot="public" static="no">
+        <type><ref refid="struct_a_v_c_i_exy" kindref="compound">AVCIExy</ref></type>
+        <definition>typedef AVCIExy AVWhitepointCoefficients</definition>
+        <argsstring></argsstring>
+        <name>AVWhitepointCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct defining white point location in terms of CIE 1931 chromaticity x and y. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="72" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga6dff72b62d340afbde5f5a5f248a4608" prot="public" static="no">
+        <type>struct AVColorPrimariesDesc</type>
+        <definition>typedef struct AVColorPrimariesDesc AVColorPrimariesDesc</definition>
+        <argsstring></argsstring>
+        <name>AVColorPrimariesDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Struct that contains both white point location and primaries location, providing the complete description of a color gamut. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="81" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" prot="public" static="no">
+        <type>double(*</type>
+        <definition>typedef double(* av_csp_trc_function) (double)</definition>
+        <argsstring>)(double)</argsstring>
+        <name>av_csp_trc_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function pointer representing a double -&gt; double transfer function that performs either an OETF transfer function, or alternatively an inverse EOTF function (in particular, for SMPTE ST 2084 / PQ). This function inputs linear light, and outputs gamma encoded light.</para>
+<para>See ITU-T H.273 for more information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="91" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* av_csp_eotf_function) (double Lw, double Lb, double c[3])</definition>
+        <argsstring>)(double Lw, double Lb, double c[3])</argsstring>
+        <name>av_csp_eotf_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function pointer representing an ITU EOTF transfer for a given reference display configuration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Lw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The white point luminance of the display, in nits (cd/m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Lb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The black point luminance of the display, in nits (cd/m^2). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="178" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__math__csp_1ga034901e0adcbebacb871f52a855a602a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_luma_coefficients" kindref="compound">AVLumaCoefficients</ref> *</type>
+        <definition>const AVLumaCoefficients * av_csp_luma_coeffs_from_avcsp</definition>
+        <argsstring>(enum AVColorSpace csp)</argsstring>
+        <name>av_csp_luma_coeffs_from_avcsp</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+          <declname>csp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the Luma coefficients necessary to construct a conversion matrix from an enum constant describing the colorspace. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>csp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An enum constant indicating YUV or similar colorspace. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Luma coefficients associated with that colorspace, or NULL if the constant is unknown to libavutil. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="100" column="26" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="100" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1ga70f19e851f0f0bfa24c56e62a540e477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref> *</type>
+        <definition>const AVColorPrimariesDesc * av_csp_primaries_desc_from_id</definition>
+        <argsstring>(enum AVColorPrimaries prm)</argsstring>
+        <name>av_csp_primaries_desc_from_id</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+          <declname>prm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves a complete gamut description from an enum constant describing the color primaries. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An enum constant indicating primaries </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A description of the colorspace gamut associated with that enum constant, or NULL if the constant is unknown to libavutil. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="109" column="28" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="109" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1ga1ad5a7e4fce153b115cbe23e405ea145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+        <definition>enum AVColorPrimaries av_csp_primaries_id_from_desc</definition>
+        <argsstring>(const AVColorPrimariesDesc *prm)</argsstring>
+        <name>av_csp_primaries_id_from_desc</name>
+        <param>
+          <type>const <ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref> *</type>
+          <declname>prm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detects which enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref> constant corresponds to the given complete gamut description. <simplesect kind="see"><para>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A description of the colorspace gamut </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enum constant associated with this gamut, or AVCOL_PRI_UNSPECIFIED if no clear match can be identified. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="119" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="119" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1gaee369159d52aec550c6aa2e5d9a0e65f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_csp_approximate_trc_gamma</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_approximate_trc_gamma</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine a suitable &apos;gamma&apos; value to match the supplied <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref>.</para>
+<para>See Apple Technical Note TN2257 (<ulink url="https://developer.apple.com/library/mac/technotes/tn2257/_index.html">https://developer.apple.com/library/mac/technotes/tn2257/_index.html</ulink>)</para>
+<para>This function returns the gamma exponent for the OETF. For example, sRGB is approximated by gamma 2.2, not by gamma 0.45455.</para>
+<para><simplesect kind="return"><para>Will return an approximation to the simple gamma function matching the supplied Transfer Characteristic, Will return 0.0 for any we cannot reasonably match against. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="134" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="134" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1gada7dfc457f1f433cc50381f51fb5a846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_csp_approximate_eotf_gamma</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_approximate_eotf_gamma</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine a suitable EOTF &apos;gamma&apos; value to match the supplied <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref>.</para>
+<para>This function returns the gamma value (exponent) for a simple pure power function approximation of the supplied <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref>, or 0. if no reasonable approximation exists.</para>
+<para>EOTF(v) = (L_w - L_b) * v^gamma + L_b</para>
+<para><simplesect kind="return"><para>Will return an approximation to the simple gamma function matching the supplied Transfer Characteristic EOTF, Will return 0.0 for any we cannot reasonably match against. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="150" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="150" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1ga55f130f366f96e0e2059811d575c2f03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kindref="member">av_csp_trc_function</ref></type>
+        <definition>av_csp_trc_function av_csp_trc_func_from_id</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_trc_func_from_id</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine the function needed to apply the given <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref> to linear input.</para>
+<para>The function returned should expect a nominal domain and range of [0.0-1.0] values outside of this range maybe valid depending on the chosen characteristic function.</para>
+<para><simplesect kind="return"><para>Will return pointer to the function matching the supplied Transfer Characteristic. If unspecified will return NULL: </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="164" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="164" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1gad725a18975d463093079b5a97c59b095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__math__csp_1ga0ce8a1b8f342255eca16c7b3e9e103bf" kindref="member">av_csp_trc_function</ref></type>
+        <definition>av_csp_trc_function av_csp_trc_func_inv_from_id</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_trc_func_inv_from_id</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the mathematical inverse of the corresponding TRC function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="169" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="169" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1gaee1601d6e7fac83548989aa7bed50cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kindref="member">av_csp_eotf_function</ref></type>
+        <definition>av_csp_eotf_function av_csp_itu_eotf</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_itu_eotf</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ITU EOTF corresponding to a given TRC. This converts from the signal level [0,1] to the raw output display luminance in nits (cd/m^2). This is done per channel in RGB space, except for AVCOL_TRC_SMPTE428, which assumes CIE XYZ in- and output.</para>
+<para><simplesect kind="return"><para>A pointer to the function implementing the given TRC, or NULL if no such function is defined.</para>
+</simplesect>
+<simplesect kind="note"><para>In general, the resulting function is defined (wherever possible) for out-of-range values, even though these values do not have a physical meaning on the given display. Users should clamp inputs (or outputs) if this behavior is not desired.</para>
+</simplesect>
+This is also the case for functions like PQ, which are defined over an absolute signal range independent of the target display capabilities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="197" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="197" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__csp_1gaa2e4fdd448becf7f104ea10914a7e290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__math__csp_1gaa44eb0f916052cf80c51536099c59843" kindref="member">av_csp_eotf_function</ref></type>
+        <definition>av_csp_eotf_function av_csp_itu_eotf_inv</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc)</argsstring>
+        <name>av_csp_itu_eotf_inv</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the mathematical inverse of the corresponding EOTF. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="202" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" declline="202" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1087 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="smpte__436m_8h" kind="file" language="C++">
+    <compoundname>smpte_436m.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h</label>
+        <link refid="smpte__436m_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_smpte436m_anc_iterator" prot="public">AVSmpte436mAncIterator</innerclass>
+    <innerclass refid="struct_a_v_smpte291m_anc8bit" prot="public">AVSmpte291mAnc8bit</innerclass>
+    <innerclass refid="struct_a_v_smpte436m_coded_anc" prot="public">AVSmpte436mCodedAnc</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="smpte__436m_8h_1ab36726d8e160eebf4bd09f7e695f9e19" prot="public" static="no">
+        <name>AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the payload capacity of <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> (and of AVSmpte291mAnc10bit when that gets added) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="89" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="smpte__436m_8h_1a53f95b88b78ab05f89a8ddbf0abd811d" prot="public" static="no">
+        <name>AV_SMPTE_436M_CODED_ANC_SAMPLE_CAPACITY</name>
+        <initializer>    (AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY + 4) /* 4 for did, sdid_or_dbn, data_count, and checksum */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max number of samples that can be stored in the payload of <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="107" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="107" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="define" id="smpte__436m_8h_1ad7c067a932f8e6ca32dae14748143a47" prot="public" static="no">
+        <name>AV_SMPTE_436M_CODED_ANC_PAYLOAD_CAPACITY</name>
+        <initializer>(((AV_SMPTE_436M_CODED_ANC_SAMPLE_CAPACITY + 2) / 3) * 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max number of bytes that can be stored in the payload of <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="110" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="smpte__436m_8h_1ade207bf5c8460d030db0a4a4f446847e" prot="public" static="no">
+        <name>AV_SMPTE_291M_ANC_DID_CTA_708</name>
+        <initializer>0x61</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AVSmpte291mAnc8bit::did when carrying CTA-708 data (for AV_CODEC_ID_EIA_608) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="237" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="smpte__436m_8h_1a2bcb3545fe80844dd02d3b7480677594" prot="public" static="no">
+        <name>AV_SMPTE_291M_ANC_SDID_CTA_708</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AVSmpte291mAnc8bit::sdid_or_dbn when carrying CTA-708 data (for AV_CODEC_ID_EIA_608) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="240" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVSmpte436mWrappingType</name>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75faa90f4cc5b512f8cbecf5f2c7dd3610d2" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FRAME</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fae05fb9801a1f5e970f7e281eb79a6221" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FIELD_1</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa53b670f8304d5eb6d869e00c4770a743" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FIELD_2</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa9279c27e0a08d02da1156fa163b22f1c" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_VANC_PROGRESSIVE_FRAME</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa90cfe9c22999e32b809af6941144e5c1" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FRAME</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa718949678e1d30462195dc12fda8d32f" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FIELD_1</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fae6e42dbc44a97198a38a82754c91fe5c" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FIELD_2</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa0ebc2a35cb499aef9b9b4309f96e7131" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_HANC_PROGRESSIVE_FRAME</name>
+          <initializer>= 0x14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1ac7cb76daf2fa204950d619745932e75fa48ca8bce11ef6f0c5c2e53c9aeaa3fda" prot="public">
+          <name>AV_SMPTE_436M_WRAPPING_TYPE_MAX</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>not a real wrapping type, just here to guarantee the enum is big enough </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapping Type from Table 7 (page 13) of: <ulink url="https://pub.smpte.org/latest/st436/s436m-2006.pdf">https://pub.smpte.org/latest/st436/s436m-2006.pdf</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="40" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="41" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVSmpte436mPayloadSampleCoding</name>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba233ed9e3a86e56ca8f55012a18c1e7a9" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_LUMA</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for VBI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba93ead86fd4ed577b80be844c0cabfe2b" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_COLOR_DIFF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for VBI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba8b026b95024a6d194032aa6fbbb00424" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_LUMA_AND_COLOR_DIFF</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for VBI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52bab00918f561af31683170497af3e54299" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba51bec3c0e6e55170b077d4fe154ded10" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_COLOR_DIFF</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba35cb77ee28841a8bfe314b6cd2015b61" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_AND_COLOR_DIFF</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52bacd9a299bbfb4f7b6a5d9e500dee47240" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_LUMA</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52badf4b8345ee1df18f2dedf8d9d2f0bef9" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_COLOR_DIFF</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52ba13651212a7e593d7f14d5264afee8fae" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_LUMA_AND_COLOR_DIFF</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>used for VBI and ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52bab2747ed4ca37fd82ebd125ab44b65e40" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_WITH_PARITY_ERROR</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52bab83280f943c3bf3ebd76378209636ff3" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_COLOR_DIFF_WITH_PARITY_ERROR</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52bab32f06457090b55aa114060cb044a8d8" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_AND_COLOR_DIFF_WITH_PARITY_ERROR</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only used for ANC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smpte__436m_8h_1a1c52667c283e01a6b3f7daae874fc52baf95d38e4673139567add88f59c026e68" prot="public">
+          <name>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_MAX</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>not a real sample coding, just here to guarantee the enum is big enough </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Payload Sample Coding from Table 4 (page 10) and Table 7 (page 13) of: <ulink url="https://pub.smpte.org/latest/st436/s436m-2006.pdf">https://pub.smpte.org/latest/st436/s436m-2006.pdf</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="58" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="59" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="smpte__436m_8h_1acc42a03c8bf1f6eb898d334d3ee9bd5b" prot="public" static="no">
+        <type>struct AVSmpte436mAncIterator</type>
+        <definition>typedef struct AVSmpte436mAncIterator AVSmpte436mAncIterator</definition>
+        <argsstring></argsstring>
+        <name>AVSmpte436mAncIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterator over the ANC packets in a single AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>&apos;s data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="34" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="smpte__436m_8h_1a8ce7d70ea6b075b0e52c0325a22a8bb0" prot="public" static="no">
+        <type>enum AVSmpte436mWrappingType</type>
+        <definition>typedef enum AVSmpte436mWrappingType AVSmpte436mWrappingType</definition>
+        <argsstring></argsstring>
+        <name>AVSmpte436mWrappingType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapping Type from Table 7 (page 13) of: <ulink url="https://pub.smpte.org/latest/st436/s436m-2006.pdf">https://pub.smpte.org/latest/st436/s436m-2006.pdf</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="52" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="smpte__436m_8h_1aa5d4d4423aa204bbf8d4f61b93a518e4" prot="public" static="no">
+        <type>enum AVSmpte436mPayloadSampleCoding</type>
+        <definition>typedef enum AVSmpte436mPayloadSampleCoding AVSmpte436mPayloadSampleCoding</definition>
+        <argsstring></argsstring>
+        <name>AVSmpte436mPayloadSampleCoding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Payload Sample Coding from Table 4 (page 10) and Table 7 (page 13) of: <ulink url="https://pub.smpte.org/latest/st436/s436m-2006.pdf">https://pub.smpte.org/latest/st436/s436m-2006.pdf</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="86" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="smpte__436m_8h_1a118cc2193d963e4c63590b58b0583466" prot="public" static="no">
+        <type>struct AVSmpte291mAnc8bit</type>
+        <definition>typedef struct AVSmpte291mAnc8bit AVSmpte291mAnc8bit</definition>
+        <argsstring></argsstring>
+        <name>AVSmpte291mAnc8bit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An ANC packet with an 8-bit payload. This can be decoded from <ref refid="struct_a_v_smpte436m_coded_anc_1aee12d0b734e5c1e9327f9c4d105df961" kindref="member">AVSmpte436mCodedAnc::payload</ref>.</para>
+<para>Note: Some ANC packets need a 10-bit payload, if stored in this struct, the most-significant 2 bits of each sample are discarded. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="104" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="smpte__436m_8h_1abeb5da28fae7d91929b714037bb6e2cf" prot="public" static="no">
+        <type>struct AVSmpte436mCodedAnc</type>
+        <definition>typedef struct AVSmpte436mCodedAnc AVSmpte436mCodedAnc</definition>
+        <argsstring></argsstring>
+        <name>AVSmpte436mCodedAnc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An encoded ANC packet within a single AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>&apos;s data. The repeated section of Table 7 (page 13) of: <ulink url="https://pub.smpte.org/latest/st436/s436m-2006.pdf">https://pub.smpte.org/latest/st436/s436m-2006.pdf</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="127" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="smpte__436m_8h_1ac5a2fc272e85d86f09d4c69bfde3fe2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_coded_anc_validate</definition>
+        <argsstring>(const AVSmpte436mCodedAnc *anc)</argsstring>
+        <name>av_smpte_436m_coded_anc_validate</name>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> *</type>
+          <declname>anc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Validate a <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> structure. Doesn&apos;t check if the payload is valid. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">anc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ANC packet to validate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR codes otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="134" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="134" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1a7f3a46a213a8c6abeea763e2156ea429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_anc_encode</definition>
+        <argsstring>(uint8_t *out, int size, int anc_packet_count, const AVSmpte436mCodedAnc *anc_packets)</argsstring>
+        <name>av_smpte_436m_anc_encode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anc_packet_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> *</type>
+          <declname>anc_packets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode ANC packets into a single AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>&apos;s data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">anc_packet_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of ANC packets to encode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">anc_packets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ANC packets to encode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of out. ignored if out is NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output bytes. Doesn&apos;t write anything if out is NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes written on success, AVERROR codes otherwise. If out is NULL, returns the number of bytes it would have written. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="145" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="145" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1a664853d51283f66ff5675baf4f33bf83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_anc_append</definition>
+        <argsstring>(struct AVPacket *pkt, int anc_packet_count, const AVSmpte436mCodedAnc *anc_packets)</argsstring>
+        <name>av_smpte_436m_anc_append</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anc_packet_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> *</type>
+          <declname>anc_packets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append more ANC packets to a single AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>&apos;s data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">anc_packet_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of ANC packets to encode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">anc_packets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ANC packets to encode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> to append to. it must either be size 0 or contain valid SMPTE_436M_ANC data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR codes otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="157" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="157" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1a412e3ed79a638449bd9f11ed6b0c481a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_anc_iter_init</definition>
+        <argsstring>(AVSmpte436mAncIterator *iter, const uint8_t *buf, int buf_size)</argsstring>
+        <name>av_smpte_436m_anc_iter_init</name>
+        <param>
+          <type><ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up iteration over the ANC packets in a single AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>&apos;s data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data from a AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the data from a AV_CODEC_ID_SMPTE_436M_ANC <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR codes otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="166" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="166" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1a09859566a59722199d0358df04e3d5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_anc_iter_next</definition>
+        <argsstring>(AVSmpte436mAncIterator *iter, AVSmpte436mCodedAnc *anc)</argsstring>
+        <name>av_smpte_436m_anc_iter_next</name>
+        <param>
+          <type><ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> *</type>
+          <declname>anc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next ANC packet from the iterator, advancing the iterator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">anc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The returned ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR_EOF when the iterator has reached the end, AVERROR codes otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="174" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="174" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1acf95a20fb4b35bffddbaed791b71e46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_436m_coded_anc_payload_size</definition>
+        <argsstring>(AVSmpte436mPayloadSampleCoding sample_coding, uint16_t sample_count)</argsstring>
+        <name>av_smpte_436m_coded_anc_payload_size</name>
+        <param>
+          <type>AVSmpte436mPayloadSampleCoding</type>
+          <declname>sample_coding</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sample_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum number of bytes needed to store a <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> payload. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_coding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the payload sample coding </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of samples stored in the payload </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns the minimum number of bytes needed, on error returns &lt; 0. always &lt;= SMPTE_436M_CODED_ANC_PAYLOAD_CAPACITY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="183" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="183" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1acc435dace4b65822db91b1abbdc9bca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_291m_anc_8bit_decode</definition>
+        <argsstring>(AVSmpte291mAnc8bit *out, AVSmpte436mPayloadSampleCoding sample_coding, uint16_t sample_count, const uint8_t *payload, void *log_ctx)</argsstring>
+        <name>av_smpte_291m_anc_8bit_decode</name>
+        <param>
+          <type><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>AVSmpte436mPayloadSampleCoding</type>
+          <declname>sample_coding</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>sample_count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode a <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> payload into <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sample_coding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the payload sample coding </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sample_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of samples stored in the payload </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the bytes storing the payload, the needed size can be obtained from avpriv_smpte_436m_coded_anc_payload_size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer for av_log </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoded ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns 0 on success, otherwise &lt; 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="196" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="196" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1af2dd81124b333f32d92a73e3048a9964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_smpte_291m_anc_8bit_fill_checksum</definition>
+        <argsstring>(AVSmpte291mAnc8bit *anc)</argsstring>
+        <name>av_smpte_291m_anc_8bit_fill_checksum</name>
+        <param>
+          <type><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> *</type>
+          <declname>anc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill in the correct checksum for a <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">anc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="206" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="206" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1aac992a932536a6e602dbbf6802b52a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_291m_anc_8bit_get_sample_count</definition>
+        <argsstring>(const AVSmpte291mAnc8bit *anc, AVSmpte436mPayloadSampleCoding sample_coding, void *log_ctx)</argsstring>
+        <name>av_smpte_291m_anc_8bit_get_sample_count</name>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> *</type>
+          <declname>anc</declname>
+        </param>
+        <param>
+          <type>AVSmpte436mPayloadSampleCoding</type>
+          <declname>sample_coding</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the sample count needed to encode a <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> into a <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> payload <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">anc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sample_coding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample coding. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer for av_log </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns the sample count on success, otherwise &lt; 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="215" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="215" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1a10012bd38aa95ef3e830c7345cbcb11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_291m_anc_8bit_encode</definition>
+        <argsstring>(AVSmpte436mCodedAnc *out, uint16_t line_number, AVSmpte436mWrappingType wrapping_type, AVSmpte436mPayloadSampleCoding sample_coding, const AVSmpte291mAnc8bit *payload, void *log_ctx)</argsstring>
+        <name>av_smpte_291m_anc_8bit_encode</name>
+        <param>
+          <type><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>line_number</declname>
+        </param>
+        <param>
+          <type>AVSmpte436mWrappingType</type>
+          <declname>wrapping_type</declname>
+        </param>
+        <param>
+          <type>AVSmpte436mPayloadSampleCoding</type>
+          <declname>sample_coding</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode a <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> into a <ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">line_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the line number the ANC packet is on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wrapping_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wrapping type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sample_coding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the payload sample coding </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ANC packet to encode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer for av_log </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encoded ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns 0 on success, otherwise &lt; 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="229" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="229" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="smpte__436m_8h_1ae3482ccb34461cd4c131e060565761d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_smpte_291m_anc_8bit_extract_cta_708</definition>
+        <argsstring>(const AVSmpte291mAnc8bit *anc, uint8_t *cc_data, void *log_ctx)</argsstring>
+        <name>av_smpte_291m_anc_8bit_extract_cta_708</name>
+        <param>
+          <type>const <ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref> *</type>
+          <declname>anc</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>cc_data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to decode an ANC packet into EIA-608/CTA-708 data (AV_CODEC_ID_EIA_608). This <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">anc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ANC packet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context pointer for av_log </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">cc_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to store the extracted EIA-608/CTA-708 data, you can pass NULL to not store the data. the required size is 3 * cc_count bytes. SMPTE_291M_ANC_PAYLOAD_CAPACITY is always enough size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns cc_count (&gt;= 0) on success, AVERROR(EAGAIN) if it wasn&apos;t a CTA-708 ANC packet, &lt; 0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="252" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" declline="252" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MXF<sp/>SMPTE-436M<sp/>VBI/ANC<sp/>parsing<sp/>functions</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2025<sp/>Jacob<sp/>Lifshay</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_SMPTE_436M_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_SMPTE_436M_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_a_v_smpte436m_anc_iterator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>anc_packets_left;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_left;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data_left;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVSmpte436mWrappingType</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FIELD_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_VANC_FIELD_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_VANC_PROGRESSIVE_FRAME<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x11,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FIELD_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x12,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_HANC_FIELD_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x13,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_HANC_PROGRESSIVE_FRAME<sp/>=<sp/>0x14,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_WRAPPING_TYPE_MAX<sp/>=<sp/>0xFF,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/>AVSmpte436mWrappingType;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVSmpte436mPayloadSampleCoding</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_LUMA<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_COLOR_DIFF<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_1BIT_LUMA_AND_COLOR_DIFF<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_COLOR_DIFF<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_AND_COLOR_DIFF<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_LUMA<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_COLOR_DIFF<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_10BIT_LUMA_AND_COLOR_DIFF<sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_WITH_PARITY_ERROR<sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_COLOR_DIFF_WITH_PARITY_ERROR<sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_8BIT_LUMA_AND_COLOR_DIFF_WITH_PARITY_ERROR<sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SMPTE_436M_PAYLOAD_SAMPLE_CODING_MAX<sp/>=<sp/>0xFF,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/>AVSmpte436mPayloadSampleCoding;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="struct_a_v_smpte291m_anc8bit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>did;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>sdid_or_dbn;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data_count;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>payload[AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY];</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>checksum;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_SMPTE_436M_CODED_ANC_SAMPLE_CAPACITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY<sp/>+<sp/>4)<sp/></highlight><highlight class="comment">/*<sp/>4<sp/>for<sp/>did,<sp/>sdid_or_dbn,<sp/>data_count,<sp/>and<sp/>checksum<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_SMPTE_436M_CODED_ANC_PAYLOAD_CAPACITY<sp/>(((AV_SMPTE_436M_CODED_ANC_SAMPLE_CAPACITY<sp/>+<sp/>2)<sp/>/<sp/>3)<sp/>*<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="struct_a_v_smpte436m_coded_anc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_number;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>AVSmpte436mWrappingType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrapping_type;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>AVSmpte436mPayloadSampleCoding<sp/>payload_sample_coding;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>payload_sample_count;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>payload_array_length;</highlight></codeline>
+<codeline lineno="126" refid="struct_a_v_smpte436m_coded_anc_1aee12d0b734e5c1e9327f9c4d105df961" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_smpte436m_coded_anc_1aee12d0b734e5c1e9327f9c4d105df961" kindref="member">payload</ref>[AV_SMPTE_436M_CODED_ANC_PAYLOAD_CAPACITY];</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}<sp/><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_coded_anc_validate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/>*anc);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_anc_encode(uint8_t<sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anc_packet_count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/>*anc_packets);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_anc_append(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anc_packet_count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/>*anc_packets);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_anc_iter_init(<ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref><sp/>*iter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="struct_a_v_packet_1a3bf81872813551fe9343dd0e09993e38" kindref="member">buf</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_size);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_anc_iter_next(<ref refid="struct_a_v_smpte436m_anc_iterator" kindref="compound">AVSmpte436mAncIterator</ref><sp/>*iter,<sp/><ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/>*anc);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_436m_coded_anc_payload_size(AVSmpte436mPayloadSampleCoding<sp/>sample_coding,<sp/>uint16_t<sp/>sample_count);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_291m_anc_8bit_decode(<ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*out,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVSmpte436mPayloadSampleCoding<sp/>sample_coding,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample_count,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*payload,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_smpte_291m_anc_8bit_fill_checksum(<ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/>*anc);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_291m_anc_8bit_get_sample_count(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/><sp/><sp/><sp/><sp/><sp/>*anc,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVSmpte436mPayloadSampleCoding<sp/>sample_coding,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_291m_anc_8bit_encode(<ref refid="struct_a_v_smpte436m_coded_anc" kindref="compound">AVSmpte436mCodedAnc</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*out,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_number,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVSmpte436mWrappingType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrapping_type,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVSmpte436mPayloadSampleCoding<sp/>sample_coding,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/><sp/><sp/><sp/><sp/><sp/>*payload,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_SMPTE_291M_ANC_DID_CTA_708<sp/>0x61</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_SMPTE_291M_ANC_SDID_CTA_708<sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_smpte_291m_anc_8bit_extract_cta_708(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_smpte291m_anc8bit" kindref="compound">AVSmpte291mAnc8bit</ref><sp/>*anc,<sp/>uint8_t<sp/>*cc_data,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVCODEC_SMPTE_436M_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h"/>
+  </compounddef>
+</doxygen>

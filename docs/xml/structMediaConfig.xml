@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structMediaConfig" kind="struct" language="C++" prot="public">
+    <compoundname>MediaConfig</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMediaConfig_1a8cc79f72bdb427e77d43b9fb92c187c3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::ioBufferSize</definition>
+        <argsstring></argsstring>
+        <name>ioBufferSize</name>
+        <qualifiedname>MediaConfig::ioBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="141" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1aca6bfd3965b8319bedf9eec7e3f1bbdf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::videoQueueSize</definition>
+        <argsstring></argsstring>
+        <name>videoQueueSize</name>
+        <qualifiedname>MediaConfig::videoQueueSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="143" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1a906c3e8703e76455f839d83fecf26dfe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::audioQueueSize</definition>
+        <argsstring></argsstring>
+        <name>audioQueueSize</name>
+        <qualifiedname>MediaConfig::audioQueueSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="144" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1aa9bc10b23cfeeb7d985afaa1c5035768" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::audioDecodedBufferSize</definition>
+        <argsstring></argsstring>
+        <name>audioDecodedBufferSize</name>
+        <qualifiedname>MediaConfig::audioDecodedBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="145" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1a9f492bac8bddb16d315ee9d1e9c89584" prot="public" static="no" mutable="no">
+        <type>enum AVSampleFormat</type>
+        <definition>enum AVSampleFormat MediaConfig::audioOutputFmt</definition>
+        <argsstring></argsstring>
+        <name>audioOutputFmt</name>
+        <qualifiedname>MediaConfig::audioOutputFmt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="146" column="20" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1a2614e92da2d9bda95143d4e0d51eae15" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::audioOutputChannels</definition>
+        <argsstring></argsstring>
+        <name>audioOutputChannels</name>
+        <qualifiedname>MediaConfig::audioOutputChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="147" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1ac98f2ae789e44a75bf3cf3e214e03911" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MediaConfig::maxAllowedDelay[STREAM_COUNT]</definition>
+        <argsstring>[STREAM_COUNT]</argsstring>
+        <name>maxAllowedDelay</name>
+        <qualifiedname>MediaConfig::maxAllowedDelay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="148" column="8" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1ac67ed75e096a79156c8dc36b1384cc87" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::audioMaxUpdateSize</definition>
+        <argsstring></argsstring>
+        <name>audioMaxUpdateSize</name>
+        <qualifiedname>MediaConfig::audioMaxUpdateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="151" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaConfig_1a739fd665117945784bbaf67ee9dab515" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaConfig::audioStreamBufferSize</definition>
+        <argsstring></argsstring>
+        <name>audioStreamBufferSize</name>
+        <qualifiedname>MediaConfig::audioStreamBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="152" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="152" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="139" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="140" bodyend="153"/>
+    <listofallmembers>
+      <member refid="structMediaConfig_1aa9bc10b23cfeeb7d985afaa1c5035768" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioDecodedBufferSize</name></member>
+      <member refid="structMediaConfig_1ac67ed75e096a79156c8dc36b1384cc87" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioMaxUpdateSize</name></member>
+      <member refid="structMediaConfig_1a2614e92da2d9bda95143d4e0d51eae15" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioOutputChannels</name></member>
+      <member refid="structMediaConfig_1a9f492bac8bddb16d315ee9d1e9c89584" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioOutputFmt</name></member>
+      <member refid="structMediaConfig_1a906c3e8703e76455f839d83fecf26dfe" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioQueueSize</name></member>
+      <member refid="structMediaConfig_1a739fd665117945784bbaf67ee9dab515" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>audioStreamBufferSize</name></member>
+      <member refid="structMediaConfig_1a8cc79f72bdb427e77d43b9fb92c187c3" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>ioBufferSize</name></member>
+      <member refid="structMediaConfig_1ac98f2ae789e44a75bf3cf3e214e03911" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>maxAllowedDelay</name></member>
+      <member refid="structMediaConfig_1aca6bfd3965b8319bedf9eec7e3f1bbdf" prot="public" virt="non-virtual"><scope>MediaConfig</scope><name>videoQueueSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

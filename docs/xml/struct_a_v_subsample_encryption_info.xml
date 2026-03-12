@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_subsample_encryption_info" kind="struct" language="C++" prot="public">
+    <compoundname>AVSubsampleEncryptionInfo</compoundname>
+    <includes refid="encryption__info_8h" local="no">encryption_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_subsample_encryption_info_1aae4b75d9e9948da9de53b0e419eef3f8" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVSubsampleEncryptionInfo::bytes_of_clear_data</definition>
+        <argsstring></argsstring>
+        <name>bytes_of_clear_data</name>
+        <qualifiedname>AVSubsampleEncryptionInfo::bytes_of_clear_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes that are clear. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="27" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_subsample_encryption_info_1ad6dd17f1be1daf4f5982689a5debb935" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVSubsampleEncryptionInfo::bytes_of_protected_data</definition>
+        <argsstring></argsstring>
+        <name>bytes_of_protected_data</name>
+        <qualifiedname>AVSubsampleEncryptionInfo::bytes_of_protected_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes that are protected. If using pattern encryption, the pattern applies to only the protected bytes; if not using pattern encryption, all these bytes are encrypted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="34" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This file is part of FFmpeg.</para>
+<para>FFmpeg is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</para>
+<para>FFmpeg is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</para>
+<para>You should have received a copy of the GNU Lesser General Public License along with FFmpeg; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="25" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="25" bodyend="35"/>
+    <listofallmembers>
+      <member refid="struct_a_v_subsample_encryption_info_1aae4b75d9e9948da9de53b0e419eef3f8" prot="public" virt="non-virtual"><scope>AVSubsampleEncryptionInfo</scope><name>bytes_of_clear_data</name></member>
+      <member refid="struct_a_v_subsample_encryption_info_1ad6dd17f1be1daf4f5982689a5debb935" prot="public" virt="non-virtual"><scope>AVSubsampleEncryptionInfo</scope><name>bytes_of_protected_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

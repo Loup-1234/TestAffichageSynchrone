@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_d_r_plus_percentile" kind="struct" language="C++" prot="public">
+    <compoundname>AVHDRPlusPercentile</compoundname>
+    <includes refid="hdr__dynamic__metadata_8h" local="no">hdr_dynamic_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_percentile_1aeff9d52406d5b9366d3e9786dd4d7b8e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVHDRPlusPercentile::percentage</definition>
+        <argsstring></argsstring>
+        <name>percentage</name>
+        <qualifiedname>AVHDRPlusPercentile::percentage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The percentage value corresponding to a specific percentile linearized RGB value in the processing window in the scene. The value shall be in the range of 0 to100, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="45" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_plus_percentile_1abae29b301fffeba0b7978a3cac4793d3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRPlusPercentile::percentile</definition>
+        <argsstring></argsstring>
+        <name>percentile</name>
+        <qualifiedname>AVHDRPlusPercentile::percentile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The linearized maxRGB value at a specific percentile in the processing window in the scene. The value shall be in the range of 0 to 1, inclusive and in multiples of 0.00001. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="52" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents the percentile at a specific percentage in a distribution. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVHDRPlusPercentile</label>
+        <link refid="struct_a_v_h_d_r_plus_percentile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>percentile</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" line="39" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h" bodystart="39" bodyend="53"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_d_r_plus_percentile_1aeff9d52406d5b9366d3e9786dd4d7b8e" prot="public" virt="non-virtual"><scope>AVHDRPlusPercentile</scope><name>percentage</name></member>
+      <member refid="struct_a_v_h_d_r_plus_percentile_1abae29b301fffeba0b7978a3cac4793d3" prot="public" virt="non-virtual"><scope>AVHDRPlusPercentile</scope><name>percentile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

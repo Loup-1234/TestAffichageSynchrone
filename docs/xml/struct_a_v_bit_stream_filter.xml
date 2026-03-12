@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_bit_stream_filter" kind="struct" language="C++" prot="public">
+    <compoundname>AVBitStreamFilter</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_bit_stream_filter_1a33c3cb51bd13060da35481655b41e4e5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVBitStreamFilter::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVBitStreamFilter::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="112" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_bit_stream_filter_1a4b5aec694a5537263378a2347ace5fbb" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref> *</type>
+        <definition>enum AVCodecID* AVBitStreamFilter::codec_ids</definition>
+        <argsstring></argsstring>
+        <name>codec_ids</name>
+        <qualifiedname>AVBitStreamFilter::codec_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of codec ids supported by the filter, terminated by AV_CODEC_ID_NONE. May be NULL, in that case the bitstream filter works with any codec id. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="119" column="25" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_bit_stream_filter_1a33948e4c7fb99c38c5147b4e452108d9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVBitStreamFilter::priv_class</definition>
+        <argsstring></argsstring>
+        <name>priv_class</name>
+        <qualifiedname>AVBitStreamFilter::priv_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for the private data, used to declare bitstream filter private AVOptions. This field is NULL for bitstream filters that do not declare any options.</para>
+<para>If this field is non-NULL, the first member of the filter private data must be a pointer to <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>, which will be set by libavcodec generic code to this class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="130" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVBitStreamFilter</label>
+        <link refid="struct_a_v_bit_stream_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="111" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="111" bodyend="131"/>
+    <listofallmembers>
+      <member refid="struct_a_v_bit_stream_filter_1a4b5aec694a5537263378a2347ace5fbb" prot="public" virt="non-virtual"><scope>AVBitStreamFilter</scope><name>codec_ids</name></member>
+      <member refid="struct_a_v_bit_stream_filter_1a33c3cb51bd13060da35481655b41e4e5" prot="public" virt="non-virtual"><scope>AVBitStreamFilter</scope><name>name</name></member>
+      <member refid="struct_a_v_bit_stream_filter_1a33948e4c7fb99c38c5147b4e452108d9" prot="public" virt="non-virtual"><scope>AVBitStreamFilter</scope><name>priv_class</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

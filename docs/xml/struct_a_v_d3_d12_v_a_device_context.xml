@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d3_d12_v_a_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVD3D12VADeviceContext</compoundname>
+    <includes refid="hwcontext__d3d12va_8h" local="no">hwcontext_d3d12va.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1a39e2b3a4184f1cbd598d3df7e0ca5c0b" prot="public" static="no" mutable="no">
+        <type>ID3D12Device *</type>
+        <definition>ID3D12Device* AVD3D12VADeviceContext::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <qualifiedname>AVD3D12VADeviceContext::device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device used for objects creation and access. This can also be used to set the libavcodec decoding device.</para>
+<para>Can be set by the user. This is the only mandatory field - the other device context fields are set from this and are available for convenience.</para>
+<para>Deallocating the <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref> will always release this interface, and it does not matter whether it was user-allocated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="54" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1ae3966a7c21d4dd1b3c4d4f431b70bd9c" prot="public" static="no" mutable="no">
+        <type>ID3D12VideoDevice *</type>
+        <definition>ID3D12VideoDevice* AVD3D12VADeviceContext::video_device</definition>
+        <argsstring></argsstring>
+        <name>video_device</name>
+        <qualifiedname>AVD3D12VADeviceContext::video_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If unset, this will be set from the device field on init.</para>
+<para>Deallocating the <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref> will always release this interface, and it does not matter whether it was user-allocated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="62" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1a8af426b80845e6582106bdc429ffdd66" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVD3D12VADeviceContext::lock) (void *lock_ctx)</definition>
+        <argsstring>)(void *lock_ctx)</argsstring>
+        <name>lock</name>
+        <qualifiedname>AVD3D12VADeviceContext::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callbacks for locking. They protect access to the internal staging texture (for av_hwframe_transfer_data() calls). They do NOT protect access to hwcontext or decoder state in general.</para>
+<para>If unset on init, the hwcontext implementation will set them to use an internal mutex.</para>
+<para>The underlying lock must be recursive. lock_ctx is for free use by the locking implementation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="75" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1a058b46bb74932bbbdc1ae9eb33504736" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVD3D12VADeviceContext::unlock) (void *lock_ctx)</definition>
+        <argsstring>)(void *lock_ctx)</argsstring>
+        <name>unlock</name>
+        <qualifiedname>AVD3D12VADeviceContext::unlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="76" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1a4f35c65fbc551d01b06bc8b8e27b18fe" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVD3D12VADeviceContext::lock_ctx</definition>
+        <argsstring></argsstring>
+        <name>lock_ctx</name>
+        <qualifiedname>AVD3D12VADeviceContext::lock_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="77" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1aa0a92f3fada8214fd5514b6f0e717329" prot="public" static="no" mutable="no">
+        <type>D3D12_RESOURCE_FLAGS</type>
+        <definition>D3D12_RESOURCE_FLAGS AVD3D12VADeviceContext::resource_flags</definition>
+        <argsstring></argsstring>
+        <name>resource_flags</name>
+        <qualifiedname>AVD3D12VADeviceContext::resource_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource flags to be applied to D3D12 resources allocated for frames using this device context.</para>
+<para>If unset, this will be D3D12_RESOURCE_FLAG_NONE.</para>
+<para>It applies globally to all <ref refid="struct_a_v_d3_d12_v_a_frames_context" kindref="compound">AVD3D12VAFramesContext</ref> allocated from this device context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="87" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_device_context_1ad38e48aedd55809dd6bf660270a8a93f" prot="public" static="no" mutable="no">
+        <type>D3D12_HEAP_FLAGS</type>
+        <definition>D3D12_HEAP_FLAGS AVD3D12VADeviceContext::heap_flags</definition>
+        <argsstring></argsstring>
+        <name>heap_flags</name>
+        <qualifiedname>AVD3D12VADeviceContext::heap_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Heap flags to be applied to D3D12 resources allocated for frames using this device context.</para>
+<para>If unset, this will be D3D12_HEAP_FLAG_NONE.</para>
+<para>It applies globally to all <ref refid="struct_a_v_d3_d12_v_a_frames_context" kindref="compound">AVD3D12VAFramesContext</ref> allocated from this device context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="97" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="43" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="43" bodyend="98"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1a39e2b3a4184f1cbd598d3df7e0ca5c0b" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>device</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1ad38e48aedd55809dd6bf660270a8a93f" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>heap_flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1a8af426b80845e6582106bdc429ffdd66" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>lock</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1a4f35c65fbc551d01b06bc8b8e27b18fe" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>lock_ctx</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1aa0a92f3fada8214fd5514b6f0e717329" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>resource_flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1a058b46bb74932bbbdc1ae9eb33504736" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>unlock</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_device_context_1ae3966a7c21d4dd1b3c4d4f431b70bd9c" prot="public" virt="non-virtual"><scope>AVD3D12VADeviceContext</scope><name>video_device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

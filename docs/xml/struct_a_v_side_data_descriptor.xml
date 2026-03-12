@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_side_data_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVSideDataDescriptor</compoundname>
+    <includes refid="frame_8h" local="no">frame.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_side_data_descriptor_1acbb44b51ddeebffdb50ba8e6a2461c6a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVSideDataDescriptor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVSideDataDescriptor::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Human-readable side data description. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="334" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_side_data_descriptor_1aa42624f508291def9226914e7bfacd7f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVSideDataDescriptor::props</definition>
+        <argsstring></argsstring>
+        <name>props</name>
+        <qualifiedname>AVSideDataDescriptor::props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Side data property flags, a combination of <ref refid="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" kindref="member">AVSideDataProps</ref> values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="339" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct describes the properties of a side data type. Its instance corresponding to a given type can be obtained from <ref refid="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" kindref="member">av_frame_side_data_desc()</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="330" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="330" bodyend="340"/>
+    <listofallmembers>
+      <member refid="struct_a_v_side_data_descriptor_1acbb44b51ddeebffdb50ba8e6a2461c6a" prot="public" virt="non-virtual"><scope>AVSideDataDescriptor</scope><name>name</name></member>
+      <member refid="struct_a_v_side_data_descriptor_1aa42624f508291def9226914e7bfacd7f" prot="public" virt="non-virtual"><scope>AVSideDataDescriptor</scope><name>props</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

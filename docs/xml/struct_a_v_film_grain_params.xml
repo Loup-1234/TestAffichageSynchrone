@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_film_grain_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilmGrainParams</compoundname>
+    <includes refid="film__grain__params_8h" local="no">film_grain_params.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1ab423e30922ba95b14658c1a61aacc59e" prot="public" static="no" mutable="no">
+        <type>enum AVFilmGrainParamsType</type>
+        <definition>enum AVFilmGrainParamsType AVFilmGrainParams::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVFilmGrainParams::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the codec for which this structure is valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="205" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1abff3ec031f8e4dab7762a2314f77c152" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVFilmGrainParams::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>AVFilmGrainParams::seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seed to use for the synthesis process, if the codec allows for it.</para>
+<para><simplesect kind="note"><para>For H.264, this refers to <computeroutput>pic_offset</computeroutput> as defined in SMPTE RDD 5-2006. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="213" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1ab9cf96f4655c80720e9a090284165d05" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVFilmGrainParams::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intended display resolution. May be 0 if the codec does not specify any restrictions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="220" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a921dab20a37b703c55682aa756403b8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVFilmGrainParams::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="220" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a8361043a38b6dfdabd3fab9163c6b608" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::subsampling_x</definition>
+        <argsstring></argsstring>
+        <name>subsampling_x</name>
+        <qualifiedname>AVFilmGrainParams::subsampling_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intended subsampling ratio, or 0 for luma-only streams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="225" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1af2556e0a5bed07dcedb0428c1543d2a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::subsampling_y</definition>
+        <argsstring></argsstring>
+        <name>subsampling_y</name>
+        <qualifiedname>AVFilmGrainParams::subsampling_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="225" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a77f8a9033b1f02483d1c7b083e1e5765" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+        <definition>enum AVColorRange AVFilmGrainParams::color_range</definition>
+        <argsstring></argsstring>
+        <name>color_range</name>
+        <qualifiedname>AVFilmGrainParams::color_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intended video signal characteristics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="230" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a67c39f1df9f1bbc0ddd62c9a3ac3bd4e" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+        <definition>enum AVColorPrimaries AVFilmGrainParams::color_primaries</definition>
+        <argsstring></argsstring>
+        <name>color_primaries</name>
+        <qualifiedname>AVFilmGrainParams::color_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="231" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1acf59e18869b6c1d4cb3b8f3d1da39663" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+        <definition>enum AVColorTransferCharacteristic AVFilmGrainParams::color_trc</definition>
+        <argsstring></argsstring>
+        <name>color_trc</name>
+        <qualifiedname>AVFilmGrainParams::color_trc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="232" column="39" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1ae7426c0a6c3a5ce23db1ac051984691b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+        <definition>enum AVColorSpace AVFilmGrainParams::color_space</definition>
+        <argsstring></argsstring>
+        <name>color_space</name>
+        <qualifiedname>AVFilmGrainParams::color_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="233" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1aa7fd9b1df834d195ffcbb22afd9d9541" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::bit_depth_luma</definition>
+        <argsstring></argsstring>
+        <name>bit_depth_luma</name>
+        <qualifiedname>AVFilmGrainParams::bit_depth_luma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intended bit depth, or 0 for unknown/unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="238" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a8917938545b8d7393dcdc8d70181fc91" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainParams::bit_depth_chroma</definition>
+        <argsstring></argsstring>
+        <name>bit_depth_chroma</name>
+        <qualifiedname>AVFilmGrainParams::bit_depth_chroma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="239" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a716fd6fa99bdcaf4ba42df905eb967a6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_film_grain_a_o_m_params" kindref="compound">AVFilmGrainAOMParams</ref></type>
+        <definition>AVFilmGrainAOMParams AVFilmGrainParams::aom</definition>
+        <argsstring></argsstring>
+        <name>aom</name>
+        <qualifiedname>AVFilmGrainParams::aom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="247" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a760623dcd4a9089765347f4b0c21e506" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_film_grain_h274_params" kindref="compound">AVFilmGrainH274Params</ref></type>
+        <definition>AVFilmGrainH274Params AVFilmGrainParams::h274</definition>
+        <argsstring></argsstring>
+        <name>h274</name>
+        <qualifiedname>AVFilmGrainParams::h274</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="248" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_params_1a77519442487fd82b553d2aa4462e3392" prot="public" static="no" mutable="no">
+        <type>union <ref refid="struct_a_v_film_grain_params" kindref="compound">AVFilmGrainParams</ref></type>
+        <definition>union AVFilmGrainParams AVFilmGrainParams::codec</definition>
+        <argsstring></argsstring>
+        <name>codec</name>
+        <qualifiedname>AVFilmGrainParams::codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional fields may be added both here and in any structure included. If a codec&apos;s film grain structure differs slightly over another codec&apos;s, fields within may change meaning depending on the type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="249" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes how to handle film grain synthesis in video for specific codecs. Must be present on every frame where film grain is meant to be synthesised for correct presentation.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with av_film_grain_params_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVFilmGrainAOMParams</label>
+        <link refid="struct_a_v_film_grain_a_o_m_params"/>
+      </node>
+      <node id="3">
+        <label>AVFilmGrainH274Params</label>
+        <link refid="struct_a_v_film_grain_h274_params"/>
+      </node>
+      <node id="1">
+        <label>AVFilmGrainParams</label>
+        <link refid="struct_a_v_film_grain_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>aom</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>h274</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="201" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="201" bodyend="250"/>
+    <listofallmembers>
+      <member refid="struct_a_v_film_grain_params_1a716fd6fa99bdcaf4ba42df905eb967a6" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>aom</name></member>
+      <member refid="struct_a_v_film_grain_params_1a8917938545b8d7393dcdc8d70181fc91" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>bit_depth_chroma</name></member>
+      <member refid="struct_a_v_film_grain_params_1aa7fd9b1df834d195ffcbb22afd9d9541" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>bit_depth_luma</name></member>
+      <member refid="struct_a_v_film_grain_params_1a77519442487fd82b553d2aa4462e3392" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>codec</name></member>
+      <member refid="struct_a_v_film_grain_params_1a67c39f1df9f1bbc0ddd62c9a3ac3bd4e" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>color_primaries</name></member>
+      <member refid="struct_a_v_film_grain_params_1a77f8a9033b1f02483d1c7b083e1e5765" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>color_range</name></member>
+      <member refid="struct_a_v_film_grain_params_1ae7426c0a6c3a5ce23db1ac051984691b" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>color_space</name></member>
+      <member refid="struct_a_v_film_grain_params_1acf59e18869b6c1d4cb3b8f3d1da39663" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>color_trc</name></member>
+      <member refid="struct_a_v_film_grain_params_1a760623dcd4a9089765347f4b0c21e506" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>h274</name></member>
+      <member refid="struct_a_v_film_grain_params_1a921dab20a37b703c55682aa756403b8b" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>height</name></member>
+      <member refid="struct_a_v_film_grain_params_1abff3ec031f8e4dab7762a2314f77c152" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>seed</name></member>
+      <member refid="struct_a_v_film_grain_params_1a8361043a38b6dfdabd3fab9163c6b608" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>subsampling_x</name></member>
+      <member refid="struct_a_v_film_grain_params_1af2556e0a5bed07dcedb0428c1543d2a5" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>subsampling_y</name></member>
+      <member refid="struct_a_v_film_grain_params_1ab423e30922ba95b14658c1a61aacc59e" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>type</name></member>
+      <member refid="struct_a_v_film_grain_params_1ab9cf96f4655c80720e9a090284165d05" prot="public" virt="non-virtual"><scope>AVFilmGrainParams</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

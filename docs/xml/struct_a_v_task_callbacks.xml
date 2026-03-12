@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_task_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>AVTaskCallbacks</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_task_callbacks_1af91335271e1014ea24b0159a48977e62" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVTaskCallbacks::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <qualifiedname>AVTaskCallbacks::user_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="32" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_task_callbacks_1a657daaa05ceaccaecc3f0c88471ebed4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVTaskCallbacks::local_context_size</definition>
+        <argsstring></argsstring>
+        <name>local_context_size</name>
+        <qualifiedname>AVTaskCallbacks::local_context_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="34" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_task_callbacks_1a33bb58291ba86ec3a9dee4871e193113" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVTaskCallbacks::priority_higher) (const AVTask *a, const AVTask *b)</definition>
+        <argsstring>)(const AVTask *a, const AVTask *b)</argsstring>
+        <name>priority_higher</name>
+        <qualifiedname>AVTaskCallbacks::priority_higher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="37" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_task_callbacks_1ac456c713c592b378e74f6733c0839a83" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVTaskCallbacks::ready) (const AVTask *t, void *user_data)</definition>
+        <argsstring>)(const AVTask *t, void *user_data)</argsstring>
+        <name>ready</name>
+        <qualifiedname>AVTaskCallbacks::ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="40" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_task_callbacks_1ae9d7885f948272ce4f0d2b79720f98e5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVTaskCallbacks::run) (AVTask *t, void *local_context, void *user_data)</definition>
+        <argsstring>)(AVTask *t, void *local_context, void *user_data)</argsstring>
+        <name>run</name>
+        <qualifiedname>AVTaskCallbacks::run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="43" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" line="31" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/executor.h" bodystart="31" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct_a_v_task_callbacks_1a657daaa05ceaccaecc3f0c88471ebed4" prot="public" virt="non-virtual"><scope>AVTaskCallbacks</scope><name>local_context_size</name></member>
+      <member refid="struct_a_v_task_callbacks_1a33bb58291ba86ec3a9dee4871e193113" prot="public" virt="non-virtual"><scope>AVTaskCallbacks</scope><name>priority_higher</name></member>
+      <member refid="struct_a_v_task_callbacks_1ac456c713c592b378e74f6733c0839a83" prot="public" virt="non-virtual"><scope>AVTaskCallbacks</scope><name>ready</name></member>
+      <member refid="struct_a_v_task_callbacks_1ae9d7885f948272ce4f0d2b79720f98e5" prot="public" virt="non-virtual"><scope>AVTaskCallbacks</scope><name>run</name></member>
+      <member refid="struct_a_v_task_callbacks_1af91335271e1014ea24b0159a48977e62" prot="public" virt="non-virtual"><scope>AVTaskCallbacks</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

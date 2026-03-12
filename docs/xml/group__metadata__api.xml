@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__metadata__api" kind="group">
+    <compoundname>metadata_api</compoundname>
+    <title>Public Metadata API</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The metadata API allows libavformat to export metadata tags to a client application when demuxing. Conversely it allows a client application to set metadata when muxing.</para>
+<para>Metadata is exported or set as pairs of key/value strings in the &apos;metadata&apos; fields of the <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>, <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref>, <ref refid="struct_a_v_chapter" kindref="compound">AVChapter</ref> and <ref refid="struct_a_v_program" kindref="compound">AVProgram</ref> structs using the <ref refid="group__lavu__dict" kindref="compound">AVDictionary</ref> API. Like all strings in FFmpeg, metadata is assumed to be UTF-8 encoded Unicode. Note that metadata exported by demuxers isn&apos;t checked to be valid UTF-8 in most cases.</para>
+<para>Important concepts to keep in mind:<itemizedlist>
+<listitem><para>Keys are unique; there can never be 2 tags with the same key. This is also meant semantically, i.e., a demuxer should not knowingly produce several keys that are literally different but semantically identical. E.g., key=Author5, key=Author6. In this example, all authors must be placed in the same tag.</para>
+</listitem><listitem><para>Metadata is flat, not hierarchical; there are no subtags. If you want to store, e.g., the email address of the child of producer Alice and actor Bob, that could have key=alice_and_bobs_childs_email_address.</para>
+</listitem><listitem><para>Several modifiers can be applied to the tag name. This is done by appending a dash character (&apos;-&apos;) and the modifier name in the order they appear in the list below <ndash/> e.g. foo-eng-sort, not foo-sort-eng.<itemizedlist>
+<listitem><para>language <ndash/> a tag whose value is localized for a particular language is appended with the ISO 639-2/B 3-letter language code. For example: Author-ger=Michael, Author-eng=Mike The original/default language is in the unqualified &quot;Author&quot; tag. A demuxer should set a default if it sets any translated tag.</para>
+</listitem><listitem><para>sorting <ndash/> a modified version of a tag that should be used for sorting will have &apos;-sort&apos; appended. E.g. artist=&quot;The Beatles&quot;, artist-sort=&quot;Beatles, The&quot;.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Some protocols and demuxers support metadata updates. After a successful call to <ref refid="group__lavf__decoding_1ga4fdb3084415a82e3810de6ee60e46a61" kindref="member">av_read_frame()</ref>, <ref refid="struct_a_v_format_context_1a0302506d4b3434da77b8b3db43821aa0" kindref="member">AVFormatContext.event_flags</ref> or <ref refid="struct_a_v_stream_1ab76e176c2a1d1ff09ec9c0bb88dc25e9" kindref="member">AVStream.event_flags</ref> will be updated to indicate if metadata changed. In order to detect metadata changes on a stream, you need to loop through all streams in the <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> and check their individual event_flags.</para>
+</listitem><listitem><para>Demuxers attempt to export metadata in a generic format, however tags with no generic equivalents are left as they are stored in the container. Follows a list of generic tag names:</para>
+</listitem></itemizedlist>
+</para>
+<para><verbatim>album        -- name of the set this work belongs to
+album_artist -- main creator of the set/album, if different from artist.
+                e.g. &quot;Various Artists&quot; for compilation albums.
+artist       -- main creator of the work
+comment      -- any additional description of the file.
+composer     -- who composed the work, if different from artist.
+copyright    -- name of copyright holder.
+creation_time-- date when the file was created, preferably in ISO 8601.
+date         -- date when the work was created, preferably in ISO 8601.
+disc         -- number of a subset, e.g. disc in a multi-disc collection.
+encoder      -- name/settings of the software/hardware that produced the file.
+encoded_by   -- person/group who created the file.
+filename     -- original name of the file.
+genre        -- &lt;self-evident&gt;.
+language     -- main language in which the work is performed, preferably
+                in ISO 639-2 format. Multiple languages can be specified by
+                separating them with commas.
+performer    -- artist who performed the work, if different from artist.
+                E.g for &quot;Also sprach Zarathustra&quot;, artist would be &quot;Richard
+                Strauss&quot; and performer &quot;London Philharmonic Orchestra&quot;.
+publisher    -- name of the label/publisher.
+service_name     -- name of the service in broadcasting (channel name).
+service_provider -- name of the service provider in broadcasting.
+title        -- name of the work.
+track        -- number of this work in the set, can be in form current/total.
+variant_bitrate -- the total bitrate of the bitrate variant that the current stream is part of
+</verbatim></para>
+<para>Look in the examples section for an application example how to use the Metadata API. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

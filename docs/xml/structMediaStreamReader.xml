@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structMediaStreamReader" kind="struct" language="C++" prot="public">
+    <compoundname>MediaStreamReader</compoundname>
+    <includes refid="raymedia_8h" local="no">raymedia.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMediaStreamReader_1a2535b594891e3dc1af9048a24a4d07a7" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* MediaStreamReader::readFn) (void *userData, uint8_t *buffer, int bufferSize)</definition>
+        <argsstring>)(void *userData, uint8_t *buffer, int bufferSize)</argsstring>
+        <name>readFn</name>
+        <qualifiedname>MediaStreamReader::readFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="73" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaStreamReader_1a91a8f8ce5ff8d6aec6ef1ffbaca11a0c" prot="public" static="no" mutable="no">
+        <type>int64_t(*</type>
+        <definition>int64_t(* MediaStreamReader::seekFn) (void *userData, int64_t offset, int whence)</definition>
+        <argsstring>)(void *userData, int64_t offset, int whence)</argsstring>
+        <name>seekFn</name>
+        <qualifiedname>MediaStreamReader::seekFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="74" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaStreamReader_1a3f6a57a685a78e6bd0e6c8e7e4c10b04" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MediaStreamReader::userData</definition>
+        <argsstring></argsstring>
+        <name>userData</name>
+        <qualifiedname>MediaStreamReader::userData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="75" column="10" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds the data needed to implement a custom stream reader. Used to define custom read and seek behaviors for media input streams. </para>
+    </detaileddescription>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="71" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="72" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structMediaStreamReader_1a2535b594891e3dc1af9048a24a4d07a7" prot="public" virt="non-virtual"><scope>MediaStreamReader</scope><name>readFn</name></member>
+      <member refid="structMediaStreamReader_1a91a8f8ce5ff8d6aec6ef1ffbaca11a0c" prot="public" virt="non-virtual"><scope>MediaStreamReader</scope><name>seekFn</name></member>
+      <member refid="structMediaStreamReader_1a3f6a57a685a78e6bd0e6c8e7e4c10b04" prot="public" virt="non-virtual"><scope>MediaStreamReader</scope><name>userData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

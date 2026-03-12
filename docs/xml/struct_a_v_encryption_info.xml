@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_encryption_info" kind="struct" language="C++" prot="public">
+    <compoundname>AVEncryptionInfo</compoundname>
+    <includes refid="encryption__info_8h" local="no">encryption_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1ae0525acdfc0976caa7824da69e69108c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::scheme</definition>
+        <argsstring></argsstring>
+        <name>scheme</name>
+        <qualifiedname>AVEncryptionInfo::scheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The fourcc encryption scheme, in big-endian byte order. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="45" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a419cb6a7096045c0d17eb57ad5de5c5a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::crypt_byte_block</definition>
+        <argsstring></argsstring>
+        <name>crypt_byte_block</name>
+        <qualifiedname>AVEncryptionInfo::crypt_byte_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only used for pattern encryption. This is the number of 16-byte blocks that are encrypted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="51" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a07101d72147615f4e794630b5003fdb3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::skip_byte_block</definition>
+        <argsstring></argsstring>
+        <name>skip_byte_block</name>
+        <qualifiedname>AVEncryptionInfo::skip_byte_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only used for pattern encryption. This is the number of 16-byte blocks that are clear. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="57" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a63649ca3be8a587136decc7837d8f0b0" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVEncryptionInfo::key_id</definition>
+        <argsstring></argsstring>
+        <name>key_id</name>
+        <qualifiedname>AVEncryptionInfo::key_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The ID of the key used to encrypt the packet. This should always be 16 bytes long, but may be changed in the future. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="63" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1aa60828f2d9f03b10953cdae6d9a52c62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::key_id_size</definition>
+        <argsstring></argsstring>
+        <name>key_id_size</name>
+        <qualifiedname>AVEncryptionInfo::key_id_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="64" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a36258773710a13cbe7e652853dd65709" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVEncryptionInfo::iv</definition>
+        <argsstring></argsstring>
+        <name>iv</name>
+        <qualifiedname>AVEncryptionInfo::iv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initialization vector. This may have been zero-filled to be the correct block size. This should always be 16 bytes long, but may be changed in the future. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="71" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1ad7656cb4ce7cf286472f3854e0f091f6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::iv_size</definition>
+        <argsstring></argsstring>
+        <name>iv_size</name>
+        <qualifiedname>AVEncryptionInfo::iv_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="72" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a7512fb530e6dfad559d46f6c3832ef6a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_subsample_encryption_info" kindref="compound">AVSubsampleEncryptionInfo</ref> *</type>
+        <definition>AVSubsampleEncryptionInfo* AVEncryptionInfo::subsamples</definition>
+        <argsstring></argsstring>
+        <name>subsamples</name>
+        <qualifiedname>AVEncryptionInfo::subsamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array of subsample encryption info specifying how parts of the sample are encrypted. If there are no subsamples, then the whole sample is encrypted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="79" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_info_1a6df1f28804425659902da964e4799ad6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInfo::subsample_count</definition>
+        <argsstring></argsstring>
+        <name>subsample_count</name>
+        <qualifiedname>AVEncryptionInfo::subsample_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="80" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This describes encryption info for a packet. This contains frame-specific info for how to decrypt the packet before passing it to the decoder.</para>
+<para>The size of this struct is not part of the public ABI. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVEncryptionInfo</label>
+        <link refid="struct_a_v_encryption_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>subsamples</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVSubsampleEncryptionInfo</label>
+        <link refid="struct_a_v_subsample_encryption_info"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="43" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="43" bodyend="81"/>
+    <listofallmembers>
+      <member refid="struct_a_v_encryption_info_1a419cb6a7096045c0d17eb57ad5de5c5a" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>crypt_byte_block</name></member>
+      <member refid="struct_a_v_encryption_info_1a36258773710a13cbe7e652853dd65709" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>iv</name></member>
+      <member refid="struct_a_v_encryption_info_1ad7656cb4ce7cf286472f3854e0f091f6" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>iv_size</name></member>
+      <member refid="struct_a_v_encryption_info_1a63649ca3be8a587136decc7837d8f0b0" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>key_id</name></member>
+      <member refid="struct_a_v_encryption_info_1aa60828f2d9f03b10953cdae6d9a52c62" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>key_id_size</name></member>
+      <member refid="struct_a_v_encryption_info_1ae0525acdfc0976caa7824da69e69108c" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>scheme</name></member>
+      <member refid="struct_a_v_encryption_info_1a07101d72147615f4e794630b5003fdb3" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>skip_byte_block</name></member>
+      <member refid="struct_a_v_encryption_info_1a6df1f28804425659902da964e4799ad6" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>subsample_count</name></member>
+      <member refid="struct_a_v_encryption_info_1a7512fb530e6dfad559d46f6c3832ef6a" prot="public" virt="non-virtual"><scope>AVEncryptionInfo</scope><name>subsamples</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

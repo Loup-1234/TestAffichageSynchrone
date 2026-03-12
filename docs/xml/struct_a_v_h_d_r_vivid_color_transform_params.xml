@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_d_r_vivid_color_transform_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVHDRVividColorTransformParams</compoundname>
+    <includes refid="hdr__dynamic__vivid__metadata_8h" local="no">hdr_dynamic_vivid_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1ab9bf21054ecf260342e1c974f80060e3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorTransformParams::minimum_maxrgb</definition>
+        <argsstring></argsstring>
+        <name>minimum_maxrgb</name>
+        <qualifiedname>AVHDRVividColorTransformParams::minimum_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the minimum brightness of the displayed content. The values should be in the range of 0.0 to 1.0, inclusive and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="185" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1a8c493fab8c5f1ffdc67fb3f4858f2760" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorTransformParams::average_maxrgb</definition>
+        <argsstring></argsstring>
+        <name>average_maxrgb</name>
+        <qualifiedname>AVHDRVividColorTransformParams::average_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the average brightness of the displayed content. The values should be in the range of 0.0 to 1.0, inclusive and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="192" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1a19a35abccff2cb1a87662ac6ac3ebaea" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorTransformParams::variance_maxrgb</definition>
+        <argsstring></argsstring>
+        <name>variance_maxrgb</name>
+        <qualifiedname>AVHDRVividColorTransformParams::variance_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the variance brightness of the displayed content. The values should be in the range of 0.0 to 1.0, inclusive and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="199" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1ae6ce67f85f3f6ba7fa162f43b65d25ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorTransformParams::maximum_maxrgb</definition>
+        <argsstring></argsstring>
+        <name>maximum_maxrgb</name>
+        <qualifiedname>AVHDRVividColorTransformParams::maximum_maxrgb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the maximum brightness of the displayed content. The values should be in the range of 0.0 to 1.0, inclusive and in multiples of 1/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="206" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1a9170d676c78e090c72a13e4af34990d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorTransformParams::tone_mapping_mode_flag</definition>
+        <argsstring></argsstring>
+        <name>tone_mapping_mode_flag</name>
+        <qualifiedname>AVHDRVividColorTransformParams::tone_mapping_mode_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag indicates that the metadata for the tone mapping function in the processing window is present (for value of 1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="212" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1afafb72fdb1d91eee56a86be337eb9807" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorTransformParams::tone_mapping_param_num</definition>
+        <argsstring></argsstring>
+        <name>tone_mapping_param_num</name>
+        <qualifiedname>AVHDRVividColorTransformParams::tone_mapping_param_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of tone mapping param. The value shall be in the range of 1 to 2, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="218" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1a6a1893c846e1914e6d72c9a38ecff576" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" kindref="compound">AVHDRVividColorToneMappingParams</ref></type>
+        <definition>AVHDRVividColorToneMappingParams AVHDRVividColorTransformParams::tm_params[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>tm_params</name>
+        <qualifiedname>AVHDRVividColorTransformParams::tm_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The color tone mapping parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="223" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1ad8b591931e37699b6567cd19d76dbf74" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorTransformParams::color_saturation_mapping_flag</definition>
+        <argsstring></argsstring>
+        <name>color_saturation_mapping_flag</name>
+        <qualifiedname>AVHDRVividColorTransformParams::color_saturation_mapping_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag indicates that the metadata for the color saturation mapping in the processing window is present (for value of 1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="229" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1abc747fae740a68cba61412552677b5af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVividColorTransformParams::color_saturation_num</definition>
+        <argsstring></argsstring>
+        <name>color_saturation_num</name>
+        <qualifiedname>AVHDRVividColorTransformParams::color_saturation_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of color saturation param. The value shall be in the range of 0 to 7, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="235" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid_color_transform_params_1a7e31ff133f1f096430964d8f0ea3ec37" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVividColorTransformParams::color_saturation_gain[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>color_saturation_gain</name>
+        <qualifiedname>AVHDRVividColorTransformParams::color_saturation_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the color correction strength parameter. The values should be in the range of 0.0 to 2.0, inclusive and in multiples of 1/128. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="242" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color transform parameters at a processing window in a dynamic metadata for CUVA 005.1:2021. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AVHDRVivid3SplineParams</label>
+        <link refid="struct_a_v_h_d_r_vivid3_spline_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>enable_strength</edgelabel>
+          <edgelabel>th_delta1</edgelabel>
+          <edgelabel>th_delta2</edgelabel>
+          <edgelabel>th_enable</edgelabel>
+          <edgelabel>th_enable_mb</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVHDRVividColorToneMappingParams</label>
+        <link refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base_param_Delta</edgelabel>
+          <edgelabel>base_param_m_a</edgelabel>
+          <edgelabel>base_param_m_b</edgelabel>
+          <edgelabel>base_param_m_m</edgelabel>
+          <edgelabel>base_param_m_n</edgelabel>
+          <edgelabel>base_param_m_p</edgelabel>
+          <edgelabel>targeted_system_display_maximum_luminance</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>three_spline</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVHDRVividColorTransformParams</label>
+        <link refid="struct_a_v_h_d_r_vivid_color_transform_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>average_maxrgb</edgelabel>
+          <edgelabel>color_saturation_gain</edgelabel>
+          <edgelabel>maximum_maxrgb</edgelabel>
+          <edgelabel>minimum_maxrgb</edgelabel>
+          <edgelabel>variance_maxrgb</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tm_params</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="179" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="179" bodyend="243"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1a8c493fab8c5f1ffdc67fb3f4858f2760" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>average_maxrgb</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1a7e31ff133f1f096430964d8f0ea3ec37" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>color_saturation_gain</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1ad8b591931e37699b6567cd19d76dbf74" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>color_saturation_mapping_flag</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1abc747fae740a68cba61412552677b5af" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>color_saturation_num</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1ae6ce67f85f3f6ba7fa162f43b65d25ce" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>maximum_maxrgb</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1ab9bf21054ecf260342e1c974f80060e3" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>minimum_maxrgb</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1a6a1893c846e1914e6d72c9a38ecff576" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>tm_params</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1a9170d676c78e090c72a13e4af34990d2" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>tone_mapping_mode_flag</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1afafb72fdb1d91eee56a86be337eb9807" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>tone_mapping_param_num</name></member>
+      <member refid="struct_a_v_h_d_r_vivid_color_transform_params_1a19a35abccff2cb1a87662ac6ac3ebaea" prot="public" virt="non-virtual"><scope>AVHDRVividColorTransformParams</scope><name>variance_maxrgb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_format_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVFormatContext</compoundname>
+    <includes refid="avformat_8h" local="no">avformat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_format_context_1a0c396740b9a2487aa57d4352d2dc1687" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVFormatContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVFormatContext::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for logging and <ref refid="group__avoptions" kindref="compound">AVOptions</ref>. Set by <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref>. Exports (de)muxer private options if they exist. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1269" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a6c01f25ef062e0398b0b55dd337246ed" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> *</type>
+        <definition>const struct AVInputFormat* AVFormatContext::iformat</definition>
+        <argsstring></argsstring>
+        <name>iformat</name>
+        <qualifiedname>AVFormatContext::iformat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The input container format.</para>
+<para>Demuxing only, set by <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1276" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+        <definition>const struct AVOutputFormat* AVFormatContext::oformat</definition>
+        <argsstring></argsstring>
+        <name>oformat</name>
+        <qualifiedname>AVFormatContext::oformat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The output container format.</para>
+<para>Muxing only, must be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1283" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ac4c0777e54085af2f3f1b27130e2b21b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVFormatContext::priv_data</definition>
+        <argsstring></argsstring>
+        <name>priv_data</name>
+        <qualifiedname>AVFormatContext::priv_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Format private data. This is an AVOptions-enabled struct if and only if iformat/oformat.priv_class is not NULL.</para>
+<para><itemizedlist>
+<listitem><para>muxing: set by <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref></para>
+</listitem><listitem><para>demuxing: set by <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1292" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref> *</type>
+        <definition>AVIOContext* AVFormatContext::pb</definition>
+        <argsstring></argsstring>
+        <name>pb</name>
+        <qualifiedname>AVFormatContext::pb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I/O context.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: either set by the user before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> (then the user must close it manually) or set by <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>.</para>
+</listitem><listitem><para>muxing: set by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. The caller must take care of closing / freeing the IO context.</para>
+</listitem></itemizedlist>
+</para>
+<para>Do NOT set this field if AVFMT_NOFILE flag is set in iformat/oformat.flags. In such a case, the (de)muxer will handle I/O in some other way and this field will be NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1306" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a4e6076343df1ffc2e16cedbba3f3f397" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::ctx_flags</definition>
+        <argsstring></argsstring>
+        <name>ctx_flags</name>
+        <qualifiedname>AVFormatContext::ctx_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags signalling stream properties. A combination of AVFMTCTX_*. Set by libavformat. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1313" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a0b748d924898b08b89ff4974afd17285" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::nb_streams</definition>
+        <argsstring></argsstring>
+        <name>nb_streams</name>
+        <qualifiedname>AVFormatContext::nb_streams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements in <ref refid="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" kindref="member">AVFormatContext.streams</ref>.</para>
+<para>Set by <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref>, must not be modified by any other code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1320" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> **</type>
+        <definition>AVStream** AVFormatContext::streams</definition>
+        <argsstring></argsstring>
+        <name>streams</name>
+        <qualifiedname>AVFormatContext::streams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of all streams in the file. New streams are created with <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref>.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: streams are created by libavformat in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>. If AVFMTCTX_NOHEADER is set in ctx_flags, then new streams may also appear in <ref refid="group__lavf__decoding_1ga4fdb3084415a82e3810de6ee60e46a61" kindref="member">av_read_frame()</ref>.</para>
+</listitem><listitem><para>muxing: streams are created by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Freed by libavformat in <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1332" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ac2a7709bc15daf6165f68a5a88648aaa" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::nb_stream_groups</definition>
+        <argsstring></argsstring>
+        <name>nb_stream_groups</name>
+        <qualifiedname>AVFormatContext::nb_stream_groups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements in <ref refid="struct_a_v_format_context_1a1c0f5869d58a8bc90ed0235bf3a3c9df" kindref="member">AVFormatContext.stream_groups</ref>.</para>
+<para>Set by <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create()</ref>, must not be modified by any other code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1339" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a1c0f5869d58a8bc90ed0235bf3a3c9df" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_stream_group" kindref="compound">AVStreamGroup</ref> **</type>
+        <definition>AVStreamGroup** AVFormatContext::stream_groups</definition>
+        <argsstring></argsstring>
+        <name>stream_groups</name>
+        <qualifiedname>AVFormatContext::stream_groups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of all stream groups in the file. New groups are created with <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create()</ref>, and filled with <ref refid="group__lavf__core_1ga71ea58a4c7ce40295a0d2e35ae48405f" kindref="member">avformat_stream_group_add_stream()</ref>.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: groups may be created by libavformat in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>. If AVFMTCTX_NOHEADER is set in ctx_flags, then new groups may also appear in <ref refid="group__lavf__decoding_1ga4fdb3084415a82e3810de6ee60e46a61" kindref="member">av_read_frame()</ref>.</para>
+</listitem><listitem><para>muxing: groups may be created by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Freed by libavformat in <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1351" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a6f60043baf4abd0d201ccefc27bb4306" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::nb_chapters</definition>
+        <argsstring></argsstring>
+        <name>nb_chapters</name>
+        <qualifiedname>AVFormatContext::nb_chapters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of chapters in <ref refid="struct_a_v_chapter" kindref="compound">AVChapter</ref> array. When muxing, chapters are normally written in the file header, so nb_chapters should normally be initialized before write_header is called. Some muxers (e.g. mov and mkv) can also write chapters in the trailer. To write chapters in the trailer, nb_chapters must be zero when write_header is called and non-zero when write_trailer is called.<itemizedlist>
+<listitem><para>muxing: set by user</para>
+</listitem><listitem><para>demuxing: set by libavformat </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1364" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ac17d5fc2dcdb00806cc83b02d9f940f3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_chapter" kindref="compound">AVChapter</ref> **</type>
+        <definition>AVChapter** AVFormatContext::chapters</definition>
+        <argsstring></argsstring>
+        <name>chapters</name>
+        <qualifiedname>AVFormatContext::chapters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1365" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a651c97cb2dcd2241d42f0062a0bbd4e3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFormatContext::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <qualifiedname>AVFormatContext::url</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>input or output URL. Unlike the old filename field, this field has no length restriction.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: set by <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>, initialized to an empty string if url parameter was NULL in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>.</para>
+</listitem><listitem><para>muxing: may be set by the caller before calling <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> (or <ref refid="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" kindref="member">avformat_init_output()</ref> if that is called first) to a string which is freeable by <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. Set to an empty string if it was NULL in <ref refid="group__lavf__encoding_1ga169cfa28508e22e138c5b99be8517ea4" kindref="member">avformat_init_output()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Freed by libavformat in <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1380" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a2590129e00adfa726ab2033a10e905e9" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>AVFormatContext::start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position of the first frame of the component, in AV_TIME_BASE fractional seconds. NEVER set this value directly: It is deduced from the <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> values.</para>
+<para>Demuxing only, set by libavformat. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1389" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ad0ea78ac48f5bb0a15a15c1c472744d9" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>AVFormatContext::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration of the stream, in AV_TIME_BASE fractional seconds. Only set this value if you know none of the individual stream durations and also do not set any of them. This is deduced from the <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> values if not set.</para>
+<para>Demuxing only, set by libavformat. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1399" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a972a02b9e3b542a426e323a8f8e3ea41" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::bit_rate</definition>
+        <argsstring></argsstring>
+        <name>bit_rate</name>
+        <qualifiedname>AVFormatContext::bit_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total stream bitrate in bit/s, 0 if not available. Never set it directly if the file_size and the duration are known as FFmpeg can compute it automatically. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1406" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a0739c2952969d3c67788f02ea829f549" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::packet_size</definition>
+        <argsstring></argsstring>
+        <name>packet_size</name>
+        <qualifiedname>AVFormatContext::packet_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1408" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a58422ed3d461b3440a15cf057ac5f5b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_delay</definition>
+        <argsstring></argsstring>
+        <name>max_delay</name>
+        <qualifiedname>AVFormatContext::max_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1409" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a32379cc371463b235d54235d4af06a15" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVFormatContext::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags modifying the (de)muxer behaviour. A combination of AVFMT_FLAG_*. Set by the user before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> / <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1415" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1acb47a2a7362ac575b4986e0028786a41" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::probesize</definition>
+        <argsstring></argsstring>
+        <name>probesize</name>
+        <qualifiedname>AVFormatContext::probesize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of bytes read from input in order to determine stream properties. Used when reading the global header and in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>.</para>
+<para>Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>.</para>
+<para><simplesect kind="note"><para>this is <emphasis>not</emphasis> used for determining the <ref refid="struct_a_v_input_format" kindref="compound">input format</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_a_v_format_context_1a7d1f665ecabe03e3d18accbb1ebb32b1" kindref="member">format_probesize</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1448" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a4d860662c014f88277c8f20e238fa694" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::max_analyze_duration</definition>
+        <argsstring></argsstring>
+        <name>max_analyze_duration</name>
+        <qualifiedname>AVFormatContext::max_analyze_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum duration (in AV_TIME_BASE units) of the data read from input in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. Can be set to 0 to let avformat choose using a heuristic. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1456" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a19cb4471ba011fc7adc5e17344c608f5" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* AVFormatContext::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>AVFormatContext::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1458" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a1f2c1db3070cc100938eaed81ff3767d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::keylen</definition>
+        <argsstring></argsstring>
+        <name>keylen</name>
+        <qualifiedname>AVFormatContext::keylen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1459" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a58c8c4d0ea974e0fcb0ce06fb1174f9f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::nb_programs</definition>
+        <argsstring></argsstring>
+        <name>nb_programs</name>
+        <qualifiedname>AVFormatContext::nb_programs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1461" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a4c2c5a4c758966349ff513e95154d062" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_program" kindref="compound">AVProgram</ref> **</type>
+        <definition>AVProgram** AVFormatContext::programs</definition>
+        <argsstring></argsstring>
+        <name>programs</name>
+        <qualifiedname>AVFormatContext::programs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1462" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ab179ade0dbe905ab2867b7001bf618ec" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVFormatContext::video_codec_id</definition>
+        <argsstring></argsstring>
+        <name>video_codec_id</name>
+        <qualifiedname>AVFormatContext::video_codec_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced video codec_id. Demuxing: Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1468" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a1c99fc118bf047959a0284bffc2c1a9a" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVFormatContext::audio_codec_id</definition>
+        <argsstring></argsstring>
+        <name>audio_codec_id</name>
+        <qualifiedname>AVFormatContext::audio_codec_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced audio codec_id. Demuxing: Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1474" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1acca61846d663b15e5a56b35c903e4d3b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVFormatContext::subtitle_codec_id</definition>
+        <argsstring></argsstring>
+        <name>subtitle_codec_id</name>
+        <qualifiedname>AVFormatContext::subtitle_codec_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced subtitle codec_id. Demuxing: Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1480" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a2112b67f2f7a58bde5b6d13dc353b58d" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVFormatContext::data_codec_id</definition>
+        <argsstring></argsstring>
+        <name>data_codec_id</name>
+        <qualifiedname>AVFormatContext::data_codec_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced Data codec_id. Demuxing: Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1486" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a3019a56080ed2e3297ff25bc2ff88adf" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVFormatContext::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>AVFormatContext::metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata that applies to the whole file.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: set by libavformat in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref></para>
+</listitem><listitem><para>muxing: may be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Freed by libavformat in <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1496" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1aa5ddb5cee1df28f21739133f2e37f1c5" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::start_time_realtime</definition>
+        <argsstring></argsstring>
+        <name>start_time_realtime</name>
+        <qualifiedname>AVFormatContext::start_time_realtime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start time of the stream in real world time, in microseconds since the Unix epoch (00:00 1st January 1970). That is, pts=0 in the stream was captured at this real world time.<itemizedlist>
+<listitem><para>muxing: Set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. If set to either 0 or AV_NOPTS_VALUE, then the current wall-time will be used.</para>
+</listitem><listitem><para>demuxing: Set by libavformat. AV_NOPTS_VALUE if unknown. Note that the value may become known after some number of frames have been received. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1509" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a517e6b5dcada506a49ef413d4d8d477a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::fps_probe_size</definition>
+        <argsstring></argsstring>
+        <name>fps_probe_size</name>
+        <qualifiedname>AVFormatContext::fps_probe_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of frames used for determining the framerate in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1516" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1aeebb15a72d1503e641b633aeb3be0bf0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::error_recognition</definition>
+        <argsstring></argsstring>
+        <name>error_recognition</name>
+        <qualifiedname>AVFormatContext::error_recognition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error recognition; higher values will detect more errors but may misdetect some more or less valid parts as errors. Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1523" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a5b37acfe4024d92ee510064e80920b40" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_i_o_interrupt_c_b" kindref="compound">AVIOInterruptCB</ref></type>
+        <definition>AVIOInterruptCB AVFormatContext::interrupt_callback</definition>
+        <argsstring></argsstring>
+        <name>interrupt_callback</name>
+        <qualifiedname>AVFormatContext::interrupt_callback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom interrupt callbacks for the I/O layer.</para>
+<para>demuxing: set by the user before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>. muxing: set by the user before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> (mainly useful for AVFMT_NOFILE formats). The callback should also be passed to <ref refid="avio_8h_1ade8a63980569494c99593ebf0d1e891b" kindref="member">avio_open2()</ref> if it&apos;s used to open the file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1534" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ab4478e9742f661800cf7e0af84136cae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <qualifiedname>AVFormatContext::debug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to enable debugging. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1539" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a11bf0a9a1ba16bc402c6a237b58b4da1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_streams</definition>
+        <argsstring></argsstring>
+        <name>max_streams</name>
+        <qualifiedname>AVFormatContext::max_streams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum number of streams.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1547" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ab0470d586a71d4f356194d202591617d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::max_index_size</definition>
+        <argsstring></argsstring>
+        <name>max_index_size</name>
+        <qualifiedname>AVFormatContext::max_index_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum amount of memory in bytes to use for the index of each stream. If the index exceeds this size, entries will be discarded as needed to maintain a smaller size. This can lead to slower or less accurate seeking (depends on demuxer). Demuxers for which a full in-memory index is mandatory will ignore this.<itemizedlist>
+<listitem><para>muxing: unused</para>
+</listitem><listitem><para>demuxing: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1559" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ae188350a3838a14a233bf272d68998be" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::max_picture_buffer</definition>
+        <argsstring></argsstring>
+        <name>max_picture_buffer</name>
+        <qualifiedname>AVFormatContext::max_picture_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum amount of memory in bytes to use for buffering frames obtained from realtime capture devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1565" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a00edb6b7a31f8dabfa668334ca1f92d7" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::max_interleave_delta</definition>
+        <argsstring></argsstring>
+        <name>max_interleave_delta</name>
+        <qualifiedname>AVFormatContext::max_interleave_delta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum buffering duration for interleaving.</para>
+<para>To ensure all the streams are interleaved correctly, <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref> will wait until it has at least one packet for each stream before actually writing any packets to the output file. When some streams are &quot;sparse&quot; (i.e. there are large gaps between successive packets), this can result in excessive buffering.</para>
+<para>This field specifies the maximum difference between the timestamps of the first and the last packet in the muxing queue, above which libavformat will output a packet regardless of whether it has queued a packet for all the streams.</para>
+<para>Muxing only, set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1583" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ad7854e5186dd14ce91dea1dfd0bb826f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_ts_probe</definition>
+        <argsstring></argsstring>
+        <name>max_ts_probe</name>
+        <qualifiedname>AVFormatContext::max_ts_probe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of packets to read while waiting for the first timestamp. Decoding only. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1589" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ae20c589e20f22f74f1687702de6d2e8e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_chunk_duration</definition>
+        <argsstring></argsstring>
+        <name>max_chunk_duration</name>
+        <qualifiedname>AVFormatContext::max_chunk_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max chunk time in microseconds. Note, not all formats support this and unpredictable things may happen if it is used when not supported.<itemizedlist>
+<listitem><para>encoding: Set by user</para>
+</listitem><listitem><para>decoding: unused </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1597" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a3d8cfff712c81d1cbc725b40ce02f7e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_chunk_size</definition>
+        <argsstring></argsstring>
+        <name>max_chunk_size</name>
+        <qualifiedname>AVFormatContext::max_chunk_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max chunk size in bytes Note, not all formats support this and unpredictable things may happen if it is used when not supported.<itemizedlist>
+<listitem><para>encoding: Set by user</para>
+</listitem><listitem><para>decoding: unused </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1605" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1af878783c6a033177ef5ff4cd930c2b4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::max_probe_packets</definition>
+        <argsstring></argsstring>
+        <name>max_probe_packets</name>
+        <qualifiedname>AVFormatContext::max_probe_packets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of packets that can be probed<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1612" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a5017684cf0a84c990f60c8d50adec144" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::strict_std_compliance</definition>
+        <argsstring></argsstring>
+        <name>strict_std_compliance</name>
+        <qualifiedname>AVFormatContext::strict_std_compliance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allow non-standard and experimental extension <simplesect kind="see"><para><ref refid="struct_a_v_codec_context_1a3090804569341ca235e3adbdc03318d2" kindref="member">AVCodecContext.strict_std_compliance</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1618" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a0302506d4b3434da77b8b3db43821aa0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::event_flags</definition>
+        <argsstring></argsstring>
+        <name>event_flags</name>
+        <qualifiedname>AVFormatContext::event_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags indicating events happening on the file, a combination of AVFMT_EVENT_FLAG_*.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: may be set by the demuxer in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>, <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref> and <ref refid="group__lavf__decoding_1ga4fdb3084415a82e3810de6ee60e46a61" kindref="member">av_read_frame()</ref>. Flags must be cleared by the user once the event has been handled.</para>
+</listitem><listitem><para>muxing: may be set by the user after <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> to indicate a user-triggered event. The muxer will clear the flags for events it has handled in av_[interleaved]_write_frame(). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1631" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a032c7d859883eddc9d87a9e3b2cc3853" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::avoid_negative_ts</definition>
+        <argsstring></argsstring>
+        <name>avoid_negative_ts</name>
+        <qualifiedname>AVFormatContext::avoid_negative_ts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avoid negative timestamps during muxing. Any value of the AVFMT_AVOID_NEG_TS_* constants. Note, this works better when using <ref refid="group__lavf__encoding_1ga37352ed2c63493c38219d935e71db6c1" kindref="member">av_interleaved_write_frame()</ref>.<itemizedlist>
+<listitem><para>muxing: Set by user</para>
+</listitem><listitem><para>demuxing: unused </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1648" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ac02383c2106cca8022f8a293399aed58" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::audio_preload</definition>
+        <argsstring></argsstring>
+        <name>audio_preload</name>
+        <qualifiedname>AVFormatContext::audio_preload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio preload in microseconds. Note, not all formats support this and unpredictable things may happen if it is used when not supported.<itemizedlist>
+<listitem><para>encoding: Set by user</para>
+</listitem><listitem><para>decoding: unused </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1660" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a90251622aa2b78badbb846274aff4633" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::use_wallclock_as_timestamps</definition>
+        <argsstring></argsstring>
+        <name>use_wallclock_as_timestamps</name>
+        <qualifiedname>AVFormatContext::use_wallclock_as_timestamps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>forces the use of wallclock timestamps as pts/dts of packets This has undefined results in the presence of B frames.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1668" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ae9896cb7089991b18c5e7acb4f17f6b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::skip_estimate_duration_from_pts</definition>
+        <argsstring></argsstring>
+        <name>skip_estimate_duration_from_pts</name>
+        <qualifiedname>AVFormatContext::skip_estimate_duration_from_pts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Skip duration calculation in estimate_timings_from_pts.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="see"><para><ref refid="struct_a_v_format_context_1a97d077089349adeaa2b760c5b6822428" kindref="member">duration_probesize</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1677" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a5e6814c9de3c272396f07e2ff18c7b27" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::avio_flags</definition>
+        <argsstring></argsstring>
+        <name>avio_flags</name>
+        <qualifiedname>AVFormatContext::avio_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>avio flags, used to force AVIO_FLAG_DIRECT.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1684" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a95035552afae17c1b7cd701ad72e67b5" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="avformat_8h_1a7c2692ffa20d3e888e40e79eeda6d73b" kindref="member">AVDurationEstimationMethod</ref></type>
+        <definition>enum AVDurationEstimationMethod AVFormatContext::duration_estimation_method</definition>
+        <argsstring></argsstring>
+        <name>duration_estimation_method</name>
+        <qualifiedname>AVFormatContext::duration_estimation_method</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The duration field can be estimated through various ways, and this field can be used to know how the duration was estimated.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Read by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1692" column="36" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ad9042cdda3a644e4ef46bfeffa34e4f3" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::skip_initial_bytes</definition>
+        <argsstring></argsstring>
+        <name>skip_initial_bytes</name>
+        <qualifiedname>AVFormatContext::skip_initial_bytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Skip initial bytes when opening stream<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1699" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1afe4c7f02033d4b58b3636b9e42db25de" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVFormatContext::correct_ts_overflow</definition>
+        <argsstring></argsstring>
+        <name>correct_ts_overflow</name>
+        <qualifiedname>AVFormatContext::correct_ts_overflow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Correct single timestamp overflows<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1706" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a41a1f108aa38e851f65ff4f0a70ce5a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::seek2any</definition>
+        <argsstring></argsstring>
+        <name>seek2any</name>
+        <qualifiedname>AVFormatContext::seek2any</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force seeking to any (also non key) frames.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: Set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1713" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a1fdd77fff4c7df1e30ce1d42e10922e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::flush_packets</definition>
+        <argsstring></argsstring>
+        <name>flush_packets</name>
+        <qualifiedname>AVFormatContext::flush_packets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush the I/O context after each packet.<itemizedlist>
+<listitem><para>encoding: Set by user</para>
+</listitem><listitem><para>decoding: unused </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1720" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a65f11f94f40f83866ebe651c8ae111cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::probe_score</definition>
+        <argsstring></argsstring>
+        <name>probe_score</name>
+        <qualifiedname>AVFormatContext::probe_score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>format probing score. The maximal score is AVPROBE_SCORE_MAX, its set when the demuxer probes the format.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by avformat, read by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1729" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a7d1f665ecabe03e3d18accbb1ebb32b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::format_probesize</definition>
+        <argsstring></argsstring>
+        <name>format_probesize</name>
+        <qualifiedname>AVFormatContext::format_probesize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of bytes read from input in order to identify the <ref refid="struct_a_v_input_format" kindref="compound">input format</ref>. Only used when the format is not set explicitly by the caller.</para>
+<para>Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="struct_a_v_format_context_1acb47a2a7362ac575b4986e0028786a41" kindref="member">probesize</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1740" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1aa3b43e2a040a3ce658620711a8345234" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFormatContext::codec_whitelist</definition>
+        <argsstring></argsstring>
+        <name>codec_whitelist</name>
+        <qualifiedname>AVFormatContext::codec_whitelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of allowed decoders. If NULL then all are allowed<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1748" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1abcaa5a7c53d4b0224a5fc2d23e88ea03" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFormatContext::format_whitelist</definition>
+        <argsstring></argsstring>
+        <name>format_whitelist</name>
+        <qualifiedname>AVFormatContext::format_whitelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of allowed demuxers. If NULL then all are allowed<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1756" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1adfa686249f83379ee2e3d5b295d9f442" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFormatContext::protocol_whitelist</definition>
+        <argsstring></argsstring>
+        <name>protocol_whitelist</name>
+        <qualifiedname>AVFormatContext::protocol_whitelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of allowed protocols.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1763" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ae06bb84162881843504ecd870c328690" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFormatContext::protocol_blacklist</definition>
+        <argsstring></argsstring>
+        <name>protocol_blacklist</name>
+        <qualifiedname>AVFormatContext::protocol_blacklist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of disallowed protocols.<itemizedlist>
+<listitem><para>encoding: unused</para>
+</listitem><listitem><para>decoding: set by user </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1770" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a45afe89c377463a1b9446ac94b3c513b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::io_repositioned</definition>
+        <argsstring></argsstring>
+        <name>io_repositioned</name>
+        <qualifiedname>AVFormatContext::io_repositioned</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IO repositioned flag. This is set by avformat when the underlying IO context read pointer is repositioned, for example when doing byte based seeking. Demuxers can use the flag to detect such changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1778" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ae5e087f4623b907517c0f7dd8327387d" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref> *</type>
+        <definition>const struct AVCodec* AVFormatContext::video_codec</definition>
+        <argsstring></argsstring>
+        <name>video_codec</name>
+        <qualifiedname>AVFormatContext::video_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced video codec. This allows forcing a specific decoder, even when there are multiple with the same codec_id. Demuxing: Set by user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1786" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a52f39351b15890ef57cc6ff0ec9ab42d" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref> *</type>
+        <definition>const struct AVCodec* AVFormatContext::audio_codec</definition>
+        <argsstring></argsstring>
+        <name>audio_codec</name>
+        <qualifiedname>AVFormatContext::audio_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced audio codec. This allows forcing a specific decoder, even when there are multiple with the same codec_id. Demuxing: Set by user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1794" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1adee454dfadaf73f5307d92ef84b58e9d" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref> *</type>
+        <definition>const struct AVCodec* AVFormatContext::subtitle_codec</definition>
+        <argsstring></argsstring>
+        <name>subtitle_codec</name>
+        <qualifiedname>AVFormatContext::subtitle_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced subtitle codec. This allows forcing a specific decoder, even when there are multiple with the same codec_id. Demuxing: Set by user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1802" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a285644d85988b68cf69507f68a8e28ca" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref> *</type>
+        <definition>const struct AVCodec* AVFormatContext::data_codec</definition>
+        <argsstring></argsstring>
+        <name>data_codec</name>
+        <qualifiedname>AVFormatContext::data_codec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forced data codec. This allows forcing a specific decoder, even when there are multiple with the same codec_id. Demuxing: Set by user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1810" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a6fc5a51cf62b6e8ad379c1ac57d4a0c4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFormatContext::metadata_header_padding</definition>
+        <argsstring></argsstring>
+        <name>metadata_header_padding</name>
+        <qualifiedname>AVFormatContext::metadata_header_padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes to be written as padding in a metadata header. Demuxing: Unused. Muxing: Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1817" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a71797838db59ca0682dd2d18b149134e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVFormatContext::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVFormatContext::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User data. This is a place for some private data of the user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1823" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1ab569e23a4966ca1f708fb498dd6b3d5f" prot="public" static="no" mutable="no">
+        <type><ref refid="avformat_8h_1a80856b99bcf4373936fb4fba028b11ca" kindref="member">av_format_control_message</ref></type>
+        <definition>av_format_control_message AVFormatContext::control_message_cb</definition>
+        <argsstring></argsstring>
+        <name>control_message_cb</name>
+        <qualifiedname>AVFormatContext::control_message_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback used by devices to communicate with application. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1828" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a711dc3e6159c44dc31843f915b893a12" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::output_ts_offset</definition>
+        <argsstring></argsstring>
+        <name>output_ts_offset</name>
+        <qualifiedname>AVFormatContext::output_ts_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output timestamp offset, in microseconds. Muxing: set by user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1834" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1afeccb79eb120b1c79d7d269e8049237a" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVFormatContext::dump_separator</definition>
+        <argsstring></argsstring>
+        <name>dump_separator</name>
+        <qualifiedname>AVFormatContext::dump_separator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dump format separator. can be &quot;, &quot; or &quot;\n      &quot; or anything else<itemizedlist>
+<listitem><para>muxing: Set by user.</para>
+</listitem><listitem><para>demuxing: Set by user. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1842" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1af3f615ad9ff79fb90f4eb136a1f58065" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVFormatContext::io_open) (struct AVFormatContext *s, AVIOContext **pb, const char *url, int flags, AVDictionary **options)</definition>
+        <argsstring>)(struct AVFormatContext *s, AVIOContext **pb, const char *url, int flags, AVDictionary **options)</argsstring>
+        <name>io_open</name>
+        <qualifiedname>AVFormatContext::io_open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A callback for opening new IO streams.</para>
+<para>Whenever a muxer or a demuxer needs to open an IO stream (typically from <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> for demuxers, but for certain formats can happen at other times as well), it will call this callback to obtain an IO context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on success, the newly opened IO context should be returned here </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the url to open </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AVIO_FLAG_* </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a dictionary of additional options, with the same semantics as in <ref refid="avio_8h_1ade8a63980569494c99593ebf0d1e891b" kindref="member">avio_open2()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure</para>
+</simplesect>
+<simplesect kind="note"><para>Certain muxers and demuxers do nesting, i.e. they open one or more additional internal format contexts. Thus the <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> pointer passed to this callback may be different from the one facing the caller. It will, however, have the same &apos;opaque&apos; field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1864" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a17bbcfc18f75f119dd6c0a15a1c7d935" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVFormatContext::io_close2) (struct AVFormatContext *s, AVIOContext *pb)</definition>
+        <argsstring>)(struct AVFormatContext *s, AVIOContext *pb)</argsstring>
+        <name>io_close2</name>
+        <qualifiedname>AVFormatContext::io_close2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A callback for closing the streams opened with <ref refid="struct_a_v_format_context_1af3f615ad9ff79fb90f4eb136a1f58065" kindref="member">AVFormatContext.io_open()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IO context to be closed and freed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1874" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_format_context_1a97d077089349adeaa2b760c5b6822428" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVFormatContext::duration_probesize</definition>
+        <argsstring></argsstring>
+        <name>duration_probesize</name>
+        <qualifiedname>AVFormatContext::duration_probesize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of bytes read from input in order to determine stream durations when using estimate_timings_from_pts in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. Demuxing only, set by the caller before <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>. Can be set to 0 to let avformat choose using a heuristic.</para>
+<para><simplesect kind="see"><para><ref refid="struct_a_v_format_context_1ae9896cb7089991b18c5e7acb4f17f6b2" kindref="member">skip_estimate_duration_from_pts</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1884" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1884" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Format I/O context. New fields can be added to the end with minor version bumps. Removal, reordering and changes to existing fields require a major version bump. sizeof(AVFormatContext) must not be used outside libav*, use <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref> to create an <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>.</para>
+<para>Fields can be accessed through AVOptions (av_opt*), the name string used matches the associated command line parameter name and can be found in libavformat/options_table.h. The AVOption/command line parameter names differ in some cases from the C structure field names for historic reasons or brevity. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="13">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="12">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>AVChapter</label>
+        <link refid="struct_a_v_chapter"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>AVCodec</label>
+        <link refid="struct_a_v_codec"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>supported_framerates</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>profiles</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ch_layouts</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AVCodecParameters</label>
+        <link refid="struct_a_v_codec_parameters"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVFormatContext</label>
+        <link refid="struct_a_v_format_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>iformat</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>oformat</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>pb</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>streams</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>stream_groups</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>chapters</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>programs</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>interrupt_callback</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>audio_codec</edgelabel>
+          <edgelabel>data_codec</edgelabel>
+          <edgelabel>subtitle_codec</edgelabel>
+          <edgelabel>video_codec</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>control_message_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AVIAMFAudioElement</label>
+        <link refid="struct_a_v_i_a_m_f_audio_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>demixing_info</edgelabel>
+          <edgelabel>recon_gain_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>AVIAMFLayer</label>
+        <link refid="struct_a_v_i_a_m_f_layer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>demixing_matrix</edgelabel>
+          <edgelabel>output_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>AVIAMFMixPresentation</label>
+        <link refid="struct_a_v_i_a_m_f_mix_presentation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>submixes</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>AVIAMFParamDefinition</label>
+        <link refid="struct_a_v_i_a_m_f_param_definition"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>AVIAMFSubmix</label>
+        <link refid="struct_a_v_i_a_m_f_submix"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>layouts</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>output_mix_config</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_mix_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>AVIAMFSubmixElement</label>
+        <link refid="struct_a_v_i_a_m_f_submix_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>element_mix_config</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_mix_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>AVIAMFSubmixLayout</label>
+        <link refid="struct_a_v_i_a_m_f_submix_layout"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>sound_system</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>album_anchored_loudness</edgelabel>
+          <edgelabel>dialogue_anchored_loudness</edgelabel>
+          <edgelabel>digital_peak</edgelabel>
+          <edgelabel>integrated_loudness</edgelabel>
+          <edgelabel>true_peak</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AVIOContext</label>
+        <link refid="struct_a_v_i_o_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>AVIOInterruptCB</label>
+        <link refid="struct_a_v_i_o_interrupt_c_b"/>
+      </node>
+      <node id="6">
+        <label>AVInputFormat</label>
+        <link refid="struct_a_v_input_format"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="7">
+        <label>AVOutputFormat</label>
+        <link refid="struct_a_v_output_format"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AVPacket</label>
+        <link refid="struct_a_v_packet"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>opaque_ref</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="30">
+        <label>AVProfile</label>
+        <link refid="struct_a_v_profile"/>
+      </node>
+      <node id="27">
+        <label>AVProgram</label>
+        <link refid="struct_a_v_program"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="9">
+        <label>AVStream</label>
+        <link refid="struct_a_v_stream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>codecpar</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>avg_frame_rate</edgelabel>
+          <edgelabel>r_frame_rate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>attached_pic</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AVStreamGroup</label>
+        <link refid="struct_a_v_stream_group"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>iamf_audio_element</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>iamf_mix_presentation</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>tile_grid</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>lcevc</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>streams</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>AVStreamGroupLCEVC</label>
+        <link refid="struct_a_v_stream_group_l_c_e_v_c"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>AVStreamGroupTileGrid</label>
+        <link refid="struct_a_v_stream_group_tile_grid"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1264" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1264" bodyend="1885"/>
+    <listofallmembers>
+      <member refid="struct_a_v_format_context_1a52f39351b15890ef57cc6ff0ec9ab42d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>audio_codec</name></member>
+      <member refid="struct_a_v_format_context_1a1c99fc118bf047959a0284bffc2c1a9a" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>audio_codec_id</name></member>
+      <member refid="struct_a_v_format_context_1ac02383c2106cca8022f8a293399aed58" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>audio_preload</name></member>
+      <member refid="struct_a_v_format_context_1a0c396740b9a2487aa57d4352d2dc1687" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>av_class</name></member>
+      <member refid="struct_a_v_format_context_1a5e6814c9de3c272396f07e2ff18c7b27" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>avio_flags</name></member>
+      <member refid="struct_a_v_format_context_1a032c7d859883eddc9d87a9e3b2cc3853" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>avoid_negative_ts</name></member>
+      <member refid="struct_a_v_format_context_1a972a02b9e3b542a426e323a8f8e3ea41" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>bit_rate</name></member>
+      <member refid="struct_a_v_format_context_1ac17d5fc2dcdb00806cc83b02d9f940f3" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>chapters</name></member>
+      <member refid="struct_a_v_format_context_1aa3b43e2a040a3ce658620711a8345234" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>codec_whitelist</name></member>
+      <member refid="struct_a_v_format_context_1ab569e23a4966ca1f708fb498dd6b3d5f" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>control_message_cb</name></member>
+      <member refid="struct_a_v_format_context_1afe4c7f02033d4b58b3636b9e42db25de" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>correct_ts_overflow</name></member>
+      <member refid="struct_a_v_format_context_1a4e6076343df1ffc2e16cedbba3f3f397" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>ctx_flags</name></member>
+      <member refid="struct_a_v_format_context_1a285644d85988b68cf69507f68a8e28ca" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>data_codec</name></member>
+      <member refid="struct_a_v_format_context_1a2112b67f2f7a58bde5b6d13dc353b58d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>data_codec_id</name></member>
+      <member refid="struct_a_v_format_context_1ab4478e9742f661800cf7e0af84136cae" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>debug</name></member>
+      <member refid="struct_a_v_format_context_1afeccb79eb120b1c79d7d269e8049237a" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>dump_separator</name></member>
+      <member refid="struct_a_v_format_context_1ad0ea78ac48f5bb0a15a15c1c472744d9" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>duration</name></member>
+      <member refid="struct_a_v_format_context_1a95035552afae17c1b7cd701ad72e67b5" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>duration_estimation_method</name></member>
+      <member refid="struct_a_v_format_context_1a97d077089349adeaa2b760c5b6822428" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>duration_probesize</name></member>
+      <member refid="struct_a_v_format_context_1aeebb15a72d1503e641b633aeb3be0bf0" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>error_recognition</name></member>
+      <member refid="struct_a_v_format_context_1a0302506d4b3434da77b8b3db43821aa0" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>event_flags</name></member>
+      <member refid="struct_a_v_format_context_1a32379cc371463b235d54235d4af06a15" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>flags</name></member>
+      <member refid="struct_a_v_format_context_1a1fdd77fff4c7df1e30ce1d42e10922e9" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>flush_packets</name></member>
+      <member refid="struct_a_v_format_context_1a7d1f665ecabe03e3d18accbb1ebb32b1" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>format_probesize</name></member>
+      <member refid="struct_a_v_format_context_1abcaa5a7c53d4b0224a5fc2d23e88ea03" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>format_whitelist</name></member>
+      <member refid="struct_a_v_format_context_1a517e6b5dcada506a49ef413d4d8d477a" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>fps_probe_size</name></member>
+      <member refid="struct_a_v_format_context_1a6c01f25ef062e0398b0b55dd337246ed" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>iformat</name></member>
+      <member refid="struct_a_v_format_context_1a5b37acfe4024d92ee510064e80920b40" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>interrupt_callback</name></member>
+      <member refid="struct_a_v_format_context_1a17bbcfc18f75f119dd6c0a15a1c7d935" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>io_close2</name></member>
+      <member refid="struct_a_v_format_context_1af3f615ad9ff79fb90f4eb136a1f58065" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>io_open</name></member>
+      <member refid="struct_a_v_format_context_1a45afe89c377463a1b9446ac94b3c513b" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>io_repositioned</name></member>
+      <member refid="struct_a_v_format_context_1a19cb4471ba011fc7adc5e17344c608f5" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>key</name></member>
+      <member refid="struct_a_v_format_context_1a1f2c1db3070cc100938eaed81ff3767d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>keylen</name></member>
+      <member refid="struct_a_v_format_context_1a4d860662c014f88277c8f20e238fa694" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_analyze_duration</name></member>
+      <member refid="struct_a_v_format_context_1ae20c589e20f22f74f1687702de6d2e8e" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_chunk_duration</name></member>
+      <member refid="struct_a_v_format_context_1a3d8cfff712c81d1cbc725b40ce02f7e7" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_chunk_size</name></member>
+      <member refid="struct_a_v_format_context_1a58422ed3d461b3440a15cf057ac5f5b7" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_delay</name></member>
+      <member refid="struct_a_v_format_context_1ab0470d586a71d4f356194d202591617d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_index_size</name></member>
+      <member refid="struct_a_v_format_context_1a00edb6b7a31f8dabfa668334ca1f92d7" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_interleave_delta</name></member>
+      <member refid="struct_a_v_format_context_1ae188350a3838a14a233bf272d68998be" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_picture_buffer</name></member>
+      <member refid="struct_a_v_format_context_1af878783c6a033177ef5ff4cd930c2b4b" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_probe_packets</name></member>
+      <member refid="struct_a_v_format_context_1a11bf0a9a1ba16bc402c6a237b58b4da1" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_streams</name></member>
+      <member refid="struct_a_v_format_context_1ad7854e5186dd14ce91dea1dfd0bb826f" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>max_ts_probe</name></member>
+      <member refid="struct_a_v_format_context_1a3019a56080ed2e3297ff25bc2ff88adf" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>metadata</name></member>
+      <member refid="struct_a_v_format_context_1a6fc5a51cf62b6e8ad379c1ac57d4a0c4" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>metadata_header_padding</name></member>
+      <member refid="struct_a_v_format_context_1a6f60043baf4abd0d201ccefc27bb4306" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>nb_chapters</name></member>
+      <member refid="struct_a_v_format_context_1a58c8c4d0ea974e0fcb0ce06fb1174f9f" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>nb_programs</name></member>
+      <member refid="struct_a_v_format_context_1ac2a7709bc15daf6165f68a5a88648aaa" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>nb_stream_groups</name></member>
+      <member refid="struct_a_v_format_context_1a0b748d924898b08b89ff4974afd17285" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>nb_streams</name></member>
+      <member refid="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>oformat</name></member>
+      <member refid="struct_a_v_format_context_1a71797838db59ca0682dd2d18b149134e" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>opaque</name></member>
+      <member refid="struct_a_v_format_context_1a711dc3e6159c44dc31843f915b893a12" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>output_ts_offset</name></member>
+      <member refid="struct_a_v_format_context_1a0739c2952969d3c67788f02ea829f549" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>packet_size</name></member>
+      <member refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>pb</name></member>
+      <member refid="struct_a_v_format_context_1ac4c0777e54085af2f3f1b27130e2b21b" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>priv_data</name></member>
+      <member refid="struct_a_v_format_context_1a65f11f94f40f83866ebe651c8ae111cf" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>probe_score</name></member>
+      <member refid="struct_a_v_format_context_1acb47a2a7362ac575b4986e0028786a41" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>probesize</name></member>
+      <member refid="struct_a_v_format_context_1a4c2c5a4c758966349ff513e95154d062" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>programs</name></member>
+      <member refid="struct_a_v_format_context_1ae06bb84162881843504ecd870c328690" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>protocol_blacklist</name></member>
+      <member refid="struct_a_v_format_context_1adfa686249f83379ee2e3d5b295d9f442" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>protocol_whitelist</name></member>
+      <member refid="struct_a_v_format_context_1a41a1f108aa38e851f65ff4f0a70ce5a5" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>seek2any</name></member>
+      <member refid="struct_a_v_format_context_1ae9896cb7089991b18c5e7acb4f17f6b2" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>skip_estimate_duration_from_pts</name></member>
+      <member refid="struct_a_v_format_context_1ad9042cdda3a644e4ef46bfeffa34e4f3" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>skip_initial_bytes</name></member>
+      <member refid="struct_a_v_format_context_1a2590129e00adfa726ab2033a10e905e9" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>start_time</name></member>
+      <member refid="struct_a_v_format_context_1aa5ddb5cee1df28f21739133f2e37f1c5" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>start_time_realtime</name></member>
+      <member refid="struct_a_v_format_context_1a1c0f5869d58a8bc90ed0235bf3a3c9df" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>stream_groups</name></member>
+      <member refid="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>streams</name></member>
+      <member refid="struct_a_v_format_context_1a5017684cf0a84c990f60c8d50adec144" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>strict_std_compliance</name></member>
+      <member refid="struct_a_v_format_context_1adee454dfadaf73f5307d92ef84b58e9d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>subtitle_codec</name></member>
+      <member refid="struct_a_v_format_context_1acca61846d663b15e5a56b35c903e4d3b" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>subtitle_codec_id</name></member>
+      <member refid="struct_a_v_format_context_1a651c97cb2dcd2241d42f0062a0bbd4e3" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>url</name></member>
+      <member refid="struct_a_v_format_context_1a90251622aa2b78badbb846274aff4633" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>use_wallclock_as_timestamps</name></member>
+      <member refid="struct_a_v_format_context_1ae5e087f4623b907517c0f7dd8327387d" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>video_codec</name></member>
+      <member refid="struct_a_v_format_context_1ab179ade0dbe905ab2867b7001bf618ec" prot="public" virt="non-virtual"><scope>AVFormatContext</scope><name>video_codec_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="bsf_8h" kind="file" language="C++">
+    <compoundname>bsf.h</compoundname>
+    <includes refid="dict_8h" local="yes">libavutil/dict.h</includes>
+    <includes refid="log_8h" local="yes">libavutil/log.h</includes>
+    <includes refid="rational_8h" local="yes">libavutil/rational.h</includes>
+    <includes refid="codec__id_8h" local="yes">codec_id.h</includes>
+    <includes refid="codec__par_8h" local="yes">codec_par.h</includes>
+    <includes refid="packet_8h" local="yes">packet.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>packet.h</label>
+        <link refid="packet_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>version_major.h</label>
+        <link refid="libavcodec_2version__major_8h"/>
+      </node>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="9">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="13">
+        <label>libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>libavutil/channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>libavutil/dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>libavutil/log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>libavutil/rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>libavutil/samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>errno.h</label>
+      </node>
+      <node id="16">
+        <label>inttypes.h</label>
+      </node>
+      <node id="11">
+        <label>limits.h</label>
+      </node>
+      <node id="17">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="22">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="18">
+        <label>stdio.h</label>
+      </node>
+      <node id="19">
+        <label>stdlib.h</label>
+      </node>
+      <node id="20">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_b_s_f_context" prot="public">AVBSFContext</innerclass>
+    <innerclass refid="struct_a_v_bit_stream_filter" prot="public">AVBitStreamFilter</innerclass>
+    <sectiondef kind="typedef">
+      <member refid="group__lavc__bsf_1ga566dc5ab90f0f1f6b7b2ac7e18069e4f" kind="typedef"><name>AVBSFContext</name></member>
+      <member refid="group__lavc__bsf_1ga1556d7c237a38de9fbe0184213e496a5" kind="typedef"><name>AVBitStreamFilter</name></member>
+      <member refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kind="typedef"><name>AVBSFList</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavc__bsf_1gaf8f648184b420406a694f1867aaab839" kind="function"><name>av_bsf_get_by_name</name></member>
+      <member refid="group__lavc__bsf_1ga18b9f1195b8bc559b466dec20a9ab305" kind="function"><name>av_bsf_iterate</name></member>
+      <member refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kind="function"><name>av_bsf_alloc</name></member>
+      <member refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kind="function"><name>av_bsf_init</name></member>
+      <member refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kind="function"><name>av_bsf_send_packet</name></member>
+      <member refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kind="function"><name>av_bsf_receive_packet</name></member>
+      <member refid="group__lavc__bsf_1ga6e11d42d27e5525ce6525b0dbc2466e8" kind="function"><name>av_bsf_flush</name></member>
+      <member refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kind="function"><name>av_bsf_free</name></member>
+      <member refid="group__lavc__bsf_1ga6f1c604acc591df5c723482dd5dbb5b9" kind="function"><name>av_bsf_get_class</name></member>
+      <member refid="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" kind="function"><name>av_bsf_list_alloc</name></member>
+      <member refid="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" kind="function"><name>av_bsf_list_free</name></member>
+      <member refid="group__lavc__bsf_1ga51caad27662682e124796bbff590cab8" kind="function"><name>av_bsf_list_append</name></member>
+      <member refid="group__lavc__bsf_1gaf9085d5cf405b89e2129dc6b2ef54aeb" kind="function"><name>av_bsf_list_append2</name></member>
+      <member refid="group__lavc__bsf_1gaa4f71b6265b76b23abd418b62ffaff2d" kind="function"><name>av_bsf_list_finalize</name></member>
+      <member refid="group__lavc__bsf_1gacc7bbd4bb41b36893f6ad971fd95f7fb" kind="function"><name>av_bsf_list_parse_str</name></member>
+      <member refid="group__lavc__bsf_1gad7ef51525e9607c2d12c75f3bcbc1388" kind="function"><name>av_bsf_get_null_filter</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Bitstream<sp/>filters<sp/>public<sp/>API</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_BSF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_BSF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dict_8h" kindref="compound">libavutil/dict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libavutil/log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">libavutil/rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;codec_id.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;codec_par.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;packet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="struct_a_v_b_s_f_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="72" refid="struct_a_v_b_s_f_context_1aa5d5018816daac804414c459ec8a1c5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*<ref refid="struct_a_v_b_s_f_context_1aa5d5018816daac804414c459ec8a1c5c" kindref="member">av_class</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_a_v_b_s_f_context_1aee0c46a9a0d19ec7c8970565fd56c5bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref><sp/>*<ref refid="struct_a_v_b_s_f_context_1aee0c46a9a0d19ec7c8970565fd56c5bf" kindref="member">filter</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="struct_a_v_b_s_f_context_1a5c799e50f572340b69d4c79cda8f2de9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="struct_a_v_b_s_f_context_1a5c799e50f572340b69d4c79cda8f2de9" kindref="member">priv_data</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="struct_a_v_b_s_f_context_1a702ace639b8193475cf0a12ebdebd738" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref><sp/>*<ref refid="struct_a_v_b_s_f_context_1a702ace639b8193475cf0a12ebdebd738" kindref="member">par_in</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct_a_v_b_s_f_context_1ab58f8c37eec197e0f30d17d60959a60d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref><sp/>*<ref refid="struct_a_v_b_s_f_context_1ab58f8c37eec197e0f30d17d60959a60d" kindref="member">par_out</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_a_v_b_s_f_context_1ad75adf988c00f89202099c87ea39f0db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_b_s_f_context_1ad75adf988c00f89202099c87ea39f0db" kindref="member">time_base_in</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="struct_a_v_b_s_f_context_1a571e7d7c14cbd318254cea33ee5a61e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_b_s_f_context_1a571e7d7c14cbd318254cea33ee5a61e3" kindref="member">time_base_out</ref>;</highlight></codeline>
+<codeline lineno="109" refid="group__lavc__bsf_1ga566dc5ab90f0f1f6b7b2ac7e18069e4f" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct_a_v_bit_stream_filter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="struct_a_v_bit_stream_filter_1a4b5aec694a5537263378a2347ace5fbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref><sp/>*<ref refid="struct_a_v_bit_stream_filter_1a4b5aec694a5537263378a2347ace5fbb" kindref="member">codec_ids</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="struct_a_v_bit_stream_filter_1a33948e4c7fb99c38c5147b4e452108d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*<ref refid="struct_a_v_bit_stream_filter_1a33948e4c7fb99c38c5147b4e452108d9" kindref="member">priv_class</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group__lavc__bsf_1gaf8f648184b420406a694f1867aaab839" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref><sp/>*<ref refid="group__lavc__bsf_1gaf8f648184b420406a694f1867aaab839" kindref="member">av_bsf_get_by_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group__lavc__bsf_1ga18b9f1195b8bc559b466dec20a9ab305" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref><sp/>*<ref refid="group__lavc__bsf_1ga18b9f1195b8bc559b466dec20a9ab305" kindref="member">av_bsf_iterate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**opaque);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref><sp/>*filter,<sp/><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>**ctx);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kindref="member">av_bsf_send_packet</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>*ctx,<sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kindref="member">av_bsf_receive_packet</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>*ctx,<sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="group__lavc__bsf_1ga6e11d42d27e5525ce6525b0dbc2466e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga6e11d42d27e5525ce6525b0dbc2466e8" kindref="member">av_bsf_flush</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kindref="member">av_bsf_free</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>**ctx);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="group__lavc__bsf_1ga6f1c604acc591df5c723482dd5dbb5b9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*<ref refid="group__lavc__bsf_1ga6f1c604acc591df5c723482dd5dbb5b9" kindref="member">av_bsf_get_class</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" refkind="member"><highlight class="normal"><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/>*<ref refid="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" kindref="member">av_bsf_list_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" kindref="member">av_bsf_list_free</ref>(<ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/>**lst);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="group__lavc__bsf_1ga51caad27662682e124796bbff590cab8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1ga51caad27662682e124796bbff590cab8" kindref="member">av_bsf_list_append</ref>(<ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/>*lst,<sp/><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>*bsf);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="group__lavc__bsf_1gaf9085d5cf405b89e2129dc6b2ef54aeb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1gaf9085d5cf405b89e2129dc6b2ef54aeb" kindref="member">av_bsf_list_append2</ref>(<ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/>*lst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>bsf_name,<sp/>AVDictionary<sp/>**options);</highlight></codeline>
+<codeline lineno="302" refid="group__lavc__bsf_1gaa4f71b6265b76b23abd418b62ffaff2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1gaa4f71b6265b76b23abd418b62ffaff2d" kindref="member">av_bsf_list_finalize</ref>(<ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref><sp/>**lst,<sp/><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>**bsf);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="group__lavc__bsf_1gacc7bbd4bb41b36893f6ad971fd95f7fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1gacc7bbd4bb41b36893f6ad971fd95f7fb" kindref="member">av_bsf_list_parse_str</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>**bsf);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="group__lavc__bsf_1gad7ef51525e9607c2d12c75f3bcbc1388" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__bsf_1gad7ef51525e9607c2d12c75f3bcbc1388" kindref="member">av_bsf_get_null_filter</ref>(<ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref><sp/>**bsf);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AVCODEC_BSF_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h"/>
+  </compounddef>
+</doxygen>

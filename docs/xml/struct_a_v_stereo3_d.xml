@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_stereo3_d" kind="struct" language="C++" prot="public">
+    <compoundname>AVStereo3D</compoundname>
+    <includes refid="stereo3d_8h" local="no">stereo3d.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1a052514d0376a94e58e3eb9db3db2a7ce" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__video__stereo3d_1ga12fe9672eeaeb8980960faa96d2fcee6" kindref="member">AVStereo3DType</ref></type>
+        <definition>enum AVStereo3DType AVStereo3D::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVStereo3D::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How views are packed within the video. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="207" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1a9e74d14d6b5dddcd6126da075558f102" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStereo3D::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVStereo3D::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional information about the frame packing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="212" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1adda070026c20a883b3eb30ed662faceb" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__video__stereo3d_1gab99ec95d9ee1a8e7c676a98fe6df6085" kindref="member">AVStereo3DView</ref></type>
+        <definition>enum AVStereo3DView AVStereo3D::view</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <qualifiedname>AVStereo3D::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines which views are packed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="217" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1a9bd26992c762f990ea28e41dc944e4b1" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__video__stereo3d_1ga7341afbb709006af361956d2cd6f4579" kindref="member">AVStereo3DPrimaryEye</ref></type>
+        <definition>enum AVStereo3DPrimaryEye AVStereo3D::primary_eye</definition>
+        <argsstring></argsstring>
+        <name>primary_eye</name>
+        <qualifiedname>AVStereo3D::primary_eye</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Which eye is the primary eye when rendering in 2D. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="222" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1a057bd37844c7bc3e02ec1521c94a3b54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVStereo3D::baseline</definition>
+        <argsstring></argsstring>
+        <name>baseline</name>
+        <qualifiedname>AVStereo3D::baseline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance between the centres of the lenses of the camera system, in micrometers. Zero if unset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="228" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1a710709c0d27e723a7c67c3e7bfc0f585" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStereo3D::horizontal_disparity_adjustment</definition>
+        <argsstring></argsstring>
+        <name>horizontal_disparity_adjustment</name>
+        <qualifiedname>AVStereo3D::horizontal_disparity_adjustment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relative shift of the left and right images, which changes the zero parallax plane. Range is -1.0 to 1.0. Zero if unset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="234" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stereo3_d_1ac05a280f65b4853238f361ca7c7c11b9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStereo3D::horizontal_field_of_view</definition>
+        <argsstring></argsstring>
+        <name>horizontal_field_of_view</name>
+        <qualifiedname>AVStereo3D::horizontal_field_of_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Horizontal field of view, in degrees. Zero if unset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="239" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stereo 3D type: this structure describes how two videos are packed within a single video surface, with additional information as needed.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="group__lavu__video__stereo3d_1ga15529aca5812275dfc7db4fa38900a04" kindref="member">av_stereo3d_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>AVStereo3D</label>
+        <link refid="struct_a_v_stereo3_d"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>horizontal_disparity_adjustment</edgelabel>
+          <edgelabel>horizontal_field_of_view</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" line="203" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h" bodystart="203" bodyend="240"/>
+    <listofallmembers>
+      <member refid="struct_a_v_stereo3_d_1a057bd37844c7bc3e02ec1521c94a3b54" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>baseline</name></member>
+      <member refid="struct_a_v_stereo3_d_1a9e74d14d6b5dddcd6126da075558f102" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>flags</name></member>
+      <member refid="struct_a_v_stereo3_d_1a710709c0d27e723a7c67c3e7bfc0f585" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>horizontal_disparity_adjustment</name></member>
+      <member refid="struct_a_v_stereo3_d_1ac05a280f65b4853238f361ca7c7c11b9" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>horizontal_field_of_view</name></member>
+      <member refid="struct_a_v_stereo3_d_1a9bd26992c762f990ea28e41dc944e4b1" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>primary_eye</name></member>
+      <member refid="struct_a_v_stereo3_d_1a052514d0376a94e58e3eb9db3db2a7ce" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>type</name></member>
+      <member refid="struct_a_v_stereo3_d_1adda070026c20a883b3eb30ed662faceb" prot="public" virt="non-virtual"><scope>AVStereo3D</scope><name>view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

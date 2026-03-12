@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="imgutils_8h" kind="file" language="C++">
+    <compoundname>imgutils.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="pixdesc_8h" local="yes">pixdesc.h</includes>
+    <includes refid="pixfmt_8h" local="yes">pixfmt.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="8">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h</label>
+        <link refid="imgutils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pixdesc.h</label>
+        <link refid="pixdesc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inttypes.h</label>
+      </node>
+      <node id="12">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <member refid="group__lavu__picture_1gad3af84de3a86a9ebb71715e3c0ebf627" kind="function"><name>av_image_fill_max_pixsteps</name></member>
+      <member refid="group__lavu__picture_1ga8eddd074d5eb6a235591013675ac1055" kind="function"><name>av_image_get_linesize</name></member>
+      <member refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" kind="function"><name>av_image_fill_linesizes</name></member>
+      <member refid="group__lavu__picture_1ga58cffc1b2c32f1f186144e81176128eb" kind="function"><name>av_image_fill_plane_sizes</name></member>
+      <member refid="group__lavu__picture_1ga4513d36f527c1476e89845631d975542" kind="function"><name>av_image_fill_pointers</name></member>
+      <member refid="group__lavu__picture_1ga841e0a89a642e24141af1918a2c10448" kind="function"><name>av_image_alloc</name></member>
+      <member refid="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" kind="function"><name>av_image_copy_plane</name></member>
+      <member refid="group__lavu__picture_1ga42cd459c848ba400041f527e50ddd705" kind="function"><name>av_image_copy_plane_uc_from</name></member>
+      <member refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kind="function"><name>av_image_copy</name></member>
+      <member refid="group__lavu__picture_1ga911cb7d723163b88bdbbdacbeeaacf2d" kind="function"><name>av_image_copy2</name></member>
+      <member refid="group__lavu__picture_1ga74dbf395c196834f4f43b6c60aa4de44" kind="function"><name>av_image_copy_uc_from</name></member>
+      <member refid="group__lavu__picture_1ga5b6ead346a70342ae8a303c16d2b3629" kind="function"><name>av_image_fill_arrays</name></member>
+      <member refid="group__lavu__picture_1ga24a67963c3ae0054a2a4bab35930e694" kind="function"><name>av_image_get_buffer_size</name></member>
+      <member refid="group__lavu__picture_1ga6f8576f1ef0c2d9a9f7c5ac7f9a28c52" kind="function"><name>av_image_copy_to_buffer</name></member>
+      <member refid="group__lavu__picture_1ga3a867b6180ddad1e0c382ef0c5940b8e" kind="function"><name>av_image_check_size</name></member>
+      <member refid="group__lavu__picture_1gac75c3c0dfc82367b2be34e99384927c2" kind="function"><name>av_image_check_size2</name></member>
+      <member refid="group__lavu__picture_1gada0f86cd0051ff8b9eef214e83e7ad1f" kind="function"><name>av_image_check_sar</name></member>
+      <member refid="group__lavu__picture_1ga3fa8e484cc214e8c7b9026825b5f4078" kind="function"><name>av_image_fill_black</name></member>
+      <member refid="group__lavu__picture_1ga58595f4ce6255e7b147b4b48ac9d96a4" kind="function"><name>av_image_fill_color</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>misc image utilities </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_IMGUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_IMGUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pixdesc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pixfmt_8h" kindref="compound">pixfmt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="group__lavu__picture_1gad3af84de3a86a9ebb71715e3c0ebf627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1gad3af84de3a86a9ebb71715e3c0ebf627" kindref="member">av_image_fill_max_pixsteps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_pixsteps[4],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_pixstep_comps[4],</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref><sp/>*pixdesc);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group__lavu__picture_1ga8eddd074d5eb6a235591013675ac1055" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga8eddd074d5eb6a235591013675ac1055" kindref="member">av_image_get_linesize</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" kindref="member">av_image_fill_linesizes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesizes[4],<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="group__lavu__picture_1ga58cffc1b2c32f1f186144e81176128eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga58cffc1b2c32f1f186144e81176128eb" kindref="member">av_image_fill_plane_sizes</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size[4],<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/>linesizes[4]);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="group__lavu__picture_1ga4513d36f527c1476e89845631d975542" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga4513d36f527c1476e89845631d975542" kindref="member">av_image_fill_pointers</ref>(uint8_t<sp/>*data[4],<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesizes[4]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="group__lavu__picture_1ga841e0a89a642e24141af1918a2c10448" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga841e0a89a642e24141af1918a2c10448" kindref="member">av_image_alloc</ref>(uint8_t<sp/>*pointers[4],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linesizes[4],</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" kindref="member">av_image_copy_plane</ref>(uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_linesize,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_linesize,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bytewidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group__lavu__picture_1ga42cd459c848ba400041f527e50ddd705" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga42cd459c848ba400041f527e50ddd705" kindref="member">av_image_copy_plane_uc_from</ref>(uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dst,<sp/>ptrdiff_t<sp/>dst_linesize,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/>ptrdiff_t<sp/>src_linesize,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptrdiff_t<sp/>bytewidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_linesizes[4],</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>src_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_linesizes[4],</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_image_copy2(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_linesizes[4],</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>src_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_linesizes[4],</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy</ref>(dst_data,<sp/>dst_linesizes,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*)src_data,<sp/>src_linesizes,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pix_fmt,<sp/>width,<sp/>height);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="group__lavu__picture_1ga74dbf395c196834f4f43b6c60aa4de44" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga74dbf395c196834f4f43b6c60aa4de44" kindref="member">av_image_copy_uc_from</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst_data[4],<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/>dst_linesizes[4],</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>src_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/>src_linesizes[4],</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="group__lavu__picture_1ga5b6ead346a70342ae8a303c16d2b3629" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga5b6ead346a70342ae8a303c16d2b3629" kindref="member">av_image_fill_arrays</ref>(uint8_t<sp/>*dst_data[4],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_linesize[4],</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="group__lavu__picture_1ga24a67963c3ae0054a2a4bab35930e694" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga24a67963c3ae0054a2a4bab35930e694" kindref="member">av_image_get_buffer_size</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="group__lavu__picture_1ga6f8576f1ef0c2d9a9f7c5ac7f9a28c52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga6f8576f1ef0c2d9a9f7c5ac7f9a28c52" kindref="member">av_image_copy_to_buffer</ref>(uint8_t<sp/>*dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_size,</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>src_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_linesize[4],</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="group__lavu__picture_1ga3a867b6180ddad1e0c382ef0c5940b8e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga3a867b6180ddad1e0c382ef0c5940b8e" kindref="member">av_image_check_size</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="group__lavu__picture_1gac75c3c0dfc82367b2be34e99384927c2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1gac75c3c0dfc82367b2be34e99384927c2" kindref="member">av_image_check_size2</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/>int64_t<sp/>max_pixels,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="group__lavu__picture_1gada0f86cd0051ff8b9eef214e83e7ad1f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1gada0f86cd0051ff8b9eef214e83e7ad1f" kindref="member">av_image_check_sar</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>sar);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="group__lavu__picture_1ga3fa8e484cc214e8c7b9026825b5f4078" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga3fa8e484cc214e8c7b9026825b5f4078" kindref="member">av_image_fill_black</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/>dst_linesize[4],</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref><sp/>range,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="group__lavu__picture_1ga58595f4ce6255e7b147b4b48ac9d96a4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1ga58595f4ce6255e7b147b4b48ac9d96a4" kindref="member">av_image_fill_color</ref>(uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst_data[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ptrdiff_t<sp/>dst_linesize[4],</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>color[4],</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_IMGUTILS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h"/>
+  </compounddef>
+</doxygen>

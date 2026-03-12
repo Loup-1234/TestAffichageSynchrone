@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_param_definition" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFParamDefinition</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1a56d702d6e1161aff6a7421f0081419b8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFParamDefinition::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFParamDefinition::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="194" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1a44e3cda029cfc4f59f0b4986b539b3e2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVIAMFParamDefinition::subblocks_offset</definition>
+        <argsstring></argsstring>
+        <name>subblocks_offset</name>
+        <qualifiedname>AVIAMFParamDefinition::subblocks_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in bytes from the start of this struct, at which the subblocks array is located. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="200" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1a7985d71190fff3cc074938431cc7eb04" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVIAMFParamDefinition::subblock_size</definition>
+        <argsstring></argsstring>
+        <name>subblock_size</name>
+        <qualifiedname>AVIAMFParamDefinition::subblock_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size in bytes of each element in the subblocks array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="204" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1aedc3f35e5ac5aeb9d9a8b3ff62bb4363" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFParamDefinition::nb_subblocks</definition>
+        <argsstring></argsstring>
+        <name>nb_subblocks</name>
+        <qualifiedname>AVIAMFParamDefinition::nb_subblocks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of subblocks in the array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="208" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1ad23396529750bb097ae718f9dc38cff2" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" kindref="member">AVIAMFParamDefinitionType</ref></type>
+        <definition>enum AVIAMFParamDefinitionType AVIAMFParamDefinition::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVIAMFParamDefinition::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameters type. Determines the type of the subblock elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="213" column="35" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1ad192491bf6d44127c1207f756b35dce2" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFParamDefinition::parameter_id</definition>
+        <argsstring></argsstring>
+        <name>parameter_id</name>
+        <qualifiedname>AVIAMFParamDefinition::parameter_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Identifier for the parameter substream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="218" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFParamDefinition::parameter_rate</definition>
+        <argsstring></argsstring>
+        <name>parameter_rate</name>
+        <qualifiedname>AVIAMFParamDefinition::parameter_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sample rate for the parameter substream. It must not be 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="222" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1a7bd60102ad8b04236d031a8942ff6057" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFParamDefinition::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>AVIAMFParamDefinition::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The accumulated duration of all blocks in this parameter definition, in units of 1 / <ref refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" kindref="member">parameter_rate</ref>.</para>
+<para>May be 0, in which case all duration values should be specified in another parameter definition referencing the same parameter_id. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="231" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_param_definition_1ab3c556decd4e563a121a2acf9237d8b1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFParamDefinition::constant_subblock_duration</definition>
+        <argsstring></argsstring>
+        <name>constant_subblock_duration</name>
+        <qualifiedname>AVIAMFParamDefinition::constant_subblock_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The duration of every subblock in the case where all subblocks, with the optional exception of the last subblock, have equal durations.</para>
+<para>Must be 0 if subblocks have different durations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="238" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Parameters as defined in section 3.6.1 of IAMF.</para>
+<para>The struct is allocated by <ref refid="group__lavu__iamf__params_1gaaa3bd2f45c4fdb412177c0b09b103d56" kindref="member">av_iamf_param_definition_alloc()</ref> along with an array of subblocks, its type depending on the value of type. This array is placed subblocks_offset bytes after the start of this struct.</para>
+<para><simplesect kind="note"><para>This struct&apos;s size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFParamDefinition</label>
+        <link refid="struct_a_v_i_a_m_f_param_definition"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="193" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="193" bodyend="239"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1a56d702d6e1161aff6a7421f0081419b8" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1ab3c556decd4e563a121a2acf9237d8b1" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>constant_subblock_duration</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1a7bd60102ad8b04236d031a8942ff6057" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>duration</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1aedc3f35e5ac5aeb9d9a8b3ff62bb4363" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>nb_subblocks</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1ad192491bf6d44127c1207f756b35dce2" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>parameter_id</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>parameter_rate</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1a7985d71190fff3cc074938431cc7eb04" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>subblock_size</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1a44e3cda029cfc4f59f0b4986b539b3e2" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>subblocks_offset</name></member>
+      <member refid="struct_a_v_i_a_m_f_param_definition_1ad23396529750bb097ae718f9dc38cff2" prot="public" virt="non-virtual"><scope>AVIAMFParamDefinition</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

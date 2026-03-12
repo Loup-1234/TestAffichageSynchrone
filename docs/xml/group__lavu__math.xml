@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__math" kind="group">
+    <compoundname>lavu_math</compoundname>
+    <title>Mathematics</title>
+    <innergroup refid="group__lavu__math__csp">Colorspace Utility</innergroup>
+    <innergroup refid="group__lavu__math__rational">AVRational</innergroup>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVRounding</name>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a35e291756025351803b97f7522b56eab" prot="public">
+          <name>AV_ROUND_ZERO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Round toward zero. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a0ac08aede35de739ec5d0c1ba6217126" prot="public">
+          <name>AV_ROUND_INF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Round away from zero. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a4a4b2c2c77b7e20884440f7e57cfdb98" prot="public">
+          <name>AV_ROUND_DOWN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Round toward -infinity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aa1d28e08e2f8b49b256e056f93038c1a" prot="public">
+          <name>AV_ROUND_UP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Round toward +infinity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aea95b00154ff83c740b46376dfa06e11" prot="public">
+          <name>AV_ROUND_NEAR_INF</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Round to nearest and halfway cases away from zero. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a7fcb56631d6898b282d6c78ce6c14a43" prot="public">
+          <name>AV_ROUND_PASS_MINMAX</name>
+          <initializer>= 8192</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flag telling rescaling functions to pass <computeroutput>INT64_MIN</computeroutput>/<computeroutput>MAX</computeroutput> through unchanged, avoiding special cases for <ref refid="group__lavu__time_1ga2eaefe702f95f619ea6f2d08afa01be1" kindref="member">AV_NOPTS_VALUE</ref>.</para>
+<para>Unlike other values of the enumeration <ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref>, this value is a bitmask that must be used in conjunction with another value of the enumeration through a bitwise OR, in order to set behavior for normal cases.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd</ref>(3,<sp/>1,<sp/>2,<sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aa1d28e08e2f8b49b256e056f93038c1a" kindref="member">AV_ROUND_UP</ref><sp/>|<sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a7fcb56631d6898b282d6c78ce6c14a43" kindref="member">AV_ROUND_PASS_MINMAX</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rescaling<sp/>3:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Calculating<sp/>3<sp/>*<sp/>1<sp/>/<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>3<sp/>/<sp/>2<sp/>is<sp/>rounded<sp/>up<sp/>to<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd</ref>(<ref refid="group__lavu__time_1ga2eaefe702f95f619ea6f2d08afa01be1" kindref="member">AV_NOPTS_VALUE</ref>,<sp/>1,<sp/>2,<sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aa1d28e08e2f8b49b256e056f93038c1a" kindref="member">AV_ROUND_UP</ref><sp/>|<sp/><ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0a7fcb56631d6898b282d6c78ce6c14a43" kindref="member">AV_ROUND_PASS_MINMAX</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rescaling<sp/>AV_NOPTS_VALUE:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>AV_NOPTS_VALUE<sp/>==<sp/>INT64_MIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>AV_NOPTS_VALUE<sp/>is<sp/>passed<sp/>through</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>AV_NOPTS_VALUE</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rounding methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="130" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" bodystart="130" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__math_1ga952147c7a40c48a05c39e918b153ba99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t av_const</type>
+        <definition>int64_t av_const av_gcd</definition>
+        <argsstring>(int64_t a, int64_t b)</argsstring>
+        <name>av_gcd</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the greatest common divisor of two integer operands.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GCD of a and b up to sign; if a &gt;= 0 and b &gt;= 0, return value is &gt;= 0; if a == 0 and b == 0, returns 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="170" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="170" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_rescale</definition>
+        <argsstring>(int64_t a, int64_t b, int64_t c) av_const</argsstring>
+        <name>av_rescale</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale a 64-bit integer with rounding to nearest.</para>
+<para>The operation is mathematically equivalent to <computeroutput>a * b / c</computeroutput>, but writing that directly can overflow.</para>
+<para>This function is equivalent to <ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd()</ref> with <ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aea95b00154ff83c740b46376dfa06e11" kindref="member">AV_ROUND_NEAR_INF</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd()</ref>, <ref refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kindref="member">av_rescale_q()</ref>, <ref refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kindref="member">av_rescale_q_rnd()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="182" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="182" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1ga82d40664213508918093822461cc597e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_rescale_rnd</definition>
+        <argsstring>(int64_t a, int64_t b, int64_t c, enum AVRounding rnd) av_const</argsstring>
+        <name>av_rescale_rnd</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref></type>
+          <declname>rnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale a 64-bit integer with specified rounding.</para>
+<para>The operation is mathematically equivalent to <computeroutput>a * b / c</computeroutput>, but writing that directly can overflow, and does not support different rounding methods. If the result is not representable then INT64_MIN is returned.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" kindref="member">av_rescale()</ref>, <ref refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kindref="member">av_rescale_q()</ref>, <ref refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kindref="member">av_rescale_q_rnd()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="193" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="193" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_rescale_q</definition>
+        <argsstring>(int64_t a, AVRational bq, AVRational cq) av_const</argsstring>
+        <name>av_rescale_q</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>bq</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>cq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale a 64-bit integer by 2 rational numbers.</para>
+<para>The operation is mathematically equivalent to <computeroutput>a * bq / cq</computeroutput>.</para>
+<para>This function is equivalent to <ref refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kindref="member">av_rescale_q_rnd()</ref> with <ref refid="group__lavu__math_1gga921d656eaf2c4d6800a734a13af021d0aea95b00154ff83c740b46376dfa06e11" kindref="member">AV_ROUND_NEAR_INF</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" kindref="member">av_rescale()</ref>, <ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd()</ref>, <ref refid="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" kindref="member">av_rescale_q_rnd()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="204" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="204" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1gab706bfec9bf56534e02ca9564cb968f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_rescale_q_rnd</definition>
+        <argsstring>(int64_t a, AVRational bq, AVRational cq, enum AVRounding rnd) av_const</argsstring>
+        <name>av_rescale_q_rnd</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>bq</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>cq</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__math_1ga921d656eaf2c4d6800a734a13af021d0" kindref="member">AVRounding</ref></type>
+          <declname>rnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale a 64-bit integer by 2 rational numbers with specified rounding.</para>
+<para>The operation is mathematically equivalent to <computeroutput>a * bq / cq</computeroutput>.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__math_1ga3daf97178dd1b08b5e916be381cd33e4" kindref="member">av_rescale()</ref>, <ref refid="group__lavu__math_1ga82d40664213508918093822461cc597e" kindref="member">av_rescale_rnd()</ref>, <ref refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kindref="member">av_rescale_q()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="213" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="213" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1ga151744358fff630942b926e67e67c415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_compare_ts</definition>
+        <argsstring>(int64_t ts_a, AVRational tb_a, int64_t ts_b, AVRational tb_b)</argsstring>
+        <name>av_compare_ts</name>
+        <param>
+          <type>int64_t</type>
+          <declname>ts_a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>tb_a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>ts_b</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>tb_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare two timestamps each in its own time base.</para>
+<para><simplesect kind="return"><para>One of the following values:<itemizedlist>
+<listitem><para>-1 if <computeroutput>ts_a</computeroutput> is before <computeroutput>ts_b</computeroutput></para>
+</listitem><listitem><para>1 if <computeroutput>ts_a</computeroutput> is after <computeroutput>ts_b</computeroutput></para>
+</listitem><listitem><para>0 if they represent the same position</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="warning"><para>The result of the function is undefined if one of the timestamps is outside the <computeroutput>int64_t</computeroutput> range when represented in the other&apos;s timebase. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="228" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="228" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_compare_mod</definition>
+        <argsstring>(uint64_t a, uint64_t b, uint64_t mod)</argsstring>
+        <name>av_compare_mod</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare the remainders of two integer operands divided by a common divisor.</para>
+<para>In other words, compare the least significant <computeroutput>log2(mod)</computeroutput> bits of integers <computeroutput>a</computeroutput> and <computeroutput>b</computeroutput>.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" kindref="member">av_compare_mod</ref>(0x11,<sp/>0x02,<sp/>0x10)<sp/>&lt;<sp/>0<sp/></highlight><highlight class="comment">//<sp/>since<sp/>0x11<sp/>%<sp/>0x10<sp/><sp/>(0x1)<sp/>&lt;<sp/>0x02<sp/>%<sp/>0x10<sp/><sp/>(0x2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__math_1gaf268a1dde957d04da846e026e2ebe6e8" kindref="member">av_compare_mod</ref>(0x11,<sp/>0x02,<sp/>0x20)<sp/>&gt;<sp/>0<sp/></highlight><highlight class="comment">//<sp/>since<sp/>0x11<sp/>%<sp/>0x20<sp/>(0x11)<sp/>&gt;<sp/>0x02<sp/>%<sp/>0x20<sp/>(0x02)</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Divisor; must be a power of 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>a negative value if <computeroutput>a % mod &lt; b % mod</computeroutput></para>
+</listitem><listitem><para>a positive value if <computeroutput>a % mod &gt; b % mod</computeroutput></para>
+</listitem><listitem><para>zero if <computeroutput>a % mod == b % mod</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="249" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="249" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1ga29b7c3d60d68ef678ee1f4adc61a25dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_rescale_delta</definition>
+        <argsstring>(AVRational in_tb, int64_t in_ts, AVRational fs_tb, int duration, int64_t *last, AVRational out_tb)</argsstring>
+        <name>av_rescale_delta</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>in_tb</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>in_ts</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>fs_tb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>out_tb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale a timestamp while preserving known durations.</para>
+<para>This function is designed to be called per audio packet to scale the input timestamp to a different time base. Compared to a simple <ref refid="group__lavu__math_1gaf02994a8bbeaa91d4757df179cbe567f" kindref="member">av_rescale_q()</ref> call, this function is robust against possible inconsistent frame durations.</para>
+<para>The <computeroutput>last</computeroutput> parameter is a state variable that must be preserved for all subsequent calls for the same stream. For the first call, <computeroutput>*last</computeroutput> should be initialized to <ref refid="group__lavu__time_1ga2eaefe702f95f619ea6f2d08afa01be1" kindref="member">AV_NOPTS_VALUE</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in_tb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input time base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input timestamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fs_tb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration time base; typically this is finer-grained (greater) than <computeroutput>in_tb</computeroutput> and <computeroutput>out_tb</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration till the next call to this function (i.e. duration of the current packet/frame) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a timestamp expressed in terms of <computeroutput>fs_tb</computeroutput>, acting as a state variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">out_tb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output timebase </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Timestamp expressed in terms of <computeroutput>out_tb</computeroutput></para>
+</simplesect>
+<simplesect kind="note"><para>In the context of this function, &quot;duration&quot; is in term of samples, not seconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="276" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="276" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1ga0c4f9ed3f4102125be7451ad4d848a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t av_add_stable</definition>
+        <argsstring>(AVRational ts_tb, int64_t ts, AVRational inc_tb, int64_t inc)</argsstring>
+        <name>av_add_stable</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>ts_tb</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>inc_tb</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>inc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a value to a timestamp.</para>
+<para>This function guarantees that when the same value is repeatedly added that no accumulation of rounding errors occurs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input timestamp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ts_tb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input timestamp time base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inc_tb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time base of <computeroutput>inc</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="289" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="289" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math_1gac6df8ff9fa00f5daf9f16cc46038f064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_bessel_i0</definition>
+        <argsstring>(double x)</argsstring>
+        <name>av_bessel_i0</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0th order modified bessel function of the first kind. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" line="294" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mathematics.h" declline="294" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mathematical utilities for working with timestamp and time base.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

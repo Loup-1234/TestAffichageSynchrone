@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__misc" kind="group">
+    <compoundname>lavc_misc</compoundname>
+    <title>Utility functions</title>
+    <innergroup refid="group__lavc__misc__pixfmt">Pixel formats</innergroup>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__misc_1ga6d4056568b5ab73d2e55800d9a5caa66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void avcodec_string</definition>
+        <argsstring>(char *buf, int buf_size, AVCodecContext *enc, int encode)</argsstring>
+        <name>avcodec_string</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>enc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>encode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2905" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2905" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga9ccd730ba6e891b6c61da68ab138c63f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avcodec_default_execute</definition>
+        <argsstring>(AVCodecContext *c, int(*func)(AVCodecContext *c2, void *arg2), void *arg, int *ret, int count, int size)</argsstring>
+        <name>avcodec_default_execute</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *c2, void *arg2)</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2907" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2907" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga365b89d7f5b6dc9f930f07ec4078a611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avcodec_default_execute2</definition>
+        <argsstring>(AVCodecContext *c, int(*func)(AVCodecContext *c2, void *arg2, int, int), void *arg, int *ret, int count)</argsstring>
+        <name>avcodec_default_execute2</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *c2, void *arg2, int, int)</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2908" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2908" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga66b44aad56fa22a78fb8916eb8cc0516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avcodec_fill_audio_frame</definition>
+        <argsstring>(AVFrame *frame, int nb_channels, enum AVSampleFormat sample_fmt, const uint8_t *buf, int buf_size, int align)</argsstring>
+        <name>avcodec_fill_audio_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> audio data and linesize pointers.</para>
+<para>The buffer buf must be a preallocated buffer with a size big enough to contain the specified samples amount. The filled <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> data pointers will point to this buffer.</para>
+<para><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> extended_data channel pointers are allocated if necessary for planar audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> frame-&gt;nb_samples must be set prior to calling the function. This function fills in frame-&gt;data, frame-&gt;extended_data, frame-&gt;linesize[0]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to use for frame data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plane size sample alignment (0 = default) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, negative error code on failure </para>
+</simplesect>
+<xrefsect id="todo_1_todo000001"><xreftitle>A faire</xreftitle><xrefdescription><para>return the size in bytes required to store the samples in case of success, at the next libavutil bump </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2934" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2934" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1gaf60b0e076f822abcb2700eb601d352a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void avcodec_flush_buffers</definition>
+        <argsstring>(AVCodecContext *avctx)</argsstring>
+        <name>avcodec_flush_buffers</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>avctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the internal codec state / flush internal buffers. Should be called e.g. when seeking or when switching to a different stream.</para>
+<para><simplesect kind="note"><para>for decoders, this function just releases any references the decoder might keep internally, but the caller&apos;s references remain valid.</para>
+</simplesect>
+<simplesect kind="note"><para>for encoders, this function will only do something if the encoder declares support for AV_CODEC_CAP_ENCODER_FLUSH. When called, the encoder will drain any remaining packets, and can then be reused for a different stream (as opposed to sending a null frame which will leave the encoder in a permanent EOF state after draining). This can be desirable if the cost of tearing down and replacing the encoder instance is high. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2952" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2952" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga3266a8c3df0790c62259f91afcde45a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_audio_frame_duration</definition>
+        <argsstring>(AVCodecContext *avctx, int frame_bytes)</argsstring>
+        <name>av_get_audio_frame_duration</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>avctx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return audio frame duration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the frame, or 0 if unknown </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frame duration, in samples, if known. 0 if not able to determine. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2962" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2962" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga04a23a2336412504052d5c4e0c7716ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fast_padded_malloc</definition>
+        <argsstring>(void *ptr, unsigned int *size, size_t min_size)</argsstring>
+        <name>av_fast_padded_malloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same behaviour av_fast_malloc but the buffer has additional AV_INPUT_BUFFER_PADDING_SIZE at the end which will always be 0.</para>
+<para>In addition the whole buffer will initially and after resizes be 0-initialized so that no uninitialized data will ever appear. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2973" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2973" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1gaea5550dc9271f356631f7002772158d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fast_padded_mallocz</definition>
+        <argsstring>(void *ptr, unsigned int *size, size_t min_size)</argsstring>
+        <name>av_fast_padded_mallocz</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same behaviour av_fast_padded_malloc except that buffer will always be 0-initialized after call. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2979" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2979" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc_1ga906dda732e79eac12067c6d7ea19b630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avcodec_is_open</definition>
+        <argsstring>(AVCodecContext *s)</argsstring>
+        <name>avcodec_is_open</name>
+        <param>
+          <type><ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a positive value if s is open (i.e. <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref> was called on it), 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2985" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2985" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Miscellaneous utility functions related to both encoding and decoding (or neither). </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

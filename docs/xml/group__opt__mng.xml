@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__opt__mng" kind="group">
+    <compoundname>opt_mng</compoundname>
+    <title>AVOption (un)initialization and inspection.</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__opt__mng_1ga57ae1967c888c03f2cad33825d382924" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <enumvalue id="group__opt__mng_1gga57ae1967c888c03f2cad33825d382924aa836a939d74606db85ce1f09470d1605" prot="public">
+          <name>AV_OPT_FLAG_IMPLICIT_KEY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Accept to parse a value without a key; the key will then be returned as NULL. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="718" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="718" bodyend="725"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__opt__mng_1gad4ca968e9058b39b2da630ad0a091bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_opt_set_defaults</definition>
+        <argsstring>(void *s)</argsstring>
+        <name>av_opt_set_defaults</name>
+        <param>
+          <type>void *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the values of all <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> fields to their default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an AVOption-enabled struct (its first member must be a pointer to <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="560" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="560" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1gaeef5479b31ac29a6a55eb9d108d6225f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_opt_set_defaults2</definition>
+        <argsstring>(void *s, int mask, int flags)</argsstring>
+        <name>av_opt_set_defaults2</name>
+        <param>
+          <type>void *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the values of all <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> fields to their default values. Only these <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> fields for which (opt-&gt;flags &amp; mask) == flags will have their default applied to s.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an AVOption-enabled struct (its first member must be a pointer to <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>combination of AV_OPT_FLAG_* </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>combination of AV_OPT_FLAG_* </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="571" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="571" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1gac14db824af52baf8181406e98d116097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_opt_free</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>av_opt_free</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free all allocated objects in obj. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="576" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="576" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1gafbe418a443aa11838ac10318df5d96f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> *</type>
+        <definition>const AVOption * av_opt_next</definition>
+        <argsstring>(const void *obj, const AVOption *prev)</argsstring>
+        <name>av_opt_next</name>
+        <param>
+          <type>const void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> *</type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all AVOptions belonging to obj.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an AVOptions-enabled struct or a double pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> describing it. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>result of the previous call to <ref refid="group__opt__mng_1gafbe418a443aa11838ac10318df5d96f7" kindref="member">av_opt_next()</ref> on this object or NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>next <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> or NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="587" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="587" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1gac93347d7be97385868d17e7284356df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_opt_child_next</definition>
+        <argsstring>(void *obj, void *prev)</argsstring>
+        <name>av_opt_child_next</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over AVOptions-enabled children of obj.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>result of a previous call to this function or NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>next AVOptions-enabled child or NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="595" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="595" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1ga0d73b14a043d066d877b173049429d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_opt_child_class_iterate</definition>
+        <argsstring>(const AVClass *parent, void **iter)</argsstring>
+        <name>av_opt_child_class_iterate</name>
+        <param>
+          <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over potential AVOptions-enabled children of parent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where iteration state is stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_a_v_class" kindref="compound">AVClass</ref> corresponding to next potential child or NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="603" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="603" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> *</type>
+        <definition>const AVOption * av_opt_find</definition>
+        <argsstring>(void *obj, const char *name, const char *unit, int opt_flags, int search_flags)</argsstring>
+        <name>av_opt_find</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opt_flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Look for an option in an object. Consider only options which have all the specified flags set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a struct whose first element is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. Alternatively a double pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>, if AV_OPT_SEARCH_FAKE_OBJ search flag is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the option to look for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When searching for named constants, name of the unit it belongs to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find only options with all the specified flags set (AV_OPT_FLAG). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A combination of AV_OPT_SEARCH_*.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the option found, or NULL if no option was found.</para>
+</simplesect>
+<simplesect kind="note"><para>Options found with AV_OPT_SEARCH_CHILDREN flag may not be settable directly with av_opt_set(). Use special calls which take an options AVDictionary (e.g. <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>) to set options found with this flag. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="656" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="656" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1ga25d2940b96b13eaec40fd2234ca9dca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> *</type>
+        <definition>const AVOption * av_opt_find2</definition>
+        <argsstring>(void *obj, const char *name, const char *unit, int opt_flags, int search_flags, void **target_obj)</argsstring>
+        <name>av_opt_find2</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opt_flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>target_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Look for an option in an object. Consider only options which have all the specified flags set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a struct whose first element is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. Alternatively a double pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>, if AV_OPT_SEARCH_FAKE_OBJ search flag is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the option to look for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When searching for named constants, name of the unit it belongs to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Find only options with all the specified flags set (AV_OPT_FLAG). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A combination of AV_OPT_SEARCH_*. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">target_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL, an object to which the option belongs will be written here. It may be different from obj if AV_OPT_SEARCH_CHILDREN is present in search_flags. This parameter is ignored if search_flags contain AV_OPT_SEARCH_FAKE_OBJ.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the option found, or NULL if no option was found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="680" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="680" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1gaf7394e27d34208b24af8bb4b4a11741b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_show2</definition>
+        <argsstring>(void *obj, void *av_log_obj, int req_flags, int rej_flags)</argsstring>
+        <name>av_opt_show2</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>av_log_obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>req_flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rej_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show the obj options.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requested flags for the options to show. Show only the options for which it is opt-&gt;flags &amp; req_flags. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rej_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rejected flags for the options to show. Show only the options for which it is !(opt-&gt;flags &amp; req_flags). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>av_log_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log context to use for showing the options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="692" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="692" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__mng_1ga1e459af4e23415b8eb9b05aee81c933c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_key_value</definition>
+        <argsstring>(const char **ropts, const char *key_val_sep, const char *pairs_sep, unsigned flags, char **rkey, char **rval)</argsstring>
+        <name>av_opt_get_key_value</name>
+        <param>
+          <type>const char **</type>
+          <declname>ropts</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key_val_sep</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pairs_sep</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>rkey</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>rval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract a key-value pair from the beginning of a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ropts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the options string, will be updated to point to the rest of the string (one of the pairs_sep or the final NUL) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_val_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a 0-terminated list of characters used to separate key from value, for example &apos;=&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pairs_sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a 0-terminated list of characters used to separate two pairs from each other, for example &apos;:&apos; or &apos;,&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flags; see the AV_OPT_FLAG_* values below </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parsed key; must be freed using <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parsed value; must be freed using <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 for success, or a negative value corresponding to an AVERROR code in case of error; in particular: AVERROR(EINVAL) if no key is present </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="713" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="713" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__opt__mng_1ga25801ba4fc9b5313eb33ec84e082dd72" prot="public" static="no">
+        <name>AV_OPT_SEARCH_CHILDREN</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Search in possible children of the given object first. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="606" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__opt__mng_1gaa764998552a6f6f66a47ecd52b345caa" prot="public" static="no">
+        <name>AV_OPT_SEARCH_FAKE_OBJ</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The obj passed to <ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref> is fake <ndash/> only a double pointer to <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> instead of a required pointer to a struct containing <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. This is useful for searching for options without needing to allocate the corresponding object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="613" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__opt__mng_1ga821eea4d28ffec3b26a9eef413ff9ed4" prot="public" static="no">
+        <name>AV_OPT_ALLOW_NULL</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In av_opt_get, return NULL if the option has a pointer type and is set to NULL, rather than returning an empty string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="619" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__opt__mng_1ga9f03ae2cd06b33ab6cf4058311aaff9e" prot="public" static="no">
+        <name>AV_OPT_ARRAY_REPLACE</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>May be used with <ref refid="group__opt__set__funcs_1ga531793d5f3e30c6c97d7f8591fe1da54" kindref="member">av_opt_set_array()</ref> to signal that new elements should replace the existing ones in the indicated range. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="625" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__opt__mng_1ga1f10d07c79eec8bd1a8e1b91817e1b1a" prot="public" static="no">
+        <name>AV_OPT_MULTI_COMPONENT_RANGE</name>
+        <initializer>(1 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows av_opt_query_ranges and av_opt_query_ranges_default to return more than one component for certain option types. <simplesect kind="see"><para><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref> for details. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="632" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

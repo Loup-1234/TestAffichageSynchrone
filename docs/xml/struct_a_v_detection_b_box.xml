@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_detection_b_box" kind="struct" language="C++" prot="public">
+    <compoundname>AVDetectionBBox</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1a879fcbdb6516e1d7aa898e502846dd78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDetectionBBox::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>AVDetectionBBox::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Distance in pixels from the left/top edge of the frame, together with width and height, defining the bounding box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="31" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1ac37d24efae38a8c2df4face56cc0e045" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDetectionBBox::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>AVDetectionBBox::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="32" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1a7e868e81cc16b918b6215971c54c692c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDetectionBBox::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>AVDetectionBBox::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="33" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1a97560db39134c1d887d1f402ec6f67e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDetectionBBox::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>AVDetectionBBox::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="34" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1a0bff3fc9ab48fb0dce8c05b1f9d849b7" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AVDetectionBBox::detect_label[AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE]</definition>
+        <argsstring>[AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE]</argsstring>
+        <name>detect_label</name>
+        <qualifiedname>AVDetectionBBox::detect_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detect result with confidence </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="41" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1ac6e5278ab0796d4c8aeb897a7e7fcb9f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDetectionBBox::detect_confidence</definition>
+        <argsstring></argsstring>
+        <name>detect_confidence</name>
+        <qualifiedname>AVDetectionBBox::detect_confidence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="42" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1aecfd45fdda72d29164daae25039f2dfc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVDetectionBBox::classify_count</definition>
+        <argsstring></argsstring>
+        <name>classify_count</name>
+        <qualifiedname>AVDetectionBBox::classify_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="51" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1ab0af4bb931c763ac587dce7a1c49558d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AVDetectionBBox::classify_labels[AV_NUM_DETECTION_BBOX_CLASSIFY][AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE]</definition>
+        <argsstring>[AV_NUM_DETECTION_BBOX_CLASSIFY][AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE]</argsstring>
+        <name>classify_labels</name>
+        <qualifiedname>AVDetectionBBox::classify_labels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="52" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_detection_b_box_1ad541881a61741b555cb4c2eb18eee4d3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDetectionBBox::classify_confidences[AV_NUM_DETECTION_BBOX_CLASSIFY]</definition>
+        <argsstring>[AV_NUM_DETECTION_BBOX_CLASSIFY]</argsstring>
+        <name>classify_confidences</name>
+        <qualifiedname>AVDetectionBBox::classify_confidences</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="53" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDetectionBBox</label>
+        <link refid="struct_a_v_detection_b_box"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>classify_confidences</edgelabel>
+          <edgelabel>detect_confidence</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="26" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="26" bodyend="54"/>
+    <listofallmembers>
+      <member refid="struct_a_v_detection_b_box_1ad541881a61741b555cb4c2eb18eee4d3" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>classify_confidences</name></member>
+      <member refid="struct_a_v_detection_b_box_1aecfd45fdda72d29164daae25039f2dfc" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>classify_count</name></member>
+      <member refid="struct_a_v_detection_b_box_1ab0af4bb931c763ac587dce7a1c49558d" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>classify_labels</name></member>
+      <member refid="struct_a_v_detection_b_box_1ac6e5278ab0796d4c8aeb897a7e7fcb9f" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>detect_confidence</name></member>
+      <member refid="struct_a_v_detection_b_box_1a0bff3fc9ab48fb0dce8c05b1f9d849b7" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>detect_label</name></member>
+      <member refid="struct_a_v_detection_b_box_1a97560db39134c1d887d1f402ec6f67e9" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>h</name></member>
+      <member refid="struct_a_v_detection_b_box_1a7e868e81cc16b918b6215971c54c692c" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>w</name></member>
+      <member refid="struct_a_v_detection_b_box_1a879fcbdb6516e1d7aa898e502846dd78" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>x</name></member>
+      <member refid="struct_a_v_detection_b_box_1ac37d24efae38a8c2df4face56cc0e045" prot="public" virt="non-virtual"><scope>AVDetectionBBox</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavf__misc" kind="group">
+    <compoundname>lavf_misc</compoundname>
+    <title>Utility functions</title>
+    <innergroup refid="group__riff__fourcc">RIFF FourCCs</innergroup>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavf__misc_1ga67f84bb8799c8da41194f046f4b970c4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVTimebaseSource</name>
+        <enumvalue id="group__lavf__misc_1gga67f84bb8799c8da41194f046f4b970c4a925300170a86b606dbe4b2b2a18ad12a" prot="public">
+          <name>AVFMT_TBCF_AUTO</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavf__misc_1gga67f84bb8799c8da41194f046f4b970c4ae6bd8e936313feda91adedd2501ca90b" prot="public">
+          <name>AVFMT_TBCF_DECODER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavf__misc_1gga67f84bb8799c8da41194f046f4b970c4a4b894ad271e07df75e1b8121455ea4ee" prot="public">
+          <name>AVFMT_TBCF_DEMUXER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavf__misc_1gga67f84bb8799c8da41194f046f4b970c4a6b54fbd5193e969530dd00f49a903cef" prot="public">
+          <name>AVFMT_TBCF_R_FRAMERATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2988" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="2988" bodyend="2995"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavf__misc_1gab533a6d5d830ab90573dd035002c5bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hex_dump</definition>
+        <argsstring>(FILE *f, const uint8_t *buf, int size)</argsstring>
+        <name>av_hex_dump</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a nice hexadecimal dump of a buffer to the specified file stream.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file stream pointer where the dump should be sent to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavf__misc_1ga56f93dbd118ff5fe833a2e39b685974c" kindref="member">av_hex_dump_log</ref>, <ref refid="group__lavf__misc_1ga46720b0bb28ca455246805be8969ff9e" kindref="member">av_pkt_dump2</ref>, <ref refid="group__lavf__misc_1gaab9fad988c28cc1c4dcbba24a36b6113" kindref="member">av_pkt_dump_log2</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2640" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2640" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga56f93dbd118ff5fe833a2e39b685974c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hex_dump_log</definition>
+        <argsstring>(void *avcl, int level, const uint8_t *buf, int size)</argsstring>
+        <name>av_hex_dump_log</name>
+        <param>
+          <type>void *</type>
+          <declname>avcl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a nice hexadecimal dump of a buffer to the log.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avcl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an arbitrary struct of which the first field is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The importance level of the message, lower values signifying higher importance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavf__misc_1gab533a6d5d830ab90573dd035002c5bca" kindref="member">av_hex_dump</ref>, <ref refid="group__lavf__misc_1ga46720b0bb28ca455246805be8969ff9e" kindref="member">av_pkt_dump2</ref>, <ref refid="group__lavf__misc_1gaab9fad988c28cc1c4dcbba24a36b6113" kindref="member">av_pkt_dump_log2</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2654" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2654" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga46720b0bb28ca455246805be8969ff9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_pkt_dump2</definition>
+        <argsstring>(FILE *f, const AVPacket *pkt, int dump_payload, const AVStream *st)</argsstring>
+        <name>av_pkt_dump2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dump_payload</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a nice dump of a packet to the specified file stream.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file stream pointer where the dump should be sent to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet to dump </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dump_payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the payload must be displayed, too. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> that the packet belongs to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2664" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2664" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gaab9fad988c28cc1c4dcbba24a36b6113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_pkt_dump_log2</definition>
+        <argsstring>(void *avcl, int level, const AVPacket *pkt, int dump_payload, const AVStream *st)</argsstring>
+        <name>av_pkt_dump_log2</name>
+        <param>
+          <type>void *</type>
+          <declname>avcl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dump_payload</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a nice dump of a packet to the log.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>avcl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an arbitrary struct of which the first field is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The importance level of the message, lower values signifying higher importance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet to dump </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dump_payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the payload must be displayed, too. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> that the packet belongs to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2678" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2678" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga27b89fa8286af6efb5a69e8db4033b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID av_codec_get_id</definition>
+        <argsstring>(const struct AVCodecTag *const *tags, unsigned int tag)</argsstring>
+        <name>av_codec_get_id</name>
+        <param>
+          <type>const struct AVCodecTag *const *</type>
+          <declname>tags</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref> for the given codec tag tag. If no codec id is found returns AV_CODEC_ID_NONE.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of supported codec_id-codec_tag pairs, as stored in AVInputFormat.codec_tag and <ref refid="struct_a_v_output_format_1ac55f4c21dd75c8c48b9de5080681eed4" kindref="member">AVOutputFormat.codec_tag</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec tag to match to a codec ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2689" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2689" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga126917b7ce8b4f05505098b72f4997de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int av_codec_get_tag</definition>
+        <argsstring>(const struct AVCodecTag *const *tags, enum AVCodecID id)</argsstring>
+        <name>av_codec_get_tag</name>
+        <param>
+          <type>const struct AVCodecTag *const *</type>
+          <declname>tags</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the codec tag for the given codec id id. If no codec tag is found returns 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of supported codec_id-codec_tag pairs, as stored in AVInputFormat.codec_tag and <ref refid="struct_a_v_output_format_1ac55f4c21dd75c8c48b9de5080681eed4" kindref="member">AVOutputFormat.codec_tag</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec ID to match to a codec tag </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2699" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2699" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gabe1a7b6824078229c69b75c71053c035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_codec_get_tag2</definition>
+        <argsstring>(const struct AVCodecTag *const *tags, enum AVCodecID id, unsigned int *tag)</argsstring>
+        <name>av_codec_get_tag2</name>
+        <param>
+          <type>const struct AVCodecTag *const *</type>
+          <declname>tags</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the codec tag for the given codec id.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of supported codec_id - codec_tag pairs, as stored in AVInputFormat.codec_tag and <ref refid="struct_a_v_output_format_1ac55f4c21dd75c8c48b9de5080681eed4" kindref="member">AVOutputFormat.codec_tag</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec id that should be searched for in the list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the found tag </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if id was not found in tags, &gt; 0 if it was found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2710" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2710" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gaad9737492bb66aeeec37b7c7d8d90f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_find_default_stream_index</definition>
+        <argsstring>(AVFormatContext *s)</argsstring>
+        <name>av_find_default_stream_index</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2713" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2713" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gac4cabc0d681c34b2e2c6a87a55877f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_index_search_timestamp</definition>
+        <argsstring>(AVStream *st, int64_t timestamp, int flags)</argsstring>
+        <name>av_index_search_timestamp</name>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index for a specific timestamp.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream that the timestamp belongs to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestamp to retrieve the index for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if AVSEEK_FLAG_BACKWARD then the returned index will correspond to the timestamp which is &lt;= the requested one, if backward is 0, then it will be &gt;= if AVSEEK_FLAG_ANY seek to any frame, only keyframes otherwise </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 if no such timestamp could be found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2726" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2726" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga2ee823d22f7e3d5387ac6a62ba16da09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_index_get_entries_count</definition>
+        <argsstring>(const AVStream *st)</argsstring>
+        <name>avformat_index_get_entries_count</name>
+        <param>
+          <type>const <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index entry count for the given <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of index entries in the stream </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2734" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2734" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga677a6ee137f1ac13695a6f94bf1baad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> *</type>
+        <definition>const AVIndexEntry * avformat_index_get_entry</definition>
+        <argsstring>(AVStream *st, int idx)</argsstring>
+        <name>avformat_index_get_entry</name>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> corresponding to the given index.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream containing the requested <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the requested <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> if it exists, NULL otherwise.</para>
+</simplesect>
+<simplesect kind="note"><para>The pointer returned by this function is only guaranteed to be valid until any function that takes the stream or the parent <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> as input argument is called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2747" column="20" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2747" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gab31c7571d1e969055b08e932b98c41ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> *</type>
+        <definition>const AVIndexEntry * avformat_index_get_entry_from_timestamp</definition>
+        <argsstring>(AVStream *st, int64_t wanted_timestamp, int flags)</argsstring>
+        <name>avformat_index_get_entry_from_timestamp</name>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>wanted_timestamp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> corresponding to the given timestamp.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream containing the requested <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wanted_timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp to retrieve the index entry for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If AVSEEK_FLAG_BACKWARD then the returned entry will correspond to the timestamp which is &lt;= the requested one, if backward is 0, then it will be &gt;= if AVSEEK_FLAG_ANY seek to any frame, only keyframes otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the requested <ref refid="struct_a_v_index_entry" kindref="compound">AVIndexEntry</ref> if it exists, NULL otherwise.</para>
+</simplesect>
+<simplesect kind="note"><para>The pointer returned by this function is only guaranteed to be valid until any function that takes the stream or the parent <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> as input argument is called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2764" column="20" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2764" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga3ed7441cb4af0bdd65a4cf51bf35088e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_add_index_entry</definition>
+        <argsstring>(AVStream *st, int64_t pos, int64_t timestamp, int size, int distance, int flags)</argsstring>
+        <name>av_add_index_entry</name>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an index entry into a sorted list. Update the entry if the list already contains it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestamp in the time base of the given stream </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2773" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2773" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga63a0579d6c2aa72470ac742bbbc1205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_url_split</definition>
+        <argsstring>(char *proto, int proto_size, char *authorization, int authorization_size, char *hostname, int hostname_size, int *port_ptr, char *path, int path_size, const char *url)</argsstring>
+        <name>av_url_split</name>
+        <param>
+          <type>char *</type>
+          <declname>proto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>proto_size</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>authorization</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>authorization_size</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>hostname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hostname_size</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>port_ptr</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>path_size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Split a URL string into components.</para>
+<para>The pointers to buffers for storing individual components may be null, in order to ignore that component. Buffers for components not found are set to empty strings. If the port is not found, it is set to a negative value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer for the protocol </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>proto_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the proto buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>authorization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer for the authorization </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>authorization_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the authorization buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hostname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer for the host name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hostname_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the hostname buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to store the port number in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer for the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the path buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the URL to split </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2796" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2796" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gae2645941f2dc779c307eb6314fd39f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_dump_format</definition>
+        <argsstring>(AVFormatContext *ic, int index, const char *url, int is_output)</argsstring>
+        <name>av_dump_format</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>ic</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>is_output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print detailed information about the input or output format, such as duration, bitrate, streams, container, programs, metadata, side data, codec and time base.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context to analyze </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the stream to dump information about </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the URL to print, such as source or destination file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Select whether the specified context is an input(0) or output(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2814" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2814" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga05f17637161cd79506f67b20ea8149c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_frame_filename2</definition>
+        <argsstring>(char *buf, int buf_size, const char *path, int number, int flags)</argsstring>
+        <name>av_get_frame_filename2</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return in &apos;buf&apos; the path with &apos;d&apos; replaced by a number.</para>
+<para>Also handles the &apos;%0nd&apos; format where &apos;n&apos; is the total number of digits and &apos;%&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination buffer size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numbered sequence string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AV_FRAME_FILENAME_FLAGS_* </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if OK, -1 on format error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2836" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2836" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga90e027a5d9006148413a1387c506cd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_get_frame_filename</definition>
+        <argsstring>(char *buf, int buf_size, const char *path, int number)</argsstring>
+        <name>av_get_frame_filename</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2839" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2839" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gac20eb319c6c46f581b5d08f5c25e763e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_filename_number_test</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>av_filename_number_test</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether filename actually is a numbered sequence generator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>possible numbered sequence string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if a valid numbered sequence string, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2848" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2848" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gaa2a7353a6bb0c8726797abd56b176af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_sdp_create</definition>
+        <argsstring>(AVFormatContext *ac[], int n_files, char *buf, int size)</argsstring>
+        <name>av_sdp_create</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>ac</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_files</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate an SDP for an RTP session.</para>
+<para>Note, this overwrites the id values of AVStreams in the muxer contexts for getting unique dynamic payload types.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of AVFormatContexts describing the RTP streams. If the array is composed by only one context, such context can contain multiple AVStreams (one <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> per RTP stream). Otherwise, all the contexts in the array (an <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> per RTP stream) must contain only one <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of AVCodecContexts contained in ac </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer where the SDP will be stored (must be allocated by the caller) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if OK, AVERROR_xxx on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2867" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2867" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga8247f49e5642dd3bd20ce6ba5a7f6466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_match_ext</definition>
+        <argsstring>(const char *filename, const char *extensions)</argsstring>
+        <name>av_match_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extensions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a positive value if the given filename has one of the given extensions, 0 otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file name to check against the given extensions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extensions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a comma-separated list of filename extensions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2876" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2876" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gaa90b4c72d1bbb298e11096d3a09ec7db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_query_codec</definition>
+        <argsstring>(const AVOutputFormat *ofmt, enum AVCodecID codec_id, int std_compliance)</argsstring>
+        <name>avformat_query_codec</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>ofmt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+          <declname>codec_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>std_compliance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if the given container can store a codec.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ofmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container to check for compatibility </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>codec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>codec to potentially store in container </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std_compliance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>standards compliance level, one of FF_COMPLIANCE_*</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if codec with ID codec_id can be stored in ofmt, 0 if it cannot. A negative number if this information is not available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2888" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2888" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gad11a1be52eeb74f112f8c926d2b47aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_mime_codec_str</definition>
+        <argsstring>(const AVCodecParameters *par, AVRational frame_rate, struct AVBPrint *out)</argsstring>
+        <name>av_mime_codec_str</name>
+        <param>
+          <type>const <ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>frame_rate</declname>
+        </param>
+        <param>
+          <type>struct AVBPrint *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a RFC 4281/6381 like string describing a codec for MIME types.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref> struct describing the codec </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> for the frame rate, for deciding the right profile for video codecs. Pass an invalid <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> (1/0) to indicate that it is unknown. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the AVBPrint to write the output to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;0 on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2902" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2902" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gafa6fbfe5c1bf6792fd6e33475b6056bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_guess_sample_aspect_ratio</definition>
+        <argsstring>(AVFormatContext *format, AVStream *stream, struct AVFrame *frame)</argsstring>
+        <name>av_guess_sample_aspect_ratio</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guess the sample aspect ratio of a frame, based on both the stream and the frame aspect ratio.</para>
+<para>Since the frame aspect ratio is set by the codec but the stream aspect ratio is set by the demuxer, these two may not be equal. This function tries to return the value that you should use if you would like to display the frame.</para>
+<para>Basic logic is to use the stream aspect ratio if it is set to something sane otherwise use the frame aspect ratio. This way a container setting, which is usually easy to modify can override the coded value in the frames.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format context which the stream is part of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream which the frame is part of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame with the aspect ratio to be determined </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the guessed (valid) sample_aspect_ratio, 0/1 if no idea </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2955" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2955" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga698e6aa73caa9616851092e2be15875d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_guess_frame_rate</definition>
+        <argsstring>(AVFormatContext *ctx, AVStream *stream, struct AVFrame *frame)</argsstring>
+        <name>av_guess_frame_rate</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Guess the frame rate, based on both the container and codec information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format context which the stream is part of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream which the frame is part of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame for which the frame rate should be determined, may be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the guessed (valid) frame rate, 0/1 if no idea </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2966" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2966" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga7e45597834e9ef3098ddb74bc5e1550c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_match_stream_specifier</definition>
+        <argsstring>(AVFormatContext *s, AVStream *st, const char *spec)</argsstring>
+        <name>avformat_match_stream_specifier</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the stream st contained in s is matched by the stream specifier spec.</para>
+<para>See the &quot;stream specifiers&quot; chapter in the documentation for the syntax of spec.</para>
+<para><simplesect kind="return"><para>&gt;0 if st is matched by spec; 0 if st is not matched by spec; AVERROR code if spec is invalid</para>
+</simplesect>
+<simplesect kind="note"><para>A stream specifier can match several streams in the format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2982" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2982" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1ga501ff1b3aa357c09da90c0effb356e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avformat_queue_attached_pictures</definition>
+        <argsstring>(AVFormatContext *s)</argsstring>
+        <name>avformat_queue_attached_pictures</name>
+        <param>
+          <type><ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2985" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="2985" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gac6a2ef43243de2aa50f7d40f0f3a92cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int avformat_transfer_internal_stream_timing_info</definition>
+        <argsstring>(const AVOutputFormat *ofmt, AVStream *ost, const AVStream *ist, enum AVTimebaseSource copy_tb)</argsstring>
+        <name>avformat_transfer_internal_stream_timing_info</name>
+        <param>
+          <type>const <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref> *</type>
+          <declname>ofmt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>ost</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>ist</declname>
+        </param>
+        <param>
+          <type>enum AVTimebaseSource</type>
+          <declname>copy_tb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000010"><xreftitle>Obsolète</xreftitle><xrefdescription><para>do not call this function </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="3001" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="3001" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavf__misc_1gaa7769a3b3fd72994933aac4293803028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>attribute_deprecated <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>attribute_deprecated AVRational av_stream_get_codec_timebase</definition>
+        <argsstring>(const AVStream *st)</argsstring>
+        <name>av_stream_get_codec_timebase</name>
+        <param>
+          <type>const <ref refid="struct_a_v_stream" kindref="compound">AVStream</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000011"><xreftitle>Obsolète</xreftitle><xrefdescription><para>do not call this function </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="3009" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" declline="3009" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavf__misc_1gaa0fc59624ec1fe0dc583743678b96fb6" prot="public" static="no">
+        <name>AV_FRAME_FILENAME_FLAGS_MULTIPLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Allow multiple d. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2822" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="2820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavf__misc_1ga4a21a4b625ad552de121ca01e786b6a7" prot="public" static="no">
+        <name>AV_FRAME_FILENAME_FLAGS_IGNORE_TRUNCATION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Ignore truncated output instead of returning an error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="2823" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="2821" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Miscellaneous utility functions related to both muxing and demuxing (or neither). </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

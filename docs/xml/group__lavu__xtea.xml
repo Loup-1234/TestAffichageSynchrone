@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__xtea" kind="group">
+    <compoundname>lavu_xtea</compoundname>
+    <title>XTEA</title>
+    <innerclass refid="struct_a_v_x_t_e_a" prot="public">AVXTEA</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__xtea_1gabe668bd18acf450364872e8577d74a59" prot="public" static="no">
+        <type>struct AVXTEA</type>
+        <definition>typedef struct AVXTEA AVXTEA</definition>
+        <argsstring></argsstring>
+        <name>AVXTEA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="37" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__xtea_1ga26cb58166f22a6eaef74a9fe0437ad42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> *</type>
+        <definition>AVXTEA * av_xtea_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_xtea_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="42" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" declline="42" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__xtea_1ga015fbc7f1062f11900dcf1c6352f2156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_xtea_init</definition>
+        <argsstring>(struct AVXTEA *ctx, const uint8_t key[16])</argsstring>
+        <name>av_xtea_init</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>key</declname>
+          <array>[16]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a key of 16 bytes used for encryption/decryption, interpreted as big endian 32 bit numbers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="51" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__xtea_1ga95fcfa52ff3a9974ca6fdae6a0e6a618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_xtea_le_init</definition>
+        <argsstring>(struct AVXTEA *ctx, const uint8_t key[16])</argsstring>
+        <name>av_xtea_le_init</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>key</declname>
+          <array>[16]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a key of 16 bytes used for encryption/decryption, interpreted as little endian 32 bit numbers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="60" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__xtea_1gaeaf213c9d74ba6d6b3769bda4ce283fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_xtea_crypt</definition>
+        <argsstring>(struct AVXTEA *ctx, uint8_t *dst, const uint8_t *src, int count, uint8_t *iv, int decrypt)</argsstring>
+        <name>av_xtea_crypt</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encrypt or decrypt a buffer using a previously initialized context, in big endian format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 8 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization vector for CBC mode, if NULL then ECB will be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="73" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__xtea_1gaec55b57021e2b6fd48f9e12a0a3a2724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_xtea_le_crypt</definition>
+        <argsstring>(struct AVXTEA *ctx, uint8_t *dst, const uint8_t *src, int count, uint8_t *iv, int decrypt)</argsstring>
+        <name>av_xtea_le_crypt</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>decrypt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encrypt or decrypt a buffer using a previously initialized context, in little endian format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_x_t_e_a" kindref="compound">AVXTEA</ref> context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of 8 byte blocks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization vector for CBC mode, if NULL then ECB will be used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for encryption, 1 for decryption </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" line="87" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/xtea.h" declline="87" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

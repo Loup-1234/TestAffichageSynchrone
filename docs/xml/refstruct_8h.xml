@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="refstruct_8h" kind="file" language="C++">
+    <compoundname>refstruct.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h</label>
+        <link refid="refstruct_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="union_a_v_ref_struct_opaque" prot="public">AVRefStructOpaque</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="refstruct_8h_1adfeda05e35c2b41912c122bec0aaa80e" prot="public" static="no">
+        <name>AV_REFSTRUCT_FLAG_NO_ZEROING</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this flag is set in av_refstruct_alloc_ext_c(), the object will not be initially zeroed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="67" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="refstruct_8h_1af78ccd3dc1fac6ff865a2e55226dfd0e" prot="public" static="no">
+        <name>AV_REFSTRUCT_POOL_FLAG_NO_ZEROING</name>
+        <initializer>AV_REFSTRUCT_FLAG_NO_ZEROING</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this flag is not set, every object in the pool will be zeroed before the init callback is called or before it is turned over to the user for the first time if no init callback has been provided. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="196" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="refstruct_8h_1a76c50193f103000d88484ef45632b86d" prot="public" static="no">
+        <name>AV_REFSTRUCT_POOL_FLAG_RESET_ON_INIT_ERROR</name>
+        <initializer>(1 &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this flag is set and both init_cb and reset_cb callbacks are provided, then reset_cb will be called if init_cb fails. The object passed to reset_cb will be in the state left by init_cb. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="202" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="refstruct_8h_1a26b86f180aa0bfbe4ec74b57eac06d73" prot="public" static="no">
+        <name>AV_REFSTRUCT_POOL_FLAG_FREE_ON_INIT_ERROR</name>
+        <initializer>(1 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this flag is set and both init_cb and free_entry_cb callbacks are provided, then free_cb will be called if init_cb fails.</para>
+<para>It will be called after reset_cb in case reset_cb and the AV_REFSTRUCT_POOL_FLAG_RESET_ON_INIT_ERROR flag are also set.</para>
+<para>The object passed to free_cb will be in the state left by the callbacks applied earlier (init_cb potentially followed by reset_cb). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="213" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="refstruct_8h_1a1694a361b1adfe570d128bfb6e48c598" prot="public" static="no">
+        <name>AV_REFSTRUCT_POOL_FLAG_ZERO_EVERY_TIME</name>
+        <initializer>(1 &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this flag is set, the entries will be zeroed before being returned to the user (after the init or reset callbacks have been called (if provided)). Furthermore, to avoid zeroing twice it also makes the pool behave as if the AV_REFSTRUCT_POOL_FLAG_NO_ZEROING flag had been provided. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="221" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="refstruct_8h_1a60414b8dd1cce94faf7bce1b5afd8fc3" prot="public" static="no">
+        <type>struct AVRefStructPool</type>
+        <definition>typedef struct AVRefStructPool AVRefStructPool</definition>
+        <argsstring></argsstring>
+        <name>AVRefStructPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AVRefStructPool is an API for a thread-safe pool of objects managed via the RefStruct API.</para>
+<para>Frequently allocating and freeing large or complicated objects may be slow and wasteful. This API is meant to solve this in cases when the caller needs a set of interchangeable objects.</para>
+<para>At the beginning, the user must call allocate the pool via av_refstruct_pool_alloc() or its analogue av_refstruct_pool_alloc_ext(). Then whenever an object is needed, call av_refstruct_pool_get() to get a new or reused object from the pool. This new object works in all aspects the same way as the ones created by av_refstruct_alloc_ext(). However, when the last reference to this object is unreferenced, it is (optionally) reset and returned to the pool instead of being freed and will be reused for subsequent av_refstruct_pool_get() calls.</para>
+<para>When the caller is done with the pool and no longer needs to create any new objects, av_refstruct_pool_uninit() must be called to mark the pool as freeable. Then entries returned to the pool will then be freed. Once all the entries are freed, the pool will automatically be freed.</para>
+<para>Allocating and releasing objects with this API is thread-safe as long as the user-supplied callbacks (if provided) are thread-safe. The buffer pool. This structure is opaque and not meant to be accessed directly. It is allocated with the allocators below and freed with av_refstruct_pool_uninit(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="189" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="refstruct_8h_1a666387d5a46b9129c6a30e3662837828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_refstruct_alloc_ext_c</definition>
+        <argsstring>(size_t size, unsigned flags, AVRefStructOpaque opaque, void(*free_cb)(AVRefStructOpaque opaque, void *obj))</argsstring>
+        <name>av_refstruct_alloc_ext_c</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref></type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>free_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a refcounted object of usable size <computeroutput>size</computeroutput> managed via the RefStruct API.</para>
+<para>By default (in the absence of flags to the contrary), the returned object is initially zeroed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired usable size of the returned object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitwise combination of AV_REFSTRUCT_FLAG_* flags. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer that will be passed to the free_cb callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback for freeing this object&apos;s content when its reference count reaches zero; it must not free the object itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to an object of the desired size or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="84" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1aa4ea3985a3c8704ed257c90cb4574cb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * av_refstruct_alloc_ext</definition>
+        <argsstring>(size_t size, unsigned flags, void *opaque, void(*free_cb)(AVRefStructOpaque opaque, void *obj))</argsstring>
+        <name>av_refstruct_alloc_ext</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>free_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A wrapper around av_refstruct_alloc_ext_c() for the common case of a non-const qualified opaque.</para>
+<para><simplesect kind="see"><para>av_refstruct_alloc_ext_c() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="94" column="6" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a45fb20cc7ede25f7e7fdfe8465eade4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * av_refstruct_allocz</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>av_refstruct_allocz</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to av_refstruct_alloc_ext(size, 0, NULL, NULL) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="105" column="6" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a05439281e9f9300478424df52eb3f93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_refstruct_unref</definition>
+        <argsstring>(void *objp)</argsstring>
+        <name>av_refstruct_unref</name>
+        <param>
+          <type>void *</type>
+          <declname>objp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrement the reference count of the underlying object and automatically free the object if there are no more references to it.</para>
+<para><computeroutput>*objp == NULL</computeroutput> is legal and a no-op.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer that is either NULL or points to an object managed via this API. <computeroutput>*objp</computeroutput> is set to NULL on return. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="119" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a8752b0a475f40d975a40076603cc07e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_refstruct_ref</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>av_refstruct_ref</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new reference to an object managed via this API, i.e. increment the reference count of the underlying object and return obj. <simplesect kind="return"><para>a pointer equal to obj. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="127" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="127" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a23d0e9213fffaac5eb3d38c64af45698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void * av_refstruct_ref_c</definition>
+        <argsstring>(const void *obj)</argsstring>
+        <name>av_refstruct_ref_c</name>
+        <param>
+          <type>const void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Analog of av_refstruct_ref(), but for constant objects. <simplesect kind="see"><para>av_refstruct_ref() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="133" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="133" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a09ceebd4565cca8395c1c3367df0631e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_refstruct_replace</definition>
+        <argsstring>(void *dstp, const void *src)</argsstring>
+        <name>av_refstruct_replace</name>
+        <param>
+          <type>void *</type>
+          <declname>dstp</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure <computeroutput>*dstp</computeroutput> refers to the same object as src.</para>
+<para>If <computeroutput>*dstp</computeroutput> is already equal to src, do nothing. Otherwise unreference <computeroutput>*dstp</computeroutput> and replace it with a new reference to src in case <computeroutput>src != NULL</computeroutput> (this involves incrementing the reference count of src&apos;s underlying object) or with NULL otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dstp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer that is either NULL or points to an object managed via this API. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an object managed via this API or NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="147" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="147" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a86437e1666b09ea242764854ee344221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_refstruct_exclusive</definition>
+        <argsstring>(const void *obj)</argsstring>
+        <name>av_refstruct_exclusive</name>
+        <param>
+          <type>const void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether the reference count of an object managed via this API is 1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an object managed via this API. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the reference count of obj is 1; 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="156" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="156" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a0231bbd2a356b98ca41f7593954c8a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVRefStructPool *</type>
+        <definition>AVRefStructPool * av_refstruct_pool_alloc</definition>
+        <argsstring>(size_t size, unsigned flags)</argsstring>
+        <name>av_refstruct_pool_alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to av_refstruct_pool_alloc(size, flags, NULL, NULL, NULL, NULL, NULL) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="226" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="226" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1ac722e338f8766a99fa2692fe9dcd7c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVRefStructPool *</type>
+        <definition>AVRefStructPool * av_refstruct_pool_alloc_ext_c</definition>
+        <argsstring>(size_t size, unsigned flags, AVRefStructOpaque opaque, int(*init_cb)(AVRefStructOpaque opaque, void *obj), void(*reset_cb)(AVRefStructOpaque opaque, void *obj), void(*free_entry_cb)(AVRefStructOpaque opaque, void *obj), void(*free_cb)(AVRefStructOpaque opaque))</argsstring>
+        <name>av_refstruct_pool_alloc_ext_c</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref></type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>init_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>reset_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>free_entry_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque)</type>
+          <declname>free_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVRefStructPool, potentially using complex callbacks.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the entries of the pool </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a bitwise combination of AV_REFSTRUCT_POOL_FLAG_* flags </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer that will be passed to the callbacks below. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that will be called directly after a new entry has been allocated. obj has already been zeroed unless the AV_REFSTRUCT_POOL_FLAG_NO_ZEROING flag is in use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that will be called after an entry has been returned to the pool and before it is reused. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that will be called when an entry is freed after the pool has been marked as to be uninitialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that will be called when the pool itself is freed (after the last entry has been returned and freed). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="244" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="244" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1acb415c77ed24726b8214811ea4d57b36" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>AVRefStructPool *</type>
+        <definition>static AVRefStructPool * av_refstruct_pool_alloc_ext</definition>
+        <argsstring>(size_t size, unsigned flags, void *opaque, int(*init_cb)(AVRefStructOpaque opaque, void *obj), void(*reset_cb)(AVRefStructOpaque opaque, void *obj), void(*free_entry_cb)(AVRefStructOpaque opaque, void *obj), void(*free_cb)(AVRefStructOpaque opaque))</argsstring>
+        <name>av_refstruct_pool_alloc_ext</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>init_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>reset_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque, void *obj)</type>
+          <declname>free_entry_cb</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> opaque)</type>
+          <declname>free_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A wrapper around av_refstruct_pool_alloc_ext_c() for the common case of a non-const qualified opaque.</para>
+<para><simplesect kind="see"><para>av_refstruct_pool_alloc_ext_c() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="258" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="258" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a57f6362124521906cf39fedad4ea8ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_refstruct_pool_get</definition>
+        <argsstring>(AVRefStructPool *pool)</argsstring>
+        <name>av_refstruct_pool_get</name>
+        <param>
+          <type>AVRefStructPool *</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an object from the pool, reusing an old one from the pool when available.</para>
+<para>Every call to this function must happen before av_refstruct_pool_uninit(). Otherwise undefined behaviour may occur.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pool from which to get the object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a reference to the object on success, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="279" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" declline="279" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="refstruct_8h_1a8ef9eb6b40274fd090f754678edb9aa2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void av_refstruct_pool_uninit</definition>
+        <argsstring>(AVRefStructPool **poolp)</argsstring>
+        <name>av_refstruct_pool_uninit</name>
+        <param>
+          <type>AVRefStructPool **</type>
+          <declname>poolp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark the pool as being available for freeing. It will actually be freed only once all the allocated buffers associated with the pool are released. Thus it is safe to call this function while some of the allocated buffers are still in use.</para>
+<para>It is illegal to try to get a new entry after this function has been called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>poolp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a pointer to either NULL or a pool to be freed. <computeroutput>*poolp</computeroutput> will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="292" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="292" bodyend="295"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_REFSTRUCT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_REFSTRUCT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="union_a_v_ref_struct_opaque" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*nc;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*c;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_REFSTRUCT_FLAG_NO_ZEROING<sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_alloc_ext_c(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags,<sp/><ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_alloc_ext(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj))</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_refstruct_alloc_ext_c(size,<sp/>flags,<sp/>(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref>){.nc<sp/>=<sp/>opaque},</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_cb);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_allocz(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_refstruct_alloc_ext(size,<sp/>0,<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_refstruct_unref(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*objp);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_ref(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_ref_c(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_refstruct_replace(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dstp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*src);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_refstruct_exclusive(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVRefStructPool<sp/>AVRefStructPool;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_REFSTRUCT_POOL_FLAG_NO_ZEROING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AV_REFSTRUCT_FLAG_NO_ZEROING</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_REFSTRUCT_POOL_FLAG_RESET_ON_INIT_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_REFSTRUCT_POOL_FLAG_FREE_ON_INIT_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>17)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_REFSTRUCT_POOL_FLAG_ZERO_EVERY_TIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>18)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">AVRefStructPool<sp/>*av_refstruct_pool_alloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">AVRefStructPool<sp/>*av_refstruct_pool_alloc_ext_c(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>(*init_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*reset_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_entry_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque));</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal">AVRefStructPool<sp/>*av_refstruct_pool_alloc_ext(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>(*init_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*reset_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_entry_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*free_cb)(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref><sp/>opaque))</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_refstruct_pool_alloc_ext_c(size,<sp/>flags,<sp/>(<ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref>){.nc<sp/>=<sp/>opaque},</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_cb,<sp/>reset_cb,<sp/>free_entry_cb,<sp/>free_cb);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*av_refstruct_pool_get(AVRefStructPool<sp/>*pool);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_refstruct_pool_uninit(AVRefStructPool<sp/>**poolp)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>av_refstruct_unref(poolp);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_REFSTRUCT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h"/>
+  </compounddef>
+</doxygen>

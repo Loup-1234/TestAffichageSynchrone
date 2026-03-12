@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_filter_pad_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilterPadParams</compoundname>
+    <includes refid="avfilter_8h" local="no">avfilter.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_filter_pad_params_1a2f4fe47e14759af7af96697015ff1ea4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterPadParams::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>AVFilterPadParams::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>&apos;ed string containing the pad label.</para>
+<para>May be <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>&apos;d and set to NULL by the caller, in which case this pad will be treated as unlabeled for linking. May also be replaced by another <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>&apos;ed string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="856" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Parameters of a filter&apos;s input or output pad.</para>
+<para>Created as a child of <ref refid="struct_a_v_filter_params" kindref="compound">AVFilterParams</ref> by <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. Freed in <ref refid="group__lavfi_1ga51283edd8f3685e1f33239f360e14ae8" kindref="member">avfilter_graph_segment_free()</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="848" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="848" bodyend="857"/>
+    <listofallmembers>
+      <member refid="struct_a_v_filter_pad_params_1a2f4fe47e14759af7af96697015ff1ea4" prot="public" virt="non-virtual"><scope>AVFilterPadParams</scope><name>label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

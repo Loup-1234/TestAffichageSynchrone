@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__time" kind="group">
+    <compoundname>lavu_time</compoundname>
+    <title>Timestamp specific</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__time_1ga2eaefe702f95f619ea6f2d08afa01be1" prot="public" static="no">
+        <name>AV_NOPTS_VALUE</name>
+        <initializer>((int64_t)UINT64_C(0x8000000000000000))</initializer>
+        <briefdescription>
+<para>Undefined timestamp value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually reported by demuxer that work on containers that do not provide either pts or dts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="247" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__time_1gaa11ed202b70e1f52bac809811a910e2a" prot="public" static="no">
+        <name>AV_TIME_BASE</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal time base represented as integer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="253" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__time_1gafd07a13a4ddaa6015275cad6022d9ee3" prot="public" static="no">
+        <name>AV_TIME_BASE_Q</name>
+        <initializer>(<ref refid="struct_a_v_rational" kindref="compound">AVRational</ref>){1, <ref refid="group__lavu__time_1gaa11ed202b70e1f52bac809811a910e2a" kindref="member">AV_TIME_BASE</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal time base represented as fractional value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="263" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>FFmpeg internal timebase and timestamp definitions </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

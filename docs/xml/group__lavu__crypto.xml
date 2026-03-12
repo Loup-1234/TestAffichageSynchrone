@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__crypto" kind="group">
+    <compoundname>lavu_crypto</compoundname>
+    <title>Crypto and Hashing</title>
+    <innergroup refid="group__lavu__aes">AES</innergroup>
+    <innergroup refid="group__lavu__aes__ctr">AES-CTR</innergroup>
+    <innergroup refid="group__lavu__base64">Base64</innergroup>
+    <innergroup refid="group__lavu__blowfish">Blowfish</innergroup>
+    <innergroup refid="group__lavu__camellia">CAMELLIA</innergroup>
+    <innergroup refid="group__lavu__cast5">CAST5</innergroup>
+    <innergroup refid="group__lavu__des">DES</innergroup>
+    <innergroup refid="group__lavu__hash">Hash Functions</innergroup>
+    <innergroup refid="group__lavu__hmac">HMAC</innergroup>
+    <innergroup refid="group__lavu__lzo">LZO</innergroup>
+    <innergroup refid="group__lavu__rc4">RC4</innergroup>
+    <innergroup refid="group__lavu__tea">TEA</innergroup>
+    <innergroup refid="group__lavu__twofish">TWOFISH</innergroup>
+    <innergroup refid="group__lavu__xtea">XTEA</innergroup>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__crypto_1ga4fe662789c7e05a6b63e0c675dbbd7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t av_get_random_seed</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_get_random_seed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a seed to use in conjunction with random functions. This function tries to provide a good seed at a best effort bases. Its possible to call this function multiple times if more bits are needed. It can be quite slow, which is why it should only be used as seed for a faster PRNG. The quality of the seed depends on the platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/random_seed.h" line="38" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/random_seed.h" declline="38" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__crypto_1ga89e2cb187d82a2d3b7e4103c77c1d67c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_random_bytes</definition>
+        <argsstring>(uint8_t *buf, size_t len)</argsstring>
+        <name>av_random_bytes</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate cryptographically secure random data, i.e. suitable for use as encryption keys and similar.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer into which the random data will be written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of buf in bytes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success, len bytes of random data was written into buf </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a negative AVERROR code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>random data could not be generated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/random_seed.h" line="51" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/random_seed.h" declline="51" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

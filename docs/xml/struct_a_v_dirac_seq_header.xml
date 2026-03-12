@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_dirac_seq_header" kind="struct" language="C++" prot="public">
+    <compoundname>AVDiracSeqHeader</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a84012a395eed7a8b866b2c6d8c3d06f1" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVDiracSeqHeader::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVDiracSeqHeader::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="86" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a46e55953e617eb50d6f5fa6db18afdd9" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVDiracSeqHeader::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVDiracSeqHeader::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="87" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a2859a95cc8f258a0f9006d40c5883b2a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::chroma_format</definition>
+        <argsstring></argsstring>
+        <name>chroma_format</name>
+        <qualifiedname>AVDiracSeqHeader::chroma_format</qualifiedname>
+        <briefdescription>
+<para>0: 444 1: 422 2: 420 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="88" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1ac00d4c1b87e15831ca6a96ce3673dbfa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::interlaced</definition>
+        <argsstring></argsstring>
+        <name>interlaced</name>
+        <qualifiedname>AVDiracSeqHeader::interlaced</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="90" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a22c3a72575a5c677e21be786324f97a0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::top_field_first</definition>
+        <argsstring></argsstring>
+        <name>top_field_first</name>
+        <qualifiedname>AVDiracSeqHeader::top_field_first</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="91" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1ab5185ab1fa66a06b95c8683a53d7b329" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::frame_rate_index</definition>
+        <argsstring></argsstring>
+        <name>frame_rate_index</name>
+        <qualifiedname>AVDiracSeqHeader::frame_rate_index</qualifiedname>
+        <briefdescription>
+<para>index into dirac_frame_rate[] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="93" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1ab883aaa62faddf979c9b2d04a11ffeea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::aspect_ratio_index</definition>
+        <argsstring></argsstring>
+        <name>aspect_ratio_index</name>
+        <qualifiedname>AVDiracSeqHeader::aspect_ratio_index</qualifiedname>
+        <briefdescription>
+<para>index into dirac_aspect_ratio[] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="94" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1acd92894c100870a71e942da24e9aae50" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDiracSeqHeader::clean_width</definition>
+        <argsstring></argsstring>
+        <name>clean_width</name>
+        <qualifiedname>AVDiracSeqHeader::clean_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="96" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1aa21c969a21a3a2bbedd634505f6bea05" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDiracSeqHeader::clean_height</definition>
+        <argsstring></argsstring>
+        <name>clean_height</name>
+        <qualifiedname>AVDiracSeqHeader::clean_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="97" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1ac885266b8900aeffd97d9591bb7b7e3f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDiracSeqHeader::clean_left_offset</definition>
+        <argsstring></argsstring>
+        <name>clean_left_offset</name>
+        <qualifiedname>AVDiracSeqHeader::clean_left_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="98" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a0df41b3f67cf9bdcee878b0481edde3f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDiracSeqHeader::clean_right_offset</definition>
+        <argsstring></argsstring>
+        <name>clean_right_offset</name>
+        <qualifiedname>AVDiracSeqHeader::clean_right_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="99" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a399c18889d422438c9c8ec92139750f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::pixel_range_index</definition>
+        <argsstring></argsstring>
+        <name>pixel_range_index</name>
+        <qualifiedname>AVDiracSeqHeader::pixel_range_index</qualifiedname>
+        <briefdescription>
+<para>index into dirac_pixel_range_presets[] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="101" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a69129aaec92c9c6d12f0f4796be3b6a3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDiracSeqHeader::color_spec_index</definition>
+        <argsstring></argsstring>
+        <name>color_spec_index</name>
+        <qualifiedname>AVDiracSeqHeader::color_spec_index</qualifiedname>
+        <briefdescription>
+<para>index into dirac_color_spec_presets[] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="102" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1afca3badbccd3f12f363332423e530149" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDiracSeqHeader::profile</definition>
+        <argsstring></argsstring>
+        <name>profile</name>
+        <qualifiedname>AVDiracSeqHeader::profile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="104" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a520f2976462247629ce2fa94a4a2e29f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDiracSeqHeader::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>AVDiracSeqHeader::level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="105" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1ad1f22b68576a9f2d155ffff49d6b45f6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDiracSeqHeader::framerate</definition>
+        <argsstring></argsstring>
+        <name>framerate</name>
+        <qualifiedname>AVDiracSeqHeader::framerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="107" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a4c350080fef358c117fd97eb622b9b90" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVDiracSeqHeader::sample_aspect_ratio</definition>
+        <argsstring></argsstring>
+        <name>sample_aspect_ratio</name>
+        <qualifiedname>AVDiracSeqHeader::sample_aspect_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="108" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1aab64f10d00a1bce12bf0b5e343f50003" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat AVDiracSeqHeader::pix_fmt</definition>
+        <argsstring></argsstring>
+        <name>pix_fmt</name>
+        <qualifiedname>AVDiracSeqHeader::pix_fmt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="110" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a47fb9e5bc1c66eef628701ddd1764784" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+        <definition>enum AVColorRange AVDiracSeqHeader::color_range</definition>
+        <argsstring></argsstring>
+        <name>color_range</name>
+        <qualifiedname>AVDiracSeqHeader::color_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="111" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a2afbd8f459983463062fe456086bc86a" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+        <definition>enum AVColorPrimaries AVDiracSeqHeader::color_primaries</definition>
+        <argsstring></argsstring>
+        <name>color_primaries</name>
+        <qualifiedname>AVDiracSeqHeader::color_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="112" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1aa8a72f57f35ea0f883a2da702118ba82" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+        <definition>enum AVColorTransferCharacteristic AVDiracSeqHeader::color_trc</definition>
+        <argsstring></argsstring>
+        <name>color_trc</name>
+        <qualifiedname>AVDiracSeqHeader::color_trc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="113" column="39" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a9bfdfd50600595cc6eb2766593b2ca7c" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+        <definition>enum AVColorSpace AVDiracSeqHeader::colorspace</definition>
+        <argsstring></argsstring>
+        <name>colorspace</name>
+        <qualifiedname>AVDiracSeqHeader::colorspace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="114" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a0a5359c227bf3ab7044486c0064f9d31" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_dirac_version_info" kindref="compound">DiracVersionInfo</ref></type>
+        <definition>DiracVersionInfo AVDiracSeqHeader::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>AVDiracSeqHeader::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="116" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dirac_seq_header_1a0989b0c2b9830b9c428fa9a80fd82e02" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDiracSeqHeader::bit_depth</definition>
+        <argsstring></argsstring>
+        <name>bit_depth</name>
+        <qualifiedname>AVDiracSeqHeader::bit_depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="117" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDiracSeqHeader</label>
+        <link refid="struct_a_v_dirac_seq_header"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>version</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="3">
+        <label>DiracVersionInfo</label>
+        <link refid="struct_dirac_version_info"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" line="85" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/dirac.h" bodystart="85" bodyend="118"/>
+    <listofallmembers>
+      <member refid="struct_a_v_dirac_seq_header_1ab883aaa62faddf979c9b2d04a11ffeea" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>aspect_ratio_index</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a0989b0c2b9830b9c428fa9a80fd82e02" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>bit_depth</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a2859a95cc8f258a0f9006d40c5883b2a" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>chroma_format</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1aa21c969a21a3a2bbedd634505f6bea05" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>clean_height</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1ac885266b8900aeffd97d9591bb7b7e3f" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>clean_left_offset</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a0df41b3f67cf9bdcee878b0481edde3f" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>clean_right_offset</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1acd92894c100870a71e942da24e9aae50" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>clean_width</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a2afbd8f459983463062fe456086bc86a" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>color_primaries</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a47fb9e5bc1c66eef628701ddd1764784" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>color_range</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a69129aaec92c9c6d12f0f4796be3b6a3" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>color_spec_index</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1aa8a72f57f35ea0f883a2da702118ba82" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>color_trc</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a9bfdfd50600595cc6eb2766593b2ca7c" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>colorspace</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1ab5185ab1fa66a06b95c8683a53d7b329" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>frame_rate_index</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1ad1f22b68576a9f2d155ffff49d6b45f6" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>framerate</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a46e55953e617eb50d6f5fa6db18afdd9" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>height</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1ac00d4c1b87e15831ca6a96ce3673dbfa" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>interlaced</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a520f2976462247629ce2fa94a4a2e29f" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>level</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1aab64f10d00a1bce12bf0b5e343f50003" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>pix_fmt</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a399c18889d422438c9c8ec92139750f8" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>pixel_range_index</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1afca3badbccd3f12f363332423e530149" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>profile</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a4c350080fef358c117fd97eb622b9b90" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>sample_aspect_ratio</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a22c3a72575a5c677e21be786324f97a0" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>top_field_first</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a0a5359c227bf3ab7044486c0064f9d31" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>version</name></member>
+      <member refid="struct_a_v_dirac_seq_header_1a84012a395eed7a8b866b2c6d8c3d06f1" prot="public" virt="non-virtual"><scope>AVDiracSeqHeader</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

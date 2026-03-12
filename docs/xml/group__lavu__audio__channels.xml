@@ -1,0 +1,1864 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__audio__channels" kind="group">
+    <compoundname>lavu_audio_channels</compoundname>
+    <title>Audio channels</title>
+    <innerfile refid="channel__layout_8h">channel_layout.h</innerfile>
+    <innerclass refid="struct_a_v_channel_custom" prot="public">AVChannelCustom</innerclass>
+    <innerclass refid="struct_a_v_channel_layout" prot="public">AVChannelLayout</innerclass>
+    <innergroup refid="group__channel__masks">Audio channel masks</innergroup>
+    <innergroup refid="group__channel__mask__c">Audio channel layouts</innergroup>
+    <sectiondef kind="user-defined">
+      <header>Common pre-defined channel layouts</header>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga855bb7dede67971e95bd09d8fcca7293" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_MONO</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(1,  AV_CH_LAYOUT_MONO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="394" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga59db80472380a3c66c52f2296232244d" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_STEREO</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(2,  AV_CH_LAYOUT_STEREO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="395" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaf57ea2feeaa2c466da0014cf032d9b96" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_2POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(3,  AV_CH_LAYOUT_2POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="396" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gab9d3a56fd336337f1b013e7067760a2c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_2_1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(3,  AV_CH_LAYOUT_2_1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="397" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaa6464186b33e9b881a72cdc7b4adb55b" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_SURROUND</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(3,  AV_CH_LAYOUT_SURROUND)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="398" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga1d92b8f7c05e8d62d202e881d874f4d8" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_3POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(4,  AV_CH_LAYOUT_3POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="399" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga0124ceb3d012953eeeb147fb46d2f4bd" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_4POINT0</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(4,  AV_CH_LAYOUT_4POINT0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="400" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga1924c80053696d4daca7781f04543556" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_4POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(5,  AV_CH_LAYOUT_4POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="401" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga711a02b887c1e369cde22951376dc3df" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_2_2</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(4,  AV_CH_LAYOUT_2_2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="402" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaee8b75ad18b0f62f95e9b4e42ff534eb" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_QUAD</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(4,  AV_CH_LAYOUT_QUAD)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="403" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga45adfc4cdaef7fab8cc577cbad52096c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT0</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(5,  AV_CH_LAYOUT_5POINT0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="404" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga84b70bdd3966e29c358d0547aa6c2aed" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_5POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="405" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga7f688a93f0939dee771d4fead9f9850d" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT0_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(5,  AV_CH_LAYOUT_5POINT0_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="406" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga3b0c64f2a594e3a7793b355881a7d232" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT1_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_5POINT1_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="407" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga6bec69d433766a6e964eed2c1a37ff5f" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_6POINT0</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_6POINT0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="408" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaf0c4f87df30766afa091b2c67007cc8c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_6POINT0_FRONT</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_6POINT0_FRONT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="409" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaf11b79a772b773c39fada1952904c943" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_3POINT1POINT2</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_3POINT1POINT2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="410" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga1044fc92d4e53ace712e10e8a3baa781" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_HEXAGONAL</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(6,  AV_CH_LAYOUT_HEXAGONAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="411" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaff92e45a23b8d634c0ecc5c6671b19f0" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_6POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(7,  AV_CH_LAYOUT_6POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="412" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga7cb149a2ec7bf83b7f30ec431e40d407" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_6POINT1_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(7,  AV_CH_LAYOUT_6POINT1_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="413" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga44c882ab073822c496cafa7be36e1928" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_6POINT1_FRONT</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(7,  AV_CH_LAYOUT_6POINT1_FRONT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="414" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga94ad0bed6ceb5a2c166a71bd4827350f" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT0</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(7,  AV_CH_LAYOUT_7POINT0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="415" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga2b057e31f7bb5739e0ab6e203508871c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT0_FRONT</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(7,  AV_CH_LAYOUT_7POINT0_FRONT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="416" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gad03ea091df9767ee91f5f6572ad12cb6" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_7POINT1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="417" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga3db6c239baf45b510a0892e84557c8cf" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1_WIDE</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_7POINT1_WIDE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="418" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaf8bc2d8be698eb02804bd03330af81cb" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1_WIDE_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_7POINT1_WIDE_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="419" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga0ec9171f7824ef0b3218f989cc186ef5" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT1POINT2</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_5POINT1POINT2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="420" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gaad72211724d10893bb6b58916d14be78" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT1POINT2_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8, AV_CH_LAYOUT_5POINT1POINT2_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="421" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gabe05c1ebd0d50bf1527f6326474a279c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_OCTAGONAL</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_OCTAGONAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="422" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga52839218cedb7ce63a89d50229505fa3" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_CUBE</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(8,  AV_CH_LAYOUT_CUBE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="423" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga98021f6a90a89b27bd3e77542fbf8579" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_5POINT1POINT4_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(10, AV_CH_LAYOUT_5POINT1POINT4_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="424" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga41459bfc4d461f3a758ba427e3c884af" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1POINT2</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(10, AV_CH_LAYOUT_7POINT1POINT2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="425" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gad662f2fb36b26e84c2433243aa9a3b02" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1POINT4_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(12, AV_CH_LAYOUT_7POINT1POINT4_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="426" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga0daa4b0bd85c1f219183ac2b08df9c85" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT2POINT3</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(12, AV_CH_LAYOUT_7POINT2POINT3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="427" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga2b2ecf831003932dbcb1ad10cb271a15" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_9POINT1POINT4_BACK</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(14, AV_CH_LAYOUT_9POINT1POINT4_BACK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="428" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gae743c251b0b2f6553637482b2a245378" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_9POINT1POINT6</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(16, AV_CH_LAYOUT_9POINT1POINT6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="429" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga0d5159b79bc521d7cf4a232998f40f7a" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_HEXADECAGONAL</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(16, AV_CH_LAYOUT_HEXADECAGONAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="430" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga1ec98ca3d4a5d35125e2e796bdc19ed0" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_BINAURAL</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(2,  AV_CH_LAYOUT_BINAURAL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="431" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gae1a345bc93416b6563fe49dc66adf784" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_STEREO_DOWNMIX</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(2,  AV_CH_LAYOUT_STEREO_DOWNMIX)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="432" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1gac7de720a67fea5a2534bf9bf1c57e4c6" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_22POINT2</name>
+        <initializer><ref refid="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" kindref="member">AV_CHANNEL_LAYOUT_MASK</ref>(24, AV_CH_LAYOUT_22POINT2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="433" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga6138a3208d2d7541e1ecfb7d9b170d4d" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_7POINT1_TOP_BACK</name>
+        <initializer>AV_CHANNEL_LAYOUT_5POINT1POINT2_BACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="435" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga45d5baf23351c13e7dfb766993b33060" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_AMBISONIC_FIRST_ORDER</name>
+        <initializer>    { /* .order */ <ref refid="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69caaa50456ac7b5fb789df7765251698405" kindref="member">AV_CHANNEL_ORDER_AMBISONIC</ref>, \
+      /* .nb_channels */ 4, \
+      /* .u.mask */ { 0 }, \
+      /* .opaque */ NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="437" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="437" bodyend="441"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVChannel</name>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea6a3680fa8b090284517941108d0118a1" prot="public">
+          <name>AV_CHAN_NONE</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>Invalid channel index. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea21d11dd5ac6d9393f2ee213316725cfa" prot="public">
+          <name>AV_CHAN_FRONT_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea3bf44ed1fbc1276025563428f0b3785a" prot="public">
+          <name>AV_CHAN_FRONT_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea400b9140fc46de23f9f71f8de60cc790" prot="public">
+          <name>AV_CHAN_FRONT_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea06f3435eded537662c9d1b8015ec66be" prot="public">
+          <name>AV_CHAN_LOW_FREQUENCY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea749a4ab8e56124ca917646c04d3e1f93" prot="public">
+          <name>AV_CHAN_BACK_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea0f3047521b2b12a363cd8883636ad808" prot="public">
+          <name>AV_CHAN_BACK_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea54501d5da7bb4883675076e3cfb70963" prot="public">
+          <name>AV_CHAN_FRONT_LEFT_OF_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea2085c86325e29ec12d8468d93c3d712b" prot="public">
+          <name>AV_CHAN_FRONT_RIGHT_OF_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea3e0b0fb1828f9291b1f4957a5a80143d" prot="public">
+          <name>AV_CHAN_BACK_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea8f825774770000a1df13aadcbfefbcb0" prot="public">
+          <name>AV_CHAN_SIDE_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea4a3b6f705b6f3ecd474b78d751e910df" prot="public">
+          <name>AV_CHAN_SIDE_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaf4165859bd28b6ac37f9fe55894cc7ad" prot="public">
+          <name>AV_CHAN_TOP_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea996e746851e53bdf85014309d76990b1" prot="public">
+          <name>AV_CHAN_TOP_FRONT_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eafc7e096a9b2665702d6eb0b727fa813f" prot="public">
+          <name>AV_CHAN_TOP_FRONT_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea33e2f991aaada9e01889a0f61cb46e36" prot="public">
+          <name>AV_CHAN_TOP_FRONT_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea24f1cfa10a7aefe9092d0dab34c9dcbd" prot="public">
+          <name>AV_CHAN_TOP_BACK_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea718ce8da02721aba42ba9488daa7d87a" prot="public">
+          <name>AV_CHAN_TOP_BACK_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaadf2383c466ff8dcc71bd80748b01a96" prot="public">
+          <name>AV_CHAN_TOP_BACK_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaf92af79a6ea141ae32bd35aa0aad9ddc" prot="public">
+          <name>AV_CHAN_STEREO_LEFT</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stereo downmix. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eabf23bbde98baff3db4a5d6e575ba642b" prot="public">
+          <name>AV_CHAN_STEREO_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>See above. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea4ad2b47489a735c759dfa1a2fa8302e9" prot="public">
+          <name>AV_CHAN_WIDE_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ead7bee06ce434a03b1ca16f521270e70e" prot="public">
+          <name>AV_CHAN_WIDE_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaeb06a2e08fa245110537933c8d7e89c2" prot="public">
+          <name>AV_CHAN_SURROUND_DIRECT_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea8fd036dccb7c219bd6ac7dc923694264" prot="public">
+          <name>AV_CHAN_SURROUND_DIRECT_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea6b39bb8990f9430168f59ea96211acfe" prot="public">
+          <name>AV_CHAN_LOW_FREQUENCY_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eac7005aec80a7e392a645fa5d28033d79" prot="public">
+          <name>AV_CHAN_TOP_SIDE_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea3e9afbe01693617e98874a4372063312" prot="public">
+          <name>AV_CHAN_TOP_SIDE_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea9326da4e596e6b83850de17bec334925" prot="public">
+          <name>AV_CHAN_BOTTOM_FRONT_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eadd5e49e18ca177a5d61dfdb937e55e76" prot="public">
+          <name>AV_CHAN_BOTTOM_FRONT_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaba1c3911938fc24ee301d019e5e7bdd0" prot="public">
+          <name>AV_CHAN_BOTTOM_FRONT_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea4a72519097293d243faa339c1025d5e6" prot="public">
+          <name>AV_CHAN_SIDE_SURROUND_LEFT</name>
+          <briefdescription>
+<para>+90 degrees, Lss, SiL </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea23f17b5ffa24d85b7656e0b1dd3b4f96" prot="public">
+          <name>AV_CHAN_SIDE_SURROUND_RIGHT</name>
+          <briefdescription>
+<para>-90 degrees, Rss, SiR </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea474ccd00d20d689f2d53d55faea76f65" prot="public">
+          <name>AV_CHAN_TOP_SURROUND_LEFT</name>
+          <briefdescription>
+<para>+110 degrees, Lvs, TpLS </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea16cb755cda7feaf7733382675d9fe90f" prot="public">
+          <name>AV_CHAN_TOP_SURROUND_RIGHT</name>
+          <briefdescription>
+<para>-110 degrees, Rvs, TpRS </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ead16da0a8fb1086ae6c14234b155fd2c3" prot="public">
+          <name>AV_CHAN_BINAURAL_LEFT</name>
+          <initializer>= 61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eaf82d0b47937cc2bc1ee0e72757a2b056" prot="public">
+          <name>AV_CHAN_BINAURAL_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea157edc2c55062472e6e05af69944524a" prot="public">
+          <name>AV_CHAN_UNUSED</name>
+          <initializer>= 0x200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel is empty can be safely skipped. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea83a4dc170869835cc33106d8a42759f0" prot="public">
+          <name>AV_CHAN_UNKNOWN</name>
+          <initializer>= 0x300</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel contains data, but its position is unknown. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3ea3d431bd1591d6bf945ba0c2386a6d9a9" prot="public">
+          <name>AV_CHAN_AMBISONIC_BASE</name>
+          <initializer>= 0x400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Range of channels between AV_CHAN_AMBISONIC_BASE and AV_CHAN_AMBISONIC_END represent Ambisonic components using the ACN system.</para>
+<para>Given a channel id <computeroutput>&lt;i&gt;</computeroutput> between AV_CHAN_AMBISONIC_BASE and AV_CHAN_AMBISONIC_END (inclusive), the ACN index of the channel <computeroutput>&lt;n&gt;</computeroutput> is <computeroutput>&lt;n&gt; = &lt;i&gt; - AV_CHAN_AMBISONIC_BASE</computeroutput>.</para>
+<para><simplesect kind="note"><para>these values are only used for AV_CHANNEL_ORDER_CUSTOM channel orderings, the AV_CHANNEL_ORDER_AMBISONIC ordering orders the channels implicitly by their position in the stream. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1ggaa4a685b5c38835392552a7f96ee24a3eac459664f2b59bf9bbcffa5a9aaa9acda" prot="public">
+          <name>AV_CHAN_AMBISONIC_END</name>
+          <initializer>= 0x7ff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="47" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="47" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__audio__channels_1ga252e1528ae55fbf873266ca4c7e3b69c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVChannelOrder</name>
+        <enumvalue id="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69ca74e9667720771735ec6a5891230e57b9" prot="public">
+          <name>AV_CHANNEL_ORDER_UNSPEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only the channel count is specified, without any further information about the channel order. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69ca005e2e35e4979fcf1247012b73a3f8cc" prot="public">
+          <name>AV_CHANNEL_ORDER_NATIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The native channel order, i.e. the channels are in the same order in which they are defined in the <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref> enum. This supports up to 63 different channels. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69ca71e6f0eca4b781d8aa54820f1493eb40" prot="public">
+          <name>AV_CHANNEL_ORDER_CUSTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The channel order does not correspond to any other predefined order and is stored as an explicit map. For example, this could be used to support layouts with 64 or more channels, or with empty/skipped (AV_CHAN_UNUSED) channels at arbitrary positions. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69caaa50456ac7b5fb789df7765251698405" prot="public">
+          <name>AV_CHANNEL_ORDER_AMBISONIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The audio is represented as the decomposition of the sound field into spherical harmonics. Each channel corresponds to a single expansion component. Channels are ordered according to ACN (Ambisonic Channel Number).</para>
+<para>The channel with the index n in the stream contains the spherical harmonic of degree l and order m given by <programlisting filename=".unparsed"><codeline><highlight class="normal">l<sp/><sp/><sp/>=<sp/>floor(sqrt(n)),</highlight></codeline>
+<codeline><highlight class="normal">m<sp/><sp/><sp/>=<sp/>n<sp/>-<sp/>l<sp/>*<sp/>(l<sp/>+<sp/>1).</highlight></codeline>
+</programlisting></para>
+<para>Conversely given a spherical harmonic of degree l and order m, the corresponding channel index n is given by <programlisting filename=".unparsed"><codeline><highlight class="normal">n<sp/>=<sp/>l<sp/>*<sp/>(l<sp/>+<sp/>1)<sp/>+<sp/>m.</highlight></codeline>
+</programlisting></para>
+<para>Normalization is assumed to be SN3D (Schmidt Semi-Normalization) as defined in AmbiX format $ 2.1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69ca22b3e1a45b055b8ecd95b1f4b2d9dbb4" prot="public">
+          <name>FF_CHANNEL_ORDER_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of channel orders, not part of ABI/API </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="114" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="114" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__audio__channels_1gadc256622a5fca7f92f25e1385bbc910a" prot="public" static="no">
+        <type>struct AVChannelCustom</type>
+        <definition>typedef struct AVChannelCustom AVChannelCustom</definition>
+        <argsstring></argsstring>
+        <name>AVChannelCustom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="struct_a_v_channel_custom" kindref="compound">AVChannelCustom</ref> defines a single channel within a custom order layout</para>
+<para>Unlike most structures in FFmpeg, sizeof(AVChannelCustom) is a part of the public ABI.</para>
+<para>No new fields may be added to it without a major version bump. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="287" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__audio__channels_1ga565d8315e7e5f91fe2d4c31e036372ac" prot="public" static="no">
+        <type>struct AVChannelLayout</type>
+        <definition>typedef struct AVChannelLayout AVChannelLayout</definition>
+        <argsstring></argsstring>
+        <name>AVChannelLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> holds information about the channel layout of audio data.</para>
+<para>A channel layout here is defined as a set of channels ordered in a specific way (unless the channel order is AV_CHANNEL_ORDER_UNSPEC, in which case an <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> carries only the channel count). All orders may be treated as if they were AV_CHANNEL_ORDER_UNSPEC by ignoring everything but the channel count, as long as <ref refid="group__lavu__audio__channels_1gad15a6bf80ee8551ee4a4789d970ccbea" kindref="member">av_channel_layout_check()</ref> considers they are valid.</para>
+<para>Unlike most structures in FFmpeg, sizeof(AVChannelLayout) is a part of the public ABI and may be used by the caller. E.g. it may be allocated on stack or embedded in caller-defined structs.</para>
+<para><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> can be initialized as follows:<itemizedlist>
+<listitem><para>default initialization with {0}, followed by setting all used fields correctly;</para>
+</listitem><listitem><para>by assigning one of the predefined AV_CHANNEL_LAYOUT_* initializers;</para>
+</listitem><listitem><para>with a constructor function, such as <ref refid="group__lavu__audio__channels_1ga029ec415428807b9c3d433c58985a3da" kindref="member">av_channel_layout_default()</ref>, <ref refid="group__lavu__audio__channels_1gac9cb15062033104227cb64f17196f684" kindref="member">av_channel_layout_from_mask()</ref> or <ref refid="group__lavu__audio__channels_1ga16a894cd275eba471ccad4fe1c5e5c28" kindref="member">av_channel_layout_from_string()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>The channel layout must be uninitialized with <ref refid="group__lavu__audio__channels_1ga95f7befa6afcea5958c095da37c4ea04" kindref="member">av_channel_layout_uninit()</ref></para>
+<para>Copying an <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> via assigning is forbidden, <ref refid="group__lavu__audio__channels_1gad36be43b2a1b14b66492b8025b82f886" kindref="member">av_channel_layout_copy()</ref> must be used instead (and its return value should be checked)</para>
+<para>No new fields may be added to it without a major version bump, except for new elements of the union fitting in sizeof(uint64_t). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="377" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga681f40bf6e8e1e56189a625fe0a671b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_name</definition>
+        <argsstring>(char *buf, size_t buf_size, enum AVChannel channel)</argsstring>
+        <name>av_channel_name</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a human readable string in an abbreviated form describing a given channel. This is the inverse function of <ref refid="group__lavu__audio__channels_1gaf6d58f0ff59e1985f8dd337f7a7736e7" kindref="member">av_channel_from_string()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-allocated buffer where to put the generated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref> whose name to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>amount of bytes needed to hold the output string, or a negative AVERROR on failure. If the returned value is bigger than buf_size, then the string was truncated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="457" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="457" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gac5b1e5d877988c022b6fc82f179d9792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_channel_name_bprint</definition>
+        <argsstring>(struct AVBPrint *bp, enum AVChannel channel_id)</argsstring>
+        <name>av_channel_name_bprint</name>
+        <param>
+          <type>struct AVBPrint *</type>
+          <declname>bp</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+          <declname>channel_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bprint variant of <ref refid="group__lavu__audio__channels_1ga681f40bf6e8e1e56189a625fe0a671b5" kindref="member">av_channel_name()</ref>.</para>
+<para><simplesect kind="note"><para>the string will be appended to the bprint buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="464" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="464" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga7234a8b4e45c5d1857a5c5719828a98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_description</definition>
+        <argsstring>(char *buf, size_t buf_size, enum AVChannel channel)</argsstring>
+        <name>av_channel_description</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a human readable string describing a given channel.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-allocated buffer where to put the generated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref> whose description to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>amount of bytes needed to hold the output string, or a negative AVERROR on failure. If the returned value is bigger than buf_size, then the string was truncated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="476" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="476" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga4e9e32d714fbab735e73cf0874421692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_channel_description_bprint</definition>
+        <argsstring>(struct AVBPrint *bp, enum AVChannel channel_id)</argsstring>
+        <name>av_channel_description_bprint</name>
+        <param>
+          <type>struct AVBPrint *</type>
+          <declname>bp</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+          <declname>channel_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bprint variant of <ref refid="group__lavu__audio__channels_1ga7234a8b4e45c5d1857a5c5719828a98e" kindref="member">av_channel_description()</ref>.</para>
+<para><simplesect kind="note"><para>the string will be appended to the bprint buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="483" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="483" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gaf6d58f0ff59e1985f8dd337f7a7736e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+        <definition>enum AVChannel av_channel_from_string</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_channel_from_string</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the inverse function of <ref refid="group__lavu__audio__channels_1ga681f40bf6e8e1e56189a625fe0a671b5" kindref="member">av_channel_name()</ref>.</para>
+<para><simplesect kind="return"><para>the channel with the given name AV_CHAN_NONE when name does not identify a known channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="491" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="491" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga85eb469eb73f5df8317ee713ab460d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_custom_init</definition>
+        <argsstring>(AVChannelLayout *channel_layout, int nb_channels)</argsstring>
+        <name>av_channel_layout_custom_init</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a custom channel layout with the specified number of channels. The channel map will be allocated and the designation of all channels will be set to AV_CHAN_UNKNOWN.</para>
+<para>This is only a convenience helper function, a custom channel layout can also be constructed without using this.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layout structure to be initialized </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of channels</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success AVERROR(EINVAL) if the number of channels &lt;= 0 AVERROR(ENOMEM) if the channel map could not be allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="508" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="508" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gac9cb15062033104227cb64f17196f684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_from_mask</definition>
+        <argsstring>(AVChannelLayout *channel_layout, uint64_t mask)</argsstring>
+        <name>av_channel_layout_from_mask</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a native channel layout from a bitmask indicating which channels are present.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layout structure to be initialized </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bitmask describing the channel layout</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success AVERROR(EINVAL) for invalid mask values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="520" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="520" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga16a894cd275eba471ccad4fe1c5e5c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_from_string</definition>
+        <argsstring>(AVChannelLayout *channel_layout, const char *str)</argsstring>
+        <name>av_channel_layout_from_string</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a channel layout from a given string description. The input string can be represented by:<itemizedlist>
+<listitem><para>the formal channel layout name (returned by <ref refid="group__lavu__audio__channels_1gacc7d7d1a280248aafb8f9196c9d4e24f" kindref="member">av_channel_layout_describe()</ref>)</para>
+</listitem><listitem><para>single or multiple channel names (returned by <ref refid="group__lavu__audio__channels_1ga681f40bf6e8e1e56189a625fe0a671b5" kindref="member">av_channel_name()</ref>, eg. &quot;FL&quot;, or concatenated with &quot;+&quot;, each optionally containing a custom name after a &quot;@&quot;, eg. &quot;FL@Left+FR@Right+LFE&quot;)</para>
+</listitem><listitem><para>a decimal or hexadecimal value of a native channel layout (eg. &quot;4&quot; or &quot;0x4&quot;)</para>
+</listitem><listitem><para>the number of channels with default layout (eg. &quot;4c&quot;)</para>
+</listitem><listitem><para>the number of unordered channels (eg. &quot;4C&quot; or &quot;4 channels&quot;)</para>
+</listitem><listitem><para>the ambisonic order followed by optional non-diegetic channels (eg. &quot;ambisonic 2+stereo&quot;) On error, the channel layout will remain uninitialized, but not necessarily untouched.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uninitialized channel layout for the result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string describing the channel layout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success parsing the channel layout AVERROR(EINVAL) if an invalid channel layout string was provided AVERROR(ENOMEM) if there was not enough memory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="543" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="543" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga029ec415428807b9c3d433c58985a3da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_channel_layout_default</definition>
+        <argsstring>(AVChannelLayout *ch_layout, int nb_channels)</argsstring>
+        <name>av_channel_layout_default</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>ch_layout</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default channel layout for a given number of channels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layout structure to be initialized </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of channels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="552" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="552" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gaeca968d4f1788f6089f2297c267a24ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+        <definition>const AVChannelLayout * av_channel_layout_standard</definition>
+        <argsstring>(void **opaque)</argsstring>
+        <name>av_channel_layout_standard</name>
+        <param>
+          <type>void **</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all standard channel layouts.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where libavutil will store the iteration state. Must point to NULL to start the iteration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the standard channel layout or NULL when the iteration is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="563" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="563" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga95f7befa6afcea5958c095da37c4ea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_channel_layout_uninit</definition>
+        <argsstring>(AVChannelLayout *channel_layout)</argsstring>
+        <name>av_channel_layout_uninit</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free any allocated data in the channel layout and reset the channel count to 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layout structure to be uninitialized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="571" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="571" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gad36be43b2a1b14b66492b8025b82f886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_copy</definition>
+        <argsstring>(AVChannelLayout *dst, const AVChannelLayout *src)</argsstring>
+        <name>av_channel_layout_copy</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a copy of a channel layout. This differs from just assigning src to dst in that it allocates and copies the map for AV_CHANNEL_ORDER_CUSTOM.</para>
+<para><simplesect kind="note"><para>the destination channel_layout will be always uninitialized before copy.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source channel layout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="583" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="583" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gacc7d7d1a280248aafb8f9196c9d4e24f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_describe</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, char *buf, size_t buf_size)</argsstring>
+        <name>av_channel_layout_describe</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a human-readable string describing the channel layout properties. The string will be in the same format that is accepted by <ref refid="group__lavu__audio__channels_1ga16a894cd275eba471ccad4fe1c5e5c28" kindref="member">av_channel_layout_from_string()</ref>, allowing to rebuild the same channel layout, except for opaque pointers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel layout to be described </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-allocated buffer where to put the generated string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>amount of bytes needed to hold the output string, or a negative AVERROR on failure. If the returned value is bigger than buf_size, then the string was truncated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="598" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="598" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga33ebd5cd9707073a5868f221808aac48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_describe_bprint</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, struct AVBPrint *bp)</argsstring>
+        <name>av_channel_layout_describe_bprint</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>struct AVBPrint *</type>
+          <declname>bp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bprint variant of <ref refid="group__lavu__audio__channels_1gacc7d7d1a280248aafb8f9196c9d4e24f" kindref="member">av_channel_layout_describe()</ref>.</para>
+<para><simplesect kind="note"><para>the string will be appended to the bprint buffer. </para>
+</simplesect>
+<simplesect kind="return"><para>0 on success, or a negative AVERROR value on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="607" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="607" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga88fce9f08c646dabe598123f00425039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+        <definition>enum AVChannel av_channel_layout_channel_from_index</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, unsigned int idx)</argsstring>
+        <name>av_channel_layout_channel_from_index</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the channel with the given index in a channel layout.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the channel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>channel with the index idx in channel_layout on success or AV_CHAN_NONE on failure (if idx is not valid or the channel order is unspecified) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="620" column="1" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="620" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga195fe07f50c7e4f47303891073fa3867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_index_from_channel</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, enum AVChannel channel)</argsstring>
+        <name>av_channel_layout_index_from_channel</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of a given channel in a channel layout. In case multiple channels are found, only the first match will be returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel whose index to obtain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of channel in channel_layout on success or a negative number if channel is not present in channel_layout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="631" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="631" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga2916f559c224d79ca2c0b68882418534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_index_from_string</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, const char *name)</argsstring>
+        <name>av_channel_layout_index_from_string</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index in a channel layout of a channel described by the given string. In case multiple channels are found, only the first match will be returned.</para>
+<para>This function accepts channel names in the same format as <ref refid="group__lavu__audio__channels_1gaf6d58f0ff59e1985f8dd337f7a7736e7" kindref="member">av_channel_from_string()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string describing the channel whose index to obtain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a channel index described by the given string, or a negative AVERROR value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="646" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="646" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga05df26d449e215083fc63cfbc640844c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="group__lavu__audio__channels_1gaa4a685b5c38835392552a7f96ee24a3e" kindref="member">AVChannel</ref></type>
+        <definition>enum AVChannel av_channel_layout_channel_from_string</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, const char *name)</argsstring>
+        <name>av_channel_layout_channel_from_string</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a channel described by the given string.</para>
+<para>This function accepts channel names in the same format as <ref refid="group__lavu__audio__channels_1gaf6d58f0ff59e1985f8dd337f7a7736e7" kindref="member">av_channel_from_string()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string describing the channel to obtain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a channel described by the given string in channel_layout on success or AV_CHAN_NONE on failure (if the string is not valid or the channel order is unspecified) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="662" column="1" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="662" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gae597e6f9ab3b7fbcdb74e486feee4f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t av_channel_layout_subset</definition>
+        <argsstring>(const AVChannelLayout *channel_layout, uint64_t mask)</argsstring>
+        <name>av_channel_layout_subset</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find out what channels from a given set are present in a channel layout, without regard for their positions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AV_CH_* representing a set of channels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a bitfield representing all the channels from mask that are present in channel_layout </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="674" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="674" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1gad15a6bf80ee8551ee4a4789d970ccbea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_check</definition>
+        <argsstring>(const AVChannelLayout *channel_layout)</argsstring>
+        <name>av_channel_layout_check</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether a channel layout is valid, i.e. can possibly describe audio data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if channel_layout is valid, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="684" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="684" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga5da99475fc07b778522974a2e0a1f58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_compare</definition>
+        <argsstring>(const AVChannelLayout *chl, const AVChannelLayout *chl1)</argsstring>
+        <name>av_channel_layout_compare</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>chl</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>chl1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether two channel layouts are semantically the same, i.e. the same channels are present on the same positions in both.</para>
+<para>If one of the channel layouts is AV_CHANNEL_ORDER_UNSPEC, while the other is not, they are considered to be unequal. If both are AV_CHANNEL_ORDER_UNSPEC, they are considered equal iff the channel counts are the same in both.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chl1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if chl and chl1 are equal, 1 if they are not equal. A negative AVERROR code if one or both are invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="699" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="699" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga571f1909622091a664d72ee5f9dd733c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_ambisonic_order</definition>
+        <argsstring>(const AVChannelLayout *channel_layout)</argsstring>
+        <name>av_channel_layout_ambisonic_order</name>
+        <param>
+          <type>const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the order if the layout is n-th order standard-order ambisonic. The presence of optional extra non-diegetic channels at the end is not taken into account.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input channel layout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the order of the layout, a negative error code otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="709" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="709" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__audio__channels_1ga3315a86196d47fcfa78aa866a6c61001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_channel_layout_retype</definition>
+        <argsstring>(AVChannelLayout *channel_layout, enum AVChannelOrder order, int flags)</argsstring>
+        <name>av_channel_layout_retype</name>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>channel_layout</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__audio__channels_1ga252e1528ae55fbf873266ca4c7e3b69c" kindref="member">AVChannelOrder</ref></type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change the <ref refid="group__lavu__audio__channels_1ga252e1528ae55fbf873266ca4c7e3b69c" kindref="member">AVChannelOrder</ref> of a channel layout.</para>
+<para>Change of <ref refid="group__lavu__audio__channels_1ga252e1528ae55fbf873266ca4c7e3b69c" kindref="member">AVChannelOrder</ref> can be either lossless or lossy. In case of a lossless conversion all the channel designations and the associated channel names (if any) are kept. On a lossy conversion the channel names and channel designations might be lost depending on the capabilities of the desired <ref refid="group__lavu__audio__channels_1ga252e1528ae55fbf873266ca4c7e3b69c" kindref="member">AVChannelOrder</ref>. Note that some conversions are simply not possible in which case this function returns AVERROR(ENOSYS).</para>
+<para>The following conversions are supported:</para>
+<para>Any -&gt; Custom : Always possible, always lossless. Any -&gt; Unspecified: Always possible, lossless if channel designations are all unknown and channel names are not used, lossy otherwise. Custom -&gt; Ambisonic : Possible if it contains ambisonic channels with optional non-diegetic channels in the end. Lossy if the channels have custom names, lossless otherwise. Custom -&gt; Native : Possible if it contains native channels in native order. Lossy if the channels have custom names, lossless otherwise.</para>
+<para>On error this function keeps the original channel layout untouched.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel layout which will be changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the desired channel layout order </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AV_CHANNEL_LAYOUT_RETYPE_FLAG_* constants </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the conversion was successful and lossless or if the channel layout was already in the desired order &gt;0 if the conversion was successful but lossy AVERROR(ENOSYS) if the conversion was not possible (or would be lossy and AV_CHANNEL_LAYOUT_RETYPE_FLAG_LOSSLESS was specified) AVERROR(EINVAL), AVERROR(ENOMEM) on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="756" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" declline="756" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__audio__channels_1gadf8c2fbfd2cd8a9962a69d1bb18e62df" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_MASK</name>
+        <param><defname>nb</defname></param>
+        <param><defname>m</defname></param>
+        <initializer>    { /* .order */ <ref refid="group__lavu__audio__channels_1gga252e1528ae55fbf873266ca4c7e3b69ca005e2e35e4979fcf1247012b73a3f8cc" kindref="member">AV_CHANNEL_ORDER_NATIVE</ref>, \
+      /* .nb_channels */  (nb), \
+      /* .u.mask */ { m }, \
+      /* .opaque */ NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro to define native channel layouts</para>
+<para><simplesect kind="note"><para>This doesn&apos;t use designated initializers for compatibility with C++ 17 and older. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="384" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="384" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga46d84a74389bd95e4a7654d9f3e53a0c" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_RETYPE_FLAG_LOSSLESS</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The conversion must be lossless. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="714" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__audio__channels_1ga3ed59a604f7ecb76f620da6b3d330ac2" prot="public" static="no">
+        <name>AV_CHANNEL_LAYOUT_RETYPE_FLAG_CANONICAL</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The specified retype target order is ignored and the simplest possible (canonical) order is used for which the input layout can be losslessy represented. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" line="721" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/channel_layout.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Audio channel layout utility functions </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

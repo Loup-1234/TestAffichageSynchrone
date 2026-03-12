@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__bufferpool" kind="group">
+    <compoundname>lavu_bufferpool</compoundname>
+    <title>AVBufferPool</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" prot="public" static="no">
+        <type>struct <ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref></type>
+        <definition>typedef struct AVBufferPool AVBufferPool</definition>
+        <argsstring></argsstring>
+        <name>AVBufferPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer pool. This structure is opaque and not meant to be accessed directly. It is allocated with <ref refid="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" kindref="member">av_buffer_pool_init()</ref> and freed with <ref refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" kindref="member">av_buffer_pool_uninit()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="255" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> *</type>
+        <definition>AVBufferPool * av_buffer_pool_init</definition>
+        <argsstring>(size_t size, AVBufferRef *(*alloc)(size_t size))</argsstring>
+        <name>av_buffer_pool_init</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *(*)(size_t size)</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and initialize a buffer pool.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of each buffer in this pool </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alloc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function that will be used to allocate new buffers when the pool is empty. May be NULL, then the default allocator will be used (<ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly created buffer pool on success, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="266" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="266" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__bufferpool_1gabe67d225e59399d5265381f58fb77896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> *</type>
+        <definition>AVBufferPool * av_buffer_pool_init2</definition>
+        <argsstring>(size_t size, void *opaque, AVBufferRef *(*alloc)(void *opaque, size_t size), void(*pool_free)(void *opaque))</argsstring>
+        <name>av_buffer_pool_init2</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *(*)(void *opaque, size_t size)</type>
+          <declname>alloc</declname>
+        </param>
+        <param>
+          <type>void(*)(void *opaque)</type>
+          <declname>pool_free</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and initialize a buffer pool with a more complex allocator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of each buffer in this pool </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbitrary user data used by the allocator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alloc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function that will be used to allocate new buffers when the pool is empty. May be NULL, then the default allocator will be used (<ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pool_free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function that will be called immediately before the pool is freed. I.e. after <ref refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" kindref="member">av_buffer_pool_uninit()</ref> is called by the caller and all the frames are returned to the pool and freed. It is intended to uninitialize the user opaque data. May be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly created buffer pool on success, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="283" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="283" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_buffer_pool_uninit</definition>
+        <argsstring>(AVBufferPool **pool)</argsstring>
+        <name>av_buffer_pool_uninit</name>
+        <param>
+          <type><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> **</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark the pool as being available for freeing. It will actually be freed only once all the allocated buffers associated with the pool are released. Thus it is safe to call this function while some of the allocated buffers are still in use.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the pool to be freed. It will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="295" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="295" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_buffer_pool_get</definition>
+        <argsstring>(AVBufferPool *pool)</argsstring>
+        <name>av_buffer_pool_get</name>
+        <param>
+          <type><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> *</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a new <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>, reusing an old buffer from the pool when available. This function may be called simultaneously from multiple threads.</para>
+<para><simplesect kind="return"><para>a reference to the new buffer on success, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="303" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="303" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__bufferpool_1ga27fc679dbb39e3fb2953bded0f4ee404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_buffer_pool_buffer_get_opaque</definition>
+        <argsstring>(const AVBufferRef *ref)</argsstring>
+        <name>av_buffer_pool_buffer_get_opaque</name>
+        <param>
+          <type>const <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the original opaque parameter of an allocated buffer in the pool.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a buffer reference to a buffer returned by av_buffer_pool_get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the opaque parameter set by the buffer allocator function of the buffer pool.</para>
+</simplesect>
+<simplesect kind="note"><para>the opaque parameter of ref is used by the buffer pool implementation, therefore you have to use this function to access the original opaque parameter of an allocated buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="316" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" declline="316" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> is an API for a lock-free thread-safe pool of AVBuffers.</para>
+<para>Frequently allocating and freeing large buffers may be slow. <ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> is meant to solve this in cases when the caller needs a set of buffers of the same size (the most obvious use case being buffers for raw video or audio frames).</para>
+<para>At the beginning, the user must call <ref refid="group__lavu__bufferpool_1ga8317217c166b5411ecca1f355251afae" kindref="member">av_buffer_pool_init()</ref> to create the buffer pool. Then whenever a buffer is needed, call <ref refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" kindref="member">av_buffer_pool_get()</ref> to get a reference to a new buffer, similar to <ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref>. This new reference works in all aspects the same way as the one created by <ref refid="group__lavu__buffer_1gadff46eef3fe3c24e5ec13c5600b69826" kindref="member">av_buffer_alloc()</ref>. However, when the last reference to this buffer is unreferenced, it is returned to the pool instead of being freed and will be reused for subsequent <ref refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" kindref="member">av_buffer_pool_get()</ref> calls.</para>
+<para>When the caller is done with the pool and no longer needs to allocate any new buffers, <ref refid="group__lavu__bufferpool_1ga7b76781c5944b3bb59b2e3b1a8994e4a" kindref="member">av_buffer_pool_uninit()</ref> must be called to mark the pool as freeable. Once all the buffers are released, it will automatically be freed.</para>
+<para>Allocating and releasing buffers with this API is thread-safe as long as either the default alloc callback is used, or the user-supplied one is thread-safe. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

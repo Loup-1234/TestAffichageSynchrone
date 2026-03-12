@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__avoptions" kind="group">
+    <compoundname>avoptions</compoundname>
+    <title>AVOptions</title>
+    <innerclass refid="struct_a_v_option_array_def" prot="public">AVOptionArrayDef</innerclass>
+    <innerclass refid="struct_a_v_option" prot="public">AVOption</innerclass>
+    <innerclass refid="struct_a_v_option_range" prot="public">AVOptionRange</innerclass>
+    <innerclass refid="struct_a_v_option_ranges" prot="public">AVOptionRanges</innerclass>
+    <innergroup refid="group__opt__mng">AVOption (un)initialization and inspection.</innergroup>
+    <innergroup refid="group__opt__write">Setting and modifying option values</innergroup>
+    <innergroup refid="group__opt__read">Reading option values</innergroup>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__avoptions_1gabd75aa30eb8ad6387672df9a1fa79444" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVOptionType</name>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a7aaeee142b88a3078ddc57c644b49a7e" prot="public">
+          <name>AV_OPT_TYPE_FLAGS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is unsigned int. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444ac068b8f6afeeb293a13aeabb5d702411" prot="public">
+          <name>AV_OPT_TYPE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is int. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a94d540a5b928da813ff94d9367a1078a" prot="public">
+          <name>AV_OPT_TYPE_INT64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is int64_t. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444ae0b49ec51847a758ceb46976083da2e5" prot="public">
+          <name>AV_OPT_TYPE_DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is double. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444ae91d3f6cbac4a4de2a6e880ac2a52d1a" prot="public">
+          <name>AV_OPT_TYPE_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is float. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444afadddce95ad3b690dd38644b458b96c4" prot="public">
+          <name>AV_OPT_TYPE_STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is a uint8_t* that is either NULL or points to a C string allocated with the <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> family of functions. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a74ba464440564230a72b95b39593cbfc" prot="public">
+          <name>AV_OPT_TYPE_RATIONAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a2689966edbe494482dfdfaa4efdf95d3" prot="public">
+          <name>AV_OPT_TYPE_BINARY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is a uint8_t* that is either NULL or points to an array allocated with the <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> family of functions. The pointer is immediately followed by an int containing the array length in bytes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444aed6f0d8e5b8f3edcaea01c15ab43aefd" prot="public">
+          <name>AV_OPT_TYPE_DICT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is AVDictionary*. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444aa6d3f68edfa4b60e970e7422b7193dd0" prot="public">
+          <name>AV_OPT_TYPE_UINT64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is uint64_t. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a0fa9f07d428bdc32495fe55c365c5329" prot="public">
+          <name>AV_OPT_TYPE_CONST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Special option type for declaring named constants. Does not correspond to an actual field in the object, offset must be 0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a078f280b98b49a9f585c5d479b711d9a" prot="public">
+          <name>AV_OPT_TYPE_IMAGE_SIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is two consecutive integers. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a114085ba9877df34de060124877d8274" prot="public">
+          <name>AV_OPT_TYPE_PIXEL_FMT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a711661923db91bbbd4abdec0efa5ff0a" prot="public">
+          <name>AV_OPT_TYPE_SAMPLE_FMT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a9429811abc62d4a564ec56938df0a572" prot="public">
+          <name>AV_OPT_TYPE_VIDEO_RATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a2e3a2fc47ae688f28cc4abe59452a032" prot="public">
+          <name>AV_OPT_TYPE_DURATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is int64_t. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444afdcd13cbd184901b05e27595e647fadc" prot="public">
+          <name>AV_OPT_TYPE_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is uint8_t[4]. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444af3898696f46dc79b74b708d8fa4b52a7" prot="public">
+          <name>AV_OPT_TYPE_BOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is int. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444ad1504ca2d0df149d42efcdfe303a3e82" prot="public">
+          <name>AV_OPT_TYPE_CHLAYOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444afe7623308a856c3fae3a4d6c91fb8a19" prot="public">
+          <name>AV_OPT_TYPE_UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlying C type is unsigned int. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a38b88cd3a4eb23a55cb328e4b81420b1" prot="public">
+          <name>AV_OPT_TYPE_FLAG_ARRAY</name>
+          <initializer>= (1 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>May be combined with another regular option type to declare an array option.</para>
+<para>For array options, <ref refid="struct_a_v_option_1a0ab0d209c04b72cfd72808c9e9e46a46" kindref="member">AVOption::offset</ref> should refer to a pointer corresponding to the option type. The pointer should be immediately followed by an unsigned int that will store the number of elements in the array. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An option type determines:<itemizedlist>
+<listitem><para>for native access, the underlying C type of the field that an <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> refers to;</para>
+</listitem><listitem><para>for foreign access, the semantics of accessing the option through this API, e.g. which av_opt_get_*() and av_opt_set_*() functions can be called, or what format will <ref refid="group__opt__get__funcs_1gaf31144e60f9ce89dbe8cbea57a0b232c" kindref="member">av_opt_get()</ref>/av_opt_set() expect/produce. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="251" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="251" bodyend="347"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__avoptions_1ga8aac2591d176d04f1f34b06f2955554d" prot="public" static="no">
+        <type>struct AVOptionArrayDef</type>
+        <definition>typedef struct AVOptionArrayDef AVOptionArrayDef</definition>
+        <argsstring></argsstring>
+        <name>AVOptionArrayDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>May be set as default_val for AV_OPT_TYPE_FLAG_ARRAY options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="424" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__avoptions_1gac7d2b6f338b15cba99b36a76f3b99d81" prot="public" static="no">
+        <type>struct AVOption</type>
+        <definition>typedef struct AVOption AVOption</definition>
+        <argsstring></argsstring>
+        <name>AVOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_a_v_option" kindref="compound">AVOption</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="480" column="10"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__avoptions_1ga9bef99908016b6b875441bda2deaae31" prot="public" static="no">
+        <type>struct AVOptionRange</type>
+        <definition>typedef struct AVOptionRange AVOptionRange</definition>
+        <argsstring></argsstring>
+        <name>AVOptionRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A single allowed range of values, or a single allowed value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="503" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__avoptions_1gaf7ad285d705354db2f1f4a721aadd516" prot="public" static="no">
+        <type>struct AVOptionRanges</type>
+        <definition>typedef struct AVOptionRanges AVOptionRanges</definition>
+        <argsstring></argsstring>
+        <name>AVOptionRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of <ref refid="struct_a_v_option_range" kindref="compound">AVOptionRange</ref> structs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="548" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__avoptions_1ga880756f24644ff66c806ed2d9ab3d790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_opt_freep_ranges</definition>
+        <argsstring>(AVOptionRanges **ranges)</argsstring>
+        <name>av_opt_freep_ranges</name>
+        <param>
+          <type><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref> **</type>
+          <declname>ranges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an <ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref> struct and set it to NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1157" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1157" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__avoptions_1ga9751db4da3e0facd522f5b345f4001ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_query_ranges</definition>
+        <argsstring>(AVOptionRanges **, void *obj, const char *key, int flags)</argsstring>
+        <name>av_opt_query_ranges</name>
+        <param>
+          <type><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref> **</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a list of allowed ranges for the given option.</para>
+<para>The returned list may depend on other fields in obj like for example profile.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a bitmask of flags, undefined flags should not be set and should be ignored AV_OPT_SEARCH_FAKE_OBJ indicates that the obj is a double pointer to a <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> instead of a full instance AV_OPT_MULTI_COMPONENT_RANGE indicates that function may return more than one component, </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref></para>
+</simplesect>
+The result must be freed with av_opt_freep_ranges.</para>
+<para><simplesect kind="return"><para>number of components returned on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1172" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1172" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__avoptions_1ga4e50bee09b6a374cc54237314892c001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_query_ranges_default</definition>
+        <argsstring>(AVOptionRanges **, void *obj, const char *key, int flags)</argsstring>
+        <name>av_opt_query_ranges_default</name>
+        <param>
+          <type><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref> **</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a default list of allowed ranges for the given option.</para>
+<para>This list is constructed without using the <ref refid="struct_a_v_class_1a1f25d6b76f5a8b474cc1cb16aa5ed5df" kindref="member">AVClass.query_ranges()</ref> callback and can be used as fallback from within the callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a bitmask of flags, undefined flags should not be set and should be ignored AV_OPT_SEARCH_FAKE_OBJ indicates that the obj is a double pointer to a <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> instead of a full instance AV_OPT_MULTI_COMPONENT_RANGE indicates that function may return more than one component, </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref></para>
+</simplesect>
+The result must be freed with av_opt_free_ranges.</para>
+<para><simplesect kind="return"><para>number of components returned on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1188" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1188" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__avoptions_1gaba0d5e41287b6fbeae5dd59f643695cc" prot="public" static="no">
+        <name>AV_OPT_FLAG_ENCODING_PARAM</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A generic parameter which can be set by the user for muxing or encoding. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="352" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gaad820197915e73441f76f5e0c384d78a" prot="public" static="no">
+        <name>AV_OPT_FLAG_DECODING_PARAM</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A generic parameter which can be set by the user for demuxing or decoding. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="356" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gaaa63966a3f547a71a7742f4aea00093a" prot="public" static="no">
+        <name>AV_OPT_FLAG_AUDIO_PARAM</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="357" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gaaf3d0af9d7eca757034486a8eb896246" prot="public" static="no">
+        <name>AV_OPT_FLAG_VIDEO_PARAM</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="358" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gad27ec6a75c8a2c21329e443b15b368c3" prot="public" static="no">
+        <name>AV_OPT_FLAG_SUBTITLE_PARAM</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="359" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gadf984463025a7861f3c21b113966cb53" prot="public" static="no">
+        <name>AV_OPT_FLAG_EXPORT</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The option is intended for exporting values to the caller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="363" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1ga5f24d30655a5aea4dc8bd7263dbfd78c" prot="public" static="no">
+        <name>AV_OPT_FLAG_READONLY</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The option may not be set through the AVOptions API, only read. This flag only makes sense when AV_OPT_FLAG_EXPORT is also set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="368" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1ga3e251b380bf6442d30148ca8cc12e606" prot="public" static="no">
+        <name>AV_OPT_FLAG_BSF_PARAM</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A generic parameter which can be set by the user for bit stream filtering. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="372" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1gae753a382b986ef00e5991f149808358a" prot="public" static="no">
+        <name>AV_OPT_FLAG_RUNTIME_PARAM</name>
+        <initializer>(1 &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A generic parameter which can be set by the user at runtime. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="377" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1ga1fa5f9ced9142668142f316b0aad2cfc" prot="public" static="no">
+        <name>AV_OPT_FLAG_FILTERING_PARAM</name>
+        <initializer>(1 &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A generic parameter which can be set by the user for filtering. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="381" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1ga62dad0721bb39d5c7449ec6d75f89c90" prot="public" static="no">
+        <name>AV_OPT_FLAG_DEPRECATED</name>
+        <initializer>(1 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set if option is deprecated, users should refer to <ref refid="struct_a_v_option_1a6c72d22b8c599e89abba088b85dfcd8a" kindref="member">AVOption.help</ref> text for more information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="386" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avoptions_1ga571e8ba51d276e7adaa81e512676b1f4" prot="public" static="no">
+        <name>AV_OPT_FLAG_CHILD_CONSTS</name>
+        <initializer>(1 &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set if option constants can also reside in child objects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="390" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AVOptions provide a generic system to declare options on arbitrary structs (&quot;objects&quot;). An option can have a help text, a type and a range of possible values. Options may then be enumerated, read and written to.</para>
+<para>There are two modes of access to members of <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> and its child structs. One is called &apos;native access&apos;, and refers to access from the code that declares the <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> in question. The other is &apos;foreign access&apos;, and refers to access from other code.</para>
+<para>Certain struct members in this header are documented as &apos;native access only&apos; or similar - it means that only the code that declared the <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> in question is allowed to access the field. This allows us to extend the semantics of those fields without breaking API compatibility.</para>
+<sect1 id="group__avoptions_1avoptions_scope">
+<title>Scope of AVOptions</title><para>AVOptions is designed to support any set of multimedia configuration options that can be defined at compile-time. Although it is mainly used to expose FFmpeg options, you are welcome to adapt it to your own use case.</para>
+<para>No single approach can ever fully solve the problem of configuration, but please submit a patch if you believe you have found a problem that is best solved by extending AVOptions.</para>
+</sect1>
+<sect1 id="group__avoptions_1avoptions_implement">
+<title>Implementing AVOptions</title><para>This section describes how to add AVOptions capabilities to a struct.</para>
+<para>All AVOptions-related information is stored in an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. Therefore the first member of the struct should be a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> describing it. The option field of the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> must be set to a NULL-terminated static array of AVOptions. Each <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> must have a non-empty name, a type, a default value and for number-type AVOptions also a range of allowed values. It must also declare an offset in bytes from the start of the struct, where the field associated with this <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> is located. Other fields in the <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> struct should also be set when applicable, but are not required.</para>
+<para>The following example illustrates an AVOptions-enabled struct: <programlisting><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">test_struct<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVClass<sp/>*</highlight><highlight class="keyword">class</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int_opt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*str_opt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*bin_opt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>bin_len;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>test_struct;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_option" kindref="compound">AVOption</ref><sp/>test_options[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;test_int&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>test<sp/>option<sp/>of<sp/>int<sp/>type.&quot;</highlight><highlight class="normal">,<sp/>offsetof(test_struct,<sp/>int_opt),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444ac068b8f6afeeb293a13aeabb5d702411" kindref="member">AV_OPT_TYPE_INT</ref>,<sp/>{<sp/>.i64<sp/>=<sp/>-1<sp/>},<sp/>INT_MIN,<sp/>INT_MAX<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;test_str&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>test<sp/>option<sp/>of<sp/>string<sp/>type.&quot;</highlight><highlight class="normal">,<sp/>offsetof(test_struct,<sp/>str_opt),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444afadddce95ad3b690dd38644b458b96c4" kindref="member">AV_OPT_TYPE_STRING</ref><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;test_bin&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>test<sp/>option<sp/>of<sp/>binary<sp/>type.&quot;</highlight><highlight class="normal">,<sp/>offsetof(test_struct,<sp/>bin_opt),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a2689966edbe494482dfdfaa4efdf95d3" kindref="member">AV_OPT_TYPE_BINARY</ref><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{<sp/>NULL<sp/>},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>test_class<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.class_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;test<sp/>class&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.item_name<sp/><sp/>=<sp/><ref refid="group__lavu__log_1ga1e2d13acd5bf1c5790faa60edae84cf0" kindref="member">av_default_item_name</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.option<sp/><sp/><sp/><sp/><sp/>=<sp/>test_options,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.version<sp/><sp/><sp/><sp/>=<sp/>LIBAVUTIL_VERSION_INT,</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>Next, when allocating your struct, you must ensure that the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> pointer is set to the correct value. Then, <ref refid="group__opt__mng_1gad4ca968e9058b39b2da630ad0a091bdb" kindref="member">av_opt_set_defaults()</ref> can be called to initialize defaults. After that the struct is ready to be used with the AVOptions API.</para>
+<para>When cleaning up, you may use the <ref refid="group__opt__mng_1gac14db824af52baf8181406e98d116097" kindref="member">av_opt_free()</ref> function to automatically free all the allocated string and binary options.</para>
+<para>Continuing with the above example:</para>
+<para><programlisting><codeline><highlight class="normal">test_struct<sp/>*alloc_test_struct(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>test_struct<sp/>*ret<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1ga3dc1cbd0f18fd550b0bfaad4bc5b6d01" kindref="member">av_mallocz</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*ret));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret-&gt;class<sp/>=<sp/>&amp;test_class;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__opt__mng_1gad4ca968e9058b39b2da630ad0a091bdb" kindref="member">av_opt_set_defaults</ref>(ret);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_test_struct(test_struct<sp/>**foo)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__opt__mng_1gac14db824af52baf8181406e98d116097" kindref="member">av_opt_free</ref>(*foo);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep</ref>(foo);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<sect2 id="group__avoptions_1avoptions_implement_nesting">
+<title>Nesting</title><para>It may happen that an AVOptions-enabled struct contains another AVOptions-enabled struct as a member (e.g. <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> in libavcodec exports generic options, while its priv_data field exports codec-specific options). In such a case, it is possible to set up the parent struct to export a child&apos;s options. To do that, simply implement <ref refid="struct_a_v_class_1a1d3701397a31766376ab4155b2a56451" kindref="member">AVClass.child_next()</ref> and <ref refid="struct_a_v_class_1a44dca198ce11fcd2a2b7488a927e4a46" kindref="member">AVClass.child_class_iterate()</ref> in the parent struct&apos;s <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. Assuming that the test_struct from above now also contains a child_struct field:</para>
+<para><programlisting><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">child_struct<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AVClass<sp/>*</highlight><highlight class="keyword">class</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags_opt;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>child_struct;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_option" kindref="compound">AVOption</ref><sp/>child_opts[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;test_flags&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>test<sp/>option<sp/>of<sp/>flags<sp/>type.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>offsetof(child_struct,<sp/>flags_opt),<sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a7aaeee142b88a3078ddc57c644b49a7e" kindref="member">AV_OPT_TYPE_FLAGS</ref>,<sp/>{<sp/>.i64<sp/>=<sp/>0<sp/>},<sp/>INT_MIN,<sp/>INT_MAX<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>NULL<sp/>},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>child_class<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.class_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;child<sp/>class&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.item_name<sp/><sp/>=<sp/><ref refid="group__lavu__log_1ga1e2d13acd5bf1c5790faa60edae84cf0" kindref="member">av_default_item_name</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.option<sp/><sp/><sp/><sp/><sp/>=<sp/>child_opts,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.version<sp/><sp/><sp/><sp/>=<sp/>LIBAVUTIL_VERSION_INT,</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*child_next(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*prev)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>test_struct<sp/>*t<sp/>=<sp/>obj;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!prev<sp/>&amp;&amp;<sp/>t-&gt;child_struct)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t-&gt;child_struct;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>child_class_iterate(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**iter)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*c<sp/>=<sp/>*iter<sp/>?<sp/>NULL<sp/>:<sp/>&amp;child_class;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*iter<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(uintptr_t)c;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> Putting child_next() and child_class_iterate() as defined above into test_class will now make child_struct&apos;s options accessible through test_struct (again, proper setup as described above needs to be done on child_struct right after it is created).</para>
+<para>From the above example it might not be clear why both child_next() and child_class_iterate() are needed. The distinction is that child_next() iterates over actually existing objects, while child_class_iterate() iterates over all possible child classes. E.g. if an <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> was initialized to use a codec which has private options, then its child_next() will return AVCodecContext.priv_data and finish iterating. OTOH child_class_iterate() on <ref refid="struct_a_v_codec_context_1a90622d3af2a9abba986a1c9f7ca21b16" kindref="member">AVCodecContext.av_class</ref> will iterate over all available codecs with private options.</para>
+</sect2>
+<sect2 id="group__avoptions_1avoptions_implement_named_constants">
+<title>Named constants</title><para>It is possible to create named constants for options. Simply set the unit field of the option the constants should apply to a string and create the constants themselves as options of type AV_OPT_TYPE_CONST with their unit field set to the same string. Their default_val field should contain the value of the named constant. For example, to add some named constants for the test_flags option above, put the following into the child_opts array: <programlisting><codeline><highlight class="normal">{<sp/></highlight><highlight class="stringliteral">&quot;test_flags&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>test<sp/>option<sp/>of<sp/>flags<sp/>type.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>offsetof(child_struct,<sp/>flags_opt),<sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a7aaeee142b88a3078ddc57c644b49a7e" kindref="member">AV_OPT_TYPE_FLAGS</ref>,<sp/>{<sp/>.i64<sp/>=<sp/>0<sp/>},<sp/>INT_MIN,<sp/>INT_MAX,<sp/></highlight><highlight class="stringliteral">&quot;test_unit&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline><highlight class="normal">{<sp/></highlight><highlight class="stringliteral">&quot;flag1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>flag<sp/>with<sp/>value<sp/>16&quot;</highlight><highlight class="normal">,<sp/>0,<sp/><ref refid="group__avoptions_1ggabd75aa30eb8ad6387672df9a1fa79444a0fa9f07d428bdc32495fe55c365c5329" kindref="member">AV_OPT_TYPE_CONST</ref>,<sp/>{<sp/>.i64<sp/>=<sp/>16<sp/>},<sp/>0,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;test_unit&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="group__avoptions_1avoptions_use">
+<title>Using AVOptions</title><para>This section deals with accessing options in an AVOptions-enabled struct. Such structs in FFmpeg are e.g. <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> in libavcodec or <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> in libavformat.</para>
+<sect2 id="group__avoptions_1avoptions_use_examine">
+<title>Examining AVOptions</title><para>The basic functions for examining options are <ref refid="group__opt__mng_1gafbe418a443aa11838ac10318df5d96f7" kindref="member">av_opt_next()</ref>, which iterates over all options defined for one object, and <ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>, which searches for an option with the given name.</para>
+<para>The situation is more complicated with nesting. An AVOptions-enabled struct may have AVOptions-enabled children. Passing the AV_OPT_SEARCH_CHILDREN flag to <ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref> will make the function search children recursively.</para>
+<para>For enumerating there are basically two cases. The first is when you want to get all options that may potentially exist on the struct and its children (e.g. when constructing documentation). In that case you should call <ref refid="group__opt__mng_1ga0d73b14a043d066d877b173049429d0c" kindref="member">av_opt_child_class_iterate()</ref> recursively on the parent struct&apos;s <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. The second case is when you have an already initialized struct with all its children and you want to get all options that can be actually written or read from it. In that case you should call <ref refid="group__opt__mng_1gac93347d7be97385868d17e7284356df4" kindref="member">av_opt_child_next()</ref> recursively (and <ref refid="group__opt__mng_1gafbe418a443aa11838ac10318df5d96f7" kindref="member">av_opt_next()</ref> on each result).</para>
+</sect2>
+<sect2 id="group__avoptions_1avoptions_use_get_set">
+<title>Reading and writing AVOptions</title><para>When setting options, you often have a string read directly from the user. In such a case, simply passing it to av_opt_set() is enough. For non-string type options, av_opt_set() will parse the string according to the option type.</para>
+<para>Similarly <ref refid="group__opt__get__funcs_1gaf31144e60f9ce89dbe8cbea57a0b232c" kindref="member">av_opt_get()</ref> will read any option type and convert it to a string which will be returned. Do not forget that the string is allocated, so you have to free it with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>.</para>
+<para>In some cases it may be more convenient to put all options into an AVDictionary and call <ref refid="group__opt__write_1gaf1a88e8f152d7835f111b1ef8813fb2e" kindref="member">av_opt_set_dict()</ref> on it. A specific case of this are the format/codec open functions in lavf/lavc which take a dictionary filled with option as a parameter. This makes it possible to set some options that cannot be set otherwise, since e.g. the input file format is not known before the file is actually opened. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

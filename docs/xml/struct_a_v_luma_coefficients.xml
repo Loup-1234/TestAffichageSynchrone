@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_luma_coefficients" kind="struct" language="C++" prot="public">
+    <compoundname>AVLumaCoefficients</compoundname>
+    <includes refid="csp_8h" local="no">csp.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_luma_coefficients_1a582918f2c1b9a2f082f108bcfd598aa6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVLumaCoefficients::cr</definition>
+        <argsstring></argsstring>
+        <name>cr</name>
+        <qualifiedname>AVLumaCoefficients::cr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="49" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_luma_coefficients_1ab64acab5a92d3e202c18491ab571b0f0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVLumaCoefficients::cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <qualifiedname>AVLumaCoefficients::cg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="49" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_luma_coefficients_1a500bdbec33dd40a5457be89bd0f489a4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVLumaCoefficients::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <qualifiedname>AVLumaCoefficients::cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="49" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Struct containing luma coefficients to be used for RGB to YUV/YCoCg, or similar calculations. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVLumaCoefficients</label>
+        <link refid="struct_a_v_luma_coefficients"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cb</edgelabel>
+          <edgelabel>cg</edgelabel>
+          <edgelabel>cr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" line="48" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/csp.h" bodystart="48" bodyend="50"/>
+    <listofallmembers>
+      <member refid="struct_a_v_luma_coefficients_1a500bdbec33dd40a5457be89bd0f489a4" prot="public" virt="non-virtual"><scope>AVLumaCoefficients</scope><name>cb</name></member>
+      <member refid="struct_a_v_luma_coefficients_1ab64acab5a92d3e202c18491ab571b0f0" prot="public" virt="non-virtual"><scope>AVLumaCoefficients</scope><name>cg</name></member>
+      <member refid="struct_a_v_luma_coefficients_1a582918f2c1b9a2f082f108bcfd598aa6" prot="public" virt="non-virtual"><scope>AVLumaCoefficients</scope><name>cr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

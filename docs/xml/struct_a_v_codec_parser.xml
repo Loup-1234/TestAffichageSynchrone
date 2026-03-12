@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_codec_parser" kind="struct" language="C++" prot="public">
+    <compoundname>AVCodecParser</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1a354b8519ee9d5b5ae6048a2ad4c91113" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParser::codec_ids[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>codec_ids</name>
+        <qualifiedname>AVCodecParser::codec_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2750" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1aacbcd0208594f399ed96b67df8669279" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVCodecParser::priv_data_size</definition>
+        <argsstring></argsstring>
+        <name>priv_data_size</name>
+        <qualifiedname>AVCodecParser::priv_data_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2763" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1a95014241d41464ec4ea5c109c8366955" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int(*</type>
+        <definition>attribute_deprecated int(* AVCodecParser::parser_init) (AVCodecParserContext *s)</definition>
+        <argsstring>)(AVCodecParserContext *s)</argsstring>
+        <name>parser_init</name>
+        <qualifiedname>AVCodecParser::parser_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2765" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1accb760ff473574290fd5a07197ce3563" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int(*</type>
+        <definition>attribute_deprecated int(* AVCodecParser::parser_parse) (AVCodecParserContext *s, AVCodecContext *avctx, const uint8_t **poutbuf, int *poutbuf_size, const uint8_t *buf, int buf_size)</definition>
+        <argsstring>)(AVCodecParserContext *s, AVCodecContext *avctx, const uint8_t **poutbuf, int *poutbuf_size, const uint8_t *buf, int buf_size)</argsstring>
+        <name>parser_parse</name>
+        <qualifiedname>AVCodecParser::parser_parse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2769" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1aafd85b53b9267d5e64a98e4abcfb3e13" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated void(*</type>
+        <definition>attribute_deprecated void(* AVCodecParser::parser_close) (AVCodecParserContext *s)</definition>
+        <argsstring>)(AVCodecParserContext *s)</argsstring>
+        <name>parser_close</name>
+        <qualifiedname>AVCodecParser::parser_close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2774" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parser_1a7f97f364e06fccbaca289b7f03908345" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int(*</type>
+        <definition>attribute_deprecated int(* AVCodecParser::split) (AVCodecContext *avctx, const uint8_t *buf, int buf_size)</definition>
+        <argsstring>)(AVCodecContext *avctx, const uint8_t *buf, int buf_size)</argsstring>
+        <name>split</name>
+        <qualifiedname>AVCodecParser::split</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2776" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2776" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2748" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" bodystart="2748" bodyend="2778"/>
+    <listofallmembers>
+      <member refid="struct_a_v_codec_parser_1a354b8519ee9d5b5ae6048a2ad4c91113" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>codec_ids</name></member>
+      <member refid="struct_a_v_codec_parser_1aafd85b53b9267d5e64a98e4abcfb3e13" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>parser_close</name></member>
+      <member refid="struct_a_v_codec_parser_1a95014241d41464ec4ea5c109c8366955" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>parser_init</name></member>
+      <member refid="struct_a_v_codec_parser_1accb760ff473574290fd5a07197ce3563" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>parser_parse</name></member>
+      <member refid="struct_a_v_codec_parser_1aacbcd0208594f399ed96b67df8669279" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>priv_data_size</name></member>
+      <member refid="struct_a_v_codec_parser_1a7f97f364e06fccbaca289b7f03908345" prot="public" virt="non-virtual"><scope>AVCodecParser</scope><name>split</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

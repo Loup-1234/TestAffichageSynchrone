@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_w_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVHWFramesContext</compoundname>
+    <includes refid="hwcontext_8h" local="no">hwcontext.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a70e916d610148748f95147cde35ce7c9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVHWFramesContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVHWFramesContext::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for logging. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="122" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a2f3908bfadd569103b67ee4972ee7305" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVHWFramesContext::device_ref</definition>
+        <argsstring></argsstring>
+        <name>device_ref</name>
+        <qualifiedname>AVHWFramesContext::device_ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A reference to the parent <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref>. This reference is owned and managed by the enclosing <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref>, but the caller may derive additional references from it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="129" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1ac9a7dbd0cbfcabc0b1529cb34cf53b6d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref> *</type>
+        <definition>AVHWDeviceContext* AVHWFramesContext::device_ctx</definition>
+        <argsstring></argsstring>
+        <name>device_ctx</name>
+        <qualifiedname>AVHWFramesContext::device_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The parent <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref>. This is simply a pointer to device_ref-&gt;data provided for convenience.</para>
+<para>Set by libavutil in av_hwframe_ctx_init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="137" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVHWFramesContext::hwctx</definition>
+        <argsstring></argsstring>
+        <name>hwctx</name>
+        <qualifiedname>AVHWFramesContext::hwctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The format-specific data, allocated and freed automatically along with this context.</para>
+<para>The user shall ignore this field if the corresponding format-specific header (hwcontext_*.h) does not define a context to be used as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref>.</para>
+<para>Otherwise, it should be cast by the user to said context and filled as described in the documentation before calling av_hwframe_ctx_init().</para>
+<para>After any frames using this context are created, the contents of this struct should not be modified by the caller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="153" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1aaeccab495e5027aa0402dea10bdcd166" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVHWFramesContext::free) (struct AVHWFramesContext *ctx)</definition>
+        <argsstring>)(struct AVHWFramesContext *ctx)</argsstring>
+        <name>free</name>
+        <qualifiedname>AVHWFramesContext::free</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This field may be set by the caller before calling av_hwframe_ctx_init().</para>
+<para>If non-NULL, this callback will be called when the last reference to this context is unreferenced, immediately before it is freed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="161" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a4d6e4c17632bd6770654b7627722222e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVHWFramesContext::user_opaque</definition>
+        <argsstring></argsstring>
+        <name>user_opaque</name>
+        <qualifiedname>AVHWFramesContext::user_opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arbitrary user data, to be used e.g. by the <ref refid="struct_a_v_h_w_frames_context_1aaeccab495e5027aa0402dea10bdcd166" kindref="member">free()</ref> callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="166" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lavu__bufferpool_1ga13bc8038952b61bae4d591f30c7421f6" kindref="member">AVBufferPool</ref> *</type>
+        <definition>AVBufferPool* AVHWFramesContext::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <qualifiedname>AVHWFramesContext::pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pool from which the frames are allocated by av_hwframe_get_buffer(). This field may be set by the caller before calling av_hwframe_ctx_init(). The buffers returned by calling <ref refid="group__lavu__bufferpool_1gabba08793f113e887e0693ff1ec0cb75f" kindref="member">av_buffer_pool_get()</ref> on this pool must have the properties described in the documentation in the corresponding hw type&apos;s header (hwcontext_*.h). The pool will be freed strictly before this struct&apos;s <ref refid="struct_a_v_h_w_frames_context_1aaeccab495e5027aa0402dea10bdcd166" kindref="member">free()</ref> callback is invoked.</para>
+<para>This field may be NULL, then libavutil will attempt to allocate a pool internally. Note that certain device types enforce pools allocated at fixed size (frame count), which cannot be extended dynamically. In such a case, initial_pool_size must be set appropriately. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="181" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a9c3a94dcd9c96e19059b56a6bae9c764" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesContext::initial_pool_size</definition>
+        <argsstring></argsstring>
+        <name>initial_pool_size</name>
+        <qualifiedname>AVHWFramesContext::initial_pool_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial size of the frame pool. If a device type does not support dynamically resizing the pool, then this is also the maximum pool size.</para>
+<para>May be set by the caller before calling av_hwframe_ctx_init(). Must be set if pool is NULL and the device type does not support dynamic pools. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="190" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a045bc1713932804f6ceef170a5578e0e" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat AVHWFramesContext::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AVHWFramesContext::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format identifying the underlying HW surface type.</para>
+<para>Must be a hwaccel format, i.e. the corresponding descriptor must have the AV_PIX_FMT_FLAG_HWACCEL flag set.</para>
+<para>Must be set by the user before calling av_hwframe_ctx_init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="200" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a663a9aceca97aa7b2426c9aba6543e4a" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat AVHWFramesContext::sw_format</definition>
+        <argsstring></argsstring>
+        <name>sw_format</name>
+        <qualifiedname>AVHWFramesContext::sw_format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel format identifying the actual data layout of the hardware frames.</para>
+<para>Must be set by the caller before calling av_hwframe_ctx_init().</para>
+<para><simplesect kind="note"><para>when the underlying API does not provide the exact data layout, but only the colorspace/bit depth, this field should be set to the fully planar version of that format (e.g. for 8-bit 420 YUV it should be AV_PIX_FMT_YUV420P, not AV_PIX_FMT_NV12 or anything else). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="213" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1a9e6f29d0f744930cdd0e8bdff8771520" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesContext::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVHWFramesContext::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The allocated dimensions of the frames in this pool.</para>
+<para>Must be set by the user before calling av_hwframe_ctx_init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="220" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_context_1ae61bbe1d8645a0c573085e29f1d0a58f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesContext::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVHWFramesContext::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="220" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct describes a set or pool of &quot;hardware&quot; frames (i.e. those with data not located in normal system memory). All the frames in the pool are assumed to be allocated in the same way and interchangeable.</para>
+<para>This struct is reference-counted with the <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> mechanism and tied to a given <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref> instance. The av_hwframe_ctx_alloc() constructor yields a reference, whose data field points to the actual <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref> struct. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVHWDeviceContext</label>
+        <link refid="struct_a_v_h_w_device_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVHWFramesContext</label>
+        <link refid="struct_a_v_h_w_frames_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>device_ref</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>device_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="118" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="118" bodyend="221"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_w_frames_context_1a70e916d610148748f95147cde35ce7c9" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>av_class</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1ac9a7dbd0cbfcabc0b1529cb34cf53b6d" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>device_ctx</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a2f3908bfadd569103b67ee4972ee7305" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>device_ref</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a045bc1713932804f6ceef170a5578e0e" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>format</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1aaeccab495e5027aa0402dea10bdcd166" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>free</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1ae61bbe1d8645a0c573085e29f1d0a58f" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>height</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>hwctx</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a9c3a94dcd9c96e19059b56a6bae9c764" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>initial_pool_size</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>pool</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a663a9aceca97aa7b2426c9aba6543e4a" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>sw_format</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a4d6e4c17632bd6770654b7627722222e" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>user_opaque</name></member>
+      <member refid="struct_a_v_h_w_frames_context_1a9e6f29d0f744930cdd0e8bdff8771520" prot="public" virt="non-virtual"><scope>AVHWFramesContext</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structPacketQueue" kind="struct" language="C++" prot="public">
+    <compoundname>PacketQueue</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPacketQueue_1a588b5ef58afe0ebcc8042242f2856e0c" prot="public" static="no" mutable="no">
+        <type>AVPacket **</type>
+        <definition>AVPacket** PacketQueue::packets</definition>
+        <argsstring></argsstring>
+        <name>packets</name>
+        <qualifiedname>PacketQueue::packets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="120" column="10" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPacketQueue_1a27fa3d9fc6e525ea8722082502d2a20b" prot="public" static="no" mutable="no">
+        <type><ref refid="structBufferState" kindref="compound">BufferState</ref></type>
+        <definition>BufferState PacketQueue::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>PacketQueue::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="121" column="13" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+      <node id="1">
+        <label>PacketQueue</label>
+        <link refid="structPacketQueue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="118" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="119" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structPacketQueue_1a588b5ef58afe0ebcc8042242f2856e0c" prot="public" virt="non-virtual"><scope>PacketQueue</scope><name>packets</name></member>
+      <member refid="structPacketQueue_1a27fa3d9fc6e525ea8722082502d2a20b" prot="public" virt="non-virtual"><scope>PacketQueue</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

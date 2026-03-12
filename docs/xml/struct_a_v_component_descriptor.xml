@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_component_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVComponentDescriptor</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_component_descriptor_1a3508603e4efd7a1fcecab1da7b9ae4c2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVComponentDescriptor::plane</definition>
+        <argsstring></argsstring>
+        <name>plane</name>
+        <qualifiedname>AVComponentDescriptor::plane</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Which of the 4 planes contains the component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="34" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_component_descriptor_1a964c2627fc25fef179ea006c88becf5b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVComponentDescriptor::step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <qualifiedname>AVComponentDescriptor::step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements between 2 horizontally consecutive pixels. Elements are bits for bitstream formats, bytes otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="40" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_component_descriptor_1a1ad69ad2ebfc3045bf56fd8a98aa4439" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVComponentDescriptor::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>AVComponentDescriptor::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements before the component of the first pixel. Elements are bits for bitstream formats, bytes otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_component_descriptor_1a10c6ab5726f0f666cbe801b5308960aa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVComponentDescriptor::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <qualifiedname>AVComponentDescriptor::shift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of least significant bits that must be shifted away to get the value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_component_descriptor_1ae504ab46ea3719e9930f91491af593dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVComponentDescriptor::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <qualifiedname>AVComponentDescriptor::depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits in the component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="30" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="30" bodyend="58"/>
+    <listofallmembers>
+      <member refid="struct_a_v_component_descriptor_1ae504ab46ea3719e9930f91491af593dc" prot="public" virt="non-virtual"><scope>AVComponentDescriptor</scope><name>depth</name></member>
+      <member refid="struct_a_v_component_descriptor_1a1ad69ad2ebfc3045bf56fd8a98aa4439" prot="public" virt="non-virtual"><scope>AVComponentDescriptor</scope><name>offset</name></member>
+      <member refid="struct_a_v_component_descriptor_1a3508603e4efd7a1fcecab1da7b9ae4c2" prot="public" virt="non-virtual"><scope>AVComponentDescriptor</scope><name>plane</name></member>
+      <member refid="struct_a_v_component_descriptor_1a10c6ab5726f0f666cbe801b5308960aa" prot="public" virt="non-virtual"><scope>AVComponentDescriptor</scope><name>shift</name></member>
+      <member refid="struct_a_v_component_descriptor_1a964c2627fc25fef179ea006c88becf5b" prot="public" virt="non-virtual"><scope>AVComponentDescriptor</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

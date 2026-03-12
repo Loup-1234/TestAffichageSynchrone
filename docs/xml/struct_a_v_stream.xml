@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_stream" kind="struct" language="C++" prot="public">
+    <compoundname>AVStream</compoundname>
+    <includes refid="avformat_8h" local="no">avformat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_stream_1a4737d8b012827558f55a6f559b253496" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVStream::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVStream::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for <ref refid="group__avoptions" kindref="compound">AVOptions</ref>. Set on stream creation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="748" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a6ca823054632821e085377f7d371a2d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStream::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>AVStream::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stream index in <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="750" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a6873ed62f196c24e8bf282609231786f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStream::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>AVStream::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Format-specific stream ID. decoding: set by libavformat encoding: set by the user, replaced by libavformat if left unset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="756" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a12826d21779289356722971d362c583c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref> *</type>
+        <definition>AVCodecParameters* AVStream::codecpar</definition>
+        <argsstring></argsstring>
+        <name>codecpar</name>
+        <qualifiedname>AVStream::codecpar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec parameters associated with this stream. Allocated and freed by libavformat in <ref refid="group__lavf__core_1ga565f8a43c85a1dd4825075dcaa2e629f" kindref="member">avformat_new_stream()</ref> and <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref> respectively.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: filled by libavformat on stream creation or in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref></para>
+</listitem><listitem><para>muxing: filled by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="767" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a61b61b0d009be377ebcfdc30ea053d27" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVStream::priv_data</definition>
+        <argsstring></argsstring>
+        <name>priv_data</name>
+        <qualifiedname>AVStream::priv_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="769" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a9db755451f14e2bf590d4b85d82b32e6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStream::time_base</definition>
+        <argsstring></argsstring>
+        <name>time_base</name>
+        <qualifiedname>AVStream::time_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the fundamental unit of time (in seconds) in terms of which frame timestamps are represented.</para>
+<para>decoding: set by libavformat encoding: May be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> to provide a hint to the muxer about the desired timebase. In <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>, the muxer will overwrite this field with the timebase that will actually be used for the timestamps written into the file (which may or may not be related to the user-provided one, depending on the format). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="783" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a7c67ae70632c91df8b0f721658ec5377" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVStream::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>AVStream::start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decoding: pts of the first frame of the stream in presentation order, in stream time base. Only set this if you are absolutely 100% sure that the value you set it to really is the pts of the first frame. This may be undefined (AV_NOPTS_VALUE). <simplesect kind="note"><para>The ASF header does NOT contain a correct start_time the ASF demuxer must NOT set this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="793" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a4e04af7a5a4d8298649850df798dd0bc" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVStream::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>AVStream::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decoding: duration of the stream, in stream time base. If a source file does not specify a duration, but does specify a bitrate, this value will be estimated from bitrate and file size.</para>
+<para>Encoding: May be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref> to provide a hint to the muxer about the estimated duration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="803" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a4382c3064df1c9eb232ac198dec067f9" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVStream::nb_frames</definition>
+        <argsstring></argsstring>
+        <name>nb_frames</name>
+        <qualifiedname>AVStream::nb_frames</qualifiedname>
+        <briefdescription>
+<para>number of frames in this stream if known or 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="805" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1aea05abdb8e45405048d7923a68c23ef5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStream::disposition</definition>
+        <argsstring></argsstring>
+        <name>disposition</name>
+        <qualifiedname>AVStream::disposition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream disposition - a combination of AV_DISPOSITION_* flags.<itemizedlist>
+<listitem><para>demuxing: set by libavformat when creating the stream or in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>.</para>
+</listitem><listitem><para>muxing: may be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="813" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a492fcecc45dbbd8da51edd0124e9dd30" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__decoding_1ga352363bce7d3ed82c101b3bc001d1c16" kindref="member">AVDiscard</ref></type>
+        <definition>enum AVDiscard AVStream::discard</definition>
+        <argsstring></argsstring>
+        <name>discard</name>
+        <qualifiedname>AVStream::discard</qualifiedname>
+        <briefdescription>
+<para>Selects which packets can be discarded at will and do not need to be demuxed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="815" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a3f19c60ac6da237cd10e4d97150c118e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStream::sample_aspect_ratio</definition>
+        <argsstring></argsstring>
+        <name>sample_aspect_ratio</name>
+        <qualifiedname>AVStream::sample_aspect_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sample aspect ratio (0 if unknown)<itemizedlist>
+<listitem><para>encoding: Set by user.</para>
+</listitem><listitem><para>decoding: Set by libavformat. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="822" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a50d250a128a3da9ce3d135e84213fb82" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVStream::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>AVStream::metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="824" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a946e1e9b89eeeae4cab8a833b482c1ad" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStream::avg_frame_rate</definition>
+        <argsstring></argsstring>
+        <name>avg_frame_rate</name>
+        <qualifiedname>AVStream::avg_frame_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Average framerate</para>
+<para><itemizedlist>
+<listitem><para>demuxing: May be set by libavformat when creating the stream or in <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref>.</para>
+</listitem><listitem><para>muxing: May be set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="833" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a8c689ee00c0dfe4313891f8a2ea21f4d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref></type>
+        <definition>AVPacket AVStream::attached_pic</definition>
+        <argsstring></argsstring>
+        <name>attached_pic</name>
+        <qualifiedname>AVStream::attached_pic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For streams with AV_DISPOSITION_ATTACHED_PIC disposition, this packet will contain the attached picture.</para>
+<para>decoding: set by libavformat, must not be modified by the caller. encoding: unused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="842" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1ab76e176c2a1d1ff09ec9c0bb88dc25e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStream::event_flags</definition>
+        <argsstring></argsstring>
+        <name>event_flags</name>
+        <qualifiedname>AVStream::event_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags indicating events happening on the stream, a combination of AVSTREAM_EVENT_FLAG_*.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: may be set by the demuxer in <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref>, <ref refid="group__lavf__decoding_1gad42172e27cddafb81096939783b157bb" kindref="member">avformat_find_stream_info()</ref> and <ref refid="group__lavf__decoding_1ga4fdb3084415a82e3810de6ee60e46a61" kindref="member">av_read_frame()</ref>. Flags must be cleared by the user once the event has been handled.</para>
+</listitem><listitem><para>muxing: may be set by the user after <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>. to indicate a user-triggered event. The muxer will clear the flags for events it has handled in av_[interleaved]_write_frame(). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="855" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1ad63fb11cc1415e278e09ddc676e8a1ad" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVStream::r_frame_rate</definition>
+        <argsstring></argsstring>
+        <name>r_frame_rate</name>
+        <qualifiedname>AVStream::r_frame_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Real base framerate of the stream. This is the lowest framerate with which all timestamps can be represented accurately (it is the least common multiple of all framerates in the stream). Note, this value is just a guess! For example, if the time base is 1/90000 and all frames have either approximately 3600 or 1800 timer ticks, then r_frame_rate will be 50/1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="878" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_1a6cdb0c90a69899f4e1e54704bb654936" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStream::pts_wrap_bits</definition>
+        <argsstring></argsstring>
+        <name>pts_wrap_bits</name>
+        <qualifiedname>AVStream::pts_wrap_bits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits in timestamps. Used for wrapping control.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: set by libavformat</para>
+</listitem><listitem><para>muxing: set by libavformat </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="887" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="887" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stream structure. New fields can be added to the end with minor version bumps. Removal, reordering and changes to existing fields require a major version bump. sizeof(AVStream) must not be used outside libav*. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="9">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="8">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVCodecParameters</label>
+        <link refid="struct_a_v_codec_parameters"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="10">
+        <label>AVPacket</label>
+        <link refid="struct_a_v_packet"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>opaque_ref</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>AVStream</label>
+        <link refid="struct_a_v_stream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>codecpar</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>avg_frame_rate</edgelabel>
+          <edgelabel>r_frame_rate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>attached_pic</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="744" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="744" bodyend="888"/>
+    <listofallmembers>
+      <member refid="struct_a_v_stream_1a8c689ee00c0dfe4313891f8a2ea21f4d" prot="public" virt="non-virtual"><scope>AVStream</scope><name>attached_pic</name></member>
+      <member refid="struct_a_v_stream_1a4737d8b012827558f55a6f559b253496" prot="public" virt="non-virtual"><scope>AVStream</scope><name>av_class</name></member>
+      <member refid="struct_a_v_stream_1a946e1e9b89eeeae4cab8a833b482c1ad" prot="public" virt="non-virtual"><scope>AVStream</scope><name>avg_frame_rate</name></member>
+      <member refid="struct_a_v_stream_1a12826d21779289356722971d362c583c" prot="public" virt="non-virtual"><scope>AVStream</scope><name>codecpar</name></member>
+      <member refid="struct_a_v_stream_1a492fcecc45dbbd8da51edd0124e9dd30" prot="public" virt="non-virtual"><scope>AVStream</scope><name>discard</name></member>
+      <member refid="struct_a_v_stream_1aea05abdb8e45405048d7923a68c23ef5" prot="public" virt="non-virtual"><scope>AVStream</scope><name>disposition</name></member>
+      <member refid="struct_a_v_stream_1a4e04af7a5a4d8298649850df798dd0bc" prot="public" virt="non-virtual"><scope>AVStream</scope><name>duration</name></member>
+      <member refid="struct_a_v_stream_1ab76e176c2a1d1ff09ec9c0bb88dc25e9" prot="public" virt="non-virtual"><scope>AVStream</scope><name>event_flags</name></member>
+      <member refid="struct_a_v_stream_1a6873ed62f196c24e8bf282609231786f" prot="public" virt="non-virtual"><scope>AVStream</scope><name>id</name></member>
+      <member refid="struct_a_v_stream_1a6ca823054632821e085377f7d371a2d1" prot="public" virt="non-virtual"><scope>AVStream</scope><name>index</name></member>
+      <member refid="struct_a_v_stream_1a50d250a128a3da9ce3d135e84213fb82" prot="public" virt="non-virtual"><scope>AVStream</scope><name>metadata</name></member>
+      <member refid="struct_a_v_stream_1a4382c3064df1c9eb232ac198dec067f9" prot="public" virt="non-virtual"><scope>AVStream</scope><name>nb_frames</name></member>
+      <member refid="struct_a_v_stream_1a61b61b0d009be377ebcfdc30ea053d27" prot="public" virt="non-virtual"><scope>AVStream</scope><name>priv_data</name></member>
+      <member refid="struct_a_v_stream_1a6cdb0c90a69899f4e1e54704bb654936" prot="public" virt="non-virtual"><scope>AVStream</scope><name>pts_wrap_bits</name></member>
+      <member refid="struct_a_v_stream_1ad63fb11cc1415e278e09ddc676e8a1ad" prot="public" virt="non-virtual"><scope>AVStream</scope><name>r_frame_rate</name></member>
+      <member refid="struct_a_v_stream_1a3f19c60ac6da237cd10e4d97150c118e" prot="public" virt="non-virtual"><scope>AVStream</scope><name>sample_aspect_ratio</name></member>
+      <member refid="struct_a_v_stream_1a7c67ae70632c91df8b0f721658ec5377" prot="public" virt="non-virtual"><scope>AVStream</scope><name>start_time</name></member>
+      <member refid="struct_a_v_stream_1a9db755451f14e2bf590d4b85d82b32e6" prot="public" virt="non-virtual"><scope>AVStream</scope><name>time_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

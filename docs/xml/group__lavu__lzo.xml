@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__lzo" kind="group">
+    <compoundname>lavu_lzo</compoundname>
+    <title>LZO</title>
+    <sectiondef kind="user-defined">
+      <header>Error flags returned by av_lzo1x_decode</header>
+      <memberdef kind="define" id="group__lavu__lzo_1ga5f66b9a81147a79b747deb6ccacb3ad5" prot="public" static="no">
+        <name>AV_LZO_INPUT_DEPLETED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>end of the input buffer reached before decoding finished </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="37" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__lzo_1ga400c6aec6aeca19117fb9ff6f6d30325" prot="public" static="no">
+        <name>AV_LZO_OUTPUT_FULL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>decoded data did not fit into output buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="39" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__lzo_1ga6acd84bec8181fecb2861f8c7eb57cc1" prot="public" static="no">
+        <name>AV_LZO_INVALID_BACKPTR</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>a reference to previously decoded data was wrong </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="41" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__lzo_1gad8076b8656b50ac499d0f18bf887ed13" prot="public" static="no">
+        <name>AV_LZO_ERROR</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>a non-specific error in the compressed bitstream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="43" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__lzo_1gaafb2f88aa03d1fe059f3c2e174df6142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_lzo1x_decode</definition>
+        <argsstring>(void *out, int *outlen, const void *in, int *inlen)</argsstring>
+        <name>av_lzo1x_decode</name>
+        <param>
+          <type>void *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>outlen</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>inlen</declname>
+        </param>
+        <briefdescription>
+<para>Decodes LZO 1x compressed data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of output buffer, number of bytes left are returned here </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of input buffer, number of bytes left are returned here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, otherwise a combination of the error flags above</para>
+</simplesect>
+Make sure all buffers are appropriately padded, in must provide AV_LZO_INPUT_PADDING, out must provide AV_LZO_OUTPUT_PADDING additional bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="60" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" declline="60" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__lzo_1ga396ab17a8ae4cd3cef02747796f5f8f7" prot="public" static="no">
+        <name>AV_LZO_INPUT_PADDING</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__lzo_1gaece7adef189377f4ab7da464247a9e85" prot="public" static="no">
+        <name>AV_LZO_OUTPUT_PADDING</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" line="47" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/lzo.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

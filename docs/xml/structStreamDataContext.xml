@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structStreamDataContext" kind="struct" language="C++" prot="public">
+    <compoundname>StreamDataContext</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStreamDataContext_1a9b68961682b376ac77824e0510012e42" prot="public" static="no" mutable="no">
+        <type>AVCodecContext *</type>
+        <definition>AVCodecContext* StreamDataContext::codecCtx</definition>
+        <argsstring></argsstring>
+        <name>codecCtx</name>
+        <qualifiedname>StreamDataContext::codecCtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="158" column="16" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStreamDataContext_1a2d177d6a78954f644ca9b4d10305b40b" prot="public" static="no" mutable="no">
+        <type><ref refid="structPacketQueue" kindref="compound">PacketQueue</ref></type>
+        <definition>PacketQueue StreamDataContext::pendingPackets</definition>
+        <argsstring></argsstring>
+        <name>pendingPackets</name>
+        <qualifiedname>StreamDataContext::pendingPackets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="159" column="13" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStreamDataContext_1a853cbb20a0ff35cc47e7937b15c16b5b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StreamDataContext::streamIdx</definition>
+        <argsstring></argsstring>
+        <name>streamIdx</name>
+        <qualifiedname>StreamDataContext::streamIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="160" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStreamDataContext_1a0f83b185ff9ca10faf1c2ac047c8d5e0" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t StreamDataContext::startPts</definition>
+        <argsstring></argsstring>
+        <name>startPts</name>
+        <qualifiedname>StreamDataContext::startPts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="161" column="9" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+      <node id="2">
+        <label>PacketQueue</label>
+        <link refid="structPacketQueue"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StreamDataContext</label>
+        <link refid="structStreamDataContext"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pendingPackets</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="156" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="157" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structStreamDataContext_1a9b68961682b376ac77824e0510012e42" prot="public" virt="non-virtual"><scope>StreamDataContext</scope><name>codecCtx</name></member>
+      <member refid="structStreamDataContext_1a2d177d6a78954f644ca9b4d10305b40b" prot="public" virt="non-virtual"><scope>StreamDataContext</scope><name>pendingPackets</name></member>
+      <member refid="structStreamDataContext_1a0f83b185ff9ca10faf1c2ac047c8d5e0" prot="public" virt="non-virtual"><scope>StreamDataContext</scope><name>startPts</name></member>
+      <member refid="structStreamDataContext_1a853cbb20a0ff35cc47e7937b15c16b5b" prot="public" virt="non-virtual"><scope>StreamDataContext</scope><name>streamIdx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

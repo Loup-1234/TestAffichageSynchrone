@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_content_light_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>AVContentLightMetadata</compoundname>
+    <includes refid="mastering__display__metadata_8h" local="no">mastering_display_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_content_light_metadata_1a9d2d7743a599c9b2f2a07a9504625b92" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVContentLightMetadata::MaxCLL</definition>
+        <argsstring></argsstring>
+        <name>MaxCLL</name>
+        <qualifiedname>AVContentLightMetadata::MaxCLL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max content light level (cd/m^2). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="111" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_content_light_metadata_1a4e9bfc44c6b87bbf096141fae12e1692" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVContentLightMetadata::MaxFALL</definition>
+        <argsstring></argsstring>
+        <name>MaxFALL</name>
+        <qualifiedname>AVContentLightMetadata::MaxFALL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max average light level per frame (cd/m^2). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="116" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Content light level needed by to transmit HDR over HDMI (CTA-861.3).</para>
+<para>To be used as payload of a <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> or <ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> with the appropriate type.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with av_content_light_metadata_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="107" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="107" bodyend="117"/>
+    <listofallmembers>
+      <member refid="struct_a_v_content_light_metadata_1a9d2d7743a599c9b2f2a07a9504625b92" prot="public" virt="non-virtual"><scope>AVContentLightMetadata</scope><name>MaxCLL</name></member>
+      <member refid="struct_a_v_content_light_metadata_1a4e9bfc44c6b87bbf096141fae12e1692" prot="public" virt="non-virtual"><scope>AVContentLightMetadata</scope><name>MaxFALL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

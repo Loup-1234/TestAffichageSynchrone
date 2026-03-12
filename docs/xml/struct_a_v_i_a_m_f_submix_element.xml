@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_submix_element" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFSubmixElement</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1a12709cc29420d29b3759e05b18529be7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFSubmixElement::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFSubmixElement::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="450" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1a22d0f69268a4205494358c747e3a979e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFSubmixElement::audio_element_id</definition>
+        <argsstring></argsstring>
+        <name>audio_element_id</name>
+        <qualifiedname>AVIAMFSubmixElement::audio_element_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The id of the Audio Element this submix element references. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="455" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1a041c16173c7593cbaf9fc32660b38c6d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref> *</type>
+        <definition>AVIAMFParamDefinition* AVIAMFSubmixElement::element_mix_config</definition>
+        <argsstring></argsstring>
+        <name>element_mix_config</name>
+        <qualifiedname>AVIAMFSubmixElement::element_mix_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information required required for applying any processing to the referenced and rendered Audio Element before being summed with other processed Audio Elements. The <ref refid="struct_a_v_i_a_m_f_param_definition_1ad23396529750bb097ae718f9dc38cff2" kindref="member">type</ref> must be AV_IAMF_PARAMETER_DEFINITION_MIX_GAIN. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="464" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1acf9ee75993c5572dbc634f441ee1d23e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixElement::default_mix_gain</definition>
+        <argsstring></argsstring>
+        <name>default_mix_gain</name>
+        <qualifiedname>AVIAMFSubmixElement::default_mix_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default mix gain value to apply when there are no <ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref> with <ref refid="struct_a_v_i_a_m_f_submix_element_1a041c16173c7593cbaf9fc32660b38c6d" kindref="member">element_mix_config&apos;s</ref> <ref refid="struct_a_v_i_a_m_f_param_definition_1ad192491bf6d44127c1207f756b35dce2" kindref="member">parameter_id</ref> available for a given audio frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="472" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1ab63ee41c7d7adadfe7f22c9898737985" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" kindref="member">AVIAMFHeadphonesMode</ref></type>
+        <definition>enum AVIAMFHeadphonesMode AVIAMFSubmixElement::headphones_rendering_mode</definition>
+        <argsstring></argsstring>
+        <name>headphones_rendering_mode</name>
+        <qualifiedname>AVIAMFSubmixElement::headphones_rendering_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A value that indicates whether the referenced channel-based Audio Element shall be rendered to stereo loudspeakers or spatialized with a binaural renderer when played back on headphones. If the Audio Element is not of <ref refid="struct_a_v_i_a_m_f_audio_element_1a3199850332a351361748c92b6cb8f8ad" kindref="member">type</ref> AV_IAMF_AUDIO_ELEMENT_TYPE_CHANNEL, then this field is undefined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="481" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_element_1a37ff0bf4a6747a3bcfaabcc3a89fc62d" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVIAMFSubmixElement::annotations</definition>
+        <argsstring></argsstring>
+        <name>annotations</name>
+        <qualifiedname>AVIAMFSubmixElement::annotations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A dictionary of strings describing the submix in different languages. Must have the same amount of entries as <ref refid="struct_a_v_i_a_m_f_mix_presentation_1ab33c73aa840d3e79e8acfee751d1f13c" kindref="member">the mix&apos;s annotations</ref>, stored in the same order, and with the same key strings.</para>
+<para>key is a string conforming to BCP-47 that specifies the language for the string stored in value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="493" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Submix element as defined in section 3.7 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" kindref="member">av_iamf_submix_add_element()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVIAMFParamDefinition</label>
+        <link refid="struct_a_v_i_a_m_f_param_definition"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFSubmixElement</label>
+        <link refid="struct_a_v_i_a_m_f_submix_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>element_mix_config</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_mix_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="449" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="449" bodyend="494"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1a37ff0bf4a6747a3bcfaabcc3a89fc62d" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>annotations</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1a22d0f69268a4205494358c747e3a979e" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>audio_element_id</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1a12709cc29420d29b3759e05b18529be7" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1acf9ee75993c5572dbc634f441ee1d23e" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>default_mix_gain</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1a041c16173c7593cbaf9fc32660b38c6d" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>element_mix_config</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_element_1ab63ee41c7d7adadfe7f22c9898737985" prot="public" virt="non-virtual"><scope>AVIAMFSubmixElement</scope><name>headphones_rendering_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

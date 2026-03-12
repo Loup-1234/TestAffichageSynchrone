@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_submix_layout" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFSubmixLayout</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1acdf4886d49b7cbc2dba92f074ee619c0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFSubmixLayout::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFSubmixLayout::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="518" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a3408e33817106efaa1b05bef55f8e244" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" kindref="member">AVIAMFSubmixLayoutType</ref></type>
+        <definition>enum AVIAMFSubmixLayoutType AVIAMFSubmixLayout::layout_type</definition>
+        <argsstring></argsstring>
+        <name>layout_type</name>
+        <qualifiedname>AVIAMFSubmixLayout::layout_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="520" column="32" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref></type>
+        <definition>AVChannelLayout AVIAMFSubmixLayout::sound_system</definition>
+        <argsstring></argsstring>
+        <name>sound_system</name>
+        <qualifiedname>AVIAMFSubmixLayout::sound_system</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel layout matching one of Sound Systems A to J of ITU-2051-3, plus 7.1.2ch, 3.1.2ch, and binaural. If layout_type is not AV_IAMF_SUBMIX_LAYOUT_TYPE_LOUDSPEAKERS or AV_IAMF_SUBMIX_LAYOUT_TYPE_BINAURAL, this field is undefined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="528" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a8f99b330098bd9a74d1adc15e5875d8a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixLayout::integrated_loudness</definition>
+        <argsstring></argsstring>
+        <name>integrated_loudness</name>
+        <qualifiedname>AVIAMFSubmixLayout::integrated_loudness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The program integrated loudness information, as defined in ITU-1770-4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="533" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a149a634b6dcb696298a9e4b0fae4b280" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixLayout::digital_peak</definition>
+        <argsstring></argsstring>
+        <name>digital_peak</name>
+        <qualifiedname>AVIAMFSubmixLayout::digital_peak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The digital (sampled) peak value of the audio signal, as defined in ITU-1770-4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="538" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a000d61b4e8bb808f58df0a545f90354e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixLayout::true_peak</definition>
+        <argsstring></argsstring>
+        <name>true_peak</name>
+        <qualifiedname>AVIAMFSubmixLayout::true_peak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The true peak of the audio signal, as defined in ITU-1770-4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="542" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a37beff1fb7e97197e94bae03aa7e23c7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixLayout::dialogue_anchored_loudness</definition>
+        <argsstring></argsstring>
+        <name>dialogue_anchored_loudness</name>
+        <qualifiedname>AVIAMFSubmixLayout::dialogue_anchored_loudness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Dialogue loudness information, as defined in ITU-1770-4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="546" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_submix_layout_1a88667ae0489f97550e1223f6b386f935" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVIAMFSubmixLayout::album_anchored_loudness</definition>
+        <argsstring></argsstring>
+        <name>album_anchored_loudness</name>
+        <qualifiedname>AVIAMFSubmixLayout::album_anchored_loudness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Album loudness information, as defined in ITU-1770-4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="550" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Submix layout as defined in section 3.7.6 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" kindref="member">av_iamf_submix_add_layout()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="6">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFSubmixLayout</label>
+        <link refid="struct_a_v_i_a_m_f_submix_layout"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>sound_system</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>album_anchored_loudness</edgelabel>
+          <edgelabel>dialogue_anchored_loudness</edgelabel>
+          <edgelabel>digital_peak</edgelabel>
+          <edgelabel>integrated_loudness</edgelabel>
+          <edgelabel>true_peak</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="517" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="517" bodyend="551"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a88667ae0489f97550e1223f6b386f935" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>album_anchored_loudness</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1acdf4886d49b7cbc2dba92f074ee619c0" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a37beff1fb7e97197e94bae03aa7e23c7" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>dialogue_anchored_loudness</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a149a634b6dcb696298a9e4b0fae4b280" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>digital_peak</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a8f99b330098bd9a74d1adc15e5875d8a" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>integrated_loudness</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a3408e33817106efaa1b05bef55f8e244" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>layout_type</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>sound_system</name></member>
+      <member refid="struct_a_v_i_a_m_f_submix_layout_1a000d61b4e8bb808f58df0a545f90354e" prot="public" virt="non-virtual"><scope>AVIAMFSubmixLayout</scope><name>true_peak</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

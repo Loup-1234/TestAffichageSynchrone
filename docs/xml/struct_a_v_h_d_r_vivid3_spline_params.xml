@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_d_r_vivid3_spline_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVHDRVivid3SplineParams</compoundname>
+    <includes refid="hdr__dynamic__vivid__metadata_8h" local="no">hdr_dynamic_vivid_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1a899f8865de68c89552f6acfed515906f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHDRVivid3SplineParams::th_mode</definition>
+        <argsstring></argsstring>
+        <name>th_mode</name>
+        <qualifiedname>AVHDRVivid3SplineParams::th_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The mode of three Spline. the value shall be in the range of 0 to 3, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="35" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1a9f98bd9a3d123fd510717a7aa9cde1bc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVivid3SplineParams::th_enable_mb</definition>
+        <argsstring></argsstring>
+        <name>th_enable_mb</name>
+        <qualifiedname>AVHDRVivid3SplineParams::th_enable_mb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>three_Spline_TH_enable_MB is in the range of 0.0 to 1.0, inclusive and in multiples of 1.0/255. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="42" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1af274e6f71306bd47ed98dfe537020551" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVivid3SplineParams::th_enable</definition>
+        <argsstring></argsstring>
+        <name>th_enable</name>
+        <qualifiedname>AVHDRVivid3SplineParams::th_enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3Spline_TH_enable of three Spline. The value shall be in the range of 0.0 to 1.0, inclusive. and in multiples of 1.0/4095. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="49" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1a368c516f1fd9a669984d0625d33e61cd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVivid3SplineParams::th_delta1</definition>
+        <argsstring></argsstring>
+        <name>th_delta1</name>
+        <qualifiedname>AVHDRVivid3SplineParams::th_delta1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3Spline_TH_Delta1 of three Spline. The value shall be in the range of 0.0 to 0.25, inclusive, and in multiples of 0.25/1023. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="56" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1a93b3ddeda468f06cf24aea5c2f63ccc4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVivid3SplineParams::th_delta2</definition>
+        <argsstring></argsstring>
+        <name>th_delta2</name>
+        <qualifiedname>AVHDRVivid3SplineParams::th_delta2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3Spline_TH_Delta2 of three Spline. The value shall be in the range of 0.0 to 0.25, inclusive, and in multiples of 0.25/1023. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="63" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_d_r_vivid3_spline_params_1a17571146d71e8094b8eba7de4caaeaa2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVHDRVivid3SplineParams::enable_strength</definition>
+        <argsstring></argsstring>
+        <name>enable_strength</name>
+        <qualifiedname>AVHDRVivid3SplineParams::enable_strength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>3Spline_enable_Strength of three Spline. The value shall be in the range of 0.0 to 1.0, inclusive, and in multiples of 1.0/255. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="70" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>HDR Vivid three spline params. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVHDRVivid3SplineParams</label>
+        <link refid="struct_a_v_h_d_r_vivid3_spline_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>enable_strength</edgelabel>
+          <edgelabel>th_delta1</edgelabel>
+          <edgelabel>th_delta2</edgelabel>
+          <edgelabel>th_enable</edgelabel>
+          <edgelabel>th_enable_mb</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="30" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="30" bodyend="71"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1a17571146d71e8094b8eba7de4caaeaa2" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>enable_strength</name></member>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1a368c516f1fd9a669984d0625d33e61cd" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>th_delta1</name></member>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1a93b3ddeda468f06cf24aea5c2f63ccc4" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>th_delta2</name></member>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1af274e6f71306bd47ed98dfe537020551" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>th_enable</name></member>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1a9f98bd9a3d123fd510717a7aa9cde1bc" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>th_enable_mb</name></member>
+      <member refid="struct_a_v_h_d_r_vivid3_spline_params_1a899f8865de68c89552f6acfed515906f" prot="public" virt="non-virtual"><scope>AVHDRVivid3SplineParams</scope><name>th_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

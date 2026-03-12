@@ -1,0 +1,1535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__picture" kind="group">
+    <compoundname>lavu_picture</compoundname>
+    <title>Image related</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__picture_1gae6cbcab1f70d8e476757f1c1f5a0a78e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVPictureType</name>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78ea33183189d771e3325ccdd36fa980b6f6" prot="public">
+          <name>AV_PICTURE_TYPE_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Undefined. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78ea02be39f151a8ace7a65c86e13053e817" prot="public">
+          <name>AV_PICTURE_TYPE_I</name>
+          <briefdescription>
+<para>Intra. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78eaa6fc0479507a03f173f07fc75dab2193" prot="public">
+          <name>AV_PICTURE_TYPE_P</name>
+          <briefdescription>
+<para>Predicted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78ead22f8968e99bc48897c3f4ac29e82dae" prot="public">
+          <name>AV_PICTURE_TYPE_B</name>
+          <briefdescription>
+<para>Bi-dir predicted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78eac279237c3b09bb9f7ece0675658e65ad" prot="public">
+          <name>AV_PICTURE_TYPE_S</name>
+          <briefdescription>
+<para>S(GMC)-VOP MPEG-4. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78eaa7199b8035cf5a076a05a7fcf6dfc7fe" prot="public">
+          <name>AV_PICTURE_TYPE_SI</name>
+          <briefdescription>
+<para>Switching Intra. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78ea83789bae2515a1ce384a88f074244e4e" prot="public">
+          <name>AV_PICTURE_TYPE_SP</name>
+          <briefdescription>
+<para>Switching Predicted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__picture_1ggae6cbcab1f70d8e476757f1c1f5a0a78ea71f9f194b0cbe86778cb6df41b867cf3" prot="public">
+          <name>AV_PICTURE_TYPE_BI</name>
+          <briefdescription>
+<para>BI type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="276" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" bodystart="276" bodyend="285"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__picture_1gacbf2ea8b2b89924c890ef8ec10a3d922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char av_get_picture_type_char</definition>
+        <argsstring>(enum AVPictureType pict_type)</argsstring>
+        <name>av_get_picture_type_char</name>
+        <param>
+          <type>enum <ref refid="group__lavu__picture_1gae6cbcab1f70d8e476757f1c1f5a0a78e" kindref="member">AVPictureType</ref></type>
+          <declname>pict_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a single letter to describe the given picture type pict_type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pict_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the picture type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a single character representing the picture type, &apos;?&apos; if pict_type is unknown </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" line="294" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h" declline="294" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1gad3af84de3a86a9ebb71715e3c0ebf627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_image_fill_max_pixsteps</definition>
+        <argsstring>(int max_pixsteps[4], int max_pixstep_comps[4], const AVPixFmtDescriptor *pixdesc)</argsstring>
+        <name>av_image_fill_max_pixsteps</name>
+        <param>
+          <type>int</type>
+          <declname>max_pixsteps</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_pixstep_comps</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> *</type>
+          <declname>pixdesc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the max pixel step for each plane of an image with a format described by pixdesc.</para>
+<para>The pixel step is the distance in bytes between the first byte of the group of bytes which describe a pixel component and the first byte of the successive group in the same plane for the same component.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_pixsteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array which is filled with the max pixel step for each plane. Since a plane may contain different pixel components, the computed max_pixsteps[plane] is relative to the component in the plane with the max pixel step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_pixstep_comps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array which is filled with the component for each plane which has the max pixel step. May be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixdesc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> for the image, describing its format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="53" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga8eddd074d5eb6a235591013675ac1055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_get_linesize</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt, int width, int plane)</argsstring>
+        <name>av_image_get_linesize</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the size of an image line with format pix_fmt and width width for the plane plane.</para>
+<para><simplesect kind="return"><para>the computed size in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="62" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="62" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_linesizes</definition>
+        <argsstring>(int linesizes[4], enum AVPixelFormat pix_fmt, int width)</argsstring>
+        <name>av_image_fill_linesizes</name>
+        <param>
+          <type>int</type>
+          <declname>linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill plane linesizes for an image with pixel format pix_fmt and width width.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to be filled with the linesize for each plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="73" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="73" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga58cffc1b2c32f1f186144e81176128eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_plane_sizes</definition>
+        <argsstring>(size_t size[4], enum AVPixelFormat pix_fmt, int height, const ptrdiff_t linesizes[4])</argsstring>
+        <name>av_image_fill_plane_sizes</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const ptrdiff_t</type>
+          <declname>linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill plane sizes for an image with pixel format pix_fmt and height height.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array to be filled with the size of each image plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the linesize for each plane, should be filled by <ref refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" kindref="member">av_image_fill_linesizes()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative error code otherwise</para>
+</simplesect>
+<simplesect kind="note"><para>The linesize parameters have the type ptrdiff_t here, while they are int for <ref refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" kindref="member">av_image_fill_linesizes()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="88" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="88" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga4513d36f527c1476e89845631d975542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_pointers</definition>
+        <argsstring>(uint8_t *data[4], enum AVPixelFormat pix_fmt, int height, uint8_t *ptr, const int linesizes[4])</argsstring>
+        <name>av_image_fill_pointers</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill plane data pointers for an image with pixel format pix_fmt and height height.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointers array to be filled with the pointer for each image plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pointer to a buffer which will contain the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the linesize for each plane, should be filled by <ref refid="group__lavu__picture_1gaccd7fda79188060dadb28408223946ef" kindref="member">av_image_fill_linesizes()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size in bytes required for the image buffer, a negative error code in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="104" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="104" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga841e0a89a642e24141af1918a2c10448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_alloc</definition>
+        <argsstring>(uint8_t *pointers[4], int linesizes[4], int w, int h, enum AVPixelFormat pix_fmt, int align)</argsstring>
+        <name>av_image_alloc</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pointers</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an image with size w and h and pixel format pix_fmt, and fill pointers and linesizes accordingly. The allocated image buffer has to be freed by using av_freep(&amp;pointers[0]).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to be filled with the pointer for each image plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array filled with the linesize for each plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to use for buffer size alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size in bytes required for the image buffer, a negative error code in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="122" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="122" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_image_copy_plane</definition>
+        <argsstring>(uint8_t *dst, int dst_linesize, const uint8_t *src, int src_linesize, int bytewidth, int height)</argsstring>
+        <name>av_image_copy_plane</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_linesize</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_linesize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bytewidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy image plane from src to dst. That is, copy &quot;height&quot; number of lines of &quot;bytewidth&quot; bytes each. The first byte of each successive line is separated by *_linesize bytes.</para>
+<para>bytewidth must be contained by both absolute values of dst_linesize and src_linesize, otherwise the function behavior is undefined.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination plane to copy to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesize for the image plane in dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source plane to copy from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesize for the image plane in src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height (number of lines) of the plane </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="140" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="140" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga42cd459c848ba400041f527e50ddd705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_image_copy_plane_uc_from</definition>
+        <argsstring>(uint8_t *dst, ptrdiff_t dst_linesize, const uint8_t *src, ptrdiff_t src_linesize, ptrdiff_t bytewidth, int height)</argsstring>
+        <name>av_image_copy_plane_uc_from</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>dst_linesize</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>src_linesize</declname>
+        </param>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>bytewidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy image data located in uncacheable (e.g. GPU mapped) memory. Where available, this function will use special functionality for reading from such memory, which may result in greatly improved performance compared to plain <ref refid="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" kindref="member">av_image_copy_plane()</ref>.</para>
+<para>bytewidth must be contained by both absolute values of dst_linesize and src_linesize, otherwise the function behavior is undefined.</para>
+<para><simplesect kind="note"><para>The linesize parameters have the type ptrdiff_t here, while they are int for <ref refid="group__lavu__picture_1ga735cb949320867e9c2fffcb327d0ece2" kindref="member">av_image_copy_plane()</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>On x86, the linesizes currently need to be aligned to the cacheline size (i.e. 64) to get improved performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="158" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="158" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_image_copy</definition>
+        <argsstring>(uint8_t *const dst_data[4], const int dst_linesizes[4], const uint8_t *const src_data[4], const int src_linesizes[4], enum AVPixelFormat pix_fmt, int width, int height)</argsstring>
+        <name>av_image_copy</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dst_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>src_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>src_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy image in src_data to dst_data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination image data buffer to copy to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the image in dst_data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source image data buffer to copy from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_linesizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the image in src_data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="173" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="173" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga911cb7d723163b88bdbbdacbeeaacf2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void av_image_copy2</definition>
+        <argsstring>(uint8_t *const dst_data[4], const int dst_linesizes[4], uint8_t *const src_data[4], const int src_linesizes[4], enum AVPixelFormat pix_fmt, int width, int height)</argsstring>
+        <name>av_image_copy2</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dst_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>src_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>src_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper around <ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy()</ref> to workaround the limitation that the conversion from uint8_t * const * to const uint8_t * const * is not performed automatically in C. <simplesect kind="see"><para><ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="184" column="6" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga74dbf395c196834f4f43b6c60aa4de44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_image_copy_uc_from</definition>
+        <argsstring>(uint8_t *const dst_data[4], const ptrdiff_t dst_linesizes[4], const uint8_t *const src_data[4], const ptrdiff_t src_linesizes[4], enum AVPixelFormat pix_fmt, int width, int height)</argsstring>
+        <name>av_image_copy_uc_from</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const ptrdiff_t</type>
+          <declname>dst_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>src_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const ptrdiff_t</type>
+          <declname>src_linesizes</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy image data located in uncacheable (e.g. GPU mapped) memory. Where available, this function will use special functionality for reading from such memory, which may result in greatly improved performance compared to plain <ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy()</ref>.</para>
+<para>The data pointers and the linesizes must be aligned to the maximum required by the CPU architecture.</para>
+<para><simplesect kind="note"><para>The linesize parameters have the type ptrdiff_t here, while they are int for <ref refid="group__lavu__picture_1ga578575e5ab6cfab428a3c19d1a227336" kindref="member">av_image_copy()</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>On x86, the linesizes currently need to be aligned to the cacheline size (i.e. 64) to get improved performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="207" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga5b6ead346a70342ae8a303c16d2b3629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_arrays</definition>
+        <argsstring>(uint8_t *dst_data[4], int dst_linesize[4], const uint8_t *src, enum AVPixelFormat pix_fmt, int width, int height, int align)</argsstring>
+        <name>av_image_fill_arrays</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the data pointers and linesizes based on the specified image parameters and the provided array.</para>
+<para>The fields of the given image are filled in by using the src address which points to the image data buffer. Depending on the specified pixel format, one or multiple image data pointers and line sizes will be set. If a planar format is specified, several pointers will be set pointing to the different picture planes and the line sizes of the different planes will be stored in the lines_sizes array. Call with src == NULL to get the required size for the src buffer.</para>
+<para>To allocate the buffer and fill in the dst_data and dst_linesize in one call, use <ref refid="group__lavu__picture_1ga841e0a89a642e24141af1918a2c10448" kindref="member">av_image_alloc()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data pointers to be filled in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the image in dst_data to be filled in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer which will contain or contains the actual image data, can be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value used in src for linesize alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size in bytes required for src, a negative error code in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="237" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="237" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga24a67963c3ae0054a2a4bab35930e694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_get_buffer_size</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt, int width, int height, int align)</argsstring>
+        <name>av_image_get_buffer_size</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the size in bytes of the amount of data required to store an image with the given parameters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the assumed linesize alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the buffer size in bytes, a negative error code in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="251" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="251" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga6f8576f1ef0c2d9a9f7c5ac7f9a28c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_copy_to_buffer</definition>
+        <argsstring>(uint8_t *dst, int dst_size, const uint8_t *const src_data[4], const int src_linesize[4], enum AVPixelFormat pix_fmt, int width, int height, int align)</argsstring>
+        <name>av_image_copy_to_buffer</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>src_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>src_linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy image data from an image into a buffer.</para>
+<para><ref refid="group__lavu__picture_1ga24a67963c3ae0054a2a4bab35930e694" kindref="member">av_image_get_buffer_size()</ref> can be used to compute the required size for the buffer to fill.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a buffer into which picture data will be copied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size in bytes of dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointers containing the source image data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the image in src_data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format of the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the source image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the source image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the assumed linesize alignment for dst </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes written to dst, or a negative value (error code) on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="270" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="270" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga3a867b6180ddad1e0c382ef0c5940b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_check_size</definition>
+        <argsstring>(unsigned int w, unsigned int h, int log_offset, void *log_ctx)</argsstring>
+        <name>av_image_check_size</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>log_offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the given dimension of an image is valid, meaning that all bytes of the image can be addressed with a signed int.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the picture </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the picture </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset to sum to the log level for logging with log_ctx </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parent logging context, it may be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 if valid, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="284" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="284" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1gac75c3c0dfc82367b2be34e99384927c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_check_size2</definition>
+        <argsstring>(unsigned int w, unsigned int h, int64_t max_pixels, enum AVPixelFormat pix_fmt, int log_offset, void *log_ctx)</argsstring>
+        <name>av_image_check_size2</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>max_pixels</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>log_offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the given dimension of an image is valid, meaning that all bytes of a plane of an image with the specified pix_fmt can be addressed with a signed int.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the picture </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the picture </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of pixels the user wants to accept </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format, can be AV_PIX_FMT_NONE if unknown. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset to sum to the log level for logging with log_ctx </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parent logging context, it may be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 if valid, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="299" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="299" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1gada0f86cd0051ff8b9eef214e83e7ad1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_check_sar</definition>
+        <argsstring>(unsigned int w, unsigned int h, AVRational sar)</argsstring>
+        <name>av_image_check_sar</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>sar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the given sample aspect ratio of an image is valid.</para>
+<para>It is considered invalid if the denominator is 0 or if applying the ratio to the image size would make the smaller dimension less than 1. If the sar numerator is 0, it is considered unknown and will return as valid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample aspect ratio of the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if valid, a negative AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="313" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="313" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga3fa8e484cc214e8c7b9026825b5f4078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_black</definition>
+        <argsstring>(uint8_t *const dst_data[4], const ptrdiff_t dst_linesize[4], enum AVPixelFormat pix_fmt, enum AVColorRange range, int width, int height)</argsstring>
+        <name>av_image_fill_black</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const ptrdiff_t</type>
+          <declname>dst_linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overwrite the image data with black. This is suitable for filling a sub-rectangle of an image, meaning the padding between the right most pixel and the left most pixel on the next line will not be overwritten. For some formats, the image size might be rounded up due to inherent alignment.</para>
+<para>If the pixel format has alpha, the alpha is cleared to opaque.</para>
+<para>This can return an error if the pixel format is not supported. Normally, all non-hwaccel pixel formats should be supported.</para>
+<para>Passing NULL for dst_data is allowed. Then the function returns whether the operation would have succeeded. (It can return an error if the pix_fmt is not supported.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data pointers to destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color range of the image (important for colorspaces such as YUV) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the image data was cleared, a negative AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="338" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="338" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__picture_1ga58595f4ce6255e7b147b4b48ac9d96a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_image_fill_color</definition>
+        <argsstring>(uint8_t *const dst_data[4], const ptrdiff_t dst_linesize[4], enum AVPixelFormat pix_fmt, const uint32_t color[4], int width, int height, int flags)</argsstring>
+        <name>av_image_fill_color</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst_data</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const ptrdiff_t</type>
+          <declname>dst_linesize</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>color</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overwrite the image data with a color. This is suitable for filling a sub-rectangle of an image, meaning the padding between the right most pixel and the left most pixel on the next line will not be overwritten. For some formats, the image size might be rounded up due to inherent alignment.</para>
+<para>If the pixel format has alpha, it is also replaced. Color component values are interpreted as native integers (or intfloats) regardless of actual pixel format endianness.</para>
+<para>This can return an error if the pixel format is not supported. Normally, all non-hwaccel pixel formats should be supported.</para>
+<para>Passing NULL for dst_data is allowed. Then the function returns whether the operation would have succeeded. (It can return an error if the pix_fmt is not supported.)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data pointers to destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linesizes for the destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format of the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color components to be used for the fill </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the image in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currently unused </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the image data was filled, a negative AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" line="368" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/imgutils.h" declline="368" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AVPicture types, pixel formats and basic image planes manipulation.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

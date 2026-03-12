@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_o_v_i_dm_level9" kind="struct" language="C++" prot="public">
+    <compoundname>AVDOVIDmLevel9</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_dm_level9_1a3fb4bc3bdbc2bee28ebff429bf339226" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIDmLevel9::source_primary_index</definition>
+        <argsstring></argsstring>
+        <name>source_primary_index</name>
+        <qualifiedname>AVDOVIDmLevel9::source_primary_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="265" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_dm_level9_1a0cfa13fbd3005a82de95f24e5148e1ba" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref></type>
+        <definition>AVColorPrimariesDesc AVDOVIDmLevel9::source_display_primaries</definition>
+        <argsstring></argsstring>
+        <name>source_display_primaries</name>
+        <qualifiedname>AVDOVIDmLevel9::source_display_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="266" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AVCIExy</label>
+        <link refid="struct_a_v_c_i_exy"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVColorPrimariesDesc</label>
+        <link refid="struct_a_v_color_primaries_desc"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>wp</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>prim</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVDOVIDmLevel9</label>
+        <link refid="struct_a_v_d_o_v_i_dm_level9"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>source_display_primaries</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVPrimaryCoefficients</label>
+        <link refid="struct_a_v_primary_coefficients"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>b</edgelabel>
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="263" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="263" bodyend="267"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_o_v_i_dm_level9_1a0cfa13fbd3005a82de95f24e5148e1ba" prot="public" virt="non-virtual"><scope>AVDOVIDmLevel9</scope><name>source_display_primaries</name></member>
+      <member refid="struct_a_v_d_o_v_i_dm_level9_1a3fb4bc3bdbc2bee28ebff429bf339226" prot="public" virt="non-virtual"><scope>AVDOVIDmLevel9</scope><name>source_primary_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

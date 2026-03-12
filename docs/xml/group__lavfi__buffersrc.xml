@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavfi__buffersrc" kind="group">
+    <compoundname>lavfi_buffersrc</compoundname>
+    <title>Buffer source API</title>
+    <innerfile refid="buffersrc_8h">buffersrc.h</innerfile>
+    <innerclass refid="struct_a_v_buffer_src_parameters" prot="public">AVBufferSrcParameters</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavfi__buffersrc_1ga07e77f1fa255a3808c58de46593a9d48" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <enumvalue id="group__lavfi__buffersrc_1gga07e77f1fa255a3808c58de46593a9d48a6efcf61145ec6d60d3a773fcd0797872" prot="public">
+          <name>AV_BUFFERSRC_FLAG_NO_CHECK_FORMAT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not check for format changes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavfi__buffersrc_1gga07e77f1fa255a3808c58de46593a9d48a361be31bba170d5ec5bac19ce962ceb5" prot="public">
+          <name>AV_BUFFERSRC_FLAG_PUSH</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Immediately push the frame to the output. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavfi__buffersrc_1gga07e77f1fa255a3808c58de46593a9d48a24758c8f4deed09b04b1be6c2e66a14e" prot="public">
+          <name>AV_BUFFERSRC_FLAG_KEEP_REF</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keep a reference to the frame. If the frame if reference-counted, create a new reference; otherwise copy the frame data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="36" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="36" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavfi__buffersrc_1ga31e2e2b9687770a111f43f6b16617419" prot="public" static="no">
+        <type>struct AVBufferSrcParameters</type>
+        <definition>typedef struct AVBufferSrcParameters AVBufferSrcParameters</definition>
+        <argsstring></argsstring>
+        <name>AVBufferSrcParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure contains the parameters describing the frames that will be passed to this filter.</para>
+<para>It should be allocated with <ref refid="group__lavfi__buffersrc_1gaedea0ed7a56d424274960bfff78f6477" kindref="member">av_buffersrc_parameters_alloc()</ref> and freed with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. All the allocated fields in it remain owned by the caller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="131" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga996e96007a0fda870549ac3c4e1e0967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned av_buffersrc_get_nb_failed_requests</definition>
+        <argsstring>(AVFilterContext *buffer_src)</argsstring>
+        <name>av_buffersrc_get_nb_failed_requests</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>buffer_src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of failed requests.</para>
+<para>A failed request is when the request_frame method is called while no frame is present in the buffer. The number is reset when a frame is added. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="64" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="64" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1gaedea0ed7a56d424274960bfff78f6477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_src_parameters" kindref="compound">AVBufferSrcParameters</ref> *</type>
+        <definition>AVBufferSrcParameters * av_buffersrc_parameters_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_buffersrc_parameters_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a new <ref refid="struct_a_v_buffer_src_parameters" kindref="compound">AVBufferSrcParameters</ref> instance. It should be freed by the caller with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="137" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="137" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga398cd2a84f8b4a588197ab9d90135048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffersrc_parameters_set</definition>
+        <argsstring>(AVFilterContext *ctx, AVBufferSrcParameters *param)</argsstring>
+        <name>av_buffersrc_parameters_set</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_src_parameters" kindref="compound">AVBufferSrcParameters</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the buffersrc or abuffersrc filter with the provided parameters. This function may be called multiple times, the later calls override the previous ones. Some of the parameters may also be set through AVOptions, then whatever method is used last takes precedence.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an instance of the buffersrc or abuffersrc filter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream parameters. The frames later passed to this filter must conform to those parameters. All the allocated fields in param remain owned by the caller, libavfilter will make internal copies or references when necessary. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="152" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="152" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga786409c3f3910a0ab5fa6b23b4e7399b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int av_buffersrc_write_frame</definition>
+        <argsstring>(AVFilterContext *ctx, const AVFrame *frame)</argsstring>
+        <name>av_buffersrc_write_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a frame to the buffer source.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an instance of the buffersrc filter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame to be added. If the frame is reference counted, this function will make a new reference to it. Otherwise the frame data will be copied.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error</para>
+</simplesect>
+This function is equivalent to <ref refid="group__lavfi__buffersrc_1ga73ed90c3c3407f36e54d65f91faaaed9" kindref="member">av_buffersrc_add_frame_flags()</ref> with the AV_BUFFERSRC_FLAG_KEEP_REF flag. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="168" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="168" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga8fc71cb48c1ad1aa78b48f87daa4cf19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int av_buffersrc_add_frame</definition>
+        <argsstring>(AVFilterContext *ctx, AVFrame *frame)</argsstring>
+        <name>av_buffersrc_add_frame</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a frame to the buffer source.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an instance of the buffersrc filter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame to be added. If the frame is reference counted, this function will take ownership of the reference(s) and reset the frame. Otherwise the frame data will be copied. If this function returns an error, the input frame is not touched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error.</para>
+</simplesect>
+<simplesect kind="note"><para>the difference between this function and <ref refid="group__lavfi__buffersrc_1ga786409c3f3910a0ab5fa6b23b4e7399b" kindref="member">av_buffersrc_write_frame()</ref> is that <ref refid="group__lavfi__buffersrc_1ga786409c3f3910a0ab5fa6b23b4e7399b" kindref="member">av_buffersrc_write_frame()</ref> creates a new reference to the input frame, while this function takes ownership of the reference passed to it.</para>
+</simplesect>
+This function is equivalent to <ref refid="group__lavfi__buffersrc_1ga73ed90c3c3407f36e54d65f91faaaed9" kindref="member">av_buffersrc_add_frame_flags()</ref> without the AV_BUFFERSRC_FLAG_KEEP_REF flag. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="189" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="189" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga73ed90c3c3407f36e54d65f91faaaed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int av_buffersrc_add_frame_flags</definition>
+        <argsstring>(AVFilterContext *buffer_src, AVFrame *frame, int flags)</argsstring>
+        <name>av_buffersrc_add_frame_flags</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>buffer_src</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a frame to the buffer source.</para>
+<para>By default, if the frame is reference-counted, this function will take ownership of the reference(s) and reset the frame. This can be controlled using the flags.</para>
+<para>If this function returns an error, the input frame is not touched.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a buffer source context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a frame, or NULL to mark EOF </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AV_BUFFERSRC_FLAG_* </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative AVERROR code in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="207" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="207" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga828fc86955dc0530ea53c123862e3da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffersrc_close</definition>
+        <argsstring>(AVFilterContext *ctx, int64_t pts, unsigned flags)</argsstring>
+        <name>av_buffersrc_close</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the buffer source after EOF.</para>
+<para>This is similar to passing NULL to <ref refid="group__lavfi__buffersrc_1ga73ed90c3c3407f36e54d65f91faaaed9" kindref="member">av_buffersrc_add_frame_flags()</ref> except it takes the timestamp of the EOF, i.e. the timestamp of the end of the last frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="217" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="217" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavfi__buffersrc_1ga0646329d5f128c2e327186c0c716d48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_buffersrc_get_status</definition>
+        <argsstring>(AVFilterContext *ctx)</argsstring>
+        <name>av_buffersrc_get_status</name>
+        <param>
+          <type><ref refid="struct_a_v_filter_context" kindref="compound">AVFilterContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns 0 or a negative AVERROR code. Currently, this will only ever return AVERROR(EOF), to indicate that the buffer source has been closed, either as a result of <ref refid="group__lavfi__buffersrc_1ga828fc86955dc0530ea53c123862e3da6" kindref="member">av_buffersrc_close()</ref>, or because the downstream filter is no longer accepting new data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="225" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" declline="225" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

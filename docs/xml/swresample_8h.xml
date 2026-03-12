@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="swresample_8h" kind="file" language="C++">
+    <compoundname>swresample.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="channel__layout_8h" local="yes">libavutil/channel_layout.h</includes>
+    <includes refid="frame_8h" local="yes">libavutil/frame.h</includes>
+    <includes refid="samplefmt_8h" local="yes">libavutil/samplefmt.h</includes>
+    <includes refid="libswresample_2version__major_8h" local="yes">libswresample/version_major.h</includes>
+    <includes refid="libswresample_2version_8h" local="yes">libswresample/version.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="7">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="11">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>libavutil/channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>libswresample/version.h</label>
+        <link refid="libswresample_2version_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>libswresample/version_major.h</label>
+        <link refid="libswresample_2version__major_8h"/>
+      </node>
+      <node id="13">
+        <label>errno.h</label>
+      </node>
+      <node id="14">
+        <label>inttypes.h</label>
+      </node>
+      <node id="15">
+        <label>limits.h</label>
+      </node>
+      <node id="16">
+        <label>math.h</label>
+      </node>
+      <node id="25">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="17">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="18">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="user-defined">
+      <header>Option constants</header>
+      <description><para>These constants are used for the <ref refid="group__avoptions" kindref="compound">AVOptions</ref> interface for lswr. </para>
+</description>
+      <member refid="group__lswr_1ga2226aca7f49137f3f29b6f731a985916" kind="define"><name>SWR_FLAG_RESAMPLE</name></member>
+      <member refid="group__lswr_1ga387e613b19e5269a46d9ff1a5ee3fcd4" kind="enum"><name>SwrDitherType</name></member>
+      <member refid="group__lswr_1ga87f9e023bbe780d3ccf17dfc7abed580" kind="enum"><name>SwrEngine</name></member>
+      <member refid="group__lswr_1ga2176b2a3a8b809788f6e7ccdc238b6be" kind="enum"><name>SwrFilterType</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>SwrContext constructor functions</header>
+      <member refid="group__lswr_1ga17283a2547f79f4013ba32820ec86ca8" kind="function"><name>swr_alloc</name></member>
+      <member refid="group__lswr_1gae173e8ed91717700471a1dcd06f00f67" kind="function"><name>swr_init</name></member>
+      <member refid="group__lswr_1gab11b02705e97404b6d74b18b2fcfdfcf" kind="function"><name>swr_is_initialized</name></member>
+      <member refid="group__lswr_1ga803ae19bc1c32a20a691996b4e530f22" kind="function"><name>swr_alloc_set_opts2</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>SwrContext destructor functions</header>
+      <member refid="group__lswr_1ga818f7d78b1ad7d8d5b70de374b668c34" kind="function"><name>swr_free</name></member>
+      <member refid="group__lswr_1gaa4bf1048740dfc08d68aba9f1b4db22e" kind="function"><name>swr_close</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Core conversion functions</header>
+      <member refid="group__lswr_1gad16a8308503be52a7e2d460983e81460" kind="function"><name>swr_convert</name></member>
+      <member refid="group__lswr_1gaad9811626c6c01a241f6bf46aff27333" kind="function"><name>swr_next_pts</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Low-level option setting functions</header>
+      <description><para>These functions provide a means to set low-level options that is not possible with the <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> API. </para>
+</description>
+      <member refid="group__lswr_1gab7f21690522b85d7757e13fa9853d4d8" kind="function"><name>swr_set_compensation</name></member>
+      <member refid="group__lswr_1ga1b528050b5f5b704aecbfbc257a17ef0" kind="function"><name>swr_set_channel_mapping</name></member>
+      <member refid="group__lswr_1ga6a9f82de302424551f8af5b91d229394" kind="function"><name>swr_build_matrix2</name></member>
+      <member refid="group__lswr_1gaf9064d65b1e654dc78f7d6bcd2e8c747" kind="function"><name>swr_set_matrix</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Sample handling functions</header>
+      <member refid="group__lswr_1ga43d7ba4507891fc25aacbbea5cdfb065" kind="function"><name>swr_drop_output</name></member>
+      <member refid="group__lswr_1ga4733ed4779ed3e30379de2a6ef8de837" kind="function"><name>swr_inject_silence</name></member>
+      <member refid="group__lswr_1ga5121a5a7890a2d23b72dc871dd0ebb06" kind="function"><name>swr_get_delay</name></member>
+      <member refid="group__lswr_1ga97a8d5f6abe3bcdfb6072412f17285a4" kind="function"><name>swr_get_out_samples</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Configuration accessors</header>
+      <member refid="group__lswr_1gaed39c2153a1e26b4ef656ec8c765a2e3" kind="function"><name>swresample_version</name></member>
+      <member refid="group__lswr_1gacb05ad2022842645a473d46212461be7" kind="function"><name>swresample_configuration</name></member>
+      <member refid="group__lswr_1ga138666c7d154a3b3a10cfe490b752266" kind="function"><name>swresample_license</name></member>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>AVFrame based API</header>
+      <member refid="group__lswr_1gac482028c01d95580106183aa84b0930c" kind="function"><name>swr_convert_frame</name></member>
+      <member refid="group__lswr_1ga73ade2cf6934765cf518c6c917b77c76" kind="function"><name>swr_config_frame</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kind="typedef"><name>SwrContext</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lswr_1gaabeac14d6aa684de193c65b6e34c4901" kind="function"><name>swr_get_class</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>libswresample public header </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2011-2013<sp/>Michael<sp/>Niedermayer<sp/>(michaelni@gmx.at)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>libswresample</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>libswresample<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>libswresample<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>libswresample;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWRESAMPLE_SWRESAMPLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWRESAMPLE_SWRESAMPLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="channel__layout_8h" kindref="compound">libavutil/channel_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">libavutil/frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libavutil/samplefmt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libswresample_2version__major_8h" kindref="compound">libswresample/version_major.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAVE_AV_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>When<sp/>included<sp/>as<sp/>part<sp/>of<sp/>the<sp/>ffmpeg<sp/>build,<sp/>only<sp/>include<sp/>the<sp/>major<sp/>version</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/>to<sp/>avoid<sp/>unnecessary<sp/>rebuilds.<sp/>When<sp/>included<sp/>externally,<sp/>keep<sp/>including</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/>the<sp/>full<sp/>version<sp/>information.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libswresample_2version_8h" kindref="compound">libswresample/version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="group__lswr_1ga2226aca7f49137f3f29b6f731a985916" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWR_FLAG_RESAMPLE<sp/>1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>use<sp/>int<sp/>resample<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//long<sp/>term<sp/>TODO<sp/>can<sp/>we<sp/>enable<sp/>this<sp/>dynamically?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group__lswr_1ga387e613b19e5269a46d9ff1a5ee3fcd4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga387e613b19e5269a46d9ff1a5ee3fcd4" kindref="member">SwrDitherType</ref><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_RECTANGULAR,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_TRIANGULAR,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_TRIANGULAR_HIGHPASS,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="group__lswr_1gga387e613b19e5269a46d9ff1a5ee3fcd4ae6858a54f5b2e1bffa9aaef20b2593c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga387e613b19e5269a46d9ff1a5ee3fcd4ae6858a54f5b2e1bffa9aaef20b2593c0" kindref="member">SWR_DITHER_NS</ref><sp/>=<sp/>64,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_LIPSHITZ,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_F_WEIGHTED,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_MODIFIED_E_WEIGHTED,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_IMPROVED_E_WEIGHTED,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_SHIBATA,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_LOW_SHIBATA,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>SWR_DITHER_NS_HIGH_SHIBATA,</highlight></codeline>
+<codeline lineno="162" refid="group__lswr_1gga387e613b19e5269a46d9ff1a5ee3fcd4aacbdf2f91bb14cf390116492115fb8ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga387e613b19e5269a46d9ff1a5ee3fcd4aacbdf2f91bb14cf390116492115fb8ea" kindref="member">SWR_DITHER_NB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="group__lswr_1ga87f9e023bbe780d3ccf17dfc7abed580" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga87f9e023bbe780d3ccf17dfc7abed580" kindref="member">SwrEngine</ref><sp/>{</highlight></codeline>
+<codeline lineno="167" refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a11652db5af0c279d79deba1c577c9729" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a11652db5af0c279d79deba1c577c9729" kindref="member">SWR_ENGINE_SWR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a2933f5b0b96829095a04a8acd19b27e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a2933f5b0b96829095a04a8acd19b27e7" kindref="member">SWR_ENGINE_SOXR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a865af2e70ebb85b3cafb93f1854dbef9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga87f9e023bbe780d3ccf17dfc7abed580a865af2e70ebb85b3cafb93f1854dbef9" kindref="member">SWR_ENGINE_NB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group__lswr_1ga2176b2a3a8b809788f6e7ccdc238b6be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga2176b2a3a8b809788f6e7ccdc238b6be" kindref="member">SwrFilterType</ref><sp/>{</highlight></codeline>
+<codeline lineno="174" refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea1a6413b9888bac851e2ee4f991f01d0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea1a6413b9888bac851e2ee4f991f01d0c" kindref="member">SWR_FILTER_TYPE_CUBIC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea17f5dd4512b4abc2285905293a81cf55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea17f5dd4512b4abc2285905293a81cf55" kindref="member">SWR_FILTER_TYPE_BLACKMAN_NUTTALL</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea8f492a5dc94b6e41a37f190c5492bf3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lswr_1gga2176b2a3a8b809788f6e7ccdc238b6bea8f492a5dc94b6e41a37f190c5492bf3f" kindref="member">SWR_FILTER_TYPE_KAISER</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="group__lswr_1gaabeac14d6aa684de193c65b6e34c4901" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*<ref refid="group__lswr_1gaabeac14d6aa684de193c65b6e34c4901" kindref="member">swr_get_class</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="group__lswr_1ga17283a2547f79f4013ba32820ec86ca8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*<ref refid="group__lswr_1ga17283a2547f79f4013ba32820ec86ca8" kindref="member">swr_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="group__lswr_1gae173e8ed91717700471a1dcd06f00f67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gae173e8ed91717700471a1dcd06f00f67" kindref="member">swr_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="group__lswr_1gab11b02705e97404b6d74b18b2fcfdfcf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gab11b02705e97404b6d74b18b2fcfdfcf" kindref="member">swr_is_initialized</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="group__lswr_1ga803ae19bc1c32a20a691996b4e530f22" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga803ae19bc1c32a20a691996b4e530f22" kindref="member">swr_alloc_set_opts2</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>**ps,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/>*out_ch_layout,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/>out_sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_sample_rate,</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/>*in_ch_layout,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref><sp/><sp/>in_sample_fmt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>in_sample_rate,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="group__lswr_1ga818f7d78b1ad7d8d5b70de374b668c34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga818f7d78b1ad7d8d5b70de374b668c34" kindref="member">swr_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>**s);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group__lswr_1gaa4bf1048740dfc08d68aba9f1b4db22e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gaa4bf1048740dfc08d68aba9f1b4db22e" kindref="member">swr_close</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="group__lswr_1gad16a8308503be52a7e2d460983e81460" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gad16a8308503be52a7e2d460983e81460" kindref="member">swr_convert</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_count,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*in<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in_count);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="group__lswr_1gaad9811626c6c01a241f6bf46aff27333" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lswr_1gaad9811626c6c01a241f6bf46aff27333" kindref="member">swr_next_pts</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/>int64_t<sp/>pts);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="group__lswr_1gab7f21690522b85d7757e13fa9853d4d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gab7f21690522b85d7757e13fa9853d4d8" kindref="member">swr_set_compensation</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sample_delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compensation_distance);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="group__lswr_1ga1b528050b5f5b704aecbfbc257a17ef0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga1b528050b5f5b704aecbfbc257a17ef0" kindref="member">swr_set_channel_mapping</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*channel_map);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="group__lswr_1ga6a9f82de302424551f8af5b91d229394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga6a9f82de302424551f8af5b91d229394" kindref="member">swr_build_matrix2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/>*in_layout,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/>*out_layout,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>center_mix_level,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>surround_mix_level,</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lfe_mix_level,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxval,</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rematrix_volume,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*matrix,</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptrdiff_t<sp/>stride,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVMatrixEncoding<sp/>matrix_encoding,</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_context);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412" refid="group__lswr_1gaf9064d65b1e654dc78f7d6bcd2e8c747" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gaf9064d65b1e654dc78f7d6bcd2e8c747" kindref="member">swr_set_matrix</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*matrix,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432" refid="group__lswr_1ga43d7ba4507891fc25aacbbea5cdfb065" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga43d7ba4507891fc25aacbbea5cdfb065" kindref="member">swr_drop_output</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445" refid="group__lswr_1ga4733ed4779ed3e30379de2a6ef8de837" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4733ed4779ed3e30379de2a6ef8de837" kindref="member">swr_inject_silence</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471" refid="group__lswr_1ga5121a5a7890a2d23b72dc871dd0ebb06" refkind="member"><highlight class="normal">int64_t<sp/><ref refid="group__lswr_1ga5121a5a7890a2d23b72dc871dd0ebb06" kindref="member">swr_get_delay</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/>int64_t<sp/>base);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="group__lswr_1ga97a8d5f6abe3bcdfb6072412f17285a4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga97a8d5f6abe3bcdfb6072412f17285a4" kindref="member">swr_get_out_samples</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in_samples);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506" refid="group__lswr_1gaed39c2153a1e26b4ef656ec8c765a2e3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gaed39c2153a1e26b4ef656ec8c765a2e3" kindref="member">swresample_version</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="group__lswr_1gacb05ad2022842645a473d46212461be7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lswr_1gacb05ad2022842645a473d46212461be7" kindref="member">swresample_configuration</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520" refid="group__lswr_1ga138666c7d154a3b3a10cfe490b752266" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lswr_1ga138666c7d154a3b3a10cfe490b752266" kindref="member">swresample_license</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563" refid="group__lswr_1gac482028c01d95580106183aa84b0930c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1gac482028c01d95580106183aa84b0930c" kindref="member">swr_convert_frame</ref>(<ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*swr,</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580" refid="group__lswr_1ga73ade2cf6934765cf518c6c917b77c76" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lswr_1ga73ade2cf6934765cf518c6c917b77c76" kindref="member">swr_config_frame</ref>(<ref refid="group__lswr_1ga4aa775b7fba31d2c8dc14c7b7e282863" kindref="member">SwrContext</ref><sp/>*swr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SWRESAMPLE_SWRESAMPLE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h"/>
+  </compounddef>
+</doxygen>

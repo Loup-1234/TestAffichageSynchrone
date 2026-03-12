@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="hwcontext__d3d12va_8h" kind="file" language="C++">
+    <compoundname>hwcontext_d3d12va.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">initguid.h</includes>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">d3d12sdklayers.h</includes>
+    <includes local="no">d3d12video.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h</label>
+        <link refid="hwcontext__d3d12va_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>d3d12.h</label>
+      </node>
+      <node id="5">
+        <label>d3d12sdklayers.h</label>
+      </node>
+      <node id="6">
+        <label>d3d12video.h</label>
+      </node>
+      <node id="3">
+        <label>initguid.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_d3_d12_v_a_device_context" prot="public">AVD3D12VADeviceContext</innerclass>
+    <innerclass refid="struct_a_v_d3_d12_v_a_sync_context" prot="public">AVD3D12VASyncContext</innerclass>
+    <innerclass refid="struct_a_v_d3_d12_v_a_frame" prot="public">AVD3D12VAFrame</innerclass>
+    <innerclass refid="struct_a_v_d3_d12_v_a_frames_context" prot="public">AVD3D12VAFramesContext</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVD3D12VAFrameFlags</name>
+        <enumvalue id="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82eca90425e11533a9c8f31314d7c0a9d12e4" prot="public">
+          <name>AV_D3D12VA_FRAME_FLAG_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82eca47a466bc6256457313f033c2d0c5a5ed" prot="public">
+          <name>AV_D3D12VA_FRAME_FLAG_TEXTURE_ARRAY</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates that frame data should be allocated using a texture array resource. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the behaviours of frame allocation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="125" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="125" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hwcontext__d3d12va_8h_1a7453fe423e43240713eb548aa59d0f96" prot="public" static="no">
+        <type>struct AVD3D12VADeviceContext</type>
+        <definition>typedef struct AVD3D12VADeviceContext AVD3D12VADeviceContext</definition>
+        <argsstring></argsstring>
+        <name>AVD3D12VADeviceContext</name>
+        <briefdescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="98" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__d3d12va_8h_1ae2c4e71df387c90e29763c8668cb5e57" prot="public" static="no">
+        <type>struct AVD3D12VASyncContext</type>
+        <definition>typedef struct AVD3D12VASyncContext AVD3D12VASyncContext</definition>
+        <argsstring></argsstring>
+        <name>AVD3D12VASyncContext</name>
+        <briefdescription>
+<para>This struct is used to sync d3d12 execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="120" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__d3d12va_8h_1ac190d397188b1deaa37b21fc40ad7428" prot="public" static="no">
+        <type>enum <ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref></type>
+        <definition>typedef enum AVD3D12VAFrameFlags AVD3D12VAFrameFlags</definition>
+        <argsstring></argsstring>
+        <name>AVD3D12VAFrameFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the behaviours of frame allocation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="132" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__d3d12va_8h_1a18e98f908e4d663374dd4a6bdbc696ee" prot="public" static="no">
+        <type>struct AVD3D12VAFrame</type>
+        <definition>typedef struct AVD3D12VAFrame AVD3D12VAFrame</definition>
+        <argsstring></argsstring>
+        <name>AVD3D12VAFrame</name>
+        <briefdescription>
+<para>D3D12VA frame descriptor for pool allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="166" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__d3d12va_8h_1a924d0845a2fe8da58f57f1c8e1ea6253" prot="public" static="no">
+        <type>struct AVD3D12VAFramesContext</type>
+        <definition>typedef struct AVD3D12VAFramesContext AVD3D12VAFramesContext</definition>
+        <argsstring></argsstring>
+        <name>AVD3D12VAFramesContext</name>
+        <briefdescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="207" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An API-specific header for AV_HWDEVICE_TYPE_D3D12VA.</para>
+<para><ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref> must contain AVBufferRefs whose data pointer points to an <ref refid="struct_a_v_d3_d12_v_a_frame" kindref="compound">AVD3D12VAFrame</ref> struct. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Direct3D<sp/>12<sp/>HW<sp/>acceleration.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2022-2023<sp/>Wu<sp/>Jianhua<sp/>&lt;toqsxw@outlook.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_HWCONTEXT_D3D12VA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_HWCONTEXT_D3D12VA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;initguid.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12sdklayers.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12video.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="struct_a_v_d3_d12_v_a_device_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d3_d12_v_a_device_context" kindref="compound">AVD3D12VADeviceContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="struct_a_v_d3_d12_v_a_device_context_1a39e2b3a4184f1cbd598d3df7e0ca5c0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D12Device<sp/>*<ref refid="struct_a_v_d3_d12_v_a_device_context_1a39e2b3a4184f1cbd598d3df7e0ca5c0b" kindref="member">device</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="struct_a_v_d3_d12_v_a_device_context_1ae3966a7c21d4dd1b3c4d4f431b70bd9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D12VideoDevice<sp/>*<ref refid="struct_a_v_d3_d12_v_a_device_context_1ae3966a7c21d4dd1b3c4d4f431b70bd9c" kindref="member">video_device</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="struct_a_v_d3_d12_v_a_device_context_1a8af426b80845e6582106bdc429ffdd66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="struct_a_v_d3_d12_v_a_device_context_1a8af426b80845e6582106bdc429ffdd66" kindref="member">lock</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*lock_ctx);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*unlock)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*lock_ctx);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*lock_ctx;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="struct_a_v_d3_d12_v_a_device_context_1aa0a92f3fada8214fd5514b6f0e717329" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3D12_RESOURCE_FLAGS<sp/><ref refid="struct_a_v_d3_d12_v_a_device_context_1aa0a92f3fada8214fd5514b6f0e717329" kindref="member">resource_flags</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="struct_a_v_d3_d12_v_a_device_context_1ad38e48aedd55809dd6bf660270a8a93f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3D12_HEAP_FLAGS<sp/><ref refid="struct_a_v_d3_d12_v_a_device_context_1ad38e48aedd55809dd6bf660270a8a93f" kindref="member">heap_flags</ref>;</highlight></codeline>
+<codeline lineno="98" refid="hwcontext__d3d12va_8h_1a7453fe423e43240713eb548aa59d0f96" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d3_d12_v_a_device_context" kindref="compound">AVD3D12VADeviceContext</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="struct_a_v_d3_d12_v_a_sync_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d3_d12_v_a_sync_context" kindref="compound">AVD3D12VASyncContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="108" refid="struct_a_v_d3_d12_v_a_sync_context_1a959a275b48b65acdbe47083634e83f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D12Fence<sp/>*<ref refid="struct_a_v_d3_d12_v_a_sync_context_1a959a275b48b65acdbe47083634e83f18" kindref="member">fence</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="struct_a_v_d3_d12_v_a_sync_context_1a6085642838d9419c0c6211f6f542ba55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HANDLE<sp/><ref refid="struct_a_v_d3_d12_v_a_sync_context_1a6085642838d9419c0c6211f6f542ba55" kindref="member">event</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="struct_a_v_d3_d12_v_a_sync_context_1aa4439ffb25c4c9ab8986bd42d95273cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_d3_d12_v_a_sync_context_1aa4439ffb25c4c9ab8986bd42d95273cf" kindref="member">fence_value</ref>;</highlight></codeline>
+<codeline lineno="120" refid="hwcontext__d3d12va_8h_1ae2c4e71df387c90e29763c8668cb5e57" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d3_d12_v_a_sync_context" kindref="compound">AVD3D12VASyncContext</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_D3D12VA_FRAME_FLAG_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82eca47a466bc6256457313f033c2d0c5a5ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82eca47a466bc6256457313f033c2d0c5a5ed" kindref="member">AV_D3D12VA_FRAME_FLAG_TEXTURE_ARRAY</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),</highlight></codeline>
+<codeline lineno="132" refid="hwcontext__d3d12va_8h_1ac190d397188b1deaa37b21fc40ad7428" refkind="member"><highlight class="normal">}<sp/><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="struct_a_v_d3_d12_v_a_frame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d3_d12_v_a_frame" kindref="compound">AVD3D12VAFrame</ref><sp/>{</highlight></codeline>
+<codeline lineno="144" refid="struct_a_v_d3_d12_v_a_frame_1a92303c5c28b780ee2e531b82b8188a96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D12Resource<sp/>*<ref refid="struct_a_v_d3_d12_v_a_frame_1a92303c5c28b780ee2e531b82b8188a96" kindref="member">texture</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="struct_a_v_d3_d12_v_a_frame_1aa002f32ad8f605ca888c23241c4a8eb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d3_d12_v_a_frame_1aa002f32ad8f605ca888c23241c4a8eb9" kindref="member">subresource_index</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="struct_a_v_d3_d12_v_a_frame_1a9a314ddda3f56529fd1c5abb5a1710c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d3_d12_v_a_sync_context" kindref="compound">AVD3D12VASyncContext</ref><sp/><ref refid="struct_a_v_d3_d12_v_a_frame_1a9a314ddda3f56529fd1c5abb5a1710c0" kindref="member">sync_ctx</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="struct_a_v_d3_d12_v_a_frame_1a0c47b38de08f2703f50bb879a7e781bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref><sp/><ref refid="struct_a_v_d3_d12_v_a_frame_1a0c47b38de08f2703f50bb879a7e781bf" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="166" refid="hwcontext__d3d12va_8h_1a18e98f908e4d663374dd4a6bdbc696ee" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d3_d12_v_a_frame" kindref="compound">AVD3D12VAFrame</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="struct_a_v_d3_d12_v_a_frames_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d3_d12_v_a_frames_context" kindref="compound">AVD3D12VAFramesContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="177" refid="struct_a_v_d3_d12_v_a_frames_context_1af6f32db5f377e4cea4fa8a2298b81046" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DXGI_FORMAT<sp/><ref refid="struct_a_v_d3_d12_v_a_frames_context_1af6f32db5f377e4cea4fa8a2298b81046" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="struct_a_v_d3_d12_v_a_frames_context_1a3816fbc12cc6bc2c0c5e3cd20e9c63cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3D12_RESOURCE_FLAGS<sp/><ref refid="struct_a_v_d3_d12_v_a_frames_context_1a3816fbc12cc6bc2c0c5e3cd20e9c63cd" kindref="member">resource_flags</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="struct_a_v_d3_d12_v_a_frames_context_1a8ccc1a87f14735ff61d2d65bd27b93b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3D12_HEAP_FLAGS<sp/><ref refid="struct_a_v_d3_d12_v_a_frames_context_1a8ccc1a87f14735ff61d2d65bd27b93b8" kindref="member">heap_flags</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="struct_a_v_d3_d12_v_a_frames_context_1ad9ec5b0633374b2f43dcf1481a7ce52c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D12Resource<sp/>*<ref refid="struct_a_v_d3_d12_v_a_frames_context_1ad9ec5b0633374b2f43dcf1481a7ce52c" kindref="member">texture_array</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="struct_a_v_d3_d12_v_a_frames_context_1a61343266ff9b7bc5d1d65e74a6fd1f65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref><sp/><ref refid="struct_a_v_d3_d12_v_a_frames_context_1a61343266ff9b7bc5d1d65e74a6fd1f65" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="207" refid="hwcontext__d3d12va_8h_1a924d0845a2fe8da58f57f1c8e1ea6253" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d3_d12_v_a_frames_context" kindref="compound">AVD3D12VAFramesContext</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_HWCONTEXT_D3D12VA_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="iamf_8h" kind="file" language="C++">
+    <compoundname>iamf.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="avassert_8h" local="yes">avassert.h</includes>
+    <includes refid="channel__layout_8h" local="yes">channel_layout.h</includes>
+    <includes refid="dict_8h" local="yes">dict.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="5">
+        <label>avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="12">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h</label>
+        <link refid="iamf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_i_a_m_f_mix_gain" prot="public">AVIAMFMixGain</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_demixing_info" prot="public">AVIAMFDemixingInfo</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_recon_gain" prot="public">AVIAMFReconGain</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_param_definition" prot="public">AVIAMFParamDefinition</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_layer" prot="public">AVIAMFLayer</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_audio_element" prot="public">AVIAMFAudioElement</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_submix_element" prot="public">AVIAMFSubmixElement</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_submix_layout" prot="public">AVIAMFSubmixLayout</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_submix" prot="public">AVIAMFSubmix</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_mix_presentation" prot="public">AVIAMFMixPresentation</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavu__iamf__audio_1ga82a6fc997aae8aceaf26d53473c26e67" kind="define"><name>AV_IAMF_LAYER_FLAG_RECON_GAIN</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__lavu__iamf__params_1gafc1158027ec7fb9f9f9927d58565d2c1" kind="enum"><name>AVIAMFAnimationType</name></member>
+      <member refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" kind="enum"><name>AVIAMFParamDefinitionType</name></member>
+      <member refid="group__lavu__iamf__audio_1ga352218f0df623d2b4247f1bde835c990" kind="enum"><name>AVIAMFAmbisonicsMode</name></member>
+      <member refid="group__lavu__iamf__audio_1ga782d2fa607a401cf5318c27611e8e4c9" kind="enum"><name>AVIAMFAudioElementType</name></member>
+      <member refid="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" kind="enum"><name>AVIAMFHeadphonesMode</name></member>
+      <member refid="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" kind="enum"><name>AVIAMFSubmixLayoutType</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__iamf__params_1ga8220f7c1305c909e08a1cb6e573ec5a6" kind="typedef"><name>AVIAMFMixGain</name></member>
+      <member refid="group__lavu__iamf__params_1ga6a119b6f7a22c86ab118ebd36b4c1986" kind="typedef"><name>AVIAMFDemixingInfo</name></member>
+      <member refid="group__lavu__iamf__params_1ga3031973fd5b6bfd7a78f45af8882a618" kind="typedef"><name>AVIAMFReconGain</name></member>
+      <member refid="group__lavu__iamf__params_1gafe46929bed1cb718b503503534287de9" kind="typedef"><name>AVIAMFParamDefinition</name></member>
+      <member refid="group__lavu__iamf__audio_1ga150dabcca55c590b9a708189b59e2e3a" kind="typedef"><name>AVIAMFLayer</name></member>
+      <member refid="group__lavu__iamf__audio_1ga340b05d4295a72cb3f905f2acd93dd3a" kind="typedef"><name>AVIAMFAudioElement</name></member>
+      <member refid="group__lavu__iamf__mix_1ga570ace3fbb48fc77e057a998494e7586" kind="typedef"><name>AVIAMFSubmixElement</name></member>
+      <member refid="group__lavu__iamf__mix_1gaa48ccc98ae70def8fcc01d6878ae5b99" kind="typedef"><name>AVIAMFSubmixLayout</name></member>
+      <member refid="group__lavu__iamf__mix_1ga313b3a7a7df91c82f93ed11b5e183813" kind="typedef"><name>AVIAMFSubmix</name></member>
+      <member refid="group__lavu__iamf__mix_1gadae63c566b73e9636b0356872afdec01" kind="typedef"><name>AVIAMFMixPresentation</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__iamf__params_1ga85d639cead782b0394965bbf77812e44" kind="function"><name>av_iamf_param_definition_get_class</name></member>
+      <member refid="group__lavu__iamf__params_1gaaa3bd2f45c4fdb412177c0b09b103d56" kind="function"><name>av_iamf_param_definition_alloc</name></member>
+      <member refid="group__lavu__iamf__params_1ga07d3f4e1f77850dc56d20fa61ef07647" kind="function"><name>av_iamf_param_definition_get_subblock</name></member>
+      <member refid="group__lavu__iamf__audio_1ga3b633299b5895f9eb04a1dfe315e6769" kind="function"><name>av_iamf_audio_element_get_class</name></member>
+      <member refid="group__lavu__iamf__audio_1gae7d6f530919a1283c776f420f979b180" kind="function"><name>av_iamf_audio_element_alloc</name></member>
+      <member refid="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" kind="function"><name>av_iamf_audio_element_add_layer</name></member>
+      <member refid="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" kind="function"><name>av_iamf_audio_element_free</name></member>
+      <member refid="group__lavu__iamf__mix_1gad93577f77238bd82c2ce8502f3563d92" kind="function"><name>av_iamf_mix_presentation_get_class</name></member>
+      <member refid="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" kind="function"><name>av_iamf_mix_presentation_alloc</name></member>
+      <member refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kind="function"><name>av_iamf_mix_presentation_add_submix</name></member>
+      <member refid="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" kind="function"><name>av_iamf_submix_add_element</name></member>
+      <member refid="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" kind="function"><name>av_iamf_submix_add_layout</name></member>
+      <member refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kind="function"><name>av_iamf_mix_presentation_free</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Immersive Audio Model and Formats API header <simplesect kind="see"><para><ulink url="https://aomediacodec.github.io/iamf/">Immersive Audio Model and Formats</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Immersive<sp/>Audio<sp/>Model<sp/>and<sp/>Formats<sp/>helper<sp/>functions<sp/>and<sp/>defines</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_IAMF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_IAMF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avassert_8h" kindref="compound">avassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="channel__layout_8h" kindref="compound">channel_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dict_8h" kindref="compound">dict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAnimationType<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_ANIMATION_TYPE_STEP,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_ANIMATION_TYPE_LINEAR,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_ANIMATION_TYPE_BEZIER,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_a_v_i_a_m_f_mix_gain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_mix_gain" kindref="compound">AVIAMFMixGain</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="struct_a_v_i_a_m_f_mix_gain_1a29e55522680e62a41f7f151d9f720d76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1a29e55522680e62a41f7f151d9f720d76" kindref="member">subblock_duration</ref>;</highlight></codeline>
+<codeline lineno="89" refid="struct_a_v_i_a_m_f_mix_gain_1a950e1a5bd65fb2b1bf1b824e9b7db848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAnimationType<sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1a950e1a5bd65fb2b1bf1b824e9b7db848" kindref="member">animation_type</ref>;</highlight></codeline>
+<codeline lineno="96" refid="struct_a_v_i_a_m_f_mix_gain_1a2ba66abdb812640cf30960326d818957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1a2ba66abdb812640cf30960326d818957" kindref="member">start_point_value</ref>;</highlight></codeline>
+<codeline lineno="104" refid="struct_a_v_i_a_m_f_mix_gain_1a8c0f314634e8f723756459dd599ca2ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1a8c0f314634e8f723756459dd599ca2ff" kindref="member">end_point_value</ref>;</highlight></codeline>
+<codeline lineno="112" refid="struct_a_v_i_a_m_f_mix_gain_1a58dcb3aa73c04961cac199b2d64802fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1a58dcb3aa73c04961cac199b2d64802fa" kindref="member">control_point_value</ref>;</highlight></codeline>
+<codeline lineno="120" refid="struct_a_v_i_a_m_f_mix_gain_1ad211212077e3e55460f3ddfba697356a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_mix_gain_1ad211212077e3e55460f3ddfba697356a" kindref="member">control_point_relative_time</ref>;</highlight></codeline>
+<codeline lineno="121" refid="group__lavu__iamf__params_1ga8220f7c1305c909e08a1cb6e573ec5a6" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_mix_gain" kindref="compound">AVIAMFMixGain</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="struct_a_v_i_a_m_f_demixing_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_demixing_info" kindref="compound">AVIAMFDemixingInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="struct_a_v_i_a_m_f_demixing_info_1a486dddd3bf8c247aad8e07bff0cf389d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_demixing_info_1a486dddd3bf8c247aad8e07bff0cf389d" kindref="member">subblock_duration</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_a_v_i_a_m_f_demixing_info_1a44c064c482cac436620cffb22076b07d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_demixing_info_1a44c064c482cac436620cffb22076b07d" kindref="member">dmixp_mode</ref>;</highlight></codeline>
+<codeline lineno="141" refid="group__lavu__iamf__params_1ga6a119b6f7a22c86ab118ebd36b4c1986" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_demixing_info" kindref="compound">AVIAMFDemixingInfo</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="struct_a_v_i_a_m_f_recon_gain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_recon_gain" kindref="compound">AVIAMFReconGain</ref><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="struct_a_v_i_a_m_f_recon_gain_1a6b86341dbc3b719fc10fded4b4c86ab8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_recon_gain_1a6b86341dbc3b719fc10fded4b4c86ab8" kindref="member">subblock_duration</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="struct_a_v_i_a_m_f_recon_gain_1a8ce89f8e2616b8407f7a322c05b8b53d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_i_a_m_f_recon_gain_1a8ce89f8e2616b8407f7a322c05b8b53d" kindref="member">recon_gain</ref>[6][12];</highlight></codeline>
+<codeline lineno="167" refid="group__lavu__iamf__params_1ga3031973fd5b6bfd7a78f45af8882a618" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_recon_gain" kindref="compound">AVIAMFReconGain</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" kindref="member">AVIAMFParamDefinitionType</ref><sp/>{</highlight></codeline>
+<codeline lineno="173" refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cbaa93ece8e82bfa4b8810deeae1ce80ddc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cbaa93ece8e82bfa4b8810deeae1ce80ddc" kindref="member">AV_IAMF_PARAMETER_DEFINITION_MIX_GAIN</ref>,</highlight></codeline>
+<codeline lineno="177" refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cbae9b33f4cdd6153eab7104c1e7e4d6985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cbae9b33f4cdd6153eab7104c1e7e4d6985" kindref="member">AV_IAMF_PARAMETER_DEFINITION_DEMIXING</ref>,</highlight></codeline>
+<codeline lineno="181" refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cba7d7fb18cfb38a243d6b54e86ca7b804e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__params_1gga34b3dda699ae68e2aec90c41afdea4cba7d7fb18cfb38a243d6b54e86ca7b804e" kindref="member">AV_IAMF_PARAMETER_DEFINITION_RECON_GAIN</ref>,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="struct_a_v_i_a_m_f_param_definition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="struct_a_v_i_a_m_f_param_definition_1a44e3cda029cfc4f59f0b4986b539b3e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1a44e3cda029cfc4f59f0b4986b539b3e2" kindref="member">subblocks_offset</ref>;</highlight></codeline>
+<codeline lineno="204" refid="struct_a_v_i_a_m_f_param_definition_1a7985d71190fff3cc074938431cc7eb04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1a7985d71190fff3cc074938431cc7eb04" kindref="member">subblock_size</ref>;</highlight></codeline>
+<codeline lineno="208" refid="struct_a_v_i_a_m_f_param_definition_1aedc3f35e5ac5aeb9d9a8b3ff62bb4363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1aedc3f35e5ac5aeb9d9a8b3ff62bb4363" kindref="member">nb_subblocks</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="struct_a_v_i_a_m_f_param_definition_1ad23396529750bb097ae718f9dc38cff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" kindref="member">AVIAMFParamDefinitionType</ref><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1ad23396529750bb097ae718f9dc38cff2" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="struct_a_v_i_a_m_f_param_definition_1ad192491bf6d44127c1207f756b35dce2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1ad192491bf6d44127c1207f756b35dce2" kindref="member">parameter_id</ref>;</highlight></codeline>
+<codeline lineno="222" refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1a233c63e206e3e9e31e9bb3269011beeb" kindref="member">parameter_rate</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="struct_a_v_i_a_m_f_param_definition_1a7bd60102ad8b04236d031a8942ff6057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1a7bd60102ad8b04236d031a8942ff6057" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="238" refid="struct_a_v_i_a_m_f_param_definition_1ab3c556decd4e563a121a2acf9237d8b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition_1ab3c556decd4e563a121a2acf9237d8b1" kindref="member">constant_subblock_duration</ref>;</highlight></codeline>
+<codeline lineno="239" refid="group__lavu__iamf__params_1gafe46929bed1cb718b503503534287de9" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_iamf_param_definition_get_class(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="group__lavu__iamf__params_1gaaa3bd2f45c4fdb412177c0b09b103d56" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*<ref refid="group__lavu__iamf__params_1gaaa3bd2f45c4fdb412177c0b09b103d56" kindref="member">av_iamf_param_definition_alloc</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__params_1ga34b3dda699ae68e2aec90c41afdea4cb" kindref="member">AVIAMFParamDefinitionType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_subblocks,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">av_iamf_param_definition_get_subblock(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*par,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="avassert_8h_1aae204192396f78cc8c5cd7ad5c57c23f" kindref="member">av_assert0</ref>(idx<sp/>&lt;<sp/>par-&gt;nb_subblocks);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)((uint8_t<sp/>*)par<sp/>+<sp/>par-&gt;<ref refid="struct_a_v_i_a_m_f_param_definition_1a44e3cda029cfc4f59f0b4986b539b3e2" kindref="member">subblocks_offset</ref><sp/>+<sp/>idx<sp/>*<sp/>par-&gt;<ref refid="struct_a_v_i_a_m_f_param_definition_1a7985d71190fff3cc074938431cc7eb04" kindref="member">subblock_size</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAmbisonicsMode<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_AMBISONICS_MODE_MONO,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_AMBISONICS_MODE_PROJECTION,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="group__lavu__iamf__audio_1ga82a6fc997aae8aceaf26d53473c26e67" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_IAMF_LAYER_FLAG_RECON_GAIN<sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="struct_a_v_i_a_m_f_layer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_layer" kindref="compound">AVIAMFLayer</ref><sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/>ch_layout;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="struct_a_v_i_a_m_f_layer_1a2ccdf39b18505b930b9ef886d3a87983" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_layer_1a2ccdf39b18505b930b9ef886d3a87983" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="310" refid="struct_a_v_i_a_m_f_layer_1a3d12abf14905bcd1fc4a33b09dabb53a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_layer_1a3d12abf14905bcd1fc4a33b09dabb53a" kindref="member">output_gain_flags</ref>;</highlight></codeline>
+<codeline lineno="316" refid="struct_a_v_i_a_m_f_layer_1ab063eb894a3316a247e358979ff4d00c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_layer_1ab063eb894a3316a247e358979ff4d00c" kindref="member">output_gain</ref>;</highlight></codeline>
+<codeline lineno="328" refid="struct_a_v_i_a_m_f_layer_1a502949410ee396a1100390b130665c24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAmbisonicsMode<sp/><ref refid="struct_a_v_i_a_m_f_layer_1a502949410ee396a1100390b130665c24" kindref="member">ambisonics_mode</ref>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="struct_a_v_i_a_m_f_layer_1a7d5d27a262ca116a87ff2cdbb6a76acc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>*<ref refid="struct_a_v_i_a_m_f_layer_1a7d5d27a262ca116a87ff2cdbb6a76acc" kindref="member">demixing_matrix</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="struct_a_v_i_a_m_f_layer_1a525f67b7fcd45e563717c2b8a8278a8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_layer_1a525f67b7fcd45e563717c2b8a8278a8b" kindref="member">nb_demixing_matrix</ref>;</highlight></codeline>
+<codeline lineno="344" refid="group__lavu__iamf__audio_1ga150dabcca55c590b9a708189b59e2e3a" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_layer" kindref="compound">AVIAMFLayer</ref>;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAudioElementType<sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_AUDIO_ELEMENT_TYPE_CHANNEL,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_IAMF_AUDIO_ELEMENT_TYPE_SCENE,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="struct_a_v_i_a_m_f_audio_element" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_layer" kindref="compound">AVIAMFLayer</ref><sp/>**layers;</highlight></codeline>
+<codeline lineno="371" refid="struct_a_v_i_a_m_f_audio_element_1ae21f65ccc7e6bcc9a82a7dc210964bbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_audio_element_1ae21f65ccc7e6bcc9a82a7dc210964bbe" kindref="member">nb_layers</ref>;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="struct_a_v_i_a_m_f_audio_element_1aa6fb55591f94452cdec0f8844ab736f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*<ref refid="struct_a_v_i_a_m_f_audio_element_1aa6fb55591f94452cdec0f8844ab736f8" kindref="member">demixing_info</ref>;</highlight></codeline>
+<codeline lineno="386" refid="struct_a_v_i_a_m_f_audio_element_1a87362a3b29cf825f57817ea726e7c21c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*<ref refid="struct_a_v_i_a_m_f_audio_element_1a87362a3b29cf825f57817ea726e7c21c" kindref="member">recon_gain_info</ref>;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="struct_a_v_i_a_m_f_audio_element_1a3199850332a351361748c92b6cb8f8ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVIAMFAudioElementType<sp/><ref refid="struct_a_v_i_a_m_f_audio_element_1a3199850332a351361748c92b6cb8f8ad" kindref="member">audio_element_type</ref>;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="struct_a_v_i_a_m_f_audio_element_1a9d738b8dd79e99471587193b820f0f7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_audio_element_1a9d738b8dd79e99471587193b820f0f7f" kindref="member">default_w</ref>;</highlight></codeline>
+<codeline lineno="397" refid="group__lavu__iamf__audio_1ga340b05d4295a72cb3f905f2acd93dd3a" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref>;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_iamf_audio_element_get_class(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="group__lavu__iamf__audio_1gae7d6f530919a1283c776f420f979b180" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref><sp/>*<ref refid="group__lavu__iamf__audio_1gae7d6f530919a1283c776f420f979b180" kindref="member">av_iamf_audio_element_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_layer" kindref="compound">AVIAMFLayer</ref><sp/>*<ref refid="group__lavu__iamf__audio_1ga0ca03f0e3c20b24670a88f7cb1ef656d" kindref="member">av_iamf_audio_element_add_layer</ref>(<ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref><sp/>*audio_element);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__audio_1ga958ee581fc7fdf2349beccc27ec8299f" kindref="member">av_iamf_audio_element_free</ref>(<ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref><sp/>**audio_element);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432" refid="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" kindref="member">AVIAMFHeadphonesMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="436" refid="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da1cae0734ace33450216bccd1cc9de8cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da1cae0734ace33450216bccd1cc9de8cb" kindref="member">AV_IAMF_HEADPHONES_MODE_STEREO</ref>,</highlight></codeline>
+<codeline lineno="440" refid="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da7aecf2dc88704f72cb5ae91813fc7d66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da7aecf2dc88704f72cb5ae91813fc7d66" kindref="member">AV_IAMF_HEADPHONES_MODE_BINAURAL</ref>,</highlight></codeline>
+<codeline lineno="441"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449" refid="struct_a_v_i_a_m_f_submix_element" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix_element" kindref="compound">AVIAMFSubmixElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455" refid="struct_a_v_i_a_m_f_submix_element_1a22d0f69268a4205494358c747e3a979e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_submix_element_1a22d0f69268a4205494358c747e3a979e" kindref="member">audio_element_id</ref>;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464" refid="struct_a_v_i_a_m_f_submix_element_1a041c16173c7593cbaf9fc32660b38c6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*<ref refid="struct_a_v_i_a_m_f_submix_element_1a041c16173c7593cbaf9fc32660b38c6d" kindref="member">element_mix_config</ref>;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="struct_a_v_i_a_m_f_submix_element_1acf9ee75993c5572dbc634f441ee1d23e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_element_1acf9ee75993c5572dbc634f441ee1d23e" kindref="member">default_mix_gain</ref>;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="struct_a_v_i_a_m_f_submix_element_1ab63ee41c7d7adadfe7f22c9898737985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" kindref="member">AVIAMFHeadphonesMode</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_element_1ab63ee41c7d7adadfe7f22c9898737985" kindref="member">headphones_rendering_mode</ref>;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493" refid="struct_a_v_i_a_m_f_submix_element_1a37ff0bf4a6747a3bcfaabcc3a89fc62d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>AVDictionary<sp/>*<ref refid="struct_a_v_i_a_m_f_submix_element_1a37ff0bf4a6747a3bcfaabcc3a89fc62d" kindref="member">annotations</ref>;</highlight></codeline>
+<codeline lineno="494" refid="group__lavu__iamf__mix_1ga570ace3fbb48fc77e057a998494e7586" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_submix_element" kindref="compound">AVIAMFSubmixElement</ref>;</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496" refid="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" kindref="member">AVIAMFSubmixLayoutType</ref><sp/>{</highlight></codeline>
+<codeline lineno="501" refid="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca96125c9375628065da5b811d99e4a5fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca96125c9375628065da5b811d99e4a5fe" kindref="member">AV_IAMF_SUBMIX_LAYOUT_TYPE_LOUDSPEAKERS</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="508" refid="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca1dff3c072949ea7f61a29d33154bf865" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca1dff3c072949ea7f61a29d33154bf865" kindref="member">AV_IAMF_SUBMIX_LAYOUT_TYPE_BINAURAL</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="509"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517" refid="struct_a_v_i_a_m_f_submix_layout" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix_layout" kindref="compound">AVIAMFSubmixLayout</ref><sp/>{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" kindref="member">AVIAMFSubmixLayoutType</ref><sp/>layout_type;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528" refid="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" kindref="member">sound_system</ref>;</highlight></codeline>
+<codeline lineno="533" refid="struct_a_v_i_a_m_f_submix_layout_1a8f99b330098bd9a74d1adc15e5875d8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1a8f99b330098bd9a74d1adc15e5875d8a" kindref="member">integrated_loudness</ref>;</highlight></codeline>
+<codeline lineno="538" refid="struct_a_v_i_a_m_f_submix_layout_1a149a634b6dcb696298a9e4b0fae4b280" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1a149a634b6dcb696298a9e4b0fae4b280" kindref="member">digital_peak</ref>;</highlight></codeline>
+<codeline lineno="542" refid="struct_a_v_i_a_m_f_submix_layout_1a000d61b4e8bb808f58df0a545f90354e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1a000d61b4e8bb808f58df0a545f90354e" kindref="member">true_peak</ref>;</highlight></codeline>
+<codeline lineno="546" refid="struct_a_v_i_a_m_f_submix_layout_1a37beff1fb7e97197e94bae03aa7e23c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1a37beff1fb7e97197e94bae03aa7e23c7" kindref="member">dialogue_anchored_loudness</ref>;</highlight></codeline>
+<codeline lineno="550" refid="struct_a_v_i_a_m_f_submix_layout_1a88667ae0489f97550e1223f6b386f935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout_1a88667ae0489f97550e1223f6b386f935" kindref="member">album_anchored_loudness</ref>;</highlight></codeline>
+<codeline lineno="551" refid="group__lavu__iamf__mix_1gaa48ccc98ae70def8fcc01d6878ae5b99" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_submix_layout" kindref="compound">AVIAMFSubmixLayout</ref>;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559" refid="struct_a_v_i_a_m_f_submix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref><sp/>{</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568" refid="struct_a_v_i_a_m_f_submix_1a56391d180e95ad6132995260c82e1594" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_submix_element" kindref="compound">AVIAMFSubmixElement</ref><sp/>**<ref refid="struct_a_v_i_a_m_f_submix_1a56391d180e95ad6132995260c82e1594" kindref="member">elements</ref>;</highlight></codeline>
+<codeline lineno="575" refid="struct_a_v_i_a_m_f_submix_1a44edc6c71cd8f894177ccc7b9602941f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_submix_1a44edc6c71cd8f894177ccc7b9602941f" kindref="member">nb_elements</ref>;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583" refid="struct_a_v_i_a_m_f_submix_1aaf6457b811ec92599555caffa54dd361" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_submix_layout" kindref="compound">AVIAMFSubmixLayout</ref><sp/>**<ref refid="struct_a_v_i_a_m_f_submix_1aaf6457b811ec92599555caffa54dd361" kindref="member">layouts</ref>;</highlight></codeline>
+<codeline lineno="590" refid="struct_a_v_i_a_m_f_submix_1acc79387d918e7600a185435eab1f40dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_submix_1acc79387d918e7600a185435eab1f40dc" kindref="member">nb_layouts</ref>;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598" refid="struct_a_v_i_a_m_f_submix_1abbc5dbe5c8e680ac512be34015a55259" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_param_definition" kindref="compound">AVIAMFParamDefinition</ref><sp/>*<ref refid="struct_a_v_i_a_m_f_submix_1abbc5dbe5c8e680ac512be34015a55259" kindref="member">output_mix_config</ref>;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606" refid="struct_a_v_i_a_m_f_submix_1a0188f06290867fd81a21480b844178cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_i_a_m_f_submix_1a0188f06290867fd81a21480b844178cf" kindref="member">default_mix_gain</ref>;</highlight></codeline>
+<codeline lineno="607" refid="group__lavu__iamf__mix_1ga313b3a7a7df91c82f93ed11b5e183813" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref>;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616" refid="struct_a_v_i_a_m_f_mix_presentation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref><sp/>{</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625" refid="struct_a_v_i_a_m_f_mix_presentation_1ac155c946081a40d49251226984ee3b80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref><sp/>**<ref refid="struct_a_v_i_a_m_f_mix_presentation_1ac155c946081a40d49251226984ee3b80" kindref="member">submixes</ref>;</highlight></codeline>
+<codeline lineno="632" refid="struct_a_v_i_a_m_f_mix_presentation_1a7e1e631a5c1c484329f22d12ddeea151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_i_a_m_f_mix_presentation_1a7e1e631a5c1c484329f22d12ddeea151" kindref="member">nb_submixes</ref>;</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644" refid="struct_a_v_i_a_m_f_mix_presentation_1ab33c73aa840d3e79e8acfee751d1f13c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>AVDictionary<sp/>*<ref refid="struct_a_v_i_a_m_f_mix_presentation_1ab33c73aa840d3e79e8acfee751d1f13c" kindref="member">annotations</ref>;</highlight></codeline>
+<codeline lineno="645" refid="group__lavu__iamf__mix_1gadae63c566b73e9636b0356872afdec01" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref>;</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_iamf_mix_presentation_get_class(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656" refid="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref><sp/>*<ref refid="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" kindref="member">av_iamf_mix_presentation_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665" refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref><sp/>*<ref refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kindref="member">av_iamf_mix_presentation_add_submix</ref>(<ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref><sp/>*mix_presentation);</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674" refid="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix_element" kindref="compound">AVIAMFSubmixElement</ref><sp/>*<ref refid="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" kindref="member">av_iamf_submix_add_element</ref>(<ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref><sp/>*submix);</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683" refid="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" refkind="member"><highlight class="normal"><ref refid="struct_a_v_i_a_m_f_submix_layout" kindref="compound">AVIAMFSubmixLayout</ref><sp/>*<ref refid="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" kindref="member">av_iamf_submix_add_layout</ref>(<ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref><sp/>*submix);</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691" refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kindref="member">av_iamf_mix_presentation_free</ref>(<ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref><sp/>**mix_presentation);</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_IAMF_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_dynamic_h_d_r_vivid" kind="struct" language="C++" prot="public">
+    <compoundname>AVDynamicHDRVivid</compoundname>
+    <includes refid="hdr__dynamic__vivid__metadata_8h" local="no">hdr_dynamic_vivid_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_vivid_1a5b420fdc49bff7a62b89d182c0fd8b7e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRVivid::system_start_code</definition>
+        <argsstring></argsstring>
+        <name>system_start_code</name>
+        <qualifiedname>AVDynamicHDRVivid::system_start_code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The system start code. The value shall be set to 0x01. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="260" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_vivid_1a329c6373ec2a4e49c2bd2996531a44bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDynamicHDRVivid::num_windows</definition>
+        <argsstring></argsstring>
+        <name>num_windows</name>
+        <qualifiedname>AVDynamicHDRVivid::num_windows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of processing windows. The value shall be set to 0x01 if the system_start_code is 0x01. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="266" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_dynamic_h_d_r_vivid_1a7a724783ed6fd50ca029f93f5eb9572d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_h_d_r_vivid_color_transform_params" kindref="compound">AVHDRVividColorTransformParams</ref></type>
+        <definition>AVHDRVividColorTransformParams AVDynamicHDRVivid::params[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>params</name>
+        <qualifiedname>AVDynamicHDRVivid::params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The color transform parameters for every processing window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="271" column="36" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct represents dynamic metadata for color volume transform - CUVA 005.1:2021 standard</para>
+<para>To be used as payload of a <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> or <ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> with the appropriate type.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with av_dynamic_hdr_vivid_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDynamicHDRVivid</label>
+        <link refid="struct_a_v_dynamic_h_d_r_vivid"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVHDRVivid3SplineParams</label>
+        <link refid="struct_a_v_h_d_r_vivid3_spline_params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>enable_strength</edgelabel>
+          <edgelabel>th_delta1</edgelabel>
+          <edgelabel>th_delta2</edgelabel>
+          <edgelabel>th_enable</edgelabel>
+          <edgelabel>th_enable_mb</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVHDRVividColorToneMappingParams</label>
+        <link refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>base_param_Delta</edgelabel>
+          <edgelabel>base_param_m_a</edgelabel>
+          <edgelabel>base_param_m_b</edgelabel>
+          <edgelabel>base_param_m_m</edgelabel>
+          <edgelabel>base_param_m_n</edgelabel>
+          <edgelabel>base_param_m_p</edgelabel>
+          <edgelabel>targeted_system_display_maximum_luminance</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>three_spline</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVHDRVividColorTransformParams</label>
+        <link refid="struct_a_v_h_d_r_vivid_color_transform_params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>average_maxrgb</edgelabel>
+          <edgelabel>color_saturation_gain</edgelabel>
+          <edgelabel>maximum_maxrgb</edgelabel>
+          <edgelabel>minimum_maxrgb</edgelabel>
+          <edgelabel>variance_maxrgb</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tm_params</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="256" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" bodystart="256" bodyend="272"/>
+    <listofallmembers>
+      <member refid="struct_a_v_dynamic_h_d_r_vivid_1a329c6373ec2a4e49c2bd2996531a44bc" prot="public" virt="non-virtual"><scope>AVDynamicHDRVivid</scope><name>num_windows</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_vivid_1a7a724783ed6fd50ca029f93f5eb9572d" prot="public" virt="non-virtual"><scope>AVDynamicHDRVivid</scope><name>params</name></member>
+      <member refid="struct_a_v_dynamic_h_d_r_vivid_1a5b420fdc49bff7a62b89d182c0fd8b7e" prot="public" virt="non-virtual"><scope>AVDynamicHDRVivid</scope><name>system_start_code</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

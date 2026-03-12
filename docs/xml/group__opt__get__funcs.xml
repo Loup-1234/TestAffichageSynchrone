@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__opt__get__funcs" kind="group">
+    <compoundname>opt_get_funcs</compoundname>
+    <title>Option getting functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__opt__get__funcs_1gaf31144e60f9ce89dbe8cbea57a0b232c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, uint8_t **out_val)</argsstring>
+        <name>av_opt_get</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>the returned string will be <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>ed and must be <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>ed by the caller</para>
+</simplesect>
+<simplesect kind="note"><para>if AV_OPT_ALLOW_NULL is set in search_flags in av_opt_get, and the option is of type AV_OPT_TYPE_STRING, AV_OPT_TYPE_BINARY or AV_OPT_TYPE_DICT and is set to NULL, *out_val will be set to NULL instead of an allocated empty string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="987" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="987" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1gaab5b9c0969efe56420536a5d190e59bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_int</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, int64_t *out_val)</argsstring>
+        <name>av_opt_get_int</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="988" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="988" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga4ee50245cd18a65ec1cd27bc8e0cab83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_double</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, double *out_val)</argsstring>
+        <name>av_opt_get_double</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="989" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="989" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1gabc553a1b95468f935eedfa9db86e2a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_q</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, AVRational *out_val)</argsstring>
+        <name>av_opt_get_q</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="990" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="990" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga96d9c726c3feff308e7fe447633c9720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_image_size</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, int *w_out, int *h_out)</argsstring>
+        <name>av_opt_get_image_size</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>w_out</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>h_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="991" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="991" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga41fdd93f0483e96548168f9cfaf5bf6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_pixel_fmt</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, enum AVPixelFormat *out_fmt)</argsstring>
+        <name>av_opt_get_pixel_fmt</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+          <declname>out_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="992" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="992" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1gade39dd8ce34b193f7012022072e36642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_sample_fmt</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, enum AVSampleFormat *out_fmt)</argsstring>
+        <name>av_opt_get_sample_fmt</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> *</type>
+          <declname>out_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="993" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="993" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1gaf565dc77c53e8e56d08ee1a3c642f95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_video_rate</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, AVRational *out_val)</argsstring>
+        <name>av_opt_get_video_rate</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="994" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="994" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga4f83e9c58c2c2b444655ccee034e69cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_chlayout</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, AVChannelLayout *layout)</argsstring>
+        <name>av_opt_get_chlayout</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The returned layout is a copy of the actual value and must be freed with <ref refid="group__lavu__audio__channels_1ga95f7befa6afcea5958c095da37c4ea04" kindref="member">av_channel_layout_uninit()</ref> by the caller </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="999" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="999" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga6ed0b77def62321ff995843211405338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_dict_val</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, AVDictionary **out_val)</argsstring>
+        <name>av_opt_get_dict_val</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">out_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The returned dictionary is a copy of the actual value and must be freed with <ref refid="group__lavu__dict_1ga1bafd682b1fbb90e48a4cc3814b820f7" kindref="member">av_dict_free()</ref> by the caller </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1004" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1004" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga49f5145a3d5d8f5f0f609bf6e27f6529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_array_size</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, unsigned int *out_val)</argsstring>
+        <name>av_opt_get_array_size</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For an array-type option, get the number of elements in the array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1009" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1009" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__opt__get__funcs_1ga304368d54d52e8850b8b507b54e95170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_opt_get_array</definition>
+        <argsstring>(void *obj, const char *name, int search_flags, unsigned int start_elem, unsigned int nb_elems, enum AVOptionType out_type, void *out_val)</argsstring>
+        <name>av_opt_get_array</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>search_flags</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>start_elem</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>nb_elems</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__avoptions_1gabd75aa30eb8ad6387672df9a1fa79444" kindref="member">AVOptionType</ref></type>
+          <declname>out_type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>out_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For an array-type option, retrieve the values of one or more array elements.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the first array element to retrieve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of array elements to retrieve; start_elem+nb_elems must not be larger than array size as returned by <ref refid="group__opt__get__funcs_1ga49f5145a3d5d8f5f0f609bf6e27f6529" kindref="member">av_opt_get_array_size()</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Option type corresponding to the desired output. <verbatim>            The array elements produced by this function will
+            will be as if av_opt_getX() was called for each element,
+            where X is specified by out_type. E.g. AV_OPT_TYPE_STRING
+            corresponds to av_opt_get().
+
+            Typically this should be the same as the scalarized type of
+            the AVOption being retrieved, but certain conversions are
+            also possible - the same as those done by the corresponding
+            av_opt_get*() function. E.g. any option type can be retrieved
+            as a string, numeric types can be retrieved as int64, double,
+            or rational, etc.
+</verbatim></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array with nb_elems members into which the output will be written. The array type must match the underlying C type as documented for out_type, and be zeroed on entry to this function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+For dynamically allocated types (strings, binary, dicts, etc.), the result is owned and freed by the caller. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="1042" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" declline="1042" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Those functions get a value of the option with the given name from an object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a struct whose first element is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the option to get. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">search_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flags passed to av_opt_find2. I.e. if AV_OPT_SEARCH_CHILDREN is passed here, then the option may be found in a child of obj. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the option will be written here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

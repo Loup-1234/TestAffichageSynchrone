@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__video__display" kind="group">
+    <compoundname>lavu_video_display</compoundname>
+    <title>Display transformation matrix functions</title>
+    <innerfile refid="display_8h">display.h</innerfile>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__video__display_1gaac2ea94d3f66496c758349450b5b0217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double av_display_rotation_get</definition>
+        <argsstring>(const int32_t matrix[9])</argsstring>
+        <name>av_display_rotation_get</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>matrix</declname>
+          <array>[9]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract the rotation component of the transformation matrix.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transformation matrix </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the angle (in degrees) by which the transformation rotates the frame counterclockwise. The angle will be in range [-180.0, 180.0], or NaN if the matrix is singular.</para>
+</simplesect>
+<simplesect kind="note"><para>floating point numbers are inherently inexact, so callers are recommended to round the return value to nearest integer before use. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" line="84" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" declline="84" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__display_1ga5964303bfe085ad33683bc2454768d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_display_rotation_set</definition>
+        <argsstring>(int32_t matrix[9], double angle)</argsstring>
+        <name>av_display_rotation_set</name>
+        <param>
+          <type>int32_t</type>
+          <declname>matrix</declname>
+          <array>[9]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a transformation matrix describing a pure clockwise rotation by the specified angle (in degrees).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a transformation matrix (will be fully overwritten by this function) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rotation angle in degrees. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" line="94" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" declline="94" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__display_1gadd236b7ced34637aa9f0a9bceaeac5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_display_matrix_flip</definition>
+        <argsstring>(int32_t matrix[9], int hflip, int vflip)</argsstring>
+        <name>av_display_matrix_flip</name>
+        <param>
+          <type>int32_t</type>
+          <declname>matrix</declname>
+          <array>[9]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hflip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vflip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flip the input matrix horizontally and/or vertically.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a transformation matrix </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hflip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the matrix should be flipped horizontally </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vflip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the matrix should be flipped vertically </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" line="103" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/display.h" declline="103" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The display transformation matrix specifies an affine transformation that should be applied to video frames for correct presentation. It is compatible with the matrices stored in the ISO/IEC 14496-12 container format.</para>
+<para>The data is a 3x3 matrix represented as a 9-element array:</para>
+<para><programlisting filename=".unparsed"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>a<sp/>b<sp/>u<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">(a,<sp/>b,<sp/>u,<sp/>c,<sp/>d,<sp/>v,<sp/>x,<sp/>y,<sp/>w)<sp/>-&gt;<sp/>|<sp/>c<sp/>d<sp/>v<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>x<sp/>y<sp/>w<sp/>|</highlight></codeline>
+</programlisting></para>
+<para>All numbers are stored in native endianness, as 16.16 fixed-point values, except for u, v and w, which are stored as 2.30 fixed-point values.</para>
+<para>The transformation maps a point (p, q) in the source (pre-transformation) frame to the point (p&apos;, q&apos;) in the destination (post-transformation) frame as follows:</para>
+<para><programlisting filename=".unparsed"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>a<sp/>b<sp/>u<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">(p,<sp/>q,<sp/>1)<sp/>.<sp/>|<sp/>c<sp/>d<sp/>v<sp/>|<sp/>=<sp/>z<sp/>*<sp/>(p&apos;,<sp/>q&apos;,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>x<sp/>y<sp/>w<sp/>|</highlight></codeline>
+</programlisting></para>
+<para>The transformation can also be more explicitly written in components as follows:</para>
+<para><programlisting filename=".unparsed"><codeline><highlight class="normal">p&apos;<sp/>=<sp/>(a<sp/>*<sp/>p<sp/>+<sp/>c<sp/>*<sp/>q<sp/>+<sp/>x)<sp/>/<sp/>z;</highlight></codeline>
+<codeline><highlight class="normal">q&apos;<sp/>=<sp/>(b<sp/>*<sp/>p<sp/>+<sp/>d<sp/>*<sp/>q<sp/>+<sp/>y)<sp/>/<sp/>z;</highlight></codeline>
+<codeline><highlight class="normal">z<sp/><sp/>=<sp/><sp/>u<sp/>*<sp/>p<sp/>+<sp/>v<sp/>*<sp/>q<sp/>+<sp/>w</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

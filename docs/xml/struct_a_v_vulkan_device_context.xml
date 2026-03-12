@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_vulkan_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVulkanDeviceContext</compoundname>
+    <includes refid="hwcontext__vulkan_8h" local="no">hwcontext_vulkan.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a4a617020274526c26e265781aefcd22c" prot="public" static="no" mutable="no">
+        <type>const VkAllocationCallbacks *</type>
+        <definition>const VkAllocationCallbacks* AVVulkanDeviceContext::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <qualifiedname>AVVulkanDeviceContext::alloc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom memory allocator, else NULL </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="63" column="33" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1ae474efae27f4861ed96a941965410c6a" prot="public" static="no" mutable="no">
+        <type>PFN_vkGetInstanceProcAddr</type>
+        <definition>PFN_vkGetInstanceProcAddr AVVulkanDeviceContext::get_proc_addr</definition>
+        <argsstring></argsstring>
+        <name>get_proc_addr</name>
+        <qualifiedname>AVVulkanDeviceContext::get_proc_addr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a vkGetInstanceProcAddr loading function. If unset, will dynamically load and use libvulkan. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="69" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1abb0e7a4336731e84eb1b25571635d243" prot="public" static="no" mutable="no">
+        <type>VkInstance</type>
+        <definition>VkInstance AVVulkanDeviceContext::inst</definition>
+        <argsstring></argsstring>
+        <name>inst</name>
+        <qualifiedname>AVVulkanDeviceContext::inst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vulkan instance. Must be at least version 1.3. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="74" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a154f2a1f99a153cdb9a801b2504d6637" prot="public" static="no" mutable="no">
+        <type>VkPhysicalDevice</type>
+        <definition>VkPhysicalDevice AVVulkanDeviceContext::phys_dev</definition>
+        <argsstring></argsstring>
+        <name>phys_dev</name>
+        <qualifiedname>AVVulkanDeviceContext::phys_dev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Physical device </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="79" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a53a07d4474261e4e14ec03c5d15f71da" prot="public" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice AVVulkanDeviceContext::act_dev</definition>
+        <argsstring></argsstring>
+        <name>act_dev</name>
+        <qualifiedname>AVVulkanDeviceContext::act_dev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Active device </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="84" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1ac1d0d46b238c76cc4d66ddab7180e7ef" prot="public" static="no" mutable="no">
+        <type>VkPhysicalDeviceFeatures2</type>
+        <definition>VkPhysicalDeviceFeatures2 AVVulkanDeviceContext::device_features</definition>
+        <argsstring></argsstring>
+        <name>device_features</name>
+        <qualifiedname>AVVulkanDeviceContext::device_features</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure should be set to the set of features that present and enabled during device creation. When a device is created by FFmpeg, it will default to enabling all that are present of the shaderImageGatherExtended, fragmentStoresAndAtomics, shaderInt64 and vertexPipelineStoresAndAtomics features. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="92" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a8d68b5373defea792ad340e698d9b409" prot="public" static="no" mutable="no">
+        <type>const char *const  *</type>
+        <definition>const char* const* AVVulkanDeviceContext::enabled_inst_extensions</definition>
+        <argsstring></argsstring>
+        <name>enabled_inst_extensions</name>
+        <qualifiedname>AVVulkanDeviceContext::enabled_inst_extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enabled instance extensions. If supplying your own device context, set this to an array of strings, with each entry containing the specified Vulkan extension string to enable. Duplicates are possible and accepted. If no extensions are enabled, set these fields to NULL, and 0 respectively. <ref refid="hwcontext__vulkan_8h_1ae8feb04d1e132287f08282ec752c8a99" kindref="member">av_vk_get_optional_instance_extensions()</ref> can be used to enumerate extensions that FFmpeg may use if enabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="103" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a371a0b0216b2e8a56cecbc1e496c04d5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVulkanDeviceContext::nb_enabled_inst_extensions</definition>
+        <argsstring></argsstring>
+        <name>nb_enabled_inst_extensions</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_enabled_inst_extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="104" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a38e84a1e98b06831031e7abb915f4190" prot="public" static="no" mutable="no">
+        <type>const char *const  *</type>
+        <definition>const char* const* AVVulkanDeviceContext::enabled_dev_extensions</definition>
+        <argsstring></argsstring>
+        <name>enabled_dev_extensions</name>
+        <qualifiedname>AVVulkanDeviceContext::enabled_dev_extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enabled device extensions. By default, VK_KHR_external_memory_fd, VK_EXT_external_memory_dma_buf, VK_EXT_image_drm_format_modifier, VK_KHR_external_semaphore_fd and VK_EXT_external_memory_host are enabled if found. If supplying your own device context, these fields takes the same format as the above fields, with the same conditions that duplicates are possible and accepted, and that NULL and 0 respectively means no extensions are enabled. <ref refid="hwcontext__vulkan_8h_1ac525956139645795337d7b802f5c5e93" kindref="member">av_vk_get_optional_device_extensions()</ref> can be used to enumerate extensions that FFmpeg may use if enabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="116" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1ac40732ea5eeffe1b231d21d9df10e658" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVulkanDeviceContext::nb_enabled_dev_extensions</definition>
+        <argsstring></argsstring>
+        <name>nb_enabled_dev_extensions</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_enabled_dev_extensions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="117" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a28877ef4bd4c821dabc216fc7be3b3a9" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::queue_family_index</definition>
+        <argsstring></argsstring>
+        <name>queue_family_index</name>
+        <qualifiedname>AVVulkanDeviceContext::queue_family_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family index for graphics operations, and the number of queues enabled for it. If unavailable, will be set to -1. Not required. av_hwdevice_create() will attempt to find a dedicated queue for each queue family, or pick the one with the least unrelated flags set. Queue indices here may overlap if a queue has to share capabilities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="128" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a09e9b0b199f0a08da115fc682a0062a8" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::nb_graphics_queues</definition>
+        <argsstring></argsstring>
+        <name>nb_graphics_queues</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_graphics_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="130" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1adba57eba034fc91880cc9bbae0740241" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::queue_family_tx_index</definition>
+        <argsstring></argsstring>
+        <name>queue_family_tx_index</name>
+        <qualifiedname>AVVulkanDeviceContext::queue_family_tx_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family index for transfer operations and the number of queues enabled. Required. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="137" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1adcb8064952b260629c4571a2b173deae" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::nb_tx_queues</definition>
+        <argsstring></argsstring>
+        <name>nb_tx_queues</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_tx_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="139" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a1f1af5266b66edf90c315b40c1baddb6" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::queue_family_comp_index</definition>
+        <argsstring></argsstring>
+        <name>queue_family_comp_index</name>
+        <qualifiedname>AVVulkanDeviceContext::queue_family_comp_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family index for compute operations and the number of queues enabled. Required. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="146" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a2b0affd99687f33b7d428143b9049ef4" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::nb_comp_queues</definition>
+        <argsstring></argsstring>
+        <name>nb_comp_queues</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_comp_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="148" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a1e13af1dae900d552c0fcaf09ed5e700" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::queue_family_encode_index</definition>
+        <argsstring></argsstring>
+        <name>queue_family_encode_index</name>
+        <qualifiedname>AVVulkanDeviceContext::queue_family_encode_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family index for video encode ops, and the amount of queues enabled. If the device doesn&apos;t support such, queue_family_encode_index will be -1. Not required. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="156" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a2ab21701bafd248938366fc9eba7f017" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::nb_encode_queues</definition>
+        <argsstring></argsstring>
+        <name>nb_encode_queues</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_encode_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="158" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a08bd48c4fe745818d89bd89ab23b2b87" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::queue_family_decode_index</definition>
+        <argsstring></argsstring>
+        <name>queue_family_decode_index</name>
+        <qualifiedname>AVVulkanDeviceContext::queue_family_decode_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family index for video decode ops, and the amount of queues enabled. If the device doesn&apos;t support such, queue_family_decode_index will be -1. Not required. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="166" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1ad7bf40a09782cb2ce82e77aca3f60e7b" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated int</type>
+        <definition>attribute_deprecated int AVVulkanDeviceContext::nb_decode_queues</definition>
+        <argsstring></argsstring>
+        <name>nb_decode_queues</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_decode_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="168" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a75d028f2e5330a4231fdf9ea1dbfe776" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVVulkanDeviceContext::lock_queue) (struct AVHWDeviceContext *ctx, uint32_t queue_family, uint32_t index)</definition>
+        <argsstring>)(struct AVHWDeviceContext *ctx, uint32_t queue_family, uint32_t index)</argsstring>
+        <name>lock_queue</name>
+        <qualifiedname>AVVulkanDeviceContext::lock_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locks a queue, preventing other threads from submitting any command buffers to this queue. If set to NULL, will be set to lavu-internal functions that utilize a mutex. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="177" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1af037e6811efd9101d2e155a677554b0d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVVulkanDeviceContext::unlock_queue) (struct AVHWDeviceContext *ctx, uint32_t queue_family, uint32_t index)</definition>
+        <argsstring>)(struct AVHWDeviceContext *ctx, uint32_t queue_family, uint32_t index)</argsstring>
+        <name>unlock_queue</name>
+        <qualifiedname>AVVulkanDeviceContext::unlock_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="struct_a_v_vulkan_device_context_1a75d028f2e5330a4231fdf9ea1dbfe776" kindref="member">lock_queue()</ref>, unlocks a queue. Must only be called after locking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="182" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1a215cc6b8846031029e1708f346e189c0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_vulkan_device_queue_family" kindref="compound">AVVulkanDeviceQueueFamily</ref></type>
+        <definition>AVVulkanDeviceQueueFamily AVVulkanDeviceContext::qf[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>qf</name>
+        <qualifiedname>AVVulkanDeviceContext::qf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue families used. Must be preferentially ordered. List may contain duplicates.</para>
+<para>For compatibility reasons, all the enabled queue families listed above (queue_family_(tx/comp/encode/decode)_index) must also be included in this list until they&apos;re removed after deprecation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="192" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_device_context_1aa4badabd2157934df2499f77e993b99a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVulkanDeviceContext::nb_qf</definition>
+        <argsstring></argsstring>
+        <name>nb_qf</name>
+        <qualifiedname>AVVulkanDeviceContext::nb_qf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="193" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main Vulkan context, allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref>. All of these can be set before init to change what the context uses </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVVulkanDeviceContext</label>
+        <link refid="struct_a_v_vulkan_device_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>qf</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVVulkanDeviceQueueFamily</label>
+        <link refid="struct_a_v_vulkan_device_queue_family"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="59" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="59" bodyend="194"/>
+    <listofallmembers>
+      <member refid="struct_a_v_vulkan_device_context_1a53a07d4474261e4e14ec03c5d15f71da" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>act_dev</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a4a617020274526c26e265781aefcd22c" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>alloc</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1ac1d0d46b238c76cc4d66ddab7180e7ef" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>device_features</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a38e84a1e98b06831031e7abb915f4190" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>enabled_dev_extensions</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a8d68b5373defea792ad340e698d9b409" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>enabled_inst_extensions</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1ae474efae27f4861ed96a941965410c6a" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>get_proc_addr</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1abb0e7a4336731e84eb1b25571635d243" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>inst</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a75d028f2e5330a4231fdf9ea1dbfe776" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>lock_queue</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a2b0affd99687f33b7d428143b9049ef4" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_comp_queues</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1ad7bf40a09782cb2ce82e77aca3f60e7b" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_decode_queues</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1ac40732ea5eeffe1b231d21d9df10e658" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_enabled_dev_extensions</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a371a0b0216b2e8a56cecbc1e496c04d5" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_enabled_inst_extensions</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a2ab21701bafd248938366fc9eba7f017" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_encode_queues</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a09e9b0b199f0a08da115fc682a0062a8" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_graphics_queues</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1aa4badabd2157934df2499f77e993b99a" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_qf</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1adcb8064952b260629c4571a2b173deae" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>nb_tx_queues</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a154f2a1f99a153cdb9a801b2504d6637" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>phys_dev</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a215cc6b8846031029e1708f346e189c0" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>qf</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a1f1af5266b66edf90c315b40c1baddb6" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>queue_family_comp_index</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a08bd48c4fe745818d89bd89ab23b2b87" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>queue_family_decode_index</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a1e13af1dae900d552c0fcaf09ed5e700" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>queue_family_encode_index</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1a28877ef4bd4c821dabc216fc7be3b3a9" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>queue_family_index</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1adba57eba034fc91880cc9bbae0740241" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>queue_family_tx_index</name></member>
+      <member refid="struct_a_v_vulkan_device_context_1af037e6811efd9101d2e155a677554b0d" prot="public" virt="non-virtual"><scope>AVVulkanDeviceContext</scope><name>unlock_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

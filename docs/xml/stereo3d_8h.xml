@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="stereo3d_8h" kind="file" language="C++">
+    <compoundname>stereo3d.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="frame_8h" local="yes">frame.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="17">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="5">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>errno.h</label>
+      </node>
+      <node id="8">
+        <label>inttypes.h</label>
+      </node>
+      <node id="9">
+        <label>limits.h</label>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="24">
+        <label>stdarg.h</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>stdlib.h</label>
+      </node>
+      <node id="13">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_stereo3_d" prot="public">AVStereo3D</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavu__video__stereo3d_1ga5cca86880e9be72c89bca1c7a41eec99" kind="define"><name>AV_STEREO3D_FLAG_INVERT</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__lavu__video__stereo3d_1ga12fe9672eeaeb8980960faa96d2fcee6" kind="enum"><name>AVStereo3DType</name></member>
+      <member refid="group__lavu__video__stereo3d_1gab99ec95d9ee1a8e7c676a98fe6df6085" kind="enum"><name>AVStereo3DView</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga7341afbb709006af361956d2cd6f4579" kind="enum"><name>AVStereo3DPrimaryEye</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__video__stereo3d_1gacee86b988fcf35e3dfc2eaaa09d433c0" kind="typedef"><name>AVStereo3D</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__video__stereo3d_1ga15529aca5812275dfc7db4fa38900a04" kind="function"><name>av_stereo3d_alloc</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga1817cd9c82f0fbcef702fec0c932c302" kind="function"><name>av_stereo3d_alloc_size</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga8c67e19b28bfbc2f74416c70637fbb3b" kind="function"><name>av_stereo3d_create_side_data</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga426618ed05efd22af0a963f2d4754246" kind="function"><name>av_stereo3d_type_name</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga6a48f4c80b275d74d1e4ba760802a070" kind="function"><name>av_stereo3d_from_name</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga14cd3d5b9791ecd352161efc1db2891a" kind="function"><name>av_stereo3d_view_name</name></member>
+      <member refid="group__lavu__video__stereo3d_1gaf897f90f670e008efa95577625e39a25" kind="function"><name>av_stereo3d_view_from_name</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga98e2782650fadbc6327ccdb311525b16" kind="function"><name>av_stereo3d_primary_eye_name</name></member>
+      <member refid="group__lavu__video__stereo3d_1ga3447e1dbc03a890a659e4853aef12b5d" kind="function"><name>av_stereo3d_primary_eye_from_name</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stereoscopic video </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2013<sp/>Vittorio<sp/>Giovara<sp/>&lt;vittorio.giovara@gmail.com&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_STEREO3D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_STEREO3D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group__lavu__video__stereo3d_1ga12fe9672eeaeb8980960faa96d2fcee6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga12fe9672eeaeb8980960faa96d2fcee6" kindref="member">AVStereo3DType</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a276701c16077443c9526dd28da8001a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a276701c16077443c9526dd28da8001a7" kindref="member">AV_STEREO3D_2D</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6aaa1ee993fc27f99269c536c51b0b5f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6aaa1ee993fc27f99269c536c51b0b5f3c" kindref="member">AV_STEREO3D_SIDEBYSIDE</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a4cf21029b6e5aa28bf53fbd9740443c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a4cf21029b6e5aa28bf53fbd9740443c9" kindref="member">AV_STEREO3D_TOPBOTTOM</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6aa23e3e6b40107100e62fa16ea536aa07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6aa23e3e6b40107100e62fa16ea536aa07" kindref="member">AV_STEREO3D_FRAMESEQUENCE</ref>,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a29a4a89f56c46999741e394e2019b221" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a29a4a89f56c46999741e394e2019b221" kindref="member">AV_STEREO3D_CHECKERBOARD</ref>,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a6176782f4b7b21776faf6738baa520e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a6176782f4b7b21776faf6738baa520e2" kindref="member">AV_STEREO3D_SIDEBYSIDE_QUINCUNX</ref>,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a23d62b9a67d4a99d745eb9bebcfd2b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a23d62b9a67d4a99d745eb9bebcfd2b3e" kindref="member">AV_STEREO3D_LINES</ref>,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a1ea7966fe2696b13348a3cf0544e3caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a1ea7966fe2696b13348a3cf0544e3caa" kindref="member">AV_STEREO3D_COLUMNS</ref>,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a7e54f963ebc5d0083fb405258dd277c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga12fe9672eeaeb8980960faa96d2fcee6a7e54f963ebc5d0083fb405258dd277c6" kindref="member">AV_STEREO3D_UNSPEC</ref>,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="group__lavu__video__stereo3d_1gab99ec95d9ee1a8e7c676a98fe6df6085" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1gab99ec95d9ee1a8e7c676a98fe6df6085" kindref="member">AVStereo3DView</ref><sp/>{</highlight></codeline>
+<codeline lineno="153" refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a49499de043f603aee862d004c16f6936" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a49499de043f603aee862d004c16f6936" kindref="member">AV_STEREO3D_VIEW_PACKED</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a779648f9fa3044c29210a5960027ca0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a779648f9fa3044c29210a5960027ca0b" kindref="member">AV_STEREO3D_VIEW_LEFT</ref>,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a140ccbd9236e523795db746095c41943" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a140ccbd9236e523795db746095c41943" kindref="member">AV_STEREO3D_VIEW_RIGHT</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a885e36e2bf8e30093f459d68886115cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1ggab99ec95d9ee1a8e7c676a98fe6df6085a885e36e2bf8e30093f459d68886115cd" kindref="member">AV_STEREO3D_VIEW_UNSPEC</ref>,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="group__lavu__video__stereo3d_1ga7341afbb709006af361956d2cd6f4579" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga7341afbb709006af361956d2cd6f4579" kindref="member">AVStereo3DPrimaryEye</ref><sp/>{</highlight></codeline>
+<codeline lineno="178" refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579a8008a184789f1d6467d27db8bff56003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579a8008a184789f1d6467d27db8bff56003" kindref="member">AV_PRIMARY_EYE_NONE</ref>,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579ae143890ce9cd53c0af65e7e6971103cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579ae143890ce9cd53c0af65e7e6971103cd" kindref="member">AV_PRIMARY_EYE_LEFT</ref>,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579aea93a86ecb82edad956a9f961a6b85a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__video__stereo3d_1gga7341afbb709006af361956d2cd6f4579aea93a86ecb82edad956a9f961a6b85a5" kindref="member">AV_PRIMARY_EYE_RIGHT</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="group__lavu__video__stereo3d_1ga5cca86880e9be72c89bca1c7a41eec99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_STEREO3D_FLAG_INVERT<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="struct_a_v_stereo3_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref><sp/>{</highlight></codeline>
+<codeline lineno="207" refid="struct_a_v_stereo3_d_1a052514d0376a94e58e3eb9db3db2a7ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga12fe9672eeaeb8980960faa96d2fcee6" kindref="member">AVStereo3DType</ref><sp/><ref refid="struct_a_v_stereo3_d_1a052514d0376a94e58e3eb9db3db2a7ce" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="struct_a_v_stereo3_d_1a9e74d14d6b5dddcd6126da075558f102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_stereo3_d_1a9e74d14d6b5dddcd6126da075558f102" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="struct_a_v_stereo3_d_1adda070026c20a883b3eb30ed662faceb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1gab99ec95d9ee1a8e7c676a98fe6df6085" kindref="member">AVStereo3DView</ref><sp/><ref refid="struct_a_v_stereo3_d_1adda070026c20a883b3eb30ed662faceb" kindref="member">view</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="struct_a_v_stereo3_d_1a9bd26992c762f990ea28e41dc944e4b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga7341afbb709006af361956d2cd6f4579" kindref="member">AVStereo3DPrimaryEye</ref><sp/><ref refid="struct_a_v_stereo3_d_1a9bd26992c762f990ea28e41dc944e4b1" kindref="member">primary_eye</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="struct_a_v_stereo3_d_1a057bd37844c7bc3e02ec1521c94a3b54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_stereo3_d_1a057bd37844c7bc3e02ec1521c94a3b54" kindref="member">baseline</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="struct_a_v_stereo3_d_1a710709c0d27e723a7c67c3e7bfc0f585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_stereo3_d_1a710709c0d27e723a7c67c3e7bfc0f585" kindref="member">horizontal_disparity_adjustment</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="struct_a_v_stereo3_d_1ac05a280f65b4853238f361ca7c7c11b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_stereo3_d_1ac05a280f65b4853238f361ca7c7c11b9" kindref="member">horizontal_field_of_view</ref>;</highlight></codeline>
+<codeline lineno="240" refid="group__lavu__video__stereo3d_1gacee86b988fcf35e3dfc2eaaa09d433c0" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="group__lavu__video__stereo3d_1ga15529aca5812275dfc7db4fa38900a04" refkind="member"><highlight class="normal"><ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref><sp/>*<ref refid="group__lavu__video__stereo3d_1ga15529aca5812275dfc7db4fa38900a04" kindref="member">av_stereo3d_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="group__lavu__video__stereo3d_1ga1817cd9c82f0fbcef702fec0c932c302" refkind="member"><highlight class="normal"><ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref><sp/>*<ref refid="group__lavu__video__stereo3d_1ga1817cd9c82f0fbcef702fec0c932c302" kindref="member">av_stereo3d_alloc_size</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="group__lavu__video__stereo3d_1ga8c67e19b28bfbc2f74416c70637fbb3b" refkind="member"><highlight class="normal"><ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref><sp/>*<ref refid="group__lavu__video__stereo3d_1ga8c67e19b28bfbc2f74416c70637fbb3b" kindref="member">av_stereo3d_create_side_data</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="group__lavu__video__stereo3d_1ga426618ed05efd22af0a963f2d4754246" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__video__stereo3d_1ga426618ed05efd22af0a963f2d4754246" kindref="member">av_stereo3d_type_name</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="group__lavu__video__stereo3d_1ga6a48f4c80b275d74d1e4ba760802a070" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga6a48f4c80b275d74d1e4ba760802a070" kindref="member">av_stereo3d_from_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="group__lavu__video__stereo3d_1ga14cd3d5b9791ecd352161efc1db2891a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__video__stereo3d_1ga14cd3d5b9791ecd352161efc1db2891a" kindref="member">av_stereo3d_view_name</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>view);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="group__lavu__video__stereo3d_1gaf897f90f670e008efa95577625e39a25" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1gaf897f90f670e008efa95577625e39a25" kindref="member">av_stereo3d_view_from_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="group__lavu__video__stereo3d_1ga98e2782650fadbc6327ccdb311525b16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__video__stereo3d_1ga98e2782650fadbc6327ccdb311525b16" kindref="member">av_stereo3d_primary_eye_name</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eye);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="group__lavu__video__stereo3d_1ga3447e1dbc03a890a659e4853aef12b5d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__video__stereo3d_1ga3447e1dbc03a890a659e4853aef12b5d" kindref="member">av_stereo3d_primary_eye_from_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_STEREO3D_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h"/>
+  </compounddef>
+</doxygen>

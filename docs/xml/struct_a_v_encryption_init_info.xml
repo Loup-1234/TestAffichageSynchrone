@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_encryption_init_info" kind="struct" language="C++" prot="public">
+    <compoundname>AVEncryptionInitInfo</compoundname>
+    <includes refid="encryption__info_8h" local="no">encryption_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a382a65e2db4592a799ae4701bd29b81e" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVEncryptionInitInfo::system_id</definition>
+        <argsstring></argsstring>
+        <name>system_id</name>
+        <qualifiedname>AVEncryptionInitInfo::system_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A unique identifier for the key system this is for, can be NULL if it is not known. This should always be 16 bytes, but may change in the future. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="94" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a4a87627576869c7cf282eb6ad3e4bb17" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInitInfo::system_id_size</definition>
+        <argsstring></argsstring>
+        <name>system_id_size</name>
+        <qualifiedname>AVEncryptionInitInfo::system_id_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="95" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a2a3b7706913ff0ecba8e75db35ef931f" prot="public" static="no" mutable="no">
+        <type>uint8_t **</type>
+        <definition>uint8_t** AVEncryptionInitInfo::key_ids</definition>
+        <argsstring></argsstring>
+        <name>key_ids</name>
+        <qualifiedname>AVEncryptionInitInfo::key_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array of key IDs this initialization data is for. All IDs are the same length. Can be NULL if there are no known key IDs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="101" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1aa146edb2a56bd1123318373cd36f1e5b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInitInfo::num_key_ids</definition>
+        <argsstring></argsstring>
+        <name>num_key_ids</name>
+        <qualifiedname>AVEncryptionInitInfo::num_key_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of key IDs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="103" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInitInfo::key_id_size</definition>
+        <argsstring></argsstring>
+        <name>key_id_size</name>
+        <qualifiedname>AVEncryptionInitInfo::key_id_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes in each key ID. This should always be 16, but may change in the future. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="108" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a057b7260a55099838ecee4278a6b69cb" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVEncryptionInitInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>AVEncryptionInitInfo::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Key-system specific initialization data. This data is copied directly from the file and the format depends on the specific key system. This can be NULL if there is no initialization data; in that case, there will be at least one key ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="116" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1aa4b980b6c7e3b9d24f8084e21de4187c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVEncryptionInitInfo::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <qualifiedname>AVEncryptionInitInfo::data_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="117" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_encryption_init_info_1a25a89671f39c5b8d3813df00f0576753" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct_a_v_encryption_init_info" kindref="compound">AVEncryptionInitInfo</ref> *</type>
+        <definition>struct AVEncryptionInitInfo* AVEncryptionInitInfo::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>AVEncryptionInitInfo::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An optional pointer to the next initialization info in the list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="122" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This describes info used to initialize an encryption key system.</para>
+<para>The size of this struct is not part of the public ABI. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVEncryptionInitInfo</label>
+        <link refid="struct_a_v_encryption_init_info"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" line="88" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/encryption_info.h" bodystart="88" bodyend="123"/>
+    <listofallmembers>
+      <member refid="struct_a_v_encryption_init_info_1a057b7260a55099838ecee4278a6b69cb" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>data</name></member>
+      <member refid="struct_a_v_encryption_init_info_1aa4b980b6c7e3b9d24f8084e21de4187c" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>data_size</name></member>
+      <member refid="struct_a_v_encryption_init_info_1a63b474ad39e3d467c00d729aa6e6850c" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>key_id_size</name></member>
+      <member refid="struct_a_v_encryption_init_info_1a2a3b7706913ff0ecba8e75db35ef931f" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>key_ids</name></member>
+      <member refid="struct_a_v_encryption_init_info_1a25a89671f39c5b8d3813df00f0576753" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>next</name></member>
+      <member refid="struct_a_v_encryption_init_info_1aa146edb2a56bd1123318373cd36f1e5b" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>num_key_ids</name></member>
+      <member refid="struct_a_v_encryption_init_info_1a382a65e2db4592a799ae4701bd29b81e" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>system_id</name></member>
+      <member refid="struct_a_v_encryption_init_info_1a4a87627576869c7cf282eb6ad3e4bb17" prot="public" virt="non-virtual"><scope>AVEncryptionInitInfo</scope><name>system_id_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

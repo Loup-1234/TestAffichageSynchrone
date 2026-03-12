@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_v_d_p_a_u_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVDPAUContext</compoundname>
+    <includes refid="vdpau_8h" local="no">vdpau.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_v_d_p_a_u_context_1a54b51de52e8b936c93272cad8e94e395" prot="public" static="no" mutable="no">
+        <type>VdpDecoder</type>
+        <definition>VdpDecoder AVVDPAUContext::decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <qualifiedname>AVVDPAUContext::decoder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>VDPAU decoder handle</para>
+<para>Set by user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="84" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_d_p_a_u_context_1ac007e73409f8171d5aa26c2c1b72454c" prot="public" static="no" mutable="no">
+        <type>VdpDecoderRender *</type>
+        <definition>VdpDecoderRender* AVVDPAUContext::render</definition>
+        <argsstring></argsstring>
+        <name>render</name>
+        <qualifiedname>AVVDPAUContext::render</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>VDPAU decoder render callback</para>
+<para>Set by the user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="91" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_d_p_a_u_context_1af220e2bf6c0093dd63c8384dccccd3d8" prot="public" static="no" mutable="no">
+        <type>AVVDPAU_Render2</type>
+        <definition>AVVDPAU_Render2 AVVDPAUContext::render2</definition>
+        <argsstring></argsstring>
+        <name>render2</name>
+        <qualifiedname>AVVDPAUContext::render2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="93" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure is used to share data between the libavcodec library and the client video application. This structure will be allocated and stored in <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref> by <ref refid="group__lavc__codec__hwaccel__vdpau_1gac56d6b1b4478056afc0e0a8f52271afa" kindref="member">av_vdpau_bind_context()</ref>. Members can be set by the user once during initialization or through each AVCodecContext.get_buffer() function call. In any case, they must be valid prior to calling decoding functions.</para>
+<para>The size of this structure is not a part of the public ABI and must not be used outside of libavcodec. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="10">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="9">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVCodec</label>
+        <link refid="struct_a_v_codec"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>supported_framerates</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>profiles</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ch_layouts</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVCodecContext</label>
+        <link refid="struct_a_v_codec_context"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>codec</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>pkt_timebase</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>rc_override</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>hwaccel</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>hw_device_ctx</edgelabel>
+          <edgelabel>hw_frames_ctx</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>codec_descriptor</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>decoded_side_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AVCodecDescriptor</label>
+        <link refid="struct_a_v_codec_descriptor"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>profiles</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AVHWAccel</label>
+        <link refid="struct_a_v_h_w_accel"/>
+      </node>
+      <node id="4">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="15">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="8">
+        <label>AVProfile</label>
+        <link refid="struct_a_v_profile"/>
+      </node>
+      <node id="5">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>AVVDPAUContext</label>
+        <link refid="struct_a_v_v_d_p_a_u_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>render2</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RcOverride</label>
+        <link refid="struct_rc_override"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" line="78" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h" bodystart="78" bodyend="94"/>
+    <listofallmembers>
+      <member refid="struct_a_v_v_d_p_a_u_context_1a54b51de52e8b936c93272cad8e94e395" prot="public" virt="non-virtual"><scope>AVVDPAUContext</scope><name>decoder</name></member>
+      <member refid="struct_a_v_v_d_p_a_u_context_1ac007e73409f8171d5aa26c2c1b72454c" prot="public" virt="non-virtual"><scope>AVVDPAUContext</scope><name>render</name></member>
+      <member refid="struct_a_v_v_d_p_a_u_context_1af220e2bf6c0093dd63c8384dccccd3d8" prot="public" virt="non-virtual"><scope>AVVDPAUContext</scope><name>render2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__iamf__mix" kind="group">
+    <compoundname>lavu_iamf_mix</compoundname>
+    <title>Mix Presentation</title>
+    <innerclass refid="struct_a_v_i_a_m_f_submix_element" prot="public">AVIAMFSubmixElement</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_submix_layout" prot="public">AVIAMFSubmixLayout</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_submix" prot="public">AVIAMFSubmix</innerclass>
+    <innerclass refid="struct_a_v_i_a_m_f_mix_presentation" prot="public">AVIAMFMixPresentation</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__iamf__mix_1ga5f1494ad734a1c44bafe59bc29f14d2d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVIAMFHeadphonesMode</name>
+        <enumvalue id="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da1cae0734ace33450216bccd1cc9de8cb" prot="public">
+          <name>AV_IAMF_HEADPHONES_MODE_STEREO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The referenced Audio Element shall be rendered to stereo loudspeakers. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__iamf__mix_1gga5f1494ad734a1c44bafe59bc29f14d2da7aecf2dc88704f72cb5ae91813fc7d66" prot="public">
+          <name>AV_IAMF_HEADPHONES_MODE_BINAURAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The referenced Audio Element shall be rendered with a binaural renderer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="432" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="432" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__iamf__mix_1gad35caf7cb8e37aa35055f0662e6a584c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVIAMFSubmixLayoutType</name>
+        <enumvalue id="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca96125c9375628065da5b811d99e4a5fe" prot="public">
+          <name>AV_IAMF_SUBMIX_LAYOUT_TYPE_LOUDSPEAKERS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The layout follows the loudspeaker sound system convention of ITU-2051-3. <ref refid="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" kindref="member">AVIAMFSubmixLayout::sound_system</ref> must be set. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__iamf__mix_1ggad35caf7cb8e37aa35055f0662e6a584ca1dff3c072949ea7f61a29d33154bf865" prot="public">
+          <name>AV_IAMF_SUBMIX_LAYOUT_TYPE_BINAURAL</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The layout is binaural.</para>
+<para><simplesect kind="note"><para><ref refid="struct_a_v_i_a_m_f_submix_layout_1aa9c3b54c73bdc8c32c33adcf78c84f0f" kindref="member">AVIAMFSubmixLayout::sound_system</ref> may be set to AV_CHANNEL_LAYOUT_BINAURAL to simplify API usage, but it&apos;s not mandatory. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="496" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="496" bodyend="509"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__iamf__mix_1ga570ace3fbb48fc77e057a998494e7586" prot="public" static="no">
+        <type>struct AVIAMFSubmixElement</type>
+        <definition>typedef struct AVIAMFSubmixElement AVIAMFSubmixElement</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFSubmixElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submix element as defined in section 3.7 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" kindref="member">av_iamf_submix_add_element()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="494" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__iamf__mix_1gaa48ccc98ae70def8fcc01d6878ae5b99" prot="public" static="no">
+        <type>struct AVIAMFSubmixLayout</type>
+        <definition>typedef struct AVIAMFSubmixLayout AVIAMFSubmixLayout</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFSubmixLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submix layout as defined in section 3.7.6 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" kindref="member">av_iamf_submix_add_layout()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="551" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__iamf__mix_1ga313b3a7a7df91c82f93ed11b5e183813" prot="public" static="no">
+        <type>struct AVIAMFSubmix</type>
+        <definition>typedef struct AVIAMFSubmix AVIAMFSubmix</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFSubmix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submix layout as defined in section 3.7 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kindref="member">av_iamf_mix_presentation_add_submix()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="607" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__iamf__mix_1gadae63c566b73e9636b0356872afdec01" prot="public" static="no">
+        <type>struct AVIAMFMixPresentation</type>
+        <definition>typedef struct AVIAMFMixPresentation AVIAMFMixPresentation</definition>
+        <argsstring></argsstring>
+        <name>AVIAMFMixPresentation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information on how to render and mix one or more <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> to generate the final audio output, as defined in section 3.7 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" kindref="member">av_iamf_mix_presentation_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="645" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__iamf__mix_1gad93577f77238bd82c2ce8502f3563d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_iamf_mix_presentation_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_iamf_mix_presentation_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="647" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="647" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref> *</type>
+        <definition>AVIAMFMixPresentation * av_iamf_mix_presentation_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_iamf_mix_presentation_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a <ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref>, and initializes its fields with default values. No submixes are allocated. Must be freed with <ref refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kindref="member">av_iamf_mix_presentation_free()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kindref="member">av_iamf_mix_presentation_add_submix()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="656" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="656" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref> *</type>
+        <definition>AVIAMFSubmix * av_iamf_mix_presentation_add_submix</definition>
+        <argsstring>(AVIAMFMixPresentation *mix_presentation)</argsstring>
+        <name>av_iamf_mix_presentation_add_submix</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref> *</type>
+          <declname>mix_presentation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a submix and add it to a given <ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref>. It is freed by <ref refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kindref="member">av_iamf_mix_presentation_free()</ref> alongside the rest of the parent <ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref>.</para>
+<para><simplesect kind="return"><para>a pointer to the allocated submix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="665" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="665" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__mix_1gaaf3d8f67a5a8678496494c301c8a8586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_submix_element" kindref="compound">AVIAMFSubmixElement</ref> *</type>
+        <definition>AVIAMFSubmixElement * av_iamf_submix_add_element</definition>
+        <argsstring>(AVIAMFSubmix *submix)</argsstring>
+        <name>av_iamf_submix_add_element</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref> *</type>
+          <declname>submix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a submix element and add it to a given <ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref>. It is freed by <ref refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kindref="member">av_iamf_mix_presentation_free()</ref> alongside the rest of the parent <ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref>.</para>
+<para><simplesect kind="return"><para>a pointer to the allocated submix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="674" column="21" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="674" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__mix_1ga7ecb693b04ba889da7df6c1cbff6b95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_i_a_m_f_submix_layout" kindref="compound">AVIAMFSubmixLayout</ref> *</type>
+        <definition>AVIAMFSubmixLayout * av_iamf_submix_add_layout</definition>
+        <argsstring>(AVIAMFSubmix *submix)</argsstring>
+        <name>av_iamf_submix_add_layout</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref> *</type>
+          <declname>submix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a submix layout and add it to a given <ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref>. It is freed by <ref refid="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" kindref="member">av_iamf_mix_presentation_free()</ref> alongside the rest of the parent <ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref>.</para>
+<para><simplesect kind="return"><para>a pointer to the allocated submix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="683" column="20" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="683" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__iamf__mix_1ga99c34b5d14760eb2b9307253612cce53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_iamf_mix_presentation_free</definition>
+        <argsstring>(AVIAMFMixPresentation **mix_presentation)</argsstring>
+        <name>av_iamf_mix_presentation_free</name>
+        <param>
+          <type><ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref> **</type>
+          <declname>mix_presentation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an <ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref> and all its contents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mix_presentation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to pointer to an allocated <ref refid="struct_a_v_i_a_m_f_mix_presentation" kindref="compound">AVIAMFMixPresentation</ref>. upon return, *mix_presentation will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="691" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" declline="691" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mix Presentations as defined in section 3.7 of IAMF.</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

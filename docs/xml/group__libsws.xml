@@ -1,0 +1,2144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__libsws" kind="group">
+    <compoundname>libsws</compoundname>
+    <title>libswscale</title>
+    <innerfile refid="swscale_8h">swscale.h</innerfile>
+    <innerclass refid="struct_sws_context" prot="public">SwsContext</innerclass>
+    <innerclass refid="struct_sws_vector" prot="public">SwsVector</innerclass>
+    <innerclass refid="struct_sws_filter" prot="public">SwsFilter</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__libsws_1ga7305b190c33d84c6575799b4b593b3b9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SwsDither</name>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9afa87c1d59268142efb82b43f0382f927" prot="public">
+          <name>SWS_DITHER_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a7926b0379b4c7c38a99fc4d47c8b4152" prot="public">
+          <name>SWS_DITHER_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a8441801309e9452833b6a85ce16242f2" prot="public">
+          <name>SWS_DITHER_BAYER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a3b1adb3a6d86a9e5527cc57ba46ed9eb" prot="public">
+          <name>SWS_DITHER_ED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a5045f0dd88bd1fdd0076b010dc12e04d" prot="public">
+          <name>SWS_DITHER_A_DITHER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a6f5ce069fa234800d88ba418b3126927" prot="public">
+          <name>SWS_DITHER_X_DITHER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga7305b190c33d84c6575799b4b593b3b9a0c09ab8f987970d62475b002ed32e83c" prot="public">
+          <name>SWS_DITHER_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="77" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__libsws_1ga878a03b3ee6c5066ee77c5c02b8f1016" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SwsAlphaBlend</name>
+        <enumvalue id="group__libsws_1gga878a03b3ee6c5066ee77c5c02b8f1016a8661b3199ee684757f139875e8541803" prot="public">
+          <name>SWS_ALPHA_BLEND_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga878a03b3ee6c5066ee77c5c02b8f1016a1b2b8fdbfd214b7a26803029a15ad1cc" prot="public">
+          <name>SWS_ALPHA_BLEND_UNIFORM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga878a03b3ee6c5066ee77c5c02b8f1016a7373aae7231a32f184c07a5f97450a6a" prot="public">
+          <name>SWS_ALPHA_BLEND_CHECKERBOARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga878a03b3ee6c5066ee77c5c02b8f1016a5e7f51afefc8b770a98d1897f5e41bd5" prot="public">
+          <name>SWS_ALPHA_BLEND_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="87" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__libsws_1gade664a46fb2652e6050985ebcd316798" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SwsFlags</name>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798ae366a8f172c83a868c4a149ef844f2a7" prot="public">
+          <name>SWS_FAST_BILINEAR</name>
+          <initializer>= 1 &lt;&lt;  0</initializer>
+          <briefdescription>
+<para>fast bilinear filtering </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Scaler selection options. Only one may be active at a time. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a98ac2e5dde17be2430d2ac9a4b70afc6" prot="public">
+          <name>SWS_BILINEAR</name>
+          <initializer>= 1 &lt;&lt;  1</initializer>
+          <briefdescription>
+<para>bilinear filtering </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a57e6f470533fc8b734f69718720e5bf6" prot="public">
+          <name>SWS_BICUBIC</name>
+          <initializer>= 1 &lt;&lt;  2</initializer>
+          <briefdescription>
+<para>2-tap cubic B-spline </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798afb31eda138d9249e341f5442399728de" prot="public">
+          <name>SWS_X</name>
+          <initializer>= 1 &lt;&lt;  3</initializer>
+          <briefdescription>
+<para>experimental </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798afbf7c2808c569ee52d42fe5b8eec6810" prot="public">
+          <name>SWS_POINT</name>
+          <initializer>= 1 &lt;&lt;  4</initializer>
+          <briefdescription>
+<para>nearest neighbor </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a7e70e7c3c6afc8ddd4b288464abd335d" prot="public">
+          <name>SWS_AREA</name>
+          <initializer>= 1 &lt;&lt;  5</initializer>
+          <briefdescription>
+<para>area averaging </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8758e35d29c39b37c3cfe19e81a986c2" prot="public">
+          <name>SWS_BICUBLIN</name>
+          <initializer>= 1 &lt;&lt;  6</initializer>
+          <briefdescription>
+<para>bicubic luma, bilinear chroma </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798adf59bb7e4837683a6f6a8f35e1d3e8fa" prot="public">
+          <name>SWS_GAUSS</name>
+          <initializer>= 1 &lt;&lt;  7</initializer>
+          <briefdescription>
+<para>gaussian approximation </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798aceafe89e45c73cf84170b12d1c717bfc" prot="public">
+          <name>SWS_SINC</name>
+          <initializer>= 1 &lt;&lt;  8</initializer>
+          <briefdescription>
+<para>unwindowed sinc </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798acfcf777352870884cc3fe12481e5e8b3" prot="public">
+          <name>SWS_LANCZOS</name>
+          <initializer>= 1 &lt;&lt;  9</initializer>
+          <briefdescription>
+<para>3-tap sinc/sinc </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a4fac67fa6dd88a7e82b833ae491ccdd8" prot="public">
+          <name>SWS_SPLINE</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+<para>cubic Keys spline </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a6fdd2dbcf5e8c7332980820e7fa4fe79" prot="public">
+          <name>SWS_STRICT</name>
+          <initializer>= 1 &lt;&lt; 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Return an error on underspecified conversions. Without this flag, unspecified fields are defaulted to sensible values. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a27c3d9ff99412848efaab5d6e20e07c7" prot="public">
+          <name>SWS_PRINT_INFO</name>
+          <initializer>= 1 &lt;&lt; 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Emit verbose log of scaling parameters. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798afffe9f6875f303f20155dfaa21348e02" prot="public">
+          <name>SWS_FULL_CHR_H_INT</name>
+          <initializer>= 1 &lt;&lt; 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Perform full chroma upsampling when upscaling to RGB.</para>
+<para>For example, when converting 50x50 yuv420p to 100x100 rgba, setting this flag will scale the chroma plane from 25x25 to 100x100 (4:4:4), and then convert the 100x100 yuv444p image to rgba in the final output step.</para>
+<para>Without this flag, the chroma plane is instead scaled to 50x100 (4:2:2), with a single chroma sample being reused for both of the horizontally adjacent RGBA output pixels. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798acd6d6abf360fafcb122bd1b2888cf029" prot="public">
+          <name>SWS_FULL_CHR_H_INP</name>
+          <initializer>= 1 &lt;&lt; 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Perform full chroma interpolation when downscaling RGB sources.</para>
+<para>For example, when converting a 100x100 rgba source to 50x50 yuv444p, setting this flag will generate a 100x100 (4:4:4) chroma plane, which is then downscaled to the required 50x50.</para>
+<para>Without this flag, the chroma plane is instead generated at 50x100 (dropping every other pixel), before then being downscaled to the required 50x50 resolution. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798af2289add3daff9fe455793d44ca71df4" prot="public">
+          <name>SWS_ACCURATE_RND</name>
+          <initializer>= 1 &lt;&lt; 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Force bit-exact output. This will prevent the use of platform-specific optimizations that may lead to slight difference in rounding, in favor of always maintaining exact bit output compatibility with the reference C code.</para>
+<para>Note: It is recommended to set both of these flags simultaneously. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a6315e14919206d9461953f72c97846dc" prot="public">
+          <name>SWS_BITEXACT</name>
+          <initializer>= 1 &lt;&lt; 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a9ffc10709b72b0299b01f3ef663ec575" prot="public">
+          <name>SWS_UNSTABLE</name>
+          <initializer>= 1 &lt;&lt; 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow using experimental new code paths. This may be faster, slower, or produce different output, with semantics subject to change at any point in time. For testing and debugging purposes only. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798ade1c537d8cfcff1e23680ed5707cd0f0" prot="public">
+          <name>SWS_DIRECT_BGR</name>
+          <initializer>= 1 &lt;&lt; 15</initializer>
+          <briefdescription>
+<para>This flag has no effect. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Deprecated flags. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8f9140301cea8279af00ad2acc0519e9" prot="public">
+          <name>SWS_ERROR_DIFFUSION</name>
+          <initializer>= 1 &lt;&lt; 23</initializer>
+          <briefdescription>
+<para>Set <computeroutput><ref refid="struct_sws_context_1abdb353dd741ba1ff0bfab6bcb133c682" kindref="member">SwsContext.dither</ref></computeroutput> instead. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="94" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="94" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SwsIntent</name>
+        <enumvalue id="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a0e2c41ecbb835ddcafb698b324842cb2" prot="public">
+          <name>SWS_INTENT_PERCEPTUAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Perceptual tone mapping. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a4077b3f6bd40dcaa47c892d2d2c5e5dc" prot="public">
+          <name>SWS_INTENT_RELATIVE_COLORIMETRIC</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Relative colorimetric clipping. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a70550e463d669dcac6540ff7c526a611" prot="public">
+          <name>SWS_INTENT_SATURATION</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Saturation mapping. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a397c098df7ea6b3b281347bf8ff759d6" prot="public">
+          <name>SWS_INTENT_ABSOLUTE_COLORIMETRIC</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Absolute colorimetric clipping. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a9a0357eb476ebb4e24ac82fbd0a92ee0" prot="public">
+          <name>SWS_INTENT_NB</name>
+          <briefdescription>
+<para>not part of the ABI </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="172" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="172" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__libsws_1ga3413e874ea65f0359401e0b1eb6d6493" prot="public" static="no">
+        <type>enum SwsDither</type>
+        <definition>typedef enum SwsDither SwsDither</definition>
+        <argsstring></argsstring>
+        <name>SwsDither</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="85" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1gac38355f58ac72a0607ba7321b63de560" prot="public" static="no">
+        <type>enum SwsAlphaBlend</type>
+        <definition>typedef enum SwsAlphaBlend SwsAlphaBlend</definition>
+        <argsstring></argsstring>
+        <name>SwsAlphaBlend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="92" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1ga78b2424b6d8e082f23a96ae9876eb336" prot="public" static="no">
+        <type>enum <ref refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" kindref="member">SwsFlags</ref></type>
+        <definition>typedef enum SwsFlags SwsFlags</definition>
+        <argsstring></argsstring>
+        <name>SwsFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="170" column="10"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1ga22f2a1c07391c3bbcee9fc72e8817cf8" prot="public" static="no">
+        <type>enum <ref refid="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" kindref="member">SwsIntent</ref></type>
+        <definition>typedef enum SwsIntent SwsIntent</definition>
+        <argsstring></argsstring>
+        <name>SwsIntent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="178" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1gaeb9ece6befd951821db249a4964db4d9" prot="public" static="no">
+        <type>struct SwsContext</type>
+        <definition>typedef struct SwsContext SwsContext</definition>
+        <argsstring></argsstring>
+        <name>SwsContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Main external API structure. New fields can be added to the end with minor version bumps. Removal, reordering and changes to existing fields require a major version bump. sizeof(SwsContext) is not part of the ABI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="250" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1ga9903e4683796e886b8be703cbc849e84" prot="public" static="no">
+        <type>struct SwsVector</type>
+        <definition>typedef struct SwsVector SwsVector</definition>
+        <argsstring></argsstring>
+        <name>SwsVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="399" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__libsws_1gaed49e40b2ec4227883104d9a82b94cdf" prot="public" static="no">
+        <type>struct SwsFilter</type>
+        <definition>typedef struct SwsFilter SwsFilter</definition>
+        <argsstring></argsstring>
+        <name>SwsFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="407" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__libsws_1gac879a3ada8130d32ba02a9265bfef253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned swscale_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>swscale_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="53" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="53" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gab2d9cdff8aba8e5bb9e3691de864dc52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * swscale_configuration</definition>
+        <argsstring>(void)</argsstring>
+        <name>swscale_configuration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libswscale build-time configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="58" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="58" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga5bc0b8f0d5c6702635fc93105208a0f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * swscale_license</definition>
+        <argsstring>(void)</argsstring>
+        <name>swscale_license</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the libswscale license. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="63" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="63" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga9952d942bbc700df8b9913a854ae36a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * sws_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>sws_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for <ref refid="struct_sws_context" kindref="compound">SwsContext</ref>. It can be used in combination with AV_OPT_SEARCH_FAKE_OBJ for examining options.</para>
+<para><simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="71" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="71" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga6d69c4a081a1cba151c39e23b3780bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+        <definition>SwsContext * sws_alloc_context</definition>
+        <argsstring>(void)</argsstring>
+        <name>sws_alloc_context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an empty <ref refid="struct_sws_context" kindref="compound">SwsContext</ref> and set its fields to default values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="255" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="255" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga6e70a576a77f5839db7b1b65fe1be58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_free_context</definition>
+        <argsstring>(SwsContext **ctx)</argsstring>
+        <name>sws_free_context</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> **</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the context and everything associated with it, and write NULL to the provided pointer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="261" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="261" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gabf3c64eb307bbcd57495a00a1f8fe593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_test_format</definition>
+        <argsstring>(enum AVPixelFormat format, int output)</argsstring>
+        <name>sws_test_format</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a given pixel format is supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If 0, test if compatible with the source/input frame; otherwise, with the destination/output frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A positive integer if supported, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="276" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="276" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga26061dc3409549af7c4f372ddf99101c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_test_colorspace</definition>
+        <argsstring>(enum AVColorSpace colorspace, int output)</argsstring>
+        <name>sws_test_colorspace</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+          <declname>colorspace</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a given color space is supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If 0, test if compatible with the source/input frame; otherwise, with the destination/output frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorspace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The colorspace to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A positive integer if supported, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="287" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="287" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga43691a3d2d7aa2d65ba5eacf14e31f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_test_primaries</definition>
+        <argsstring>(enum AVColorPrimaries primaries, int output)</argsstring>
+        <name>sws_test_primaries</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+          <declname>primaries</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a given set of color primaries is supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If 0, test if compatible with the source/input frame; otherwise, with the destination/output frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>primaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color primaries to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A positive integer if supported, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="298" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="298" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga088df79fb46a1f504f2f19bce99a58d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_test_transfer</definition>
+        <argsstring>(enum AVColorTransferCharacteristic trc, int output)</argsstring>
+        <name>sws_test_transfer</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+          <declname>trc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a given color transfer function is supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If 0, test if compatible with the source/input frame; otherwise, with the destination/output frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color transfer function to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A positive integer if supported, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="309" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="309" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga9a4b99648a5f2fe9b3d7e8cd6e1643f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_test_frame</definition>
+        <argsstring>(const AVFrame *frame, int output)</argsstring>
+        <name>sws_test_frame</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to run all sws_test_* against a frame, as well as testing the basic frame properties for sanity. Ignores irrelevant properties - for example, <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref> is not checked for RGB frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="316" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="316" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gac123c2a5a4ac089de0648d4f0e1dc7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_frame_setup</definition>
+        <argsstring>(SwsContext *ctx, const AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>sws_frame_setup</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Like <computeroutput>sws_scale_frame</computeroutput>, but without actually scaling. It will instead merely initialize internal state that <emphasis>would</emphasis> be required to perform the operation, as well as returning the correct error code for unsupported frame combinations.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination frame to consider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source frame to consider. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="329" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="329" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga50bb392cac2bf4e626e309b56ab76c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_is_noop</definition>
+        <argsstring>(const AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>sws_is_noop</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given conversion is a noop. Returns a positive integer if no operation needs to be performed, 0 otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="339" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="339" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_scale_frame</definition>
+        <argsstring>(SwsContext *c, AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>sws_scale_frame</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale source data from <computeroutput>src</computeroutput> and write the output to <computeroutput>dst</computeroutput>.</para>
+<para>This function can be used directly on an allocated context, without setting up any frame properties or calling <computeroutput><ref refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kindref="member">sws_init_context()</ref></computeroutput>. Such usage is fully dynamic and does not require reallocation if the frame properties change.</para>
+<para>Alternatively, this function can be called on a context that has been explicitly initialized. However, this is provided only for backwards compatibility. In this usage mode, all frame properties must be correctly set at init time, and may no longer change after initialization.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination frame. The data buffers may either be already allocated by the caller or left clear, in which case they will be allocated by the scaler. The latter may have performance advantages - e.g. in certain cases some (or all) output planes may be references to input planes, rather than copies. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source frame. If the data buffers are set to NULL, then this function behaves identically to <computeroutput>sws_frame_setup</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, a negative AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="363" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="363" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga8c2a7d79bda5281ee2acdda359379f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int *</type>
+        <definition>const int * sws_getCoefficients</definition>
+        <argsstring>(int colorspace)</argsstring>
+        <name>sws_getCoefficients</name>
+        <param>
+          <type>int</type>
+          <declname>colorspace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a pointer to yuv&lt;-&gt;rgb coefficients for the given colorspace suitable for <ref refid="group__libsws_1gafe7b7ca136c8b6bd1fbfca2beb28c5b1" kindref="member">sws_setColorspaceDetails()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorspace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the SWS_CS_* macros. If invalid, SWS_CS_DEFAULT is used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="392" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="392" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gab5e631b602510bd3fa3a5a7d509e573d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_isSupportedInput</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>sws_isSupportedInput</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a positive value if pix_fmt is a supported input format, 0 otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="413" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="413" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga6885dc8ec36e8f2e701924263aa92cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_isSupportedOutput</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>sws_isSupportedOutput</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a positive value if pix_fmt is a supported output format, 0 otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="419" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="419" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga67f865ce22ae986ea84f4d7ce60ef182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_isSupportedEndiannessConversion</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>sws_isSupportedEndiannessConversion</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pixel format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a positive value if an endianness conversion for pix_fmt is supported, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="426" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="426" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga2416739ac982d34b0010b7ce03074737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int sws_init_context</definition>
+        <argsstring>(SwsContext *sws_context, SwsFilter *srcFilter, SwsFilter *dstFilter)</argsstring>
+        <name>sws_init_context</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>sws_context</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>srcFilter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>dstFilter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the swscaler context sws_context.</para>
+<para>This function is considered deprecated, and provided only for backwards compatibility with <ref refid="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" kindref="member">sws_scale()</ref> and sws_start_frame(). The preferred way to use libswscale is to set all frame properties correctly and call <ref refid="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" kindref="member">sws_scale_frame()</ref> directly, without explicitly initializing the context.</para>
+<para><simplesect kind="return"><para>zero or positive value on success, a negative value on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="440" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="440" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gad90b463ceeafdfd526994742f9954dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_freeContext</definition>
+        <argsstring>(SwsContext *swsContext)</argsstring>
+        <name>sws_freeContext</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>swsContext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the swscaler context swsContext. If swsContext is NULL, then does nothing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="446" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="446" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+        <definition>SwsContext * sws_getContext</definition>
+        <argsstring>(int srcW, int srcH, enum AVPixelFormat srcFormat, int dstW, int dstH, enum AVPixelFormat dstFormat, int flags, SwsFilter *srcFilter, SwsFilter *dstFilter, const double *param)</argsstring>
+        <name>sws_getContext</name>
+        <param>
+          <type>int</type>
+          <declname>srcW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcH</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>srcFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dstW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dstH</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>dstFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>srcFilter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>dstFilter</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and return an <ref refid="struct_sws_context" kindref="compound">SwsContext</ref>. You need it to perform scaling/conversion operations using <ref refid="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" kindref="member">sws_scale()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source image format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination image format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specify which algorithm and options to use for rescaling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra parameters to tune the used scaler For SWS_BICUBIC param[0] and [1] tune the shape of the basis function, param[0] tunes f(1) and param[1] f´(1) For SWS_GAUSS param[0] tunes the exponent and thus cutoff frequency For SWS_LANCZOS param[0] tunes the width of the window function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to an allocated context, or NULL in case of error </para>
+</simplesect>
+<simplesect kind="note"><para>this function is to be removed after a saner alternative is written </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="469" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="469" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_scale</definition>
+        <argsstring>(SwsContext *c, const uint8_t *const srcSlice[], const int srcStride[], int srcSliceY, int srcSliceH, uint8_t *const dst[], const int dstStride[])</argsstring>
+        <name>sws_scale</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>srcSlice</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>srcStride</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcSliceY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcSliceH</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>dstStride</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale the image slice in srcSlice and put the resulting scaled slice in the image in dst. A slice is a sequence of consecutive rows in an image. Requires a context that has been previously been initialized with <ref refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kindref="member">sws_init_context()</ref>.</para>
+<para>Slices have to be provided in sequential order, either in top-bottom or bottom-top order. If slices are provided in non-sequential order the behavior of the function is undefined.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scaling context previously created with <ref refid="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" kindref="member">sws_getContext()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcSlice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the pointers to the planes of the source slice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcStride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the strides for each plane of the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcSliceY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position in the source image of the slice to process, that is the number (counted starting from zero) in the image of the first row of the slice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcSliceH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the source slice, that is the number of rows in the slice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the pointers to the planes of the destination image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstStride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array containing the strides for each plane of the destination image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the height of the output slice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="501" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="501" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gaf1596b10563e2851c46c4de92736188a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_frame_start</definition>
+        <argsstring>(SwsContext *c, AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>sws_frame_start</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the scaling process for a given pair of source/destination frames. Must be called before any calls to <ref refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" kindref="member">sws_send_slice()</ref> and <ref refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kindref="member">sws_receive_slice()</ref>. Requires a context that has been previously been initialized with <ref refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kindref="member">sws_init_context()</ref>.</para>
+<para>This function will retain references to src and dst, so they must both use refcounted buffers (if allocated by the caller, in case of dst).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination frame. <verbatim>       The data buffers may either be already allocated by the caller or
+       left clear, in which case they will be allocated by the scaler.
+       The latter may have performance advantages - e.g. in certain cases
+       some output planes may be references to input planes, rather than
+       copies.
+
+       Output data will be written into this frame in successful
+       sws_receive_slice() calls.
+</verbatim> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source frame. The data buffers must be allocated, but the frame data does not have to be ready at this point. Data availability is then signalled by <ref refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" kindref="member">sws_send_slice()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__libsws_1gad48e9f18ad68427a0b0c564801de5d77" kindref="member">sws_frame_end()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="532" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="532" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gad48e9f18ad68427a0b0c564801de5d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_frame_end</definition>
+        <argsstring>(SwsContext *c)</argsstring>
+        <name>sws_frame_end</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish the scaling process for a pair of source/destination frames previously submitted with <ref refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kindref="member">sws_frame_start()</ref>. Must be called after all <ref refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" kindref="member">sws_send_slice()</ref> and <ref refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kindref="member">sws_receive_slice()</ref> calls are done, before any new <ref refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kindref="member">sws_frame_start()</ref> calls.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="542" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="542" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_send_slice</definition>
+        <argsstring>(SwsContext *c, unsigned int slice_start, unsigned int slice_height)</argsstring>
+        <name>sws_send_slice</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>slice_start</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>slice_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that a horizontal slice of input data is available in the source frame previously provided to <ref refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kindref="member">sws_frame_start()</ref>. The slices may be provided in any order, but may not overlap. For vertically subsampled pixel formats, the slices must be aligned according to subsampling.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first row of the slice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in the slice</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative AVERROR code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="556" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="556" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga19c354a10825af537aab99048b9eb900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_receive_slice</definition>
+        <argsstring>(SwsContext *c, unsigned int slice_start, unsigned int slice_height)</argsstring>
+        <name>sws_receive_slice</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>slice_start</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>slice_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request a horizontal slice of the output data to be written into the frame previously provided to <ref refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kindref="member">sws_frame_start()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first row of the slice; must be a multiple of <ref refid="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" kindref="member">sws_receive_slice_alignment()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in the slice; must be a multiple of <ref refid="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" kindref="member">sws_receive_slice_alignment()</ref>, except for the last slice (i.e. when slice_start+slice_height is equal to output frame height)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number if the data was successfully written into the output AVERROR(EAGAIN) if more input data needs to be provided before the output can be produced another negative AVERROR code on other kinds of scaling failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="576" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="576" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int sws_receive_slice_alignment</definition>
+        <argsstring>(const SwsContext *c)</argsstring>
+        <name>sws_receive_slice_alignment</name>
+        <param>
+          <type>const <ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the alignment required for slices. Requires a context that has been previously been initialized with <ref refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kindref="member">sws_init_context()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>alignment required for output slices requested with <ref refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kindref="member">sws_receive_slice()</ref>. Slice offsets and sizes passed to <ref refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kindref="member">sws_receive_slice()</ref> must be multiples of the value returned from this function. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="588" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="588" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gafe7b7ca136c8b6bd1fbfca2beb28c5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_setColorspaceDetails</definition>
+        <argsstring>(SwsContext *c, const int inv_table[4], int srcRange, const int table[4], int dstRange, int brightness, int contrast, int saturation)</argsstring>
+        <name>sws_setColorspaceDetails</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>inv_table</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcRange</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>table</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dstRange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>brightness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contrast</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>saturation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scaling context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag indicating the while-black range of the output (1=jpeg / 0=mpeg) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag indicating the while-black range of the input (1=jpeg / 0=mpeg) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the yuv2rgb coefficients describing the output yuv space, normally ff_yuv2rgb_coeffs[x] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inv_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the yuv2rgb coefficients describing the input yuv space, normally ff_yuv2rgb_coeffs[x] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brightness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>16.16 fixed point brightness correction </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contrast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>16.16 fixed point contrast correction </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>saturation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>16.16 fixed point saturation correction</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A negative error code on error, non negative otherwise. If <computeroutput>LIBSWSCALE_VERSION_MAJOR &lt; 7</computeroutput>, returns -1 if not supported. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="603" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="603" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga1f9aed5176a5f8f169b8254ac57bdba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sws_getColorspaceDetails</definition>
+        <argsstring>(SwsContext *c, int **inv_table, int *srcRange, int **table, int *dstRange, int *brightness, int *contrast, int *saturation)</argsstring>
+        <name>sws_getColorspaceDetails</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int **</type>
+          <declname>inv_table</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>srcRange</declname>
+        </param>
+        <param>
+          <type>int **</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dstRange</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>brightness</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>contrast</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>saturation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A negative error code on error, non negative otherwise. If <computeroutput>LIBSWSCALE_VERSION_MAJOR &lt; 7</computeroutput>, returns -1 if not supported. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="611" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="611" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga7dfc79582bea9aaf0bcf4bb308c0f3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector * sws_allocVec</definition>
+        <argsstring>(int length)</argsstring>
+        <name>sws_allocVec</name>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and return an uninitialized vector with length coefficients. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="618" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="618" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga873f630c7ae479fee1597924a2409fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+        <definition>SwsVector * sws_getGaussianVec</definition>
+        <argsstring>(double variance, double quality)</argsstring>
+        <name>sws_getGaussianVec</name>
+        <param>
+          <type>double</type>
+          <declname>variance</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>quality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a normalized Gaussian curve used to filter stuff quality = 3 is high quality, lower is lower quality. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="624" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="624" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gaf79fd6cabde06a0f2d118eb373bf83c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_scaleVec</definition>
+        <argsstring>(SwsVector *a, double scalar)</argsstring>
+        <name>sws_scaleVec</name>
+        <param>
+          <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale all the coefficients of a by the scalar value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="629" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="629" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1gab40ce33fa0a432f1ba57dda9f740380d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_normalizeVec</definition>
+        <argsstring>(SwsVector *a, double height)</argsstring>
+        <name>sws_normalizeVec</name>
+        <param>
+          <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale all the coefficients of a so that their sum equals height. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="634" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="634" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga5745e8384365fd5c6b0a3241d6ab767b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_freeVec</definition>
+        <argsstring>(SwsVector *a)</argsstring>
+        <name>sws_freeVec</name>
+        <param>
+          <type><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="636" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="636" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga62206af736294f8cd90716877223d2af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+        <definition>SwsFilter * sws_getDefaultFilter</definition>
+        <argsstring>(float lumaGBlur, float chromaGBlur, float lumaSharpen, float chromaSharpen, float chromaHShift, float chromaVShift, int verbose)</argsstring>
+        <name>sws_getDefaultFilter</name>
+        <param>
+          <type>float</type>
+          <declname>lumaGBlur</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>chromaGBlur</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lumaSharpen</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>chromaSharpen</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>chromaHShift</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>chromaVShift</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="638" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="638" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga17b762761f7a53d596841ac0f2d4a2b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_freeFilter</definition>
+        <argsstring>(SwsFilter *filter)</argsstring>
+        <name>sws_freeFilter</name>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="642" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="642" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga91f10acfeb755cc9c551c6981beaa0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+        <definition>SwsContext * sws_getCachedContext</definition>
+        <argsstring>(SwsContext *context, int srcW, int srcH, enum AVPixelFormat srcFormat, int dstW, int dstH, enum AVPixelFormat dstFormat, int flags, SwsFilter *srcFilter, SwsFilter *dstFilter, const double *param)</argsstring>
+        <name>sws_getCachedContext</name>
+        <param>
+          <type><ref refid="struct_sws_context" kindref="compound">SwsContext</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>srcH</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>srcFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dstW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dstH</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>dstFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>srcFilter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref> *</type>
+          <declname>dstFilter</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if context can be reused, otherwise reallocate a new one.</para>
+<para>If context is NULL, just calls <ref refid="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" kindref="member">sws_getContext()</ref> to get a new context. Otherwise, checks if the parameters are the ones already saved in context. If that is the case, returns the current context. Otherwise, frees context and gets a new context with the new parameters.</para>
+<para>Be warned that srcFilter and dstFilter are not checked, they are assumed to remain the same. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="656" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="656" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga2a140989dfed29dd91065352b6a52840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_convertPalette8ToPacked32</definition>
+        <argsstring>(const uint8_t *src, uint8_t *dst, int num_pixels, const uint8_t *palette)</argsstring>
+        <name>sws_convertPalette8ToPacked32</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_pixels</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>palette</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an 8-bit paletted frame into a frame with a color depth of 32 bits.</para>
+<para>The output frame will have the same packed format as the palette.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of pixels to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>palette</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array with [256] entries, which must match color arrangement (RGB or BGR) of src </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="672" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="672" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__libsws_1ga3c3d094eb840e10fbc3a37c20a6c8585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sws_convertPalette8ToPacked24</definition>
+        <argsstring>(const uint8_t *src, uint8_t *dst, int num_pixels, const uint8_t *palette)</argsstring>
+        <name>sws_convertPalette8ToPacked24</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_pixels</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>palette</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an 8-bit paletted frame into a frame with a color depth of 24 bits.</para>
+<para>With the palette format &quot;ABCD&quot;, the destination frame ends up with the format &quot;ABC&quot;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of pixels to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>palette</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array with [256] entries, which must match color arrangement (RGB or BGR) of src </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="684" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" declline="684" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__libsws_1ga3f5d541ffe1c4bf8a216c54f0de8eb11" prot="public" static="no">
+        <name>SWS_SRC_V_CHR_DROP_MASK</name>
+        <initializer>0x30000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="369" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1ga77331b2b4b9648ca47a3ca307a2151c5" prot="public" static="no">
+        <name>SWS_SRC_V_CHR_DROP_SHIFT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="370" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gad4a209577e10d655c2495349a96bb611" prot="public" static="no">
+        <name>SWS_PARAM_DEFAULT</name>
+        <initializer>123456</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="372" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gacc8f46b6954cae7d891a041793e2e751" prot="public" static="no">
+        <name>SWS_MAX_REDUCE_CUTOFF</name>
+        <initializer>0.002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="374" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gab5d1f9b6f50c155496b358d348ed6f36" prot="public" static="no">
+        <name>SWS_CS_ITU709</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="376" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gaae1a28de2fd6fdd21a082bcc10ce6cb9" prot="public" static="no">
+        <name>SWS_CS_FCC</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="377" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gaf9de144a406b66c68bd29cdcaefaeee5" prot="public" static="no">
+        <name>SWS_CS_ITU601</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="378" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gab3795e86c9f475f206a187d937c7f4fa" prot="public" static="no">
+        <name>SWS_CS_ITU624</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="379" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1gac7287919a348578d8452c42c03d65042" prot="public" static="no">
+        <name>SWS_CS_SMPTE170M</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="380" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1ga8a066eae69a34d9d60c73c40628094e4" prot="public" static="no">
+        <name>SWS_CS_SMPTE240M</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="381" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1ga1867c2c57f3c0d18fa72592e30e7d3c2" prot="public" static="no">
+        <name>SWS_CS_DEFAULT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="382" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__libsws_1ga0c8f55463ce3bd8904dedd7e73f29050" prot="public" static="no">
+        <name>SWS_CS_BT2020</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" line="383" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Color conversion and scaling library.</para>
+<para>Return the LIBSWSCALE_VERSION_INT constant. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

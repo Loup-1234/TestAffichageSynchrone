@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_ambient_viewing_environment" kind="struct" language="C++" prot="public">
+    <compoundname>AVAmbientViewingEnvironment</compoundname>
+    <includes refid="ambient__viewing__environment_8h" local="no">ambient_viewing_environment.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_ambient_viewing_environment_1ad9e8332fc765a3aafe63e2b5fa2507f2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVAmbientViewingEnvironment::ambient_illuminance</definition>
+        <argsstring></argsstring>
+        <name>ambient_illuminance</name>
+        <qualifiedname>AVAmbientViewingEnvironment::ambient_illuminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Environmental illuminance of the ambient viewing environment in lux. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" line="40" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_ambient_viewing_environment_1ae37a08514aabe5da8729873720ebb84c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVAmbientViewingEnvironment::ambient_light_x</definition>
+        <argsstring></argsstring>
+        <name>ambient_light_x</name>
+        <qualifiedname>AVAmbientViewingEnvironment::ambient_light_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalized x chromaticity coordinate of the environmental ambient light in the nominal viewing environment according to the CIE 1931 definition of x and y as specified in ISO/CIE 11664-1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" line="47" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_ambient_viewing_environment_1affecec1daba2c85a163108dd9391146d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVAmbientViewingEnvironment::ambient_light_y</definition>
+        <argsstring></argsstring>
+        <name>ambient_light_y</name>
+        <qualifiedname>AVAmbientViewingEnvironment::ambient_light_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalized y chromaticity coordinate of the environmental ambient light in the nominal viewing environment according to the CIE 1931 definition of x and y as specified in ISO/CIE 11664-1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" line="54" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ambient viewing environment metadata as defined by H.274. The values are saved in AVRationals so that they keep their exactness, while allowing for easy access to a double value with f.ex. av_q2d.</para>
+<para><simplesect kind="note"><para>sizeof(AVAmbientViewingEnvironment) is not part of the public ABI, and it must be allocated using av_ambient_viewing_environment_alloc. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVAmbientViewingEnvironment</label>
+        <link refid="struct_a_v_ambient_viewing_environment"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ambient_illuminance</edgelabel>
+          <edgelabel>ambient_light_x</edgelabel>
+          <edgelabel>ambient_light_y</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" line="36" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h" bodystart="36" bodyend="55"/>
+    <listofallmembers>
+      <member refid="struct_a_v_ambient_viewing_environment_1ad9e8332fc765a3aafe63e2b5fa2507f2" prot="public" virt="non-virtual"><scope>AVAmbientViewingEnvironment</scope><name>ambient_illuminance</name></member>
+      <member refid="struct_a_v_ambient_viewing_environment_1ae37a08514aabe5da8729873720ebb84c" prot="public" virt="non-virtual"><scope>AVAmbientViewingEnvironment</scope><name>ambient_light_x</name></member>
+      <member refid="struct_a_v_ambient_viewing_environment_1affecec1daba2c85a163108dd9391146d" prot="public" virt="non-virtual"><scope>AVAmbientViewingEnvironment</scope><name>ambient_light_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

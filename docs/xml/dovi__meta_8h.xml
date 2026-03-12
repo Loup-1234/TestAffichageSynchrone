@@ -1,0 +1,990 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="dovi__meta_8h" kind="file" language="C++">
+    <compoundname>dovi_meta.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <includes refid="csp_8h" local="yes">csp.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="9">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="7">
+        <label>csp.h</label>
+        <link refid="csp_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h</label>
+        <link refid="dovi__meta_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_d_o_v_i_decoder_configuration_record" prot="public">AVDOVIDecoderConfigurationRecord</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_rpu_data_header" prot="public">AVDOVIRpuDataHeader</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_reshaping_curve" prot="public">AVDOVIReshapingCurve</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_n_l_q_params" prot="public">AVDOVINLQParams</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_data_mapping" prot="public">AVDOVIDataMapping</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_color_metadata" prot="public">AVDOVIColorMetadata</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level1" prot="public">AVDOVIDmLevel1</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level2" prot="public">AVDOVIDmLevel2</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level3" prot="public">AVDOVIDmLevel3</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level4" prot="public">AVDOVIDmLevel4</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level5" prot="public">AVDOVIDmLevel5</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level6" prot="public">AVDOVIDmLevel6</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level8" prot="public">AVDOVIDmLevel8</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level9" prot="public">AVDOVIDmLevel9</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level10" prot="public">AVDOVIDmLevel10</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level11" prot="public">AVDOVIDmLevel11</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level254" prot="public">AVDOVIDmLevel254</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_level255" prot="public">AVDOVIDmLevel255</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_dm_data" prot="public">AVDOVIDmData</innerclass>
+    <innerclass refid="struct_a_v_d_o_v_i_metadata" prot="public">AVDOVIMetadata</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" prot="public" static="no">
+        <name>AV_DOVI_MAX_PIECES</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficients of a piece-wise function. The pieces of the function span the value ranges between two adjacent pivot values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="116" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dovi__meta_8h_1af6c482cdf66809d67d68102c129d7154" prot="public" static="no">
+        <name>AV_DOVI_MAX_EXT_BLOCKS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="359" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="dovi__meta_8h_1a47ed565e9870e3d47850fda37576929c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVDOVICompression</name>
+        <enumvalue id="dovi__meta_8h_1a47ed565e9870e3d47850fda37576929cabd73803ccd15e6771bb9b5e2ff703153" prot="public">
+          <name>AV_DOVI_COMPRESSION_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dovi__meta_8h_1a47ed565e9870e3d47850fda37576929ca8c41694cf4ff26839740f836c35f47ed" prot="public">
+          <name>AV_DOVI_COMPRESSION_LIMITED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dovi__meta_8h_1a47ed565e9870e3d47850fda37576929cadebde02621d42d2d3e39164cfdf01e8c" prot="public">
+          <name>AV_DOVI_COMPRESSION_RESERVED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dovi__meta_8h_1a47ed565e9870e3d47850fda37576929ca71d3022ba9cec1138add4e98a2aa40d7" prot="public">
+          <name>AV_DOVI_COMPRESSION_EXTENDED</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="67" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="dovi__meta_8h_1a89a406ae480e2b91c06e50c7cf83708c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVDOVIMappingMethod</name>
+        <enumvalue id="dovi__meta_8h_1a89a406ae480e2b91c06e50c7cf83708ca5795da6b0e2bd044c3996af556b486d2" prot="public">
+          <name>AV_DOVI_MAPPING_POLYNOMIAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dovi__meta_8h_1a89a406ae480e2b91c06e50c7cf83708ca467db90897a0acd0291874bb34690b45" prot="public">
+          <name>AV_DOVI_MAPPING_MMR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="107" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="enum" id="dovi__meta_8h_1aa068b221d3d1f4ba2fbe31ca924f5faf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVDOVINLQMethod</name>
+        <enumvalue id="dovi__meta_8h_1aa068b221d3d1f4ba2fbe31ca924f5fafa63f48d918414d38c386b67a784688b43" prot="public">
+          <name>AV_DOVI_NLQ_NONE</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dovi__meta_8h_1aa068b221d3d1f4ba2fbe31ca924f5fafab90dd2d3afc4ca5136f0cabdebaa6208" prot="public">
+          <name>AV_DOVI_NLQ_LINEAR_DZ</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="130" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dovi__meta_8h_1a34f5ca7ebc0da384de4e826b2aa4cb06" prot="public" static="no">
+        <type>struct AVDOVIDecoderConfigurationRecord</type>
+        <definition>typedef struct AVDOVIDecoderConfigurationRecord AVDOVIDecoderConfigurationRecord</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDecoderConfigurationRecord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="65" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a43ead03f924f2a75a2f640dbe4f729ff" prot="public" static="no">
+        <type>struct AVDOVIRpuDataHeader</type>
+        <definition>typedef struct AVDOVIRpuDataHeader AVDOVIRpuDataHeader</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIRpuDataHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dolby Vision RPU data header.</para>
+<para><simplesect kind="note"><para>sizeof(AVDOVIRpuDataHeader) is not part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="105" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a0f7a2ef986a4ac429964b8434ee86fe9" prot="public" static="no">
+        <type>struct AVDOVIReshapingCurve</type>
+        <definition>typedef struct AVDOVIReshapingCurve AVDOVIReshapingCurve</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIReshapingCurve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="128" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a95f4bbea575d89802cbe51cfaf22e8f9" prot="public" static="no">
+        <type>struct AVDOVINLQParams</type>
+        <definition>typedef struct AVDOVINLQParams AVDOVINLQParams</definition>
+        <argsstring></argsstring>
+        <name>AVDOVINLQParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficients of the non-linear inverse quantization. For the interpretation of these, see ETSI GS CCM 001. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="145" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a73a6e826a603d687e5299541f41a2084" prot="public" static="no">
+        <type>struct AVDOVIDataMapping</type>
+        <definition>typedef struct AVDOVIDataMapping AVDOVIDataMapping</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDataMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dolby Vision RPU data mapping parameters.</para>
+<para><simplesect kind="note"><para>sizeof(AVDOVIDataMapping) is not part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="164" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1ab879c6d85d3da397c223f703992bde56" prot="public" static="no">
+        <type>struct AVDOVIColorMetadata</type>
+        <definition>typedef struct AVDOVIColorMetadata AVDOVIColorMetadata</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIColorMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dolby Vision RPU colorspace metadata parameters.</para>
+<para><simplesect kind="note"><para>sizeof(AVDOVIColorMetadata) is not part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="201" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a80d0e2a9119667630a38cb4fbb40d959" prot="public" static="no">
+        <type>struct AVDOVIDmLevel1</type>
+        <definition>typedef struct AVDOVIDmLevel1 AVDOVIDmLevel1</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="208" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a794ab58e44e294811540ea0076a2d77d" prot="public" static="no">
+        <type>struct AVDOVIDmLevel2</type>
+        <definition>typedef struct AVDOVIDmLevel2 AVDOVIDmLevel2</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="219" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1ab6b7e0a9b34f0555758c4dbdaa42e155" prot="public" static="no">
+        <type>struct AVDOVIDmLevel3</type>
+        <definition>typedef struct AVDOVIDmLevel3 AVDOVIDmLevel3</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="225" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a8ab2202514293fd2200271a62d499cbe" prot="public" static="no">
+        <type>struct AVDOVIDmLevel4</type>
+        <definition>typedef struct AVDOVIDmLevel4 AVDOVIDmLevel4</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="230" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1afcafec2b1efd22e908f23249df672f7e" prot="public" static="no">
+        <type>struct AVDOVIDmLevel5</type>
+        <definition>typedef struct AVDOVIDmLevel5 AVDOVIDmLevel5</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="238" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1aa283c8e823d71569931792bb5f56c8f1" prot="public" static="no">
+        <type>struct AVDOVIDmLevel6</type>
+        <definition>typedef struct AVDOVIDmLevel6 AVDOVIDmLevel6</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a461da8802759a95239fbde7cb9f4dd8d" prot="public" static="no">
+        <type>struct AVDOVIDmLevel8</type>
+        <definition>typedef struct AVDOVIDmLevel8 AVDOVIDmLevel8</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="261" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a3fd432f2e8b024547d62a915c2b11270" prot="public" static="no">
+        <type>struct AVDOVIDmLevel9</type>
+        <definition>typedef struct AVDOVIDmLevel9 AVDOVIDmLevel9</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="267" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1af72b5c974d1de4190c216cc02b86ec5a" prot="public" static="no">
+        <type>struct AVDOVIDmLevel10</type>
+        <definition>typedef struct AVDOVIDmLevel10 AVDOVIDmLevel10</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="276" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1aa7ed76cf7e641a6be18f27cc6ffda775" prot="public" static="no">
+        <type>struct AVDOVIDmLevel11</type>
+        <definition>typedef struct AVDOVIDmLevel11 AVDOVIDmLevel11</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="296" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1ad780a443d4abcb3b55e5ddbb686f9ff8" prot="public" static="no">
+        <type>struct AVDOVIDmLevel254</type>
+        <definition>typedef struct AVDOVIDmLevel254 AVDOVIDmLevel254</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel254</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="302" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a1f169c8ce313ca7e3acb522fe50026e9" prot="public" static="no">
+        <type>struct AVDOVIDmLevel255</type>
+        <definition>typedef struct AVDOVIDmLevel255 AVDOVIDmLevel255</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmLevel255</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="309" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a8087c6b2c8d3cd5634ea45519306e8f3" prot="public" static="no">
+        <type>struct AVDOVIDmData</type>
+        <definition>typedef struct AVDOVIDmData AVDOVIDmData</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIDmData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dolby Vision metadata extension block. Dynamic extension blocks may change from frame to frame, while static blocks are constant throughout the entire sequence.</para>
+<para><simplesect kind="note"><para>sizeof(AVDOVIDmData) is not part of the public API. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="335" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dovi__meta_8h_1a295d60ee2beee025e4fb045d7033e886" prot="public" static="no">
+        <type>struct AVDOVIMetadata</type>
+        <definition>typedef struct AVDOVIMetadata AVDOVIMetadata</definition>
+        <argsstring></argsstring>
+        <name>AVDOVIMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combined struct representing a combination of header, mapping and color metadata, for attaching to frames as side data.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="dovi__meta_8h_1aa43a4759247a0913376d744b0799256b" kindref="member">av_dovi_metadata_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="360" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dovi__meta_8h_1a2c7f63457d7a3ea79abd608035ac44b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_d_o_v_i_decoder_configuration_record" kindref="compound">AVDOVIDecoderConfigurationRecord</ref> *</type>
+        <definition>AVDOVIDecoderConfigurationRecord * av_dovi_alloc</definition>
+        <argsstring>(size_t *size)</argsstring>
+        <name>av_dovi_alloc</name>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a <ref refid="struct_a_v_d_o_v_i_decoder_configuration_record" kindref="compound">AVDOVIDecoderConfigurationRecord</ref> structure and initialize its fields to default values.</para>
+<para><simplesect kind="return"><para>the newly allocated struct or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="80" column="34" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" declline="80" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1a3b1d3962bfa66505dfa9867df064366d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_d_o_v_i_rpu_data_header" kindref="compound">AVDOVIRpuDataHeader</ref> *</type>
+        <definition>static av_always_inline AVDOVIRpuDataHeader * av_dovi_get_header</definition>
+        <argsstring>(const AVDOVIMetadata *data)</argsstring>
+        <name>av_dovi_get_header</name>
+        <param>
+          <type>const <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="363" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1acaf80fa20d1d6bfcedab7d8a4b7ec637" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_d_o_v_i_data_mapping" kindref="compound">AVDOVIDataMapping</ref> *</type>
+        <definition>static av_always_inline AVDOVIDataMapping * av_dovi_get_mapping</definition>
+        <argsstring>(const AVDOVIMetadata *data)</argsstring>
+        <name>av_dovi_get_mapping</name>
+        <param>
+          <type>const <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="369" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="369" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1a05f1fe6583270fe394dc9abecddd20e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_d_o_v_i_color_metadata" kindref="compound">AVDOVIColorMetadata</ref> *</type>
+        <definition>static av_always_inline AVDOVIColorMetadata * av_dovi_get_color</definition>
+        <argsstring>(const AVDOVIMetadata *data)</argsstring>
+        <name>av_dovi_get_color</name>
+        <param>
+          <type>const <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="375" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1a7ad90980c4a558c3faae5c9a4951996f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref> *</type>
+        <definition>static av_always_inline AVDOVIDmData * av_dovi_get_ext</definition>
+        <argsstring>(const AVDOVIMetadata *data, int index)</argsstring>
+        <name>av_dovi_get_ext</name>
+        <param>
+          <type>const <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="381" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="381" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1a10835a6f62098fa25bbf78fb4b3320a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref> *</type>
+        <definition>AVDOVIDmData * av_dovi_find_level</definition>
+        <argsstring>(const AVDOVIMetadata *data, uint8_t level)</argsstring>
+        <name>av_dovi_find_level</name>
+        <param>
+          <type>const <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find an extension block with a given level, or NULL. In the case of multiple extension blocks, only the first is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="391" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" declline="391" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="dovi__meta_8h_1aa43a4759247a0913376d744b0799256b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> *</type>
+        <definition>AVDOVIMetadata * av_dovi_metadata_alloc</definition>
+        <argsstring>(size_t *size)</argsstring>
+        <name>av_dovi_metadata_alloc</name>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> structure and initialize its fields to default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this parameter is non-NULL, the size in bytes of the allocated struct will be written here on success</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the newly allocated struct or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="402" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" declline="402" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DOVI configuration </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2020<sp/>Vacing<sp/>Fang<sp/>&lt;vacingfang@tencent.com&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_DOVI_META_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_DOVI_META_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="csp_8h" kindref="compound">csp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>DOVI<sp/>configuration</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>ref:<sp/>dolby-vision-bitstreams-within-the-iso-base-media-file-format-v2.1.2</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dolby-vision-bitstreams-in-mpeg-2-transport-stream-multiplex-v1.2</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>@code</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_version_major,<sp/>the<sp/>major<sp/>version<sp/>number<sp/>that<sp/>the<sp/>stream<sp/>complies<sp/>with</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_version_minor,<sp/>the<sp/>minor<sp/>version<sp/>number<sp/>that<sp/>the<sp/>stream<sp/>complies<sp/>with</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_profile,<sp/>the<sp/>Dolby<sp/>Vision<sp/>profile</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_level,<sp/>the<sp/>Dolby<sp/>Vision<sp/>level</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>rpu_present_flag</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>el_present_flag</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>bl_present_flag</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_bl_signal_compatibility_id</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>uint8_t<sp/><sp/>dv_md_compression,<sp/>the<sp/>compression<sp/>method<sp/>in<sp/>use</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>@endcode</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>@note<sp/>The<sp/>struct<sp/>must<sp/>be<sp/>allocated<sp/>with<sp/>av_dovi_alloc()<sp/>and</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>its<sp/>size<sp/>is<sp/>not<sp/>a<sp/>part<sp/>of<sp/>the<sp/>public<sp/>ABI.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="struct_a_v_d_o_v_i_decoder_configuration_record" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_decoder_configuration_record" kindref="compound">AVDOVIDecoderConfigurationRecord</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_version_major;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_version_minor;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_profile;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_level;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rpu_present_flag;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>el_present_flag;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bl_present_flag;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_bl_signal_compatibility_id;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dv_md_compression;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_decoder_configuration_record" kindref="compound">AVDOVIDecoderConfigurationRecord</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVDOVICompression<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_COMPRESSION_NONE<sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_COMPRESSION_LIMITED<sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_COMPRESSION_RESERVED<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_COMPRESSION_EXTENDED<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="dovi__meta_8h_1a2c7f63457d7a3ea79abd608035ac44b3" refkind="member"><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_decoder_configuration_record" kindref="compound">AVDOVIDecoderConfigurationRecord</ref><sp/>*<ref refid="dovi__meta_8h_1a2c7f63457d7a3ea79abd608035ac44b3" kindref="member">av_dovi_alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="struct_a_v_d_o_v_i_rpu_data_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_rpu_data_header" kindref="compound">AVDOVIRpuDataHeader</ref><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rpu_type;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>rpu_format;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vdr_rpu_profile;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vdr_rpu_level;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>chroma_resampling_explicit_filter_flag;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coef_data_type;<sp/></highlight><highlight class="comment">/*<sp/>informative,<sp/>lavc<sp/>always<sp/>converts<sp/>to<sp/>fixed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>coef_log2_denom;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vdr_rpu_normalized_idc;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bl_video_full_range_flag;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bl_bit_depth;<sp/></highlight><highlight class="comment">/*<sp/>[8,<sp/>16]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>el_bit_depth;<sp/></highlight><highlight class="comment">/*<sp/>[8,<sp/>16]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vdr_bit_depth;<sp/></highlight><highlight class="comment">/*<sp/>[8,<sp/>16]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>spatial_resampling_filter_flag;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>el_spatial_resampling_filter_flag;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>disable_residual_flag;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ext_mapping_idc_0_4;<sp/></highlight><highlight class="comment">/*<sp/>extended<sp/>base<sp/>layer<sp/>inverse<sp/>mapping<sp/>indicator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ext_mapping_idc_5_7;<sp/></highlight><highlight class="comment">/*<sp/>reserved<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="dovi__meta_8h_1a43ead03f924f2a75a2f640dbe4f729ff" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_rpu_data_header" kindref="compound">AVDOVIRpuDataHeader</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVDOVIMappingMethod<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_MAPPING_POLYNOMIAL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_MAPPING_MMR<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_DOVI_MAX_PIECES<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="struct_a_v_d_o_v_i_reshaping_curve" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_reshaping_curve" kindref="compound">AVDOVIReshapingCurve</ref><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>num_pivots;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>[2,<sp/>9]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>pivots[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref><sp/>+<sp/>1];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sorted<sp/>ascending<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVDOVIMappingMethod<sp/>mapping_idc[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>];</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>AV_DOVI_MAPPING_POLYNOMIAL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>poly_order[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>[1,<sp/>2]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>poly_coef[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>][3];<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>x^0,<sp/>x^1,<sp/>x^2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>AV_DOVI_MAPPING_MMR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mmr_order[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>[1,<sp/>3]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>mmr_constant[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>];</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>mmr_coef[<ref refid="dovi__meta_8h_1ad37d10cf6fe33ae3556302a6e422c3c3" kindref="member">AV_DOVI_MAX_PIECES</ref>][3</highlight><highlight class="comment">/*<sp/>order<sp/>-<sp/>1<sp/>*/</highlight><highlight class="normal">][7];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_reshaping_curve" kindref="compound">AVDOVIReshapingCurve</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVDOVINLQMethod<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_NLQ_NONE<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_DOVI_NLQ_LINEAR_DZ<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="struct_a_v_d_o_v_i_n_l_q_params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_n_l_q_params" kindref="compound">AVDOVINLQParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nlq_offset;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>vdr_in_max;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>AV_DOVI_NLQ_LINEAR_DZ<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>linear_deadzone_slope;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>linear_deadzone_threshold;</highlight></codeline>
+<codeline lineno="145" refid="dovi__meta_8h_1a95f4bbea575d89802cbe51cfaf22e8f9" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_n_l_q_params" kindref="compound">AVDOVINLQParams</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="struct_a_v_d_o_v_i_data_mapping" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_data_mapping" kindref="compound">AVDOVIDataMapping</ref><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>vdr_rpu_id;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mapping_color_space;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mapping_chroma_format_idc;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_reshaping_curve" kindref="compound">AVDOVIReshapingCurve</ref><sp/>curves[3];<sp/></highlight><highlight class="comment">/*<sp/>per<sp/>component<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Non-linear<sp/>inverse<sp/>quantization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVDOVINLQMethod<sp/>nlq_method_idc;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>num_x_partitions;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>num_y_partitions;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_n_l_q_params" kindref="compound">AVDOVINLQParams</ref><sp/>nlq[3];<sp/></highlight><highlight class="comment">/*<sp/>per<sp/>component<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>nlq_pivots[2];</highlight></codeline>
+<codeline lineno="164" refid="dovi__meta_8h_1a73a6e826a603d687e5299541f41a2084" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_data_mapping" kindref="compound">AVDOVIDataMapping</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="struct_a_v_d_o_v_i_color_metadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_color_metadata" kindref="compound">AVDOVIColorMetadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_metadata_id;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>scene_refresh_flag;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="struct_a_v_d_o_v_i_color_metadata_1a471ed5ab32427d9019b8d7b3836faf89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_d_o_v_i_color_metadata_1a471ed5ab32427d9019b8d7b3836faf89" kindref="member">ycc_to_rgb_matrix</ref>[9];<sp/></highlight><highlight class="comment">/*<sp/>before<sp/>PQ<sp/>linearization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>ycc_to_rgb_offset[3];<sp/></highlight><highlight class="comment">/*<sp/>input<sp/>offset<sp/>of<sp/>neutral<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>rgb_to_lms_matrix[9];<sp/></highlight><highlight class="comment">/*<sp/>after<sp/>PQ<sp/>linearization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="struct_a_v_d_o_v_i_color_metadata_1a139e51cd0facab097aa1cea908c24dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_a_v_d_o_v_i_color_metadata_1a139e51cd0facab097aa1cea908c24dfc" kindref="member">signal_eotf</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>signal_eotf_param0;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>signal_eotf_param1;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>signal_eotf_param2;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>signal_bit_depth;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>signal_color_space;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>signal_chroma_format;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>signal_full_range_flag;<sp/></highlight><highlight class="comment">/*<sp/>[0,<sp/>3]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>source_min_pq;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>source_max_pq;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>source_diagonal;</highlight></codeline>
+<codeline lineno="201" refid="dovi__meta_8h_1ab879c6d85d3da397c223f703992bde56" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_color_metadata" kindref="compound">AVDOVIColorMetadata</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="struct_a_v_d_o_v_i_dm_level1" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level1" kindref="compound">AVDOVIDmLevel1</ref><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Per-frame<sp/>brightness<sp/>metadata<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>min_pq;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_pq;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>avg_pq;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level1" kindref="compound">AVDOVIDmLevel1</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="struct_a_v_d_o_v_i_dm_level2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level2" kindref="compound">AVDOVIDmLevel2</ref><sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Usually<sp/>derived<sp/>from<sp/>level<sp/>8<sp/>(at<sp/>different<sp/>levels)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>target_max_pq;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_slope;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_offset;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_power;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_chroma_weight;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_saturation_gain;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>ms_weight;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level2" kindref="compound">AVDOVIDmLevel2</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="struct_a_v_d_o_v_i_dm_level3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level3" kindref="compound">AVDOVIDmLevel3</ref><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>min_pq_offset;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_pq_offset;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>avg_pq_offset;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level3" kindref="compound">AVDOVIDmLevel3</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="struct_a_v_d_o_v_i_dm_level4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level4" kindref="compound">AVDOVIDmLevel4</ref><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>anchor_pq;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>anchor_power;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level4" kindref="compound">AVDOVIDmLevel4</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="struct_a_v_d_o_v_i_dm_level5" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level5" kindref="compound">AVDOVIDmLevel5</ref><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Active<sp/>area<sp/>definition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>left_offset;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>right_offset;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>top_offset;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>bottom_offset;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level5" kindref="compound">AVDOVIDmLevel5</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="struct_a_v_d_o_v_i_dm_level6" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level6" kindref="compound">AVDOVIDmLevel6</ref><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Static<sp/>HDR10<sp/>metadata<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_luminance;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>min_luminance;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_cll;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>max_fall;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level6" kindref="compound">AVDOVIDmLevel6</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="struct_a_v_d_o_v_i_dm_level8" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level8" kindref="compound">AVDOVIDmLevel8</ref><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extended<sp/>version<sp/>of<sp/>level<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>target_display_index;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_slope;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_offset;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_power;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_chroma_weight;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>trim_saturation_gain;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>ms_weight;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>target_mid_contrast;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>clip_trim;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>saturation_vector_field[6];</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>hue_vector_field[6];</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level8" kindref="compound">AVDOVIDmLevel8</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="struct_a_v_d_o_v_i_dm_level9" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level9" kindref="compound">AVDOVIDmLevel9</ref><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Source<sp/>display<sp/>characteristics<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>source_primary_index;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref><sp/>source_display_primaries;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level9" kindref="compound">AVDOVIDmLevel9</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="struct_a_v_d_o_v_i_dm_level10" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level10" kindref="compound">AVDOVIDmLevel10</ref><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Target<sp/>display<sp/>characteristics<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>target_display_index;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>target_max_pq;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>target_min_pq;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>target_primary_index;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_color_primaries_desc" kindref="compound">AVColorPrimariesDesc</ref><sp/>target_display_primaries;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level10" kindref="compound">AVDOVIDmLevel10</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="struct_a_v_d_o_v_i_dm_level11" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level11" kindref="compound">AVDOVIDmLevel11</ref><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>content_type;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>whitepoint;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>reference_mode_flag;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_DOVI_L11_INVALID_PROPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>sharpness;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>noise_reduction;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mpeg_noise_reduction;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>frame_rate_conversion;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>brightness;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>attribute_deprecated</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>color;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level11" kindref="compound">AVDOVIDmLevel11</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="struct_a_v_d_o_v_i_dm_level254" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level254" kindref="compound">AVDOVIDmLevel254</ref><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMv2<sp/>info<sp/>block,<sp/>always<sp/>present<sp/>in<sp/>samples<sp/>with<sp/>DMv2<sp/>metadata<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_mode;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_version_index;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level254" kindref="compound">AVDOVIDmLevel254</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="struct_a_v_d_o_v_i_dm_level255" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_level255" kindref="compound">AVDOVIDmLevel255</ref><sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Debug<sp/>block,<sp/>not<sp/>really<sp/>used<sp/>in<sp/>samples<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_run_mode;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_run_version;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dm_debug[4];</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_level255" kindref="compound">AVDOVIDmLevel255</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="struct_a_v_d_o_v_i_dm_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref><sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>level;<sp/></highlight><highlight class="comment">/*<sp/>[1,<sp/>255]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level1" kindref="compound">AVDOVIDmLevel1</ref><sp/>l1;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level2" kindref="compound">AVDOVIDmLevel2</ref><sp/>l2;<sp/></highlight><highlight class="comment">/*<sp/>dynamic,<sp/>may<sp/>appear<sp/>multiple<sp/>times<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level3" kindref="compound">AVDOVIDmLevel3</ref><sp/>l3;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level4" kindref="compound">AVDOVIDmLevel4</ref><sp/>l4;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level5" kindref="compound">AVDOVIDmLevel5</ref><sp/>l5;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level6" kindref="compound">AVDOVIDmLevel6</ref><sp/>l6;<sp/></highlight><highlight class="comment">/*<sp/>static<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>level<sp/>7<sp/>is<sp/>currently<sp/>unused<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level8" kindref="compound">AVDOVIDmLevel8</ref><sp/>l8;<sp/></highlight><highlight class="comment">/*<sp/>dynamic,<sp/>may<sp/>appear<sp/>multiple<sp/>times<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level9" kindref="compound">AVDOVIDmLevel9</ref><sp/>l9;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level10" kindref="compound">AVDOVIDmLevel10</ref><sp/>l10;<sp/></highlight><highlight class="comment">/*<sp/>static,<sp/>may<sp/>appear<sp/>multiple<sp/>times<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level11" kindref="compound">AVDOVIDmLevel11</ref><sp/>l11;<sp/></highlight><highlight class="comment">/*<sp/>dynamic<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level254" kindref="compound">AVDOVIDmLevel254</ref><sp/>l254;<sp/></highlight><highlight class="comment">/*<sp/>static<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_o_v_i_dm_level255" kindref="compound">AVDOVIDmLevel255</ref><sp/>l255;<sp/></highlight><highlight class="comment">/*<sp/>static<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="335" refid="dovi__meta_8h_1a8087c6b2c8d3cd5634ea45519306e8f3" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="struct_a_v_d_o_v_i_metadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="350" refid="struct_a_v_d_o_v_i_metadata_1ad7483f8bc480ecd811691ae490731c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata_1ad7483f8bc480ecd811691ae490731c7d" kindref="member">header_offset</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>AVDOVIRpuDataHeader<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mapping_offset;<sp/><sp/></highlight><highlight class="comment">/*<sp/>AVDOVIDataMapping<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>color_offset;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>AVDOVIColorMetadata<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ext_block_offset;<sp/></highlight><highlight class="comment">/*<sp/>offset<sp/>to<sp/>start<sp/>of<sp/>ext<sp/>blocks<sp/>array<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ext_block_size;<sp/></highlight><highlight class="comment">/*<sp/>size<sp/>per<sp/>element<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_ext_blocks;<sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>extension<sp/>blocks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>static<sp/>limit<sp/>on<sp/>num_ext_blocks,<sp/>derived<sp/>from<sp/>bitstream<sp/>limitations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_DOVI_MAX_EXT_BLOCKS<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="dovi__meta_8h_1a295d60ee2beee025e4fb045d7033e886" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_d_o_v_i_rpu_data_header" kindref="compound">AVDOVIRpuDataHeader</ref><sp/>*</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">av_dovi_get_header(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*data)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_d_o_v_i_rpu_data_header" kindref="compound">AVDOVIRpuDataHeader</ref><sp/>*)((uint8_t<sp/>*)<sp/>data<sp/>+<sp/>data-&gt;<ref refid="struct_a_v_d_o_v_i_metadata_1ad7483f8bc480ecd811691ae490731c7d" kindref="member">header_offset</ref>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_d_o_v_i_data_mapping" kindref="compound">AVDOVIDataMapping</ref><sp/>*</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">av_dovi_get_mapping(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*data)</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_d_o_v_i_data_mapping" kindref="compound">AVDOVIDataMapping</ref><sp/>*)((uint8_t<sp/>*)<sp/>data<sp/>+<sp/>data-&gt;mapping_offset);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_d_o_v_i_color_metadata" kindref="compound">AVDOVIColorMetadata</ref><sp/>*</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">av_dovi_get_color(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*data)</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_d_o_v_i_color_metadata" kindref="compound">AVDOVIColorMetadata</ref><sp/>*)((uint8_t<sp/>*)<sp/>data<sp/>+<sp/>data-&gt;color_offset);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref><sp/>*</highlight></codeline>
+<codeline lineno="381"><highlight class="normal">av_dovi_get_ext(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref><sp/>*)((uint8_t<sp/>*)<sp/>data<sp/>+<sp/>data-&gt;ext_block_offset<sp/>+</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;ext_block_size<sp/>*<sp/>index);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="dovi__meta_8h_1a10835a6f62098fa25bbf78fb4b3320a7" refkind="member"><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_dm_data" kindref="compound">AVDOVIDmData</ref><sp/>*<ref refid="dovi__meta_8h_1a10835a6f62098fa25bbf78fb4b3320a7" kindref="member">av_dovi_find_level</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*data,<sp/>uint8_t<sp/>level);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="dovi__meta_8h_1aa43a4759247a0913376d744b0799256b" refkind="member"><highlight class="normal"><ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref><sp/>*<ref refid="dovi__meta_8h_1aa43a4759247a0913376d744b0799256b" kindref="member">av_dovi_metadata_alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_DOVI_META_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h"/>
+  </compounddef>
+</doxygen>

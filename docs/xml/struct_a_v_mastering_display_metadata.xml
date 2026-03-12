@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_mastering_display_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>AVMasteringDisplayMetadata</compoundname>
+    <includes refid="mastering__display__metadata_8h" local="no">mastering_display_metadata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1a633e0a725537b96ec81834da7e843219" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVMasteringDisplayMetadata::display_primaries[3][2]</definition>
+        <argsstring>[3][2]</argsstring>
+        <name>display_primaries</name>
+        <qualifiedname>AVMasteringDisplayMetadata::display_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIE 1931 xy chromaticity coords of color primaries (r, g, b order). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="42" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1a968384052f48e91fc57b3c61b9f68224" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVMasteringDisplayMetadata::white_point[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>white_point</name>
+        <qualifiedname>AVMasteringDisplayMetadata::white_point</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIE 1931 xy chromaticity coords of white point. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="47" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1a4ad2e7f456d7763060c25e92be573341" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVMasteringDisplayMetadata::min_luminance</definition>
+        <argsstring></argsstring>
+        <name>min_luminance</name>
+        <qualifiedname>AVMasteringDisplayMetadata::min_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Min luminance of mastering display (cd/m^2). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="52" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1a45890b654337321044a5b13c5e5961c5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVMasteringDisplayMetadata::max_luminance</definition>
+        <argsstring></argsstring>
+        <name>max_luminance</name>
+        <qualifiedname>AVMasteringDisplayMetadata::max_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max luminance of mastering display (cd/m^2). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="57" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1a0e30962e66d883ddba77fac5af55d3af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVMasteringDisplayMetadata::has_primaries</definition>
+        <argsstring></argsstring>
+        <name>has_primaries</name>
+        <qualifiedname>AVMasteringDisplayMetadata::has_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag indicating whether the display primaries (and white point) are set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_mastering_display_metadata_1addf45817ef0970905e650aff3907ce4d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVMasteringDisplayMetadata::has_luminance</definition>
+        <argsstring></argsstring>
+        <name>has_luminance</name>
+        <qualifiedname>AVMasteringDisplayMetadata::has_luminance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag indicating whether the luminance (min_ and max_) have been set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="67" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mastering display metadata capable of representing the color volume of the display used to master the content (SMPTE 2086:2014).</para>
+<para>To be used as payload of a <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> or <ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> with the appropriate type.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with av_mastering_display_metadata_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVMasteringDisplayMetadata</label>
+        <link refid="struct_a_v_mastering_display_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>display_primaries</edgelabel>
+          <edgelabel>max_luminance</edgelabel>
+          <edgelabel>min_luminance</edgelabel>
+          <edgelabel>white_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" line="38" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h" bodystart="38" bodyend="69"/>
+    <listofallmembers>
+      <member refid="struct_a_v_mastering_display_metadata_1a633e0a725537b96ec81834da7e843219" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>display_primaries</name></member>
+      <member refid="struct_a_v_mastering_display_metadata_1addf45817ef0970905e650aff3907ce4d" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>has_luminance</name></member>
+      <member refid="struct_a_v_mastering_display_metadata_1a0e30962e66d883ddba77fac5af55d3af" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>has_primaries</name></member>
+      <member refid="struct_a_v_mastering_display_metadata_1a45890b654337321044a5b13c5e5961c5" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>max_luminance</name></member>
+      <member refid="struct_a_v_mastering_display_metadata_1a4ad2e7f456d7763060c25e92be573341" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>min_luminance</name></member>
+      <member refid="struct_a_v_mastering_display_metadata_1a968384052f48e91fc57b3c61b9f68224" prot="public" virt="non-virtual"><scope>AVMasteringDisplayMetadata</scope><name>white_point</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

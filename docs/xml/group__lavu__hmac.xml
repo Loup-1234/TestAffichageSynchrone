@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__hmac" kind="group">
+    <compoundname>lavu_hmac</compoundname>
+    <title>HMAC</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__hmac_1gaec34f18155d20236c9f39961bb58f7d4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVHMACType</name>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a063ecd7e758d4abcd438aba0b9708c7a" prot="public">
+          <name>AV_HMAC_MD5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a421f7f38b635e8d5ef1cc45d1867d5a7" prot="public">
+          <name>AV_HMAC_SHA1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a283c3d421f8279ec3530d0bd0cb56313" prot="public">
+          <name>AV_HMAC_SHA224</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a2f0a1a712c6e85b5149baa0780dcda4c" prot="public">
+          <name>AV_HMAC_SHA256</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a268dfcdccbe89e48a662989087728ff7" prot="public">
+          <name>AV_HMAC_SHA384</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__hmac_1ggaec34f18155d20236c9f39961bb58f7d4a811a3754bdc32d9e258c6504759a6608" prot="public">
+          <name>AV_HMAC_SHA512</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="32" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" bodystart="32" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__hmac_1gad8c944f9437e65d8e8ebc526bdeee676" prot="public" static="no">
+        <type>struct AVHMAC</type>
+        <definition>typedef struct AVHMAC AVHMAC</definition>
+        <argsstring></argsstring>
+        <name>AVHMAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="41" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__hmac_1ga46ba93d004bffe84ecac69881c8e515f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVHMAC *</type>
+        <definition>AVHMAC * av_hmac_alloc</definition>
+        <argsstring>(enum AVHMACType type)</argsstring>
+        <name>av_hmac_alloc</name>
+        <param>
+          <type>enum AVHMACType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVHMAC context. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hash function used for the HMAC. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="47" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="47" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hmac_1gaaa2951b832fdc7abed35a9112f7f1a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hmac_free</definition>
+        <argsstring>(AVHMAC *ctx)</argsstring>
+        <name>av_hmac_free</name>
+        <param>
+          <type>AVHMAC *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an AVHMAC context. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context to free, may be NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="53" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hmac_1gae91a0c1f832c269006164b29df7e9aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hmac_init</definition>
+        <argsstring>(AVHMAC *ctx, const uint8_t *key, unsigned int keylen)</argsstring>
+        <name>av_hmac_init</name>
+        <param>
+          <type>AVHMAC *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>keylen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an AVHMAC context with an authentication key. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HMAC context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keylen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the key, in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="61" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hmac_1ga4c3307cc9b1f331a15e999f8dacb90de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_hmac_update</definition>
+        <argsstring>(AVHMAC *ctx, const uint8_t *data, unsigned int len)</argsstring>
+        <name>av_hmac_update</name>
+        <param>
+          <type>AVHMAC *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hash data with the HMAC. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HMAC context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to hash </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data, in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="69" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hmac_1ga02f0b343d9045500beef1f6b09c650cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_hmac_final</definition>
+        <argsstring>(AVHMAC *ctx, uint8_t *out, unsigned int outlen)</argsstring>
+        <name>av_hmac_final</name>
+        <param>
+          <type>AVHMAC *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>outlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish hashing and output the HMAC digest. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HMAC context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output buffer to write the digest into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the out buffer, in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written to out, or a negative error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="78" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="78" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__hmac_1ga22d17ebca8556c49be5c22e706de1ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_hmac_calc</definition>
+        <argsstring>(AVHMAC *ctx, const uint8_t *data, unsigned int len, const uint8_t *key, unsigned int keylen, uint8_t *out, unsigned int outlen)</argsstring>
+        <name>av_hmac_calc</name>
+        <param>
+          <type>AVHMAC *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>keylen</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>outlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hash an array of data with a key. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HMAC context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to hash </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data, in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keylen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the key, in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output buffer to write the digest into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the out buffer, in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written to out, or a negative error code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" line="91" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hmac.h" declline="91" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

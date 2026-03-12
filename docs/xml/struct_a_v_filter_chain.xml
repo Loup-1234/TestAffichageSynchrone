@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_filter_chain" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilterChain</compoundname>
+    <includes refid="avfilter_8h" local="no">avfilter.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_filter_chain_1aedebb337fac024e27b499fb3a0321f3e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_params" kindref="compound">AVFilterParams</ref> **</type>
+        <definition>AVFilterParams** AVFilterChain::filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <qualifiedname>AVFilterChain::filters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="933" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="933" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_chain_1abacf5280bd6db0d37a304b0dd0b6c54d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVFilterChain::nb_filters</definition>
+        <argsstring></argsstring>
+        <name>nb_filters</name>
+        <qualifiedname>AVFilterChain::nb_filters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="934" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="934" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A filterchain is a list of filter specifications.</para>
+<para>Created as a child of <ref refid="struct_a_v_filter_graph_segment" kindref="compound">AVFilterGraphSegment</ref> by <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. Freed in <ref refid="group__lavfi_1ga51283edd8f3685e1f33239f360e14ae8" kindref="member">avfilter_graph_segment_free()</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="11">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="10">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AVFilter</label>
+        <link refid="struct_a_v_filter"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVFilterChain</label>
+        <link refid="struct_a_v_filter_chain"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVFilterContext</label>
+        <link refid="struct_a_v_filter_context"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>hw_device_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AVFilterFormatsConfig</label>
+        <link refid="struct_a_v_filter_formats_config"/>
+      </node>
+      <node id="15">
+        <label>AVFilterGraph</label>
+        <link refid="struct_a_v_filter_graph"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AVFilterLink</label>
+        <link refid="struct_a_v_filter_link"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dst</edgelabel>
+          <edgelabel>src</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>incfg</edgelabel>
+          <edgelabel>outcfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AVFilterPadParams</label>
+        <link refid="struct_a_v_filter_pad_params"/>
+      </node>
+      <node id="2">
+        <label>AVFilterParams</label>
+        <link refid="struct_a_v_filter_params"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="6">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="932" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="932" bodyend="935"/>
+    <listofallmembers>
+      <member refid="struct_a_v_filter_chain_1aedebb337fac024e27b499fb3a0321f3e" prot="public" virt="non-virtual"><scope>AVFilterChain</scope><name>filters</name></member>
+      <member refid="struct_a_v_filter_chain_1abacf5280bd6db0d37a304b0dd0b6c54d" prot="public" virt="non-virtual"><scope>AVFilterChain</scope><name>nb_filters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

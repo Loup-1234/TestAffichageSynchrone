@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__version__utils" kind="group">
+    <compoundname>version_utils</compoundname>
+    <title>Library Version Macros</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__version__utils_1gaaab323b60e1a6e38ec939efe881474c7" prot="public" static="no">
+        <name>AV_VERSION_INT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>((a)&lt;&lt;16 | (b)&lt;&lt;8 | (c))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__version__utils_1gae4a414a06fd428d25f6f20007f9c38cd" prot="public" static="no">
+        <name>AV_VERSION_DOT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>a ##.## b ##.## c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__version__utils_1ga544629c436701faf48e33d650ace1289" prot="public" static="no">
+        <name>AV_VERSION</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>AV_VERSION_DOT(a, b, c)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__version__utils_1ga22b06bb028da63a503bae6e6b6511e45" prot="public" static="no">
+        <name>AV_VERSION_MAJOR</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &gt;&gt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract version components from the full ::AV_VERSION_INT int as returned by functions like <ref refid="group__lavf__core_1gaf2d4e0fee66cef99dea2153933e6b907" kindref="member">avformat_version()</ref> and <ref refid="group__lavc__core_1gadf72cccead0dc2575adcea2dc3e1ae7c" kindref="member">avcodec_version()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="64" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__version__utils_1ga2774cac5de8717157eb3de8da13fcca7" prot="public" static="no">
+        <name>AV_VERSION_MINOR</name>
+        <param><defname>a</defname></param>
+        <initializer>(((a) &amp; 0x00FF00) &gt;&gt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="65" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__version__utils_1gadad2b2973ee8876ee03957839e801c9b" prot="public" static="no">
+        <name>AV_VERSION_MICRO</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &amp; 0xFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" line="66" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/version.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Useful to check and match library version in order to maintain backward compatibility.</para>
+<para>The FFmpeg libraries follow a versioning scheme very similar to Semantic Versioning (<ulink url="http://semver.org/">http://semver.org/</ulink>) The difference is that the component called PATCH is called MICRO in FFmpeg and its value is reset to 100 instead of 0 to keep it above or equal to 100. Also we do not increase MICRO for every bugfix or change in git master.</para>
+<para>Prior to FFmpeg 3.2 point releases did not change any lib version number to avoid aliassing different git master checkouts. Starting with FFmpeg 3.2, the released library versions will occupy a separate MAJOR.MINOR that is not used on the master development branch. That is if we branch a release of master 55.10.123 we will bump to 55.11.100 for the release and master will continue at 55.12.100 after it. Each new point release will then bump the MICRO improving the usefulness of the lib versions. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

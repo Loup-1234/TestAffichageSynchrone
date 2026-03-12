@@ -1,0 +1,54 @@
+name: Documentation
+
+on:
+  push:
+    branches: ["master"]  # Ou "main", vérifie le nom de ta branche principale
+
+# Permissions pour que l'action puisse publier sur GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. Installation des outils
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+          pip install sphinx breathe sphinx_rtd_theme
+
+      # 2. Génération Doxygen
+      - name: Generate Doxygen XML
+        working-directory: docs
+        run: doxygen Doxyfile
+
+      # 3. Génération Sphinx HTML
+      - name: Generate Sphinx HTML
+        run: sphinx-build -b html docs/source docs/build/html
+
+      # 4. Préparation pour GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/build/html
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

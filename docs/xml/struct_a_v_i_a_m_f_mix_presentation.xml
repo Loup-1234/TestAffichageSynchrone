@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_a_m_f_mix_presentation" kind="struct" language="C++" prot="public">
+    <compoundname>AVIAMFMixPresentation</compoundname>
+    <includes refid="iamf_8h" local="no">iamf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_presentation_1a974a45e308754f8a05389ba83ad3257e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIAMFMixPresentation::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIAMFMixPresentation::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="617" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_presentation_1ac155c946081a40d49251226984ee3b80" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_i_a_m_f_submix" kindref="compound">AVIAMFSubmix</ref> **</type>
+        <definition>AVIAMFSubmix** AVIAMFMixPresentation::submixes</definition>
+        <argsstring></argsstring>
+        <name>submixes</name>
+        <qualifiedname>AVIAMFMixPresentation::submixes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of submixes.</para>
+<para>Set by <ref refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kindref="member">av_iamf_mix_presentation_add_submix()</ref>, must not be modified by any other code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="625" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_presentation_1a7e1e631a5c1c484329f22d12ddeea151" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVIAMFMixPresentation::nb_submixes</definition>
+        <argsstring></argsstring>
+        <name>nb_submixes</name>
+        <qualifiedname>AVIAMFMixPresentation::nb_submixes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of submixes in the presentation.</para>
+<para>Set by <ref refid="group__lavu__iamf__mix_1gaad1a6b8c71eb96f8d19a016ddca37ecf" kindref="member">av_iamf_mix_presentation_add_submix()</ref>, must not be modified by any other code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="632" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_a_m_f_mix_presentation_1ab33c73aa840d3e79e8acfee751d1f13c" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVIAMFMixPresentation::annotations</definition>
+        <argsstring></argsstring>
+        <name>annotations</name>
+        <qualifiedname>AVIAMFMixPresentation::annotations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A dictionary of strings describing the mix in different languages. Must have the same amount of entries as every <ref refid="struct_a_v_i_a_m_f_submix_element_1a37ff0bf4a6747a3bcfaabcc3a89fc62d" kindref="member">Submix element annotations</ref>, stored in the same order, and with the same key strings.</para>
+<para>key is a string conforming to BCP-47 that specifies the language for the string stored in value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="644" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Information on how to render and mix one or more <ref refid="struct_a_v_i_a_m_f_audio_element" kindref="compound">AVIAMFAudioElement</ref> to generate the final audio output, as defined in section 3.7 of IAMF.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with <ref refid="group__lavu__iamf__mix_1gaa7a7e9ad085d1b1534763492212a4ce6" kindref="member">av_iamf_mix_presentation_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="10">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIAMFMixPresentation</label>
+        <link refid="struct_a_v_i_a_m_f_mix_presentation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>submixes</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AVIAMFParamDefinition</label>
+        <link refid="struct_a_v_i_a_m_f_param_definition"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVIAMFSubmix</label>
+        <link refid="struct_a_v_i_a_m_f_submix"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>layouts</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>output_mix_config</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_mix_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVIAMFSubmixElement</label>
+        <link refid="struct_a_v_i_a_m_f_submix_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>element_mix_config</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_mix_gain</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AVIAMFSubmixLayout</label>
+        <link refid="struct_a_v_i_a_m_f_submix_layout"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>sound_system</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>album_anchored_loudness</edgelabel>
+          <edgelabel>dialogue_anchored_loudness</edgelabel>
+          <edgelabel>digital_peak</edgelabel>
+          <edgelabel>integrated_loudness</edgelabel>
+          <edgelabel>true_peak</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" line="616" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h" bodystart="616" bodyend="645"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_a_m_f_mix_presentation_1ab33c73aa840d3e79e8acfee751d1f13c" prot="public" virt="non-virtual"><scope>AVIAMFMixPresentation</scope><name>annotations</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_presentation_1a974a45e308754f8a05389ba83ad3257e" prot="public" virt="non-virtual"><scope>AVIAMFMixPresentation</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_presentation_1a7e1e631a5c1c484329f22d12ddeea151" prot="public" virt="non-virtual"><scope>AVIAMFMixPresentation</scope><name>nb_submixes</name></member>
+      <member refid="struct_a_v_i_a_m_f_mix_presentation_1ac155c946081a40d49251226984ee3b80" prot="public" virt="non-virtual"><scope>AVIAMFMixPresentation</scope><name>submixes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

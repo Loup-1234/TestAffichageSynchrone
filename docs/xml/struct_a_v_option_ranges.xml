@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_option_ranges" kind="struct" language="C++" prot="public">
+    <compoundname>AVOptionRanges</compoundname>
+    <includes refid="opt_8h" local="no">opt.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_option_ranges_1a6e081daa7e707607e63165909b0995ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_option_range" kindref="compound">AVOptionRange</ref> **</type>
+        <definition>AVOptionRange** AVOptionRanges::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>AVOptionRanges::range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of option ranges.</para>
+<para>Most of option types use just one component. Following describes multi-component option types:</para>
+<para>AV_OPT_TYPE_IMAGE_SIZE: component index 0: range of pixel count (width * height). component index 1: range of width. component index 2: range of height.</para>
+<para><simplesect kind="note"><para>To obtain multi-component version of this structure, user must provide AV_OPT_MULTI_COMPONENT_RANGE to av_opt_query_ranges or av_opt_query_ranges_default function.</para>
+</simplesect>
+Multi-component range can be read as in following example:</para>
+<para><programlisting><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>range_index,<sp/>component_index;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__avoptions_1gaf7ad285d705354db2f1f4a721aadd516" kindref="member">AVOptionRanges</ref><sp/>*ranges;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__avoptions_1ga9bef99908016b6b875441bda2deaae31" kindref="member">AVOptionRange</ref><sp/>*<ref refid="struct_a_v_option_ranges_1a6e081daa7e707607e63165909b0995ce" kindref="member">range</ref>[3];<sp/></highlight><highlight class="comment">//may<sp/>require<sp/>more<sp/>than<sp/>3<sp/>in<sp/>the<sp/>future.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__avoptions_1ga9751db4da3e0facd522f5b345f4001ef" kindref="member">av_opt_query_ranges</ref>(&amp;ranges,<sp/>obj,<sp/>key,<sp/><ref refid="group__opt__mng_1ga1f10d07c79eec8bd1a8e1b91817e1b1a" kindref="member">AV_OPT_MULTI_COMPONENT_RANGE</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(range_index<sp/>=<sp/>0;<sp/>range_index<sp/>&lt;<sp/>ranges-&gt;<ref refid="struct_a_v_option_ranges_1a4cc8d5b5afbb07ae49357a7e0d6a2517" kindref="member">nb_ranges</ref>;<sp/>range_index++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(component_index<sp/>=<sp/>0;<sp/>component_index<sp/>&lt;<sp/>ranges-&gt;<ref refid="struct_a_v_option_ranges_1aff53b7303e862ed17b10237ca52ce8a8" kindref="member">nb_components</ref>;<sp/>component_index++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_option_ranges_1a6e081daa7e707607e63165909b0995ce" kindref="member">range</ref>[component_index]<sp/>=<sp/>ranges-&gt;<ref refid="struct_a_v_option_ranges_1a6e081daa7e707607e63165909b0995ce" kindref="member">range</ref>[ranges-&gt;<ref refid="struct_a_v_option_ranges_1a4cc8d5b5afbb07ae49357a7e0d6a2517" kindref="member">nb_ranges</ref><sp/>*<sp/>component_index<sp/>+<sp/>range_index];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>something<sp/>with<sp/>range<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__avoptions_1ga880756f24644ff66c806ed2d9ab3d790" kindref="member">av_opt_freep_ranges</ref>(&amp;ranges);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="539" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_ranges_1a4cc8d5b5afbb07ae49357a7e0d6a2517" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVOptionRanges::nb_ranges</definition>
+        <argsstring></argsstring>
+        <name>nb_ranges</name>
+        <qualifiedname>AVOptionRanges::nb_ranges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of ranges per component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="543" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_ranges_1aff53b7303e862ed17b10237ca52ce8a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVOptionRanges::nb_components</definition>
+        <argsstring></argsstring>
+        <name>nb_components</name>
+        <qualifiedname>AVOptionRanges::nb_components</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of components. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="547" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>List of <ref refid="struct_a_v_option_range" kindref="compound">AVOptionRange</ref> structs. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVOptionRange</label>
+        <link refid="struct_a_v_option_range"/>
+      </node>
+      <node id="1">
+        <label>AVOptionRanges</label>
+        <link refid="struct_a_v_option_ranges"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>range</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="508" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="508" bodyend="548"/>
+    <listofallmembers>
+      <member refid="struct_a_v_option_ranges_1aff53b7303e862ed17b10237ca52ce8a8" prot="public" virt="non-virtual"><scope>AVOptionRanges</scope><name>nb_components</name></member>
+      <member refid="struct_a_v_option_ranges_1a4cc8d5b5afbb07ae49357a7e0d6a2517" prot="public" virt="non-virtual"><scope>AVOptionRanges</scope><name>nb_ranges</name></member>
+      <member refid="struct_a_v_option_ranges_1a6e081daa7e707607e63165909b0995ce" prot="public" virt="non-virtual"><scope>AVOptionRanges</scope><name>range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

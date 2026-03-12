@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_b_s_f_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVBSFContext</compoundname>
+    <includes refid="bsf_8h" local="no">bsf.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1aa5d5018816daac804414c459ec8a1c5c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVBSFContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVBSFContext::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for logging and AVOptions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="72" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1aee0c46a9a0d19ec7c8970565fd56c5bf" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> *</type>
+        <definition>const struct AVBitStreamFilter* AVBSFContext::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <qualifiedname>AVBSFContext::filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitstream filter this context is an instance of. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="77" column="34" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1a5c799e50f572340b69d4c79cda8f2de9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVBSFContext::priv_data</definition>
+        <argsstring></argsstring>
+        <name>priv_data</name>
+        <qualifiedname>AVBSFContext::priv_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opaque filter-specific private data. If filter-&gt;priv_class is non-NULL, this is an AVOptions-enabled struct. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="83" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1a702ace639b8193475cf0a12ebdebd738" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref> *</type>
+        <definition>AVCodecParameters* AVBSFContext::par_in</definition>
+        <argsstring></argsstring>
+        <name>par_in</name>
+        <qualifiedname>AVBSFContext::par_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameters of the input stream. This field is allocated in <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref>, it needs to be filled by the caller before <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="90" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1ab58f8c37eec197e0f30d17d60959a60d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_codec_parameters" kindref="compound">AVCodecParameters</ref> *</type>
+        <definition>AVCodecParameters* AVBSFContext::par_out</definition>
+        <argsstring></argsstring>
+        <name>par_out</name>
+        <qualifiedname>AVBSFContext::par_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameters of the output stream. This field is allocated in <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref>, it is set by the filter in <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="96" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1ad75adf988c00f89202099c87ea39f0db" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVBSFContext::time_base_in</definition>
+        <argsstring></argsstring>
+        <name>time_base_in</name>
+        <qualifiedname>AVBSFContext::time_base_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timebase used for the timestamps of the input packets. Set by the caller before <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="102" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_b_s_f_context_1a571e7d7c14cbd318254cea33ee5a61e3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVBSFContext::time_base_out</definition>
+        <argsstring></argsstring>
+        <name>time_base_out</name>
+        <qualifiedname>AVBSFContext::time_base_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timebase used for the timestamps of the output packets. Set by the filter in <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="108" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The bitstream filter state.</para>
+<para>This struct must be allocated with <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref> and freed with <ref refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kindref="member">av_bsf_free()</ref>.</para>
+<para>The fields in the struct will only be changed (by the caller or by the filter) as described in their documentation, and are to be considered immutable otherwise. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVBSFContext</label>
+        <link refid="struct_a_v_b_s_f_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>par_in</edgelabel>
+          <edgelabel>par_out</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time_base_in</edgelabel>
+          <edgelabel>time_base_out</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVBitStreamFilter</label>
+        <link refid="struct_a_v_bit_stream_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="9">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVCodecParameters</label>
+        <link refid="struct_a_v_codec_parameters"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="8">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="68" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="68" bodyend="109"/>
+    <listofallmembers>
+      <member refid="struct_a_v_b_s_f_context_1aa5d5018816daac804414c459ec8a1c5c" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>av_class</name></member>
+      <member refid="struct_a_v_b_s_f_context_1aee0c46a9a0d19ec7c8970565fd56c5bf" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>filter</name></member>
+      <member refid="struct_a_v_b_s_f_context_1a702ace639b8193475cf0a12ebdebd738" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>par_in</name></member>
+      <member refid="struct_a_v_b_s_f_context_1ab58f8c37eec197e0f30d17d60959a60d" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>par_out</name></member>
+      <member refid="struct_a_v_b_s_f_context_1a5c799e50f572340b69d4c79cda8f2de9" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>priv_data</name></member>
+      <member refid="struct_a_v_b_s_f_context_1ad75adf988c00f89202099c87ea39f0db" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>time_base_in</name></member>
+      <member refid="struct_a_v_b_s_f_context_1a571e7d7c14cbd318254cea33ee5a61e3" prot="public" virt="non-virtual"><scope>AVBSFContext</scope><name>time_base_out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

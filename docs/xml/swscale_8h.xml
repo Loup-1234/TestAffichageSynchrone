@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="swscale_8h" kind="file" language="C++">
+    <compoundname>swscale.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="avutil_8h" local="yes">libavutil/avutil.h</includes>
+    <includes refid="frame_8h" local="yes">libavutil/frame.h</includes>
+    <includes refid="log_8h" local="yes">libavutil/log.h</includes>
+    <includes refid="pixfmt_8h" local="yes">libavutil/pixfmt.h</includes>
+    <includes refid="libswscale_2version__major_8h" local="yes">version_major.h</includes>
+    <includes refid="libswscale_2version_8h" local="yes">version.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="16">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="3">
+        <label>libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>version.h</label>
+        <link refid="libswscale_2version_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>version_major.h</label>
+        <link refid="libswscale_2version__major_8h"/>
+      </node>
+      <node id="5">
+        <label>errno.h</label>
+      </node>
+      <node id="6">
+        <label>inttypes.h</label>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="23">
+        <label>stdarg.h</label>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_sws_context" prot="public">SwsContext</innerclass>
+    <innerclass refid="struct_sws_vector" prot="public">SwsVector</innerclass>
+    <innerclass refid="struct_sws_filter" prot="public">SwsFilter</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__libsws_1ga3f5d541ffe1c4bf8a216c54f0de8eb11" kind="define"><name>SWS_SRC_V_CHR_DROP_MASK</name></member>
+      <member refid="group__libsws_1ga77331b2b4b9648ca47a3ca307a2151c5" kind="define"><name>SWS_SRC_V_CHR_DROP_SHIFT</name></member>
+      <member refid="group__libsws_1gad4a209577e10d655c2495349a96bb611" kind="define"><name>SWS_PARAM_DEFAULT</name></member>
+      <member refid="group__libsws_1gacc8f46b6954cae7d891a041793e2e751" kind="define"><name>SWS_MAX_REDUCE_CUTOFF</name></member>
+      <member refid="group__libsws_1gab5d1f9b6f50c155496b358d348ed6f36" kind="define"><name>SWS_CS_ITU709</name></member>
+      <member refid="group__libsws_1gaae1a28de2fd6fdd21a082bcc10ce6cb9" kind="define"><name>SWS_CS_FCC</name></member>
+      <member refid="group__libsws_1gaf9de144a406b66c68bd29cdcaefaeee5" kind="define"><name>SWS_CS_ITU601</name></member>
+      <member refid="group__libsws_1gab3795e86c9f475f206a187d937c7f4fa" kind="define"><name>SWS_CS_ITU624</name></member>
+      <member refid="group__libsws_1gac7287919a348578d8452c42c03d65042" kind="define"><name>SWS_CS_SMPTE170M</name></member>
+      <member refid="group__libsws_1ga8a066eae69a34d9d60c73c40628094e4" kind="define"><name>SWS_CS_SMPTE240M</name></member>
+      <member refid="group__libsws_1ga1867c2c57f3c0d18fa72592e30e7d3c2" kind="define"><name>SWS_CS_DEFAULT</name></member>
+      <member refid="group__libsws_1ga0c8f55463ce3bd8904dedd7e73f29050" kind="define"><name>SWS_CS_BT2020</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__libsws_1ga7305b190c33d84c6575799b4b593b3b9" kind="enum"><name>SwsDither</name></member>
+      <member refid="group__libsws_1ga878a03b3ee6c5066ee77c5c02b8f1016" kind="enum"><name>SwsAlphaBlend</name></member>
+      <member refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" kind="enum"><name>SwsFlags</name></member>
+      <member refid="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" kind="enum"><name>SwsIntent</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__libsws_1ga3413e874ea65f0359401e0b1eb6d6493" kind="typedef"><name>SwsDither</name></member>
+      <member refid="group__libsws_1gac38355f58ac72a0607ba7321b63de560" kind="typedef"><name>SwsAlphaBlend</name></member>
+      <member refid="group__libsws_1ga78b2424b6d8e082f23a96ae9876eb336" kind="typedef"><name>SwsFlags</name></member>
+      <member refid="group__libsws_1ga22f2a1c07391c3bbcee9fc72e8817cf8" kind="typedef"><name>SwsIntent</name></member>
+      <member refid="group__libsws_1gaeb9ece6befd951821db249a4964db4d9" kind="typedef"><name>SwsContext</name></member>
+      <member refid="group__libsws_1ga9903e4683796e886b8be703cbc849e84" kind="typedef"><name>SwsVector</name></member>
+      <member refid="group__libsws_1gaed49e40b2ec4227883104d9a82b94cdf" kind="typedef"><name>SwsFilter</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__libsws_1gac879a3ada8130d32ba02a9265bfef253" kind="function"><name>swscale_version</name></member>
+      <member refid="group__libsws_1gab2d9cdff8aba8e5bb9e3691de864dc52" kind="function"><name>swscale_configuration</name></member>
+      <member refid="group__libsws_1ga5bc0b8f0d5c6702635fc93105208a0f9" kind="function"><name>swscale_license</name></member>
+      <member refid="group__libsws_1ga9952d942bbc700df8b9913a854ae36a3" kind="function"><name>sws_get_class</name></member>
+      <member refid="group__libsws_1ga6d69c4a081a1cba151c39e23b3780bd6" kind="function"><name>sws_alloc_context</name></member>
+      <member refid="group__libsws_1ga6e70a576a77f5839db7b1b65fe1be58c" kind="function"><name>sws_free_context</name></member>
+      <member refid="group__libsws_1gabf3c64eb307bbcd57495a00a1f8fe593" kind="function"><name>sws_test_format</name></member>
+      <member refid="group__libsws_1ga26061dc3409549af7c4f372ddf99101c" kind="function"><name>sws_test_colorspace</name></member>
+      <member refid="group__libsws_1ga43691a3d2d7aa2d65ba5eacf14e31f32" kind="function"><name>sws_test_primaries</name></member>
+      <member refid="group__libsws_1ga088df79fb46a1f504f2f19bce99a58d6" kind="function"><name>sws_test_transfer</name></member>
+      <member refid="group__libsws_1ga9a4b99648a5f2fe9b3d7e8cd6e1643f2" kind="function"><name>sws_test_frame</name></member>
+      <member refid="group__libsws_1gac123c2a5a4ac089de0648d4f0e1dc7b4" kind="function"><name>sws_frame_setup</name></member>
+      <member refid="group__libsws_1ga50bb392cac2bf4e626e309b56ab76c32" kind="function"><name>sws_is_noop</name></member>
+      <member refid="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" kind="function"><name>sws_scale_frame</name></member>
+      <member refid="group__libsws_1ga8c2a7d79bda5281ee2acdda359379f9e" kind="function"><name>sws_getCoefficients</name></member>
+      <member refid="group__libsws_1gab5e631b602510bd3fa3a5a7d509e573d" kind="function"><name>sws_isSupportedInput</name></member>
+      <member refid="group__libsws_1ga6885dc8ec36e8f2e701924263aa92cb0" kind="function"><name>sws_isSupportedOutput</name></member>
+      <member refid="group__libsws_1ga67f865ce22ae986ea84f4d7ce60ef182" kind="function"><name>sws_isSupportedEndiannessConversion</name></member>
+      <member refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kind="function"><name>sws_init_context</name></member>
+      <member refid="group__libsws_1gad90b463ceeafdfd526994742f9954dbb" kind="function"><name>sws_freeContext</name></member>
+      <member refid="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" kind="function"><name>sws_getContext</name></member>
+      <member refid="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" kind="function"><name>sws_scale</name></member>
+      <member refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kind="function"><name>sws_frame_start</name></member>
+      <member refid="group__libsws_1gad48e9f18ad68427a0b0c564801de5d77" kind="function"><name>sws_frame_end</name></member>
+      <member refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" kind="function"><name>sws_send_slice</name></member>
+      <member refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kind="function"><name>sws_receive_slice</name></member>
+      <member refid="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" kind="function"><name>sws_receive_slice_alignment</name></member>
+      <member refid="group__libsws_1gafe7b7ca136c8b6bd1fbfca2beb28c5b1" kind="function"><name>sws_setColorspaceDetails</name></member>
+      <member refid="group__libsws_1ga1f9aed5176a5f8f169b8254ac57bdba7" kind="function"><name>sws_getColorspaceDetails</name></member>
+      <member refid="group__libsws_1ga7dfc79582bea9aaf0bcf4bb308c0f3f0" kind="function"><name>sws_allocVec</name></member>
+      <member refid="group__libsws_1ga873f630c7ae479fee1597924a2409fcd" kind="function"><name>sws_getGaussianVec</name></member>
+      <member refid="group__libsws_1gaf79fd6cabde06a0f2d118eb373bf83c6" kind="function"><name>sws_scaleVec</name></member>
+      <member refid="group__libsws_1gab40ce33fa0a432f1ba57dda9f740380d" kind="function"><name>sws_normalizeVec</name></member>
+      <member refid="group__libsws_1ga5745e8384365fd5c6b0a3241d6ab767b" kind="function"><name>sws_freeVec</name></member>
+      <member refid="group__libsws_1ga62206af736294f8cd90716877223d2af" kind="function"><name>sws_getDefaultFilter</name></member>
+      <member refid="group__libsws_1ga17b762761f7a53d596841ac0f2d4a2b5" kind="function"><name>sws_freeFilter</name></member>
+      <member refid="group__libsws_1ga91f10acfeb755cc9c551c6981beaa0a9" kind="function"><name>sws_getCachedContext</name></member>
+      <member refid="group__libsws_1ga2a140989dfed29dd91065352b6a52840" kind="function"><name>sws_convertPalette8ToPacked32</name></member>
+      <member refid="group__libsws_1ga3c3d094eb840e10fbc3a37c20a6c8585" kind="function"><name>sws_convertPalette8ToPacked24</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>external API header </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2024<sp/>Niklas<sp/>Haas</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2001-2011<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWSCALE_SWSCALE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWSCALE_SWSCALE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avutil_8h" kindref="compound">libavutil/avutil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">libavutil/frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libavutil/log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pixfmt_8h" kindref="compound">libavutil/pixfmt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libswscale_2version__major_8h" kindref="compound">version_major.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAVE_AV_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>When<sp/>included<sp/>as<sp/>part<sp/>of<sp/>the<sp/>ffmpeg<sp/>build,<sp/>only<sp/>include<sp/>the<sp/>major<sp/>version</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>to<sp/>avoid<sp/>unnecessary<sp/>rebuilds.<sp/>When<sp/>included<sp/>externally,<sp/>keep<sp/>including</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>the<sp/>full<sp/>version<sp/>information.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libswscale_2version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>swscale_version(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group__libsws_1gab2d9cdff8aba8e5bb9e3691de864dc52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__libsws_1gab2d9cdff8aba8e5bb9e3691de864dc52" kindref="member">swscale_configuration</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group__libsws_1ga5bc0b8f0d5c6702635fc93105208a0f9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__libsws_1ga5bc0b8f0d5c6702635fc93105208a0f9" kindref="member">swscale_license</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group__libsws_1ga9952d942bbc700df8b9913a854ae36a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*<ref refid="group__libsws_1ga9952d942bbc700df8b9913a854ae36a3" kindref="member">sws_get_class</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/******************************</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>Flags<sp/>and<sp/>quality<sp/>settings<sp/>*</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>******************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SwsDither<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_NONE<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">/*<sp/>disable<sp/>dithering<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_AUTO,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>auto-select<sp/>from<sp/>preset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_BAYER,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ordered<sp/>dither<sp/>matrix<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_ED,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>error<sp/>diffusion<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_A_DITHER,<sp/></highlight><highlight class="comment">/*<sp/>arithmetic<sp/>addition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_X_DITHER,<sp/></highlight><highlight class="comment">/*<sp/>arithmetic<sp/>xor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_DITHER_NB,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>not<sp/>part<sp/>of<sp/>the<sp/>ABI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/>SwsDither;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SwsAlphaBlend<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_ALPHA_BLEND_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_ALPHA_BLEND_UNIFORM,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_ALPHA_BLEND_CHECKERBOARD,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_ALPHA_BLEND_NB,<sp/><sp/></highlight><highlight class="comment">/*<sp/>not<sp/>part<sp/>of<sp/>the<sp/>ABI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/>SwsAlphaBlend;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" kindref="member">SwsFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="98" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798ae366a8f172c83a868c4a149ef844f2a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798ae366a8f172c83a868c4a149ef844f2a7" kindref="member">SWS_FAST_BILINEAR</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>0,<sp/></highlight></codeline>
+<codeline lineno="99" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a98ac2e5dde17be2430d2ac9a4b70afc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a98ac2e5dde17be2430d2ac9a4b70afc6" kindref="member">SWS_BILINEAR</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>1,<sp/></highlight></codeline>
+<codeline lineno="100" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a57e6f470533fc8b734f69718720e5bf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a57e6f470533fc8b734f69718720e5bf6" kindref="member">SWS_BICUBIC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>2,<sp/></highlight></codeline>
+<codeline lineno="101" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afb31eda138d9249e341f5442399728de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afb31eda138d9249e341f5442399728de" kindref="member">SWS_X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>3,<sp/></highlight></codeline>
+<codeline lineno="102" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afbf7c2808c569ee52d42fe5b8eec6810" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afbf7c2808c569ee52d42fe5b8eec6810" kindref="member">SWS_POINT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>4,<sp/></highlight></codeline>
+<codeline lineno="103" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a7e70e7c3c6afc8ddd4b288464abd335d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a7e70e7c3c6afc8ddd4b288464abd335d" kindref="member">SWS_AREA</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>5,<sp/></highlight></codeline>
+<codeline lineno="104" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8758e35d29c39b37c3cfe19e81a986c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8758e35d29c39b37c3cfe19e81a986c2" kindref="member">SWS_BICUBLIN</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>6,<sp/></highlight></codeline>
+<codeline lineno="105" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798adf59bb7e4837683a6f6a8f35e1d3e8fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798adf59bb7e4837683a6f6a8f35e1d3e8fa" kindref="member">SWS_GAUSS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>7,<sp/></highlight></codeline>
+<codeline lineno="106" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798aceafe89e45c73cf84170b12d1c717bfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798aceafe89e45c73cf84170b12d1c717bfc" kindref="member">SWS_SINC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>8,<sp/></highlight></codeline>
+<codeline lineno="107" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798acfcf777352870884cc3fe12481e5e8b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798acfcf777352870884cc3fe12481e5e8b3" kindref="member">SWS_LANCZOS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/><sp/>9,<sp/></highlight></codeline>
+<codeline lineno="108" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a4fac67fa6dd88a7e82b833ae491ccdd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a4fac67fa6dd88a7e82b833ae491ccdd8" kindref="member">SWS_SPLINE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>10,<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a6fdd2dbcf5e8c7332980820e7fa4fe79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a6fdd2dbcf5e8c7332980820e7fa4fe79" kindref="member">SWS_STRICT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>11,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a27c3d9ff99412848efaab5d6e20e07c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a27c3d9ff99412848efaab5d6e20e07c7" kindref="member">SWS_PRINT_INFO</ref><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>12,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afffe9f6875f303f20155dfaa21348e02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798afffe9f6875f303f20155dfaa21348e02" kindref="member">SWS_FULL_CHR_H_INT</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>13,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798acd6d6abf360fafcb122bd1b2888cf029" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798acd6d6abf360fafcb122bd1b2888cf029" kindref="member">SWS_FULL_CHR_H_INP</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>14,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798af2289add3daff9fe455793d44ca71df4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798af2289add3daff9fe455793d44ca71df4" kindref="member">SWS_ACCURATE_RND</ref><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>18,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>SWS_BITEXACT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>19,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a9ffc10709b72b0299b01f3ef663ec575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a9ffc10709b72b0299b01f3ef663ec575" kindref="member">SWS_UNSTABLE</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>20,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798ade1c537d8cfcff1e23680ed5707cd0f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798ade1c537d8cfcff1e23680ed5707cd0f0" kindref="member">SWS_DIRECT_BGR</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>15,<sp/></highlight></codeline>
+<codeline lineno="169" refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8f9140301cea8279af00ad2acc0519e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1ggade664a46fb2652e6050985ebcd316798a8f9140301cea8279af00ad2acc0519e9" kindref="member">SWS_ERROR_DIFFUSION</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>23,<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/><ref refid="group__libsws_1gade664a46fb2652e6050985ebcd316798" kindref="member">SwsFlags</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" kindref="member">SwsIntent</ref><sp/>{</highlight></codeline>
+<codeline lineno="173" refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a0e2c41ecbb835ddcafb698b324842cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a0e2c41ecbb835ddcafb698b324842cb2" kindref="member">SWS_INTENT_PERCEPTUAL</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a4077b3f6bd40dcaa47c892d2d2c5e5dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a4077b3f6bd40dcaa47c892d2d2c5e5dc" kindref="member">SWS_INTENT_RELATIVE_COLORIMETRIC</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="175" refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a70550e463d669dcac6540ff7c526a611" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a70550e463d669dcac6540ff7c526a611" kindref="member">SWS_INTENT_SATURATION</ref><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a397c098df7ea6b3b281347bf8ff759d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a397c098df7ea6b3b281347bf8ff759d6" kindref="member">SWS_INTENT_ABSOLUTE_COLORIMETRIC</ref><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="177" refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a9a0357eb476ebb4e24ac82fbd0a92ee0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__libsws_1gga71e02a84731a9d51c3b27c1ecb15f4f4a9a0357eb476ebb4e24ac82fbd0a92ee0" kindref="member">SWS_INTENT_NB</ref>,<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}<sp/><ref refid="group__libsws_1ga71e02a84731a9d51c3b27c1ecb15f4f4" kindref="member">SwsIntent</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">/***********************************</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>Context<sp/>creation<sp/>and<sp/>management<sp/>*</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="struct_sws_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>*av_class;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="struct_sws_context_1a90a448639c27486dc88b3ef4fa1252de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="struct_sws_context_1a90a448639c27486dc88b3ef4fa1252de" kindref="member">opaque</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="struct_sws_context_1aef45de443b59978fd38ad1531c618574" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aef45de443b59978fd38ad1531c618574" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="struct_sws_context_1aebfe8c01f9ea0bb80c7ae4d433cc5062" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aebfe8c01f9ea0bb80c7ae4d433cc5062" kindref="member">scaler_params</ref>[2];</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="struct_sws_context_1a3cc13e08b01c1152405b3a0e4313b255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1a3cc13e08b01c1152405b3a0e4313b255" kindref="member">threads</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="struct_sws_context_1abdb353dd741ba1ff0bfab6bcb133c682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SwsDither<sp/><ref refid="struct_sws_context_1abdb353dd741ba1ff0bfab6bcb133c682" kindref="member">dither</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="struct_sws_context_1a8179d7c46f6e0acf4541abe42d03d743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SwsAlphaBlend<sp/><ref refid="struct_sws_context_1a8179d7c46f6e0acf4541abe42d03d743" kindref="member">alpha_blend</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="struct_sws_context_1a28ec4f81a1e3dcce7c92f2e7be8e9bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1a28ec4f81a1e3dcce7c92f2e7be8e9bd1" kindref="member">gamma_flag</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="struct_sws_context_1a0dbc8c02bd3b4cd472e07008009751ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aa7dc7a4f9ec57a7c37957259a51cd920" kindref="member">src_w</ref>,<sp/><ref refid="struct_sws_context_1a0dbc8c02bd3b4cd472e07008009751ff" kindref="member">src_h</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="234" refid="struct_sws_context_1a7facd34608c9258dae8c2942e3dce78f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_w,<sp/><ref refid="struct_sws_context_1a7facd34608c9258dae8c2942e3dce78f" kindref="member">dst_h</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="235" refid="struct_sws_context_1aab113373f157ee3b255ad97481af0cd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aab113373f157ee3b255ad97481af0cd9" kindref="member">src_format</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="struct_sws_context_1a0ff71c9ef5ab6dabf90378fa7bf836ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1a0ff71c9ef5ab6dabf90378fa7bf836ec" kindref="member">dst_format</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="struct_sws_context_1af10043377f39ca25a7af39f214c3fdff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1af10043377f39ca25a7af39f214c3fdff" kindref="member">src_range</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="struct_sws_context_1ac8b4b166f254ccb8def6ce21deead82b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1ac8b4b166f254ccb8def6ce21deead82b" kindref="member">dst_range</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="struct_sws_context_1aadaa2cfcdba987b8a231612f180ae8ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aadaa2cfcdba987b8a231612f180ae8ca" kindref="member">src_v_chr_pos</ref>;<sp/></highlight></codeline>
+<codeline lineno="240" refid="struct_sws_context_1af1c9fa89159377a7949d9a1a9586f44f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1af1c9fa89159377a7949d9a1a9586f44f" kindref="member">src_h_chr_pos</ref>;<sp/></highlight></codeline>
+<codeline lineno="241" refid="struct_sws_context_1aaf85ed903dff37c5768867dd296ba92c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1aaf85ed903dff37c5768867dd296ba92c" kindref="member">dst_v_chr_pos</ref>;<sp/></highlight></codeline>
+<codeline lineno="242" refid="struct_sws_context_1a8d5fc2f5fa1e0f15b0a5b45b82b14c1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1a8d5fc2f5fa1e0f15b0a5b45b82b14c1a" kindref="member">dst_h_chr_pos</ref>;<sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="struct_sws_context_1a1c26a06608196ce7b73a34f7d20e2c13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context_1a1c26a06608196ce7b73a34f7d20e2c13" kindref="member">intent</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Remember<sp/>to<sp/>add<sp/>new<sp/>fields<sp/>to<sp/>graph.c:opts_equal()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="group__libsws_1gaeb9ece6befd951821db249a4964db4d9" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_sws_context" kindref="compound">SwsContext</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="group__libsws_1ga6d69c4a081a1cba151c39e23b3780bd6" refkind="member"><highlight class="normal"><ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*<ref refid="group__libsws_1ga6d69c4a081a1cba151c39e23b3780bd6" kindref="member">sws_alloc_context</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="group__libsws_1ga6e70a576a77f5839db7b1b65fe1be58c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga6e70a576a77f5839db7b1b65fe1be58c" kindref="member">sws_free_context</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>**ctx);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">/***************************</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>Supported<sp/>frame<sp/>formats<sp/>*</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>***************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="group__libsws_1gabf3c64eb307bbcd57495a00a1f8fe593" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gabf3c64eb307bbcd57495a00a1f8fe593" kindref="member">sws_test_format</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>format,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="group__libsws_1ga26061dc3409549af7c4f372ddf99101c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga26061dc3409549af7c4f372ddf99101c" kindref="member">sws_test_colorspace</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref><sp/>colorspace,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="group__libsws_1ga43691a3d2d7aa2d65ba5eacf14e31f32" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga43691a3d2d7aa2d65ba5eacf14e31f32" kindref="member">sws_test_primaries</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref><sp/>primaries,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="group__libsws_1ga088df79fb46a1f504f2f19bce99a58d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga088df79fb46a1f504f2f19bce99a58d6" kindref="member">sws_test_transfer</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>trc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="group__libsws_1ga9a4b99648a5f2fe9b3d7e8cd6e1643f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga9a4b99648a5f2fe9b3d7e8cd6e1643f2" kindref="member">sws_test_frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>output);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="group__libsws_1gac123c2a5a4ac089de0648d4f0e1dc7b4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gac123c2a5a4ac089de0648d4f0e1dc7b4" kindref="member">sws_frame_setup</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">/********************</highlight></codeline>
+<codeline lineno="332"><highlight class="comment"><sp/>*<sp/>Main<sp/>scaling<sp/>API<sp/>*</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/>********************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="group__libsws_1ga50bb392cac2bf4e626e309b56ab76c32" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga50bb392cac2bf4e626e309b56ab76c32" kindref="member">sws_is_noop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga2c7b155b5a961f6b6fd5771550fc7dc4" kindref="member">sws_scale_frame</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="comment">/*************************</highlight></codeline>
+<codeline lineno="366"><highlight class="comment"><sp/>*<sp/>Legacy<sp/>(stateful)<sp/>API<sp/>*</highlight></codeline>
+<codeline lineno="367"><highlight class="comment"><sp/>*************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_SRC_V_CHR_DROP_MASK<sp/><sp/><sp/><sp/><sp/>0x30000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_SRC_V_CHR_DROP_SHIFT<sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_PARAM_DEFAULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>123456</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_MAX_REDUCE_CUTOFF<sp/>0.002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_ITU709<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_FCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_ITU601<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_ITU624<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_SMPTE170M<sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_SMPTE240M<sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_DEFAULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWS_CS_BT2020<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="group__libsws_1ga8c2a7d79bda5281ee2acdda359379f9e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="group__libsws_1ga8c2a7d79bda5281ee2acdda359379f9e" kindref="member">sws_getCoefficients</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colorspace);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="comment">//<sp/>when<sp/>used<sp/>for<sp/>filters<sp/>they<sp/>must<sp/>have<sp/>an<sp/>odd<sp/>number<sp/>of<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="comment">//<sp/>coeffs<sp/>cannot<sp/>be<sp/>shared<sp/>between<sp/>vectors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="struct_sws_vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>{</highlight></codeline>
+<codeline lineno="397" refid="struct_sws_vector_1a6aa9dc37ec3cd932e9db2bf7904716b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="struct_sws_vector_1a6aa9dc37ec3cd932e9db2bf7904716b9" kindref="member">coeff</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="398" refid="struct_sws_vector_1abb5da8263daced70032ba5edf955f4a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_sws_vector_1abb5da8263daced70032ba5edf955f4a4" kindref="member">length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}<sp/><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref>;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vectors<sp/>can<sp/>be<sp/>shared</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="struct_sws_filter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*lumH;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*lumV;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*chrH;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*chrV;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal">}<sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref>;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="group__libsws_1gab5e631b602510bd3fa3a5a7d509e573d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gab5e631b602510bd3fa3a5a7d509e573d" kindref="member">sws_isSupportedInput</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="group__libsws_1ga6885dc8ec36e8f2e701924263aa92cb0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga6885dc8ec36e8f2e701924263aa92cb0" kindref="member">sws_isSupportedOutput</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="group__libsws_1ga67f865ce22ae986ea84f4d7ce60ef182" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga67f865ce22ae986ea84f4d7ce60ef182" kindref="member">sws_isSupportedEndiannessConversion</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>pix_fmt);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal">av_warn_unused_result</highlight></codeline>
+<codeline lineno="440" refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga2416739ac982d34b0010b7ce03074737" kindref="member">sws_init_context</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*sws_context,<sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*srcFilter,<sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*dstFilter);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446" refid="group__libsws_1gad90b463ceeafdfd526994742f9954dbb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gad90b463ceeafdfd526994742f9954dbb" kindref="member">sws_freeContext</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*swsContext);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469" refid="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" refkind="member"><highlight class="normal"><ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*<ref refid="group__libsws_1gad1ad2df7ff7722a9a4672cd8c17c0d97" kindref="member">sws_getContext</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcW,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcH,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>srcFormat,</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstW,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstH,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>dstFormat,</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*srcFilter,</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*dstFilter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga99a8a57d7fe64b44ea6ba6ddc698a1ca" kindref="member">sws_scale</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>srcSlice[],</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcStride[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcSliceY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcSliceH,</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dst[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstStride[]);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532" refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gaf1596b10563e2851c46c4de92736188a" kindref="member">sws_frame_start</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542" refid="group__libsws_1gad48e9f18ad68427a0b0c564801de5d77" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gad48e9f18ad68427a0b0c564801de5d77" kindref="member">sws_frame_end</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556" refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga3394509b390ece6e39a027861a3fad4a" kindref="member">sws_send_slice</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice_start,</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice_height);</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576" refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga19c354a10825af537aab99048b9eb900" kindref="member">sws_receive_slice</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice_start,</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice_height);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga6df42b4622cf0ed9ac8d6f8bdf0b70db" kindref="member">sws_receive_slice_alignment</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="group__libsws_1gafe7b7ca136c8b6bd1fbfca2beb28c5b1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gafe7b7ca136c8b6bd1fbfca2beb28c5b1" kindref="member">sws_setColorspaceDetails</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inv_table[4],</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcRange,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>table[4],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstRange,</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>brightness,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>contrast,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>saturation);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611" refid="group__libsws_1ga1f9aed5176a5f8f169b8254ac57bdba7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga1f9aed5176a5f8f169b8254ac57bdba7" kindref="member">sws_getColorspaceDetails</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**inv_table,</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*srcRange,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**table,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*dstRange,</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*brightness,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*contrast,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*saturation);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="group__libsws_1ga7dfc79582bea9aaf0bcf4bb308c0f3f0" refkind="member"><highlight class="normal"><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*<ref refid="group__libsws_1ga7dfc79582bea9aaf0bcf4bb308c0f3f0" kindref="member">sws_allocVec</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624" refid="group__libsws_1ga873f630c7ae479fee1597924a2409fcd" refkind="member"><highlight class="normal"><ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*<ref refid="group__libsws_1ga873f630c7ae479fee1597924a2409fcd" kindref="member">sws_getGaussianVec</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>variance,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>quality);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629" refid="group__libsws_1gaf79fd6cabde06a0f2d118eb373bf83c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gaf79fd6cabde06a0f2d118eb373bf83c6" kindref="member">sws_scaleVec</ref>(<ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634" refid="group__libsws_1gab40ce33fa0a432f1ba57dda9f740380d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1gab40ce33fa0a432f1ba57dda9f740380d" kindref="member">sws_normalizeVec</ref>(<ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sws_freeVec(<ref refid="struct_sws_vector" kindref="compound">SwsVector</ref><sp/>*a);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*sws_getDefaultFilter(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lumaGBlur,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>chromaGBlur,</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lumaSharpen,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>chromaSharpen,</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>chromaHShift,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>chromaVShift,</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verbose);</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sws_freeFilter(<ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*filter);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656" refid="group__libsws_1ga91f10acfeb755cc9c551c6981beaa0a9" refkind="member"><highlight class="normal"><ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*<ref refid="group__libsws_1ga91f10acfeb755cc9c551c6981beaa0a9" kindref="member">sws_getCachedContext</ref>(<ref refid="struct_sws_context" kindref="compound">SwsContext</ref><sp/>*context,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcW,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>srcH,</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>srcFormat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstW,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstH,</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref><sp/>dstFormat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*srcFilter,<sp/><ref refid="struct_sws_filter" kindref="compound">SwsFilter</ref><sp/>*dstFilter,</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672" refid="group__libsws_1ga2a140989dfed29dd91065352b6a52840" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga2a140989dfed29dd91065352b6a52840" kindref="member">sws_convertPalette8ToPacked32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/>uint8_t<sp/>*dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_pixels,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*palette);</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684" refid="group__libsws_1ga3c3d094eb840e10fbc3a37c20a6c8585" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__libsws_1ga3c3d094eb840e10fbc3a37c20a6c8585" kindref="member">sws_convertPalette8ToPacked24</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/>uint8_t<sp/>*dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_pixels,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*palette);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SWSCALE_SWSCALE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="hdr__dynamic__vivid__metadata_8h" kind="file" language="C++">
+    <compoundname>hdr_dynamic_vivid_metadata.h</compoundname>
+    <includes refid="frame_8h" local="yes">frame.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="17">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="5">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>errno.h</label>
+      </node>
+      <node id="8">
+        <label>inttypes.h</label>
+      </node>
+      <node id="9">
+        <label>limits.h</label>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="24">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>stdlib.h</label>
+      </node>
+      <node id="13">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_h_d_r_vivid3_spline_params" prot="public">AVHDRVivid3SplineParams</innerclass>
+    <innerclass refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" prot="public">AVHDRVividColorToneMappingParams</innerclass>
+    <innerclass refid="struct_a_v_h_d_r_vivid_color_transform_params" prot="public">AVHDRVividColorTransformParams</innerclass>
+    <innerclass refid="struct_a_v_dynamic_h_d_r_vivid" prot="public">AVDynamicHDRVivid</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hdr__dynamic__vivid__metadata_8h_1afd79aa31f1fff6d7da7c1a900aed84ac" prot="public" static="no">
+        <type>struct AVHDRVivid3SplineParams</type>
+        <definition>typedef struct AVHDRVivid3SplineParams AVHDRVivid3SplineParams</definition>
+        <argsstring></argsstring>
+        <name>AVHDRVivid3SplineParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HDR Vivid three spline params. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="71" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hdr__dynamic__vivid__metadata_8h_1a94a0973f852e22fc2fd71b9db31f4e4a" prot="public" static="no">
+        <type>struct AVHDRVividColorToneMappingParams</type>
+        <definition>typedef struct AVHDRVividColorToneMappingParams AVHDRVividColorToneMappingParams</definition>
+        <argsstring></argsstring>
+        <name>AVHDRVividColorToneMappingParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color tone mapping parameters at a processing window in a dynamic metadata for CUVA 005.1:2021. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="172" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hdr__dynamic__vivid__metadata_8h_1a535e64aa8c719fc95db7ca9153b56deb" prot="public" static="no">
+        <type>struct AVHDRVividColorTransformParams</type>
+        <definition>typedef struct AVHDRVividColorTransformParams AVHDRVividColorTransformParams</definition>
+        <argsstring></argsstring>
+        <name>AVHDRVividColorTransformParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color transform parameters at a processing window in a dynamic metadata for CUVA 005.1:2021. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="243" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hdr__dynamic__vivid__metadata_8h_1a40ca389437066e4c38ecb0e3354d8b38" prot="public" static="no">
+        <type>struct AVDynamicHDRVivid</type>
+        <definition>typedef struct AVDynamicHDRVivid AVDynamicHDRVivid</definition>
+        <argsstring></argsstring>
+        <name>AVDynamicHDRVivid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct represents dynamic metadata for color volume transform - CUVA 005.1:2021 standard</para>
+<para>To be used as payload of a <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> or <ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> with the appropriate type.</para>
+<para><simplesect kind="note"><para>The struct should be allocated with av_dynamic_hdr_vivid_alloc() and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="272" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="hdr__dynamic__vivid__metadata_8h_1a773cdc0ec893d9cfdf59cfe470716dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> *</type>
+        <definition>AVDynamicHDRVivid * av_dynamic_hdr_vivid_alloc</definition>
+        <argsstring>(size_t *size)</argsstring>
+        <name>av_dynamic_hdr_vivid_alloc</name>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> structure and set its fields to default values. The resulting struct can be freed using <ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep()</ref>.</para>
+<para><simplesect kind="return"><para>An <ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> filled with default values or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="281" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" declline="281" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="hdr__dynamic__vivid__metadata_8h_1a57591d6704dfcdfd93adf4f2df46fe05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> *</type>
+        <definition>AVDynamicHDRVivid * av_dynamic_hdr_vivid_create_side_data</definition>
+        <argsstring>(AVFrame *frame)</argsstring>
+        <name>av_dynamic_hdr_vivid_create_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a complete <ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> and add it to the frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame which side data is added to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> structure to be filled by caller or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" line="290" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h" declline="290" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Limin<sp/>Wang<sp/>&lt;lance.lmwang<sp/>at<sp/>gmail.com&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_HDR_DYNAMIC_VIVID_METADATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_HDR_DYNAMIC_VIVID_METADATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_a_v_h_d_r_vivid3_spline_params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_h_d_r_vivid3_spline_params" kindref="compound">AVHDRVivid3SplineParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="struct_a_v_h_d_r_vivid3_spline_params_1a899f8865de68c89552f6acfed515906f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1a899f8865de68c89552f6acfed515906f" kindref="member">th_mode</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="struct_a_v_h_d_r_vivid3_spline_params_1a9f98bd9a3d123fd510717a7aa9cde1bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1a9f98bd9a3d123fd510717a7aa9cde1bc" kindref="member">th_enable_mb</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="struct_a_v_h_d_r_vivid3_spline_params_1af274e6f71306bd47ed98dfe537020551" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1af274e6f71306bd47ed98dfe537020551" kindref="member">th_enable</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_a_v_h_d_r_vivid3_spline_params_1a368c516f1fd9a669984d0625d33e61cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1a368c516f1fd9a669984d0625d33e61cd" kindref="member">th_delta1</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="struct_a_v_h_d_r_vivid3_spline_params_1a93b3ddeda468f06cf24aea5c2f63ccc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1a93b3ddeda468f06cf24aea5c2f63ccc4" kindref="member">th_delta2</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_a_v_h_d_r_vivid3_spline_params_1a17571146d71e8094b8eba7de4caaeaa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params_1a17571146d71e8094b8eba7de4caaeaa2" kindref="member">enable_strength</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params" kindref="compound">AVHDRVivid3SplineParams</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" kindref="compound">AVHDRVividColorToneMappingParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="83" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1ab444e9d0312f4a29eabb7ece24f8efba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1ab444e9d0312f4a29eabb7ece24f8efba" kindref="member">targeted_system_display_maximum_luminance</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aea1550e08ceb628998ec3de1f4949df7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1aea1550e08ceb628998ec3de1f4949df7" kindref="member">base_enable_flag</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a40bf34f7a154f78fe59972996d9d1afd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a40bf34f7a154f78fe59972996d9d1afd" kindref="member">base_param_m_p</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a406eaa04f958e4407f9074eabd249ac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a406eaa04f958e4407f9074eabd249ac8" kindref="member">base_param_m_m</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a5889fc286c0f73a512a53d8cdc5e69c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a5889fc286c0f73a512a53d8cdc5e69c8" kindref="member">base_param_m_a</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a580da5e0c12cf0b35de733ea200cc96f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a580da5e0c12cf0b35de733ea200cc96f" kindref="member">base_param_m_b</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a72067ea4ce82bbaa4bb7f8a8fdbbc801" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a72067ea4ce82bbaa4bb7f8a8fdbbc801" kindref="member">base_param_m_n</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a324ecaeae1c1f11eaa92a83a51264e65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a324ecaeae1c1f11eaa92a83a51264e65" kindref="member">base_param_k1</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a937ff7be8c932d77896100e4ee6c4d3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a937ff7be8c932d77896100e4ee6c4d3f" kindref="member">base_param_k2</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a4d46a9af35a3ef191e2b24f309d1591e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a4d46a9af35a3ef191e2b24f309d1591e" kindref="member">base_param_k3</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1af7a18da7046c580c12853264a387924a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1af7a18da7046c580c12853264a387924a" kindref="member">base_param_Delta_enable_mode</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a60524ca67bdc61206a26c4749f3cb0dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a60524ca67bdc61206a26c4749f3cb0dd" kindref="member">base_param_Delta</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a14f626a654ce05d0b013f9ba41ca35ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a14f626a654ce05d0b013f9ba41ca35ba" kindref="member">three_Spline_enable_flag</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a69e5d71571ecf4330f2bac92d3cf647a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params_1a69e5d71571ecf4330f2bac92d3cf647a" kindref="member">three_Spline_num</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_h_d_r_vivid3_spline_params" kindref="compound">AVHDRVivid3SplineParams</ref><sp/>three_spline[2];</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" kindref="compound">AVHDRVividColorToneMappingParams</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="struct_a_v_h_d_r_vivid_color_transform_params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_h_d_r_vivid_color_transform_params" kindref="compound">AVHDRVividColorTransformParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="185" refid="struct_a_v_h_d_r_vivid_color_transform_params_1ab9bf21054ecf260342e1c974f80060e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1ab9bf21054ecf260342e1c974f80060e3" kindref="member">minimum_maxrgb</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="struct_a_v_h_d_r_vivid_color_transform_params_1a8c493fab8c5f1ffdc67fb3f4858f2760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1a8c493fab8c5f1ffdc67fb3f4858f2760" kindref="member">average_maxrgb</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="struct_a_v_h_d_r_vivid_color_transform_params_1a19a35abccff2cb1a87662ac6ac3ebaea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1a19a35abccff2cb1a87662ac6ac3ebaea" kindref="member">variance_maxrgb</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="struct_a_v_h_d_r_vivid_color_transform_params_1ae6ce67f85f3f6ba7fa162f43b65d25ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1ae6ce67f85f3f6ba7fa162f43b65d25ce" kindref="member">maximum_maxrgb</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="struct_a_v_h_d_r_vivid_color_transform_params_1a9170d676c78e090c72a13e4af34990d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1a9170d676c78e090c72a13e4af34990d2" kindref="member">tone_mapping_mode_flag</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="struct_a_v_h_d_r_vivid_color_transform_params_1afafb72fdb1d91eee56a86be337eb9807" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1afafb72fdb1d91eee56a86be337eb9807" kindref="member">tone_mapping_param_num</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="struct_a_v_h_d_r_vivid_color_transform_params_1a6a1893c846e1914e6d72c9a38ecff576" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_h_d_r_vivid_color_tone_mapping_params" kindref="compound">AVHDRVividColorToneMappingParams</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1a6a1893c846e1914e6d72c9a38ecff576" kindref="member">tm_params</ref>[2];</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="struct_a_v_h_d_r_vivid_color_transform_params_1ad8b591931e37699b6567cd19d76dbf74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1ad8b591931e37699b6567cd19d76dbf74" kindref="member">color_saturation_mapping_flag</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="struct_a_v_h_d_r_vivid_color_transform_params_1abc747fae740a68cba61412552677b5af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1abc747fae740a68cba61412552677b5af" kindref="member">color_saturation_num</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="struct_a_v_h_d_r_vivid_color_transform_params_1a7e31ff133f1f096430964d8f0ea3ec37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params_1a7e31ff133f1f096430964d8f0ea3ec37" kindref="member">color_saturation_gain</ref>[8];</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}<sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params" kindref="compound">AVHDRVividColorTransformParams</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="struct_a_v_dynamic_h_d_r_vivid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref><sp/>{</highlight></codeline>
+<codeline lineno="260" refid="struct_a_v_dynamic_h_d_r_vivid_1a5b420fdc49bff7a62b89d182c0fd8b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_dynamic_h_d_r_vivid_1a5b420fdc49bff7a62b89d182c0fd8b7e" kindref="member">system_start_code</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="struct_a_v_dynamic_h_d_r_vivid_1a329c6373ec2a4e49c2bd2996531a44bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_v_dynamic_h_d_r_vivid_1a329c6373ec2a4e49c2bd2996531a44bc" kindref="member">num_windows</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="struct_a_v_dynamic_h_d_r_vivid_1a7a724783ed6fd50ca029f93f5eb9572d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_h_d_r_vivid_color_transform_params" kindref="compound">AVHDRVividColorTransformParams</ref><sp/><ref refid="struct_a_v_dynamic_h_d_r_vivid_1a7a724783ed6fd50ca029f93f5eb9572d" kindref="member">params</ref>[3];</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}<sp/><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref><sp/>*av_dynamic_hdr_vivid_alloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref><sp/>*av_dynamic_hdr_vivid_create_side_data(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_HDR_DYNAMIC_VIVID_METADATA_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h"/>
+  </compounddef>
+</doxygen>

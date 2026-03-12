@@ -1,0 +1,1049 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__packet" kind="group">
+    <compoundname>lavc_packet</compoundname>
+    <title>AVPacket</title>
+    <innerclass refid="struct_a_v_packet" prot="public">AVPacket</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavc__packet_1ga437bfa981d4c8968ca92f41ecbcb8054" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVSideDataParamChangeFlags</name>
+        <enumvalue id="group__lavc__packet_1gga437bfa981d4c8968ca92f41ecbcb8054ac0fd6e147f7e6ebe14002f95594e5317" prot="public">
+          <name>AV_SIDE_DATA_PARAM_CHANGE_SAMPLE_RATE</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavc__packet_1gga437bfa981d4c8968ca92f41ecbcb8054af1a5e3b694261807e0ed9032b424c165" prot="public">
+          <name>AV_SIDE_DATA_PARAM_CHANGE_DIMENSIONS</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="664" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="664" bodyend="667"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__packet_1ga95fb1cffcaba889eaca3b985c811991b" prot="public" static="no">
+        <type>struct AVPacket</type>
+        <definition>typedef struct AVPacket AVPacket</definition>
+        <argsstring></argsstring>
+        <name>AVPacket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure stores compressed data. It is typically exported by demuxers and then passed as input to decoders, or received as output from encoders and then passed to muxers.</para>
+<para>For video, it should typically contain one compressed frame. For audio it may contain several compressed frames. Encoders are allowed to output empty packets, with no compressed data, containing only side data (e.g. to update some stream parameters at the end of encoding).</para>
+<para>The semantics of data ownership depends on the buf field. If it is set, the packet data is dynamically allocated and is valid indefinitely until a call to <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref> reduces the reference count to 0.</para>
+<para>If the buf field is not set <ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref()</ref> would make a copy instead of increasing the reference count.</para>
+<para>The side data is always allocated with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, copied by <ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref()</ref> and freed by <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref>.</para>
+<para>sizeof(AVPacket) being a part of the public ABI is deprecated. once av_init_packet() is removed, new packets will only be able to be allocated with <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref>, and new fields may be added to the end of the struct with a minor bump.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="633" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+        <definition>AVPacket * av_packet_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_packet_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> and set its fields to default values. The resulting struct must be freed using <ref refid="group__lavc__packet_1ga1066464e7cdd1f215df6940db94e5d8e" kindref="member">av_packet_free()</ref>.</para>
+<para><simplesect kind="return"><para>An <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> filled with default values or NULL on failure.</para>
+</simplesect>
+<simplesect kind="note"><para>this only allocates the <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> itself, not the data buffers. Those must be allocated through other means such as av_new_packet.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gadfa708660b85a56749c753124de2da7d" kindref="member">av_new_packet</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="680" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="680" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga839594f86c1f1dcefa28eae5db93c655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+        <definition>AVPacket * av_packet_clone</definition>
+        <argsstring>(const AVPacket *src)</argsstring>
+        <name>av_packet_clone</name>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new packet that references the same data as src.</para>
+<para>This is a shortcut for <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref>+<ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref()</ref>.</para>
+<para><simplesect kind="return"><para>newly created <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> on success, NULL on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="692" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="692" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga1066464e7cdd1f215df6940db94e5d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_packet_free</definition>
+        <argsstring>(AVPacket **pkt)</argsstring>
+        <name>av_packet_free</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> **</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the packet, if the packet is reference counted, it will be unreferenced first.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet to be freed. The pointer will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>passing NULL is a no-op. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="701" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="701" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gadfa708660b85a56749c753124de2da7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_new_packet</definition>
+        <argsstring>(AVPacket *pkt, int size)</argsstring>
+        <name>av_new_packet</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate the payload of a packet and initialize its fields with default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wanted payload size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if OK, AVERROR_xxx otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="730" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="730" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gaceba1c21e5718f87abdf61cf21500485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_shrink_packet</definition>
+        <argsstring>(AVPacket *pkt, int size)</argsstring>
+        <name>av_shrink_packet</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduce packet size, correctly zeroing padding</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="738" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="738" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga74f66e072998b8ce81ef3aba8d617a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_grow_packet</definition>
+        <argsstring>(AVPacket *pkt, int grow_by)</argsstring>
+        <name>av_grow_packet</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>grow_by</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase packet size, correctly zeroing padding</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grow_by</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes by which to increase the size of the packet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="746" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="746" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga7ca877e1f0ded89a27199b65e9a077dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_from_data</definition>
+        <argsstring>(AVPacket *pkt, uint8_t *data, int size)</argsstring>
+        <name>av_packet_from_data</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a reference-counted packet from <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>ed data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet to be initialized. This function will set the data, size, and buf fields, all others are left untouched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data allocated by <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> to be used as packet data. If this function returns successfully, the data is owned by the underlying <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref>. The caller may not access the data through other means. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data in bytes, without the padding. I.e. the full buffer size is assumed to be size + AV_INPUT_BUFFER_PADDING_SIZE.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="761" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="761" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga6c320d8a4bf8693fa2e0da3ee50d98e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * av_packet_new_side_data</definition>
+        <argsstring>(AVPacket *pkt, enum AVPacketSideDataType type, size_t size)</argsstring>
+        <name>av_packet_new_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate new information of a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side information type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side information size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to fresh allocated data or NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="771" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="771" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_add_side_data</definition>
+        <argsstring>(AVPacket *pkt, enum AVPacketSideDataType type, uint8_t *data, size_t size)</argsstring>
+        <name>av_packet_add_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrap an existing array as a packet side data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side information type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the side data array. It must be allocated with the <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> family of functions. The ownership of the data is transferred to pkt. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side information size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative AVERROR code on failure. On failure, the packet is unchanged and the data remains owned by the caller. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="787" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="787" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga3d815115e1f842932aef3e8e5cdfafff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_shrink_side_data</definition>
+        <argsstring>(AVPacket *pkt, enum AVPacketSideDataType type, size_t size)</argsstring>
+        <name>av_packet_shrink_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shrink the already allocated side data buffer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side information type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new side information size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, &lt; 0 on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="798" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="798" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gab28b5f89648fb20f49e30aa258d119b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * av_packet_get_side_data</definition>
+        <argsstring>(const AVPacket *pkt, enum AVPacketSideDataType type, size_t *size)</argsstring>
+        <name>av_packet_get_side_data</name>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get side information from packet.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>desired side information type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If supplied, *size will be set to the size of the side data or to zero if the desired side data is not present. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to data if present or NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="810" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="810" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gabb1aa49bdbea2f3a586ea48f1082e898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * av_packet_pack_dictionary</definition>
+        <argsstring>(AVDictionary *dict, size_t *size)</argsstring>
+        <name>av_packet_pack_dictionary</name>
+        <param>
+          <type>AVDictionary *</type>
+          <declname>dict</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pack a dictionary for use in side_data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to store the size of the returned data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to data if successful, NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="820" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="820" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gaae45c29cb3a29dc80b0b8f4ee9724492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_unpack_dictionary</definition>
+        <argsstring>(const uint8_t *data, size_t size, AVDictionary **dict)</argsstring>
+        <name>av_packet_unpack_dictionary</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unpack a dictionary from side_data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data from side_data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the metadata storage dictionary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, &lt; 0 on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="829" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="829" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga5cf4ba712aca9b300daf1eea1b8a9ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_packet_free_side_data</definition>
+        <argsstring>(AVPacket *pkt)</argsstring>
+        <name>av_packet_free_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function to free all the side data stored. All the other fields stay untouched.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="838" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="838" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_ref</definition>
+        <argsstring>(AVPacket *dst, const AVPacket *src)</argsstring>
+        <name>av_packet_ref</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup a new reference to the data described by a given packet</para>
+<para>If src is reference-counted, setup dst as a new reference to the buffer in src. Otherwise allocate a new buffer in dst and copy the data from src into it.</para>
+<para>All the other fields are copied from src.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination packet. Will be completely overwritten. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source packet</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error. On error, dst will be blank (as if returned by <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="857" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="857" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_packet_unref</definition>
+        <argsstring>(AVPacket *pkt)</argsstring>
+        <name>av_packet_unref</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wipe the packet.</para>
+<para>Unreference the buffer referenced by the packet and reset the remaining packet fields to their default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The packet to be unreferenced. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="867" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="867" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga91dbb1359f99547adb544ee96a406b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_packet_move_ref</definition>
+        <argsstring>(AVPacket *dst, AVPacket *src)</argsstring>
+        <name>av_packet_move_ref</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move every field in src to dst and reset src.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source packet, will be reset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination packet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="877" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="877" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gade00f67930f4e2a3401b67b701d5b3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_copy_props</definition>
+        <argsstring>(AVPacket *dst, const AVPacket *src)</argsstring>
+        <name>av_packet_copy_props</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy only &quot;properties&quot; fields from src to dst.</para>
+<para>Properties for the purpose of this function are all the fields beside those related to the packet data (buf, data, size)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination packet </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source packet</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success AVERROR on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="890" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="890" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1ga8a6deff6c1809029037ffd760db3e0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_make_refcounted</definition>
+        <argsstring>(AVPacket *pkt)</argsstring>
+        <name>av_packet_make_refcounted</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure the data described by a given packet is reference counted.</para>
+<para><simplesect kind="note"><para>This function does not ensure that the reference will be writable. Use av_packet_make_writable instead for that purpose.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gaaa304ffdab83984ac995d134e4298d4b" kindref="member">av_packet_make_writable</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet whose data should be made reference counted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error. On failure, the packet is unchanged. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="906" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="906" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gaaa304ffdab83984ac995d134e4298d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_packet_make_writable</definition>
+        <argsstring>(AVPacket *pkt)</argsstring>
+        <name>av_packet_make_writable</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a writable reference for the data described by a given packet, avoiding data copy if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet whose data should be made writable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on failure. On failure, the packet is unchanged. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="917" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="917" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gae5c86e4d93f6e7aa62ef2c60763ea67e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_packet_rescale_ts</definition>
+        <argsstring>(AVPacket *pkt, AVRational tb_src, AVRational tb_dst)</argsstring>
+        <name>av_packet_rescale_ts</name>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>tb_src</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>tb_dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert valid timing fields (timestamps / durations) in a packet from one timebase to another. Timestamps with unknown values (AV_NOPTS_VALUE) will be ignored.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet on which the conversion will be performed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tb_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source timebase, in which the timing fields in pkt are expressed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tb_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination timebase, to which the timing fields will be converted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="930" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="930" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__packet_1gaa47a2d74fb0313206f6b2a4bac215de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVContainerFifo *</type>
+        <definition>struct AVContainerFifo * av_container_fifo_alloc_avpacket</definition>
+        <argsstring>(unsigned flags)</argsstring>
+        <name>av_container_fifo_alloc_avpacket</name>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVContainerFifo instance for <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currently unused </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="937" column="22" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" declline="937" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavc__packet_1ga75603d7c2b8adf5829f4fd2fb860168f" prot="public" static="no">
+        <name>AV_PKT_FLAG_KEY</name>
+        <initializer>0x0001</initializer>
+        <briefdescription>
+<para>The packet contains a keyframe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="643" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__packet_1ga46187df0d7711108ece88804dcc38025" prot="public" static="no">
+        <name>AV_PKT_FLAG_CORRUPT</name>
+        <initializer>0x0002</initializer>
+        <briefdescription>
+<para>The packet content is corrupted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="644" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__packet_1ga3d36105d7143b319acef3c86d2beb382" prot="public" static="no">
+        <name>AV_PKT_FLAG_DISCARD</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag is used to discard packets which are required to maintain valid decoder state but are not required for output and should be dropped after decoding. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="650" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__packet_1ga6d8a1f619e14951921fd51702d587b7c" prot="public" static="no">
+        <name>AV_PKT_FLAG_TRUSTED</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The packet comes from a trusted source.</para>
+<para>Otherwise-unsafe constructs such as arbitrary pointers to data outside the packet may be followed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="657" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavc__packet_1ga879a3af0408d39f0ef98010f07952601" prot="public" static="no">
+        <name>AV_PKT_FLAG_DISPOSABLE</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag is used to indicate packets that contain frames that can be discarded by the decoder. I.e. Non-reference frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="662" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Types and functions for working with <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

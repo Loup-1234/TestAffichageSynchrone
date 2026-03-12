@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="AfficheurVideo_8cpp" kind="file" language="C++">
+    <compoundname>AfficheurVideo.cpp</compoundname>
+    <includes local="no">raygui.h</includes>
+    <includes refid="AfficheurVideo_8h" local="yes">AfficheurVideo.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp</label>
+        <link refid="AfficheurVideo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AfficheurVideo.h</label>
+        <link refid="AfficheurVideo_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../raymedia/raymedia.h</label>
+        <link refid="raymedia_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>raygui.h</label>
+      </node>
+      <node id="5">
+        <label>raylib.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="AfficheurVideo_8cpp_1ad1fe71f9ccb3e6d92e514597114e790c" prot="public" static="no">
+        <name>RAYGUI_IMPLEMENTATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp" line="1" column="9" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp" bodystart="1" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#define<sp/>RAYGUI_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;raygui.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AfficheurVideo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classAfficheurVideo_1a7b3c63c6d317374f3795ab12d8b524dc" kindref="member">AfficheurVideo::AfficheurVideo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>InitWindow(800,<sp/>450,<sp/></highlight><highlight class="stringliteral">&quot;Video<sp/>Player&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>InitAudioDevice();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref><sp/>=<sp/>LoadMedia(filePath);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAfficheurVideo_1a4088e3111a211f6890e3e1fe74d29323" kindref="member">duration</ref><sp/>=<sp/>IsMediaValid(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>)<sp/>?<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(GetMediaProperties(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>).durationSec)<sp/>:<sp/>0.0f;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsMediaValid(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>))<sp/>SetWindowSize(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>.videoTexture.width,<sp/><ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>.videoTexture.height<sp/>+<sp/>50);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>SetTargetFPS(60);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="classAfficheurVideo_1a7c35d46d7f114cd3501f229fccade66c" kindref="member">AfficheurVideo::~AfficheurVideo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>UnloadMedia(&amp;<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>CloseAudioDevice();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>CloseWindow();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAfficheurVideo_1ac02044031693dee9ecf33c0be55e38a3" kindref="member">AfficheurVideo::run</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dragging<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>wasPlaying<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sliderValue<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>seekDelay<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!WindowShouldClose())<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateMedia(&amp;<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(seekDelay<sp/>&gt;<sp/>0)<sp/>seekDelay<sp/>-=<sp/>GetFrameTime();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!dragging<sp/>&amp;&amp;<sp/>seekDelay<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>IsMediaValid(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sliderValue<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(GetMediaPosition(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BeginDrawing();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClearBackground(RAYWHITE);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsMediaValid(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawTexture(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>.videoTexture,<sp/>0,<sp/>0,<sp/>WHITE);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>.videoTexture.height)<sp/>+<sp/>10;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GuiButton((Rectangle){10,<sp/>y,<sp/>50,<sp/>30},<sp/></highlight><highlight class="stringliteral">&quot;Play&quot;</highlight><highlight class="normal">))<sp/>SetMediaState(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>,<sp/>MEDIA_STATE_PLAYING);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GuiButton((Rectangle){70,<sp/>y,<sp/>50,<sp/>30},<sp/></highlight><highlight class="stringliteral">&quot;Pause&quot;</highlight><highlight class="normal">))<sp/>SetMediaState(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>,<sp/>MEDIA_STATE_PAUSED);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rectangle<sp/>sliderRect<sp/>=<sp/>{130,<sp/>y,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(GetScreenWidth())<sp/>-<sp/>140,<sp/>30};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)<sp/>&amp;&amp;<sp/>CheckCollisionPointRec(GetMousePosition(),<sp/>sliderRect))<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dragging<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wasPlaying<sp/>=<sp/>(GetMediaState(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>)<sp/>==<sp/>MEDIA_STATE_PLAYING);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wasPlaying)<sp/>SetMediaState(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>,<sp/>MEDIA_STATE_PAUSED);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GuiSlider(sliderRect,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>&amp;sliderValue,<sp/>0.0f,<sp/><ref refid="classAfficheurVideo_1a4088e3111a211f6890e3e1fe74d29323" kindref="member">duration</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dragging<sp/>&amp;&amp;<sp/>IsMouseButtonReleased(MOUSE_LEFT_BUTTON))<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dragging<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetMediaPosition(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>,<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)sliderValue);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wasPlaying)<sp/>SetMediaState(<ref refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" kindref="member">video</ref>,<sp/>MEDIA_STATE_PLAYING);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>seekDelay<sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndDrawing();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp"/>
+  </compounddef>
+</doxygen>

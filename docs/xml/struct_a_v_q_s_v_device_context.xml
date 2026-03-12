@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_q_s_v_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVQSVDeviceContext</compoundname>
+    <includes refid="hwcontext__qsv_8h" local="no">hwcontext_qsv.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_q_s_v_device_context_1abfdc22dbded8e90950b3dfce3f3bd83d" prot="public" static="no" mutable="no">
+        <type>mfxSession</type>
+        <definition>mfxSession AVQSVDeviceContext::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>AVQSVDeviceContext::session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="36" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_device_context_1a561ca800681d1e22b8ee4861ee446541" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVQSVDeviceContext::loader</definition>
+        <argsstring></argsstring>
+        <name>loader</name>
+        <qualifiedname>AVQSVDeviceContext::loader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The mfxLoader handle used for mfxSession creation</para>
+<para>This field is only available for oneVPL user. For non-oneVPL user, this field must be set to NULL.</para>
+<para>Filled by the user before calling av_hwdevice_ctx_init() and should be cast to mfxLoader handle. Deallocating the <ref refid="struct_a_v_h_w_device_context" kindref="compound">AVHWDeviceContext</ref> will always release this interface. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="47" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" line="35" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_qsv.h" bodystart="35" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_a_v_q_s_v_device_context_1a561ca800681d1e22b8ee4861ee446541" prot="public" virt="non-virtual"><scope>AVQSVDeviceContext</scope><name>loader</name></member>
+      <member refid="struct_a_v_q_s_v_device_context_1abfdc22dbded8e90950b3dfce3f3bd83d" prot="public" virt="non-virtual"><scope>AVQSVDeviceContext</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

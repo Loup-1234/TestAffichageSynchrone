@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_motion_vector" kind="struct" language="C++" prot="public">
+    <compoundname>AVMotionVector</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a0cb88b0996a7313be9f91b92b82819b7" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVMotionVector::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <qualifiedname>AVMotionVector::source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Where the current macroblock comes from; negative value when it comes from the past, positive value when it comes from the future. XXX: set exact relative ref frame reference instead of a +/- 1 &quot;direction&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="30" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1ae208462700b6b52d22ed38e9d62cf2cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVMotionVector::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>AVMotionVector::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width and height of the block. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="34" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1aaa41c9b570ff085251521a1198c1de9c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVMotionVector::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>AVMotionVector::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="34" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1af1cf3b7f185df7d95107625bc10c5c59" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVMotionVector::src_x</definition>
+        <argsstring></argsstring>
+        <name>src_x</name>
+        <qualifiedname>AVMotionVector::src_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute source position. Can be outside the frame area. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="38" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a1b8d6c20870c520796eaf4ed05a4e8f3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVMotionVector::src_y</definition>
+        <argsstring></argsstring>
+        <name>src_y</name>
+        <qualifiedname>AVMotionVector::src_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="38" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a5d5d77435dccd823b781d4a9e8647eb0" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVMotionVector::dst_x</definition>
+        <argsstring></argsstring>
+        <name>dst_x</name>
+        <qualifiedname>AVMotionVector::dst_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute destination position. Can be outside the frame area. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="42" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1af291ce180b66e55c0f6810f11fa7caa3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVMotionVector::dst_y</definition>
+        <argsstring></argsstring>
+        <name>dst_y</name>
+        <qualifiedname>AVMotionVector::dst_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="42" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a75d00ba82df36ec5e697527ddb9addcc" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVMotionVector::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVMotionVector::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra flag information. Currently unused. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="47" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1ab3a7233188fccabc9501cd25fe8749ba" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVMotionVector::motion_x</definition>
+        <argsstring></argsstring>
+        <name>motion_x</name>
+        <qualifiedname>AVMotionVector::motion_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Motion vector src_x = dst_x + motion_x / motion_scale src_y = dst_y + motion_y / motion_scale </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="53" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a34faca3d46c62fdcf4a78e2d219cdc5f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVMotionVector::motion_y</definition>
+        <argsstring></argsstring>
+        <name>motion_y</name>
+        <qualifiedname>AVMotionVector::motion_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="53" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_motion_vector_1a96f5e2a1cd18fc5ce9d3c13cfb34f4c0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVMotionVector::motion_scale</definition>
+        <argsstring></argsstring>
+        <name>motion_scale</name>
+        <qualifiedname>AVMotionVector::motion_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="54" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" line="24" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/motion_vector.h" bodystart="24" bodyend="55"/>
+    <listofallmembers>
+      <member refid="struct_a_v_motion_vector_1a5d5d77435dccd823b781d4a9e8647eb0" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>dst_x</name></member>
+      <member refid="struct_a_v_motion_vector_1af291ce180b66e55c0f6810f11fa7caa3" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>dst_y</name></member>
+      <member refid="struct_a_v_motion_vector_1a75d00ba82df36ec5e697527ddb9addcc" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>flags</name></member>
+      <member refid="struct_a_v_motion_vector_1aaa41c9b570ff085251521a1198c1de9c" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>h</name></member>
+      <member refid="struct_a_v_motion_vector_1a96f5e2a1cd18fc5ce9d3c13cfb34f4c0" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>motion_scale</name></member>
+      <member refid="struct_a_v_motion_vector_1ab3a7233188fccabc9501cd25fe8749ba" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>motion_x</name></member>
+      <member refid="struct_a_v_motion_vector_1a34faca3d46c62fdcf4a78e2d219cdc5f" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>motion_y</name></member>
+      <member refid="struct_a_v_motion_vector_1a0cb88b0996a7313be9f91b92b82819b7" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>source</name></member>
+      <member refid="struct_a_v_motion_vector_1af1cf3b7f185df7d95107625bc10c5c59" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>src_x</name></member>
+      <member refid="struct_a_v_motion_vector_1a1b8d6c20870c520796eaf4ed05a4e8f3" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>src_y</name></member>
+      <member refid="struct_a_v_motion_vector_1ae208462700b6b52d22ed38e9d62cf2cf" prot="public" virt="non-virtual"><scope>AVMotionVector</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

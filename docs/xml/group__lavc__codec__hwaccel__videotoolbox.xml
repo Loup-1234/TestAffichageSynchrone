@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__codec__hwaccel__videotoolbox" kind="group">
+    <compoundname>lavc_codec_hwaccel_videotoolbox</compoundname>
+    <title>VideoToolbox Decoder</title>
+    <innerfile refid="videotoolbox_8h">videotoolbox.h</innerfile>
+    <innerclass refid="struct_a_v_videotoolbox_context" prot="public">AVVideotoolboxContext</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__codec__hwaccel__videotoolbox_1gabbb25d9d1958b38ce867e0bfff992557" prot="public" static="no">
+        <type>struct AVVideotoolboxContext</type>
+        <definition>typedef struct AVVideotoolboxContext AVVideotoolboxContext</definition>
+        <argsstring></argsstring>
+        <name>AVVideotoolboxContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct holds all the information that needs to be passed between the caller and libavcodec for initializing Videotoolbox decoding. Its size is not a part of the public ABI, it must be allocated with av_videotoolbox_alloc_context() and freed with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="79" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavc__codec__hwaccel__videotoolbox_1ga63024b9f4f18a0420b1e71b49205d3ca" prot="public" static="no">
+        <name>Picture</name>
+        <initializer>QuickdrawPicture</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" line="43" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Hardware accelerated decoding using VideoToolbox on Apple Platforms </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

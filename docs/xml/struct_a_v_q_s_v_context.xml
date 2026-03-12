@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_q_s_v_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVQSVContext</compoundname>
+    <includes refid="qsv_8h" local="no">qsv.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1aa88e55219891596ee8205ae78cbca275" prot="public" static="no" mutable="no">
+        <type>mfxSession</type>
+        <definition>mfxSession AVQSVContext::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>AVQSVContext::session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If non-NULL, the session to use for encoding or decoding. Otherwise, libavcodec will try to create an internal session. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="41" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a6190ff613bf400fa6d7e5c78bacb4c00" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVContext::iopattern</definition>
+        <argsstring></argsstring>
+        <name>iopattern</name>
+        <qualifiedname>AVQSVContext::iopattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The IO pattern to use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a3c92105313bccdc0b7f63170ed9f992f" prot="public" static="no" mutable="no">
+        <type>mfxExtBuffer **</type>
+        <definition>mfxExtBuffer** AVQSVContext::ext_buffers</definition>
+        <argsstring></argsstring>
+        <name>ext_buffers</name>
+        <qualifiedname>AVQSVContext::ext_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra buffers to pass to encoder or decoder initialization. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="51" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a19ca280b4a280676abbb5a018f619282" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVContext::nb_ext_buffers</definition>
+        <argsstring></argsstring>
+        <name>nb_ext_buffers</name>
+        <qualifiedname>AVQSVContext::nb_ext_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="52" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a00b4f91c36429e719743c5a080856e33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVContext::opaque_alloc</definition>
+        <argsstring></argsstring>
+        <name>opaque_alloc</name>
+        <qualifiedname>AVQSVContext::opaque_alloc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding only. If this field is set to non-zero by the caller, libavcodec will create an mfxExtOpaqueSurfaceAlloc extended buffer and pass it to the encoder initialization. This only makes sense if iopattern is also set to MFX_IOPATTERN_IN_OPAQUE_MEMORY.</para>
+<para>The number of allocated opaque surfaces will be the sum of the number required by the encoder and the user-provided value nb_opaque_surfaces. The array of the opaque surfaces will be exported to the caller through the opaque_surfaces field.</para>
+<para>The caller must set this field to zero for oneVPL (MFX_VERSION &gt;= 2.0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="67" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a31ff5ab3cbbde801fdc264a6660e55e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVContext::nb_opaque_surfaces</definition>
+        <argsstring></argsstring>
+        <name>nb_opaque_surfaces</name>
+        <qualifiedname>AVQSVContext::nb_opaque_surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding only, and only if opaque_alloc is set to non-zero. Before calling <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref>, the caller should set this field to the number of extra opaque surfaces to allocate beyond what is required by the encoder.</para>
+<para>On return from <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref>, this field will be set by libavcodec to the total number of allocated opaque surfaces. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1ae9a2a1e951ebdfc2640ea33077f0c67e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVQSVContext::opaque_surfaces</definition>
+        <argsstring></argsstring>
+        <name>opaque_surfaces</name>
+        <qualifiedname>AVQSVContext::opaque_surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding only, and only if opaque_alloc is set to non-zero. On return from <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref>, this field will be used by libavcodec to export the array of the allocated opaque surfaces to the caller, so they can be passed to other parts of the pipeline.</para>
+<para>The buffer reference exported here is owned and managed by libavcodec, the callers should make their own reference with <ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref()</ref> and free it with <ref refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" kindref="member">av_buffer_unref()</ref> when it is no longer needed.</para>
+<para>The buffer data is an nb_opaque_surfaces-sized array of mfxFrameSurface1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="92" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_q_s_v_context_1a06f2493cfd72f41162e788e5247f5b90" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVQSVContext::opaque_alloc_type</definition>
+        <argsstring></argsstring>
+        <name>opaque_alloc_type</name>
+        <qualifiedname>AVQSVContext::opaque_alloc_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding only, and only if opaque_alloc is set to non-zero. On return from <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref>, this field will be set to the surface type used in the opaque allocation request. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="99" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is used for communicating QSV parameters between libavcodec and the caller. It is managed by the caller and must be assigned to <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref>.<itemizedlist>
+<listitem><para>decoding: hwaccel_context must be set on return from the get_format() callback</para>
+</listitem><listitem><para>encoding: hwaccel_context must be set before <ref refid="group__lavc__core_1ga11f785a188d7d9df71621001465b0f1d" kindref="member">avcodec_open2()</ref> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="1">
+        <label>AVQSVContext</label>
+        <link refid="struct_a_v_q_s_v_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>opaque_surfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" line="36" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/qsv.h" bodystart="36" bodyend="100"/>
+    <listofallmembers>
+      <member refid="struct_a_v_q_s_v_context_1a3c92105313bccdc0b7f63170ed9f992f" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>ext_buffers</name></member>
+      <member refid="struct_a_v_q_s_v_context_1a6190ff613bf400fa6d7e5c78bacb4c00" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>iopattern</name></member>
+      <member refid="struct_a_v_q_s_v_context_1a19ca280b4a280676abbb5a018f619282" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>nb_ext_buffers</name></member>
+      <member refid="struct_a_v_q_s_v_context_1a31ff5ab3cbbde801fdc264a6660e55e9" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>nb_opaque_surfaces</name></member>
+      <member refid="struct_a_v_q_s_v_context_1a00b4f91c36429e719743c5a080856e33" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>opaque_alloc</name></member>
+      <member refid="struct_a_v_q_s_v_context_1a06f2493cfd72f41162e788e5247f5b90" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>opaque_alloc_type</name></member>
+      <member refid="struct_a_v_q_s_v_context_1ae9a2a1e951ebdfc2640ea33077f0c67e" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>opaque_surfaces</name></member>
+      <member refid="struct_a_v_q_s_v_context_1aa88e55219891596ee8205ae78cbca275" prot="public" virt="non-virtual"><scope>AVQSVContext</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

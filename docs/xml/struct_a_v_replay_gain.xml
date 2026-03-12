@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_replay_gain" kind="struct" language="C++" prot="public">
+    <compoundname>AVReplayGain</compoundname>
+    <includes refid="replaygain_8h" local="no">replaygain.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_replay_gain_1a9edc6eb5355a9e68477247c01901a938" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVReplayGain::track_gain</definition>
+        <argsstring></argsstring>
+        <name>track_gain</name>
+        <qualifiedname>AVReplayGain::track_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Track replay gain in microbels (divide by 100000 to get the value in dB). Should be set to INT32_MIN when unknown. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" line="34" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_replay_gain_1a2e580f4cf0846055172e93f091242a61" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVReplayGain::track_peak</definition>
+        <argsstring></argsstring>
+        <name>track_peak</name>
+        <qualifiedname>AVReplayGain::track_peak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peak track amplitude, with 100000 representing full scale (but values may overflow). 0 when unknown. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" line="39" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_replay_gain_1afc81ac5168caee77ba5eedd4634fe75e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVReplayGain::album_gain</definition>
+        <argsstring></argsstring>
+        <name>album_gain</name>
+        <qualifiedname>AVReplayGain::album_gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as track_gain, but for the whole album. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" line="43" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_replay_gain_1a431a1c43660524af1134ed015e02a85b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVReplayGain::album_peak</definition>
+        <argsstring></argsstring>
+        <name>album_peak</name>
+        <qualifiedname>AVReplayGain::album_peak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as track_peak, but for the whole album, </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" line="47" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ReplayGain information (see <ulink url="http://wiki.hydrogenaudio.org/index.php?title=ReplayGain_1.0_specification">http://wiki.hydrogenaudio.org/index.php?title=ReplayGain_1.0_specification</ulink>). The size of this struct is a part of the public ABI. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" line="29" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/replaygain.h" bodystart="29" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_a_v_replay_gain_1afc81ac5168caee77ba5eedd4634fe75e" prot="public" virt="non-virtual"><scope>AVReplayGain</scope><name>album_gain</name></member>
+      <member refid="struct_a_v_replay_gain_1a431a1c43660524af1134ed015e02a85b" prot="public" virt="non-virtual"><scope>AVReplayGain</scope><name>album_peak</name></member>
+      <member refid="struct_a_v_replay_gain_1a9edc6eb5355a9e68477247c01901a938" prot="public" virt="non-virtual"><scope>AVReplayGain</scope><name>track_gain</name></member>
+      <member refid="struct_a_v_replay_gain_1a2e580f4cf0846055172e93f091242a61" prot="public" virt="non-virtual"><scope>AVReplayGain</scope><name>track_peak</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

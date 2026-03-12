@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_filter_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilterContext</compoundname>
+    <includes refid="avfilter_8h" local="no">avfilter.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a00ac82b13bb720349c138310f98874ca" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVFilterContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVFilterContext::av_class</qualifiedname>
+        <briefdescription>
+<para>needed for <ref refid="group__lavu__log_1gabd386ffd4b27637cf34e98d5d1a6e8ae" kindref="member">av_log()</ref> and filters common options </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="275" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a6eee53e57dddfa7cca1cade870c8a44e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_filter" kindref="compound">AVFilter</ref> *</type>
+        <definition>const AVFilter* AVFilterContext::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <qualifiedname>AVFilterContext::filter</qualifiedname>
+        <briefdescription>
+<para>the <ref refid="struct_a_v_filter" kindref="compound">AVFilter</ref> of which this is an instance </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="277" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a5b22332d8ddb242c54e19cbfc4b4d353" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterContext::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVFilterContext::name</qualifiedname>
+        <briefdescription>
+<para>name of this filter instance </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="279" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1aa10156c5a22ab7ad4f58402d387e8d88" prot="public" static="no" mutable="no">
+        <type>AVFilterPad *</type>
+        <definition>AVFilterPad* AVFilterContext::input_pads</definition>
+        <argsstring></argsstring>
+        <name>input_pads</name>
+        <qualifiedname>AVFilterContext::input_pads</qualifiedname>
+        <briefdescription>
+<para>array of input pads </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="281" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a6837bf4b3d70c0a2bd3122f9daadc0d4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_link" kindref="compound">AVFilterLink</ref> **</type>
+        <definition>AVFilterLink** AVFilterContext::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <qualifiedname>AVFilterContext::inputs</qualifiedname>
+        <briefdescription>
+<para>array of pointers to input links </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="282" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a5cf8ccec878e6d90d0b111b79b2340ee" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVFilterContext::nb_inputs</definition>
+        <argsstring></argsstring>
+        <name>nb_inputs</name>
+        <qualifiedname>AVFilterContext::nb_inputs</qualifiedname>
+        <briefdescription>
+<para>number of input pads </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="283" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ac1fbf9d0fa5aaf32b113755ab6ea1d94" prot="public" static="no" mutable="no">
+        <type>AVFilterPad *</type>
+        <definition>AVFilterPad* AVFilterContext::output_pads</definition>
+        <argsstring></argsstring>
+        <name>output_pads</name>
+        <qualifiedname>AVFilterContext::output_pads</qualifiedname>
+        <briefdescription>
+<para>array of output pads </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="285" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ae9e65e98275f789bb5fbb72c52d4f3ad" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_link" kindref="compound">AVFilterLink</ref> **</type>
+        <definition>AVFilterLink** AVFilterContext::outputs</definition>
+        <argsstring></argsstring>
+        <name>outputs</name>
+        <qualifiedname>AVFilterContext::outputs</qualifiedname>
+        <briefdescription>
+<para>array of pointers to output links </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="286" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ab8c3b9f8513c9faa5e4ce03b51318b6c" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned AVFilterContext::nb_outputs</definition>
+        <argsstring></argsstring>
+        <name>nb_outputs</name>
+        <qualifiedname>AVFilterContext::nb_outputs</qualifiedname>
+        <briefdescription>
+<para>number of output pads </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="287" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ab0858b4059e67889c7f27c5cc9e258eb" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVFilterContext::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <qualifiedname>AVFilterContext::priv</qualifiedname>
+        <briefdescription>
+<para>private data for use by the filter </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="289" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a9454cf1790adf4f966d0350c3af72aa3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct_a_v_filter_graph" kindref="compound">AVFilterGraph</ref> *</type>
+        <definition>struct AVFilterGraph* AVFilterContext::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>AVFilterContext::graph</qualifiedname>
+        <briefdescription>
+<para>filtergraph this filter belongs to </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="291" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a07b5e1a4c3cbde993e54bcc4873401a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterContext::thread_type</definition>
+        <argsstring></argsstring>
+        <name>thread_type</name>
+        <qualifiedname>AVFilterContext::thread_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of multithreading being allowed/used. A combination of AVFILTER_THREAD_* flags.</para>
+<para>May be set by the caller before initializing the filter to forbid some or all kinds of multithreading for this filter. The default is allowing everything.</para>
+<para>When the filter is initialized, this field is combined using bit AND with <ref refid="struct_a_v_filter_graph_1a7fd96bbd6d1a3b730681dc0bf5107a5e" kindref="member">AVFilterGraph.thread_type</ref> to get the final mask used for determining allowed threading types. I.e. a threading type needs to be set in both to be allowed.</para>
+<para>After the filter is initialized, libavfilter sets this field to the threading type that is actually used (0 for no multithreading). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="309" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a04d995e44ad6b2a4d700a666b3231697" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterContext::nb_threads</definition>
+        <argsstring></argsstring>
+        <name>nb_threads</name>
+        <qualifiedname>AVFilterContext::nb_threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max number of threads allowed in this filter instance. If &lt;= 0, its value is ignored. Overrides global number of threads set per filter graph. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="316" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a68fddbcd268eed3340d0a0a182c45cec" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated struct AVFilterCommand *</type>
+        <definition>attribute_deprecated struct AVFilterCommand* AVFilterContext::command_queue</definition>
+        <argsstring></argsstring>
+        <name>command_queue</name>
+        <qualifiedname>AVFilterContext::command_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Obsolète</xreftitle><xrefdescription><para>unused </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="323" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a6e92f7b2af93f405a6b7941fd9779bfc" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterContext::enable_str</definition>
+        <argsstring></argsstring>
+        <name>enable_str</name>
+        <qualifiedname>AVFilterContext::enable_str</qualifiedname>
+        <briefdescription>
+<para>enable expression string </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="326" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a04b8bc41db69481e3264690943da8370" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated void *</type>
+        <definition>attribute_deprecated void* AVFilterContext::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <qualifiedname>AVFilterContext::enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000007"><xreftitle>Obsolète</xreftitle><xrefdescription><para>unused </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="332" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ac555125f396f0ff2dfccaa6caccaaedf" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* AVFilterContext::var_values</definition>
+        <argsstring></argsstring>
+        <name>var_values</name>
+        <qualifiedname>AVFilterContext::var_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000008"><xreftitle>Obsolète</xreftitle><xrefdescription><para>unused </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="336" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1ad5665a27f2d17af11027fc9883d103ae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterContext::is_disabled</definition>
+        <argsstring></argsstring>
+        <name>is_disabled</name>
+        <qualifiedname>AVFilterContext::is_disabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MUST NOT be accessed from outside avfilter.</para>
+<para>the enabled state from the last expression evaluation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="343" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1addd946fbe5af506a2b19f9ad7cb97c35" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVFilterContext::hw_device_ctx</definition>
+        <argsstring></argsstring>
+        <name>hw_device_ctx</name>
+        <qualifiedname>AVFilterContext::hw_device_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For filters which will create hardware frames, sets the device the filter should create them in. All other filters will ignore this field: in particular, a filter which consumes or processes hardware frames will instead use the hw_frames_ctx field in <ref refid="struct_a_v_filter_link" kindref="compound">AVFilterLink</ref> to carry the hardware context information.</para>
+<para>May be set by the caller on filters flagged with AVFILTER_FLAG_HWDEVICE before initializing the filter with <ref refid="group__lavfi_1ga0d21eb00b9f24213bd7c5775393a09fd" kindref="member">avfilter_init_str()</ref> or <ref refid="group__lavfi_1ga8c15af28902395399fe455f6f8236848" kindref="member">avfilter_init_dict()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="356" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a0dac89bae07e73488366c27b383c3d0d" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated unsigned</type>
+        <definition>attribute_deprecated unsigned AVFilterContext::ready</definition>
+        <argsstring></argsstring>
+        <name>ready</name>
+        <qualifiedname>AVFilterContext::ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000009"><xreftitle>Obsolète</xreftitle><xrefdescription><para>this field should never have been accessed by callers </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="363" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_context_1a0cc5743f8ccbb19f0a79da2e1f65bf79" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilterContext::extra_hw_frames</definition>
+        <argsstring></argsstring>
+        <name>extra_hw_frames</name>
+        <qualifiedname>AVFilterContext::extra_hw_frames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of extra hardware frames which the filter will allocate on its output links for use in following filters or by the caller.</para>
+<para>Some hardware filters require all frames that they will use for output to be defined in advance before filtering starts. For such filters, any hardware frame pools used for output must therefore be of fixed size. The extra frames set here are on top of any number that the filter needs internally in order to operate normally.</para>
+<para>This field must be set before the graph containing this filter is configured. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="380" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An instance of a filter </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="9">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="8">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVFilter</label>
+        <link refid="struct_a_v_filter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVFilterContext</label>
+        <link refid="struct_a_v_filter_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>hw_device_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AVFilterFormatsConfig</label>
+        <link refid="struct_a_v_filter_formats_config"/>
+      </node>
+      <node id="13">
+        <label>AVFilterGraph</label>
+        <link refid="struct_a_v_filter_graph"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVFilterLink</label>
+        <link refid="struct_a_v_filter_link"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>dst</edgelabel>
+          <edgelabel>src</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>incfg</edgelabel>
+          <edgelabel>outcfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="274" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="274" bodyend="381"/>
+    <listofallmembers>
+      <member refid="struct_a_v_filter_context_1a00ac82b13bb720349c138310f98874ca" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>av_class</name></member>
+      <member refid="struct_a_v_filter_context_1a68fddbcd268eed3340d0a0a182c45cec" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>command_queue</name></member>
+      <member refid="struct_a_v_filter_context_1a04b8bc41db69481e3264690943da8370" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>enable</name></member>
+      <member refid="struct_a_v_filter_context_1a6e92f7b2af93f405a6b7941fd9779bfc" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>enable_str</name></member>
+      <member refid="struct_a_v_filter_context_1a0cc5743f8ccbb19f0a79da2e1f65bf79" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>extra_hw_frames</name></member>
+      <member refid="struct_a_v_filter_context_1a6eee53e57dddfa7cca1cade870c8a44e" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>filter</name></member>
+      <member refid="struct_a_v_filter_context_1a9454cf1790adf4f966d0350c3af72aa3" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>graph</name></member>
+      <member refid="struct_a_v_filter_context_1addd946fbe5af506a2b19f9ad7cb97c35" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>hw_device_ctx</name></member>
+      <member refid="struct_a_v_filter_context_1aa10156c5a22ab7ad4f58402d387e8d88" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>input_pads</name></member>
+      <member refid="struct_a_v_filter_context_1a6837bf4b3d70c0a2bd3122f9daadc0d4" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>inputs</name></member>
+      <member refid="struct_a_v_filter_context_1ad5665a27f2d17af11027fc9883d103ae" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>is_disabled</name></member>
+      <member refid="struct_a_v_filter_context_1a5b22332d8ddb242c54e19cbfc4b4d353" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>name</name></member>
+      <member refid="struct_a_v_filter_context_1a5cf8ccec878e6d90d0b111b79b2340ee" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>nb_inputs</name></member>
+      <member refid="struct_a_v_filter_context_1ab8c3b9f8513c9faa5e4ce03b51318b6c" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>nb_outputs</name></member>
+      <member refid="struct_a_v_filter_context_1a04d995e44ad6b2a4d700a666b3231697" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>nb_threads</name></member>
+      <member refid="struct_a_v_filter_context_1ac1fbf9d0fa5aaf32b113755ab6ea1d94" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>output_pads</name></member>
+      <member refid="struct_a_v_filter_context_1ae9e65e98275f789bb5fbb72c52d4f3ad" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>outputs</name></member>
+      <member refid="struct_a_v_filter_context_1ab0858b4059e67889c7f27c5cc9e258eb" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>priv</name></member>
+      <member refid="struct_a_v_filter_context_1a0dac89bae07e73488366c27b383c3d0d" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>ready</name></member>
+      <member refid="struct_a_v_filter_context_1a07b5e1a4c3cbde993e54bcc4873401a9" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>thread_type</name></member>
+      <member refid="struct_a_v_filter_context_1ac555125f396f0ff2dfccaa6caccaaedf" prot="public" virt="non-virtual"><scope>AVFilterContext</scope><name>var_values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

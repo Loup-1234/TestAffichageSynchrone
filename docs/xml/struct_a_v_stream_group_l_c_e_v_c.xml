@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_stream_group_l_c_e_v_c" kind="struct" language="C++" prot="public">
+    <compoundname>AVStreamGroupLCEVC</compoundname>
+    <includes refid="avformat_8h" local="no">avformat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_stream_group_l_c_e_v_c_1a1ac20f0a64e783fa0bc3f47d25db9634" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVStreamGroupLCEVC::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVStreamGroupLCEVC::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1071" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_l_c_e_v_c_1a7b7b46d9f50d46364a26721db74f21ca" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVStreamGroupLCEVC::lcevc_index</definition>
+        <argsstring></argsstring>
+        <name>lcevc_index</name>
+        <qualifiedname>AVStreamGroupLCEVC::lcevc_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the LCEVC data stream in <ref refid="struct_a_v_stream_group" kindref="compound">AVStreamGroup</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1076" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_l_c_e_v_c_1afd0971672794a3e32ddf28b3acf867eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupLCEVC::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVStreamGroupLCEVC::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the final stream for presentation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1080" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_l_c_e_v_c_1a5b442df2f65d025c40fc94c2b1b00f19" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupLCEVC::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVStreamGroupLCEVC::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the final image for presentation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1084" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1084" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_stream_group_l_c_e_v_c" kindref="compound">AVStreamGroupLCEVC</ref> is meant to define the relation between video streams and a data stream containing LCEVC enhancement layer NALUs.</para>
+<para>No more than one stream of <ref refid="struct_a_v_codec_parameters_1a58369c3a8a986935b572df5aa6361ce2" kindref="member">codec_type</ref> AVMEDIA_TYPE_DATA shall be present, and it must be of <ref refid="struct_a_v_codec_parameters_1a9f76f2475ef24ff4c9771dd53072d040" kindref="member">codec_id</ref> AV_CODEC_ID_LCEVC. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>AVStreamGroupLCEVC</label>
+        <link refid="struct_a_v_stream_group_l_c_e_v_c"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1070" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1070" bodyend="1085"/>
+    <listofallmembers>
+      <member refid="struct_a_v_stream_group_l_c_e_v_c_1a1ac20f0a64e783fa0bc3f47d25db9634" prot="public" virt="non-virtual"><scope>AVStreamGroupLCEVC</scope><name>av_class</name></member>
+      <member refid="struct_a_v_stream_group_l_c_e_v_c_1a5b442df2f65d025c40fc94c2b1b00f19" prot="public" virt="non-virtual"><scope>AVStreamGroupLCEVC</scope><name>height</name></member>
+      <member refid="struct_a_v_stream_group_l_c_e_v_c_1a7b7b46d9f50d46364a26721db74f21ca" prot="public" virt="non-virtual"><scope>AVStreamGroupLCEVC</scope><name>lcevc_index</name></member>
+      <member refid="struct_a_v_stream_group_l_c_e_v_c_1afd0971672794a3e32ddf28b3acf867eb" prot="public" virt="non-virtual"><scope>AVStreamGroupLCEVC</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

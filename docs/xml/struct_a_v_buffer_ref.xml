@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_buffer_ref" kind="struct" language="C++" prot="public">
+    <compoundname>AVBufferRef</compoundname>
+    <includes refid="buffer_8h" local="no">buffer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_buffer_ref_1a3c692274c56720d7903bbd35bcaec3a2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> *</type>
+        <definition>AVBuffer* AVBufferRef::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>AVBufferRef::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="83" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_ref_1acb8452e99cd75074b93800b532c6ea4b" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVBufferRef::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>AVBufferRef::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The data buffer. It is considered writable if and only if this is the only reference to the buffer, in which case <ref refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kindref="member">av_buffer_is_writable()</ref> returns 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="90" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_ref_1ad291cf97a52ce333842c429d3df78fb8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVBufferRef::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVBufferRef::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of data in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="94" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A reference to a data buffer.</para>
+<para>The size of this struct is not a part of the public ABI and it is not meant to be allocated directly. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" line="82" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/buffer.h" bodystart="82" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_a_v_buffer_ref_1a3c692274c56720d7903bbd35bcaec3a2" prot="public" virt="non-virtual"><scope>AVBufferRef</scope><name>buffer</name></member>
+      <member refid="struct_a_v_buffer_ref_1acb8452e99cd75074b93800b532c6ea4b" prot="public" virt="non-virtual"><scope>AVBufferRef</scope><name>data</name></member>
+      <member refid="struct_a_v_buffer_ref_1ad291cf97a52ce333842c429d3df78fb8" prot="public" virt="non-virtual"><scope>AVBufferRef</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

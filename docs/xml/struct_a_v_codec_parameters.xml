@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_codec_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>AVCodecParameters</compoundname>
+    <includes refid="codec__par_8h" local="no">codec_par.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a58369c3a8a986935b572df5aa6361ce2" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__misc_1ga9a84bba4713dfced21a1a56163be1f48" kindref="member">AVMediaType</ref></type>
+        <definition>enum AVMediaType AVCodecParameters::codec_type</definition>
+        <argsstring></argsstring>
+        <name>codec_type</name>
+        <qualifiedname>AVCodecParameters::codec_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General type of the encoded data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="51" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a9f76f2475ef24ff4c9771dd53072d040" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVCodecParameters::codec_id</definition>
+        <argsstring></argsstring>
+        <name>codec_id</name>
+        <qualifiedname>AVCodecParameters::codec_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specific type of the encoded data (the codec used). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="55" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a9b6f7d220d100ba73defab295623356b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVCodecParameters::codec_tag</definition>
+        <argsstring></argsstring>
+        <name>codec_tag</name>
+        <qualifiedname>AVCodecParameters::codec_tag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional information about the codec (corresponds to the AVI FOURCC). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="59" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a9befe0b86412646017afb0051d144d13" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVCodecParameters::extradata</definition>
+        <argsstring></argsstring>
+        <name>extradata</name>
+        <qualifiedname>AVCodecParameters::extradata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra binary data needed for initializing the decoder, codec-dependent.</para>
+<para>Must be allocated with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> and will be freed by <ref refid="group__lavc__core_1ga950c8da55b8112077e640b6a0cb8cf36" kindref="member">avcodec_parameters_free()</ref>. The allocated size of extradata must be at least extradata_size + AV_INPUT_BUFFER_PADDING_SIZE, with the padding bytes zeroed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="69" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a060002ff641fb6c358517df941e9c4c5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::extradata_size</definition>
+        <argsstring></argsstring>
+        <name>extradata_size</name>
+        <qualifiedname>AVCodecParameters::extradata_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the extradata content in bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="73" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1ad54da9241deabb3601e6e0e8fa832c19" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> *</type>
+        <definition>AVPacketSideData* AVCodecParameters::coded_side_data</definition>
+        <argsstring></argsstring>
+        <name>coded_side_data</name>
+        <qualifiedname>AVCodecParameters::coded_side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional data associated with the entire stream.</para>
+<para>Should be allocated with <ref refid="group__lavc__packet__side__data_1ga2219eb0b5a6ca929d564efb7d7c22a36" kindref="member">av_packet_side_data_new()</ref> or <ref refid="group__lavc__packet__side__data_1ga7a0fb092dc581c328a296281332d0c8c" kindref="member">av_packet_side_data_add()</ref>, and will be freed by <ref refid="group__lavc__core_1ga950c8da55b8112077e640b6a0cb8cf36" kindref="member">avcodec_parameters_free()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="81" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a29643cfd94231e2d148a5d17b08d115b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::nb_coded_side_data</definition>
+        <argsstring></argsstring>
+        <name>nb_coded_side_data</name>
+        <qualifiedname>AVCodecParameters::nb_coded_side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of entries in <ref refid="struct_a_v_codec_parameters_1ad54da9241deabb3601e6e0e8fa832c19" kindref="member">coded_side_data</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="86" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1abee943e65d98f9763fa6602a356e774f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AVCodecParameters::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>video: the pixel format, the value corresponds to enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref>.</para>
+</listitem><listitem><para>audio: the sample format, the value corresponds to enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref>. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="92" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a5268fcf4ae8ed27edef54f836b926d93" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVCodecParameters::bit_rate</definition>
+        <argsstring></argsstring>
+        <name>bit_rate</name>
+        <qualifiedname>AVCodecParameters::bit_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The average bitrate of the encoded data (in bits per second). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="97" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a3866500f51fabfa90faeae894c6e955c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::bits_per_coded_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_coded_sample</name>
+        <qualifiedname>AVCodecParameters::bits_per_coded_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bits per sample in the codedwords.</para>
+<para>This is basically the bitrate per sample. It is mandatory for a bunch of formats to actually decode them. It&apos;s the number of bits for one sample in the actual coded bitstream.</para>
+<para>This could be for example 4 for ADPCM For PCM formats this matches bits_per_raw_sample Can be 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="110" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a796f5860107695d36c3a7fb30453da79" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::bits_per_raw_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_raw_sample</name>
+        <qualifiedname>AVCodecParameters::bits_per_raw_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the number of valid bits in each output sample. If the sample format has more bits, the least significant bits are additional padding bits, which are always 0. Use right shifts to reduce the sample to its actual size. For example, audio formats with 24 bit samples will have bits_per_raw_sample set to 24, and format set to AV_SAMPLE_FMT_S32. To get the original sample use &quot;(int32_t)sample &gt;&gt; 8&quot;."</para>
+<para>For ADPCM this might be 12 or 16 or similar Can be 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="123" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a6b13b8a226ed923085718cd1323bfcb5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::profile</definition>
+        <argsstring></argsstring>
+        <name>profile</name>
+        <qualifiedname>AVCodecParameters::profile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec-specific bitstream restrictions that the stream conforms to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="128" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a26ae48eeaf8b315eca03b207e11edc7c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>AVCodecParameters::level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="129" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a51639f88aef9f4f283f538a0c033fbb8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVCodecParameters::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. The dimensions of the video frame in pixels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="134" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a1ec57ee84f19cf65d00eaa4d2a2253ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVCodecParameters::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="135" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a7d6ef91120ffe80040c699e747a1ad68" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVCodecParameters::sample_aspect_ratio</definition>
+        <argsstring></argsstring>
+        <name>sample_aspect_ratio</name>
+        <qualifiedname>AVCodecParameters::sample_aspect_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. The aspect ratio (width / height) which a single pixel should have when displayed.</para>
+<para>When the aspect ratio is unknown / undefined, the numerator should be set to 0 (the denominator may have any value). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="144" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a6a9cc50670962595c117ceda4e7d0ee0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVCodecParameters::framerate</definition>
+        <argsstring></argsstring>
+        <name>framerate</name>
+        <qualifiedname>AVCodecParameters::framerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. Number of frames per second, for streams with constant frame durations. Should be set to { 0, 1 } when some frames have differing durations or if the value is not known.</para>
+<para><simplesect kind="note"><para>This field corresponds to values that are stored in codec-level headers and is typically overridden by container/transport-layer timestamps, when available. It should thus be used only as a last resort, when no higher-level timing information is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="156" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a153946872548cd56132907b93f05f9aa" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02c" kindref="member">AVFieldOrder</ref></type>
+        <definition>enum AVFieldOrder AVCodecParameters::field_order</definition>
+        <argsstring></argsstring>
+        <name>field_order</name>
+        <qualifiedname>AVCodecParameters::field_order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. The order of the fields in interlaced video. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="161" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1afa6744d9b8766db47a5ff7bddf0f2404" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+        <definition>enum AVColorRange AVCodecParameters::color_range</definition>
+        <argsstring></argsstring>
+        <name>color_range</name>
+        <qualifiedname>AVCodecParameters::color_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. Additional colorspace characteristics. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="166" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1aa884cae3fd16b30c61201a686664f96b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref></type>
+        <definition>enum AVColorPrimaries AVCodecParameters::color_primaries</definition>
+        <argsstring></argsstring>
+        <name>color_primaries</name>
+        <qualifiedname>AVCodecParameters::color_primaries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="167" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1ac25ed8394e1efdbbcf28932ff0020893" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref></type>
+        <definition>enum AVColorTransferCharacteristic AVCodecParameters::color_trc</definition>
+        <argsstring></argsstring>
+        <name>color_trc</name>
+        <qualifiedname>AVCodecParameters::color_trc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="168" column="39" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a020398a4963e932853cefc169d90456d" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+        <definition>enum AVColorSpace AVCodecParameters::color_space</definition>
+        <argsstring></argsstring>
+        <name>color_space</name>
+        <qualifiedname>AVCodecParameters::color_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="169" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1ae4c7ac718a75adb31b5f2076a02fdedf" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref></type>
+        <definition>enum AVChromaLocation AVCodecParameters::chroma_location</definition>
+        <argsstring></argsstring>
+        <name>chroma_location</name>
+        <qualifiedname>AVCodecParameters::chroma_location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="170" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a8aeefb8cf55cb147f930424c488f9693" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::video_delay</definition>
+        <argsstring></argsstring>
+        <name>video_delay</name>
+        <qualifiedname>AVCodecParameters::video_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only. Number of delayed frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="175" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a4d581c205b18108a4f00e8fb3a2b26f9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref></type>
+        <definition>AVChannelLayout AVCodecParameters::ch_layout</definition>
+        <argsstring></argsstring>
+        <name>ch_layout</name>
+        <qualifiedname>AVCodecParameters::ch_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. The channel layout and number of channels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="180" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1abfc9b0aa975206f7e77a125e6b78536e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <qualifiedname>AVCodecParameters::sample_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. The number of audio samples per second. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="184" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a786f81429bb25853af449fe5737bf2c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::block_align</definition>
+        <argsstring></argsstring>
+        <name>block_align</name>
+        <qualifiedname>AVCodecParameters::block_align</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. The number of bytes per coded audio frame, required by some formats.</para>
+<para>Corresponds to nBlockAlign in WAVEFORMATEX. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="191" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a0ce9631123719789e4c7b0c23c66d534" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::frame_size</definition>
+        <argsstring></argsstring>
+        <name>frame_size</name>
+        <qualifiedname>AVCodecParameters::frame_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. Audio frame size, if known. Required by some formats to be static. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="195" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1ad2363a9a16b5674b5232c288a3e031cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::initial_padding</definition>
+        <argsstring></argsstring>
+        <name>initial_padding</name>
+        <qualifiedname>AVCodecParameters::initial_padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. The amount of padding (in samples) inserted by the encoder at the beginning of the audio. I.e. this number of leading decoded samples must be discarded by the caller to get the original audio without leading padding. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="203" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a68885b36e5b430865da9e591c36ac101" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::trailing_padding</definition>
+        <argsstring></argsstring>
+        <name>trailing_padding</name>
+        <qualifiedname>AVCodecParameters::trailing_padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. The amount of padding (in samples) appended by the encoder to the end of the audio. I.e. this number of decoded samples must be discarded by the caller from the end of the stream to get the original audio without any trailing padding. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="210" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1a539f03590bb3e8c69d2111ede5e4ac94" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodecParameters::seek_preroll</definition>
+        <argsstring></argsstring>
+        <name>seek_preroll</name>
+        <qualifiedname>AVCodecParameters::seek_preroll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only. Number of samples to skip after a discontinuity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="214" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_parameters_1ac95bc91581933d3e4d17a784e3d39a60" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref></type>
+        <definition>enum AVAlphaMode AVCodecParameters::alpha_mode</definition>
+        <argsstring></argsstring>
+        <name>alpha_mode</name>
+        <qualifiedname>AVCodecParameters::alpha_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video with alpha channel only. Alpha channel handling </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="219" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct describes the properties of an encoded stream.</para>
+<para>sizeof(AVCodecParameters) is not a part of the public ABI, this struct must be allocated with <ref refid="group__lavc__core_1ga5dada97c23a87ba510c9f5f5d41ed642" kindref="member">avcodec_parameters_alloc()</ref> and freed with <ref refid="group__lavc__core_1ga950c8da55b8112077e640b6a0cb8cf36" kindref="member">avcodec_parameters_free()</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="4">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVCodecParameters</label>
+        <link refid="struct_a_v_codec_parameters"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>framerate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="3">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" line="47" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h" bodystart="47" bodyend="220"/>
+    <listofallmembers>
+      <member refid="struct_a_v_codec_parameters_1ac95bc91581933d3e4d17a784e3d39a60" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>alpha_mode</name></member>
+      <member refid="struct_a_v_codec_parameters_1a5268fcf4ae8ed27edef54f836b926d93" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>bit_rate</name></member>
+      <member refid="struct_a_v_codec_parameters_1a3866500f51fabfa90faeae894c6e955c" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>bits_per_coded_sample</name></member>
+      <member refid="struct_a_v_codec_parameters_1a796f5860107695d36c3a7fb30453da79" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>bits_per_raw_sample</name></member>
+      <member refid="struct_a_v_codec_parameters_1a786f81429bb25853af449fe5737bf2c7" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>block_align</name></member>
+      <member refid="struct_a_v_codec_parameters_1a4d581c205b18108a4f00e8fb3a2b26f9" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>ch_layout</name></member>
+      <member refid="struct_a_v_codec_parameters_1ae4c7ac718a75adb31b5f2076a02fdedf" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>chroma_location</name></member>
+      <member refid="struct_a_v_codec_parameters_1a9f76f2475ef24ff4c9771dd53072d040" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>codec_id</name></member>
+      <member refid="struct_a_v_codec_parameters_1a9b6f7d220d100ba73defab295623356b" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>codec_tag</name></member>
+      <member refid="struct_a_v_codec_parameters_1a58369c3a8a986935b572df5aa6361ce2" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>codec_type</name></member>
+      <member refid="struct_a_v_codec_parameters_1ad54da9241deabb3601e6e0e8fa832c19" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>coded_side_data</name></member>
+      <member refid="struct_a_v_codec_parameters_1aa884cae3fd16b30c61201a686664f96b" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>color_primaries</name></member>
+      <member refid="struct_a_v_codec_parameters_1afa6744d9b8766db47a5ff7bddf0f2404" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>color_range</name></member>
+      <member refid="struct_a_v_codec_parameters_1a020398a4963e932853cefc169d90456d" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>color_space</name></member>
+      <member refid="struct_a_v_codec_parameters_1ac25ed8394e1efdbbcf28932ff0020893" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>color_trc</name></member>
+      <member refid="struct_a_v_codec_parameters_1a9befe0b86412646017afb0051d144d13" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>extradata</name></member>
+      <member refid="struct_a_v_codec_parameters_1a060002ff641fb6c358517df941e9c4c5" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>extradata_size</name></member>
+      <member refid="struct_a_v_codec_parameters_1a153946872548cd56132907b93f05f9aa" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>field_order</name></member>
+      <member refid="struct_a_v_codec_parameters_1abee943e65d98f9763fa6602a356e774f" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>format</name></member>
+      <member refid="struct_a_v_codec_parameters_1a0ce9631123719789e4c7b0c23c66d534" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>frame_size</name></member>
+      <member refid="struct_a_v_codec_parameters_1a6a9cc50670962595c117ceda4e7d0ee0" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>framerate</name></member>
+      <member refid="struct_a_v_codec_parameters_1a1ec57ee84f19cf65d00eaa4d2a2253ce" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>height</name></member>
+      <member refid="struct_a_v_codec_parameters_1ad2363a9a16b5674b5232c288a3e031cf" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>initial_padding</name></member>
+      <member refid="struct_a_v_codec_parameters_1a26ae48eeaf8b315eca03b207e11edc7c" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>level</name></member>
+      <member refid="struct_a_v_codec_parameters_1a29643cfd94231e2d148a5d17b08d115b" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>nb_coded_side_data</name></member>
+      <member refid="struct_a_v_codec_parameters_1a6b13b8a226ed923085718cd1323bfcb5" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>profile</name></member>
+      <member refid="struct_a_v_codec_parameters_1a7d6ef91120ffe80040c699e747a1ad68" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>sample_aspect_ratio</name></member>
+      <member refid="struct_a_v_codec_parameters_1abfc9b0aa975206f7e77a125e6b78536e" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>sample_rate</name></member>
+      <member refid="struct_a_v_codec_parameters_1a539f03590bb3e8c69d2111ede5e4ac94" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>seek_preroll</name></member>
+      <member refid="struct_a_v_codec_parameters_1a68885b36e5b430865da9e591c36ac101" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>trailing_padding</name></member>
+      <member refid="struct_a_v_codec_parameters_1a8aeefb8cf55cb147f930424c488f9693" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>video_delay</name></member>
+      <member refid="struct_a_v_codec_parameters_1a51639f88aef9f4f283f538a0c033fbb8" prot="public" virt="non-virtual"><scope>AVCodecParameters</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

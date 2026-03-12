@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__mem__attrs" kind="group">
+    <compoundname>lavu_mem_attrs</compoundname>
+    <title>Function Attributes</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__mem__attrs_1gad48ff724186ef4e602ae7a2547e4287c" prot="public" static="no">
+        <name>av_malloc_attrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function attribute denoting a malloc-like function.</para>
+<para><simplesect kind="see"><para><ulink url="https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html#index-g_t_0040code_007bmalloc_007d-function-attribute-3251">Function attribute <computeroutput>malloc</computeroutput> in GCC&apos;s documentation</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="71" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__mem__attrs_1gad7ff928d462d1a61b37baa70bf13e0e3" prot="public" static="no">
+        <name>av_alloc_size</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function attribute used on a function that allocates memory, whose size is given by the specified parameter(s).</para>
+<para><programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/><ref refid="group__lavu__mem__attrs_1gad7ff928d462d1a61b37baa70bf13e0e3" kindref="member">av_alloc_size</ref>(1);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__mem__funcs_1ga2e873ea779437ba16f74c8f69d69fb46" kindref="member">av_calloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nmemb,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/><ref refid="group__lavu__mem__attrs_1gad7ff928d462d1a61b37baa70bf13e0e3" kindref="member">av_alloc_size</ref>(1,<sp/>2);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One or two parameter indexes, separated by a comma</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html#index-g_t_0040code_007balloc_005fsize_007d-function-attribute-3220">Function attribute <computeroutput>alloc_size</computeroutput> in GCC&apos;s documentation</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="92" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Function attributes applicable to memory handling functions.</para>
+<para>These function attributes can help compilers emit more useful warnings, or generate better code. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

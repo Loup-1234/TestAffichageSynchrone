@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_filter_graph_segment" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilterGraphSegment</compoundname>
+    <includes refid="avfilter_8h" local="no">avfilter.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_filter_graph_segment_1aad08691994b8cf592c6cdd4a377e60c9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_graph" kindref="compound">AVFilterGraph</ref> *</type>
+        <definition>AVFilterGraph* AVFilterGraphSegment::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>AVFilterGraphSegment::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The filtergraph this segment is associated with. Set by <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="951" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="951" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_segment_1ad5a2779af221d1520490fe2719f9e39a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_filter_chain" kindref="compound">AVFilterChain</ref> **</type>
+        <definition>AVFilterChain** AVFilterGraphSegment::chains</definition>
+        <argsstring></argsstring>
+        <name>chains</name>
+        <qualifiedname>AVFilterGraphSegment::chains</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of filter chain contained in this segment. Set in <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="957" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_segment_1ab7563eca151d89e693f6258de5ce0214" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVFilterGraphSegment::nb_chains</definition>
+        <argsstring></argsstring>
+        <name>nb_chains</name>
+        <qualifiedname>AVFilterGraphSegment::nb_chains</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="958" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_filter_graph_segment_1a1ca19163ac7ce78d229da6ea812657fa" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* AVFilterGraphSegment::scale_sws_opts</definition>
+        <argsstring></argsstring>
+        <name>scale_sws_opts</name>
+        <qualifiedname>AVFilterGraphSegment::scale_sws_opts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A string containing a colon-separated list of key=value options applied to all scale filters in this segment.</para>
+<para>May be set by <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. The caller may free this string with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref> and replace it with a different <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>&apos;ed string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="968" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="968" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A parsed representation of a filtergraph segment.</para>
+<para>A filtergraph segment is conceptually a list of filterchains, with some supplementary information (e.g. format conversion flags).</para>
+<para>Created by <ref refid="group__lavfi_1ga2ecfd3667219b6cd1e37b7047cc0ef2b" kindref="member">avfilter_graph_segment_parse()</ref>. Must be freed with <ref refid="group__lavfi_1ga51283edd8f3685e1f33239f360e14ae8" kindref="member">avfilter_graph_segment_free()</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="11">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="10">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AVFilter</label>
+        <link refid="struct_a_v_filter"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AVFilterChain</label>
+        <link refid="struct_a_v_filter_chain"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AVFilterContext</label>
+        <link refid="struct_a_v_filter_context"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>hw_device_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AVFilterFormatsConfig</label>
+        <link refid="struct_a_v_filter_formats_config"/>
+      </node>
+      <node id="2">
+        <label>AVFilterGraph</label>
+        <link refid="struct_a_v_filter_graph"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVFilterGraphSegment</label>
+        <link refid="struct_a_v_filter_graph_segment"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>chains</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AVFilterLink</label>
+        <link refid="struct_a_v_filter_link"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>dst</edgelabel>
+          <edgelabel>src</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>incfg</edgelabel>
+          <edgelabel>outcfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AVFilterPadParams</label>
+        <link refid="struct_a_v_filter_pad_params"/>
+      </node>
+      <node id="16">
+        <label>AVFilterParams</label>
+        <link refid="struct_a_v_filter_params"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>filter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>inputs</edgelabel>
+          <edgelabel>outputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="5">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" line="946" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h" bodystart="946" bodyend="969"/>
+    <listofallmembers>
+      <member refid="struct_a_v_filter_graph_segment_1ad5a2779af221d1520490fe2719f9e39a" prot="public" virt="non-virtual"><scope>AVFilterGraphSegment</scope><name>chains</name></member>
+      <member refid="struct_a_v_filter_graph_segment_1aad08691994b8cf592c6cdd4a377e60c9" prot="public" virt="non-virtual"><scope>AVFilterGraphSegment</scope><name>graph</name></member>
+      <member refid="struct_a_v_filter_graph_segment_1ab7563eca151d89e693f6258de5ce0214" prot="public" virt="non-virtual"><scope>AVFilterGraphSegment</scope><name>nb_chains</name></member>
+      <member refid="struct_a_v_filter_graph_segment_1a1ca19163ac7ce78d229da6ea812657fa" prot="public" virt="non-virtual"><scope>AVFilterGraphSegment</scope><name>scale_sws_opts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

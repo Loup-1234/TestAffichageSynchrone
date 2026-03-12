@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__fifo" kind="group">
+    <compoundname>lavu_fifo</compoundname>
+    <title>AVFifo</title>
+    <innerfile refid="fifo_8h">fifo.h</innerfile>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__fifo_1gabaa992bdba6ec505da8c23b9e6a603b2" prot="public" static="no">
+        <type>struct AVFifo</type>
+        <definition>typedef struct AVFifo AVFifo</definition>
+        <argsstring></argsstring>
+        <name>AVFifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="38" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__fifo_1gac707727e701bbe578dee3b7e5bd94378" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int AVFifoCB(void *opaque, void *buf, size_t *nb_elems)</definition>
+        <argsstring>(void *opaque, void *buf, size_t *nb_elems)</argsstring>
+        <name>AVFifoCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for writing or reading from a FIFO, passed to (and invoked from) the av_fifo_*_cb() functions. It may be invoked multiple times from a single av_fifo_*_cb() call and may process less data than the maximum size indicated by nb_elems.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the opaque pointer provided to the av_fifo_*_cb() function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer for reading or writing the data, depending on which av_fifo_*_cb function is called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On entry contains the maximum number of elements that can be read from / written into buf. On success, the callback should update it to contain the number of elements actually written.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative error code on failure (will be returned from the invoking av_fifo_*_cb() function) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="56" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__fifo_1ga1b05c4470d92dd2dd1492e9db227eba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVFifo *</type>
+        <definition>AVFifo * av_fifo_alloc2</definition>
+        <argsstring>(size_t elems, size_t elem_size, unsigned int flags)</argsstring>
+        <name>av_fifo_alloc2</name>
+        <param>
+          <type>size_t</type>
+          <declname>elems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and initialize an AVFifo with a given element size.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial number of elements that can be stored in the FIFO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elem_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes of a single element. Further operations on the returned FIFO will implicitly use this element size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a combination of AV_FIFO_FLAG_*</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly-allocated AVFifo on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="75" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="75" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gaa60388ce0e485a9cd831043d2b113c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t av_fifo_elem_size</definition>
+        <argsstring>(const AVFifo *f)</argsstring>
+        <name>av_fifo_elem_size</name>
+        <param>
+          <type>const AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Element size for FIFO operations. This element size is set at FIFO allocation and remains constant during its lifetime </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="82" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="82" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gadfd4012330c600c00a54d68da762e65f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fifo_auto_grow_limit</definition>
+        <argsstring>(AVFifo *f, size_t max_elems)</argsstring>
+        <name>av_fifo_auto_grow_limit</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the maximum size (in elements) to which the FIFO can be resized automatically. Has no effect unless AV_FIFO_FLAG_AUTO_GROW is used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="88" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga67df3d042efad591023b624f4008cae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t av_fifo_can_read</definition>
+        <argsstring>(const AVFifo *f)</argsstring>
+        <name>av_fifo_can_read</name>
+        <param>
+          <type>const AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of elements available for reading from the given FIFO. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="93" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="93" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga5e9a3a490438b98e1e3949587a7c67a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t av_fifo_can_write</definition>
+        <argsstring>(const AVFifo *f)</argsstring>
+        <name>av_fifo_can_write</name>
+        <param>
+          <type>const AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of elements that can be written into the given FIFO without growing it.</para>
+</simplesect>
+In other words, this number of elements or less is guaranteed to fit into the FIFO. More data may be written when the AV_FIFO_FLAG_AUTO_GROW flag was specified at FIFO creation, but this may involve memory allocation, which can fail. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="104" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="104" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gaaf68e2ebea8c138b667013af554d2d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_grow2</definition>
+        <argsstring>(AVFifo *f, size_t inc)</argsstring>
+        <name>av_fifo_grow2</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>inc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enlarge an AVFifo.</para>
+<para>On success, the FIFO will be large enough to hold exactly inc + <ref refid="group__lavu__fifo_1ga67df3d042efad591023b624f4008cae1" kindref="member">av_fifo_can_read()</ref> + <ref refid="group__lavu__fifo_1ga5e9a3a490438b98e1e3949587a7c67a6" kindref="member">av_fifo_can_write()</ref> elements. In case of failure, the old FIFO is kept unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVFifo to resize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to allocate for, in addition to the current allocated size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="118" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="118" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gad35a26cb3d3f9fdbb3748a60831bf710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_write</definition>
+        <argsstring>(AVFifo *f, const void *buf, size_t nb_elems)</argsstring>
+        <name>av_fifo_write</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data into a FIFO.</para>
+<para>In case nb_elems &gt; av_fifo_can_write(f) and the AV_FIFO_FLAG_AUTO_GROW flag was not specified at FIFO creation, nothing is written and an error is returned.</para>
+<para>Calling function is guaranteed to succeed if nb_elems &lt;= av_fifo_can_write(f).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be written. nb_elems * av_fifo_elem_size(f) bytes will be read from buf on success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to write into FIFO</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="136" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="136" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gaa7603ed95b14bdc4651d661a7cfc202e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_write_from_cb</definition>
+        <argsstring>(AVFifo *f, AVFifoCB read_cb, void *opaque, size_t *nb_elems)</argsstring>
+        <name>av_fifo_write_from_cb</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lavu__fifo_1gac707727e701bbe578dee3b7e5bd94378" kindref="member">AVFifoCB</ref></type>
+          <declname>read_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nb_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data from a user-provided callback into a FIFO.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>read_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback supplying the data to the FIFO. May be called multiple times. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>opaque user data to be provided to read_cb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should point to the maximum number of elements that can be written. Will be updated to contain the number of elements actually written.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="151" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="151" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gafe3d779829de3fc2d1a3a1a39b69d46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_read</definition>
+        <argsstring>(AVFifo *f, void *buf, size_t nb_elems)</argsstring>
+        <name>av_fifo_read</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from a FIFO.</para>
+<para>In case nb_elems &gt; av_fifo_can_read(f), nothing is read and an error is returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store the data. nb_elems * av_fifo_elem_size(f) bytes will be written into buf on success. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to read from FIFO</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="167" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="167" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga947a91f6e6565cc939b11e0e108bf8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_read_to_cb</definition>
+        <argsstring>(AVFifo *f, AVFifoCB write_cb, void *opaque, size_t *nb_elems)</argsstring>
+        <name>av_fifo_read_to_cb</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lavu__fifo_1gac707727e701bbe578dee3b7e5bd94378" kindref="member">AVFifoCB</ref></type>
+          <declname>write_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nb_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Feed data from a FIFO into a user-provided callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>write_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback the data will be supplied to. May be called multiple times. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>opaque user data to be provided to write_cb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should point to the maximum number of elements that can be read. Will be updated to contain the total number of elements actually sent to the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="182" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="182" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga9191ceb1b3c8d293967056a498696741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_peek</definition>
+        <argsstring>(const AVFifo *f, void *buf, size_t nb_elems, size_t offset)</argsstring>
+        <name>av_fifo_peek</name>
+        <param>
+          <type>const AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb_elems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from a FIFO without modifying FIFO state.</para>
+<para>Returns an error if an attempt is made to peek to nonexistent elements (i.e. if offset + nb_elems is larger than av_fifo_can_read(f)).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store the data. nb_elems * av_fifo_elem_size(f) bytes will be written into buf. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to read from FIFO </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of initial elements to skip.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="199" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="199" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gabb8d4c21eea614b707b6534431087b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_fifo_peek_to_cb</definition>
+        <argsstring>(const AVFifo *f, AVFifoCB write_cb, void *opaque, size_t *nb_elems, size_t offset)</argsstring>
+        <name>av_fifo_peek_to_cb</name>
+        <param>
+          <type>const AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lavu__fifo_1gac707727e701bbe578dee3b7e5bd94378" kindref="member">AVFifoCB</ref></type>
+          <declname>write_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nb_elems</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Feed data from a FIFO into a user-provided callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FIFO buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>write_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback the data will be supplied to. May be called multiple times. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>opaque user data to be provided to write_cb </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should point to the maximum number of elements that can be read. Will be updated to contain the total number of elements actually sent to the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of initial elements to skip; offset + *nb_elems must not be larger than av_fifo_can_read(f).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a non-negative number on success, a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="216" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="216" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1gaedbc9f5747365de9fdd03a410d34b02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fifo_drain2</definition>
+        <argsstring>(AVFifo *f, size_t size)</argsstring>
+        <name>av_fifo_drain2</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discard the specified amount of data from an AVFifo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to discard, MUST NOT be larger than av_fifo_can_read(f) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="224" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga4b6e02477642bdee4f66a8ff5f6bd40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fifo_reset2</definition>
+        <argsstring>(AVFifo *f)</argsstring>
+        <name>av_fifo_reset2</name>
+        <param>
+          <type>AVFifo *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="230" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="230" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__fifo_1ga20ff9b7c1b0d56fa9a57aa547d698c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fifo_freep2</definition>
+        <argsstring>(AVFifo **f)</argsstring>
+        <name>av_fifo_freep2</name>
+        <param>
+          <type>AVFifo **</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free an AVFifo and reset pointer to NULL. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an AVFifo to free. *f == NULL is allowed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="236" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" declline="236" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__fifo_1ga50476ad1b0fb20132e492ca6cad1bd5b" prot="public" static="no">
+        <name>AV_FIFO_FLAG_AUTO_GROW</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Automatically resize the FIFO on writes, so that the data fits. This automatic resizing happens up to a limit that can be modified with <ref refid="group__lavu__fifo_1gadfd4012330c600c00a54d68da762e65f" kindref="member">av_fifo_auto_grow_limit()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" line="63" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/fifo.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A generic FIFO API </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

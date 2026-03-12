@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_open_c_l_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVOpenCLDeviceContext</compoundname>
+    <includes refid="hwcontext__opencl_8h" local="no">hwcontext_opencl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_open_c_l_device_context_1a221b6ee3b0538276cc28367ed0dccec2" prot="public" static="no" mutable="no">
+        <type>cl_device_id</type>
+        <definition>cl_device_id AVOpenCLDeviceContext::device_id</definition>
+        <argsstring></argsstring>
+        <name>device_id</name>
+        <qualifiedname>AVOpenCLDeviceContext::device_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The primary device ID of the device. If multiple OpenCL devices are associated with the context then this is the one which will be used for all operations internal to FFmpeg. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="69" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_open_c_l_device_context_1a5152eb3c345fd6ead8ffa9e602293d20" prot="public" static="no" mutable="no">
+        <type>cl_context</type>
+        <definition>cl_context AVOpenCLDeviceContext::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>AVOpenCLDeviceContext::context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The OpenCL context which will contain all operations and frames on this device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="74" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_open_c_l_device_context_1a469263dac579e9693e1bafb8d0b3d5ca" prot="public" static="no" mutable="no">
+        <type>cl_command_queue</type>
+        <definition>cl_command_queue AVOpenCLDeviceContext::command_queue</definition>
+        <argsstring></argsstring>
+        <name>command_queue</name>
+        <qualifiedname>AVOpenCLDeviceContext::command_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The default command queue for this device, which will be used by all frames contexts which do not have their own command queue. If not initialised by the user, a default queue will be created on the primary device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="81" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>OpenCL device details.</para>
+<para>Allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="63" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="63" bodyend="82"/>
+    <listofallmembers>
+      <member refid="struct_a_v_open_c_l_device_context_1a469263dac579e9693e1bafb8d0b3d5ca" prot="public" virt="non-virtual"><scope>AVOpenCLDeviceContext</scope><name>command_queue</name></member>
+      <member refid="struct_a_v_open_c_l_device_context_1a5152eb3c345fd6ead8ffa9e602293d20" prot="public" virt="non-virtual"><scope>AVOpenCLDeviceContext</scope><name>context</name></member>
+      <member refid="struct_a_v_open_c_l_device_context_1a221b6ee3b0538276cc28367ed0dccec2" prot="public" virt="non-virtual"><scope>AVOpenCLDeviceContext</scope><name>device_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

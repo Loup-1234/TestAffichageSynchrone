@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__math__rational" kind="group">
+    <compoundname>lavu_math_rational</compoundname>
+    <title>AVRational</title>
+    <innerfile refid="rational_8h">rational.h</innerfile>
+    <innerclass refid="struct_a_v_rational" prot="public">AVRational</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__math__rational_1ga6eff035c271caa5a533987a1e00ad43e" prot="public" static="no">
+        <type>struct AVRational</type>
+        <definition>typedef struct AVRational AVRational</definition>
+        <argsstring></argsstring>
+        <name>AVRational</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rational number (pair of numerator and denominator). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="61" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__math__rational_1ga7778b1d209ceb3e4bf34e40150d3b882" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>static AVRational av_make_q</definition>
+        <argsstring>(int num, int den)</argsstring>
+        <name>av_make_q</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>den</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref>.</para>
+<para>Useful for compilers that do not support compound literals.</para>
+<para><simplesect kind="note"><para>The return value is not reduced. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__math__rational_1ga4fd9c0b8e663cf3d55e89fbc6ce71602" kindref="member">av_reduce()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="71" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1gaa440bf42ede128219a571ae4ce0f90b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int av_cmp_q</definition>
+        <argsstring>(AVRational a, AVRational b)</argsstring>
+        <name>av_cmp_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare two rationals.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rational</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>One of the following values:<itemizedlist>
+<listitem><para>0 if <computeroutput>a == b</computeroutput></para>
+</listitem><listitem><para>1 if <computeroutput>a &gt; b</computeroutput></para>
+</listitem><listitem><para>-1 if <computeroutput>a &lt; b</computeroutput></para>
+</listitem><listitem><para><computeroutput>INT_MIN</computeroutput> if one of the values is of the form <computeroutput>0 / 0</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="89" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga935dbbf6bde8dfe5fa7ddb1da582eb07" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double av_q2d</definition>
+        <argsstring>(AVRational a)</argsstring>
+        <name>av_q2d</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> to a <computeroutput>double</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>a</computeroutput> in floating-point form </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__math__rational_1ga7dfd5ba1eb1edf5845ac32b338de9e76" kindref="member">av_d2q()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="104" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga4fd9c0b8e663cf3d55e89fbc6ce71602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_reduce</definition>
+        <argsstring>(int *dst_num, int *dst_den, int64_t num, int64_t den, int64_t max)</argsstring>
+        <name>av_reduce</name>
+        <param>
+          <type>int *</type>
+          <declname>dst_num</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dst_den</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>den</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduce a fraction.</para>
+<para>This is useful for framerate calculations.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dst_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination numerator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst_den</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination denominator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source numerator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">den</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source denominator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum allowed values for <computeroutput>dst_num</computeroutput> &amp; <computeroutput>dst_den</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the operation is exact, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="120" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="120" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga3f9c69432582e2857147bcba3c75dc32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_mul_q</definition>
+        <argsstring>(AVRational b, AVRational c) av_const</argsstring>
+        <name>av_mul_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiply two rationals. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rational </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>b*c </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="128" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="128" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1gaffa24e7bd38e12dbac540d8b66461f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_div_q</definition>
+        <argsstring>(AVRational b, AVRational c) av_const</argsstring>
+        <name>av_div_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divide one rational by another. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rational </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>b/c </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="136" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="136" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga2eb3a275aabacd8421f140a12bab4a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_add_q</definition>
+        <argsstring>(AVRational b, AVRational c) av_const</argsstring>
+        <name>av_add_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two rationals. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rational </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>b+c </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="144" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="144" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1gac66c6198ce5e8a8caf88dfc20782fa59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_sub_q</definition>
+        <argsstring>(AVRational b, AVRational c) av_const</argsstring>
+        <name>av_sub_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract one rational from another. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rational </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>b-c </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="152" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="152" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1gab646f0a7cc30af543ba4a91b37f9de6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>static av_always_inline AVRational av_inv_q</definition>
+        <argsstring>(AVRational q)</argsstring>
+        <name>av_inv_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invert a rational. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 / q </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="159" column="36" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga7dfd5ba1eb1edf5845ac32b338de9e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_d2q</definition>
+        <argsstring>(double d, int max) av_const</argsstring>
+        <name>av_d2q</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a double precision floating point number to a rational.</para>
+<para>In case of infinity, the returned value is expressed as <computeroutput>{1, 0}</computeroutput> or <computeroutput>{-1, 0}</computeroutput> depending on the sign.</para>
+<para>In general rational numbers with |num| &lt;= 1&lt;&lt;26 &amp;&amp; |den| &lt;= 1&lt;&lt;26 can be recovered exactly from their double representation. (no exceptions were found within 1B random ones)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>double</computeroutput> to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum allowed numerator and denominator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>d</computeroutput> in <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> form </para>
+</simplesect>
+<simplesect kind="see"><para>av_q2d() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="180" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="180" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga111810c563749cd3081aaa19004f44df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_nearer_q</definition>
+        <argsstring>(AVRational q, AVRational q1, AVRational q2)</argsstring>
+        <name>av_nearer_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q1</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find which of the two rationals is closer to another rational.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rational to be compared against </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rational to be tested </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rational to be tested </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>One of the following values:<itemizedlist>
+<listitem><para>1 if <computeroutput>q1</computeroutput> is nearer to <computeroutput>q</computeroutput> than <computeroutput>q2</computeroutput></para>
+</listitem><listitem><para>-1 if <computeroutput>q2</computeroutput> is nearer to <computeroutput>q</computeroutput> than <computeroutput>q1</computeroutput></para>
+</listitem><listitem><para>0 if they have the same distance </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="193" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="193" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga63d5ef1c2f77a5fdccb2b3a1c8cc77f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_find_nearest_q_idx</definition>
+        <argsstring>(AVRational q, const AVRational *q_list)</argsstring>
+        <name>av_find_nearest_q_idx</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+          <declname>q_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the value in a list of rationals nearest a given reference rational.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference rational </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of rationals terminated by <computeroutput>{0, 0}</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of the nearest value found in the array </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="202" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="202" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1gafbcd96878344ade957d5bccc6bc705b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t av_q2intfloat</definition>
+        <argsstring>(AVRational q)</argsstring>
+        <name>av_q2intfloat</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> to a IEEE 32-bit <computeroutput>float</computeroutput> expressed in fixed-point format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rational to be converted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Equivalent floating-point value, expressed as an unsigned 32-bit integer. </para>
+</simplesect>
+<simplesect kind="note"><para>The returned value is platform-indepedant. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="213" column="10" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="213" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__math__rational_1ga699c7d603ff3cf185bf1f846e0707b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational av_gcd_q</definition>
+        <argsstring>(AVRational a, AVRational b, int max_den, AVRational def)</argsstring>
+        <name>av_gcd_q</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_den</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the best rational so that a and b are multiple of it. If the resulting denominator is larger than max_den, return def. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" line="219" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/rational.h" declline="219" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Rational number calculation.</para>
+<para>While rational numbers can be expressed as floating-point numbers, the conversion process is a lossy one, so are floating-point operations. On the other hand, the nature of FFmpeg demands highly accurate calculation of timestamps. This set of rational number utilities serves as a generic interface for manipulating rational numbers as pairs of numerators and denominators.</para>
+<para>Many of the functions that operate on <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref>&apos;s have the suffix <computeroutput>_q</computeroutput>, in reference to the mathematical symbol &quot;ℚ&quot; (Q) which denotes the set of all rational numbers. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

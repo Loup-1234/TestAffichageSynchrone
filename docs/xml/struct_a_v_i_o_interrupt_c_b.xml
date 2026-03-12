@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_o_interrupt_c_b" kind="struct" language="C++" prot="public">
+    <compoundname>AVIOInterruptCB</compoundname>
+    <includes refid="avio_8h" local="no">avio.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_o_interrupt_c_b_1ac5de25559a8b29f3e55a3e956115e54a" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVIOInterruptCB::callback) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>callback</name>
+        <qualifiedname>AVIOInterruptCB::callback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="60" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_interrupt_c_b_1a873ae56fef71d27dca1088dfd55c2197" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVIOInterruptCB::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVIOInterruptCB::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="61" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Callback for checking whether to abort blocking functions. AVERROR_EXIT is returned in this case by the interrupted function. During blocking operations, callback is called with opaque as parameter. If the callback returns 1, the blocking operation will be aborted.</para>
+<para>No members can be added to this struct without a major bump, if new elements have been added after this struct in <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> or <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="59" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_o_interrupt_c_b_1ac5de25559a8b29f3e55a3e956115e54a" prot="public" virt="non-virtual"><scope>AVIOInterruptCB</scope><name>callback</name></member>
+      <member refid="struct_a_v_i_o_interrupt_c_b_1a873ae56fef71d27dca1088dfd55c2197" prot="public" virt="non-virtual"><scope>AVIOInterruptCB</scope><name>opaque</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

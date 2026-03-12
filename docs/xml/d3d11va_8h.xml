@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="d3d11va_8h" kind="file" language="C++">
+    <compoundname>d3d11va.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">d3d11.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h</label>
+        <link refid="d3d11va_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>d3d11.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_d3_d11_v_a_context" prot="public">AVD3D11VAContext</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="d3d11va_8h_1ac50762666aa00bd3a4308158510f1748" prot="public" static="no">
+        <name>_WIN32_WINNT</name>
+        <initializer>0x0602</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="35" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavc__codec__hwaccel__d3d11va_1ga5c9e4e323204a7181aa9cd6d3779fe15" kind="typedef"><name>AVD3D11VAContext</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" kind="function"><name>av_d3d11va_alloc_context</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Public libavcodec D3D11VA header. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Direct3D11<sp/>HW<sp/>acceleration</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2009<sp/>Laurent<sp/>Aimar</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2015<sp/>Steve<sp/>Lhomme</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_D3D11VA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_D3D11VA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_WIN32_WINNT)<sp/>||<sp/>_WIN32_WINNT<sp/>&lt;<sp/>0x0602</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_WIN32_WINNT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_WINNT<sp/>0x0602</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d11.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_a_v_d3_d11_v_a_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="60" refid="struct_a_v_d3_d11_v_a_context_1a8ac56b0cbe384482dec2d367c19c932c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D11VideoDecoder<sp/>*<ref refid="struct_a_v_d3_d11_v_a_context_1a8ac56b0cbe384482dec2d367c19c932c" kindref="member">decoder</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="struct_a_v_d3_d11_v_a_context_1a14f4a1d42cb3d7f315c474ad0799fa1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D11VideoContext<sp/>*<ref refid="struct_a_v_d3_d11_v_a_context_1a14f4a1d42cb3d7f315c474ad0799fa1d" kindref="member">video_context</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_a_v_d3_d11_v_a_context_1a06418fa3d9d4e26d27c0ddfbaff8f1d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>D3D11_VIDEO_DECODER_CONFIG<sp/>*<ref refid="struct_a_v_d3_d11_v_a_context_1a06418fa3d9d4e26d27c0ddfbaff8f1d0" kindref="member">cfg</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="struct_a_v_d3_d11_v_a_context_1a390b7bb7aef410174833ec50cd890a32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d3_d11_v_a_context_1a390b7bb7aef410174833ec50cd890a32" kindref="member">surface_count</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_a_v_d3_d11_v_a_context_1a1f81c5d101cf91cfb3eb962d4b0d17a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ID3D11VideoDecoderOutputView<sp/>**<ref refid="struct_a_v_d3_d11_v_a_context_1a1f81c5d101cf91cfb3eb962d4b0d17a7" kindref="member">surface</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="struct_a_v_d3_d11_v_a_context_1ab38ae8996b3861726f809d616a4ace88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_d3_d11_v_a_context_1ab38ae8996b3861726f809d616a4ace88" kindref="member">workaround</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="struct_a_v_d3_d11_v_a_context_1a0dd2a5ee2fd8c07ba425814f7ca2fd79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d3_d11_v_a_context_1a0dd2a5ee2fd8c07ba425814f7ca2fd79" kindref="member">report_id</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_a_v_d3_d11_v_a_context_1aacaa0c50499a31fe55f4f19d2f856aa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HANDLE<sp/><sp/><ref refid="struct_a_v_d3_d11_v_a_context_1aacaa0c50499a31fe55f4f19d2f856aa3" kindref="member">context_mutex</ref>;</highlight></codeline>
+<codeline lineno="96" refid="group__lavc__codec__hwaccel__d3d11va_1ga5c9e4e323204a7181aa9cd6d3779fe15" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" refkind="member"><highlight class="normal"><ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref><sp/>*<ref refid="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" kindref="member">av_d3d11va_alloc_context</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVCODEC_D3D11VA_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h"/>
+  </compounddef>
+</doxygen>

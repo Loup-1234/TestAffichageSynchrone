@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__log__constants" kind="group">
+    <compoundname>lavu_log_constants</compoundname>
+    <title>Logging Constants</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__log__constants_1ga11e329935b59b83ca722b66674f37fd4" prot="public" static="no">
+        <name>AV_LOG_QUIET</name>
+        <initializer>-8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print no output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="192" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga09623098406ba81d130824ac742d146e" prot="public" static="no">
+        <name>AV_LOG_PANIC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Something went really wrong and we will crash now. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="197" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga96970a2980bf6ad28cd403e7dc52d6c5" prot="public" static="no">
+        <name>AV_LOG_FATAL</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Something went wrong and recovery is not possible. For example, no header was found for a format which depends on headers or an illegal combination of parameters is used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="204" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1gaffe151ff4cd8a24b2e77ac8d9616c85c" prot="public" static="no">
+        <name>AV_LOG_ERROR</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Something went wrong and cannot losslessly be recovered. However, not all future data is affected. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="210" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga85b57516ca703cc47d9bbe5f4658c716" prot="public" static="no">
+        <name>AV_LOG_WARNING</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Something somehow does not look correct. This may or may not lead to problems. An example would be the use of &apos;-vstrict -2&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="216" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1gad172eacfed8653e454c6fdcbe53baab3" prot="public" static="no">
+        <name>AV_LOG_INFO</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="221" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga9b58b28e2d429b930b69db19877f76a8" prot="public" static="no">
+        <name>AV_LOG_VERBOSE</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="226" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga5b7221c3afd06848486776bd834a58a5" prot="public" static="no">
+        <name>AV_LOG_DEBUG</name>
+        <initializer>48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stuff which is only useful for libav* developers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="231" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1ga030300ea4843c53b2fe178a434964b39" prot="public" static="no">
+        <name>AV_LOG_TRACE</name>
+        <initializer>56</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extremely verbose debugging, useful for libav* development. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="236" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__log__constants_1gad87b54332d00f280bf5db0fd2f56f340" prot="public" static="no">
+        <name>AV_LOG_MAX_OFFSET</name>
+        <initializer>(<ref refid="group__lavu__log__constants_1ga030300ea4843c53b2fe178a434964b39" kindref="member">AV_LOG_TRACE</ref> - <ref refid="group__lavu__log__constants_1ga11e329935b59b83ca722b66674f37fd4" kindref="member">AV_LOG_QUIET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="238" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

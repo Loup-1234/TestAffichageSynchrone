@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_smpte291m_anc8bit" kind="struct" language="C++" prot="public">
+    <compoundname>AVSmpte291mAnc8bit</compoundname>
+    <includes refid="smpte__436m_8h" local="no">smpte_436m.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_smpte291m_anc8bit_1a5f7fbb9adb478cc2d784a022371d3e03" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVSmpte291mAnc8bit::did</definition>
+        <argsstring></argsstring>
+        <name>did</name>
+        <qualifiedname>AVSmpte291mAnc8bit::did</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="99" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_smpte291m_anc8bit_1a6490c95517ac23122f4cd32cf29d417f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVSmpte291mAnc8bit::sdid_or_dbn</definition>
+        <argsstring></argsstring>
+        <name>sdid_or_dbn</name>
+        <qualifiedname>AVSmpte291mAnc8bit::sdid_or_dbn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="100" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_smpte291m_anc8bit_1a09d11a3861ee7b867490f499c9a340d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVSmpte291mAnc8bit::data_count</definition>
+        <argsstring></argsstring>
+        <name>data_count</name>
+        <qualifiedname>AVSmpte291mAnc8bit::data_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="101" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_smpte291m_anc8bit_1a57835f1b03636857e4d9b10df0935122" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVSmpte291mAnc8bit::payload[AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY]</definition>
+        <argsstring>[AV_SMPTE_291M_ANC_PAYLOAD_CAPACITY]</argsstring>
+        <name>payload</name>
+        <qualifiedname>AVSmpte291mAnc8bit::payload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="102" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_smpte291m_anc8bit_1ab8c94a7df6bee961c1bad8682d1cccd7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVSmpte291mAnc8bit::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <qualifiedname>AVSmpte291mAnc8bit::checksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="103" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An ANC packet with an 8-bit payload. This can be decoded from <ref refid="struct_a_v_smpte436m_coded_anc_1aee12d0b734e5c1e9327f9c4d105df961" kindref="member">AVSmpte436mCodedAnc::payload</ref>.</para>
+<para>Note: Some ANC packets need a 10-bit payload, if stored in this struct, the most-significant 2 bits of each sample are discarded. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" line="98" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/smpte_436m.h" bodystart="98" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct_a_v_smpte291m_anc8bit_1ab8c94a7df6bee961c1bad8682d1cccd7" prot="public" virt="non-virtual"><scope>AVSmpte291mAnc8bit</scope><name>checksum</name></member>
+      <member refid="struct_a_v_smpte291m_anc8bit_1a09d11a3861ee7b867490f499c9a340d8" prot="public" virt="non-virtual"><scope>AVSmpte291mAnc8bit</scope><name>data_count</name></member>
+      <member refid="struct_a_v_smpte291m_anc8bit_1a5f7fbb9adb478cc2d784a022371d3e03" prot="public" virt="non-virtual"><scope>AVSmpte291mAnc8bit</scope><name>did</name></member>
+      <member refid="struct_a_v_smpte291m_anc8bit_1a57835f1b03636857e4d9b10df0935122" prot="public" virt="non-virtual"><scope>AVSmpte291mAnc8bit</scope><name>payload</name></member>
+      <member refid="struct_a_v_smpte291m_anc8bit_1a6490c95517ac23122f4cd32cf29d417f" prot="public" virt="non-virtual"><scope>AVSmpte291mAnc8bit</scope><name>sdid_or_dbn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

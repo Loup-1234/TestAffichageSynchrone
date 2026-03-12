@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="packet_8h" kind="file" language="C++">
+    <compoundname>packet.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="attributes_8h" local="yes">libavutil/attributes.h</includes>
+    <includes refid="buffer_8h" local="yes">libavutil/buffer.h</includes>
+    <includes refid="dict_8h" local="yes">libavutil/dict.h</includes>
+    <includes refid="rational_8h" local="yes">libavutil/rational.h</includes>
+    <includes refid="libavutil_2version_8h" local="yes">libavutil/version.h</includes>
+    <includes refid="libavcodec_2version__major_8h" local="yes">libavcodec/version_major.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="bsf_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</includedby>
+    <includedby refid="codec__par_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</includedby>
+    <includedby refid="avformat_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h</label>
+        <link refid="packet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>libavcodec/version_major.h</label>
+        <link refid="libavcodec_2version__major_8h"/>
+      </node>
+      <node id="4">
+        <label>libavutil/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="11">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="5">
+        <label>libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>libavutil/dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>libavutil/rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>libavutil/version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h</label>
+        <link refid="packet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_packet_side_data" prot="public">AVPacketSideData</innerclass>
+    <innerclass refid="struct_a_v_packet" prot="public">AVPacket</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavc__packet_1ga75603d7c2b8adf5829f4fd2fb860168f" kind="define"><name>AV_PKT_FLAG_KEY</name></member>
+      <member refid="group__lavc__packet_1ga46187df0d7711108ece88804dcc38025" kind="define"><name>AV_PKT_FLAG_CORRUPT</name></member>
+      <member refid="group__lavc__packet_1ga3d36105d7143b319acef3c86d2beb382" kind="define"><name>AV_PKT_FLAG_DISCARD</name></member>
+      <member refid="group__lavc__packet_1ga6d8a1f619e14951921fd51702d587b7c" kind="define"><name>AV_PKT_FLAG_TRUSTED</name></member>
+      <member refid="group__lavc__packet_1ga879a3af0408d39f0ef98010f07952601" kind="define"><name>AV_PKT_FLAG_DISPOSABLE</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kind="enum"><name>AVPacketSideDataType</name></member>
+      <member refid="group__lavc__packet_1ga437bfa981d4c8968ca92f41ecbcb8054" kind="enum"><name>AVSideDataParamChangeFlags</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavc__packet__side__data_1ga1e65832f603b16959ddcbe48ac23691f" kind="typedef"><name>AVPacketSideData</name></member>
+      <member refid="group__lavc__packet_1ga95fb1cffcaba889eaca3b985c811991b" kind="typedef"><name>AVPacket</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavc__packet__side__data_1ga2219eb0b5a6ca929d564efb7d7c22a36" kind="function"><name>av_packet_side_data_new</name></member>
+      <member refid="group__lavc__packet__side__data_1ga7a0fb092dc581c328a296281332d0c8c" kind="function"><name>av_packet_side_data_add</name></member>
+      <member refid="group__lavc__packet__side__data_1gabe0dea475f687842cf31a9e967be1692" kind="function"><name>av_packet_side_data_get</name></member>
+      <member refid="group__lavc__packet__side__data_1ga713f80b3e5f26154f13e9c9bb228811f" kind="function"><name>av_packet_side_data_remove</name></member>
+      <member refid="group__lavc__packet__side__data_1ga0ec4f0dc213b3bc6cbd611ea04e0427f" kind="function"><name>av_packet_side_data_free</name></member>
+      <member refid="group__lavc__packet__side__data_1ga81a98f6f18d5e2ad8802e9888ac6f249" kind="function"><name>av_packet_side_data_from_frame</name></member>
+      <member refid="group__lavc__packet__side__data_1ga726a21825cd9f1f9cc8a8afec52e49c7" kind="function"><name>av_packet_side_data_to_frame</name></member>
+      <member refid="group__lavc__packet__side__data_1ga3684055b06b6b0824953870914e5b958" kind="function"><name>av_packet_side_data_name</name></member>
+      <member refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kind="function"><name>av_packet_alloc</name></member>
+      <member refid="group__lavc__packet_1ga839594f86c1f1dcefa28eae5db93c655" kind="function"><name>av_packet_clone</name></member>
+      <member refid="group__lavc__packet_1ga1066464e7cdd1f215df6940db94e5d8e" kind="function"><name>av_packet_free</name></member>
+      <member refid="group__lavc__packet_1gadfa708660b85a56749c753124de2da7d" kind="function"><name>av_new_packet</name></member>
+      <member refid="group__lavc__packet_1gaceba1c21e5718f87abdf61cf21500485" kind="function"><name>av_shrink_packet</name></member>
+      <member refid="group__lavc__packet_1ga74f66e072998b8ce81ef3aba8d617a58" kind="function"><name>av_grow_packet</name></member>
+      <member refid="group__lavc__packet_1ga7ca877e1f0ded89a27199b65e9a077dc" kind="function"><name>av_packet_from_data</name></member>
+      <member refid="group__lavc__packet_1ga6c320d8a4bf8693fa2e0da3ee50d98e7" kind="function"><name>av_packet_new_side_data</name></member>
+      <member refid="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" kind="function"><name>av_packet_add_side_data</name></member>
+      <member refid="group__lavc__packet_1ga3d815115e1f842932aef3e8e5cdfafff" kind="function"><name>av_packet_shrink_side_data</name></member>
+      <member refid="group__lavc__packet_1gab28b5f89648fb20f49e30aa258d119b1" kind="function"><name>av_packet_get_side_data</name></member>
+      <member refid="group__lavc__packet_1gabb1aa49bdbea2f3a586ea48f1082e898" kind="function"><name>av_packet_pack_dictionary</name></member>
+      <member refid="group__lavc__packet_1gaae45c29cb3a29dc80b0b8f4ee9724492" kind="function"><name>av_packet_unpack_dictionary</name></member>
+      <member refid="group__lavc__packet_1ga5cf4ba712aca9b300daf1eea1b8a9ebb" kind="function"><name>av_packet_free_side_data</name></member>
+      <member refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kind="function"><name>av_packet_ref</name></member>
+      <member refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kind="function"><name>av_packet_unref</name></member>
+      <member refid="group__lavc__packet_1ga91dbb1359f99547adb544ee96a406b21" kind="function"><name>av_packet_move_ref</name></member>
+      <member refid="group__lavc__packet_1gade00f67930f4e2a3401b67b701d5b3a2" kind="function"><name>av_packet_copy_props</name></member>
+      <member refid="group__lavc__packet_1ga8a6deff6c1809029037ffd760db3e0d4" kind="function"><name>av_packet_make_refcounted</name></member>
+      <member refid="group__lavc__packet_1gaaa304ffdab83984ac995d134e4298d4b" kind="function"><name>av_packet_make_writable</name></member>
+      <member refid="group__lavc__packet_1gae5c86e4d93f6e7aa62ef2c60763ea67e" kind="function"><name>av_packet_rescale_ts</name></member>
+      <member refid="group__lavc__packet_1gaa47a2d74fb0313206f6b2a4bac215de2" kind="function"><name>av_container_fifo_alloc_avpacket</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AVPacket<sp/>public<sp/>API</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_PACKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_PACKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">libavutil/attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buffer_8h" kindref="compound">libavutil/buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dict_8h" kindref="compound">libavutil/dict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">libavutil/rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavutil_2version_8h" kindref="compound">libavutil/version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavcodec_2version__major_8h" kindref="compound">libavcodec/version_major.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a9b3c18a18a684fcbb1a2cc25cc6869dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a9b3c18a18a684fcbb1a2cc25cc6869dd" kindref="member">AV_PKT_DATA_PALETTE</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad353d4a7841087354593a97bef92841a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad353d4a7841087354593a97bef92841a" kindref="member">AV_PKT_DATA_NEW_EXTRADATA</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad42d2eb8c04516552e0c422257192bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad42d2eb8c04516552e0c422257192bc0" kindref="member">AV_PKT_DATA_PARAM_CHANGE</ref>,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a48dc789fa9d31046e153233374f52b86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a48dc789fa9d31046e153233374f52b86" kindref="member">AV_PKT_DATA_H263_MB_INFO</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97af91f58c27612d229e57eee2e587e03e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97af91f58c27612d229e57eee2e587e03e6" kindref="member">AV_PKT_DATA_REPLAYGAIN</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aab8c149a1e6c67aad340733becec87e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aab8c149a1e6c67aad340733becec87e1" kindref="member">AV_PKT_DATA_DISPLAYMATRIX</ref>,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad87020fae601b684bfb27ee64a457303" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad87020fae601b684bfb27ee64a457303" kindref="member">AV_PKT_DATA_STEREO3D</ref>,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a66ec22464b50c285114e79604e9e0a0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a66ec22464b50c285114e79604e9e0a0b" kindref="member">AV_PKT_DATA_AUDIO_SERVICE_TYPE</ref>,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8b58774a0ff03f493edda6685967ad51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8b58774a0ff03f493edda6685967ad51" kindref="member">AV_PKT_DATA_QUALITY_STATS</ref>,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aeb2b104759939b4f2d1b6c19bce96492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aeb2b104759939b4f2d1b6c19bce96492" kindref="member">AV_PKT_DATA_FALLBACK_TRACK</ref>,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad1bb4c48001b980f2563da3f969060d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad1bb4c48001b980f2563da3f969060d3" kindref="member">AV_PKT_DATA_CPB_PROPERTIES</ref>,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a2093332d8086d25a04942ede61007f6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a2093332d8086d25a04942ede61007f6a" kindref="member">AV_PKT_DATA_SKIP_SAMPLES</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a0933bb1f539acca421bfaa293cb3ee95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a0933bb1f539acca421bfaa293cb3ee95" kindref="member">AV_PKT_DATA_JP_DUALMONO</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a18d2e9d2c572fbe22a5880176fc41e9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a18d2e9d2c572fbe22a5880176fc41e9a" kindref="member">AV_PKT_DATA_STRINGS_METADATA</ref>,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a94c6e44bd31184da4d72ed4d322ffc69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a94c6e44bd31184da4d72ed4d322ffc69" kindref="member">AV_PKT_DATA_SUBTITLE_POSITION</ref>,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a72e6d25102c0504549754fcd9ac871b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a72e6d25102c0504549754fcd9ac871b7" kindref="member">AV_PKT_DATA_MATROSKA_BLOCKADDITIONAL</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad95c0f65ae13f5c2f03bf32accc5ecb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad95c0f65ae13f5c2f03bf32accc5ecb2" kindref="member">AV_PKT_DATA_WEBVTT_IDENTIFIER</ref>,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8dfefd91c6ee7f37af363a93a8211119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8dfefd91c6ee7f37af363a93a8211119" kindref="member">AV_PKT_DATA_WEBVTT_SETTINGS</ref>,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8f5f41fa3f854d68604ed81950bc8ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a8f5f41fa3f854d68604ed81950bc8ee9" kindref="member">AV_PKT_DATA_METADATA_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a4272d4c23aa0d476c404a0e04756b70a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a4272d4c23aa0d476c404a0e04756b70a" kindref="member">AV_PKT_DATA_MPEGTS_STREAM_ID</ref>,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a5fe6406e07337dcb0125bd03fba7ea2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a5fe6406e07337dcb0125bd03fba7ea2c" kindref="member">AV_PKT_DATA_MASTERING_DISPLAY_METADATA</ref>,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a73b56e906c97a1c095e8e615d072637b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a73b56e906c97a1c095e8e615d072637b" kindref="member">AV_PKT_DATA_SPHERICAL</ref>,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aea49ec141cf7f4b1c56da65d9c2df239" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aea49ec141cf7f4b1c56da65d9c2df239" kindref="member">AV_PKT_DATA_CONTENT_LIGHT_LEVEL</ref>,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a7376747651b9113c8dd5afecc94742d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a7376747651b9113c8dd5afecc94742d2" kindref="member">AV_PKT_DATA_A53_CC</ref>,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ac7d26d70faa3c263162d60668b5c82b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ac7d26d70faa3c263162d60668b5c82b2" kindref="member">AV_PKT_DATA_ENCRYPTION_INIT_INFO</ref>,</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aa00782edfcea54be6c2083b6d2d839ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aa00782edfcea54be6c2083b6d2d839ac" kindref="member">AV_PKT_DATA_ENCRYPTION_INFO</ref>,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ab9b8ffadaf9b1808854ccfd944bd8304" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ab9b8ffadaf9b1808854ccfd944bd8304" kindref="member">AV_PKT_DATA_AFD</ref>,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a4586b727ffd024011970432c23187874" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a4586b727ffd024011970432c23187874" kindref="member">AV_PKT_DATA_PRFT</ref>,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a598cf63387504cbd709ca98402aa6591" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a598cf63387504cbd709ca98402aa6591" kindref="member">AV_PKT_DATA_ICC_PROFILE</ref>,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97afa35946d9ab6a87d8be192435e6fc317" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97afa35946d9ab6a87d8be192435e6fc317" kindref="member">AV_PKT_DATA_DOVI_CONF</ref>,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a1b4458780fbdf7fc23b18a7cb5327371" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a1b4458780fbdf7fc23b18a7cb5327371" kindref="member">AV_PKT_DATA_S12M_TIMECODE</ref>,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a42dcc251df838de9e13b3754e0c7b789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a42dcc251df838de9e13b3754e0c7b789" kindref="member">AV_PKT_DATA_DYNAMIC_HDR10_PLUS</ref>,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97af7a3c940e3f818b3ebab5cb7c07d83c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97af7a3c940e3f818b3ebab5cb7c07d83c2" kindref="member">AV_PKT_DATA_IAMF_MIX_GAIN_PARAM</ref>,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a6e4f43122f7b846c73b411636b90d414" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a6e4f43122f7b846c73b411636b90d414" kindref="member">AV_PKT_DATA_IAMF_DEMIXING_INFO_PARAM</ref>,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a3bff78f465665a3f7d4f3f5f932b0d27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a3bff78f465665a3f7d4f3f5f932b0d27" kindref="member">AV_PKT_DATA_IAMF_RECON_GAIN_INFO_PARAM</ref>,</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a1c00c8fa9c19df6bc7cc4e18940db5c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a1c00c8fa9c19df6bc7cc4e18940db5c7" kindref="member">AV_PKT_DATA_AMBIENT_VIEWING_ENVIRONMENT</ref>,</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ae7d46ebba8c1f88dee10b58adc8fecc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ae7d46ebba8c1f88dee10b58adc8fecc9" kindref="member">AV_PKT_DATA_FRAME_CROPPING</ref>,</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aed49c46967531d884390dc61adcabb45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97aed49c46967531d884390dc61adcabb45" kindref="member">AV_PKT_DATA_LCEVC</ref>,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a5478d2d0e3effd805f24aa1880580795" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a5478d2d0e3effd805f24aa1880580795" kindref="member">AV_PKT_DATA_3D_REFERENCE_DISPLAYS</ref>,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a60625b4e5d418b4d4244b6b6af50be76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97a60625b4e5d418b4d4244b6b6af50be76" kindref="member">AV_PKT_DATA_RTCP_SR</ref>,</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ab9bf43105dfc65c6cacb8a4de9e6dfea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ab9bf43105dfc65c6cacb8a4de9e6dfea" kindref="member">AV_PKT_DATA_EXIF</ref>,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad3e2325c92062453fcb6ca3929a0c734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet__side__data_1gga9a80bfcacc586b483a973272800edb97ad3e2325c92062453fcb6ca3929a0c734" kindref="member">AV_PKT_DATA_NB</ref></highlight></codeline>
+<codeline lineno="380"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="struct_a_v_packet_side_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*data;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/>size;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type;</highlight></codeline>
+<codeline lineno="413" refid="group__lavc__packet__side__data_1ga1e65832f603b16959ddcbe48ac23691f" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref>;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429" refid="group__lavc__packet__side__data_1ga2219eb0b5a6ca929d564efb7d7c22a36" refkind="member"><highlight class="normal"><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*<ref refid="group__lavc__packet__side__data_1ga2219eb0b5a6ca929d564efb7d7c22a36" kindref="member">av_packet_side_data_new</ref>(<ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>**psd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pnb_sd,</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452" refid="group__lavc__packet__side__data_1ga7a0fb092dc581c328a296281332d0c8c" refkind="member"><highlight class="normal"><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*<ref refid="group__lavc__packet__side__data_1ga7a0fb092dc581c328a296281332d0c8c" kindref="member">av_packet_side_data_add</ref>(<ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>**sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="group__lavc__packet__side__data_1gabe0dea475f687842cf31a9e967be1692" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*<ref refid="group__lavc__packet__side__data_1gabe0dea475f687842cf31a9e967be1692" kindref="member">av_packet_side_data_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*sd,</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_sd,</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478" refid="group__lavc__packet__side__data_1ga713f80b3e5f26154f13e9c9bb228811f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga713f80b3e5f26154f13e9c9bb228811f" kindref="member">av_packet_side_data_remove</ref>(<ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490" refid="group__lavc__packet__side__data_1ga0ec4f0dc213b3bc6cbd611ea04e0427f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga0ec4f0dc213b3bc6cbd611ea04e0427f" kindref="member">av_packet_side_data_free</ref>(<ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>**sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref>;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505" refid="group__lavc__packet__side__data_1ga81a98f6f18d5e2ad8802e9888ac6f249" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga81a98f6f18d5e2ad8802e9888ac6f249" kindref="member">av_packet_side_data_from_frame</ref>(<ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>**sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*src,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="519" refid="group__lavc__packet__side__data_1ga726a21825cd9f1f9cc8a8afec52e49c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga726a21825cd9f1f9cc8a8afec52e49c7" kindref="member">av_packet_side_data_to_frame</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*src,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*av_packet_side_data_name(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="struct_a_v_packet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>{</highlight></codeline>
+<codeline lineno="571" refid="struct_a_v_packet_1a3bf81872813551fe9343dd0e09993e38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_packet_1a3bf81872813551fe9343dd0e09993e38" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="581" refid="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" kindref="member">pts</ref>;</highlight></codeline>
+<codeline lineno="587" refid="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" kindref="member">dts</ref>;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*data;</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>size;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>stream_index;</highlight></codeline>
+<codeline lineno="594" refid="struct_a_v_packet_1a437be96a9da675f12caa228a9c81bd82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_a_v_packet_1a437be96a9da675f12caa228a9c81bd82" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="599" refid="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref><sp/>*<ref refid="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" kindref="member">side_data</ref>;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>side_data_elems;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606" refid="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608" refid="struct_a_v_packet_1ab5793d8195cf4789dfb3913b7a693903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_packet_1ab5793d8195cf4789dfb3913b7a693903" kindref="member">pos</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613" refid="struct_a_v_packet_1a88343ad2cf68bd2e530494507b97cc3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="struct_a_v_packet_1a88343ad2cf68bd2e530494507b97cc3a" kindref="member">opaque</ref>;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624" refid="struct_a_v_packet_1a8e9627cbf54429fe31b093a6d080969b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_packet_1a8e9627cbf54429fe31b093a6d080969b" kindref="member">opaque_ref</ref>;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632" refid="struct_a_v_packet_1ad5ee277064c1e883a8883fb8521c7d3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_packet_1ad5ee277064c1e883a8883fb8521c7d3e" kindref="member">time_base</ref>;</highlight></codeline>
+<codeline lineno="633" refid="group__lavc__packet_1ga95fb1cffcaba889eaca3b985c811991b" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_INIT_PACKET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal">attribute_deprecated</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVPacketList<sp/>{</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__packet_1ga95fb1cffcaba889eaca3b985c811991b" kindref="member">AVPacket</ref><sp/>pkt;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVPacketList<sp/>*next;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal">}<sp/>AVPacketList;</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643" refid="group__lavc__packet_1ga75603d7c2b8adf5829f4fd2fb860168f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PKT_FLAG_KEY<sp/><sp/><sp/><sp/><sp/>0x0001<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644" refid="group__lavc__packet_1ga46187df0d7711108ece88804dcc38025" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PKT_FLAG_CORRUPT<sp/>0x0002<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650" refid="group__lavc__packet_1ga3d36105d7143b319acef3c86d2beb382" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PKT_FLAG_DISCARD<sp/><sp/><sp/>0x0004</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="657" refid="group__lavc__packet_1ga6d8a1f619e14951921fd51702d587b7c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PKT_FLAG_TRUSTED<sp/><sp/><sp/>0x0008</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="662" refid="group__lavc__packet_1ga879a3af0408d39f0ef98010f07952601" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PKT_FLAG_DISPOSABLE<sp/>0x0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVSideDataParamChangeFlags<sp/>{</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SIDE_DATA_PARAM_CHANGE_SAMPLE_RATE<sp/><sp/><sp/><sp/>=<sp/>0x0004,</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_SIDE_DATA_PARAM_CHANGE_DIMENSIONS<sp/><sp/><sp/><sp/><sp/>=<sp/>0x0008,</highlight></codeline>
+<codeline lineno="667"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680" refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" refkind="member"><highlight class="normal"><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*<ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692" refid="group__lavc__packet_1ga839594f86c1f1dcefa28eae5db93c655" refkind="member"><highlight class="normal"><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*<ref refid="group__lavc__packet_1ga839594f86c1f1dcefa28eae5db93c655" kindref="member">av_packet_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701" refid="group__lavc__packet_1ga1066464e7cdd1f215df6940db94e5d8e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga1066464e7cdd1f215df6940db94e5d8e" kindref="member">av_packet_free</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>**pkt);</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_INIT_PACKET</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal">attribute_deprecated</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_init_packet(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730" refid="group__lavc__packet_1gadfa708660b85a56749c753124de2da7d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gadfa708660b85a56749c753124de2da7d" kindref="member">av_new_packet</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738" refid="group__lavc__packet_1gaceba1c21e5718f87abdf61cf21500485" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gaceba1c21e5718f87abdf61cf21500485" kindref="member">av_shrink_packet</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746" refid="group__lavc__packet_1ga74f66e072998b8ce81ef3aba8d617a58" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga74f66e072998b8ce81ef3aba8d617a58" kindref="member">av_grow_packet</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>grow_by);</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761" refid="group__lavc__packet_1ga7ca877e1f0ded89a27199b65e9a077dc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga7ca877e1f0ded89a27199b65e9a077dc" kindref="member">av_packet_from_data</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771" refid="group__lavc__packet_1ga6c320d8a4bf8693fa2e0da3ee50d98e7" refkind="member"><highlight class="normal">uint8_t*<sp/><ref refid="group__lavc__packet_1ga6c320d8a4bf8693fa2e0da3ee50d98e7" kindref="member">av_packet_new_side_data</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="787" refid="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga8ac567e12e7637fa5cba87c1b9841f49" kindref="member">av_packet_add_side_data</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight></codeline>
+<codeline lineno="798" refid="group__lavc__packet_1ga3d815115e1f842932aef3e8e5cdfafff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga3d815115e1f842932aef3e8e5cdfafff" kindref="member">av_packet_shrink_side_data</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810" refid="group__lavc__packet_1gab28b5f89648fb20f49e30aa258d119b1" refkind="member"><highlight class="normal">uint8_t*<sp/><ref refid="group__lavc__packet_1gab28b5f89648fb20f49e30aa258d119b1" kindref="member">av_packet_get_side_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet__side__data_1ga9a80bfcacc586b483a973272800edb97" kindref="member">AVPacketSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"></highlight></codeline>
+<codeline lineno="820" refid="group__lavc__packet_1gabb1aa49bdbea2f3a586ea48f1082e898" refkind="member"><highlight class="normal">uint8_t<sp/>*<ref refid="group__lavc__packet_1gabb1aa49bdbea2f3a586ea48f1082e898" kindref="member">av_packet_pack_dictionary</ref>(AVDictionary<sp/>*dict,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="829" refid="group__lavc__packet_1gaae45c29cb3a29dc80b0b8f4ee9724492" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gaae45c29cb3a29dc80b0b8f4ee9724492" kindref="member">av_packet_unpack_dictionary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVDictionary<sp/>**dict);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"></highlight></codeline>
+<codeline lineno="838" refid="group__lavc__packet_1ga5cf4ba712aca9b300daf1eea1b8a9ebb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga5cf4ba712aca9b300daf1eea1b8a9ebb" kindref="member">av_packet_free_side_data</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857" refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"></highlight></codeline>
+<codeline lineno="867" refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="877" refid="group__lavc__packet_1ga91dbb1359f99547adb544ee96a406b21" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga91dbb1359f99547adb544ee96a406b21" kindref="member">av_packet_move_ref</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*dst,<sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="890" refid="group__lavc__packet_1gade00f67930f4e2a3401b67b701d5b3a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gade00f67930f4e2a3401b67b701d5b3a2" kindref="member">av_packet_copy_props</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="906" refid="group__lavc__packet_1ga8a6deff6c1809029037ffd760db3e0d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1ga8a6deff6c1809029037ffd760db3e0d4" kindref="member">av_packet_make_refcounted</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"></highlight></codeline>
+<codeline lineno="917" refid="group__lavc__packet_1gaaa304ffdab83984ac995d134e4298d4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gaaa304ffdab83984ac995d134e4298d4b" kindref="member">av_packet_make_writable</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="930" refid="group__lavc__packet_1gae5c86e4d93f6e7aa62ef2c60763ea67e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavc__packet_1gae5c86e4d93f6e7aa62ef2c60763ea67e" kindref="member">av_packet_rescale_ts</ref>(<ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref><sp/>*pkt,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>tb_src,<sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>tb_dst);</highlight></codeline>
+<codeline lineno="931"><highlight class="normal"></highlight></codeline>
+<codeline lineno="937" refid="group__lavc__packet_1gaa47a2d74fb0313206f6b2a4bac215de2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVContainerFifo<sp/>*<ref refid="group__lavc__packet_1gaa47a2d74fb0313206f6b2a4bac215de2" kindref="member">av_container_fifo_alloc_avpacket</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="938"><highlight class="normal"></highlight></codeline>
+<codeline lineno="942"><highlight class="normal"></highlight></codeline>
+<codeline lineno="943"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AVCODEC_PACKET_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h"/>
+  </compounddef>
+</doxygen>

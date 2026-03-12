@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="SynchroniseurMultiVideo_8h" kind="file" language="C++">
+    <compoundname>SynchroniseurMultiVideo.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="SynchroniseurMultiVideo_8cpp" local="yes">/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/src/SynchroniseurMultiVideo.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassSynchroniseurMultiVideo/SynchroniseurMultiVideo.h</label>
+        <link refid="SynchroniseurMultiVideo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassSynchroniseurMultiVideo/SynchroniseurMultiVideo.h</label>
+        <link refid="SynchroniseurMultiVideo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/src/SynchroniseurMultiVideo.cpp</label>
+        <link refid="SynchroniseurMultiVideo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSynchroniseurMultiVideo" prot="public">SynchroniseurMultiVideo</innerclass>
+    <innerclass refid="structSynchroniseurMultiVideo_1_1InfoVideo" prot="private">SynchroniseurMultiVideo::InfoVideo</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classSynchroniseurMultiVideo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSynchroniseurMultiVideo" kindref="compound">SynchroniseurMultiVideo</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="classSynchroniseurMultiVideo_1a7511e956c6e9a93ac30d9aa5bffddcd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a7511e956c6e9a93ac30d9aa5bffddcd7" kindref="member">FREQUENCE_ECHANTILLONNAGE</ref><sp/>=<sp/>40000;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classSynchroniseurMultiVideo_1a8fc3737857ff19b76198a893569cf123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a8fc3737857ff19b76198a893569cf123" kindref="member">dureeAnalyse</ref><sp/>=<sp/>60.0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classSynchroniseurMultiVideo_1a66558ca7e4ce4fa01de5aa5cc17ca2f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a66558ca7e4ce4fa01de5aa5cc17ca2f5" kindref="member">plageRechercheMax</ref><sp/>=<sp/>30.0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classSynchroniseurMultiVideo_1af8bc8bd03e2026644f14f5ea70ccb600" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1af8bc8bd03e2026644f14f5ea70ccb600" kindref="member">pasDePrecision</ref><sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classSynchroniseurMultiVideo_1af2a98bcabb273ce73a91d0eaf823118d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1af2a98bcabb273ce73a91d0eaf823118d" kindref="member">HAUTEUR_CIBLE</ref><sp/>=<sp/>480;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classSynchroniseurMultiVideo_1a05ebb0fdcb6976829b6ef1bdbe5a26c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a05ebb0fdcb6976829b6ef1bdbe5a26c3" kindref="member">TEMP_AUDIO_REF</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;temp_ref.raw&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classSynchroniseurMultiVideo_1a11aa2d54a8fcce4aa1ca0d589bacf29f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a11aa2d54a8fcce4aa1ca0d589bacf29f" kindref="member">TEMP_AUDIO_CIBLE</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;temp_cible.raw&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structSynchroniseurMultiVideo_1_1InfoVideo" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structSynchroniseurMultiVideo_1_1InfoVideo" kindref="compound">InfoVideo</ref><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="structSynchroniseurMultiVideo_1_1InfoVideo_1a63ce9ff1a9c54f78ff70dc3adc8ddc98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structSynchroniseurMultiVideo_1_1InfoVideo_1a63ce9ff1a9c54f78ff70dc3adc8ddc98" kindref="member">chemin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structSynchroniseurMultiVideo_1_1InfoVideo_1a17e98b077524572f7e2befda3f29126c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structSynchroniseurMultiVideo_1_1InfoVideo_1a17e98b077524572f7e2befda3f29126c" kindref="member">retardSecondes</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1adc0cee2e43449fd37e9b3628f140fb13" kindref="member">ExtraireAudio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fichierVideo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fichierAudioSortie)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>vector&lt;float&gt;<sp/><ref refid="classSynchroniseurMultiVideo_1a5c6093f5c6028dd75953d0cc7e8827b9" kindref="member">ChargerAudioBrut</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;nomFichier);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a4fc0c4ae85ea430acca209a707504550" kindref="member">CalculerDecalage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;float&gt;<sp/>&amp;ref,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;float&gt;<sp/>&amp;cible)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSynchroniseurMultiVideo_1a3eb3d7a7d856da575313caca3a50ede6" kindref="member">~SynchroniseurMultiVideo</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1a3db5bb0a5581e0e0ca223f125f8b40df" kindref="member">ConfigurerAnalyse</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>duree,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>plage,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pas);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1abe9b4059307ef8a5e2c3a84eac6d3e8e" kindref="member">GenererVideoSynchronisee</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;<sp/>&amp;fichiersEntree,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fichierSortie)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSynchroniseurMultiVideo_1abe9b4059307ef8a5e2c3a84eac6d3e8e" kindref="member">GenererVideoSynchronisee</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fichierAudioRef,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;<sp/>&amp;fichiersVideo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fichierSortie)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassSynchroniseurMultiVideo/SynchroniseurMultiVideo.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_v_a_a_p_i_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVAAPIFramesContext</compoundname>
+    <includes refid="hwcontext__vaapi_8h" local="no">hwcontext_vaapi.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_frames_context_1a9fab5adf94cbd6eeee14480f603d3d51" prot="public" static="no" mutable="no">
+        <type>VASurfaceAttrib *</type>
+        <definition>VASurfaceAttrib* AVVAAPIFramesContext::attributes</definition>
+        <argsstring></argsstring>
+        <name>attributes</name>
+        <qualifiedname>AVVAAPIFramesContext::attributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set by the user to apply surface attributes to all surfaces in the frame pool. If null, default settings are used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="93" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_frames_context_1a50ddcf6888143c36c49f82db1c46cec9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVAAPIFramesContext::nb_attributes</definition>
+        <argsstring></argsstring>
+        <name>nb_attributes</name>
+        <qualifiedname>AVVAAPIFramesContext::nb_attributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="94" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_frames_context_1a18c4ca9956227c498679a823e14e1375" prot="public" static="no" mutable="no">
+        <type>VASurfaceID *</type>
+        <definition>VASurfaceID* AVVAAPIFramesContext::surface_ids</definition>
+        <argsstring></argsstring>
+        <name>surface_ids</name>
+        <qualifiedname>AVVAAPIFramesContext::surface_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The surfaces IDs of all surfaces in the pool after creation. Only valid if <ref refid="struct_a_v_h_w_frames_context_1a9c3a94dcd9c96e19059b56a6bae9c764" kindref="member">AVHWFramesContext.initial_pool_size</ref> was positive. These are intended to be used as the render_targets arguments to vaCreateContext(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="101" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_frames_context_1af574bfa0abf14b96ae667f25494a3bcf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVAAPIFramesContext::nb_surfaces</definition>
+        <argsstring></argsstring>
+        <name>nb_surfaces</name>
+        <qualifiedname>AVVAAPIFramesContext::nb_surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="102" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>VAAPI-specific data associated with a frame pool.</para>
+<para>Allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref>. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="88" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="88" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_a_v_v_a_a_p_i_frames_context_1a9fab5adf94cbd6eeee14480f603d3d51" prot="public" virt="non-virtual"><scope>AVVAAPIFramesContext</scope><name>attributes</name></member>
+      <member refid="struct_a_v_v_a_a_p_i_frames_context_1a50ddcf6888143c36c49f82db1c46cec9" prot="public" virt="non-virtual"><scope>AVVAAPIFramesContext</scope><name>nb_attributes</name></member>
+      <member refid="struct_a_v_v_a_a_p_i_frames_context_1af574bfa0abf14b96ae667f25494a3bcf" prot="public" virt="non-virtual"><scope>AVVAAPIFramesContext</scope><name>nb_surfaces</name></member>
+      <member refid="struct_a_v_v_a_a_p_i_frames_context_1a18c4ca9956227c498679a823e14e1375" prot="public" virt="non-virtual"><scope>AVVAAPIFramesContext</scope><name>surface_ids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_o_v_i_reshaping_curve" kind="struct" language="C++" prot="public">
+    <compoundname>AVDOVIReshapingCurve</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1a0ff877118d30e51e8bbba2b7e89584b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIReshapingCurve::num_pivots</definition>
+        <argsstring></argsstring>
+        <name>num_pivots</name>
+        <qualifiedname>AVDOVIReshapingCurve::num_pivots</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="118" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1acfe56823c75118fc2616afa251e18aa2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVDOVIReshapingCurve::pivots[AV_DOVI_MAX_PIECES+1]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES+1]</argsstring>
+        <name>pivots</name>
+        <qualifiedname>AVDOVIReshapingCurve::pivots</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="119" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1a4e53db44aea940779c4a2c7edd5aaad6" prot="public" static="no" mutable="no">
+        <type>enum AVDOVIMappingMethod</type>
+        <definition>enum AVDOVIMappingMethod AVDOVIReshapingCurve::mapping_idc[AV_DOVI_MAX_PIECES]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES]</argsstring>
+        <name>mapping_idc</name>
+        <qualifiedname>AVDOVIReshapingCurve::mapping_idc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="120" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1a0c29cb9eeeb0c4c50f17eb0cbb9147b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIReshapingCurve::poly_order[AV_DOVI_MAX_PIECES]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES]</argsstring>
+        <name>poly_order</name>
+        <qualifiedname>AVDOVIReshapingCurve::poly_order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="122" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1aaf38e895c08eb2904050d313e8e91638" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVDOVIReshapingCurve::poly_coef[AV_DOVI_MAX_PIECES][3]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES][3]</argsstring>
+        <name>poly_coef</name>
+        <qualifiedname>AVDOVIReshapingCurve::poly_coef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="123" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1aeafd477e76320e41a9f81c41faaef8bf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDOVIReshapingCurve::mmr_order[AV_DOVI_MAX_PIECES]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES]</argsstring>
+        <name>mmr_order</name>
+        <qualifiedname>AVDOVIReshapingCurve::mmr_order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="125" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1a69d99b58b33124c7b3285f2a118ffd24" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVDOVIReshapingCurve::mmr_constant[AV_DOVI_MAX_PIECES]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES]</argsstring>
+        <name>mmr_constant</name>
+        <qualifiedname>AVDOVIReshapingCurve::mmr_constant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="126" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_o_v_i_reshaping_curve_1a8d36038a59bbb085b2eeee905a5381ca" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVDOVIReshapingCurve::mmr_coef[AV_DOVI_MAX_PIECES][3][7]</definition>
+        <argsstring>[AV_DOVI_MAX_PIECES][3][7]</argsstring>
+        <name>mmr_coef</name>
+        <qualifiedname>AVDOVIReshapingCurve::mmr_coef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="127" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" line="117" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/dovi_meta.h" bodystart="117" bodyend="128"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1a4e53db44aea940779c4a2c7edd5aaad6" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>mapping_idc</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1a8d36038a59bbb085b2eeee905a5381ca" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>mmr_coef</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1a69d99b58b33124c7b3285f2a118ffd24" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>mmr_constant</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1aeafd477e76320e41a9f81c41faaef8bf" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>mmr_order</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1a0ff877118d30e51e8bbba2b7e89584b4" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>num_pivots</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1acfe56823c75118fc2616afa251e18aa2" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>pivots</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1aaf38e895c08eb2904050d313e8e91638" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>poly_coef</name></member>
+      <member refid="struct_a_v_d_o_v_i_reshaping_curve_1a0c29cb9eeeb0c4c50f17eb0cbb9147b9" prot="public" virt="non-virtual"><scope>AVDOVIReshapingCurve</scope><name>poly_order</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

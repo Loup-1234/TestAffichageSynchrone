@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="classAfficheurVideo" kind="class" language="C++" prot="public">
+    <compoundname>AfficheurVideo</compoundname>
+    <includes refid="AfficheurVideo_8h" local="no">AfficheurVideo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" prot="private" static="no" mutable="no">
+        <type><ref refid="structMediaStream" kindref="compound">MediaStream</ref></type>
+        <definition>MediaStream AfficheurVideo::video</definition>
+        <argsstring></argsstring>
+        <name>video</name>
+        <qualifiedname>AfficheurVideo::video</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Objet représentant le flux vidéo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="43" column="17" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAfficheurVideo_1a4088e3111a211f6890e3e1fe74d29323" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AfficheurVideo::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>AfficheurVideo::duration</qualifiedname>
+        <briefdescription>
+<para>Durée totale de la vidéo en secondes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="48" column="11" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAfficheurVideo_1a7b3c63c6d317374f3795ab12d8b524dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AfficheurVideo::AfficheurVideo</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>AfficheurVideo</name>
+        <qualifiedname>AfficheurVideo::AfficheurVideo</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur de la classe <ref refid="classAfficheurVideo" kindref="compound">AfficheurVideo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise le flux vidéo à partir du fichier spécifié.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemin vers le fichier vidéo à charger. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="22" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp" bodystart="5" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classAfficheurVideo_1a7c35d46d7f114cd3501f229fccade66c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AfficheurVideo::~AfficheurVideo</definition>
+        <argsstring>()</argsstring>
+        <name>~AfficheurVideo</name>
+        <qualifiedname>AfficheurVideo::~AfficheurVideo</qualifiedname>
+        <briefdescription>
+<para>Destructeur de la classe <ref refid="classAfficheurVideo" kindref="compound">AfficheurVideo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Libère les ressources associées au flux vidéo. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="29" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAfficheurVideo_1ac02044031693dee9ecf33c0be55e38a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AfficheurVideo::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>AfficheurVideo::run</qualifiedname>
+        <briefdescription>
+<para>Lance la boucle d&apos;affichage de la vidéo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette méthode gère la mise à jour et le dessin des frames vidéo jusqu&apos;à la fermeture de la fenêtre ou la fin de la vidéo. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="37" column="10" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.cpp" bodystart="20" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Classe permettant d&apos;afficher et de lire une vidéo. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Cette classe utilise la bibliothèque raymedia pour charger et afficher un flux vidéo. Elle gère l&apos;initialisation, la lecture et la libération des ressources vidéo. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AfficheurVideo</label>
+        <link refid="classAfficheurVideo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>video</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Buffer</label>
+        <link refid="structBuffer"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+      <node id="3">
+        <label>MediaContext</label>
+        <link refid="structMediaContext"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>streams</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>audioOutputBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MediaStream</label>
+        <link refid="structMediaStream"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PacketQueue</label>
+        <link refid="structPacketQueue"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>StreamDataContext</label>
+        <link refid="structStreamDataContext"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pendingPackets</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" line="13" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/ClassAfficheurVideo/AfficheurVideo.h" bodystart="13" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classAfficheurVideo_1a7b3c63c6d317374f3795ab12d8b524dc" prot="public" virt="non-virtual"><scope>AfficheurVideo</scope><name>AfficheurVideo</name></member>
+      <member refid="classAfficheurVideo_1a4088e3111a211f6890e3e1fe74d29323" prot="private" virt="non-virtual"><scope>AfficheurVideo</scope><name>duration</name></member>
+      <member refid="classAfficheurVideo_1ac02044031693dee9ecf33c0be55e38a3" prot="public" virt="non-virtual"><scope>AfficheurVideo</scope><name>run</name></member>
+      <member refid="classAfficheurVideo_1afdd790cb7ab639421679b584d779d1b2" prot="private" virt="non-virtual"><scope>AfficheurVideo</scope><name>video</name></member>
+      <member refid="classAfficheurVideo_1a7c35d46d7f114cd3501f229fccade66c" prot="public" virt="non-virtual"><scope>AfficheurVideo</scope><name>~AfficheurVideo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

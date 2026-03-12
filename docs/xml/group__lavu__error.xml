@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__error" kind="group">
+    <compoundname>lavu_error</compoundname>
+    <title>Error Codes</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__error_1ga5792b4a2d18d7d9cb0efbcfc335dce24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_strerror</definition>
+        <argsstring>(int errnum, char *errbuf, size_t errbuf_size)</argsstring>
+        <name>av_strerror</name>
+        <param>
+          <type>int</type>
+          <declname>errnum</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>errbuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>errbuf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Put a description of the AVERROR code errnum in errbuf. In case of failure the global variable errno is set to indicate the error. Even in case of failure <ref refid="group__lavu__error_1ga5792b4a2d18d7d9cb0efbcfc335dce24" kindref="member">av_strerror()</ref> will print a generic error message indicating the errnum provided to errbuf.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error code to describe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to which description is written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errbuf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size in bytes of errbuf </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value if a description for errnum cannot be found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="100" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" declline="100" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__error_1ga2173054c6376a4577c6883e31dc38ac4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * av_make_error_string</definition>
+        <argsstring>(char *errbuf, size_t errbuf_size, int errnum)</argsstring>
+        <name>av_make_error_string</name>
+        <param>
+          <type>char *</type>
+          <declname>errbuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>errbuf_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill the provided buffer with a string containing an error string corresponding to the AVERROR code errnum.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errbuf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of errbuf </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error code to describe </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the buffer in input, filled with the error description </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__error_1ga5792b4a2d18d7d9cb0efbcfc335dce24" kindref="member">av_strerror()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="112" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="112" bodyend="116"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__error_1gae4bb6f165973d09584e0ec0f335f69ca" prot="public" static="no">
+        <name>AVERROR</name>
+        <param><defname>e</defname></param>
+        <initializer>(e)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="45" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga025dbb21a4a9789dfb37a2b78f241026" prot="public" static="no">
+        <name>AVUNERROR</name>
+        <param><defname>e</defname></param>
+        <initializer>(e)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="46" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gacfc46235e91e0770b94f7918013a1034" prot="public" static="no">
+        <name>FFERRTAG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>(-(int)MKTAG(a, b, c, d))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga586e134e9dad8f57a218b2cd8734b601" prot="public" static="no">
+        <name>AVERROR_BSF_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;B&apos;,&apos;S&apos;,&apos;F&apos;)</initializer>
+        <briefdescription>
+<para>Bitstream filter not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="51" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gaa102cde7ec5acbc099c3bcbb58556a18" prot="public" static="no">
+        <name>AVERROR_BUG</name>
+        <initializer>FFERRTAG( &apos;B&apos;,&apos;U&apos;,&apos;G&apos;,&apos;!&apos;)</initializer>
+        <briefdescription>
+<para>Internal bug, also see AVERROR_BUG2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga76077a6d42ee211f59712485bd977e40" prot="public" static="no">
+        <name>AVERROR_BUFFER_TOO_SMALL</name>
+        <initializer>FFERRTAG( &apos;B&apos;,&apos;U&apos;,&apos;F&apos;,&apos;S&apos;)</initializer>
+        <briefdescription>
+<para>Buffer too small. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="53" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga28f845c3efcf791fdf3b2b3907330bf5" prot="public" static="no">
+        <name>AVERROR_DECODER_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;D&apos;,&apos;E&apos;,&apos;C&apos;)</initializer>
+        <briefdescription>
+<para>Decoder not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="54" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gaf7cbadf2ff7121084d2cde763f4e06b9" prot="public" static="no">
+        <name>AVERROR_DEMUXER_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;D&apos;,&apos;E&apos;,&apos;M&apos;)</initializer>
+        <briefdescription>
+<para>Demuxer not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="55" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga3fad023a4fafed6b6ec9148606a61979" prot="public" static="no">
+        <name>AVERROR_ENCODER_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;E&apos;,&apos;N&apos;,&apos;C&apos;)</initializer>
+        <briefdescription>
+<para>Encoder not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gab4faa0afdf35076914824200331defff" prot="public" static="no">
+        <name>AVERROR_EOF</name>
+        <initializer>FFERRTAG( &apos;E&apos;,&apos;O&apos;,&apos;F&apos;,&apos; &apos;)</initializer>
+        <briefdescription>
+<para>End of file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga334ea23fd9e492cd0e718330f2353b6b" prot="public" static="no">
+        <name>AVERROR_EXIT</name>
+        <initializer>FFERRTAG( &apos;E&apos;,&apos;X&apos;,&apos;I&apos;,&apos;T&apos;)</initializer>
+        <briefdescription>
+<para>Immediate exit was requested; the called function should not be restarted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga9c520e483ba8648495620ffdb4c491f2" prot="public" static="no">
+        <name>AVERROR_EXTERNAL</name>
+        <initializer>FFERRTAG( &apos;E&apos;,&apos;X&apos;,&apos;T&apos;,&apos; &apos;)</initializer>
+        <briefdescription>
+<para>Generic error in an external library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="59" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga2c3b3ab0404e827aeba274b571368e95" prot="public" static="no">
+        <name>AVERROR_FILTER_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;F&apos;,&apos;I&apos;,&apos;L&apos;)</initializer>
+        <briefdescription>
+<para>Filter not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="60" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gaa6e5781e75b15ce44b0baea170c98a45" prot="public" static="no">
+        <name>AVERROR_INVALIDDATA</name>
+        <initializer>FFERRTAG( &apos;I&apos;,&apos;N&apos;,&apos;D&apos;,&apos;A&apos;)</initializer>
+        <briefdescription>
+<para>Invalid data found when processing input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="61" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga7ef1e1f3183e34e731185967d416911d" prot="public" static="no">
+        <name>AVERROR_MUXER_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;M&apos;,&apos;U&apos;,&apos;X&apos;)</initializer>
+        <briefdescription>
+<para>Muxer not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gaf5a8745befceddae26f2dc11ecf21679" prot="public" static="no">
+        <name>AVERROR_OPTION_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;O&apos;,&apos;P&apos;,&apos;T&apos;)</initializer>
+        <briefdescription>
+<para>Option not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="63" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga67a27567a9e5b7037fee072fbcc34dbf" prot="public" static="no">
+        <name>AVERROR_PATCHWELCOME</name>
+        <initializer>FFERRTAG( &apos;P&apos;,&apos;A&apos;,&apos;W&apos;,&apos;E&apos;)</initializer>
+        <briefdescription>
+<para>Not yet implemented in FFmpeg, patches welcome. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="64" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga474b367d2654695a79c07998329c7896" prot="public" static="no">
+        <name>AVERROR_PROTOCOL_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;P&apos;,&apos;R&apos;,&apos;O&apos;)</initializer>
+        <briefdescription>
+<para>Protocol not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="65" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gab15683efe944a563b5c90dc6c5d5c17b" prot="public" static="no">
+        <name>AVERROR_STREAM_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;S&apos;,&apos;T&apos;,&apos;R&apos;)</initializer>
+        <briefdescription>
+<para>Stream not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="67" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gafdd5fd9898cc229e1856f858308d956e" prot="public" static="no">
+        <name>AVERROR_BUG2</name>
+        <initializer>FFERRTAG( &apos;B&apos;,&apos;U&apos;,&apos;G&apos;,&apos; &apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is semantically identical to AVERROR_BUG it has been introduced in Libav after our AVERROR_BUG and with a modified value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="72" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga4ebaa288c7684a26a591c501208910e4" prot="public" static="no">
+        <name>AVERROR_UNKNOWN</name>
+        <initializer>FFERRTAG( &apos;U&apos;,&apos;N&apos;,&apos;K&apos;,&apos;N&apos;)</initializer>
+        <briefdescription>
+<para>Unknown error, typically from an external library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="73" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga3d2f16ec410d409c19e3547673b8469b" prot="public" static="no">
+        <name>AVERROR_EXPERIMENTAL</name>
+        <initializer>(-0x2bb2afa8)</initializer>
+        <briefdescription>
+<para>Requested feature is flagged experimental. Set strict_std_compliance if you really want to use it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gaa2999fcae06d67e3b9374f6c2c0ed559" prot="public" static="no">
+        <name>AVERROR_INPUT_CHANGED</name>
+        <initializer>(-0x636e6701)</initializer>
+        <briefdescription>
+<para>Input changed between calls. Reconfiguration is required. (can be OR-ed with AVERROR_OUTPUT_CHANGED) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="75" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga67501c4d8521285b405f555d2de71214" prot="public" static="no">
+        <name>AVERROR_OUTPUT_CHANGED</name>
+        <initializer>(-0x636e6702)</initializer>
+        <briefdescription>
+<para>Output changed between calls. Reconfiguration is required. (can be OR-ed with AVERROR_INPUT_CHANGED) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga2a19ca30d1962b51488a7210e8b68919" prot="public" static="no">
+        <name>AVERROR_HTTP_BAD_REQUEST</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;0&apos;,&apos;0&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gacaebaf711c31f8ada97f87b42b58b794" prot="public" static="no">
+        <name>AVERROR_HTTP_UNAUTHORIZED</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;0&apos;,&apos;1&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="79" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga114337140a3fec85cf76736f8e779659" prot="public" static="no">
+        <name>AVERROR_HTTP_FORBIDDEN</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;0&apos;,&apos;3&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="80" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gafa8673dfcb9f0359bb6f7dda408952c4" prot="public" static="no">
+        <name>AVERROR_HTTP_NOT_FOUND</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;0&apos;,&apos;4&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="81" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gab155d14e2e9102491083482889543e61" prot="public" static="no">
+        <name>AVERROR_HTTP_TOO_MANY_REQUESTS</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;2&apos;,&apos;9&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="82" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga696de4031a2188bdd1ee330a6c11cd0c" prot="public" static="no">
+        <name>AVERROR_HTTP_OTHER_4XX</name>
+        <initializer>FFERRTAG(0xF8,&apos;4&apos;,&apos;X&apos;,&apos;X&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="83" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga47662fddadd1c84284b85154f5553afa" prot="public" static="no">
+        <name>AVERROR_HTTP_SERVER_ERROR</name>
+        <initializer>FFERRTAG(0xF8,&apos;5&apos;,&apos;X&apos;,&apos;X&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="84" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1ga326c3f741a7adb148cdeaad68eea713d" prot="public" static="no">
+        <name>AV_ERROR_MAX_STRING_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="86" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__error_1gac4f6e109c242c81aeee21868d3f35e12" prot="public" static="no">
+        <name>av_err2str</name>
+        <param><defname>errnum</defname></param>
+        <initializer>    av_make_error_string((char[AV_ERROR_MAX_STRING_SIZE]){0}, AV_ERROR_MAX_STRING_SIZE, errnum)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience macro, the return value should be used only directly in function arguments but never stand-alone. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" line="122" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/error.h" bodystart="122" bodyend="123"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

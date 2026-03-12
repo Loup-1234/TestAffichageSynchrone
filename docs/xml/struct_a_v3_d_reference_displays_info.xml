@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v3_d_reference_displays_info" kind="struct" language="C++" prot="public">
+    <compoundname>AV3DReferenceDisplaysInfo</compoundname>
+    <includes refid="tdrdi_8h" local="no">tdrdi.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1a32fb1649cdead7cb165dd07ed18e9f71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AV3DReferenceDisplaysInfo::prec_ref_display_width</definition>
+        <argsstring></argsstring>
+        <name>prec_ref_display_width</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::prec_ref_display_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The exponent of the maximum allowable truncation error for {exponent,mantissa}_ref_display_width as given by 2<superscript>(-prec_ref_display_width)</superscript>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="58" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1a93e382f060d36cef57df8c7a23e69a4d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AV3DReferenceDisplaysInfo::ref_viewing_distance_flag</definition>
+        <argsstring></argsstring>
+        <name>ref_viewing_distance_flag</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::ref_viewing_distance_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A flag to indicate the presence of reference viewing distance. If false, the values of prec_ref_viewing_dist, exponent_ref_viewing_distance, and mantissa_ref_viewing_distance are undefined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="65" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1a1962409930401cca59a216f7ec4de1df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AV3DReferenceDisplaysInfo::prec_ref_viewing_dist</definition>
+        <argsstring></argsstring>
+        <name>prec_ref_viewing_dist</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::prec_ref_viewing_dist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The exponent of the maximum allowable truncation error for {exponent,mantissa}_ref_viewing_distance as given by 2<superscript>^(-prec_ref_viewing_dist)</superscript>. The value of prec_ref_viewing_dist shall be in the range of 0 to 31, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="72" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1aad8223f953bd8ec4c5b4376a13155c56" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AV3DReferenceDisplaysInfo::num_ref_displays</definition>
+        <argsstring></argsstring>
+        <name>num_ref_displays</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::num_ref_displays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of reference displays that are signalled in this struct. Allowed range is 1 to 32, inclusive. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="78" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1aca0152d7f06d69a92ba4c148fd10198c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AV3DReferenceDisplaysInfo::entries_offset</definition>
+        <argsstring></argsstring>
+        <name>entries_offset</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::entries_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in bytes from the beginning of this structure at which the array of reference displays starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="84" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v3_d_reference_displays_info_1a862d2e781c89b290a2363fa174004cb7" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AV3DReferenceDisplaysInfo::entry_size</definition>
+        <argsstring></argsstring>
+        <name>entry_size</name>
+        <qualifiedname>AV3DReferenceDisplaysInfo::entry_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of each entry in bytes. May not match sizeof(AV3DReferenceDisplay). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="89" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes information about the reference display width(s) and reference viewing distance(s) as well as information about the corresponding reference stereo pair(s). See section G.14.3.2.3 of ITU-T H.265 for more information.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" kindref="member">av_tdrdi_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="53" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="53" bodyend="90"/>
+    <listofallmembers>
+      <member refid="struct_a_v3_d_reference_displays_info_1aca0152d7f06d69a92ba4c148fd10198c" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>entries_offset</name></member>
+      <member refid="struct_a_v3_d_reference_displays_info_1a862d2e781c89b290a2363fa174004cb7" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>entry_size</name></member>
+      <member refid="struct_a_v3_d_reference_displays_info_1aad8223f953bd8ec4c5b4376a13155c56" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>num_ref_displays</name></member>
+      <member refid="struct_a_v3_d_reference_displays_info_1a32fb1649cdead7cb165dd07ed18e9f71" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>prec_ref_display_width</name></member>
+      <member refid="struct_a_v3_d_reference_displays_info_1a1962409930401cca59a216f7ec4de1df" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>prec_ref_viewing_dist</name></member>
+      <member refid="struct_a_v3_d_reference_displays_info_1a93e382f060d36cef57df8c7a23e69a4d" prot="public" virt="non-virtual"><scope>AV3DReferenceDisplaysInfo</scope><name>ref_viewing_distance_flag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

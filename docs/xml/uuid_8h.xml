@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="uuid_8h" kind="file" language="C++">
+    <compoundname>uuid.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h</label>
+        <link refid="uuid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="uuid_8h_1ada82037f22d55e48edd526d71a651715" prot="public" static="no">
+        <name>AV_PRI_UUID</name>
+        <initializer>    &quot;%02hhx%02hhx%02hhx%02hhx-%02hhx%02hhx-&quot; \
+    &quot;%02hhx%02hhx-%02hhx%02hhx-%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="39" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="define" id="uuid_8h_1a4e0168e2c14e2e0a4d109c1e53064102" prot="public" static="no">
+        <name>AV_PRI_URN_UUID</name>
+        <initializer>    &quot;urn:uuid:%02hhx%02hhx%02hhx%02hhx-%02hhx%02hhx-&quot; \
+    &quot;%02hhx%02hhx-%02hhx%02hhx-%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="43" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="define" id="uuid_8h_1a919a9de076991c025d4a71efc2eadd8c" prot="public" static="no">
+        <name>AV_UUID_ARG</name>
+        <param><defname>x</defname></param>
+        <initializer>    (x)[ 0], (x)[ 1], (x)[ 2], (x)[ 3], \
+    (x)[ 4], (x)[ 5], (x)[ 6], (x)[ 7], \
+    (x)[ 8], (x)[ 9], (x)[10], (x)[11], \
+    (x)[12], (x)[13], (x)[14], (x)[15]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="51" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="define" id="uuid_8h_1a6fdd7ea214057f3ec3ad2b5506766aa9" prot="public" static="no">
+        <name>AV_UUID_LEN</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="uuid_8h_1ad5042c764f883e75ad55e217e65a90d5" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t AVUUID[AV_UUID_LEN]</definition>
+        <argsstring>[AV_UUID_LEN]</argsstring>
+        <name>AVUUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="60" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="uuid_8h_1a0a77dd3b850426ad51bae7db059ccb03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_uuid_parse</definition>
+        <argsstring>(const char *in, AVUUID uu)</argsstring>
+        <name>av_uuid_parse</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>AVUUID</type>
+          <declname>uu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a string representation of a UUID formatted according to IETF RFC 4122 into an AVUUID. The parsing is case-insensitive. The string must be 37 characters long, including the terminating NUL character.</para>
+<para>Example string representation: &quot;2fceebd0-7017-433d-bafb-d073a7116696&quot;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String representation of a UUID, e.g. 2fceebd0-7017-433d-bafb-d073a7116696 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A non-zero value in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="74" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" declline="74" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1a6de4afca7fb4df2aa15505bc40d6f101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_uuid_urn_parse</definition>
+        <argsstring>(const char *in, AVUUID uu)</argsstring>
+        <name>av_uuid_urn_parse</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>AVUUID</type>
+          <declname>uu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a URN representation of a UUID, as specified at IETF RFC 4122, into an AVUUID. The parsing is case-insensitive. The string must be 46 characters long, including the terminating NUL character.</para>
+<para>Example string representation: &quot;urn:uuid:2fceebd0-7017-433d-bafb-d073a7116696&quot;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URN UUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A non-zero value in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="87" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" declline="87" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1ad4f320a323aa62d54aa41979a1117466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_uuid_parse_range</definition>
+        <argsstring>(const char *in_start, const char *in_end, AVUUID uu)</argsstring>
+        <name>av_uuid_parse_range</name>
+        <param>
+          <type>const char *</type>
+          <declname>in_start</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>in_end</declname>
+        </param>
+        <param>
+          <type>AVUUID</type>
+          <declname>uu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a string representation of a UUID formatted according to IETF RFC 4122 into an AVUUID. The parsing is case-insensitive.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first character of the string representation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the character after the last character of the string representation. That memory location is never accessed. It is an error if <computeroutput>in_end - in_start != 36</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A non-zero value in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="100" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" declline="100" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1aad1f80ae641e42983d4be7797ef50260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_uuid_unparse</definition>
+        <argsstring>(const AVUUID uu, char *out)</argsstring>
+        <name>av_uuid_unparse</name>
+        <param>
+          <type>const AVUUID</type>
+          <declname>uu</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Serializes a AVUUID into a string representation according to IETF RFC 4122. The string is lowercase and always 37 characters long, including the terminating NUL character.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an array of no less than 37 characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="110" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1a24285ce51c6f5514a17c93954432ac1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int av_uuid_equal</definition>
+        <argsstring>(const AVUUID uu1, const AVUUID uu2)</argsstring>
+        <name>av_uuid_equal</name>
+        <param>
+          <type>const AVUUID</type>
+          <declname>uu1</declname>
+        </param>
+        <param>
+          <type>const AVUUID</type>
+          <declname>uu2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares two UUIDs for equality.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uu1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uu2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nonzero if uu1 and uu2 are identical, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="119" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1a0b8595a106ebeb8ed28dd485ceefa916" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void av_uuid_copy</definition>
+        <argsstring>(AVUUID dest, const AVUUID src)</argsstring>
+        <name>av_uuid_copy</name>
+        <param>
+          <type>AVUUID</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const AVUUID</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the bytes of src into dest.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AVUUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="130" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="uuid_8h_1a71ac410e3785fc3e6261b363c58391eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void av_uuid_nil</definition>
+        <argsstring>(AVUUID uu)</argsstring>
+        <name>av_uuid_nil</name>
+        <param>
+          <type>AVUUID</type>
+          <declname>uu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a UUID to the nil UUID, i.e. a UUID with have all its 128 bits set to zero.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UUID to be set to the nil UUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" line="141" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>UUID parsing and serialization utilities. The library treats the UUID as an opaque sequence of 16 unsigned bytes, i.e. ignoring the internal layout of the UUID, which depends on the type of the UUID.</para>
+<para><simplesect kind="author"><para>Pierre-Anthony Lemieux <ulink url="mailto:pal@palemieux.com">pal@palemieux.com</ulink> </para>
+</simplesect>
+<simplesect kind="author"><para>Zane van Iperen <ulink url="mailto:zane@zanevaniperen.com">zane@zanevaniperen.com</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Pierre-Anthony<sp/>Lemieux<sp/>&lt;pal@palemieux.com&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Zane<sp/>van<sp/>Iperen<sp/>&lt;zane@zanevaniperen.com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_UUID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_UUID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PRI_UUID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;%02hhx%02hhx%02hhx%02hhx-%02hhx%02hhx-&quot;<sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;%02hhx%02hhx-%02hhx%02hhx-%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PRI_URN_UUID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;urn:uuid:%02hhx%02hhx%02hhx%02hhx-%02hhx%02hhx-&quot;<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;%02hhx%02hhx-%02hhx%02hhx-%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>AV_UUID_ARG()<sp/>is<sp/>used<sp/>together<sp/>with<sp/>AV_PRI_UUID()<sp/>or<sp/>AV_PRI_URN_UUID</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>to<sp/>print<sp/>UUIDs,<sp/>e.g.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>av_log(NULL,<sp/>AV_LOG_DEBUG,<sp/>&quot;UUID:<sp/>&quot;<sp/>AV_PRI_UUID,<sp/>AV_UUID_ARG(uuid));</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_UUID_ARG(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(x)[<sp/>0],<sp/>(x)[<sp/>1],<sp/>(x)[<sp/>2],<sp/>(x)[<sp/>3],<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(x)[<sp/>4],<sp/>(x)[<sp/>5],<sp/>(x)[<sp/>6],<sp/>(x)[<sp/>7],<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(x)[<sp/>8],<sp/>(x)[<sp/>9],<sp/>(x)[10],<sp/>(x)[11],<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(x)[12],<sp/>(x)[13],<sp/>(x)[14],<sp/>(x)[15]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_UUID_LEN<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Binary<sp/>representation<sp/>of<sp/>a<sp/>UUID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>AVUUID[AV_UUID_LEN];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="uuid_8h_1a0a77dd3b850426ad51bae7db059ccb03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="uuid_8h_1a0a77dd3b850426ad51bae7db059ccb03" kindref="member">av_uuid_parse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*in,<sp/>AVUUID<sp/>uu);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="uuid_8h_1a6de4afca7fb4df2aa15505bc40d6f101" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="uuid_8h_1a6de4afca7fb4df2aa15505bc40d6f101" kindref="member">av_uuid_urn_parse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*in,<sp/>AVUUID<sp/>uu);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="uuid_8h_1ad4f320a323aa62d54aa41979a1117466" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="uuid_8h_1ad4f320a323aa62d54aa41979a1117466" kindref="member">av_uuid_parse_range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*in_start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*in_end,<sp/>AVUUID<sp/>uu);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="uuid_8h_1aad1f80ae641e42983d4be7797ef50260" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="uuid_8h_1aad1f80ae641e42983d4be7797ef50260" kindref="member">av_uuid_unparse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVUUID<sp/>uu,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*out);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_uuid_equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVUUID<sp/>uu1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVUUID<sp/>uu2)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memcmp(uu1,<sp/>uu2,<sp/>AV_UUID_LEN)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_uuid_copy(AVUUID<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVUUID<sp/>src)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(dest,<sp/>src,<sp/>AV_UUID_LEN);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_uuid_nil(AVUUID<sp/>uu)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(uu,<sp/>0,<sp/>AV_UUID_LEN);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_UUID_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/uuid.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__mem" kind="group">
+    <compoundname>lavu_mem</compoundname>
+    <title>Memory Management</title>
+    <innerfile refid="mem_8h">mem.h</innerfile>
+    <innergroup refid="group__lavu__mem__attrs">Function Attributes</innergroup>
+    <innergroup refid="group__lavu__mem__funcs">Heap Management</innergroup>
+    <innergroup refid="group__lavu__mem__dynarray">Dynamic Array</innergroup>
+    <innergroup refid="group__lavu__mem__misc">Miscellaneous Functions</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utilities for manipulating memory.</para>
+<para>FFmpeg has several applications of memory that are not required of a typical program. For example, the computing-heavy components like video decoding and encoding can be sped up significantly through the use of aligned memory.</para>
+<para>However, for each of FFmpeg&apos;s applications of memory, there might not be a recognized or standardized API for that specific use. Memory alignment, for instance, varies wildly depending on operating systems, architectures, and compilers. Hence, this component of libavutil is created to make dealing with memory consistently possible on all platforms. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="defs_8h" kind="file" language="C++">
+    <compoundname>defs.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="codec__par_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</includedby>
+    <includedby refid="avformat_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_pan_scan" prot="public">AVPanScan</innerclass>
+    <innerclass refid="struct_a_v_c_p_b_properties" prot="public">AVCPBProperties</innerclass>
+    <innerclass refid="struct_a_v_producer_reference_time" prot="public">AVProducerReferenceTime</innerclass>
+    <innerclass refid="struct_a_v_r_t_c_p_sender_report" prot="public">AVRTCPSenderReport</innerclass>
+    <sectiondef kind="define">
+      <member refid="group__lavc__decoding_1ga8f5b632a03ce83ac8e025894b1fc307a" kind="define"><name>AV_INPUT_BUFFER_PADDING_SIZE</name></member>
+      <memberdef kind="define" id="defs_8h_1a16258b3283a3d34c893dd9a39e29e369" prot="public" static="no">
+        <name>AV_EF_CRCCHECK</name>
+        <initializer>(1&lt;&lt;0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Verify checksums embedded in the bitstream (could be of either encoded or decoded data, depending on the format) and print an error message on mismatch. If AV_EF_EXPLODE is also set, a mismatching checksum will result in the decoder/demuxer returning an error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="48" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a15a968c7590acfe5134b386e275db94b" prot="public" static="no">
+        <name>AV_EF_BITSTREAM</name>
+        <initializer>(1&lt;&lt;1)</initializer>
+        <briefdescription>
+<para>detect bitstream specification deviations </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a6689e6274ac296dea480393cf53e1eda" prot="public" static="no">
+        <name>AV_EF_BUFFER</name>
+        <initializer>(1&lt;&lt;2)</initializer>
+        <briefdescription>
+<para>detect improper bitstream length </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="50" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a6101c3b2a02c61ea41f3c97e88b64d39" prot="public" static="no">
+        <name>AV_EF_EXPLODE</name>
+        <initializer>(1&lt;&lt;3)</initializer>
+        <briefdescription>
+<para>abort decoding on minor error detection </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="51" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4d1ae1e6c45cc5e9641ac6db9c811626" prot="public" static="no">
+        <name>AV_EF_IGNORE_ERR</name>
+        <initializer>(1&lt;&lt;15)</initializer>
+        <briefdescription>
+<para>ignore errors and continue </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="53" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1adada058bf4130e23c790f39de50c62c8" prot="public" static="no">
+        <name>AV_EF_CAREFUL</name>
+        <initializer>(1&lt;&lt;16)</initializer>
+        <briefdescription>
+<para>consider things that violate the spec, are fast to calculate and have not been seen in the wild as errors </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="54" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a42a5fa4b77207e981ca78755e2ac77f1" prot="public" static="no">
+        <name>AV_EF_COMPLIANT</name>
+        <initializer>(1&lt;&lt;17)</initializer>
+        <briefdescription>
+<para>consider all spec non compliances as errors </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="55" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a84b2a67f04fa6d2cab74d09e2779b6ec" prot="public" static="no">
+        <name>AV_EF_AGGRESSIVE</name>
+        <initializer>(1&lt;&lt;18)</initializer>
+        <briefdescription>
+<para>consider things that a sane encoder/muxer should not do as an error </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a96808e3862c53c7edb4ace1b2f3e544f" prot="public" static="no">
+        <name>FF_COMPLIANCE_VERY_STRICT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Strictly conform to an older more strict version of the spec or reference software. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5c1eb24858b3a73d6bbe9585d30e971a" prot="public" static="no">
+        <name>FF_COMPLIANCE_STRICT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Strictly conform to all the things in the spec no matter what consequences. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="59" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a661eaec472e284a3b2920647349471dd" prot="public" static="no">
+        <name>FF_COMPLIANCE_NORMAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="60" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0d1ffb8ad990f47c1f21ec2f5b43c0b1" prot="public" static="no">
+        <name>FF_COMPLIANCE_UNOFFICIAL</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+<para>Allow unofficial extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="61" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0e9f40024e3b017088ee1c16f25b3910" prot="public" static="no">
+        <name>FF_COMPLIANCE_EXPERIMENTAL</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+<para>Allow nonstandardized experimental things. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a1c4e97fd8f802ee87dbc1713a993dc5c" prot="public" static="no">
+        <name>AV_PROFILE_UNKNOWN</name>
+        <initializer>-99</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="65" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a03475aaf4d4ec6a667c7704ca2e0d6be" prot="public" static="no">
+        <name>AV_PROFILE_RESERVED</name>
+        <initializer>-100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="66" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7a816665f70d001527982bec8ccc3bc0" prot="public" static="no">
+        <name>AV_PROFILE_AAC_MAIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="68" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5b23595f7692eeaec17ba468f6742638" prot="public" static="no">
+        <name>AV_PROFILE_AAC_LOW</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="69" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ace8cc7ea44959c4cf68c9efbe59cb228" prot="public" static="no">
+        <name>AV_PROFILE_AAC_SSR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="70" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0640d91b8959f5191dd0e80336115daa" prot="public" static="no">
+        <name>AV_PROFILE_AAC_LTP</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="71" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0e8eaecddd6be1a4402cc0bf9142bf00" prot="public" static="no">
+        <name>AV_PROFILE_AAC_HE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="72" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a748661a6a0a37a42836969cb8c152529" prot="public" static="no">
+        <name>AV_PROFILE_AAC_HE_V2</name>
+        <initializer>28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="73" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a9d55a2588b27ada754ab31644b33ee87" prot="public" static="no">
+        <name>AV_PROFILE_AAC_LD</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aaabfc3f66431a1ae5f49fff8aee22a3c" prot="public" static="no">
+        <name>AV_PROFILE_AAC_ELD</name>
+        <initializer>38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="75" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aba63a6dcaf48facb27b8b3c3530a3544" prot="public" static="no">
+        <name>AV_PROFILE_AAC_USAC</name>
+        <initializer>41</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="76" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a10f8feb8b55843f9f00361330b59f232" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_AAC_LOW</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="77" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ab85a773f6d879658810b4f0ec512558f" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_AAC_HE</name>
+        <initializer>131</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ac90b7ce65d8b86af736cdbbbca0587ec" prot="public" static="no">
+        <name>AV_PROFILE_DNXHD</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="80" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a492ac69550e2a9c1ffc48c8048867582" prot="public" static="no">
+        <name>AV_PROFILE_DNXHR_LB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="81" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a3f3cccf98a06d978bd6994f930cf41c7" prot="public" static="no">
+        <name>AV_PROFILE_DNXHR_SQ</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="82" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a159777915d75e01fac6aab8daf1c1b6d" prot="public" static="no">
+        <name>AV_PROFILE_DNXHR_HQ</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="83" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ade2ba49eec7038b870fb7eb76718ad0a" prot="public" static="no">
+        <name>AV_PROFILE_DNXHR_HQX</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="84" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aa35d1f234cea207c5e2ab5b3fbaa9baf" prot="public" static="no">
+        <name>AV_PROFILE_DNXHR_444</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="85" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a149a77ca829df1af6c1bc19c9919f9d8" prot="public" static="no">
+        <name>AV_PROFILE_DTS</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="87" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1afd8fa0bc5deb5fd1dedadebb87b5e792" prot="public" static="no">
+        <name>AV_PROFILE_DTS_ES</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="88" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aaeedaa6ded9d41918553a55b337c4b37" prot="public" static="no">
+        <name>AV_PROFILE_DTS_96_24</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="89" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a31e5a10419d80675a114a47b8614ff11" prot="public" static="no">
+        <name>AV_PROFILE_DTS_HD_HRA</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="90" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a129c65af4b78010a66be63653d23423c" prot="public" static="no">
+        <name>AV_PROFILE_DTS_HD_MA</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="91" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a02ab6e757c25fd4af8dc83a603d8d2ab" prot="public" static="no">
+        <name>AV_PROFILE_DTS_EXPRESS</name>
+        <initializer>70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="92" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a6e8754faf742f8e2664d00834703cff6" prot="public" static="no">
+        <name>AV_PROFILE_DTS_HD_MA_X</name>
+        <initializer>61</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="93" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7902fd9bf96cc5c116adbd8ba80970f8" prot="public" static="no">
+        <name>AV_PROFILE_DTS_HD_MA_X_IMAX</name>
+        <initializer>62</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="94" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aab00933dd678675ec2539400ba6262fd" prot="public" static="no">
+        <name>AV_PROFILE_EAC3_DDP_ATMOS</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="96" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1abaf7b2bdb4304586f240df16574cc4cb" prot="public" static="no">
+        <name>AV_PROFILE_TRUEHD_ATMOS</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="98" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1af3859a9b462dc7c1c7258c442de54d25" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_422</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="100" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5fb8eb2dade11679fc8c03de6ce89836" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="101" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a59d4d5aa05734dbb3a08c484d4c576e8" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_SS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="102" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a387ee6fdb02e5645af64f257a6451588" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_SNR_SCALABLE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="103" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0cb8c816f37e5d0222dc8a8d5944fe49" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_MAIN</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="104" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ae7f6e8799e524e83267301abe29e5941" prot="public" static="no">
+        <name>AV_PROFILE_MPEG2_SIMPLE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="105" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2916cd1ddb55abd8a6bffd6e800db921" prot="public" static="no">
+        <name>AV_PROFILE_H264_CONSTRAINED</name>
+        <initializer>(1&lt;&lt;9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="107" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a79a7bf183c32e0fc90c773d7a0ca8ffb" prot="public" static="no">
+        <name>AV_PROFILE_H264_INTRA</name>
+        <initializer>(1&lt;&lt;11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="108" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1af76cc7886e38f07c37eb9e80179b7131" prot="public" static="no">
+        <name>AV_PROFILE_H264_BASELINE</name>
+        <initializer>66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="110" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a9ee397672d8b8cffc1df218660984f61" prot="public" static="no">
+        <name>AV_PROFILE_H264_CONSTRAINED_BASELINE</name>
+        <initializer>(66|AV_PROFILE_H264_CONSTRAINED)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="111" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a15d0ecbd587c46f09d45a3263625d54f" prot="public" static="no">
+        <name>AV_PROFILE_H264_MAIN</name>
+        <initializer>77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="112" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a1c47748dfd72ba76177c9c98607526f6" prot="public" static="no">
+        <name>AV_PROFILE_H264_EXTENDED</name>
+        <initializer>88</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="113" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a9284a78e985af2867b68418ad4080fdb" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="114" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ad495307da194d27d8102fdcc94d2ff9f" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_10</name>
+        <initializer>110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="115" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aee48a2454aefeea209a1ebbe61a747bc" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_10_INTRA</name>
+        <initializer>(110|AV_PROFILE_H264_INTRA)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="116" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a87f8d284a2eb6dc9adf3911c62484d31" prot="public" static="no">
+        <name>AV_PROFILE_H264_MULTIVIEW_HIGH</name>
+        <initializer>118</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="117" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1adc2d450e624ebd4f69fb1335a31fb197" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_422</name>
+        <initializer>122</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="118" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a573905a2717de028b5b536b6bfebf0ae" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_422_INTRA</name>
+        <initializer>(122|AV_PROFILE_H264_INTRA)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="119" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a172bbd2897080fae37562c93bdac63a1" prot="public" static="no">
+        <name>AV_PROFILE_H264_STEREO_HIGH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="120" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4540c95f3b6c26f7f8946bfca92c8ca7" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_444</name>
+        <initializer>144</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="121" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2a41e8fdb39cbd749d815bbb549b61f3" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_444_PREDICTIVE</name>
+        <initializer>244</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="122" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a8ff7f96f33144e7b4bc3d52d0f8e1263" prot="public" static="no">
+        <name>AV_PROFILE_H264_HIGH_444_INTRA</name>
+        <initializer>(244|AV_PROFILE_H264_INTRA)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="123" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a514fcbd098a4ac1b27d5974e7eefc122" prot="public" static="no">
+        <name>AV_PROFILE_H264_CAVLC_444</name>
+        <initializer>44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="124" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a93b4bca9da76e7ac02cdf8f09c41ddf2" prot="public" static="no">
+        <name>AV_PROFILE_VC1_SIMPLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="126" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ac78208a2416752c1d998c4917422b430" prot="public" static="no">
+        <name>AV_PROFILE_VC1_MAIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="127" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7673e551c96043a9ae46da0c12c5b046" prot="public" static="no">
+        <name>AV_PROFILE_VC1_COMPLEX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="128" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a77ed12aea7a1c3608e1f8b6095d13c31" prot="public" static="no">
+        <name>AV_PROFILE_VC1_ADVANCED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="129" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a6bbda681648129f8e6314e919dc622ed" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_SIMPLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="131" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a11b1b8456a67618cbfdf30ac6922f47a" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_SIMPLE_SCALABLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="132" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a15cb0dc4642df87a03c3b83f0c7be74b" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_CORE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="133" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a3067fd1a2250b40efdf3c1cc262b5105" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_MAIN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="134" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ac3b1e42868ebb790c03af3edff69161f" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_N_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="135" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aced1838ab27ba02bb3846352f87aa127" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_SCALABLE_TEXTURE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="136" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5c916407fcd0fc540c00e0659517d4f4" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_SIMPLE_FACE_ANIMATION</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="137" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4986d9a3873b2c9b84333aab371d4470" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_BASIC_ANIMATED_TEXTURE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="138" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a1c86360744bbf72392bcd218c81af9eb" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_HYBRID</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="139" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a723b93b1e89c7627b7b42b1213452cc0" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_ADVANCED_REAL_TIME</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="140" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1af64b22f53b1f4d1b8df48a0ab2627ba3" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_CORE_SCALABLE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="141" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ad17ce91cb64c3abfaac9b3f635ff768d" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_ADVANCED_CODING</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="142" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5c735d3b3fda77884fa21d5dd6bc6c43" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_ADVANCED_CORE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="143" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a79758c1956b3668103bb81e2e942c742" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_ADVANCED_SCALABLE_TEXTURE</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="144" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2bc81cfe0f72e5e96510968e2a394196" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_SIMPLE_STUDIO</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="145" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0665f1c30d289f9a98b17412047af800" prot="public" static="no">
+        <name>AV_PROFILE_MPEG4_ADVANCED_SIMPLE</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="146" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a64083d4ca4954bba77f0b25827189dc4" prot="public" static="no">
+        <name>AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_0</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="148" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a93b78f8a56d719ed9cda65e6a349d7b4" prot="public" static="no">
+        <name>AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_1</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="149" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a422d6680b107dfcde844f374f73e041f" prot="public" static="no">
+        <name>AV_PROFILE_JPEG2000_CSTREAM_NO_RESTRICTION</name>
+        <initializer>32768</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="150" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0bd0864b027df1e74f70b1a89254df03" prot="public" static="no">
+        <name>AV_PROFILE_JPEG2000_DCINEMA_2K</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="151" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aafe9e2ff87e18acf396011d9b91ebc8d" prot="public" static="no">
+        <name>AV_PROFILE_JPEG2000_DCINEMA_4K</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="152" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aa4961da7133f56b3028b9495682500a6" prot="public" static="no">
+        <name>AV_PROFILE_VP9_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="154" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a89c050daae11224e6bc309620d40bf25" prot="public" static="no">
+        <name>AV_PROFILE_VP9_1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="155" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aab6783be63fa049ff2ea4a722afd03dd" prot="public" static="no">
+        <name>AV_PROFILE_VP9_2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="156" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2e4ae05c627b7f20b70e4ff6a8507f67" prot="public" static="no">
+        <name>AV_PROFILE_VP9_3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="157" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a72627505e273ea2365815355c738b2bc" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_MAIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="159" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7a58e526440850c7b39714c456d12f66" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_MAIN_10</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="160" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1afac5d344275675cd761f4dacdcd49cff" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_MAIN_STILL_PICTURE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="161" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5a26220db482d6b06afde22dd628bb6c" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_REXT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="162" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0ac54fdd4e318056da4e44253f867b42" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_MULTIVIEW_MAIN</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="163" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ab56e6c46fccc7708a69684a0799a9ae9" prot="public" static="no">
+        <name>AV_PROFILE_HEVC_SCC</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="164" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a983b828025beaf68ff40d33a30f0adf3" prot="public" static="no">
+        <name>AV_PROFILE_VVC_MAIN_10</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="166" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4ad4a76467d6b05937295fec629a1ff2" prot="public" static="no">
+        <name>AV_PROFILE_VVC_MAIN_10_444</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="167" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ad52924da77b7a45a6851c69767d85fb2" prot="public" static="no">
+        <name>AV_PROFILE_AV1_MAIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="169" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a103fd33d70ffb17d87c39846702ae2c6" prot="public" static="no">
+        <name>AV_PROFILE_AV1_HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="170" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1adbbf8251e890c2c6b01931132c80f040" prot="public" static="no">
+        <name>AV_PROFILE_AV1_PROFESSIONAL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="171" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a315931984588988180f71f4922cab4fd" prot="public" static="no">
+        <name>AV_PROFILE_MJPEG_HUFFMAN_BASELINE_DCT</name>
+        <initializer>0xc0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="173" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2acd10777e5a200c0c184c472df2b55b" prot="public" static="no">
+        <name>AV_PROFILE_MJPEG_HUFFMAN_EXTENDED_SEQUENTIAL_DCT</name>
+        <initializer>0xc1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="174" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ad780124f2357043355a3bed21f4d8668" prot="public" static="no">
+        <name>AV_PROFILE_MJPEG_HUFFMAN_PROGRESSIVE_DCT</name>
+        <initializer>0xc2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="175" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1abaf26ffc6bfd5b4ff50b59773946f507" prot="public" static="no">
+        <name>AV_PROFILE_MJPEG_HUFFMAN_LOSSLESS</name>
+        <initializer>0xc3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="176" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a159d830d55b4bad96579a744c37af6e5" prot="public" static="no">
+        <name>AV_PROFILE_MJPEG_JPEG_LS</name>
+        <initializer>0xf7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="177" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a585ed458577e4e98c92831fa4a6fa5d3" prot="public" static="no">
+        <name>AV_PROFILE_SBC_MSBC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="179" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a1cac12a890902233983c62fe07ee268f" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_PROXY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="181" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a184913f9f3c1d3029d91bfce77c8c8d6" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_LT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="182" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0e1606b167748cbe73d1dd86af2bfea7" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_STANDARD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="183" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aed3aeb9dfe26f1961b80999395e9c716" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_HQ</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="184" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a102cd47ccc6b7a8513addc295e27beca" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_4444</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="185" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ae25c2894e2b2044ef1642aae3b68f12d" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_XQ</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="186" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ac0165ce09693eb17187de19456bf6396" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_RAW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="188" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aa11963928c852ef878e5905e32a8a6fe" prot="public" static="no">
+        <name>AV_PROFILE_PRORES_RAW_HQ</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="189" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a0243dfd3f1fa02abdc88feb3da4fdbc1" prot="public" static="no">
+        <name>AV_PROFILE_ARIB_PROFILE_A</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="191" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a28e20b9794b543782ec3242127c4cce9" prot="public" static="no">
+        <name>AV_PROFILE_ARIB_PROFILE_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="192" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7d1dcdc4dbb763d286743d6624ef5261" prot="public" static="no">
+        <name>AV_PROFILE_KLVA_SYNC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="194" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4bdacd4cada551d1906bd473b52f6855" prot="public" static="no">
+        <name>AV_PROFILE_KLVA_ASYNC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="195" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a40b5acd2daef9f0c6634d7fd7ece9a66" prot="public" static="no">
+        <name>AV_PROFILE_EVC_BASELINE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="197" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ac2365002f8539f0413206e4d70850f06" prot="public" static="no">
+        <name>AV_PROFILE_EVC_MAIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="198" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2325db932a03fcf98e5750653d45404f" prot="public" static="no">
+        <name>AV_PROFILE_APV_422_10</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="200" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4fbe74df248e1cb326e64626e1a327d7" prot="public" static="no">
+        <name>AV_PROFILE_APV_422_12</name>
+        <initializer>44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="201" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a29868826213561fec6058e981e91ee9c" prot="public" static="no">
+        <name>AV_PROFILE_APV_444_10</name>
+        <initializer>55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="202" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a1a5a6762496c2901038551e217608fd3" prot="public" static="no">
+        <name>AV_PROFILE_APV_444_12</name>
+        <initializer>66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="203" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a68854fea25c6fd5618e2b6c853b94085" prot="public" static="no">
+        <name>AV_PROFILE_APV_4444_10</name>
+        <initializer>77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="204" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aecffb7bb547eb82f5c289169c5686b3e" prot="public" static="no">
+        <name>AV_PROFILE_APV_4444_12</name>
+        <initializer>88</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="205" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ab1a13f8f3b09e0167a765116efdedbd1" prot="public" static="no">
+        <name>AV_PROFILE_APV_400_10</name>
+        <initializer>99</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="206" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a3b66f83dc9a672ac570d1acfb27b1057" prot="public" static="no">
+        <name>AV_LEVEL_UNKNOWN</name>
+        <initializer>-99</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="209" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="defs_8h_1a957ef25581a6b3c98589817b1cbed02c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVFieldOrder</name>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca886b3191488ef874bf3e94b3d9cec713" prot="public">
+          <name>AV_FIELD_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca9165cfa953463411e28670a9d06af2e2" prot="public">
+          <name>AV_FIELD_PROGRESSIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca236b46495cd9254b4030d36fc6f27f23" prot="public">
+          <name>AV_FIELD_TT</name>
+          <briefdescription>
+<para>Top coded_first, top displayed first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca7bf84c3d1e2714ddee42b3e94826fca4" prot="public">
+          <name>AV_FIELD_BB</name>
+          <briefdescription>
+<para>Bottom coded first, bottom displayed first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02cae1efa8b010ca5331f1f845104e7c0667" prot="public">
+          <name>AV_FIELD_TB</name>
+          <briefdescription>
+<para>Top coded first, bottom displayed first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1a957ef25581a6b3c98589817b1cbed02caba81a12143ed2cea06438739a7caaafb" prot="public">
+          <name>AV_FIELD_BT</name>
+          <briefdescription>
+<para>Bottom coded first, top displayed first. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="211" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="211" bodyend="218"/>
+      </memberdef>
+      <member refid="group__lavc__decoding_1ga352363bce7d3ed82c101b3bc001d1c16" kind="enum"><name>AVDiscard</name></member>
+      <memberdef kind="enum" id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfaf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVAudioServiceType</name>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafa909e448624c46b32506f20acaeb59219" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_MAIN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafa89cc3ca931cc01de8b8b498492133f58" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_EFFECTS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafae1d0587828c1f7efdb0ac449946448fc" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_VISUALLY_IMPAIRED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafabd1590db13ebdc6f1c53fd5cd97ff3ca" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_HEARING_IMPAIRED</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafa94e109ad671c99029eb89b61a840050c" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_DIALOGUE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafac279dfd2816ee38406920c0c4718bd90" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_COMMENTARY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafa49e2c0c319dfdd3b5756e58900c8a88c" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_EMERGENCY</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafa0c000c46073046780a3daa1e8f84e207" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_VOICE_OVER</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafab4290d124e49f795ef1ba709fc60233c" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_KARAOKE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafac562760f8958fb519327590d42e91b0e" prot="public">
+          <name>AV_AUDIO_SERVICE_TYPE_NB</name>
+          <briefdescription>
+<para>Not part of ABI. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="235" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="235" bodyend="246"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="defs_8h_1a29f10e0a8372f4172144b4619a534292" prot="public" static="no">
+        <type>struct AVPanScan</type>
+        <definition>typedef struct AVPanScan AVPanScan</definition>
+        <argsstring></argsstring>
+        <name>AVPanScan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pan Scan area. This specifies the area which should be displayed. Note there may be multiple such areas for one frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="275" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="defs_8h_1a9991848c6e7fe1b1e6763e666d7aa198" prot="public" static="no">
+        <type>struct AVCPBProperties</type>
+        <definition>typedef struct AVCPBProperties AVCPBProperties</definition>
+        <argsstring></argsstring>
+        <name>AVCPBProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure describes the bitrate properties of an encoded bitstream. It roughly corresponds to a subset the VBV parameters for MPEG-2 or HRD parameters for H.264/HEVC. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="313" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="defs_8h_1a289ce777575cd35ee56d01141227c0f5" prot="public" static="no">
+        <type>struct AVProducerReferenceTime</type>
+        <definition>typedef struct AVProducerReferenceTime AVProducerReferenceTime</definition>
+        <argsstring></argsstring>
+        <name>AVProducerReferenceTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure supplies correlation between a packet timestamp and a wall clock production time. The definition follows the Producer Reference Time (&apos;prft&apos;) as defined in ISO/IEC 14496-12 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="337" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="defs_8h_1aa2f2fa3332f208541f90bd4ae9c755b4" prot="public" static="no">
+        <type>struct AVRTCPSenderReport</type>
+        <definition>typedef struct AVRTCPSenderReport AVRTCPSenderReport</definition>
+        <argsstring></argsstring>
+        <name>AVRTCPSenderReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTCP SR (Sender Report) information</para>
+<para>The received sender report information for an RTSP stream, exposed as AV_PKT_DATA_RTCP_SR side data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="351" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="defs_8h_1ab30823cc24dc743ad5cf87e2c90629c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_c_p_b_properties" kindref="compound">AVCPBProperties</ref> *</type>
+        <definition>AVCPBProperties * av_cpb_properties_alloc</definition>
+        <argsstring>(size_t *size)</argsstring>
+        <name>av_cpb_properties_alloc</name>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a CPB properties structure and initialize its fields to default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL, the size of the allocated struct will be written here. This is useful for embedding it in side data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the newly allocated struct or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="324" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" declline="324" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="defs_8h_1a144411ccbce77847ee9ce10d7fe5361c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int av_xiphlacing</definition>
+        <argsstring>(unsigned char *s, unsigned int v)</argsstring>
+        <name>av_xiphlacing</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode extradata length to a buffer. Used by xiph codecs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer to write to; must be at least (v/255+1) bytes long </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of extradata in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bytes written to the buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="360" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" declline="360" declcolumn="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Misc types and constants that do not belong anywhere else. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_DEFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_DEFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="group__lavc__decoding_1ga8f5b632a03ce83ac8e025894b1fc307a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_INPUT_BUFFER_PADDING_SIZE<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="defs_8h_1a16258b3283a3d34c893dd9a39e29e369" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_CRCCHECK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="defs_8h_1a15a968c7590acfe5134b386e275db94b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_BITSTREAM<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="defs_8h_1a6689e6274ac296dea480393cf53e1eda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="defs_8h_1a6101c3b2a02c61ea41f3c97e88b64d39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_EXPLODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="defs_8h_1a4d1ae1e6c45cc5e9641ac6db9c811626" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_IGNORE_ERR<sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;15)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="defs_8h_1adada058bf4130e23c790f39de50c62c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_CAREFUL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;16)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="defs_8h_1a42a5fa4b77207e981ca78755e2ac77f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_COMPLIANT<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;17)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="defs_8h_1a84b2a67f04fa6d2cab74d09e2779b6ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EF_AGGRESSIVE<sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;18)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="defs_8h_1a96808e3862c53c7edb4ace1b2f3e544f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_COMPLIANCE_VERY_STRICT<sp/><sp/><sp/>2<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="defs_8h_1a5c1eb24858b3a73d6bbe9585d30e971a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_COMPLIANCE_STRICT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_COMPLIANCE_NORMAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="defs_8h_1a0d1ffb8ad990f47c1f21ec2f5b43c0b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_COMPLIANCE_UNOFFICIAL<sp/><sp/><sp/>-1<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="defs_8h_1a0e9f40024e3b017088ee1c16f25b3910" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_COMPLIANCE_EXPERIMENTAL<sp/>-2<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_UNKNOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/>-100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_SSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_LTP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_HE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_HE_V2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_LD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_ELD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>38</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AAC_USAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>41</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_AAC_LOW<sp/><sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_AAC_HE<sp/><sp/><sp/>131</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHR_LB<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHR_SQ<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHR_HQ<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHR_HQX<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DNXHR_444<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_ES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_96_24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_HD_HRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_HD_MA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_EXPRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>70</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_HD_MA_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>61</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_DTS_HD_MA_X_IMAX<sp/><sp/><sp/>62</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_EAC3_DDP_ATMOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_TRUEHD_ATMOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_422<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_SS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_SNR_SCALABLE<sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG2_SIMPLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_CONSTRAINED<sp/><sp/>(1&lt;&lt;9)<sp/><sp/></highlight><highlight class="comment">//<sp/>8+1;<sp/>constraint_set1_flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_INTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;11)<sp/></highlight><highlight class="comment">//<sp/>8+3;<sp/>constraint_set3_flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_BASELINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>66</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_CONSTRAINED_BASELINE<sp/>(66|AV_PROFILE_H264_CONSTRAINED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>77</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_EXTENDED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>88</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>110</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_10_INTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(110|AV_PROFILE_H264_INTRA)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_MULTIVIEW_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_422<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>122</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_422_INTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(122|AV_PROFILE_H264_INTRA)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_STEREO_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_444<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>144</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_444_PREDICTIVE<sp/><sp/>244</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_HIGH_444_INTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(244|AV_PROFILE_H264_INTRA)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_H264_CAVLC_444<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VC1_SIMPLE<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VC1_MAIN<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VC1_COMPLEX<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VC1_ADVANCED<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_SIMPLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_SIMPLE_SCALABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_CORE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_N_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_SCALABLE_TEXTURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_SIMPLE_FACE_ANIMATION<sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_BASIC_ANIMATED_TEXTURE<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_HYBRID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_ADVANCED_REAL_TIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_CORE_SCALABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_ADVANCED_CODING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_ADVANCED_CORE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_ADVANCED_SCALABLE_TEXTURE<sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_SIMPLE_STUDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MPEG4_ADVANCED_SIMPLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_0<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_JPEG2000_CSTREAM_RESTRICTION_1<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_JPEG2000_CSTREAM_NO_RESTRICTION<sp/><sp/>32768</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_JPEG2000_DCINEMA_2K<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_JPEG2000_DCINEMA_4K<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VP9_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VP9_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VP9_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VP9_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_MAIN_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_MAIN_STILL_PICTURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_REXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_MULTIVIEW_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_HEVC_SCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VVC_MAIN_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_VVC_MAIN_10_444<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AV1_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AV1_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_AV1_PROFESSIONAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MJPEG_HUFFMAN_BASELINE_DCT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MJPEG_HUFFMAN_EXTENDED_SEQUENTIAL_DCT<sp/>0xc1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MJPEG_HUFFMAN_PROGRESSIVE_DCT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MJPEG_HUFFMAN_LOSSLESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xc3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_MJPEG_JPEG_LS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_SBC_MSBC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_PROXY<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_LT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_STANDARD<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_HQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_4444<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_XQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_RAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_PRORES_RAW_HQ<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_ARIB_PROFILE_A<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_ARIB_PROFILE_C<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_KLVA_SYNC<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_KLVA_ASYNC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_EVC_BASELINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_EVC_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_422_10<sp/><sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_422_12<sp/><sp/>44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_444_10<sp/><sp/>55</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_444_12<sp/><sp/>66</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_4444_10<sp/>77</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_4444_12<sp/>88</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_PROFILE_APV_400_10<sp/><sp/>99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LEVEL_UNKNOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02c" kindref="member">AVFieldOrder</ref><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_FIELD_UNKNOWN,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_FIELD_PROGRESSIVE,</highlight></codeline>
+<codeline lineno="214" refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca236b46495cd9254b4030d36fc6f27f23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca236b46495cd9254b4030d36fc6f27f23" kindref="member">AV_FIELD_TT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215" refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca7bf84c3d1e2714ddee42b3e94826fca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02ca7bf84c3d1e2714ddee42b3e94826fca4" kindref="member">AV_FIELD_BB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216" refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02cae1efa8b010ca5331f1f845104e7c0667" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02cae1efa8b010ca5331f1f845104e7c0667" kindref="member">AV_FIELD_TB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217" refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02caba81a12143ed2cea06438739a7caaafb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1a957ef25581a6b3c98589817b1cbed02caba81a12143ed2cea06438739a7caaafb" kindref="member">AV_FIELD_BT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="group__lavc__decoding_1ga352363bce7d3ed82c101b3bc001d1c16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavc__decoding_1ga352363bce7d3ed82c101b3bc001d1c16" kindref="member">AVDiscard</ref>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>leave<sp/>some<sp/>space<sp/>between<sp/>them<sp/>for<sp/>extensions<sp/>(drop<sp/>some</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>keyframes<sp/>for<sp/>intra-only<sp/>or<sp/>drop<sp/>just<sp/>some<sp/>bidir<sp/>frames).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a93d0436f7651b58debe3f995e2582dcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a93d0436f7651b58debe3f995e2582dcd" kindref="member">AVDISCARD_NONE</ref><sp/><sp/><sp/><sp/>=-16,<sp/></highlight></codeline>
+<codeline lineno="227" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a81453d8c452e8ee794daf7fde1c80b5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a81453d8c452e8ee794daf7fde1c80b5b" kindref="member">AVDISCARD_DEFAULT</ref><sp/>=<sp/><sp/>0,<sp/></highlight></codeline>
+<codeline lineno="228" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16ac5a5a87ffcd6fb2362ac18449d29bde8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16ac5a5a87ffcd6fb2362ac18449d29bde8" kindref="member">AVDISCARD_NONREF</ref><sp/><sp/>=<sp/><sp/>8,<sp/></highlight></codeline>
+<codeline lineno="229" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a776541ad00a4f13c3fdcd363988bffb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a776541ad00a4f13c3fdcd363988bffb3" kindref="member">AVDISCARD_BIDIR</ref><sp/><sp/><sp/>=<sp/>16,<sp/></highlight></codeline>
+<codeline lineno="230" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16aabee31ca5c7c140d3a84b848164eeaf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16aabee31ca5c7c140d3a84b848164eeaf8" kindref="member">AVDISCARD_NONINTRA</ref>=<sp/>24,<sp/></highlight></codeline>
+<codeline lineno="231" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a31c8164477d9f571f82003065d2ab6f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a31c8164477d9f571f82003065d2ab6f1" kindref="member">AVDISCARD_NONKEY</ref><sp/><sp/>=<sp/>32,<sp/></highlight></codeline>
+<codeline lineno="232" refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a07517e3890ba7e19a612945483dc066a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavc__decoding_1gga352363bce7d3ed82c101b3bc001d1c16a07517e3890ba7e19a612945483dc066a" kindref="member">AVDISCARD_ALL</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>48,<sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfaf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfaf" kindref="member">AVAudioServiceType</ref><sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_MAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_EFFECTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_VISUALLY_IMPAIRED<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_HEARING_IMPAIRED<sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_DIALOGUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_COMMENTARY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_EMERGENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_VOICE_OVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AUDIO_SERVICE_TYPE_KARAOKE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="245" refid="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafac562760f8958fb519327590d42e91b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfafac562760f8958fb519327590d42e91b0e" kindref="member">AV_AUDIO_SERVICE_TYPE_NB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="struct_a_v_pan_scan" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_pan_scan" kindref="compound">AVPanScan</ref><sp/>{</highlight></codeline>
+<codeline lineno="259" refid="struct_a_v_pan_scan_1a34dfbcbb6c9582d0a10d9592a3d2eed2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pan_scan_1a34dfbcbb6c9582d0a10d9592a3d2eed2" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="struct_a_v_pan_scan_1a3963c714ee5ab0209f74de43bb2ef97b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_pan_scan_1a3963c714ee5ab0209f74de43bb2ef97b" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="struct_a_v_pan_scan_1abfbf6d829276b4a73b97995827832eba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_a_v_pan_scan_1abfbf6d829276b4a73b97995827832eba" kindref="member">position</ref>[3][2];</highlight></codeline>
+<codeline lineno="275" refid="defs_8h_1a29f10e0a8372f4172144b4619a534292" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_pan_scan" kindref="compound">AVPanScan</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="struct_a_v_c_p_b_properties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_c_p_b_properties" kindref="compound">AVCPBProperties</ref><sp/>{</highlight></codeline>
+<codeline lineno="287" refid="struct_a_v_c_p_b_properties_1a20928ba0a499db68a363d5f29088f106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_c_p_b_properties_1a20928ba0a499db68a363d5f29088f106" kindref="member">max_bitrate</ref>;</highlight></codeline>
+<codeline lineno="292" refid="struct_a_v_c_p_b_properties_1a6cbe488de00be048b989c07eb345e58b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_c_p_b_properties_1a6cbe488de00be048b989c07eb345e58b" kindref="member">min_bitrate</ref>;</highlight></codeline>
+<codeline lineno="297" refid="struct_a_v_c_p_b_properties_1a20066fcefdf7e6bfd861d2a976101961" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_c_p_b_properties_1a20066fcefdf7e6bfd861d2a976101961" kindref="member">avg_bitrate</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="struct_a_v_c_p_b_properties_1a5ca2317a4e3a9081de274cb580269bbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_c_p_b_properties_1a5ca2317a4e3a9081de274cb580269bbc" kindref="member">buffer_size</ref>;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="struct_a_v_c_p_b_properties_1a6141d02537b3c72528570f7c577bbd83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_c_p_b_properties_1a6141d02537b3c72528570f7c577bbd83" kindref="member">vbv_delay</ref>;</highlight></codeline>
+<codeline lineno="313" refid="defs_8h_1a9991848c6e7fe1b1e6763e666d7aa198" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_c_p_b_properties" kindref="compound">AVCPBProperties</ref>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="defs_8h_1ab30823cc24dc743ad5cf87e2c90629c2" refkind="member"><highlight class="normal"><ref refid="struct_a_v_c_p_b_properties" kindref="compound">AVCPBProperties</ref><sp/>*<ref refid="defs_8h_1ab30823cc24dc743ad5cf87e2c90629c2" kindref="member">av_cpb_properties_alloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="struct_a_v_producer_reference_time" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_producer_reference_time" kindref="compound">AVProducerReferenceTime</ref><sp/>{</highlight></codeline>
+<codeline lineno="335" refid="struct_a_v_producer_reference_time_1aa44842dba607b9947fc6e1c1d9638faf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_producer_reference_time_1aa44842dba607b9947fc6e1c1d9638faf" kindref="member">wallclock</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags;</highlight></codeline>
+<codeline lineno="337" refid="defs_8h_1a289ce777575cd35ee56d01141227c0f5" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_producer_reference_time" kindref="compound">AVProducerReferenceTime</ref>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="struct_a_v_r_t_c_p_sender_report" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_r_t_c_p_sender_report" kindref="compound">AVRTCPSenderReport</ref><sp/>{</highlight></codeline>
+<codeline lineno="346" refid="struct_a_v_r_t_c_p_sender_report_1a37b1ae7a7397ca264c4e045aae914c24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_r_t_c_p_sender_report_1a37b1ae7a7397ca264c4e045aae914c24" kindref="member">ssrc</ref>;<sp/></highlight></codeline>
+<codeline lineno="347" refid="struct_a_v_r_t_c_p_sender_report_1a7c2cdcfe4700d885c8ecdaad97de5551" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_r_t_c_p_sender_report_1a7c2cdcfe4700d885c8ecdaad97de5551" kindref="member">ntp_timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="348" refid="struct_a_v_r_t_c_p_sender_report_1ad84eb7a56d999ff867701d7017630d4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_r_t_c_p_sender_report_1ad84eb7a56d999ff867701d7017630d4c" kindref="member">rtp_timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="349" refid="struct_a_v_r_t_c_p_sender_report_1a4920ead169faa039bede8f4127532019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_r_t_c_p_sender_report_1a4920ead169faa039bede8f4127532019" kindref="member">sender_nb_packets</ref>;<sp/></highlight></codeline>
+<codeline lineno="350" refid="struct_a_v_r_t_c_p_sender_report_1a6f8e44440a210b1f3ddc6b5373d89efe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_r_t_c_p_sender_report_1a6f8e44440a210b1f3ddc6b5373d89efe" kindref="member">sender_nb_bytes</ref>;<sp/></highlight></codeline>
+<codeline lineno="351" refid="defs_8h_1aa2f2fa3332f208541f90bd4ae9c755b4" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_r_t_c_p_sender_report" kindref="compound">AVRTCPSenderReport</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="defs_8h_1a144411ccbce77847ee9ce10d7fe5361c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1a144411ccbce77847ee9ce10d7fe5361c" kindref="member">av_xiphlacing</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AVCODEC_DEFS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h"/>
+  </compounddef>
+</doxygen>

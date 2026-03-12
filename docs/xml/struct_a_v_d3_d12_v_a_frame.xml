@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d3_d12_v_a_frame" kind="struct" language="C++" prot="public">
+    <compoundname>AVD3D12VAFrame</compoundname>
+    <includes refid="hwcontext__d3d12va_8h" local="no">hwcontext_d3d12va.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frame_1a92303c5c28b780ee2e531b82b8188a96" prot="public" static="no" mutable="no">
+        <type>ID3D12Resource *</type>
+        <definition>ID3D12Resource* AVD3D12VAFrame::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <qualifiedname>AVD3D12VAFrame::texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The texture in which the frame is located. The reference count is managed by the <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>, and destroying the reference will release the interface. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="144" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frame_1aa002f32ad8f605ca888c23241c4a8eb9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVD3D12VAFrame::subresource_index</definition>
+        <argsstring></argsstring>
+        <name>subresource_index</name>
+        <qualifiedname>AVD3D12VAFrame::subresource_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the subresource within the texture.</para>
+<para>In texture array mode, this specifies the array slice index. When texture array mode is not used, this value is always 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="152" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frame_1a9a314ddda3f56529fd1c5abb5a1710c0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_d3_d12_v_a_sync_context" kindref="compound">AVD3D12VASyncContext</ref></type>
+        <definition>AVD3D12VASyncContext AVD3D12VAFrame::sync_ctx</definition>
+        <argsstring></argsstring>
+        <name>sync_ctx</name>
+        <qualifiedname>AVD3D12VAFrame::sync_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The sync context for the texture</para>
+<para><simplesect kind="see"><para>: <ulink url="https://learn.microsoft.com/en-us/windows/win32/medfound/direct3d-12-video-overview#directx-12-fences">https://learn.microsoft.com/en-us/windows/win32/medfound/direct3d-12-video-overview#directx-12-fences</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="159" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frame_1a0c47b38de08f2703f50bb879a7e781bf" prot="public" static="no" mutable="no">
+        <type><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref></type>
+        <definition>AVD3D12VAFrameFlags AVD3D12VAFrame::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVD3D12VAFrame::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of <ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref>. Set by <ref refid="struct_a_v_d3_d12_v_a_frames_context" kindref="compound">AVD3D12VAFramesContext</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="165" column="25" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>D3D12VA frame descriptor for pool allocation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVD3D12VAFrame</label>
+        <link refid="struct_a_v_d3_d12_v_a_frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sync_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVD3D12VASyncContext</label>
+        <link refid="struct_a_v_d3_d12_v_a_sync_context"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="138" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="138" bodyend="166"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d3_d12_v_a_frame_1a0c47b38de08f2703f50bb879a7e781bf" prot="public" virt="non-virtual"><scope>AVD3D12VAFrame</scope><name>flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frame_1aa002f32ad8f605ca888c23241c4a8eb9" prot="public" virt="non-virtual"><scope>AVD3D12VAFrame</scope><name>subresource_index</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frame_1a9a314ddda3f56529fd1c5abb5a1710c0" prot="public" virt="non-virtual"><scope>AVD3D12VAFrame</scope><name>sync_ctx</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frame_1a92303c5c28b780ee2e531b82b8188a96" prot="public" virt="non-virtual"><scope>AVD3D12VAFrame</scope><name>texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

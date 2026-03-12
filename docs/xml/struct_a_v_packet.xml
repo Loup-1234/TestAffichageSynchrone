@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_packet" kind="struct" language="C++" prot="public">
+    <compoundname>AVPacket</compoundname>
+    <includes refid="packet_8h" local="no">packet.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_packet_1a3bf81872813551fe9343dd0e09993e38" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVPacket::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>AVPacket::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A reference to the reference-counted buffer where the packet data is stored. May be NULL, then the packet data is not reference-counted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="571" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVPacket::pts</definition>
+        <argsstring></argsstring>
+        <name>pts</name>
+        <qualifiedname>AVPacket::pts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Presentation timestamp in AVStream-&gt;time_base units; the time at which the decompressed packet will be presented to the user. Can be AV_NOPTS_VALUE if it is not stored in the file. pts MUST be larger or equal to dts as presentation cannot happen before decompression, unless one wants to view hex dumps. Some formats misuse the terms dts and pts/cts to mean something different. Such timestamps must be converted to true pts/dts before they are stored in <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="581" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVPacket::dts</definition>
+        <argsstring></argsstring>
+        <name>dts</name>
+        <qualifiedname>AVPacket::dts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decompression timestamp in AVStream-&gt;time_base units; the time at which the packet is decompressed. Can be AV_NOPTS_VALUE if it is not stored in the file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="587" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1aaf4fe58dfcc7c232c1f2268b539d8367" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVPacket::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>AVPacket::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="588" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a4d1ea19f63eb107111fd650ca514d1f4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPacket::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVPacket::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="589" column="11" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a0d1cb9b5a32b00fb6edc81ea3aae2a49" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPacket::stream_index</definition>
+        <argsstring></argsstring>
+        <name>stream_index</name>
+        <qualifiedname>AVPacket::stream_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="590" column="11" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a437be96a9da675f12caa228a9c81bd82" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPacket::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVPacket::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of AV_PKT_FLAG values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="594" column="11" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> *</type>
+        <definition>AVPacketSideData* AVPacket::side_data</definition>
+        <argsstring></argsstring>
+        <name>side_data</name>
+        <qualifiedname>AVPacket::side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional packet data that can be provided by the container. Packet can contain several types of side information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="599" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1af415e25244b26921e8fc249d45499b84" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVPacket::side_data_elems</definition>
+        <argsstring></argsstring>
+        <name>side_data_elems</name>
+        <qualifiedname>AVPacket::side_data_elems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="600" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVPacket::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>AVPacket::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration of this packet in AVStream-&gt;time_base units, 0 if unknown. Equals next_pts - this_pts in presentation order. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="606" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1ab5793d8195cf4789dfb3913b7a693903" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVPacket::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <qualifiedname>AVPacket::pos</qualifiedname>
+        <briefdescription>
+<para>byte position in stream, -1 if unknown </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="608" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a88343ad2cf68bd2e530494507b97cc3a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVPacket::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVPacket::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for some private data of the user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="613" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1a8e9627cbf54429fe31b093a6d080969b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVPacket::opaque_ref</definition>
+        <argsstring></argsstring>
+        <name>opaque_ref</name>
+        <qualifiedname>AVPacket::opaque_ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> for free use by the API user. FFmpeg will never check the contents of the buffer ref. FFmpeg calls <ref refid="group__lavu__buffer_1ga135e9e929b5033bb8f68322497b2effc" kindref="member">av_buffer_unref()</ref> on it when the packet is unreferenced. <ref refid="group__lavc__packet_1gade00f67930f4e2a3401b67b701d5b3a2" kindref="member">av_packet_copy_props()</ref> calls create a new reference with <ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref()</ref> for the target packet&apos;s opaque_ref field.</para>
+<para>This is unrelated to the opaque field, although it serves a similar purpose. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="624" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_packet_1ad5ee277064c1e883a8883fb8521c7d3e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVPacket::time_base</definition>
+        <argsstring></argsstring>
+        <name>time_base</name>
+        <qualifiedname>AVPacket::time_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time base of the packet&apos;s timestamps. In the future, this field may be set on packets output by encoders or demuxers, but its value will be by default ignored on input to decoders or muxers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="632" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure stores compressed data. It is typically exported by demuxers and then passed as input to decoders, or received as output from encoders and then passed to muxers.</para>
+<para>For video, it should typically contain one compressed frame. For audio it may contain several compressed frames. Encoders are allowed to output empty packets, with no compressed data, containing only side data (e.g. to update some stream parameters at the end of encoding).</para>
+<para>The semantics of data ownership depends on the buf field. If it is set, the packet data is dynamically allocated and is valid indefinitely until a call to <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref> reduces the reference count to 0.</para>
+<para>If the buf field is not set <ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref()</ref> would make a copy instead of increasing the reference count.</para>
+<para>The side data is always allocated with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, copied by <ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref()</ref> and freed by <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref>.</para>
+<para>sizeof(AVPacket) being a part of the public ABI is deprecated. once av_init_packet() is removed, new packets will only be able to be allocated with <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref>, and new fields may be added to the end of the struct with a minor bump.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1gadb05d71fa2ea7b7fd3e8cfc6d9065a47" kindref="member">av_packet_ref</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="1">
+        <label>AVPacket</label>
+        <link refid="struct_a_v_packet"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buf</edgelabel>
+          <edgelabel>opaque_ref</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" line="565" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/packet.h" bodystart="565" bodyend="633"/>
+    <listofallmembers>
+      <member refid="struct_a_v_packet_1a3bf81872813551fe9343dd0e09993e38" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>buf</name></member>
+      <member refid="struct_a_v_packet_1aaf4fe58dfcc7c232c1f2268b539d8367" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>data</name></member>
+      <member refid="struct_a_v_packet_1a85dbbd306b44b02390cd91c45e6a0f76" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>dts</name></member>
+      <member refid="struct_a_v_packet_1a622e758be29fd500aed0ffdc069550f7" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>duration</name></member>
+      <member refid="struct_a_v_packet_1a437be96a9da675f12caa228a9c81bd82" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>flags</name></member>
+      <member refid="struct_a_v_packet_1a88343ad2cf68bd2e530494507b97cc3a" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>opaque</name></member>
+      <member refid="struct_a_v_packet_1a8e9627cbf54429fe31b093a6d080969b" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>opaque_ref</name></member>
+      <member refid="struct_a_v_packet_1ab5793d8195cf4789dfb3913b7a693903" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>pos</name></member>
+      <member refid="struct_a_v_packet_1a73bde0a37f3b1efc839f11295bfbf42a" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>pts</name></member>
+      <member refid="struct_a_v_packet_1ac55bfef91c33f02704ba76518d0f294c" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>side_data</name></member>
+      <member refid="struct_a_v_packet_1af415e25244b26921e8fc249d45499b84" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>side_data_elems</name></member>
+      <member refid="struct_a_v_packet_1a4d1ea19f63eb107111fd650ca514d1f4" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>size</name></member>
+      <member refid="struct_a_v_packet_1a0d1cb9b5a32b00fb6edc81ea3aae2a49" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>stream_index</name></member>
+      <member refid="struct_a_v_packet_1ad5ee277064c1e883a8883fb8521c7d3e" prot="public" virt="non-virtual"><scope>AVPacket</scope><name>time_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

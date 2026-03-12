@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__bsf" kind="group">
+    <compoundname>lavc_bsf</compoundname>
+    <title>Bitstream filters</title>
+    <innerclass refid="struct_a_v_b_s_f_context" prot="public">AVBSFContext</innerclass>
+    <innerclass refid="struct_a_v_bit_stream_filter" prot="public">AVBitStreamFilter</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__bsf_1ga566dc5ab90f0f1f6b7b2ac7e18069e4f" prot="public" static="no">
+        <type>struct AVBSFContext</type>
+        <definition>typedef struct AVBSFContext AVBSFContext</definition>
+        <argsstring></argsstring>
+        <name>AVBSFContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitstream filter state.</para>
+<para>This struct must be allocated with <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref> and freed with <ref refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kindref="member">av_bsf_free()</ref>.</para>
+<para>The fields in the struct will only be changed (by the caller or by the filter) as described in their documentation, and are to be considered immutable otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="109" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavc__bsf_1ga1556d7c237a38de9fbe0184213e496a5" prot="public" static="no">
+        <type>struct AVBitStreamFilter</type>
+        <definition>typedef struct AVBitStreamFilter AVBitStreamFilter</definition>
+        <argsstring></argsstring>
+        <name>AVBitStreamFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="131" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" prot="public" static="no">
+        <type>struct <ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref></type>
+        <definition>typedef struct AVBSFList AVBSFList</definition>
+        <argsstring></argsstring>
+        <name>AVBSFList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure for chain/list of bitstream filters. Empty list can be allocated by <ref refid="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" kindref="member">av_bsf_list_alloc()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="247" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__bsf_1gaf8f648184b420406a694f1867aaab839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> *</type>
+        <definition>const AVBitStreamFilter * av_bsf_get_by_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_bsf_get_by_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a bitstream filter with the specified name or NULL if no such bitstream filter exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="137" column="25" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="137" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga18b9f1195b8bc559b466dec20a9ab305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> *</type>
+        <definition>const AVBitStreamFilter * av_bsf_iterate</definition>
+        <argsstring>(void **opaque)</argsstring>
+        <name>av_bsf_iterate</name>
+        <param>
+          <type>void **</type>
+          <declname>opaque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all registered bitstream filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer where libavcodec will store the iteration state. Must point to NULL to start the iteration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the next registered bitstream filter or NULL when the iteration is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="148" column="25" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="148" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_alloc</definition>
+        <argsstring>(const AVBitStreamFilter *filter, AVBSFContext **ctx)</argsstring>
+        <name>av_bsf_alloc</name>
+        <param>
+          <type>const <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> *</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> **</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a context for a given bitstream filter. The caller must fill in the context parameters as described in the documentation and then call <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref> before sending any data to the filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the filter for which to allocate an instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer into which the pointer to the newly-allocated context will be written. It must be freed with <ref refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kindref="member">av_bsf_free()</ref> after the filtering is done.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="162" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="162" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_init</definition>
+        <argsstring>(AVBSFContext *ctx)</argsstring>
+        <name>av_bsf_init</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepare the filter for use, after all the parameters and options have been set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> previously allocated with <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="170" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="170" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_send_packet</definition>
+        <argsstring>(AVBSFContext *ctx, AVPacket *pkt)</argsstring>
+        <name>av_bsf_send_packet</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submit a packet for filtering.</para>
+<para>After sending each packet, the filter must be completely drained by calling <ref refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kindref="member">av_bsf_receive_packet()</ref> repeatedly until it returns AVERROR(EAGAIN) or AVERROR_EOF.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an initialized <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the packet to filter. The bitstream filter will take ownership of the packet and reset the contents of pkt. pkt is not touched if an error occurs. If pkt is empty (i.e. NULL, or pkt-&gt;data is NULL and pkt-&gt;side_data_elems zero), it signals the end of the stream (i.e. no more non-empty packets will be sent; sending more empty packets does nothing) and will cause the filter to output any packets it may have buffered internally.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>0 on success.</para>
+</listitem><listitem><para>AVERROR(EAGAIN) if packets need to be retrieved from the filter (using <ref refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kindref="member">av_bsf_receive_packet()</ref>) before new input can be consumed.</para>
+</listitem><listitem><para>Another negative AVERROR value if an error occurs. </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="193" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="193" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_receive_packet</definition>
+        <argsstring>(AVBSFContext *ctx, AVPacket *pkt)</argsstring>
+        <name>av_bsf_receive_packet</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> *</type>
+          <declname>pkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a filtered packet.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an initialized <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pkt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this struct will be filled with the contents of the filtered packet. It is owned by the caller and must be freed using <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref> when it is no longer needed. This parameter should be &quot;clean&quot; (i.e. freshly allocated with <ref refid="group__lavc__packet_1gad56057568fb51504e5b4aafcb44f9a03" kindref="member">av_packet_alloc()</ref> or unreffed with <ref refid="group__lavc__packet_1ga63d5a489b419bd5d45cfd09091cbcbc2" kindref="member">av_packet_unref()</ref>) when this function is called. If this function returns successfully, the contents of pkt will be completely overwritten by the returned data. On failure, pkt is not touched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>0 on success.</para>
+</listitem><listitem><para>AVERROR(EAGAIN) if more packets need to be sent to the filter (using <ref refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kindref="member">av_bsf_send_packet()</ref>) to get more output.</para>
+</listitem><listitem><para>AVERROR_EOF if there will be no further output from the filter.</para>
+</listitem><listitem><para>Another negative AVERROR value if an error occurs.</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="note"><para>one input packet may result in several output packets, so after sending a packet with <ref refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kindref="member">av_bsf_send_packet()</ref>, this function needs to be called repeatedly until it stops returning 0. It is also possible for a filter to output fewer packets than were sent to it, so this function may return AVERROR(EAGAIN) immediately after a successful <ref refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kindref="member">av_bsf_send_packet()</ref> call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="222" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="222" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga6e11d42d27e5525ce6525b0dbc2466e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_bsf_flush</definition>
+        <argsstring>(AVBSFContext *ctx)</argsstring>
+        <name>av_bsf_flush</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the internal bitstream filter state. Should be called e.g. when seeking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="227" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="227" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_bsf_free</definition>
+        <argsstring>(AVBSFContext **ctx)</argsstring>
+        <name>av_bsf_free</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> **</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a bitstream filter context and everything associated with it; write NULL into the supplied pointer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="233" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="233" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga6f1c604acc591df5c723482dd5dbb5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass * av_bsf_get_class</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_bsf_get_class</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref>. It can be used in combination with AV_OPT_SEARCH_FAKE_OBJ for examining options.</para>
+<para><simplesect kind="see"><para><ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="241" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="241" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> *</type>
+        <definition>AVBSFList * av_bsf_list_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_bsf_list_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate empty list of bitstream filters. The list must be later freed by <ref refid="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" kindref="member">av_bsf_list_free()</ref> or finalized by <ref refid="group__lavc__bsf_1gaa4f71b6265b76b23abd418b62ffaff2d" kindref="member">av_bsf_list_finalize()</ref>.</para>
+<para><simplesect kind="return"><para>Pointer to <ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> on success, NULL in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="256" column="11" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="256" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_bsf_list_free</definition>
+        <argsstring>(AVBSFList **lst)</argsstring>
+        <name>av_bsf_list_free</name>
+        <param>
+          <type><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> **</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free list of bitstream filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer returned by <ref refid="group__lavc__bsf_1gac00b290a44a57ecfa144257b82ddbc97" kindref="member">av_bsf_list_alloc()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="263" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="263" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1ga51caad27662682e124796bbff590cab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_list_append</definition>
+        <argsstring>(AVBSFList *lst, AVBSFContext *bsf)</argsstring>
+        <name>av_bsf_list_append</name>
+        <param>
+          <type><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> *</type>
+          <declname>bsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append bitstream filter to the list of bitstream filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bsf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter context to be appended</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, negative AVERROR in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="273" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="273" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gaf9085d5cf405b89e2129dc6b2ef54aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_list_append2</definition>
+        <argsstring>(AVBSFList *lst, const char *bsf_name, AVDictionary **options)</argsstring>
+        <name>av_bsf_list_append2</name>
+        <param>
+          <type><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bsf_name</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct new bitstream filter context given it&apos;s name and options and append it to the list of bitstream filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List to append to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bsf_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the bitstream filter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options for the bitstream filter, can be set to NULL</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, negative AVERROR in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="285" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="285" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gaa4f71b6265b76b23abd418b62ffaff2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_list_finalize</definition>
+        <argsstring>(AVBSFList **lst, AVBSFContext **bsf)</argsstring>
+        <name>av_bsf_list_finalize</name>
+        <param>
+          <type><ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> **</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> **</type>
+          <declname>bsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize list of bitstream filters.</para>
+<para>This function will transform <ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> to single <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref>, so the whole chain of bitstream filters can be treated as single filter freshly allocated by <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref>. If the call is successful, <ref refid="group__lavc__bsf_1gad2163db8f1a7873b51257fde434c8c04" kindref="member">AVBSFList</ref> structure is freed and lst will be set to NULL. In case of failure, caller is responsible for freeing the structure by <ref refid="group__lavc__bsf_1ga0e144e330612e37a23acf056db4ac220" kindref="member">av_bsf_list_free()</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter list structure to be transformed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">bsf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to be set to newly created <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> structure representing the chain of bitstream filters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, negative AVERROR in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="302" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="302" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gacc7bbd4bb41b36893f6ad971fd95f7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_list_parse_str</definition>
+        <argsstring>(const char *str, AVBSFContext **bsf)</argsstring>
+        <name>av_bsf_list_parse_str</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> **</type>
+          <declname>bsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse string describing list of bitstream filters and create single <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> describing the whole chain of bitstream filters. Resulting <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> can be treated as any other <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> freshly allocated by <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String describing chain of bitstream filters in format <computeroutput>bsf1[=opt1=val1:opt2=val2][,bsf2]</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">bsf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to be set to newly created <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> structure representing the chain of bitstream filters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success, negative AVERROR in case of failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="317" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="317" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__bsf_1gad7ef51525e9607c2d12c75f3bcbc1388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_bsf_get_null_filter</definition>
+        <argsstring>(AVBSFContext **bsf)</argsstring>
+        <name>av_bsf_get_null_filter</name>
+        <param>
+          <type><ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> **</type>
+          <declname>bsf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get null/pass-through bitstream filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bsf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to be set to new instance of pass-through bitstream filter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" line="326" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h" declline="326" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Bitstream filters transform encoded media data without decoding it. This allows e.g. manipulating various header values. Bitstream filters operate on <ref refid="struct_a_v_packet" kindref="compound">AVPackets</ref>.</para>
+<para>The bitstream filtering API is centered around two structures: <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> and <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref>. The former represents a bitstream filter in abstract, the latter a specific filtering process. Obtain an <ref refid="struct_a_v_bit_stream_filter" kindref="compound">AVBitStreamFilter</ref> using <ref refid="group__lavc__bsf_1gaf8f648184b420406a694f1867aaab839" kindref="member">av_bsf_get_by_name()</ref> or <ref refid="group__lavc__bsf_1ga18b9f1195b8bc559b466dec20a9ab305" kindref="member">av_bsf_iterate()</ref>, then pass it to <ref refid="group__lavc__bsf_1ga7da65af303e20c9546e15ec266b182c1" kindref="member">av_bsf_alloc()</ref> to create an <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref>. Fill in the user-settable <ref refid="struct_a_v_b_s_f_context" kindref="compound">AVBSFContext</ref> fields, as described in its documentation, then call <ref refid="group__lavc__bsf_1ga242529d54013acf87e94273d298a5ff2" kindref="member">av_bsf_init()</ref> to prepare the filter context for use.</para>
+<para>Submit packets for filtering using <ref refid="group__lavc__bsf_1gaada9ea8f08d3dcf23c14564dbc88992c" kindref="member">av_bsf_send_packet()</ref>, obtain filtered results with <ref refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kindref="member">av_bsf_receive_packet()</ref>. When no more input packets will be sent, submit a NULL <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref> to signal the end of the stream to the filter. <ref refid="group__lavc__bsf_1ga7fffb6c87b91250956e7a2367af56b38" kindref="member">av_bsf_receive_packet()</ref> will then return trailing packets, if any are produced by the filter.</para>
+<para>Finally, free the filter context with <ref refid="group__lavc__bsf_1ga08d53431e76355f88e27763b1940df4f" kindref="member">av_bsf_free()</ref>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

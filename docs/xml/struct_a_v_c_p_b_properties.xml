@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_c_p_b_properties" kind="struct" language="C++" prot="public">
+    <compoundname>AVCPBProperties</compoundname>
+    <includes refid="defs_8h" local="no">defs.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_c_p_b_properties_1a20928ba0a499db68a363d5f29088f106" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVCPBProperties::max_bitrate</definition>
+        <argsstring></argsstring>
+        <name>max_bitrate</name>
+        <qualifiedname>AVCPBProperties::max_bitrate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum bitrate of the stream, in bits per second. Zero if unknown or unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="287" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_c_p_b_properties_1a6cbe488de00be048b989c07eb345e58b" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVCPBProperties::min_bitrate</definition>
+        <argsstring></argsstring>
+        <name>min_bitrate</name>
+        <qualifiedname>AVCPBProperties::min_bitrate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum bitrate of the stream, in bits per second. Zero if unknown or unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="292" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_c_p_b_properties_1a20066fcefdf7e6bfd861d2a976101961" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVCPBProperties::avg_bitrate</definition>
+        <argsstring></argsstring>
+        <name>avg_bitrate</name>
+        <qualifiedname>AVCPBProperties::avg_bitrate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Average bitrate of the stream, in bits per second. Zero if unknown or unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="297" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_c_p_b_properties_1a5ca2317a4e3a9081de274cb580269bbc" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVCPBProperties::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <qualifiedname>AVCPBProperties::buffer_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The size of the buffer to which the ratecontrol is applied, in bits. Zero if unknown or unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="303" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_c_p_b_properties_1a6141d02537b3c72528570f7c577bbd83" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVCPBProperties::vbv_delay</definition>
+        <argsstring></argsstring>
+        <name>vbv_delay</name>
+        <qualifiedname>AVCPBProperties::vbv_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The delay between the time the packet this structure is associated with is received and the time when it should be decoded, in periods of a 27MHz clock.</para>
+<para>UINT64_MAX when unknown or unspecified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="312" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes the bitrate properties of an encoded bitstream. It roughly corresponds to a subset the VBV parameters for MPEG-2 or HRD parameters for H.264/HEVC. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" line="282" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/defs.h" bodystart="282" bodyend="313"/>
+    <listofallmembers>
+      <member refid="struct_a_v_c_p_b_properties_1a20066fcefdf7e6bfd861d2a976101961" prot="public" virt="non-virtual"><scope>AVCPBProperties</scope><name>avg_bitrate</name></member>
+      <member refid="struct_a_v_c_p_b_properties_1a5ca2317a4e3a9081de274cb580269bbc" prot="public" virt="non-virtual"><scope>AVCPBProperties</scope><name>buffer_size</name></member>
+      <member refid="struct_a_v_c_p_b_properties_1a20928ba0a499db68a363d5f29088f106" prot="public" virt="non-virtual"><scope>AVCPBProperties</scope><name>max_bitrate</name></member>
+      <member refid="struct_a_v_c_p_b_properties_1a6cbe488de00be048b989c07eb345e58b" prot="public" virt="non-virtual"><scope>AVCPBProperties</scope><name>min_bitrate</name></member>
+      <member refid="struct_a_v_c_p_b_properties_1a6141d02537b3c72528570f7c577bbd83" prot="public" virt="non-virtual"><scope>AVCPBProperties</scope><name>vbv_delay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

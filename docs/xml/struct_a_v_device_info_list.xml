@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_device_info_list" kind="struct" language="C++" prot="public">
+    <compoundname>AVDeviceInfoList</compoundname>
+    <includes refid="avdevice_8h" local="no">avdevice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_device_info_list_1ae2515bb1fe98693b85adbdf380d76cd8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_device_info" kindref="compound">AVDeviceInfo</ref> **</type>
+        <definition>AVDeviceInfo** AVDeviceInfoList::devices</definition>
+        <argsstring></argsstring>
+        <name>devices</name>
+        <qualifiedname>AVDeviceInfoList::devices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>list of autodetected devices </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="344" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_device_info_list_1a8253ca399209d2cfd83667b78accbe28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDeviceInfoList::nb_devices</definition>
+        <argsstring></argsstring>
+        <name>nb_devices</name>
+        <qualifiedname>AVDeviceInfoList::nb_devices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of autodetected devices </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="345" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_device_info_list_1a88278f6896ae0b13d526c89014dac77b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDeviceInfoList::default_device</definition>
+        <argsstring></argsstring>
+        <name>default_device</name>
+        <qualifiedname>AVDeviceInfoList::default_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index of default device or -1 if no default </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="346" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>List of devices. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVDeviceInfo</label>
+        <link refid="struct_a_v_device_info"/>
+      </node>
+      <node id="1">
+        <label>AVDeviceInfoList</label>
+        <link refid="struct_a_v_device_info_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>devices</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" line="343" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h" bodystart="343" bodyend="347"/>
+    <listofallmembers>
+      <member refid="struct_a_v_device_info_list_1a88278f6896ae0b13d526c89014dac77b" prot="public" virt="non-virtual"><scope>AVDeviceInfoList</scope><name>default_device</name></member>
+      <member refid="struct_a_v_device_info_list_1ae2515bb1fe98693b85adbdf380d76cd8" prot="public" virt="non-virtual"><scope>AVDeviceInfoList</scope><name>devices</name></member>
+      <member refid="struct_a_v_device_info_list_1a8253ca399209d2cfd83667b78accbe28" prot="public" virt="non-virtual"><scope>AVDeviceInfoList</scope><name>nb_devices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_open_c_l_frame_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVOpenCLFrameDescriptor</compoundname>
+    <includes refid="hwcontext__opencl_8h" local="no">hwcontext_opencl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_open_c_l_frame_descriptor_1ab843835f9d9dd3615f9f27fcd43c0fdd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVOpenCLFrameDescriptor::nb_planes</definition>
+        <argsstring></argsstring>
+        <name>nb_planes</name>
+        <qualifiedname>AVOpenCLFrameDescriptor::nb_planes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of planes in the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="51" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_open_c_l_frame_descriptor_1a3680b586bc36c1617c2b7fa78d6948b0" prot="public" static="no" mutable="no">
+        <type>cl_mem</type>
+        <definition>cl_mem AVOpenCLFrameDescriptor::planes[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>planes</name>
+        <qualifiedname>AVOpenCLFrameDescriptor::planes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OpenCL image2d objects for each plane of the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="55" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>OpenCL frame descriptor for pool allocation.</para>
+<para>In user-allocated pools, <ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref> must return AVBufferRefs with the data pointer pointing at an object of this type describing the planes of the frame. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" line="47" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h" bodystart="47" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_a_v_open_c_l_frame_descriptor_1ab843835f9d9dd3615f9f27fcd43c0fdd" prot="public" virt="non-virtual"><scope>AVOpenCLFrameDescriptor</scope><name>nb_planes</name></member>
+      <member refid="struct_a_v_open_c_l_frame_descriptor_1a3680b586bc36c1617c2b7fa78d6948b0" prot="public" virt="non-virtual"><scope>AVOpenCLFrameDescriptor</scope><name>planes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

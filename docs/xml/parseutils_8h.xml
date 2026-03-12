@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="parseutils_8h" kind="file" language="C++">
+    <compoundname>parseutils.h</compoundname>
+    <includes refid="time_8h" local="no">time.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h</label>
+        <link refid="parseutils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>time.h</label>
+        <link refid="time_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="parseutils_8h_1a8ac8244d56fd4eeb9557038f80d60560" prot="public" static="no">
+        <name>av_parse_ratio_quiet</name>
+        <param><defname>rate</defname></param>
+        <param><defname>str</defname></param>
+        <param><defname>max</defname></param>
+        <initializer>    <ref refid="parseutils_8h_1a8535b8693aa5a188cfb1356133c0e94e" kindref="member">av_parse_ratio</ref>(rate, str, max, AV_LOG_MAX_OFFSET, NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="52" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" bodystart="52" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="parseutils_8h_1a8535b8693aa5a188cfb1356133c0e94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_ratio</definition>
+        <argsstring>(AVRational *q, const char *str, int max, int log_offset, void *log_ctx)</argsstring>
+        <name>av_parse_ratio</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>log_offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse str and store the parsed ratio in q.</para>
+<para>Note that a ratio with infinite (1/0) or negative value is considered valid, so you should check on the returned value if you want to exclude those values.</para>
+<para>The undefined value can be expressed using the &quot;0:0&quot; string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> which will contain the ratio </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse: it has to be a string in the format num:den, a float number or an expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum allowed numerator and denominator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>log level offset which is applied to the log level of log_ctx </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parent logging context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="49" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="49" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1a4dcdb8a2792f2074ca4a1e1f4ddce2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_video_size</definition>
+        <argsstring>(int *width_ptr, int *height_ptr, const char *str)</argsstring>
+        <name>av_parse_video_size</name>
+        <param>
+          <type>int *</type>
+          <declname>width_ptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>height_ptr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse str and put in width_ptr and height_ptr the detected values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">width_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the variable which will contain the detected width value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">height_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the variable which will contain the detected height value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse: it has to be a string in the format width x height or a valid video size abbreviation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="66" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="66" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1abbc4de8c071538f5bbde8e5b7466b676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_video_rate</definition>
+        <argsstring>(AVRational *rate, const char *str)</argsstring>
+        <name>av_parse_video_rate</name>
+        <param>
+          <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse str and store the detected values in *rate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> which will contain the detected frame rate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse: it has to be a string in the format rate_num / rate_den, a float number or a valid video rate abbreviation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, a negative error code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="77" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="77" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1a4be8779c7c2afd9c57c8b962bea76d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_color</definition>
+        <argsstring>(uint8_t *rgba_color, const char *color_string, int slen, void *log_ctx)</argsstring>
+        <name>av_parse_color</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rgba_color</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>color_string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slen</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>log_ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Put the RGBA values that correspond to color_string in rgba_color.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgba_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-elements array of uint8_t values, where the respective red, green, blue and alpha component values are written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string specifying a color. It can be the name of a color (case insensitive match) or a [0x|#]RRGGBB[AA] sequence, possibly followed by &quot;@&quot; and a string representing the alpha component. The alpha component may be a string composed by &quot;0x&quot; followed by an hexadecimal number or a decimal number between 0.0 and 1.0, which represents the opacity value (0x00/0.0 means completely transparent, 0xff/1.0 completely opaque). If the alpha component is not specified then 0xff is assumed. The string &quot;random&quot; will result in a random color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the initial part of color_string containing the color. It can be set to -1 if color_string is a null terminated string containing nothing else than the color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an arbitrary struct of which the first field is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> struct (used for <ref refid="group__lavu__log_1gabd386ffd4b27637cf34e98d5d1a6e8ae" kindref="member">av_log()</ref>). Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative value in case of failure (for example if color_string cannot be parsed). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="102" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="102" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1a6d8cfb62989c8dc657954b33214f599d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_get_known_color_name</definition>
+        <argsstring>(int color_idx, const uint8_t **rgb)</argsstring>
+        <name>av_get_known_color_name</name>
+        <param>
+          <type>int</type>
+          <declname>color_idx</declname>
+        </param>
+        <param>
+          <type>const uint8_t **</type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a color from the internal table of hard-coded named colors.</para>
+<para>This function is meant to enumerate the color names recognized by <ref refid="parseutils_8h_1a4be8779c7c2afd9c57c8b962bea76d03" kindref="member">av_parse_color()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the requested color, starting from 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rgb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not NULL, will point to a 3-elements array with the color value in RGB </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color name string or NULL if color_idx is not in the array </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="116" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="116" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1a98590feafe82e074f61f38c8faaa4cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_parse_time</definition>
+        <argsstring>(int64_t *timeval, const char *timestr, int duration)</argsstring>
+        <name>av_parse_time</name>
+        <param>
+          <type>int64_t *</type>
+          <declname>timeval</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>timestr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse timestr and return in *time a corresponding number of microseconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>puts here the number of microseconds corresponding to the string in timestr. If the string represents a duration, it is the number of microseconds contained in the time interval. If the string is a date, is the number of microseconds since 1st of January, 1970 up to the time of the parsed date. If timestr cannot be successfully parsed, set *time to INT64_MIN.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string representing a date or a duration.<itemizedlist>
+<listitem><para>If a date the syntax is: <programlisting><codeline><highlight class="normal">[{YYYY-MM-DD|YYYYMMDD}[T|t|<sp/>]]{{HH:MM:SS[.m...]]]}|{HHMMSS[.m...]]]}}[Z]</highlight></codeline>
+<codeline><highlight class="normal">now</highlight></codeline>
+</programlisting> If the value is &quot;now&quot; it takes the current time. Time is local time unless Z is appended, in which case it is interpreted as UTC. If the year-month-day part is not specified it takes the current year-month-day.</para>
+</listitem><listitem><para>If a duration the syntax is: <programlisting><codeline><highlight class="normal">[-][HH:]MM:SS[.m...]</highlight></codeline>
+<codeline><highlight class="normal">[-]S+[.m...]</highlight></codeline>
+</programlisting> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag which tells how to interpret timestr, if not zero timestr is interpreted as a duration, otherwise as a date </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 in case of success, a negative value corresponding to an AVERROR code otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="150" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="150" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1ad97f06e907c14c253c2bf3e775f51ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_find_info_tag</definition>
+        <argsstring>(char *arg, int arg_size, const char *tag1, const char *info)</argsstring>
+        <name>av_find_info_tag</name>
+        <param>
+          <type>char *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arg_size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tag1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempt to find a specific tag in a URL.</para>
+<para>syntax: &apos;?tag1=val1&amp;tag2=val2...&apos;. Little URL decoding is done. Return 1 if found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="158" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="158" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1aa9fc9ede1311e05ea453a1de0ec4dafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * av_small_strptime</definition>
+        <argsstring>(const char *p, const char *fmt, struct tm *dt)</argsstring>
+        <name>av_small_strptime</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>struct tm *</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simplified version of strptime</para>
+<para>Parse the input string p according to the format string fmt and store its results in the structure dt. This implementation supports only a subset of the formats supported by the standard strptime().</para>
+<para>The supported input field descriptors are listed below.<itemizedlist>
+<listitem><para><computeroutput>%H</computeroutput>: the hour as a decimal number, using a 24-hour clock, in the range &apos;00&apos; through &apos;23&apos;</para>
+</listitem><listitem><para><computeroutput>%J</computeroutput>: hours as a decimal number, in the range &apos;0&apos; through INT_MAX</para>
+</listitem><listitem><para><computeroutput>%M</computeroutput>: the minute as a decimal number, using a 24-hour clock, in the range &apos;00&apos; through &apos;59&apos;</para>
+</listitem><listitem><para><computeroutput>%S</computeroutput>: the second as a decimal number, using a 24-hour clock, in the range &apos;00&apos; through &apos;59&apos;</para>
+</listitem><listitem><para><computeroutput>%Y</computeroutput>: the year as a decimal number, using the Gregorian calendar</para>
+</listitem><listitem><para><computeroutput>%m</computeroutput>: the month as a decimal number, in the range &apos;1&apos; through &apos;12&apos;</para>
+</listitem><listitem><para><computeroutput>%d</computeroutput>: the day of the month as a decimal number, in the range &apos;1&apos; through &apos;31&apos;</para>
+</listitem><listitem><para><computeroutput>%T</computeroutput>: alias for <computeroutput>%H:%M:%S</computeroutput></para>
+</listitem><listitem><para><computeroutput>%%</computeroutput>: a literal <computeroutput>%</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="return"><para>a pointer to the first character not processed in this function call. In case the input string contains more characters than required by the format string the return value points right after the last consumed input character. In case the whole input string is consumed the return value points to the null byte at the end of the string. On failure NULL is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="190" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="190" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="parseutils_8h_1ae9bf34b50b9762f3c733721d5210b52d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>time_t</type>
+        <definition>time_t av_timegm</definition>
+        <argsstring>(struct tm *tm)</argsstring>
+        <name>av_timegm</name>
+        <param>
+          <type>struct tm *</type>
+          <declname>tm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert the decomposed UTC time in tm to a time_t value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" line="195" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h" declline="195" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>misc parsing utilities </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_PARSEUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_PARSEUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="parseutils_8h_1a8535b8693aa5a188cfb1356133c0e94e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1a8535b8693aa5a188cfb1356133c0e94e" kindref="member">av_parse_ratio</ref>(<ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>*q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>log_offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>av_parse_ratio_quiet(rate,<sp/>str,<sp/>max)<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>av_parse_ratio(rate,<sp/>str,<sp/>max,<sp/>AV_LOG_MAX_OFFSET,<sp/>NULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="parseutils_8h_1a4dcdb8a2792f2074ca4a1e1f4ddce2bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1a4dcdb8a2792f2074ca4a1e1f4ddce2bf" kindref="member">av_parse_video_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*width_ptr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*height_ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="parseutils_8h_1abbc4de8c071538f5bbde8e5b7466b676" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1abbc4de8c071538f5bbde8e5b7466b676" kindref="member">av_parse_video_rate</ref>(<ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>*rate,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="parseutils_8h_1a4be8779c7c2afd9c57c8b962bea76d03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1a4be8779c7c2afd9c57c8b962bea76d03" kindref="member">av_parse_color</ref>(uint8_t<sp/>*rgba_color,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*color_string,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slen,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*log_ctx);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="parseutils_8h_1a6d8cfb62989c8dc657954b33214f599d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="parseutils_8h_1a6d8cfb62989c8dc657954b33214f599d" kindref="member">av_get_known_color_name</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color_idx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>**rgb);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="parseutils_8h_1a98590feafe82e074f61f38c8faaa4cef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1a98590feafe82e074f61f38c8faaa4cef" kindref="member">av_parse_time</ref>(int64_t<sp/>*timeval,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*timestr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="parseutils_8h_1ad97f06e907c14c253c2bf3e775f51ccb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="parseutils_8h_1ad97f06e907c14c253c2bf3e775f51ccb" kindref="member">av_find_info_tag</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arg_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tag1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*info);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="parseutils_8h_1aa9fc9ede1311e05ea453a1de0ec4dafd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="parseutils_8h_1aa9fc9ede1311e05ea453a1de0ec4dafd" kindref="member">av_small_strptime</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*dt);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="parseutils_8h_1ae9bf34b50b9762f3c733721d5210b52d" refkind="member"><highlight class="normal">time_t<sp/><ref refid="parseutils_8h_1ae9bf34b50b9762f3c733721d5210b52d" kindref="member">av_timegm</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*tm);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_PARSEUTILS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/parseutils.h"/>
+  </compounddef>
+</doxygen>

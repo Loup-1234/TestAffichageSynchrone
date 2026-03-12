@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_frame_side_data" kind="struct" language="C++" prot="public">
+    <compoundname>AVFrameSideData</compoundname>
+    <includes refid="frame_8h" local="no">frame.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_frame_side_data_1a07ff3499827c124591ff4bae6f68eec0" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+        <definition>enum AVFrameSideDataType AVFrameSideData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVFrameSideData::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="283" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_frame_side_data_1a76937ad48652a5a0cc4bff65fc6c886e" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* AVFrameSideData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>AVFrameSideData::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="284" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_frame_side_data_1a49e27d19a2cf9591457526a94b7e6c2a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVFrameSideData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVFrameSideData::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="285" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_frame_side_data_1a1b5aa30410c54c8aebefa1a791616e9f" prot="public" static="no" mutable="no">
+        <type>AVDictionary *</type>
+        <definition>AVDictionary* AVFrameSideData::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>AVFrameSideData::metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="286" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_frame_side_data_1a8760a02e39e6fc1467f32c6b66ccf368" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVFrameSideData::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>AVFrameSideData::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="287" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure to hold side data for an <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref>.</para>
+<para>sizeof(AVFrameSideData) is not a part of the public ABI, so new fields may be added to the end with a minor bump. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="1">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="282" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="282" bodyend="288"/>
+    <listofallmembers>
+      <member refid="struct_a_v_frame_side_data_1a8760a02e39e6fc1467f32c6b66ccf368" prot="public" virt="non-virtual"><scope>AVFrameSideData</scope><name>buf</name></member>
+      <member refid="struct_a_v_frame_side_data_1a76937ad48652a5a0cc4bff65fc6c886e" prot="public" virt="non-virtual"><scope>AVFrameSideData</scope><name>data</name></member>
+      <member refid="struct_a_v_frame_side_data_1a1b5aa30410c54c8aebefa1a791616e9f" prot="public" virt="non-virtual"><scope>AVFrameSideData</scope><name>metadata</name></member>
+      <member refid="struct_a_v_frame_side_data_1a49e27d19a2cf9591457526a94b7e6c2a" prot="public" virt="non-virtual"><scope>AVFrameSideData</scope><name>size</name></member>
+      <member refid="struct_a_v_frame_side_data_1a07ff3499827c124591ff4bae6f68eec0" prot="public" virt="non-virtual"><scope>AVFrameSideData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

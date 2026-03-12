@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_spherical_mapping" kind="struct" language="C++" prot="public">
+    <compoundname>AVSphericalMapping</compoundname>
+    <includes refid="spherical_8h" local="no">spherical.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Initial orientation</header>
+      <description><para>There fields describe additional rotations applied to the sphere after the video frame is mapped onto it. The sphere is rotated around the viewer, who remains stationary. The order of transformation is always yaw, followed by pitch, and finally by roll.</para>
+<para>The coordinate system matches the one defined in OpenGL, where the forward vector (z) is coming out of screen, and it is equivalent to a rotation matrix of R = r_y(yaw) * r_x(pitch) * r_z(roll).</para>
+<para>A positive yaw rotates the portion of the sphere in front of the viewer toward their right. A positive pitch rotates the portion of the sphere in front of the viewer upwards. A positive roll tilts the portion of the sphere in front of the viewer to the viewer&apos;s right.</para>
+<para>These values are exported as 16.16 fixed point.</para>
+<para>See this equirectangular projection as example:</para>
+<para><programlisting filename=".unparsed"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Yaw</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-180<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>180</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>90<sp/>+-------------+-------------+<sp/><sp/>180</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>up</highlight></codeline>
+<codeline><highlight class="normal">P<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y|<sp/><sp/><sp/><sp/>forward</highlight></codeline>
+<codeline><highlight class="normal">i<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>^<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>/z</highlight></codeline>
+<codeline><highlight class="normal">t<sp/><sp/>0<sp/>+-------------X-------------+<sp/><sp/><sp/><sp/>0<sp/>Roll<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal">c<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>/</highlight></codeline>
+<codeline><highlight class="normal">h<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0|/_____right</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-90<sp/>+-------------+-------------+<sp/>-180</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">X<sp/>-<sp/>the<sp/>default<sp/>camera<sp/>center</highlight></codeline>
+<codeline><highlight class="normal">^<sp/>-<sp/>the<sp/>default<sp/>up<sp/>vector</highlight></codeline>
+</programlisting> </para>
+</description>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1ad7d7c61a2550cc4284076cc846873702" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVSphericalMapping::yaw</definition>
+        <argsstring></argsstring>
+        <name>yaw</name>
+        <qualifiedname>AVSphericalMapping::yaw</qualifiedname>
+        <briefdescription>
+<para>Rotation around the up vector [-180, 180]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="144" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a84dfa298ac2ddf98665781507182a979" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVSphericalMapping::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <qualifiedname>AVSphericalMapping::pitch</qualifiedname>
+        <briefdescription>
+<para>Rotation around the right vector [-90, 90]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="145" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1aaad422230e2b0f0ebfb981275e22ffb0" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVSphericalMapping::roll</definition>
+        <argsstring></argsstring>
+        <name>roll</name>
+        <qualifiedname>AVSphericalMapping::roll</qualifiedname>
+        <briefdescription>
+<para>Rotation around the forward vector [-180, 180]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="146" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Bounding rectangle</header>
+      <description><para><anchor id="struct_a_v_spherical_mapping_1bounding"/> These fields indicate the location of the current tile, and where it should be mapped relative to the original surface. They are exported as 0.32 fixed point, and can be converted to classic pixel values with av_spherical_bounds().</para>
+<para><programlisting filename=".unparsed"><codeline><highlight class="normal">+----------------+----------+</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|bound_top<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+--------+<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>bound_left<sp/>|tile<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">+&lt;----------&gt;|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|&lt;---&gt;+bound_right</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+--------+<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/>bound_bottom|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">+----------------+----------+</highlight></codeline>
+</programlisting></para>
+<para>If needed, the original video surface dimensions can be derived by adding the current stream or frame size to the related bounds, like in the following example:</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">original_width<sp/><sp/>=<sp/>tile-&gt;width<sp/><sp/>+<sp/><ref refid="struct_a_v_spherical_mapping_1a5168f1a737916aae56f0cf41d71937f7" kindref="member">bound_left</ref><sp/>+<sp/><ref refid="struct_a_v_spherical_mapping_1a6cbcda5b8d0118e50e4a1b574919af50" kindref="member">bound_right</ref>;</highlight></codeline>
+<codeline><highlight class="normal">original_height<sp/>=<sp/>tile-&gt;height<sp/>+<sp/><ref refid="struct_a_v_spherical_mapping_1a5f82d37755e0d54559c254b7bdefffbe" kindref="member">bound_top</ref><sp/><sp/>+<sp/><ref refid="struct_a_v_spherical_mapping_1a670ae033266fb97133204baa6609955f" kindref="member">bound_bottom</ref>;</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="note"><para>These values are valid only for the tiled equirectangular projection type (<ref refid="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08a768257247d4090b959ee1678f67bc9d3" kindref="member">AV_SPHERICAL_EQUIRECTANGULAR_TILE</ref>), and should be ignored in all other cases. </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a5168f1a737916aae56f0cf41d71937f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVSphericalMapping::bound_left</definition>
+        <argsstring></argsstring>
+        <name>bound_left</name>
+        <qualifiedname>AVSphericalMapping::bound_left</qualifiedname>
+        <briefdescription>
+<para>Distance from the left edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="185" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a5f82d37755e0d54559c254b7bdefffbe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVSphericalMapping::bound_top</definition>
+        <argsstring></argsstring>
+        <name>bound_top</name>
+        <qualifiedname>AVSphericalMapping::bound_top</qualifiedname>
+        <briefdescription>
+<para>Distance from the top edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="186" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a6cbcda5b8d0118e50e4a1b574919af50" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVSphericalMapping::bound_right</definition>
+        <argsstring></argsstring>
+        <name>bound_right</name>
+        <qualifiedname>AVSphericalMapping::bound_right</qualifiedname>
+        <briefdescription>
+<para>Distance from the right edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="187" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a670ae033266fb97133204baa6609955f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVSphericalMapping::bound_bottom</definition>
+        <argsstring></argsstring>
+        <name>bound_bottom</name>
+        <qualifiedname>AVSphericalMapping::bound_bottom</qualifiedname>
+        <briefdescription>
+<para>Distance from the bottom edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="188" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1a5576008bdc224db049b1795b3c95fe16" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__video__spherical_1ga689eeb8cf9b453f3619f3cf626e03a08" kindref="member">AVSphericalProjection</ref></type>
+        <definition>enum AVSphericalProjection AVSphericalMapping::projection</definition>
+        <argsstring></argsstring>
+        <name>projection</name>
+        <qualifiedname>AVSphericalMapping::projection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Projection type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="104" column="31" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_spherical_mapping_1adeea248f32ff9ec9cd8de310f3d00108" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVSphericalMapping::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <qualifiedname>AVSphericalMapping::padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of pixels to pad from the edge of each cube face.</para>
+<para><simplesect kind="note"><para>This value is valid for only for the cubemap projection type (<ref refid="group__lavu__video__spherical_1gga689eeb8cf9b453f3619f3cf626e03a08aa0a8bc866354ecb619493db502c4d103" kindref="member">AV_SPHERICAL_CUBEMAP</ref>), and should be ignored in all other cases. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="200" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes how to handle spherical videos, outlining information about projection, initial layout, and any other view modifier.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="group__lavu__video__spherical_1ga2c987049465600d3a50e760fdaee9c60" kindref="member">av_spherical_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" line="100" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/spherical.h" bodystart="100" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct_a_v_spherical_mapping_1a670ae033266fb97133204baa6609955f" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>bound_bottom</name></member>
+      <member refid="struct_a_v_spherical_mapping_1a5168f1a737916aae56f0cf41d71937f7" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>bound_left</name></member>
+      <member refid="struct_a_v_spherical_mapping_1a6cbcda5b8d0118e50e4a1b574919af50" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>bound_right</name></member>
+      <member refid="struct_a_v_spherical_mapping_1a5f82d37755e0d54559c254b7bdefffbe" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>bound_top</name></member>
+      <member refid="struct_a_v_spherical_mapping_1adeea248f32ff9ec9cd8de310f3d00108" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>padding</name></member>
+      <member refid="struct_a_v_spherical_mapping_1a84dfa298ac2ddf98665781507182a979" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>pitch</name></member>
+      <member refid="struct_a_v_spherical_mapping_1a5576008bdc224db049b1795b3c95fe16" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>projection</name></member>
+      <member refid="struct_a_v_spherical_mapping_1aaad422230e2b0f0ebfb981275e22ffb0" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>roll</name></member>
+      <member refid="struct_a_v_spherical_mapping_1ad7d7c61a2550cc4284076cc846873702" prot="public" virt="non-virtual"><scope>AVSphericalMapping</scope><name>yaw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

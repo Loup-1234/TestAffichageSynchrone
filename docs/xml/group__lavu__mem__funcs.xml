@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__mem__funcs" kind="group">
+    <compoundname>lavu_mem_funcs</compoundname>
+    <title>Heap Management</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__lavu__mem__funcs_1ga34e10fdac079a9ca4512b8ccd7f20b8a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t size_t size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="143" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__lavu__mem__funcs_1ga79fd723df92f68cf8a6207a1d98b4c01" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t nmemb</definition>
+        <argsstring></argsstring>
+        <name>nmemb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="239" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_malloc</definition>
+        <argsstring>(size_t size) av_malloc_attrib av_alloc_size(1)</argsstring>
+        <name>av_malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a memory block with alignment suitable for all memory accesses (including vectors if available on the CPU).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes for the memory block to be allocated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the allocated block, or <computeroutput>NULL</computeroutput> if the block cannot be allocated </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga3dc1cbd0f18fd550b0bfaad4bc5b6d01" kindref="member">av_mallocz()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="119" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="119" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga3dc1cbd0f18fd550b0bfaad4bc5b6d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_mallocz</definition>
+        <argsstring>(size_t size) av_malloc_attrib av_alloc_size(1)</argsstring>
+        <name>av_mallocz</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a memory block with alignment suitable for all memory accesses (including vectors if available on the CPU) and zero all the bytes of the block.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes for the memory block to be allocated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the allocated block, or <computeroutput>NULL</computeroutput> if it cannot be allocated </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="130" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="130" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga6531cf9cce83adf3ebf0495c8adc92b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>av_alloc_size</definition>
+        <argsstring>(1, 2) void *av_malloc_array(size_t nmemb</argsstring>
+        <name>av_alloc_size</name>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a memory block for an array with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>.</para>
+<para>The allocated memory will have size <computeroutput>size * nmemb</computeroutput> bytes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nmemb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of a single element </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the allocated block, or <computeroutput>NULL</computeroutput> if the block cannot be allocated </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga2e873ea779437ba16f74c8f69d69fb46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_calloc</definition>
+        <argsstring>(size_t nmemb, size_t size) av_malloc_attrib av_alloc_size(1</argsstring>
+        <name>av_calloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>nmemb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a memory block for an array with <ref refid="group__lavu__mem__funcs_1ga3dc1cbd0f18fd550b0bfaad4bc5b6d01" kindref="member">av_mallocz()</ref>.</para>
+<para>The allocated memory will have size <computeroutput>size * nmemb</computeroutput> bytes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nmemb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the single element </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the allocated block, or <computeroutput>NULL</computeroutput> if the block cannot be allocated</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga3dc1cbd0f18fd550b0bfaad4bc5b6d01" kindref="member">av_mallocz()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>av_malloc_array() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="158" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void void *</type>
+        <definition>void void * av_realloc</definition>
+        <argsstring>(void *ptr, size_t size) av_alloc_size(2)</argsstring>
+        <name>av_realloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate, reallocate, or free a block of memory.</para>
+<para>If <computeroutput>ptr</computeroutput> is <computeroutput>NULL</computeroutput> and <computeroutput>size</computeroutput> &gt; 0, allocate a new block. Otherwise, expand or shrink that block of memory according to <computeroutput>size</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a memory block already allocated with <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> or <computeroutput>NULL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes of the memory block to be allocated or reallocated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a newly-reallocated block or <computeroutput>NULL</computeroutput> if the block cannot be reallocated</para>
+</simplesect>
+<simplesect kind="warning"><para>Unlike <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, the returned pointer is not guaranteed to be correctly aligned. The returned pointer must be freed after even if size is zero. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga0e8e75b89c5fa2966b8fbffbdb6ec774" kindref="member">av_fast_realloc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga9665abf3720f9f460790c2c3b224c052" kindref="member">av_reallocp()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="180" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="180" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga9665abf3720f9f460790c2c3b224c052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int av_reallocp</definition>
+        <argsstring>(void *ptr, size_t size)</argsstring>
+        <name>av_reallocp</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate, reallocate, or free a block of memory through a pointer to a pointer.</para>
+<para>If <computeroutput>*ptr</computeroutput> is <computeroutput>NULL</computeroutput> and <computeroutput>size</computeroutput> &gt; 0, allocate a new block. If <computeroutput>size</computeroutput> is zero, free the memory block pointed to by <computeroutput>*ptr</computeroutput>. Otherwise, expand or shrink that block of memory according to <computeroutput>size</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer to a memory block already allocated with <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref>, or a pointer to <computeroutput>NULL</computeroutput>. The pointer is updated on success, or freed on failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes for the memory block to be allocated or reallocated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success, an AVERROR error code on failure</para>
+</simplesect>
+<simplesect kind="warning"><para>Unlike <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, the allocated memory is not guaranteed to be correctly aligned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="202" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="202" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga5af878050b68d10ad3c1ef2050eae000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_realloc_f</definition>
+        <argsstring>(void *ptr, size_t nelem, size_t elsize)</argsstring>
+        <name>av_realloc_f</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nelem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>elsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate, reallocate, or free a block of memory.</para>
+<para>This function does the same thing as <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref>, except:<itemizedlist>
+<listitem><para>It takes two size arguments and allocates <computeroutput>nelem * elsize</computeroutput> bytes, after checking the result of the multiplication for integer overflow.</para>
+</listitem><listitem><para>It frees the input block in case of failure, thus avoiding the memory leak with the classic <programlisting filename=".c"><codeline><highlight class="normal">buf<sp/>=<sp/>realloc(buf);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buf)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+</programlisting> pattern. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="219" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="219" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1gaf3f08c4449fbe1ad6489ad59c625ac9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>av_alloc_size</definition>
+        <argsstring>(2, 3) void *av_realloc_array(void *ptr</argsstring>
+        <name>av_alloc_size</name>
+        <param>
+          <type>2</type>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate, reallocate, or free an array.</para>
+<para>If <computeroutput>ptr</computeroutput> is <computeroutput>NULL</computeroutput> and <computeroutput>nmemb</computeroutput> &gt; 0, allocate a new block.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a memory block already allocated with <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> or <computeroutput>NULL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmemb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the single element of the array</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a newly-reallocated block or NULL if the block cannot be reallocated</para>
+</simplesect>
+<simplesect kind="warning"><para>Unlike <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, the allocated memory is not guaranteed to be correctly aligned. The returned pointer must be freed after even if nmemb is zero. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1gad8fde0c159ac905909339e082a049cde" kindref="member">av_reallocp_array()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1gad8fde0c159ac905909339e082a049cde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_reallocp_array</definition>
+        <argsstring>(void *ptr, size_t nmemb, size_t size)</argsstring>
+        <name>av_reallocp_array</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nmemb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate, reallocate an array through a pointer to a pointer.</para>
+<para>If <computeroutput>*ptr</computeroutput> is <computeroutput>NULL</computeroutput> and <computeroutput>nmemb</computeroutput> &gt; 0, allocate a new block.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a pointer to a memory block already allocated with <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref>, or a pointer to <computeroutput>NULL</computeroutput>. The pointer is updated on success, or freed on failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nmemb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the single element</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success, an AVERROR error code on failure</para>
+</simplesect>
+<simplesect kind="warning"><para>Unlike <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>, the allocated memory is not guaranteed to be correctly aligned. *ptr must be freed after even if nmemb is zero. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="257" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="257" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga0e8e75b89c5fa2966b8fbffbdb6ec774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_fast_realloc</definition>
+        <argsstring>(void *ptr, unsigned int *size, size_t min_size)</argsstring>
+        <name>av_fast_realloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocate the given buffer if it is not large enough, otherwise do nothing.</para>
+<para>If the given buffer is <computeroutput>NULL</computeroutput>, then a new uninitialized buffer is allocated.</para>
+<para>If the given buffer is not large enough, and reallocation fails, <computeroutput>NULL</computeroutput> is returned and <computeroutput>*size</computeroutput> is set to 0, but the original buffer is not changed or freed.</para>
+<para>A typical use pattern follows:</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">uint8_t<sp/>*buf<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>*new_buf<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1ga0e8e75b89c5fa2966b8fbffbdb6ec774" kindref="member">av_fast_realloc</ref>(buf,<sp/>&amp;current_size,<sp/>size_needed);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!new_buf)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocation<sp/>failed;<sp/>clean<sp/>up<sp/>original<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep</ref>(&amp;buf);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Already allocated buffer, or <computeroutput>NULL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the size of buffer <computeroutput>ptr</computeroutput>. <computeroutput>*size</computeroutput> is updated to the new allocated size, in particular 0 in case of failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired minimal size of buffer <computeroutput>ptr</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>ptr</computeroutput> if the buffer is large enough, a pointer to newly reallocated buffer if the buffer was not large enough, or <computeroutput>NULL</computeroutput> in case of error </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga29d0252b981f157e713a68ffca52f003" kindref="member">av_fast_malloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="291" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="291" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga29d0252b981f157e713a68ffca52f003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fast_malloc</definition>
+        <argsstring>(void *ptr, unsigned int *size, size_t min_size)</argsstring>
+        <name>av_fast_malloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a buffer, reusing the given one if large enough.</para>
+<para>Contrary to <ref refid="group__lavu__mem__funcs_1ga0e8e75b89c5fa2966b8fbffbdb6ec774" kindref="member">av_fast_realloc()</ref>, the current buffer contents might not be preserved and on error the old buffer is freed, thus no special handling to avoid memleaks is necessary.</para>
+<para><computeroutput>*ptr</computeroutput> is allowed to be <computeroutput>NULL</computeroutput>, in which case allocation always happens if <computeroutput>size_needed</computeroutput> is greater than 0.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">uint8_t<sp/>*buf<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__funcs_1ga29d0252b981f157e713a68ffca52f003" kindref="member">av_fast_malloc</ref>(&amp;buf,<sp/>&amp;current_size,<sp/>size_needed);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buf)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocation<sp/>failed;<sp/>buf<sp/>already<sp/>freed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to an already allocated buffer. <computeroutput>*ptr</computeroutput> will be overwritten with pointer to new buffer on success or <computeroutput>NULL</computeroutput> on failure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the size of buffer <computeroutput>*ptr</computeroutput>. <computeroutput>*size</computeroutput> is updated to the new allocated size, in particular 0 in case of failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired minimal size of buffer <computeroutput>*ptr</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga0bfda4adf7f9e943f9eb1a08eeda3791" kindref="member">av_fast_mallocz()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="322" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="322" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga0bfda4adf7f9e943f9eb1a08eeda3791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_fast_mallocz</definition>
+        <argsstring>(void *ptr, unsigned int *size, size_t min_size)</argsstring>
+        <name>av_fast_mallocz</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate and clear a buffer, reusing the given one if large enough.</para>
+<para>Like <ref refid="group__lavu__mem__funcs_1ga29d0252b981f157e713a68ffca52f003" kindref="member">av_fast_malloc()</ref>, but all newly allocated space is initially cleared. Reused buffer is not cleared.</para>
+<para><computeroutput>*ptr</computeroutput> is allowed to be <computeroutput>NULL</computeroutput>, in which case allocation always happens if <computeroutput>size_needed</computeroutput> is greater than 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to an already allocated buffer. <computeroutput>*ptr</computeroutput> will be overwritten with pointer to new buffer on success or <computeroutput>NULL</computeroutput> on failure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the size of buffer <computeroutput>*ptr</computeroutput>. <computeroutput>*size</computeroutput> is updated to the new allocated size, in particular 0 in case of failure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired minimal size of buffer <computeroutput>*ptr</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga29d0252b981f157e713a68ffca52f003" kindref="member">av_fast_malloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="342" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="342" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>av_free</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a memory block which has been allocated with a function of <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> or <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> family.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the memory block which should be freed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><computeroutput>ptr = NULL</computeroutput> is explicitly allowed. </para>
+</simplesect>
+<simplesect kind="note"><para>It is recommended that you use <ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep()</ref> instead, to prevent leaving behind dangling pointers. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="355" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="355" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_freep</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>av_freep</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a memory block which has been allocated with a function of <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> or <ref refid="group__lavu__mem__funcs_1ga51419cc39e7d7ad6785e33f414b9fb20" kindref="member">av_realloc()</ref> family, and set the pointer pointing to it to <computeroutput>NULL</computeroutput>.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">uint8_t<sp/>*buf<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc</ref>(16);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free</ref>(buf);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>buf<sp/>now<sp/>contains<sp/>a<sp/>dangling<sp/>pointer<sp/>to<sp/>freed<sp/>memory,<sp/>and<sp/>accidental</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>dereference<sp/>of<sp/>buf<sp/>will<sp/>result<sp/>in<sp/>a<sp/>use-after-free,<sp/>which<sp/>may<sp/>be<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>security<sp/>risk.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>*buf<sp/>=<sp/><ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc</ref>(16);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep</ref>(&amp;buf);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>buf<sp/>is<sp/>now<sp/>NULL,<sp/>and<sp/>accidental<sp/>dereference<sp/>will<sp/>only<sp/>result<sp/>in<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>NULL-pointer<sp/>dereference.</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the pointer to the memory block which should be freed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><computeroutput>*ptr = NULL</computeroutput> is safe and leads to no action. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="378" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="378" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga669091e689cc330998001d79edca9b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * av_strdup</definition>
+        <argsstring>(const char *s) av_malloc_attrib</argsstring>
+        <name>av_strdup</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duplicate a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to be duplicated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a newly-allocated string containing a copy of <computeroutput>s</computeroutput> or <computeroutput>NULL</computeroutput> if the string cannot be allocated </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__funcs_1ga218fb02c84a1a72e6a81d63c56785a4d" kindref="member">av_strndup()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="388" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="388" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga218fb02c84a1a72e6a81d63c56785a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * av_strndup</definition>
+        <argsstring>(const char *s, size_t len) av_malloc_attrib</argsstring>
+        <name>av_strndup</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duplicate a substring of a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to be duplicated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum length of the resulting string (not counting the terminating byte) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a newly-allocated string containing a substring of <computeroutput>s</computeroutput> or <computeroutput>NULL</computeroutput> if the string cannot be allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="399" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="399" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1gaa3c6ad87f3cf7f98404653809fb00c63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_memdup</definition>
+        <argsstring>(const void *p, size_t size)</argsstring>
+        <name>av_memdup</name>
+        <param>
+          <type>const void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duplicate a buffer with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to be duplicated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes of the buffer copied </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a newly allocated buffer containing a copy of <computeroutput>p</computeroutput> or <computeroutput>NULL</computeroutput> if the buffer cannot be allocated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="409" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="409" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__funcs_1ga3ea4736dcceab4ba033b8abd2c2a180e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_memcpy_backptr</definition>
+        <argsstring>(uint8_t *dst, int back, int cnt)</argsstring>
+        <name>av_memcpy_backptr</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>back</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overlapping memcpy() implementation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>back</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes back to start copying (i.e. the initial size of the overlapping window); must be &gt; 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to copy; must be &gt;= 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><computeroutput>cnt &gt; back</computeroutput> is valid, this will copy the bytes we just copied, thus creating a repeating pattern with a period length of <computeroutput>back</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="422" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="422" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions responsible for allocating, freeing, and copying memory.</para>
+<para>All memory allocation functions have a built-in upper limit of <computeroutput>INT_MAX</computeroutput> bytes. This may be changed with <ref refid="group__lavu__mem__misc_1ga2204fc859b4a3ca2d5bfd1bf4e8c4dfb" kindref="member">av_max_alloc()</ref>, although exercise extreme caution when doing so. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

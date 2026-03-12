@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_c_t" kind="struct" language="C++" prot="public">
+    <compoundname>AVDCT</compoundname>
+    <includes refid="avdct_8h" local="no">avdct.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1a9cf1dfc2c85db6bf753182259116cba1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVDCT::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVDCT::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="30" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1a7bcd6a2bcf9d82e6305528a585485e90" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVDCT::idct) (int16_t *block)</definition>
+        <argsstring>)(int16_t *block)</argsstring>
+        <name>idct</name>
+        <qualifiedname>AVDCT::idct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="32" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1a0ec74ead791a02aa244ade41f1200f1e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVDCT::idct_permutation[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>idct_permutation</name>
+        <qualifiedname>AVDCT::idct_permutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IDCT input permutation. Several optimized IDCTs need a permutated input (relative to the normal order of the reference IDCT). This permutation must be performed before the idct_put/add. Note, normally this can be merged with the zigzag/alternate scan<linebreak/>
+ An example to avoid confusion:<itemizedlist>
+<listitem><para>(-&gt;decode coeffs -&gt; zigzag reorder -&gt; dequant -&gt; reference IDCT -&gt; ...)</para>
+</listitem><listitem><para>(x -&gt; reference DCT -&gt; reference IDCT -&gt; x)</para>
+</listitem><listitem><para>(x -&gt; reference DCT -&gt; simple_mmx_perm = idct_permutation -&gt; simple_idct_mmx -&gt; x)</para>
+</listitem><listitem><para>(-&gt; decode coeffs -&gt; zigzag reorder -&gt; simple_mmx_perm -&gt; dequant -&gt; simple_idct_mmx -&gt; ...) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="48" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1ac1068527f1f37bbe27d31be724f2c4d4" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVDCT::fdct) (int16_t *block)</definition>
+        <argsstring>)(int16_t *block)</argsstring>
+        <name>fdct</name>
+        <qualifiedname>AVDCT::fdct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="50" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1afafee61c2c4c3cafd7a1433de9677be5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDCT::dct_algo</definition>
+        <argsstring></argsstring>
+        <name>dct_algo</name>
+        <qualifiedname>AVDCT::dct_algo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DCT algorithm. must use AVOptions to set this field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="57" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1aed94b220afff7a9cec826c6347d7e859" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDCT::idct_algo</definition>
+        <argsstring></argsstring>
+        <name>idct_algo</name>
+        <qualifiedname>AVDCT::idct_algo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IDCT algorithm. must use AVOptions to set this field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="63" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1a28cd1e0bb3528d9451851dd105b4f10d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVDCT::get_pixels) (int16_t *block, const uint8_t *pixels, ptrdiff_t line_size)</definition>
+        <argsstring>)(int16_t *block, const uint8_t *pixels, ptrdiff_t line_size)</argsstring>
+        <name>get_pixels</name>
+        <qualifiedname>AVDCT::get_pixels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="65" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1aa81e0ecf9185352726fa6b5ab5bbcabf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDCT::bits_per_sample</definition>
+        <argsstring></argsstring>
+        <name>bits_per_sample</name>
+        <qualifiedname>AVDCT::bits_per_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="69" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_c_t_1ac1a3419009d9a20f6239e6edc7c4979e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVDCT::get_pixels_unaligned) (int16_t *block, const uint8_t *pixels, ptrdiff_t line_size)</definition>
+        <argsstring>)(int16_t *block, const uint8_t *pixels, ptrdiff_t line_size)</argsstring>
+        <name>get_pixels_unaligned</name>
+        <qualifiedname>AVDCT::get_pixels_unaligned</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="71" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_d_c_t" kindref="compound">AVDCT</ref> context. <simplesect kind="note"><para>function pointers can be NULL if the specific features have been disabled at build time. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVDCT</label>
+        <link refid="struct_a_v_d_c_t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" line="29" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h" bodystart="29" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_c_t_1a9cf1dfc2c85db6bf753182259116cba1" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>av_class</name></member>
+      <member refid="struct_a_v_d_c_t_1aa81e0ecf9185352726fa6b5ab5bbcabf" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>bits_per_sample</name></member>
+      <member refid="struct_a_v_d_c_t_1afafee61c2c4c3cafd7a1433de9677be5" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>dct_algo</name></member>
+      <member refid="struct_a_v_d_c_t_1ac1068527f1f37bbe27d31be724f2c4d4" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>fdct</name></member>
+      <member refid="struct_a_v_d_c_t_1a28cd1e0bb3528d9451851dd105b4f10d" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>get_pixels</name></member>
+      <member refid="struct_a_v_d_c_t_1ac1a3419009d9a20f6239e6edc7c4979e" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>get_pixels_unaligned</name></member>
+      <member refid="struct_a_v_d_c_t_1a7bcd6a2bcf9d82e6305528a585485e90" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>idct</name></member>
+      <member refid="struct_a_v_d_c_t_1aed94b220afff7a9cec826c6347d7e859" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>idct_algo</name></member>
+      <member refid="struct_a_v_d_c_t_1a0ec74ead791a02aa244ade41f1200f1e" prot="public" virt="non-virtual"><scope>AVDCT</scope><name>idct_permutation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

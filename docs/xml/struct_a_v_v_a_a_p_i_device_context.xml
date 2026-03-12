@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_v_a_a_p_i_device_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVAAPIDeviceContext</compoundname>
+    <includes refid="hwcontext__vaapi_8h" local="no">hwcontext_vaapi.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_device_context_1a89951d5ccfad53ce81444773ea9f774e" prot="public" static="no" mutable="no">
+        <type>VADisplay</type>
+        <definition>VADisplay AVVAAPIDeviceContext::display</definition>
+        <argsstring></argsstring>
+        <name>display</name>
+        <qualifiedname>AVVAAPIDeviceContext::display</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The VADisplay handle, to be filled by the user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="72" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_v_a_a_p_i_device_context_1a7f2689d4ef32b2ee936508de03356e28" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVVAAPIDeviceContext::driver_quirks</definition>
+        <argsstring></argsstring>
+        <name>driver_quirks</name>
+        <qualifiedname>AVVAAPIDeviceContext::driver_quirks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Driver quirks to apply - this is filled by av_hwdevice_ctx_init(), with reference to a table of known drivers, unless the AV_VAAPI_DRIVER_QUIRK_USER_SET bit is already present. The user may need to refer to this field when performing any later operations using VAAPI with the same VADisplay. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="80" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>VAAPI connection details.</para>
+<para>Allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref> </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" line="68" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vaapi.h" bodystart="68" bodyend="81"/>
+    <listofallmembers>
+      <member refid="struct_a_v_v_a_a_p_i_device_context_1a89951d5ccfad53ce81444773ea9f774e" prot="public" virt="non-virtual"><scope>AVVAAPIDeviceContext</scope><name>display</name></member>
+      <member refid="struct_a_v_v_a_a_p_i_device_context_1a7f2689d4ef32b2ee936508de03356e28" prot="public" virt="non-virtual"><scope>AVVAAPIDeviceContext</scope><name>driver_quirks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

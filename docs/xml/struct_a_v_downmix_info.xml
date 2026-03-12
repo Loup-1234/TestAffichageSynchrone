@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_downmix_info" kind="struct" language="C++" prot="public">
+    <compoundname>AVDownmixInfo</compoundname>
+    <includes refid="downmix__info_8h" local="no">downmix_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1aca0497b3d08ecb717c349c2bcc946038" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__downmix__info_1ga3e3654fedbe3e5485f00ea09396c3521" kindref="member">AVDownmixType</ref></type>
+        <definition>enum AVDownmixType AVDownmixInfo::preferred_downmix_type</definition>
+        <argsstring></argsstring>
+        <name>preferred_downmix_type</name>
+        <qualifiedname>AVDownmixInfo::preferred_downmix_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of downmix preferred by the mastering engineer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="62" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1ac895caaffbfe271f3b710453a5e4db52" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVDownmixInfo::center_mix_level</definition>
+        <argsstring></argsstring>
+        <name>center_mix_level</name>
+        <qualifiedname>AVDownmixInfo::center_mix_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute scale factor representing the nominal level of the center channel during a regular downmix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="68" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1afe5bab2b99df66c400d53acef4e67ab7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVDownmixInfo::center_mix_level_ltrt</definition>
+        <argsstring></argsstring>
+        <name>center_mix_level_ltrt</name>
+        <qualifiedname>AVDownmixInfo::center_mix_level_ltrt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute scale factor representing the nominal level of the center channel during an Lt/Rt compatible downmix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="74" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1a763db6d7fd875324fff1c1cd124ac21f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVDownmixInfo::surround_mix_level</definition>
+        <argsstring></argsstring>
+        <name>surround_mix_level</name>
+        <qualifiedname>AVDownmixInfo::surround_mix_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute scale factor representing the nominal level of the surround channels during a regular downmix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="80" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1a460f7ab05d6c71112f2282aeb4009445" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVDownmixInfo::surround_mix_level_ltrt</definition>
+        <argsstring></argsstring>
+        <name>surround_mix_level_ltrt</name>
+        <qualifiedname>AVDownmixInfo::surround_mix_level_ltrt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute scale factor representing the nominal level of the surround channels during an Lt/Rt compatible downmix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="86" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_downmix_info_1a070b6f29f4a4d272894d60d678a13a03" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVDownmixInfo::lfe_mix_level</definition>
+        <argsstring></argsstring>
+        <name>lfe_mix_level</name>
+        <qualifiedname>AVDownmixInfo::lfe_mix_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute scale factor representing the level at which the LFE data is mixed into L/R channels during downmixing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="92" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes optional metadata relevant to a downmix procedure.</para>
+<para>All fields are set by the decoder to the value indicated in the audio bitstream (if present), or to a &quot;sane&quot; default otherwise. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="58" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="58" bodyend="93"/>
+    <listofallmembers>
+      <member refid="struct_a_v_downmix_info_1ac895caaffbfe271f3b710453a5e4db52" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>center_mix_level</name></member>
+      <member refid="struct_a_v_downmix_info_1afe5bab2b99df66c400d53acef4e67ab7" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>center_mix_level_ltrt</name></member>
+      <member refid="struct_a_v_downmix_info_1a070b6f29f4a4d272894d60d678a13a03" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>lfe_mix_level</name></member>
+      <member refid="struct_a_v_downmix_info_1aca0497b3d08ecb717c349c2bcc946038" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>preferred_downmix_type</name></member>
+      <member refid="struct_a_v_downmix_info_1a763db6d7fd875324fff1c1cd124ac21f" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>surround_mix_level</name></member>
+      <member refid="struct_a_v_downmix_info_1a460f7ab05d6c71112f2282aeb4009445" prot="public" virt="non-virtual"><scope>AVDownmixInfo</scope><name>surround_mix_level_ltrt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="union_a_v_ref_struct_opaque" kind="union" language="C++" prot="public">
+    <compoundname>AVRefStructOpaque</compoundname>
+    <includes refid="refstruct_8h" local="no">refstruct.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_a_v_ref_struct_opaque_1af5a07a9c60c9623515e7e326256f0519" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVRefStructOpaque::nc</definition>
+        <argsstring></argsstring>
+        <name>nc</name>
+        <qualifiedname>AVRefStructOpaque::nc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="59" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_v_ref_struct_opaque_1a387c78cb2c54056e86859eacf7641678" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* AVRefStructOpaque::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>AVRefStructOpaque::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="60" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RefStruct is an API for creating reference-counted objects with minimal overhead. The API is designed for objects, not buffers like the <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> API. The main differences to the <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> API are as follows:</para>
+<para><itemizedlist>
+<listitem><para>It uses void* instead of uint8_t* as its base type due to its focus on objects.</para>
+</listitem><listitem><para>There are no equivalents of <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> and <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>. E.g. there is no way to get the usable size of the object: The user is supposed to know what is at the other end of the pointer. It also avoids one level of indirection.</para>
+</listitem><listitem><para>Custom allocators are not supported. This allows to simplify the implementation and reduce the amount of allocations.</para>
+</listitem><listitem><para>It also has the advantage that the user&apos;s free callback need only free the resources owned by the object, but not the object itself.</para>
+</listitem><listitem><para>Because referencing (and replacing) an object managed by the RefStruct API does not involve allocations, they can not fail and therefore need not be checked.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>Referencing and unreferencing the buffers is thread-safe and thus may be done from multiple threads simultaneously without any need for additional locking. This union is used for all opaque parameters in this API to spare the user to cast const away in case the opaque to use is const-qualified.</para>
+</simplesect>
+The functions provided by this API with an <ref refid="union_a_v_ref_struct_opaque" kindref="compound">AVRefStructOpaque</ref> come in pairs named foo_c and foo. The foo function accepts void* as opaque and is just a wrapper around the foo_c function; &quot;_c&quot; means &quot;(potentially) const&quot;. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" line="58" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/refstruct.h" bodystart="58" bodyend="61"/>
+    <listofallmembers>
+      <member refid="union_a_v_ref_struct_opaque_1a387c78cb2c54056e86859eacf7641678" prot="public" virt="non-virtual"><scope>AVRefStructOpaque</scope><name>c</name></member>
+      <member refid="union_a_v_ref_struct_opaque_1af5a07a9c60c9623515e7e326256f0519" prot="public" virt="non-virtual"><scope>AVRefStructOpaque</scope><name>nc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

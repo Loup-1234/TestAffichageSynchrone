@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavf__io" kind="group">
+    <compoundname>lavf_io</compoundname>
+    <title>I/O Read/Write</title>
+    <innerfile refid="avio_8h">avio.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="group__lavf__io_1lavf_io_dirlist">
+<title>Directory listing</title><para>The directory listing API makes it possible to list files on remote servers.</para>
+<para>Some of possible use cases:<itemizedlist>
+<listitem><para>an &quot;open file&quot; dialog to choose files from a remote location,</para>
+</listitem><listitem><para>a recursive media finder providing a player with an ability to play all files from a given directory.</para>
+</listitem></itemizedlist>
+</para>
+<sect2 id="group__lavf__io_1lavf_io_dirlist_open">
+<title>Opening a directory</title><para>At first, a directory needs to be opened by calling <ref refid="avio_8h_1a7bb596b33ba395e488af6c0c21ca00d5" kindref="member">avio_open_dir()</ref> supplied with a URL and, optionally, ::AVDictionary containing protocol-specific parameters. The function returns zero or positive integer and allocates AVIODirContext on success.</para>
+<para><programlisting><codeline><highlight class="normal">AVIODirContext<sp/>*ctx<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="avio_8h_1a7bb596b33ba395e488af6c0c21ca00d5" kindref="member">avio_open_dir</ref>(&amp;ctx,<sp/></highlight><highlight class="stringliteral">&quot;smb://example.com/some_dir&quot;</highlight><highlight class="normal">,<sp/>NULL)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Cannot<sp/>open<sp/>directory.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This code tries to open a sample directory using smb protocol without any additional parameters.</para>
+</sect2>
+<sect2 id="group__lavf__io_1lavf_io_dirlist_read">
+<title>Reading entries</title><para>Each directory&apos;s entry (i.e. file, another directory, anything else within <ref refid="avio_8h_1ae8a759e02fd6f14d13511b0e2acbf8fa" kindref="member">AVIODirEntryType</ref>) is represented by <ref refid="struct_a_v_i_o_dir_entry" kindref="compound">AVIODirEntry</ref>. Reading consecutive entries from an opened AVIODirContext is done by repeatedly calling <ref refid="avio_8h_1addb214cfa43621ca164b14d9932af2bb" kindref="member">avio_read_dir()</ref> on it. Each call returns zero or positive integer if successful. Reading can be stopped right after the NULL entry has been read <ndash/> it means there are no entries left to be read. The following code reads all entries from a directory associated with ctx and prints their names to standard output. <programlisting><codeline><highlight class="normal"><ref refid="struct_a_v_i_o_dir_entry" kindref="compound">AVIODirEntry</ref><sp/>*entry<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="avio_8h_1addb214cfa43621ca164b14d9932af2bb" kindref="member">avio_read_dir</ref>(ctx,<sp/>&amp;entry)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Cannot<sp/>list<sp/>directory.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!entry)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/>entry-&gt;<ref refid="struct_a_v_i_o_dir_entry_1ac318bb2fb814386a2c8b9f8810150968" kindref="member">name</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="avio_8h_1aa0b5fe2c2243b25f770b1049a710861f" kindref="member">avio_free_directory_entry</ref>(&amp;entry);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

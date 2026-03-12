@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="hwcontext__drm_8h" kind="file" language="C++">
+    <compoundname>hwcontext_drm.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h</label>
+        <link refid="hwcontext__drm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_d_r_m_object_descriptor" prot="public">AVDRMObjectDescriptor</innerclass>
+    <innerclass refid="struct_a_v_d_r_m_plane_descriptor" prot="public">AVDRMPlaneDescriptor</innerclass>
+    <innerclass refid="struct_a_v_d_r_m_layer_descriptor" prot="public">AVDRMLayerDescriptor</innerclass>
+    <innerclass refid="struct_a_v_d_r_m_frame_descriptor" prot="public">AVDRMFrameDescriptor</innerclass>
+    <innerclass refid="struct_a_v_d_r_m_device_context" prot="public">AVDRMDeviceContext</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <enumvalue id="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" prot="public">
+          <name>AV_DRM_MAX_PLANES</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum number of layers/planes in a DRM frame. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="35" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="35" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hwcontext__drm_8h_1a2e48b6eecd6df129aad4622bce819c88" prot="public" static="no">
+        <type>struct AVDRMObjectDescriptor</type>
+        <definition>typedef struct AVDRMObjectDescriptor AVDRMObjectDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVDRMObjectDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM object descriptor.</para>
+<para>Describes a single DRM object, addressing it as a PRIME file descriptor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="66" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__drm_8h_1a2ca5add12c48394bda6831c14e66d502" prot="public" static="no">
+        <type>struct AVDRMPlaneDescriptor</type>
+        <definition>typedef struct AVDRMPlaneDescriptor AVDRMPlaneDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVDRMPlaneDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM plane descriptor.</para>
+<para>Describes a single plane of a layer, which is contained within a single object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="88" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__drm_8h_1a9efcf7f55bd9676757ff1914af67119b" prot="public" static="no">
+        <type>struct AVDRMLayerDescriptor</type>
+        <definition>typedef struct AVDRMLayerDescriptor AVDRMLayerDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVDRMLayerDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM layer descriptor.</para>
+<para>Describes a single layer within a frame. This has the structure defined by its format, and will contain one or more planes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="111" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__drm_8h_1aec93c1f32336036a11fac23329533a78" prot="public" static="no">
+        <type>struct AVDRMFrameDescriptor</type>
+        <definition>typedef struct AVDRMFrameDescriptor AVDRMFrameDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVDRMFrameDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM frame descriptor.</para>
+<para>This is used as the data pointer for AV_PIX_FMT_DRM_PRIME frames. It is also used by user-allocated frame pools - allocating in <ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref> must return AVBufferRefs which contain an object of this type.</para>
+<para>The fields of this structure should be set such it can be imported directly by EGL using the EGL_EXT_image_dma_buf_import and EGL_EXT_image_dma_buf_import_modifiers extensions. (Note that the exact layout of a particular format may vary between platforms - we only specify that the same platform should be able to import it.)</para>
+<para>The total number of planes must not exceed AV_DRM_MAX_PLANES, and the order of the planes by increasing layer index followed by increasing plane index must be the same as the order which would be used for the data pointers in the equivalent software format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="150" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__drm_8h_1a82912c72e61b73067c75a0ca0a1fc260" prot="public" static="no">
+        <type>struct AVDRMDeviceContext</type>
+        <definition>typedef struct AVDRMDeviceContext AVDRMDeviceContext</definition>
+        <argsstring></argsstring>
+        <name>AVDRMDeviceContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DRM device.</para>
+<para>Allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="167" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>API-specific header for AV_HWDEVICE_TYPE_DRM.</para>
+<para>Internal frame allocation is not currently supported - all frames must be allocated by the user. Thus <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref> is always NULL, though this may change if support for frame allocation is added in future. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_HWCONTEXT_DRM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_HWCONTEXT_DRM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" kindref="member">AV_DRM_MAX_PLANES</ref><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_a_v_d_r_m_object_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_r_m_object_descriptor" kindref="compound">AVDRMObjectDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="struct_a_v_d_r_m_object_descriptor_1a3732e73e288f10965cae373c70e8402e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_object_descriptor_1a3732e73e288f10965cae373c70e8402e" kindref="member">fd</ref>;</highlight></codeline>
+<codeline lineno="58" refid="struct_a_v_d_r_m_object_descriptor_1a4eeb1aad28f187c3c3e4f9d547a55a3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_object_descriptor_1a4eeb1aad28f187c3c3e4f9d547a55a3d" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="65" refid="struct_a_v_d_r_m_object_descriptor_1ab193fb14460d5a5f90578a80608e82ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_a_v_d_r_m_object_descriptor_1ab193fb14460d5a5f90578a80608e82ae" kindref="member">format_modifier</ref>;</highlight></codeline>
+<codeline lineno="66" refid="hwcontext__drm_8h_1a2e48b6eecd6df129aad4622bce819c88" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_r_m_object_descriptor" kindref="compound">AVDRMObjectDescriptor</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="struct_a_v_d_r_m_plane_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_r_m_plane_descriptor" kindref="compound">AVDRMPlaneDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="79" refid="struct_a_v_d_r_m_plane_descriptor_1af07fe11d604e0a3b5fd934f9626c008b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_plane_descriptor_1af07fe11d604e0a3b5fd934f9626c008b" kindref="member">object_index</ref>;</highlight></codeline>
+<codeline lineno="83" refid="struct_a_v_d_r_m_plane_descriptor_1af1a0839b02055445257d431d946d96a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_a_v_d_r_m_plane_descriptor_1af1a0839b02055445257d431d946d96a7" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="87" refid="struct_a_v_d_r_m_plane_descriptor_1aa4eaa5a37f40dd7301ce1b8194eefc0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_a_v_d_r_m_plane_descriptor_1aa4eaa5a37f40dd7301ce1b8194eefc0a" kindref="member">pitch</ref>;</highlight></codeline>
+<codeline lineno="88" refid="hwcontext__drm_8h_1a2ca5add12c48394bda6831c14e66d502" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_r_m_plane_descriptor" kindref="compound">AVDRMPlaneDescriptor</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct_a_v_d_r_m_layer_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_r_m_layer_descriptor" kindref="compound">AVDRMLayerDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="struct_a_v_d_r_m_layer_descriptor_1abe9b4585e3ad357cf058dada850c3226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_d_r_m_layer_descriptor_1abe9b4585e3ad357cf058dada850c3226" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="106" refid="struct_a_v_d_r_m_layer_descriptor_1aa71ce914f53563be8207d8bc08fbfe92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_layer_descriptor_1aa71ce914f53563be8207d8bc08fbfe92" kindref="member">nb_planes</ref>;</highlight></codeline>
+<codeline lineno="110" refid="struct_a_v_d_r_m_layer_descriptor_1a7fbaf03f401c451e82021487fefef159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_r_m_plane_descriptor" kindref="compound">AVDRMPlaneDescriptor</ref><sp/><ref refid="struct_a_v_d_r_m_layer_descriptor_1a7fbaf03f401c451e82021487fefef159" kindref="member">planes</ref>[<ref refid="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" kindref="member">AV_DRM_MAX_PLANES</ref>];</highlight></codeline>
+<codeline lineno="111" refid="hwcontext__drm_8h_1a9efcf7f55bd9676757ff1914af67119b" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_r_m_layer_descriptor" kindref="compound">AVDRMLayerDescriptor</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="struct_a_v_d_r_m_frame_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_r_m_frame_descriptor" kindref="compound">AVDRMFrameDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="137" refid="struct_a_v_d_r_m_frame_descriptor_1a5a11bc1854bb6cee2f5b0f9d514d0c4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_frame_descriptor_1a5a11bc1854bb6cee2f5b0f9d514d0c4f" kindref="member">nb_objects</ref>;</highlight></codeline>
+<codeline lineno="141" refid="struct_a_v_d_r_m_frame_descriptor_1a0a757137c80a528953645ab11f31e6b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_r_m_object_descriptor" kindref="compound">AVDRMObjectDescriptor</ref><sp/><ref refid="struct_a_v_d_r_m_frame_descriptor_1a0a757137c80a528953645ab11f31e6b7" kindref="member">objects</ref>[<ref refid="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" kindref="member">AV_DRM_MAX_PLANES</ref>];</highlight></codeline>
+<codeline lineno="145" refid="struct_a_v_d_r_m_frame_descriptor_1a228800d9ce195e776833e58ee307a6ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_frame_descriptor_1a228800d9ce195e776833e58ee307a6ec" kindref="member">nb_layers</ref>;</highlight></codeline>
+<codeline lineno="149" refid="struct_a_v_d_r_m_frame_descriptor_1ad19d258e1771ef833d7e3bd873b91906" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_r_m_layer_descriptor" kindref="compound">AVDRMLayerDescriptor</ref><sp/><ref refid="struct_a_v_d_r_m_frame_descriptor_1ad19d258e1771ef833d7e3bd873b91906" kindref="member">layers</ref>[<ref refid="hwcontext__drm_8h_1ae227f3c6350aad6e732ab58c3d620863a8f29c39f016d0bf9a006b180b859ba4f" kindref="member">AV_DRM_MAX_PLANES</ref>];</highlight></codeline>
+<codeline lineno="150" refid="hwcontext__drm_8h_1aec93c1f32336036a11fac23329533a78" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_r_m_frame_descriptor" kindref="compound">AVDRMFrameDescriptor</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="struct_a_v_d_r_m_device_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_r_m_device_context" kindref="compound">AVDRMDeviceContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="166" refid="struct_a_v_d_r_m_device_context_1a22790a8cbf5681bbdee76a6bc99f02f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_d_r_m_device_context_1a22790a8cbf5681bbdee76a6bc99f02f5" kindref="member">fd</ref>;</highlight></codeline>
+<codeline lineno="167" refid="hwcontext__drm_8h_1a82912c72e61b73067c75a0ca0a1fc260" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_r_m_device_context" kindref="compound">AVDRMDeviceContext</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_HWCONTEXT_DRM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h"/>
+  </compounddef>
+</doxygen>

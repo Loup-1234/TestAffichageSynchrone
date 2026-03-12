@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_film_grain_h274_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilmGrainH274Params</compoundname>
+    <includes refid="film__grain__params_8h" local="no">film_grain_params.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a579a0c5a712871eda106e6b13bea8574" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainH274Params::model_id</definition>
+        <argsstring></argsstring>
+        <name>model_id</name>
+        <qualifiedname>AVFilmGrainH274Params::model_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the film grain simulation mode. 0 = Frequency filtering, 1 = Auto-regression </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="137" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a1024e8411b16f3a0463b3f88434ca7d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainH274Params::blending_mode_id</definition>
+        <argsstring></argsstring>
+        <name>blending_mode_id</name>
+        <qualifiedname>AVFilmGrainH274Params::blending_mode_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the blending mode used to blend the simulated film grain with the decoded images.</para>
+<para>0 = Additive, 1 = Multiplicative </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="145" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a1bee3c9a5eb0eaeae61c558f07cf26d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainH274Params::log2_scale_factor</definition>
+        <argsstring></argsstring>
+        <name>log2_scale_factor</name>
+        <qualifiedname>AVFilmGrainH274Params::log2_scale_factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies a scale factor used in the film grain characterization equations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="150" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1aa555f71a5bbbf860a2cf2ef692619b9a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainH274Params::component_model_present[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>component_model_present</name>
+        <qualifiedname>AVFilmGrainH274Params::component_model_present</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates if the modelling of film grain for a given component is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="155" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1ae4247301316906d227be9106e683fa02" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AVFilmGrainH274Params::num_intensity_intervals[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>num_intensity_intervals</name>
+        <qualifiedname>AVFilmGrainH274Params::num_intensity_intervals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of intensity intervals for which a specific set of model values has been estimated, with a range of [1, 256]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="161" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1afe9a68f91c1d21320826d33abab346ea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVFilmGrainH274Params::num_model_values[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>num_model_values</name>
+        <qualifiedname>AVFilmGrainH274Params::num_model_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the number of model values present for each intensity interval in which the film grain has been modelled, with a range of [1, 6]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="167" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a1281f91840b25141d6b228e7974013c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVFilmGrainH274Params::intensity_interval_lower_bound[3][256]</definition>
+        <argsstring>[3][256]</argsstring>
+        <name>intensity_interval_lower_bound</name>
+        <qualifiedname>AVFilmGrainH274Params::intensity_interval_lower_bound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the lower ounds of each intensity interval for whichthe set of model values applies for the component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="173" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a07c0b1341b1694ff4e500a58becc0885" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVFilmGrainH274Params::intensity_interval_upper_bound[3][256]</definition>
+        <argsstring>[3][256]</argsstring>
+        <name>intensity_interval_upper_bound</name>
+        <qualifiedname>AVFilmGrainH274Params::intensity_interval_upper_bound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the upper bound of each intensity interval for which the set of model values applies for the component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="179" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_h274_params_1a1ce7cfe173e3ce7e402acf6ece578a7c" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AVFilmGrainH274Params::comp_model_value[3][256][6]</definition>
+        <argsstring>[3][256][6]</argsstring>
+        <name>comp_model_value</name>
+        <qualifiedname>AVFilmGrainH274Params::comp_model_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the model values for the component for each intensity interval.<itemizedlist>
+<listitem><para>When model_id == 0, the following applies: For comp_model_value[y], the range of values is [0, 2^bit_depth_luma - 1] For comp_model_value[cb..cr], the range of values is [0, 2^bit_depth_chroma - 1]</para>
+</listitem><listitem><para>Otherwise, the following applies: For comp_model_value[y], the range of values is [-2^(bit_depth_luma - 1), 2^(bit_depth_luma - 1) - 1] For comp_model_value[cb..cr], the range of values is [-2^(bit_depth_chroma - 1), 2^(bit_depth_chroma - 1) - 1] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="190" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes how to handle film grain synthesis for codecs using the ITU-T H.274 Versatile supplemental enhancement information message.</para>
+<para><simplesect kind="note"><para>The struct must be allocated as part of <ref refid="struct_a_v_film_grain_params" kindref="compound">AVFilmGrainParams</ref> using av_film_grain_params_alloc(). Its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="132" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="132" bodyend="191"/>
+    <listofallmembers>
+      <member refid="struct_a_v_film_grain_h274_params_1a1024e8411b16f3a0463b3f88434ca7d0" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>blending_mode_id</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1a1ce7cfe173e3ce7e402acf6ece578a7c" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>comp_model_value</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1aa555f71a5bbbf860a2cf2ef692619b9a" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>component_model_present</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1a1281f91840b25141d6b228e7974013c5" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>intensity_interval_lower_bound</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1a07c0b1341b1694ff4e500a58becc0885" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>intensity_interval_upper_bound</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1a1bee3c9a5eb0eaeae61c558f07cf26d3" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>log2_scale_factor</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1a579a0c5a712871eda106e6b13bea8574" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>model_id</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1ae4247301316906d227be9106e683fa02" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>num_intensity_intervals</name></member>
+      <member refid="struct_a_v_film_grain_h274_params_1afe9a68f91c1d21320826d33abab346ea" prot="public" virt="non-virtual"><scope>AVFilmGrainH274Params</scope><name>num_model_values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

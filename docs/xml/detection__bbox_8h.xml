@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="detection__bbox_8h" kind="file" language="C++">
+    <compoundname>detection_bbox.h</compoundname>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <includes refid="avassert_8h" local="yes">avassert.h</includes>
+    <includes refid="frame_8h" local="yes">frame.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="6">
+        <label>avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="15">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>errno.h</label>
+      </node>
+      <node id="18">
+        <label>inttypes.h</label>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="19">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>stdarg.h</label>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="20">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_detection_b_box" prot="public">AVDetectionBBox</innerclass>
+    <innerclass refid="struct_a_v_detection_b_box_header" prot="public">AVDetectionBBoxHeader</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="detection__bbox_8h_1a1e5ddcd7092f1bd6196917bcbb138c73" prot="public" static="no">
+        <name>AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="36" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="detection__bbox_8h_1a7c2bc304fd2f38acd36cbc89c9dd40d7" prot="public" static="no">
+        <name>AV_NUM_DETECTION_BBOX_CLASSIFY</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At most 4 classifications based on the detected bounding box. For example, we can get max 4 different attributes with 4 different DNN models on one bounding box. classify_count is zero if no classification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="50" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="detection__bbox_8h_1a565c2d604b100edaab2291dec5cb2ca7" prot="public" static="no">
+        <type>struct AVDetectionBBox</type>
+        <definition>typedef struct AVDetectionBBox AVDetectionBBox</definition>
+        <argsstring></argsstring>
+        <name>AVDetectionBBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="54" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="detection__bbox_8h_1aad1d258e3fc6cb956abeec56a24f49f8" prot="public" static="no">
+        <type>struct AVDetectionBBoxHeader</type>
+        <definition>typedef struct AVDetectionBBoxHeader AVDetectionBBoxHeader</definition>
+        <argsstring></argsstring>
+        <name>AVDetectionBBoxHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="78" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="detection__bbox_8h_1adffa348f6af7e0148306450fee7449b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref> *</type>
+        <definition>static av_always_inline AVDetectionBBox * av_get_detection_bbox</definition>
+        <argsstring>(const AVDetectionBBoxHeader *header, unsigned int idx)</argsstring>
+        <name>av_get_detection_bbox</name>
+        <param>
+          <type>const <ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref> *</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="84" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="detection__bbox_8h_1a5a52be6c84303dec869a1044ab92f1a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref> *</type>
+        <definition>AVDetectionBBoxHeader * av_detection_bbox_alloc</definition>
+        <argsstring>(uint32_t nb_bboxes, size_t *out_size)</argsstring>
+        <name>av_detection_bbox_alloc</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>nb_bboxes</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>out_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates memory for <ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref>, plus an array of <javadoccode>nb_bboxes</javadoccode> <ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref>, and initializes the variables. Can be freed with a normal <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref> call.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb_bboxes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of <ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref> structures to allocate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if non-NULL, the size in bytes of the resulting data array is written here. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="100" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" declline="100" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="detection__bbox_8h_1abdbb62510f4f20766ee9cb3330db4225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref> *</type>
+        <definition>AVDetectionBBoxHeader * av_detection_bbox_create_side_data</definition>
+        <argsstring>(AVFrame *frame, uint32_t nb_bboxes)</argsstring>
+        <name>av_detection_bbox_create_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nb_bboxes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates memory for <ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref>, plus an array of <javadoccode>nb_bboxes</javadoccode> <ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref>, in the given <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> <javadoccode>frame</javadoccode> as <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> of type AV_FRAME_DATA_DETECTION_BBOXES and initializes the variables. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" line="107" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h" declline="107" declcolumn="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_DETECTION_BBOX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_DETECTION_BBOX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avassert_8h" kindref="compound">avassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="frame_8h" kindref="compound">frame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_a_v_detection_b_box" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="struct_a_v_detection_b_box_1a879fcbdb6516e1d7aa898e502846dd78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_1a879fcbdb6516e1d7aa898e502846dd78" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="struct_a_v_detection_b_box_1a0bff3fc9ab48fb0dce8c05b1f9d849b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_1a0bff3fc9ab48fb0dce8c05b1f9d849b7" kindref="member">detect_label</ref>[AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>detect_confidence;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_NUM_DETECTION_BBOX_CLASSIFY<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>classify_count;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>classify_labels[AV_NUM_DETECTION_BBOX_CLASSIFY][AV_DETECTION_BBOX_LABEL_NAME_MAX_SIZE];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>classify_confidences[AV_NUM_DETECTION_BBOX_CLASSIFY];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/><ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_a_v_detection_b_box_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref><sp/>{</highlight></codeline>
+<codeline lineno="61" refid="struct_a_v_detection_b_box_header_1a616a60dfc41f2e436be536b270fa56df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_header_1a616a60dfc41f2e436be536b270fa56df" kindref="member">source</ref>[256];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="struct_a_v_detection_b_box_header_1a05ef3b2efae4361928d55f829b8e1dbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_detection_b_box_header_1a05ef3b2efae4361928d55f829b8e1dbe" kindref="member">nb_bboxes</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_a_v_detection_b_box_header_1afaa3d29e0e410f98b25fca46f17fe277" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_header_1afaa3d29e0e410f98b25fca46f17fe277" kindref="member">bboxes_offset</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_a_v_detection_b_box_header_1a56520995c3de9ebe7c6eae1b94d79708" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_header_1a56520995c3de9ebe7c6eae1b94d79708" kindref="member">bbox_size</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>Get<sp/>the<sp/>bounding<sp/>box<sp/>at<sp/>the<sp/>specified<sp/>{@code<sp/>idx}.<sp/>Must<sp/>be<sp/>between<sp/>0<sp/>and<sp/>nb_bboxes.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/><ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref><sp/>*</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">av_get_detection_bbox(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref><sp/>*header,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="avassert_8h_1aae204192396f78cc8c5cd7ad5c57c23f" kindref="member">av_assert0</ref>(idx<sp/>&lt;<sp/>header-&gt;nb_bboxes);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_a_v_detection_b_box" kindref="compound">AVDetectionBBox</ref><sp/>*)((uint8_t<sp/>*)header<sp/>+<sp/>header-&gt;<ref refid="struct_a_v_detection_b_box_header_1afaa3d29e0e410f98b25fca46f17fe277" kindref="member">bboxes_offset</ref><sp/>+</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>*<sp/>header-&gt;<ref refid="struct_a_v_detection_b_box_header_1a56520995c3de9ebe7c6eae1b94d79708" kindref="member">bbox_size</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref><sp/>*av_detection_bbox_alloc(uint32_t<sp/>nb_bboxes,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*out_size);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref><sp/>*av_detection_bbox_create_side_data(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/>uint32_t<sp/>nb_bboxes);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h"/>
+  </compounddef>
+</doxygen>

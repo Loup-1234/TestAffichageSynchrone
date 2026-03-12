@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_exif_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>AVExifMetadata</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_exif_metadata_1a9b14a7656b090c6c2c218c64b5f20ff4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref> *</type>
+        <definition>AVExifEntry* AVExifMetadata::entries</definition>
+        <argsstring></argsstring>
+        <name>entries</name>
+        <qualifiedname>AVExifMetadata::entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="78" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_exif_metadata_1a74adb81dd6415e39130de886f0ffbd9c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVExifMetadata::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>AVExifMetadata::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="80" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_exif_metadata_1aca8cd1cce2f562cc0b75be2ee3db76d2" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVExifMetadata::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>AVExifMetadata::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="82" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVExifEntry</label>
+        <link refid="struct_a_v_exif_entry"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rat</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ifd</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVExifMetadata</label>
+        <link refid="struct_a_v_exif_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>entries</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="76" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="76" bodyend="83"/>
+    <listofallmembers>
+      <member refid="struct_a_v_exif_metadata_1a74adb81dd6415e39130de886f0ffbd9c" prot="public" virt="non-virtual"><scope>AVExifMetadata</scope><name>count</name></member>
+      <member refid="struct_a_v_exif_metadata_1a9b14a7656b090c6c2c218c64b5f20ff4" prot="public" virt="non-virtual"><scope>AVExifMetadata</scope><name>entries</name></member>
+      <member refid="struct_a_v_exif_metadata_1aca8cd1cce2f562cc0b75be2ee3db76d2" prot="public" virt="non-virtual"><scope>AVExifMetadata</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

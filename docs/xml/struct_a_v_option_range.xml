@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_option_range" kind="struct" language="C++" prot="public">
+    <compoundname>AVOptionRange</compoundname>
+    <includes refid="opt_8h" local="no">opt.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_option_range_1a354f95a62affe330479bb9941146d734" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVOptionRange::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>AVOptionRange::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="486" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_range_1adb21ecde2d4e6b47b9107816f9287ccb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVOptionRange::value_min</definition>
+        <argsstring></argsstring>
+        <name>value_min</name>
+        <qualifiedname>AVOptionRange::value_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value range. For string ranges this represents the min/max length. For dimensions this represents the min/max pixel count or width/height in multi-component case. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="492" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_range_1aa2876b63377f218ec0faa3482c467086" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVOptionRange::value_max</definition>
+        <argsstring></argsstring>
+        <name>value_max</name>
+        <qualifiedname>AVOptionRange::value_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="492" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_range_1a2f107bb96630be02d4aec9657b24bb3a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVOptionRange::component_min</definition>
+        <argsstring></argsstring>
+        <name>component_min</name>
+        <qualifiedname>AVOptionRange::component_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value&apos;s component range. For string this represents the unicode range for chars, 0-127 limits to ASCII. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="497" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_range_1a120c4beda04930e2e9a51237d99c96c9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AVOptionRange::component_max</definition>
+        <argsstring></argsstring>
+        <name>component_max</name>
+        <qualifiedname>AVOptionRange::component_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="497" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_option_range_1afb2f043056ff5fea103f24ba98eafafc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVOptionRange::is_range</definition>
+        <argsstring></argsstring>
+        <name>is_range</name>
+        <qualifiedname>AVOptionRange::is_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Range flag. If set to 1 the struct encodes a range, if set to 0 a single value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="502" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A single allowed range of values, or a single allowed value. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" line="485" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h" bodystart="485" bodyend="503"/>
+    <listofallmembers>
+      <member refid="struct_a_v_option_range_1a120c4beda04930e2e9a51237d99c96c9" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>component_max</name></member>
+      <member refid="struct_a_v_option_range_1a2f107bb96630be02d4aec9657b24bb3a" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>component_min</name></member>
+      <member refid="struct_a_v_option_range_1afb2f043056ff5fea103f24ba98eafafc" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>is_range</name></member>
+      <member refid="struct_a_v_option_range_1a354f95a62affe330479bb9941146d734" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>str</name></member>
+      <member refid="struct_a_v_option_range_1aa2876b63377f218ec0faa3482c467086" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>value_max</name></member>
+      <member refid="struct_a_v_option_range_1adb21ecde2d4e6b47b9107816f9287ccb" prot="public" virt="non-virtual"><scope>AVOptionRange</scope><name>value_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

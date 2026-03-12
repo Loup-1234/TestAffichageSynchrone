@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_r_m_plane_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVDRMPlaneDescriptor</compoundname>
+    <includes refid="hwcontext__drm_8h" local="no">hwcontext_drm.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_r_m_plane_descriptor_1af07fe11d604e0a3b5fd934f9626c008b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDRMPlaneDescriptor::object_index</definition>
+        <argsstring></argsstring>
+        <name>object_index</name>
+        <qualifiedname>AVDRMPlaneDescriptor::object_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the object containing this plane in the objects array of the enclosing frame descriptor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="79" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_plane_descriptor_1af1a0839b02055445257d431d946d96a7" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t AVDRMPlaneDescriptor::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>AVDRMPlaneDescriptor::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset within that object of this plane. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="83" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_plane_descriptor_1aa4eaa5a37f40dd7301ce1b8194eefc0a" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t AVDRMPlaneDescriptor::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <qualifiedname>AVDRMPlaneDescriptor::pitch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pitch (linesize) of this plane. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="87" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DRM plane descriptor.</para>
+<para>Describes a single plane of a layer, which is contained within a single object. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="74" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="74" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_r_m_plane_descriptor_1af07fe11d604e0a3b5fd934f9626c008b" prot="public" virt="non-virtual"><scope>AVDRMPlaneDescriptor</scope><name>object_index</name></member>
+      <member refid="struct_a_v_d_r_m_plane_descriptor_1af1a0839b02055445257d431d946d96a7" prot="public" virt="non-virtual"><scope>AVDRMPlaneDescriptor</scope><name>offset</name></member>
+      <member refid="struct_a_v_d_r_m_plane_descriptor_1aa4eaa5a37f40dd7301ce1b8194eefc0a" prot="public" virt="non-virtual"><scope>AVDRMPlaneDescriptor</scope><name>pitch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

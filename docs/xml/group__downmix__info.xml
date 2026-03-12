@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__downmix__info" kind="group">
+    <compoundname>downmix_info</compoundname>
+    <title>Audio downmix metadata</title>
+    <innerclass refid="struct_a_v_downmix_info" prot="public">AVDownmixInfo</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__downmix__info_1ga3e3654fedbe3e5485f00ea09396c3521" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVDownmixType</name>
+        <enumvalue id="group__downmix__info_1gga3e3654fedbe3e5485f00ea09396c3521a1184863af0dcd15f6851f2db10fa355c" prot="public">
+          <name>AV_DOWNMIX_TYPE_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not indicated. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__downmix__info_1gga3e3654fedbe3e5485f00ea09396c3521a63e63739b6ea34a5ec073ad6ead25f8e" prot="public">
+          <name>AV_DOWNMIX_TYPE_LORO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lo/Ro 2-channel downmix (Stereo). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__downmix__info_1gga3e3654fedbe3e5485f00ea09396c3521a3737f8fe65fe8b805b256efa8d1328ef" prot="public">
+          <name>AV_DOWNMIX_TYPE_LTRT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lt/Rt 2-channel downmix, Dolby Surround compatible. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__downmix__info_1gga3e3654fedbe3e5485f00ea09396c3521ac92fde94fbc0aa50b93071d995a36fca" prot="public">
+          <name>AV_DOWNMIX_TYPE_DPLII</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lt/Rt 2-channel downmix, Dolby Pro Logic II compatible. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__downmix__info_1gga3e3654fedbe3e5485f00ea09396c3521ae8e1a1a755fccdddddbc9680694af182" prot="public">
+          <name>AV_DOWNMIX_TYPE_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of downmix types. Not part of ABI. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible downmix types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="44" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" bodystart="44" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__downmix__info_1ga18208b29db05599142a38d4992fce1e0" prot="public" static="no">
+        <type>struct AVDownmixInfo</type>
+        <definition>typedef struct AVDownmixInfo AVDownmixInfo</definition>
+        <argsstring></argsstring>
+        <name>AVDownmixInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure describes optional metadata relevant to a downmix procedure.</para>
+<para>All fields are set by the decoder to the value indicated in the audio bitstream (if present), or to a &quot;sane&quot; default otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="93" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__downmix__info_1gad4864d2789400dfb3e6bdc3c9c2eae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_downmix_info" kindref="compound">AVDownmixInfo</ref> *</type>
+        <definition>AVDownmixInfo * av_downmix_info_update_side_data</definition>
+        <argsstring>(AVFrame *frame)</argsstring>
+        <name>av_downmix_info_update_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a frame&apos;s AV_FRAME_DATA_DOWNMIX_INFO side data for editing.</para>
+<para>If the side data is absent, it is created and added to the frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame for which the side data is to be obtained or created</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <ref refid="struct_a_v_downmix_info" kindref="compound">AVDownmixInfo</ref> structure to be edited by the caller, or NULL if the structure cannot be allocated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" line="105" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h" declline="105" declcolumn="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

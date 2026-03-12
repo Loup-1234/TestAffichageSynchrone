@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__codec__hwaccel__d3d11va" kind="group">
+    <compoundname>lavc_codec_hwaccel_d3d11va</compoundname>
+    <title>Direct3D11</title>
+    <innerfile refid="d3d11va_8h">d3d11va.h</innerfile>
+    <innerclass refid="struct_a_v_d3_d11_v_a_context" prot="public">AVD3D11VAContext</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavc__codec__hwaccel__d3d11va_1ga5c9e4e323204a7181aa9cd6d3779fe15" prot="public" static="no">
+        <type>struct AVD3D11VAContext</type>
+        <definition>typedef struct AVD3D11VAContext AVD3D11VAContext</definition>
+        <argsstring></argsstring>
+        <name>AVD3D11VAContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure is used to provides the necessary configurations and data to the Direct3D11 FFmpeg HWAccel implementation.</para>
+<para>The application must make it available as <ref refid="struct_a_v_codec_context_1ab222f7d747dfdceff0a76999e09648c0" kindref="member">AVCodecContext.hwaccel_context</ref>.</para>
+<para>Use <ref refid="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" kindref="member">av_d3d11va_alloc_context()</ref> exclusively to allocate an <ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="96" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__codec__hwaccel__d3d11va_1ga251823f2f8464b8d524f20b545ba3308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref> *</type>
+        <definition>AVD3D11VAContext * av_d3d11va_alloc_context</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_d3d11va_alloc_context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref>.</para>
+<para><simplesect kind="return"><para>Newly-allocated <ref refid="struct_a_v_d3_d11_v_a_context" kindref="compound">AVD3D11VAContext</ref> or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" line="103" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/d3d11va.h" declline="103" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

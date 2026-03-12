@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="frame_8h" kind="file" language="C++">
+    <compoundname>frame.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="avutil_8h" local="yes">avutil.h</includes>
+    <includes refid="buffer_8h" local="yes">buffer.h</includes>
+    <includes refid="channel__layout_8h" local="yes">channel_layout.h</includes>
+    <includes refid="dict_8h" local="yes">dict.h</includes>
+    <includes refid="rational_8h" local="yes">rational.h</includes>
+    <includes refid="samplefmt_8h" local="yes">samplefmt.h</includes>
+    <includes refid="pixfmt_8h" local="yes">pixfmt.h</includes>
+    <includes refid="libavutil_2version_8h" local="yes">version.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="avfilter_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</includedby>
+    <includedby refid="avformat_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</includedby>
+    <includedby refid="ambient__viewing__environment_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</includedby>
+    <includedby refid="detection__bbox_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</includedby>
+    <includedby refid="downmix__info_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</includedby>
+    <includedby refid="film__grain__params_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</includedby>
+    <includedby refid="hdr__dynamic__metadata_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</includedby>
+    <includedby refid="hdr__dynamic__vivid__metadata_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</includedby>
+    <includedby refid="hwcontext_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</includedby>
+    <includedby refid="hwcontext__opencl_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</includedby>
+    <includedby refid="hwcontext__videotoolbox_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</includedby>
+    <includedby refid="hwcontext__vulkan_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</includedby>
+    <includedby refid="mastering__display__metadata_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</includedby>
+    <includedby refid="stereo3d_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</includedby>
+    <includedby refid="video__enc__params_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</includedby>
+    <includedby refid="video__hint_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</includedby>
+    <includedby refid="swresample_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</includedby>
+    <includedby refid="swscale_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="16">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="4">
+        <label>avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>channel_layout.h</label>
+        <link refid="channel__layout_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>intfloat.h</label>
+        <link refid="intfloat_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mathematics.h</label>
+        <link refid="mathematics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>pixfmt.h</label>
+        <link refid="pixfmt_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>samplefmt.h</label>
+        <link refid="samplefmt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>errno.h</label>
+      </node>
+      <node id="7">
+        <label>inttypes.h</label>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="9">
+        <label>math.h</label>
+      </node>
+      <node id="23">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_frame_side_data" prot="public">AVFrameSideData</innerclass>
+    <innerclass refid="struct_a_v_side_data_descriptor" prot="public">AVSideDataDescriptor</innerclass>
+    <innerclass refid="struct_a_v_region_of_interest" prot="public">AVRegionOfInterest</innerclass>
+    <innerclass refid="struct_a_v_frame" prot="public">AVFrame</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="frame_8h_1add80189702cf0f5ea82718576fb43201" prot="public" static="no">
+        <name>AV_NUM_DATA_POINTERS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="428" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__lavu__frame__flags_1gadddbce4ec0cc2ad4298cf6f266f97f6a" kind="define"><name>AV_FRAME_FLAG_CORRUPT</name></member>
+      <member refid="group__lavu__frame__flags_1gafe155269fc8dc3a484490bd19b86cc40" kind="define"><name>AV_FRAME_FLAG_KEY</name></member>
+      <member refid="group__lavu__frame__flags_1gaa0c693c70705b18c1c1346f520b6f9cc" kind="define"><name>AV_FRAME_FLAG_DISCARD</name></member>
+      <member refid="group__lavu__frame__flags_1ga079e6fe667e9a3933c4a9fa1ea63a773" kind="define"><name>AV_FRAME_FLAG_INTERLACED</name></member>
+      <member refid="group__lavu__frame__flags_1ga09c41b9f4fc18d6be1d9eedc81129016" kind="define"><name>AV_FRAME_FLAG_TOP_FIELD_FIRST</name></member>
+      <member refid="group__lavu__frame__flags_1ga401b6f93cd0449876b5407fbfb69555c" kind="define"><name>AV_FRAME_FLAG_LOSSLESS</name></member>
+      <memberdef kind="define" id="frame_8h_1a0fe215657b893e361ba4c42c8896c0ac" prot="public" static="no">
+        <name>FF_DECODE_ERROR_INVALID_BITSTREAM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="715" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="frame_8h_1a995eb38eb9ab4e9897422d06aeea4cfd" prot="public" static="no">
+        <name>FF_DECODE_ERROR_MISSING_REFERENCE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="716" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="frame_8h_1a42d55145377a67437a5d144c3908fb56" prot="public" static="no">
+        <name>FF_DECODE_ERROR_CONCEALMENT_ACTIVE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="717" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="frame_8h_1ab43bedb5430f5ba2d971b7a54dadd806" prot="public" static="no">
+        <name>FF_DECODE_ERROR_DECODE_SLICES</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="718" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__lavu__frame_1gafbda17a9176996d64c06ddb3cc435dc9" kind="define"><name>AV_FRAME_SIDE_DATA_FLAG_UNIQUE</name></member>
+      <member refid="group__lavu__frame_1ga3973b2fba408a994cf796ff5f5fa91a7" kind="define"><name>AV_FRAME_SIDE_DATA_FLAG_REPLACE</name></member>
+      <member refid="group__lavu__frame_1ga649a4cc3a2f61d845ea4b0497f3273a7" kind="define"><name>AV_FRAME_SIDE_DATA_FLAG_NEW_REF</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kind="enum"><name>AVFrameSideDataType</name></member>
+      <member refid="group__lavu__frame_1ga612627d8f03d52317992979dfa151d76" kind="enum"><name>AVActiveFormatDescription</name></member>
+      <member refid="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" kind="enum"><name>AVSideDataProps</name></member>
+      <member refid="group__lavu__frame_1ga433befa4fa4a74d3d9db1cdd36f07e69" kind="enum"><name></name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__lavu__frame_1ga1b8cd016bc806e5420ffe97edc140d12" kind="typedef"><name>AVFrameSideData</name></member>
+      <member refid="group__lavu__frame_1gaac9bdc2153d20d51eb842a8f23d5afe2" kind="typedef"><name>AVSideDataDescriptor</name></member>
+      <member refid="group__lavu__frame_1ga47b64dcbdc8b7a3d2469ed0e14654a5f" kind="typedef"><name>AVRegionOfInterest</name></member>
+      <member refid="group__lavu__frame_1gadb9d87a8956751b4fd71791105d65c52" kind="typedef"><name>AVFrame</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" kind="function"><name>av_frame_alloc</name></member>
+      <member refid="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" kind="function"><name>av_frame_free</name></member>
+      <member refid="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" kind="function"><name>av_frame_ref</name></member>
+      <member refid="group__lavu__frame_1ga2a85f06e2b9f44a1de63032cad51e922" kind="function"><name>av_frame_replace</name></member>
+      <member refid="group__lavu__frame_1gadb917e6f2b61717390baf2009fe66c06" kind="function"><name>av_frame_clone</name></member>
+      <member refid="group__lavu__frame_1ga0a2b687f9c1c5ed0089b01fd61227108" kind="function"><name>av_frame_unref</name></member>
+      <member refid="group__lavu__frame_1ga709e62bc2917ffd84c5c0f4e1dfc48f7" kind="function"><name>av_frame_move_ref</name></member>
+      <member refid="group__lavu__frame_1ga6b1acbfa82c79bf7fd78d868572f0ceb" kind="function"><name>av_frame_get_buffer</name></member>
+      <member refid="group__lavu__frame_1ga3ba755bada5c3c8883361ef43fb5fb7a" kind="function"><name>av_frame_is_writable</name></member>
+      <member refid="group__lavu__frame_1gadd5417c06f5a6b419b0dbd8f0ff363fd" kind="function"><name>av_frame_make_writable</name></member>
+      <member refid="group__lavu__frame_1gaec4e92f6e1e75ffaf76e07586fb0c9ed" kind="function"><name>av_frame_copy</name></member>
+      <member refid="group__lavu__frame_1gab9b275b114ace0db95c5796bc71f3012" kind="function"><name>av_frame_copy_props</name></member>
+      <member refid="group__lavu__frame_1gaffbf089810dcaeebc6455144dab84567" kind="function"><name>av_frame_get_plane_buffer</name></member>
+      <member refid="group__lavu__frame_1ga9e0cf2909ab6d787845ab6326cd3fb10" kind="function"><name>av_frame_new_side_data</name></member>
+      <member refid="group__lavu__frame_1gab2aafcdaafcb1d3e7ce2d0d6f733546a" kind="function"><name>av_frame_new_side_data_from_buf</name></member>
+      <member refid="group__lavu__frame_1ga0e3085c5a7aa8e8867ec6322983d3bc7" kind="function"><name>av_frame_get_side_data</name></member>
+      <member refid="group__lavu__frame_1ga132d6c01d0a21e5b48b96cd7c988de91" kind="function"><name>av_frame_remove_side_data</name></member>
+      <member refid="group__lavu__frame_1gaea6d378ff15d984d4eb67b462b7d70b5" kind="function"><name>av_frame_apply_cropping</name></member>
+      <member refid="group__lavu__frame_1gaff674f7f4b25bdacf32fc8f3174138ab" kind="function"><name>av_frame_side_data_name</name></member>
+      <member refid="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" kind="function"><name>av_frame_side_data_desc</name></member>
+      <member refid="group__lavu__frame_1ga286128e06e77eb1525859970bccc0bba" kind="function"><name>av_frame_side_data_free</name></member>
+      <member refid="group__lavu__frame_1ga0b06737fb259ca0ba295c4307c470601" kind="function"><name>av_frame_side_data_new</name></member>
+      <member refid="group__lavu__frame_1ga66aec0fe237e1eda2ca6409fa56fac2d" kind="function"><name>av_frame_side_data_add</name></member>
+      <member refid="group__lavu__frame_1gada6f618b4b43c51d5816dbe0d0acf0df" kind="function"><name>av_frame_side_data_clone</name></member>
+      <member refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" kind="function"><name>av_frame_side_data_get_c</name></member>
+      <member refid="group__lavu__frame_1gafca60a503a1c0fa125e0bf6a89230ed0" kind="function"><name>av_frame_side_data_get</name></member>
+      <member refid="group__lavu__frame_1ga8da197d8b787c10ff455a1dc9ae570df" kind="function"><name>av_frame_side_data_remove</name></member>
+      <member refid="group__lavu__frame_1ga83094313d4561ecbbcfbe0f9c9ed9be7" kind="function"><name>av_frame_side_data_remove_by_props</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>reference-counted frame API </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_FRAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_FRAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="avutil_8h" kindref="compound">avutil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buffer_8h" kindref="compound">buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="channel__layout_8h" kindref="compound">channel_layout.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dict_8h" kindref="compound">dict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;samplefmt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pixfmt_8h" kindref="compound">pixfmt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavutil_2version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3de91a03b453c956b7274a2392d9a437" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3de91a03b453c956b7274a2392d9a437" kindref="member">AV_FRAME_DATA_PANSCAN</ref>,</highlight></codeline>
+<codeline lineno="59" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4848fd3952b4c2e1c1b85acb628c78a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4848fd3952b4c2e1c1b85acb628c78a6" kindref="member">AV_FRAME_DATA_A53_CC</ref>,</highlight></codeline>
+<codeline lineno="64" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcacec681d6146e8bd4c61b2e1cc88354a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcacec681d6146e8bd4c61b2e1cc88354a8" kindref="member">AV_FRAME_DATA_STEREO3D</ref>,</highlight></codeline>
+<codeline lineno="68" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaa69ea5c11a5431bfff9e565714dafe41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaa69ea5c11a5431bfff9e565714dafe41" kindref="member">AV_FRAME_DATA_MATRIXENCODING</ref>,</highlight></codeline>
+<codeline lineno="73" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca71819257ea0bedb7e0740a0ce60e404a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca71819257ea0bedb7e0740a0ce60e404a" kindref="member">AV_FRAME_DATA_DOWNMIX_INFO</ref>,</highlight></codeline>
+<codeline lineno="77" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca66f46a9df9fcb8cf212e0693465794e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca66f46a9df9fcb8cf212e0693465794e1" kindref="member">AV_FRAME_DATA_REPLAYGAIN</ref>,</highlight></codeline>
+<codeline lineno="85" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3e01b882b6fa04724076067d6d9f8b69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3e01b882b6fa04724076067d6d9f8b69" kindref="member">AV_FRAME_DATA_DISPLAYMATRIX</ref>,</highlight></codeline>
+<codeline lineno="90" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9aabf5c0b8abc7064bfcc59485e54aea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9aabf5c0b8abc7064bfcc59485e54aea" kindref="member">AV_FRAME_DATA_AFD</ref>,</highlight></codeline>
+<codeline lineno="97" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf50d0ed0a9a4517341c221be03a06c42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf50d0ed0a9a4517341c221be03a06c42" kindref="member">AV_FRAME_DATA_MOTION_VECTORS</ref>,</highlight></codeline>
+<codeline lineno="109" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6b0b1ee4315f322922710f65d02a146b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6b0b1ee4315f322922710f65d02a146b" kindref="member">AV_FRAME_DATA_SKIP_SAMPLES</ref>,</highlight></codeline>
+<codeline lineno="114" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca51023c847159dcc08776f9dcee5e0c90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca51023c847159dcc08776f9dcee5e0c90" kindref="member">AV_FRAME_DATA_AUDIO_SERVICE_TYPE</ref>,</highlight></codeline>
+<codeline lineno="120" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6e305f92e325fbd219527452048f16cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6e305f92e325fbd219527452048f16cb" kindref="member">AV_FRAME_DATA_MASTERING_DISPLAY_METADATA</ref>,</highlight></codeline>
+<codeline lineno="125" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca03982b828a1069c895d16cda4b3e9fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca03982b828a1069c895d16cda4b3e9fd4" kindref="member">AV_FRAME_DATA_GOP_TIMECODE</ref>,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca12806c5fd4b37dca88312c61965f33e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca12806c5fd4b37dca88312c61965f33e8" kindref="member">AV_FRAME_DATA_SPHERICAL</ref>,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca311f0afd2dded92ef68ae00f7711aa2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca311f0afd2dded92ef68ae00f7711aa2d" kindref="member">AV_FRAME_DATA_CONTENT_LIGHT_LEVEL</ref>,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca8ef8866b8c04c54c630479bc163196ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca8ef8866b8c04c54c630479bc163196ae" kindref="member">AV_FRAME_DATA_ICC_PROFILE</ref>,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9f4e4ed5a874d1089ec07c384b81bb70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9f4e4ed5a874d1089ec07c384b81bb70" kindref="member">AV_FRAME_DATA_S12M_TIMECODE</ref>,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca624c3831cce31e4fcd3d2dc77c10b226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca624c3831cce31e4fcd3d2dc77c10b226" kindref="member">AV_FRAME_DATA_DYNAMIC_HDR_PLUS</ref>,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf525ec92d2c5a78d44950bc3f29972aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf525ec92d2c5a78d44950bc3f29972aa" kindref="member">AV_FRAME_DATA_REGIONS_OF_INTEREST</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca807dbafb2944aa9be03d787d05a00ed1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca807dbafb2944aa9be03d787d05a00ed1" kindref="member">AV_FRAME_DATA_VIDEO_ENC_PARAMS</ref>,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4f2dcaee18e5ffed8ff4ab1cc3b326aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4f2dcaee18e5ffed8ff4ab1cc3b326aa" kindref="member">AV_FRAME_DATA_SEI_UNREGISTERED</ref>,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7858862e9cea434d72603c9cbf3f18c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7858862e9cea434d72603c9cbf3f18c6" kindref="member">AV_FRAME_DATA_FILM_GRAIN_PARAMS</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca835a1d022b9a056b1664633051a70084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca835a1d022b9a056b1664633051a70084" kindref="member">AV_FRAME_DATA_DETECTION_BBOXES</ref>,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcabee059bcc539a78f52f60f4cc67bb366" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcabee059bcc539a78f52f60f4cc67bb366" kindref="member">AV_FRAME_DATA_DOVI_RPU_BUFFER</ref>,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca09f6f2010793a80251acebf166036392" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca09f6f2010793a80251acebf166036392" kindref="member">AV_FRAME_DATA_DOVI_METADATA</ref>,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca17d5e6a551f7f455d58669c51baa0e73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca17d5e6a551f7f455d58669c51baa0e73" kindref="member">AV_FRAME_DATA_DYNAMIC_HDR_VIVID</ref>,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3cf626a91057faf08bc0df39d1e8d390" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3cf626a91057faf08bc0df39d1e8d390" kindref="member">AV_FRAME_DATA_AMBIENT_VIEWING_ENVIRONMENT</ref>,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcad832bf1563f5eafaa92c34f10c3984fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcad832bf1563f5eafaa92c34f10c3984fa" kindref="member">AV_FRAME_DATA_VIDEO_HINT</ref>,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca135f55ad6a09843a1a76fa4711a46225" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca135f55ad6a09843a1a76fa4711a46225" kindref="member">AV_FRAME_DATA_LCEVC</ref>,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca1221f015c50d13221836656b01870cad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca1221f015c50d13221836656b01870cad" kindref="member">AV_FRAME_DATA_VIEW_ID</ref>,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7139570f49a5c7e2866673ebdd2e8c89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7139570f49a5c7e2866673ebdd2e8c89" kindref="member">AV_FRAME_DATA_3D_REFERENCE_DISPLAYS</ref>,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca07e410bb65178326c8874bf6a29d49be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca07e410bb65178326c8874bf6a29d49be" kindref="member">AV_FRAME_DATA_EXIF</ref>,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVActiveFormatDescription<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_SAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_4_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_16_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_14_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_4_3_SP_14_9<sp/><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_16_9_SP_14_9<sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_AFD_SP_4_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="struct_a_v_frame_side_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*data;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/>size;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>AVDictionary<sp/>*metadata;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf;</highlight></codeline>
+<codeline lineno="288" refid="group__lavu__frame_1ga1b8cd016bc806e5420ffe97edc140d12" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" kindref="member">AVSideDataProps</ref><sp/>{</highlight></codeline>
+<codeline lineno="296" refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a14eb5241a0829dae8c498e543efddcd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a14eb5241a0829dae8c498e543efddcd4" kindref="member">AV_SIDE_DATA_PROP_GLOBAL</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4afe5a7db8886a9b16966ce8a911479b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4afe5a7db8886a9b16966ce8a911479b7a" kindref="member">AV_SIDE_DATA_PROP_MULTI</ref><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a65f8eca536c38b5164f7ce1b59395d45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a65f8eca536c38b5164f7ce1b59395d45" kindref="member">AV_SIDE_DATA_PROP_SIZE_DEPENDENT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2),</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a8accfbdd336b39c3c290251d8ea4e456" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a8accfbdd336b39c3c290251d8ea4e456" kindref="member">AV_SIDE_DATA_PROP_COLOR_DEPENDENT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>3),</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a3a95a7b99d26de3c17a1e67e3935b141" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a3a95a7b99d26de3c17a1e67e3935b141" kindref="member">AV_SIDE_DATA_PROP_CHANNEL_DEPENDENT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>4),</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="struct_a_v_side_data_descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_side_data_descriptor" kindref="compound">AVSideDataDescriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="334" refid="struct_a_v_side_data_descriptor_1acbb44b51ddeebffdb50ba8e6a2461c6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_a_v_side_data_descriptor_1acbb44b51ddeebffdb50ba8e6a2461c6a" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="struct_a_v_side_data_descriptor_1aa42624f508291def9226914e7bfacd7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_side_data_descriptor_1aa42624f508291def9226914e7bfacd7f" kindref="member">props</ref>;</highlight></codeline>
+<codeline lineno="340" refid="group__lavu__frame_1gaac9bdc2153d20d51eb842a8f23d5afe2" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_side_data_descriptor" kindref="compound">AVSideDataDescriptor</ref>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="struct_a_v_region_of_interest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_region_of_interest" kindref="compound">AVRegionOfInterest</ref><sp/>{</highlight></codeline>
+<codeline lineno="358" refid="struct_a_v_region_of_interest_1a5c75595b7003be167ed674bf565654db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_a_v_region_of_interest_1a5c75595b7003be167ed674bf565654db" kindref="member">self_size</ref>;</highlight></codeline>
+<codeline lineno="368" refid="struct_a_v_region_of_interest_1af07ce47d1c824676f790d95e23ff9caf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_region_of_interest_1af07ce47d1c824676f790d95e23ff9caf" kindref="member">top</ref>;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bottom;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>left;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>right;</highlight></codeline>
+<codeline lineno="395" refid="struct_a_v_region_of_interest_1ae7421571aad4d48b63e91274ba424ee0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_region_of_interest_1ae7421571aad4d48b63e91274ba424ee0" kindref="member">qoffset</ref>;</highlight></codeline>
+<codeline lineno="396" refid="group__lavu__frame_1ga47b64dcbdc8b7a3d2469ed0e14654a5f" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_region_of_interest" kindref="compound">AVRegionOfInterest</ref>;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="struct_a_v_frame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>{</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_NUM_DATA_POINTERS<sp/>8</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448" refid="struct_a_v_frame_1a1d0f65014a8d1bf78cec8cbed2304992" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="struct_a_v_frame_1a1d0f65014a8d1bf78cec8cbed2304992" kindref="member">data</ref>[AV_NUM_DATA_POINTERS];</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="struct_a_v_frame_1aa52bfc6605f6a3059a0c3226cc0f6567" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1aa52bfc6605f6a3059a0c3226cc0f6567" kindref="member">linesize</ref>[AV_NUM_DATA_POINTERS];</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488" refid="struct_a_v_frame_1afca04d808393822625e09b5ba91c6756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>**<ref refid="struct_a_v_frame_1afca04d808393822625e09b5ba91c6756" kindref="member">extended_data</ref>;</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/>height;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507" refid="struct_a_v_frame_1a02f45ab8191aea1660159f1e464237ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1a02f45ab8191aea1660159f1e464237ea" kindref="member">nb_samples</ref>;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514" refid="struct_a_v_frame_1aed14fa772ce46881020fd1545c86432c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1aed14fa772ce46881020fd1545c86432c" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519" refid="struct_a_v_frame_1af9920fc3fbfa347b8943ae461b50d18b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__picture_1gae6cbcab1f70d8e476757f1c1f5a0a78e" kindref="member">AVPictureType</ref><sp/><ref refid="struct_a_v_frame_1af9920fc3fbfa347b8943ae461b50d18b" kindref="member">pict_type</ref>;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524" refid="struct_a_v_frame_1a62f9c20541a83d37db7072126ff0060d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_frame_1a62f9c20541a83d37db7072126ff0060d" kindref="member">sample_aspect_ratio</ref>;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529" refid="struct_a_v_frame_1a0452833e3ab6ddd7acbf82817a7818a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_frame_1a0452833e3ab6ddd7acbf82817a7818a4" kindref="member">pts</ref>;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536" refid="struct_a_v_frame_1aa52951f35ec9e303d3dfeb4b3e44248a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_frame_1aa52951f35ec9e303d3dfeb4b3e44248a" kindref="member">pkt_dts</ref>;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544" refid="struct_a_v_frame_1a36518d08c8e0ca31785e968add00fd07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/><ref refid="struct_a_v_frame_1a36518d08c8e0ca31785e968add00fd07" kindref="member">time_base</ref>;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549" refid="struct_a_v_frame_1a791c071afd3e95fcae14cb781829754d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1a791c071afd3e95fcae14cb781829754d" kindref="member">quality</ref>;</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="struct_a_v_frame_1a385d043b41cd182b7b1bdaec56ed19e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="struct_a_v_frame_1a385d043b41cd182b7b1bdaec56ed19e0" kindref="member">opaque</ref>;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585" refid="struct_a_v_frame_1aef11fd783ad17b6841af82efa07c859e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1aef11fd783ad17b6841af82efa07c859e" kindref="member">repeat_pict</ref>;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590" refid="struct_a_v_frame_1ac85daa1316e1f47e78da0ca19b7c60e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1ac85daa1316e1f47e78da0ca19b7c60e6" kindref="member">sample_rate</ref>;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604" refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" kindref="member">buf</ref>[AV_NUM_DATA_POINTERS];</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="struct_a_v_frame_1a254a144d113ceedc003ec1547cc5bd54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**<ref refid="struct_a_v_frame_1a254a144d113ceedc003ec1547cc5bd54" kindref="member">extended_buf</ref>;</highlight></codeline>
+<codeline lineno="622" refid="struct_a_v_frame_1aa2dc17f4f816018b0782e1386bdbeeb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_frame_1aa2dc17f4f816018b0782e1386bdbeeb1" kindref="member">nb_extended_buf</ref>;</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>**side_data;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_side_data;</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638" refid="group__lavu__frame__flags_1gadddbce4ec0cc2ad4298cf6f266f97f6a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_CORRUPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642" refid="group__lavu__frame__flags_1gafe155269fc8dc3a484490bd19b86cc40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_KEY<sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646" refid="group__lavu__frame__flags_1gaa0c693c70705b18c1c1346f520b6f9cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_DISCARD<sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650" refid="group__lavu__frame__flags_1ga079e6fe667e9a3933c4a9fa1ea63a773" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_INTERLACED<sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="655" refid="group__lavu__frame__flags_1ga09c41b9f4fc18d6be1d9eedc81129016" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_TOP_FIELD_FIRST<sp/>(1<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663" refid="group__lavu__frame__flags_1ga401b6f93cd0449876b5407fbfb69555c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_FLAG_LOSSLESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>5)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"></highlight></codeline>
+<codeline lineno="671" refid="struct_a_v_frame_1a49020cc320b8fb1f5449167b6c97515b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1a49020cc320b8fb1f5449167b6c97515b" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678" refid="struct_a_v_frame_1a853afbad220bbc58549b4860732a3aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref><sp/><ref refid="struct_a_v_frame_1a853afbad220bbc58549b4860732a3aa5" kindref="member">color_range</ref>;</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad384ee5a840bafd73daef08e6d9cafe7" kindref="member">AVColorPrimaries</ref><sp/>color_primaries;</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1ad4791ea14975f098b649db7fcd731ce6" kindref="member">AVColorTransferCharacteristic</ref><sp/>color_trc;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight></codeline>
+<codeline lineno="689" refid="struct_a_v_frame_1a9262c231f1f64869439b4fe587fe1710" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref><sp/><ref refid="struct_a_v_frame_1a9262c231f1f64869439b4fe587fe1710" kindref="member">colorspace</ref>;</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a1f86ed1b6a420faccacf77c98db6c1ff" kindref="member">AVChromaLocation</ref><sp/>chroma_location;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="698" refid="struct_a_v_frame_1a0943e85eb624c2191490862ececd319d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_frame_1a0943e85eb624c2191490862ececd319d" kindref="member">best_effort_timestamp</ref>;</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705" refid="struct_a_v_frame_1a5bde87fd101f66d6263bb451056dba13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>AVDictionary<sp/>*<ref refid="struct_a_v_frame_1a5bde87fd101f66d6263bb451056dba13" kindref="member">metadata</ref>;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714" refid="struct_a_v_frame_1a3dd46fd353a405f6e9b91c11d9c5b736" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_1a3dd46fd353a405f6e9b91c11d9c5b736" kindref="member">decode_error_flags</ref>;</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_DECODE_ERROR_INVALID_BITSTREAM<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_DECODE_ERROR_MISSING_REFERENCE<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_DECODE_ERROR_CONCEALMENT_ACTIVE<sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_DECODE_ERROR_DECODE_SLICES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724" refid="struct_a_v_frame_1a29493fbfabaa21432c360a090426aa8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_frame_1a29493fbfabaa21432c360a090426aa8e" kindref="member">hw_frames_ctx</ref>;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="740" refid="struct_a_v_frame_1a84480c55f3b66c9ec8a669872a14dfdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="struct_a_v_frame_1a84480c55f3b66c9ec8a669872a14dfdc" kindref="member">opaque_ref</ref>;</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>crop_top;</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>crop_bottom;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>crop_left;</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>crop_right;</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="765" refid="struct_a_v_frame_1afb53b8f67c8d99da4aaf4f64175e05e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="struct_a_v_frame_1afb53b8f67c8d99da4aaf4f64175e05e0" kindref="member">private_ref</ref>;</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770" refid="struct_a_v_frame_1ae291cdec7758599e765bc9e3edbb3065" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref><sp/><ref refid="struct_a_v_frame_1ae291cdec7758599e765bc9e3edbb3065" kindref="member">ch_layout</ref>;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="775" refid="struct_a_v_frame_1ab90bd20a44c79c144045916b00c50e0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="struct_a_v_frame_1ab90bd20a44c79c144045916b00c50e0d" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782" refid="struct_a_v_frame_1a9303014b81b3c27bf07fe7b66fe73716" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref><sp/><ref refid="struct_a_v_frame_1a9303014b81b3c27bf07fe7b66fe73716" kindref="member">alpha_mode</ref>;</highlight></codeline>
+<codeline lineno="783" refid="group__lavu__frame_1gadb9d87a8956751b4fd71791105d65c52" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref>;</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="796" refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*<ref refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" kindref="member">av_frame_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight></codeline>
+<codeline lineno="805" refid="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" kindref="member">av_frame_free</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>**frame);</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822" refid="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" kindref="member">av_frame_ref</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight></codeline>
+<codeline lineno="835" refid="group__lavu__frame_1ga2a85f06e2b9f44a1de63032cad51e922" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga2a85f06e2b9f44a1de63032cad51e922" kindref="member">av_frame_replace</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"></highlight></codeline>
+<codeline lineno="844" refid="group__lavu__frame_1gadb917e6f2b61717390baf2009fe66c06" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*<ref refid="group__lavu__frame_1gadb917e6f2b61717390baf2009fe66c06" kindref="member">av_frame_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849" refid="group__lavu__frame_1ga0a2b687f9c1c5ed0089b01fd61227108" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga0a2b687f9c1c5ed0089b01fd61227108" kindref="member">av_frame_unref</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"></highlight></codeline>
+<codeline lineno="858" refid="group__lavu__frame_1ga709e62bc2917ffd84c5c0f4e1dfc48f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga709e62bc2917ffd84c5c0f4e1dfc48f7" kindref="member">av_frame_move_ref</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884" refid="group__lavu__frame_1ga6b1acbfa82c79bf7fd78d868572f0ceb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga6b1acbfa82c79bf7fd78d868572f0ceb" kindref="member">av_frame_get_buffer</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>align);</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"></highlight></codeline>
+<codeline lineno="898" refid="group__lavu__frame_1ga3ba755bada5c3c8883361ef43fb5fb7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga3ba755bada5c3c8883361ef43fb5fb7a" kindref="member">av_frame_is_writable</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="899"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912" refid="group__lavu__frame_1gadd5417c06f5a6b419b0dbd8f0ff363fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gadd5417c06f5a6b419b0dbd8f0ff363fd" kindref="member">av_frame_make_writable</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"></highlight></codeline>
+<codeline lineno="925" refid="group__lavu__frame_1gaec4e92f6e1e75ffaf76e07586fb0c9ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gaec4e92f6e1e75ffaf76e07586fb0c9ed" kindref="member">av_frame_copy</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="926"><highlight class="normal"></highlight></codeline>
+<codeline lineno="935" refid="group__lavu__frame_1gab9b275b114ace0db95c5796bc71f3012" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gab9b275b114ace0db95c5796bc71f3012" kindref="member">av_frame_copy_props</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*src);</highlight></codeline>
+<codeline lineno="936"><highlight class="normal"></highlight></codeline>
+<codeline lineno="946" refid="group__lavu__frame_1gaffbf089810dcaeebc6455144dab84567" refkind="member"><highlight class="normal"><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*<ref refid="group__lavu__frame_1gaffbf089810dcaeebc6455144dab84567" kindref="member">av_frame_get_plane_buffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane);</highlight></codeline>
+<codeline lineno="947"><highlight class="normal"></highlight></codeline>
+<codeline lineno="957" refid="group__lavu__frame_1ga9e0cf2909ab6d787845ab6326cd3fb10" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1ga9e0cf2909ab6d787845ab6326cd3fb10" kindref="member">av_frame_new_side_data</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,</highlight></codeline>
+<codeline lineno="958"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="960"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973" refid="group__lavu__frame_1gab2aafcdaafcb1d3e7ce2d0d6f733546a" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1gab2aafcdaafcb1d3e7ce2d0d6f733546a" kindref="member">av_frame_new_side_data_from_buf</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="981" refid="group__lavu__frame_1ga0e3085c5a7aa8e8867ec6322983d3bc7" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1ga0e3085c5a7aa8e8867ec6322983d3bc7" kindref="member">av_frame_get_side_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,</highlight></codeline>
+<codeline lineno="982"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight></codeline>
+<codeline lineno="987" refid="group__lavu__frame_1ga132d6c01d0a21e5b48b96cd7c988de91" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga132d6c01d0a21e5b48b96cd7c988de91" kindref="member">av_frame_remove_side_data</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"></highlight></codeline>
+<codeline lineno="989"><highlight class="normal"></highlight></codeline>
+<codeline lineno="993"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="1002" refid="group__lavu__frame_1gga433befa4fa4a74d3d9db1cdd36f07e69a8df6ec39909b8d97c0a6d2d8465d2e0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__lavu__frame_1gga433befa4fa4a74d3d9db1cdd36f07e69a8df6ec39909b8d97c0a6d2d8465d2e0f" kindref="member">AV_FRAME_CROP_UNALIGNED</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1021" refid="group__lavu__frame_1gaea6d378ff15d984d4eb67b462b7d70b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gaea6d378ff15d984d4eb67b462b7d70b5" kindref="member">av_frame_apply_cropping</ref>(<ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1026" refid="group__lavu__frame_1gaff674f7f4b25bdacf32fc8f3174138ab" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__lavu__frame_1gaff674f7f4b25bdacf32fc8f3174138ab" kindref="member">av_frame_side_data_name</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1032" refid="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_side_data_descriptor" kindref="compound">AVSideDataDescriptor</ref><sp/>*<ref refid="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" kindref="member">av_frame_side_data_desc</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1043" refid="group__lavu__frame_1ga286128e06e77eb1525859970bccc0bba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga286128e06e77eb1525859970bccc0bba" kindref="member">av_frame_side_data_free</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd);</highlight></codeline>
+<codeline lineno="1044"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1048" refid="group__lavu__frame_1gafbda17a9176996d64c06ddb3cc435dc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_SIDE_DATA_FLAG_UNIQUE<sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1053" refid="group__lavu__frame_1ga3973b2fba408a994cf796ff5f5fa91a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_SIDE_DATA_FLAG_REPLACE<sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1058" refid="group__lavu__frame_1ga649a4cc3a2f61d845ea4b0497f3273a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_FRAME_SIDE_DATA_FLAG_NEW_REF<sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1078" refid="group__lavu__frame_1ga0b06737fb259ca0ba295c4307c470601" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1ga0b06737fb259ca0ba295c4307c470601" kindref="member">av_frame_side_data_new</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="1080"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="1081"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1104" refid="group__lavu__frame_1ga66aec0fe237e1eda2ca6409fa56fac2d" refkind="member"><highlight class="normal"><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1ga66aec0fe237e1eda2ca6409fa56fac2d" kindref="member">av_frame_side_data_add</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="1105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="1106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**buf,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="1107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1127" refid="group__lavu__frame_1gada6f618b4b43c51d5816dbe0d0acf0df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gada6f618b4b43c51d5816dbe0d0acf0df" kindref="member">av_frame_side_data_clone</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="1128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*src,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1140" refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<ref refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" kindref="member">av_frame_side_data_get_c</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*sd,</highlight></codeline>
+<codeline lineno="1141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_sd,</highlight></codeline>
+<codeline lineno="1142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*av_frame_side_data_get(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*sd,</highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_sd,</highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type)</highlight></codeline>
+<codeline lineno="1154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" kindref="member">av_frame_side_data_get_c</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*)sd,</highlight></codeline>
+<codeline lineno="1156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_sd,<sp/>type);</highlight></codeline>
+<codeline lineno="1157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1162" refid="group__lavu__frame_1ga8da197d8b787c10ff455a1dc9ae570df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga8da197d8b787c10ff455a1dc9ae570df" kindref="member">av_frame_side_data_remove</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="1164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1169" refid="group__lavu__frame_1ga83094313d4561ecbbcfbe0f9c9ed9be7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__frame_1ga83094313d4561ecbbcfbe0f9c9ed9be7" kindref="member">av_frame_side_data_remove_by_props</ref>(<ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref><sp/>***sd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nb_sd,</highlight></codeline>
+<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>props);</highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_FRAME_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h"/>
+  </compounddef>
+</doxygen>

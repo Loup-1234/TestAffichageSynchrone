@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_codec" kind="struct" language="C++" prot="public">
+    <compoundname>AVCodec</compoundname>
+    <includes refid="codec_8h" local="no">codec.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_codec_1ad3daa3e729850b573c139a83be8938ca" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVCodec::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVCodec::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the codec implementation. The name is globally unique among encoders and among decoders (but an encoder and a decoder can share the same name). This is the primary way to find a codec from the user perspective. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="179" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1acb4afcfce3b6541ed70aa7f21d507422" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVCodec::long_name</definition>
+        <argsstring></argsstring>
+        <name>long_name</name>
+        <qualifiedname>AVCodec::long_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descriptive name for the codec, meant to be more human readable than name. You should use the NULL_IF_CONFIG_SMALL() macro to define it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="184" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1ab539ca86026d043803c24ba06fa84197" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavu__misc_1ga9a84bba4713dfced21a1a56163be1f48" kindref="member">AVMediaType</ref></type>
+        <definition>enum AVMediaType AVCodec::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVCodec::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="185" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a01a53d07936f4c7ee280444793b6967b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="group__lavc__core_1gaadca229ad2c20e060a14fec08a5cc7ce" kindref="member">AVCodecID</ref></type>
+        <definition>enum AVCodecID AVCodec::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>AVCodec::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="186" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1af51f7ff3dac8b730f46b9713e49a2518" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVCodec::capabilities</definition>
+        <argsstring></argsstring>
+        <name>capabilities</name>
+        <qualifiedname>AVCodec::capabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec capabilities. see AV_CODEC_CAP_* </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="191" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1afc51006d374ca72dfa3b0e29cbb1d981" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVCodec::max_lowres</definition>
+        <argsstring></argsstring>
+        <name>max_lowres</name>
+        <qualifiedname>AVCodec::max_lowres</qualifiedname>
+        <briefdescription>
+<para>maximum value for lowres supported by the decoder </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="192" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a443e9ed8ca3cefcf0a518ab856df94aa" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated const <ref refid="struct_a_v_rational" kindref="compound">AVRational</ref> *</type>
+        <definition>attribute_deprecated const AVRational* AVCodec::supported_framerates</definition>
+        <argsstring></argsstring>
+        <name>supported_framerates</name>
+        <qualifiedname>AVCodec::supported_framerates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated codec capabilities. <xrefsect id="deprecated_1_deprecated000001"><xreftitle>Obsolète</xreftitle><xrefdescription><para>use <ref refid="group__lavc__decoding_1gadd58e6b0bbca99fdbc547efbaa6b0ef1" kindref="member">avcodec_get_supported_config()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="198" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a1bbb0e2b9dfb22d311cbc66730b86626" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+        <definition>attribute_deprecated enum AVPixelFormat* AVCodec::pix_fmts</definition>
+        <argsstring></argsstring>
+        <name>pix_fmts</name>
+        <qualifiedname>AVCodec::pix_fmts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Obsolète</xreftitle><xrefdescription><para>use <ref refid="group__lavc__decoding_1gadd58e6b0bbca99fdbc547efbaa6b0ef1" kindref="member">avcodec_get_supported_config()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="200" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a5795bf22dc477bda4f95c76ee4075c12" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated const int *</type>
+        <definition>attribute_deprecated const int* AVCodec::supported_samplerates</definition>
+        <argsstring></argsstring>
+        <name>supported_samplerates</name>
+        <qualifiedname>AVCodec::supported_samplerates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Obsolète</xreftitle><xrefdescription><para>use <ref refid="group__lavc__decoding_1gadd58e6b0bbca99fdbc547efbaa6b0ef1" kindref="member">avcodec_get_supported_config()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="202" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1aa9d17e53b4b3e27e741b97f0cdb43c69" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> *</type>
+        <definition>attribute_deprecated enum AVSampleFormat* AVCodec::sample_fmts</definition>
+        <argsstring></argsstring>
+        <name>sample_fmts</name>
+        <qualifiedname>AVCodec::sample_fmts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Obsolète</xreftitle><xrefdescription><para>use <ref refid="group__lavc__decoding_1gadd58e6b0bbca99fdbc547efbaa6b0ef1" kindref="member">avcodec_get_supported_config()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="204" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a4ded9f7ec1fa1a73ea3e831428c100fa" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVCodec::priv_class</definition>
+        <argsstring></argsstring>
+        <name>priv_class</name>
+        <qualifiedname>AVCodec::priv_class</qualifiedname>
+        <briefdescription>
+<para><ref refid="struct_a_v_class" kindref="compound">AVClass</ref> for the private context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="206" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1ac832350f2bac582fe3d174e2e3b1eb5e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_profile" kindref="compound">AVProfile</ref> *</type>
+        <definition>const AVProfile* AVCodec::profiles</definition>
+        <argsstring></argsstring>
+        <name>profiles</name>
+        <qualifiedname>AVCodec::profiles</qualifiedname>
+        <briefdescription>
+<para>array of recognized profiles, or NULL if unknown, array is terminated by {AV_PROFILE_UNKNOWN} </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="207" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1ad2f26d22c4dc49710bebc0fceda4d125" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVCodec::wrapper_name</definition>
+        <argsstring></argsstring>
+        <name>wrapper_name</name>
+        <qualifiedname>AVCodec::wrapper_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Group name of the codec implementation. This is a short symbolic name of the wrapper backing this codec. A wrapper uses some kind of external implementation for the codec, such as an external library, or a codec implementation provided by the OS or the hardware. If this field is NULL, this is a builtin, libavcodec native codec. If non-NULL, this will be the suffix in <ref refid="struct_a_v_codec_1ad3daa3e729850b573c139a83be8938ca" kindref="member">AVCodec.name</ref> in most cases (usually <ref refid="struct_a_v_codec_1ad3daa3e729850b573c139a83be8938ca" kindref="member">AVCodec.name</ref> will be of the form &quot;&lt;codec_name&gt;_&lt;wrapper_name&gt;&quot;). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="219" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_codec_1a41e0031e9dc197ab5915f59d7d9c8dd3" prot="public" static="no" mutable="no">
+        <type>attribute_deprecated const <ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref> *</type>
+        <definition>attribute_deprecated const AVChannelLayout* AVCodec::ch_layouts</definition>
+        <argsstring></argsstring>
+        <name>ch_layouts</name>
+        <qualifiedname>AVCodec::ch_layouts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of supported channel layouts, terminated with a zeroed layout. <xrefsect id="deprecated_1_deprecated000005"><xreftitle>Obsolète</xreftitle><xrefdescription><para>use <ref refid="group__lavc__decoding_1gadd58e6b0bbca99fdbc547efbaa6b0ef1" kindref="member">avcodec_get_supported_config()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="226" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_codec" kindref="compound">AVCodec</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="7">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVCodec</label>
+        <link refid="struct_a_v_codec"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>supported_framerates</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>priv_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>profiles</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ch_layouts</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="6">
+        <label>AVProfile</label>
+        <link refid="struct_a_v_profile"/>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" line="172" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h" bodystart="172" bodyend="227"/>
+    <listofallmembers>
+      <member refid="struct_a_v_codec_1af51f7ff3dac8b730f46b9713e49a2518" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>capabilities</name></member>
+      <member refid="struct_a_v_codec_1a41e0031e9dc197ab5915f59d7d9c8dd3" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>ch_layouts</name></member>
+      <member refid="struct_a_v_codec_1a01a53d07936f4c7ee280444793b6967b" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>id</name></member>
+      <member refid="struct_a_v_codec_1acb4afcfce3b6541ed70aa7f21d507422" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>long_name</name></member>
+      <member refid="struct_a_v_codec_1afc51006d374ca72dfa3b0e29cbb1d981" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>max_lowres</name></member>
+      <member refid="struct_a_v_codec_1ad3daa3e729850b573c139a83be8938ca" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>name</name></member>
+      <member refid="struct_a_v_codec_1a1bbb0e2b9dfb22d311cbc66730b86626" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>pix_fmts</name></member>
+      <member refid="struct_a_v_codec_1a4ded9f7ec1fa1a73ea3e831428c100fa" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>priv_class</name></member>
+      <member refid="struct_a_v_codec_1ac832350f2bac582fe3d174e2e3b1eb5e" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>profiles</name></member>
+      <member refid="struct_a_v_codec_1aa9d17e53b4b3e27e741b97f0cdb43c69" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>sample_fmts</name></member>
+      <member refid="struct_a_v_codec_1a443e9ed8ca3cefcf0a518ab856df94aa" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>supported_framerates</name></member>
+      <member refid="struct_a_v_codec_1a5795bf22dc477bda4f95c76ee4075c12" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>supported_samplerates</name></member>
+      <member refid="struct_a_v_codec_1ab539ca86026d043803c24ba06fa84197" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>type</name></member>
+      <member refid="struct_a_v_codec_1ad2f26d22c4dc49710bebc0fceda4d125" prot="public" virt="non-virtual"><scope>AVCodec</scope><name>wrapper_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

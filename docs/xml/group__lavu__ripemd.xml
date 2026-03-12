@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__ripemd" kind="group">
+    <compoundname>lavu_ripemd</compoundname>
+    <title>RIPEMD</title>
+    <innerfile refid="ripemd_8h">ripemd.h</innerfile>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__lavu__ripemd_1gad5e60759f7ece82caf50ea4e8623649c" prot="public" static="no" extern="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int av_ripemd_size</definition>
+        <argsstring></argsstring>
+        <name>av_ripemd_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" line="44" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" declline="44" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__ripemd_1gace81c9f726f8dc8fed0cae3588b3ff24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVRIPEMD *</type>
+        <definition>struct AVRIPEMD * av_ripemd_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_ripemd_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVRIPEMD context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" line="51" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" declline="51" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ripemd_1ga4629925d978ee6975daecfad6921b799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_ripemd_init</definition>
+        <argsstring>(struct AVRIPEMD *context, int bits)</argsstring>
+        <name>av_ripemd_init</name>
+        <param>
+          <type>struct AVRIPEMD *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize RIPEMD hashing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the function context (of size av_ripemd_size) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits in digest (128, 160, 256 or 320 bits) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>zero if initialization succeeded, -1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" line="60" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" declline="60" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ripemd_1gaa3505fa3911fc9da02b1306654e93623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_ripemd_update</definition>
+        <argsstring>(struct AVRIPEMD *context, const uint8_t *data, size_t len)</argsstring>
+        <name>av_ripemd_update</name>
+        <param>
+          <type>struct AVRIPEMD *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update hash value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hash function context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data to update hash with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" line="69" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__ripemd_1ga10a142f6a13c54e0b12e29eb6bcd75be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_ripemd_final</definition>
+        <argsstring>(struct AVRIPEMD *context, uint8_t *digest)</argsstring>
+        <name>av_ripemd_final</name>
+        <param>
+          <type>struct AVRIPEMD *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>digest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish hashing and output digest value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hash function context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>digest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer where output digest value is stored </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" line="77" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ripemd.h" declline="77" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RIPEMD hash function implementation. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

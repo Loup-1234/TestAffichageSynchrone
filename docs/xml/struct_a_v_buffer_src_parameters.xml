@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_buffer_src_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>AVBufferSrcParameters</compoundname>
+    <includes refid="buffersrc_8h" local="no">buffersrc.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a56f28f81f1a86cecc39a8d61674912b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVBufferSrcParameters::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AVBufferSrcParameters::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>video: the pixel format, value corresponds to enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> audio: the sample format, value corresponds to enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="78" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a7767325c1259942a33586f05c90e38b0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVBufferSrcParameters::time_base</definition>
+        <argsstring></argsstring>
+        <name>time_base</name>
+        <qualifiedname>AVBufferSrcParameters::time_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timebase to be used for the timestamps on the input frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="82" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a6c6f3d9ed8b427070e9055e7ac61263f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVBufferSrcParameters::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVBufferSrcParameters::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only, the display dimensions of the input frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="87" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a89783d603b84908fb1998bbbea981b70" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVBufferSrcParameters::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVBufferSrcParameters::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="87" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1ae47c141ea7a7770351613242229f951a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVBufferSrcParameters::sample_aspect_ratio</definition>
+        <argsstring></argsstring>
+        <name>sample_aspect_ratio</name>
+        <qualifiedname>AVBufferSrcParameters::sample_aspect_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only, the sample (pixel) aspect ratio. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="92" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a032a202496206e18449c66233058647a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref></type>
+        <definition>AVRational AVBufferSrcParameters::frame_rate</definition>
+        <argsstring></argsstring>
+        <name>frame_rate</name>
+        <qualifiedname>AVBufferSrcParameters::frame_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only, the frame rate of the input video. This field must only be set to a non-zero value if input stream has a known constant framerate and should be left at its initial value if the framerate is variable or unknown. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="100" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a86c49b4202433037c9e2b0b6ae541534" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef* AVBufferSrcParameters::hw_frames_ctx</definition>
+        <argsstring></argsstring>
+        <name>hw_frames_ctx</name>
+        <qualifiedname>AVBufferSrcParameters::hw_frames_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video with a hwaccel pixel format only. This should be a reference to an <ref refid="struct_a_v_h_w_frames_context" kindref="compound">AVHWFramesContext</ref> instance describing the input frames. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="106" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a34a1613f1e80f8520c159fac59e29834" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVBufferSrcParameters::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <qualifiedname>AVBufferSrcParameters::sample_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only, the audio sampling rate in samples per second. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="111" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a5267368bf88b4f2a65a5e06ac3f9ecd4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_channel_layout" kindref="compound">AVChannelLayout</ref></type>
+        <definition>AVChannelLayout AVBufferSrcParameters::ch_layout</definition>
+        <argsstring></argsstring>
+        <name>ch_layout</name>
+        <qualifiedname>AVBufferSrcParameters::ch_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio only, the audio channel layout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="116" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a700226626af70f787c930d7506554757" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1aff71a069509a1ad3ff54d53a1c894c85" kindref="member">AVColorSpace</ref></type>
+        <definition>enum AVColorSpace AVBufferSrcParameters::color_space</definition>
+        <argsstring></argsstring>
+        <name>color_space</name>
+        <qualifiedname>AVBufferSrcParameters::color_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only, the YUV colorspace and range. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="121" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a442add2b039f416dd7c92ccf1ccd0d3b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a3da0bf691418bc22c4bcbe6583ad589a" kindref="member">AVColorRange</ref></type>
+        <definition>enum AVColorRange AVBufferSrcParameters::color_range</definition>
+        <argsstring></argsstring>
+        <name>color_range</name>
+        <qualifiedname>AVBufferSrcParameters::color_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="122" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a3f2bbc52123b210e16de3a2a2c680889" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> **</type>
+        <definition>AVFrameSideData** AVBufferSrcParameters::side_data</definition>
+        <argsstring></argsstring>
+        <name>side_data</name>
+        <qualifiedname>AVBufferSrcParameters::side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="124" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1ab779c7ebe73c514ffda6be4e43cf4deb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVBufferSrcParameters::nb_side_data</definition>
+        <argsstring></argsstring>
+        <name>nb_side_data</name>
+        <qualifiedname>AVBufferSrcParameters::nb_side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="125" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_buffer_src_parameters_1a7213f2a89315857073e77e18811d6157" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a53520777fbc9b09244f10d6a9aeb65fb" kindref="member">AVAlphaMode</ref></type>
+        <definition>enum AVAlphaMode AVBufferSrcParameters::alpha_mode</definition>
+        <argsstring></argsstring>
+        <name>alpha_mode</name>
+        <qualifiedname>AVBufferSrcParameters::alpha_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Video only, the alpha mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="130" column="21" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains the parameters describing the frames that will be passed to this filter.</para>
+<para>It should be allocated with <ref refid="group__lavfi__buffersrc_1gaedea0ed7a56d424274960bfff78f6477" kindref="member">av_buffersrc_parameters_alloc()</ref> and freed with <ref refid="group__lavu__mem__funcs_1ga0c9096f498624c525aa2315b8a20c411" kindref="member">av_free()</ref>. All the allocated fields in it remain owned by the caller. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AVBufferRef</label>
+        <link refid="struct_a_v_buffer_ref"/>
+      </node>
+      <node id="1">
+        <label>AVBufferSrcParameters</label>
+        <link refid="struct_a_v_buffer_src_parameters"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>frame_rate</edgelabel>
+          <edgelabel>sample_aspect_ratio</edgelabel>
+          <edgelabel>time_base</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>hw_frames_ctx</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ch_layout</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>side_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVChannelCustom</label>
+        <link refid="struct_a_v_channel_custom"/>
+      </node>
+      <node id="4">
+        <label>AVChannelLayout</label>
+        <link refid="struct_a_v_channel_layout"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AVFrameSideData</label>
+        <link refid="struct_a_v_frame_side_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" line="73" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h" bodystart="73" bodyend="131"/>
+    <listofallmembers>
+      <member refid="struct_a_v_buffer_src_parameters_1a7213f2a89315857073e77e18811d6157" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>alpha_mode</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a5267368bf88b4f2a65a5e06ac3f9ecd4" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>ch_layout</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a442add2b039f416dd7c92ccf1ccd0d3b" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>color_range</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a700226626af70f787c930d7506554757" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>color_space</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a56f28f81f1a86cecc39a8d61674912b8" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>format</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a032a202496206e18449c66233058647a" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>frame_rate</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a89783d603b84908fb1998bbbea981b70" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>height</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a86c49b4202433037c9e2b0b6ae541534" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>hw_frames_ctx</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1ab779c7ebe73c514ffda6be4e43cf4deb" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>nb_side_data</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1ae47c141ea7a7770351613242229f951a" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>sample_aspect_ratio</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a34a1613f1e80f8520c159fac59e29834" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>sample_rate</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a3f2bbc52123b210e16de3a2a2c680889" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>side_data</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a7767325c1259942a33586f05c90e38b0" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>time_base</name></member>
+      <member refid="struct_a_v_buffer_src_parameters_1a6c6f3d9ed8b427070e9055e7ac61263f" prot="public" virt="non-virtual"><scope>AVBufferSrcParameters</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

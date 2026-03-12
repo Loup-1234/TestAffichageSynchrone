@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_video_enc_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVVideoEncParams</compoundname>
+    <includes refid="video__enc__params_8h" local="no">video_enc_params.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1aca5b6334196a79c8987334e7dac931c9" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVVideoEncParams::nb_blocks</definition>
+        <argsstring></argsstring>
+        <name>nb_blocks</name>
+        <qualifiedname>AVVideoEncParams::nb_blocks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of blocks in the array.</para>
+<para>May be 0, in which case no per-block information is present. In this case the values of blocks_offset / block_size are unspecified and should not be accessed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="81" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1af30a1b920629802802567ae233065f39" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVideoEncParams::blocks_offset</definition>
+        <argsstring></argsstring>
+        <name>blocks_offset</name>
+        <qualifiedname>AVVideoEncParams::blocks_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in bytes from the beginning of this structure at which the array of blocks starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="86" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1a61424e76b2d8ec3d6d80de6ef9efe975" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVideoEncParams::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <qualifiedname>AVVideoEncParams::block_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="90" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1a6445e5af228fd8349a7ac83d69705364" prot="public" static="no" mutable="no">
+        <type>enum AVVideoEncParamsType</type>
+        <definition>enum AVVideoEncParamsType AVVideoEncParams::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>AVVideoEncParams::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the parameters (the codec they are used with). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="95" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1af292520b789d02d0eb3aebc71d561161" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVVideoEncParams::qp</definition>
+        <argsstring></argsstring>
+        <name>qp</name>
+        <qualifiedname>AVVideoEncParams::qp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base quantisation parameter for the frame. The final quantiser for a given block in a given plane is obtained from this value, possibly combined with <javadoccode>delta_qp</javadoccode> and the per-block delta in a manner documented for each type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="103" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_video_enc_params_1a01d00c4d7b75e7962795f747956ee53b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t AVVideoEncParams::delta_qp[4][2]</definition>
+        <argsstring>[4][2]</argsstring>
+        <name>delta_qp</name>
+        <qualifiedname>AVVideoEncParams::delta_qp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantisation parameter offset from the base (per-frame) qp for a given plane (first index) and AC/DC coefficients (second index). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="109" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Video encoding parameters for a given frame. This struct is allocated along with an optional array of per-block <ref refid="struct_a_v_video_block_params" kindref="compound">AVVideoBlockParams</ref> descriptors. Must be allocated with av_video_enc_params_alloc(). </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" line="73" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h" bodystart="73" bodyend="110"/>
+    <listofallmembers>
+      <member refid="struct_a_v_video_enc_params_1a61424e76b2d8ec3d6d80de6ef9efe975" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>block_size</name></member>
+      <member refid="struct_a_v_video_enc_params_1af30a1b920629802802567ae233065f39" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>blocks_offset</name></member>
+      <member refid="struct_a_v_video_enc_params_1a01d00c4d7b75e7962795f747956ee53b" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>delta_qp</name></member>
+      <member refid="struct_a_v_video_enc_params_1aca5b6334196a79c8987334e7dac931c9" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>nb_blocks</name></member>
+      <member refid="struct_a_v_video_enc_params_1af292520b789d02d0eb3aebc71d561161" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>qp</name></member>
+      <member refid="struct_a_v_video_enc_params_1a6445e5af228fd8349a7ac83d69705364" prot="public" virt="non-virtual"><scope>AVVideoEncParams</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

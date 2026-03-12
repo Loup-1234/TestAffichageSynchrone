@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__mem__misc" kind="group">
+    <compoundname>lavu_mem_misc</compoundname>
+    <title>Miscellaneous Functions</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__mem__misc_1gad53b48e68dc3cf6d186d2c69450f9fe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_size_mult</definition>
+        <argsstring>(size_t a, size_t b, size_t *r)</argsstring>
+        <name>av_size_mult</name>
+        <param>
+          <type>size_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiply two <computeroutput>size_t</computeroutput> values checking for overflow.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand of multiplication </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operand of multiplication </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the result of the operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, AVERROR(EINVAL) on overflow </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="585" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="585" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__misc_1ga2204fc859b4a3ca2d5bfd1bf4e8c4dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_max_alloc</definition>
+        <argsstring>(size_t max)</argsstring>
+        <name>av_max_alloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the maximum size that may be allocated in one block.</para>
+<para>The value specified with this function is effective for all libavutil&apos;s <ref refid="group__lavu__mem__funcs" kindref="compound">heap management functions.</ref></para>
+<para>By default, the max value is defined as <computeroutput>INT_MAX</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set as the new maximum size</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Exercise extreme caution when using this function. Don&apos;t touch this if you do not understand the full consequence of doing so. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="600" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="600" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Other functions related to memory allocation. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

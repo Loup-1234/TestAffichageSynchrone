@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d3_d12_v_a_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVD3D12VAFramesContext</compoundname>
+    <includes refid="hwcontext__d3d12va_8h" local="no">hwcontext_d3d12va.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frames_context_1af6f32db5f377e4cea4fa8a2298b81046" prot="public" static="no" mutable="no">
+        <type>DXGI_FORMAT</type>
+        <definition>DXGI_FORMAT AVD3D12VAFramesContext::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AVD3D12VAFramesContext::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DXGI_FORMAT format. MUST be compatible with the pixel format. If unset, will be automatically set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="177" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frames_context_1a3816fbc12cc6bc2c0c5e3cd20e9c63cd" prot="public" static="no" mutable="no">
+        <type>D3D12_RESOURCE_FLAGS</type>
+        <definition>D3D12_RESOURCE_FLAGS AVD3D12VAFramesContext::resource_flags</definition>
+        <argsstring></argsstring>
+        <name>resource_flags</name>
+        <qualifiedname>AVD3D12VAFramesContext::resource_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Options for working with resources. If unset, this will be D3D12_RESOURCE_FLAG_NONE.</para>
+<para><simplesect kind="see"><para><ulink url="https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_flags">https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_flags</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="185" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frames_context_1a8ccc1a87f14735ff61d2d65bd27b93b8" prot="public" static="no" mutable="no">
+        <type>D3D12_HEAP_FLAGS</type>
+        <definition>D3D12_HEAP_FLAGS AVD3D12VAFramesContext::heap_flags</definition>
+        <argsstring></argsstring>
+        <name>heap_flags</name>
+        <qualifiedname>AVD3D12VAFramesContext::heap_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Options for working with heaps allocation when creating resources. If unset, this will be D3D12_HEAP_FLAG_NONE.</para>
+<para><simplesect kind="see"><para><ulink url="https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_flags">https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_flags</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="193" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frames_context_1ad9ec5b0633374b2f43dcf1481a7ce52c" prot="public" static="no" mutable="no">
+        <type>ID3D12Resource *</type>
+        <definition>ID3D12Resource* AVD3D12VAFramesContext::texture_array</definition>
+        <argsstring></argsstring>
+        <name>texture_array</name>
+        <qualifiedname>AVD3D12VAFramesContext::texture_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In texture array mode, the D3D12 uses the same texture array (resource)for all pictures. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="199" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d3_d12_v_a_frames_context_1a61343266ff9b7bc5d1d65e74a6fd1f65" prot="public" static="no" mutable="no">
+        <type><ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref></type>
+        <definition>AVD3D12VAFrameFlags AVD3D12VAFramesContext::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVD3D12VAFramesContext::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of <ref refid="hwcontext__d3d12va_8h_1acfd38554c8460e5f1f21170e2ccd82ec" kindref="member">AVD3D12VAFrameFlags</ref>. Unless AV_D3D12VA_FRAME_FLAG_NONE is set, autodetected flags will be OR&apos;d based on the device and frame features during av_hwframe_ctx_init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="206" column="25" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" line="172" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_d3d12va.h" bodystart="172" bodyend="207"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d3_d12_v_a_frames_context_1a61343266ff9b7bc5d1d65e74a6fd1f65" prot="public" virt="non-virtual"><scope>AVD3D12VAFramesContext</scope><name>flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frames_context_1af6f32db5f377e4cea4fa8a2298b81046" prot="public" virt="non-virtual"><scope>AVD3D12VAFramesContext</scope><name>format</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frames_context_1a8ccc1a87f14735ff61d2d65bd27b93b8" prot="public" virt="non-virtual"><scope>AVD3D12VAFramesContext</scope><name>heap_flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frames_context_1a3816fbc12cc6bc2c0c5e3cd20e9c63cd" prot="public" virt="non-virtual"><scope>AVD3D12VAFramesContext</scope><name>resource_flags</name></member>
+      <member refid="struct_a_v_d3_d12_v_a_frames_context_1ad9ec5b0633374b2f43dcf1481a7ce52c" prot="public" virt="non-virtual"><scope>AVD3D12VAFramesContext</scope><name>texture_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

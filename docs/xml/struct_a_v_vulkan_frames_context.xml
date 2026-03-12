@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_vulkan_frames_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVVulkanFramesContext</compoundname>
+    <includes refid="hwcontext__vulkan_8h" local="no">hwcontext_vulkan.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a1d59cf40209ed27b210f8b755c0250fa" prot="public" static="no" mutable="no">
+        <type>VkImageTiling</type>
+        <definition>VkImageTiling AVVulkanFramesContext::tiling</definition>
+        <argsstring></argsstring>
+        <name>tiling</name>
+        <qualifiedname>AVVulkanFramesContext::tiling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controls the tiling of allocated frames. If left as VK_IMAGE_TILING_OPTIMAL (0), will use optimal tiling. Can be set to VK_IMAGE_TILING_LINEAR to force linear images, or VK_IMAGE_TILING_DRM_FORMAT_MODIFIER_EXT to force DMABUF-backed images. <simplesect kind="note"><para>Imported frames from other APIs ignore this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="221" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a6bf14758921612c1aad1a5d8332200bb" prot="public" static="no" mutable="no">
+        <type>VkImageUsageFlagBits</type>
+        <definition>VkImageUsageFlagBits AVVulkanFramesContext::usage</definition>
+        <argsstring></argsstring>
+        <name>usage</name>
+        <qualifiedname>AVVulkanFramesContext::usage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines extra usage of output frames. If non-zero, all flags MUST be supported by the VkFormat. Regardless, frames will always have the following usage flags enabled, if supported by the format:<itemizedlist>
+<listitem><para>VK_IMAGE_USAGE_SAMPLED_BIT</para>
+</listitem><listitem><para>VK_IMAGE_USAGE_STORAGE_BIT</para>
+</listitem><listitem><para>VK_IMAGE_USAGE_TRANSFER_SRC_BIT</para>
+</listitem><listitem><para>VK_IMAGE_USAGE_TRANSFER_DST_BIT </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="232" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a18537e64f52d484a81bfb258cbfe39be" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVVulkanFramesContext::create_pnext</definition>
+        <argsstring></argsstring>
+        <name>create_pnext</name>
+        <qualifiedname>AVVulkanFramesContext::create_pnext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extension data for image creation. If DRM tiling is used, a VkImageDrmFormatModifierListCreateInfoEXT structure can be added to specify the exact modifier to use.</para>
+<para>Additional structures may be added at av_hwframe_ctx_init() time, which will be freed automatically on uninit(), so users must only free any structures they&apos;ve allocated themselves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="243" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a35850b6049c9766ce28576a7b4c52c14" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVVulkanFramesContext::alloc_pnext[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>alloc_pnext</name>
+        <qualifiedname>AVVulkanFramesContext::alloc_pnext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extension data for memory allocation. Must have as many entries as the number of planes of the sw_format. This will be chained to VkExportMemoryAllocateInfo, which is used to make all pool images exportable to other APIs if the necessary extensions are present in enabled_dev_extensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="252" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a7df5c79263e7491b56a6eeade0980640" prot="public" static="no" mutable="no">
+        <type><ref refid="hwcontext__vulkan_8h_1a9cfe1ae791d0cb4d48a4071f14d1364e" kindref="member">AVVkFrameFlags</ref></type>
+        <definition>AVVkFrameFlags AVVulkanFramesContext::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVVulkanFramesContext::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of <ref refid="hwcontext__vulkan_8h_1a9cfe1ae791d0cb4d48a4071f14d1364e" kindref="member">AVVkFrameFlags</ref>. Unless AV_VK_FRAME_FLAG_NONE is set, autodetected flags will be OR&apos;d based on the device and tiling during av_hwframe_ctx_init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="259" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1a2ccc2206d652c6b5e931d9fabc008d15" prot="public" static="no" mutable="no">
+        <type>VkImageCreateFlags</type>
+        <definition>VkImageCreateFlags AVVulkanFramesContext::img_flags</definition>
+        <argsstring></argsstring>
+        <name>img_flags</name>
+        <qualifiedname>AVVulkanFramesContext::img_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags to set during image creation. If unset, defaults to VK_IMAGE_CREATE_ALIAS_BIT. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="265" column="24" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1af5a2e5c0f6ef190fa495a6d39c39f4e2" prot="public" static="no" mutable="no">
+        <type>VkFormat</type>
+        <definition>VkFormat AVVulkanFramesContext::format[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>format</name>
+        <qualifiedname>AVVulkanFramesContext::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vulkan format for each image. MUST be compatible with the pixel format. If unset, will be automatically set. There are at most two compatible formats for a frame - a multiplane format, and a single-plane multi-image format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="273" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1abd9de668a9d88c30e0cd7173cd08e2c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVVulkanFramesContext::nb_layers</definition>
+        <argsstring></argsstring>
+        <name>nb_layers</name>
+        <qualifiedname>AVVulkanFramesContext::nb_layers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of layers each image will have. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="278" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1aac1916fd157b6376d6fab74562e6ee31" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVVulkanFramesContext::lock_frame) (struct AVHWFramesContext *fc, AVVkFrame *vkf)</definition>
+        <argsstring>)(struct AVHWFramesContext *fc, AVVkFrame *vkf)</argsstring>
+        <name>lock_frame</name>
+        <qualifiedname>AVVulkanFramesContext::lock_frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locks a frame, preventing other threads from changing frame properties. Users SHOULD only ever lock just before command submission in order to get accurate frame properties, and unlock immediately after command submission without waiting for it to finish.</para>
+<para>If unset, will be set to lavu-internal functions that utilize a mutex. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="288" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vulkan_frames_context_1aeba72f0a0f5224efb82a27732cb25d64" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AVVulkanFramesContext::unlock_frame) (struct AVHWFramesContext *fc, AVVkFrame *vkf)</definition>
+        <argsstring>)(struct AVHWFramesContext *fc, AVVkFrame *vkf)</argsstring>
+        <name>unlock_frame</name>
+        <qualifiedname>AVVulkanFramesContext::unlock_frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="struct_a_v_vulkan_frames_context_1aac1916fd157b6376d6fab74562e6ee31" kindref="member">lock_frame()</ref>, unlocks a frame. Must only be called after locking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="293" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref>, used to set pool-specific options </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="212" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="212" bodyend="294"/>
+    <listofallmembers>
+      <member refid="struct_a_v_vulkan_frames_context_1a35850b6049c9766ce28576a7b4c52c14" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>alloc_pnext</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1a18537e64f52d484a81bfb258cbfe39be" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>create_pnext</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1a7df5c79263e7491b56a6eeade0980640" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>flags</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1af5a2e5c0f6ef190fa495a6d39c39f4e2" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>format</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1a2ccc2206d652c6b5e931d9fabc008d15" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>img_flags</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1aac1916fd157b6376d6fab74562e6ee31" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>lock_frame</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1abd9de668a9d88c30e0cd7173cd08e2c7" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>nb_layers</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1a1d59cf40209ed27b210f8b755c0250fa" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>tiling</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1aeba72f0a0f5224efb82a27732cb25d64" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>unlock_frame</name></member>
+      <member refid="struct_a_v_vulkan_frames_context_1a6bf14758921612c1aad1a5d8332200bb" prot="public" virt="non-virtual"><scope>AVVulkanFramesContext</scope><name>usage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

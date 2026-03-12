@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__aes__ctr" kind="group">
+    <compoundname>lavu_aes_ctr</compoundname>
+    <title>AES-CTR</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga1bb3a25bb42767fce2c4bc9ea94013a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVAESCTR *</type>
+        <definition>struct AVAESCTR * av_aes_ctr_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_aes_ctr_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVAESCTR context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="43" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="43" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga37ef9fcf05bf94767b2bf18edca7ffda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_aes_ctr_init</definition>
+        <argsstring>(struct AVAESCTR *a, const uint8_t *key)</argsstring>
+        <name>av_aes_ctr_init</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an AVAESCTR context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVAESCTR context to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>encryption key, must have a length of AES_CTR_KEY_SIZE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="51" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="51" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga651580f87845fc3ba201abeecb5442e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_free</definition>
+        <argsstring>(struct AVAESCTR *a)</argsstring>
+        <name>av_aes_ctr_free</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an AVAESCTR context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVAESCTR context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="58" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga5349eb4f428e432e09617c18195014d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_crypt</definition>
+        <argsstring>(struct AVAESCTR *a, uint8_t *dst, const uint8_t *src, int size)</argsstring>
+        <name>av_aes_ctr_crypt</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process a buffer using a previously initialized context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AVAESCTR context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array, can be equal to src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array, can be equal to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of src and dst </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="68" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1gae4bb4bb038d0afeca34904bf32c47c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t * av_aes_ctr_get_iv</definition>
+        <argsstring>(struct AVAESCTR *a)</argsstring>
+        <name>av_aes_ctr_get_iv</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current iv </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="73" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="73" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga93eb462d10972d618f3c7a3a945240eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_set_random_iv</definition>
+        <argsstring>(struct AVAESCTR *a)</argsstring>
+        <name>av_aes_ctr_set_random_iv</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate a random iv </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="78" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga1d5f73ba7cd7ea7c09b21218c39951f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_set_iv</definition>
+        <argsstring>(struct AVAESCTR *a, const uint8_t *iv)</argsstring>
+        <name>av_aes_ctr_set_iv</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forcefully change the 8-byte iv </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="83" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga5048a65b4d63738e454bd02751fe56e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_set_full_iv</definition>
+        <argsstring>(struct AVAESCTR *a, const uint8_t *iv)</argsstring>
+        <name>av_aes_ctr_set_full_iv</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>iv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forcefully change the &quot;full&quot; 16-byte iv, including the counter </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="88" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__aes__ctr_1ga6c61a46cb240ef27f4c8f458255f6152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_aes_ctr_increment_iv</definition>
+        <argsstring>(struct AVAESCTR *a)</argsstring>
+        <name>av_aes_ctr_increment_iv</name>
+        <param>
+          <type>struct AVAESCTR *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increment the top 64 bit of the iv (performed after each frame) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="93" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" declline="93" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__aes__ctr_1ga97028740606e579d336c51f7523ce2bf" prot="public" static="no">
+        <name>AES_CTR_KEY_SIZE</name>
+        <initializer>(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="35" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__aes__ctr_1ga0eb5971619f6b5631a2fe795f046d8d3" prot="public" static="no">
+        <name>AES_CTR_IV_SIZE</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" line="36" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

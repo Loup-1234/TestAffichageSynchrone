@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__mem__dynarray" kind="group">
+    <compoundname>lavu_mem_dynarray</compoundname>
+    <title>Dynamic Array</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_dynarray_add</definition>
+        <argsstring>(void *tab_ptr, int *nb_ptr, void *elem)</argsstring>
+        <name>av_dynarray_add</name>
+        <param>
+          <type>void *</type>
+          <declname>tab_ptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_ptr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the pointer to an element to a dynamic array.</para>
+<para>The array to grow is supposed to be an array of pointers to structures, and the element to add must be a pointer to an already allocated structure.</para>
+<para>The array is reallocated when its size reaches powers of 2. Therefore, the amortized cost of adding an element is constant.</para>
+<para>In case of success, the pointer to the array is updated in order to point to the new grown array, and the number pointed to by <computeroutput>nb_ptr</computeroutput> is incremented. In case of failure, the array is freed, <computeroutput>*tab_ptr</computeroutput> is set to <computeroutput>NULL</computeroutput> and <computeroutput>*nb_ptr</computeroutput> is set to 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">tab_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the array to grow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">nb_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the number of elements in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__dynarray_1ga5e3735b4568e78fffd7c4ea2f793996e" kindref="member">av_dynarray_add_nofree()</ref>, <ref refid="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" kindref="member">av_dynarray2_add()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="524" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="524" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__dynarray_1ga5e3735b4568e78fffd7c4ea2f793996e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_warn_unused_result int</type>
+        <definition>av_warn_unused_result int av_dynarray_add_nofree</definition>
+        <argsstring>(void *tab_ptr, int *nb_ptr, void *elem)</argsstring>
+        <name>av_dynarray_add_nofree</name>
+        <param>
+          <type>void *</type>
+          <declname>tab_ptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_ptr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an element to a dynamic array.</para>
+<para>Function has the same functionality as <ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add()</ref>, but it doesn&apos;t free memory on fails. It returns error code instead and leave current buffer untouched.</para>
+<para><simplesect kind="return"><para>&gt;=0 on success, negative otherwise </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add()</ref>, <ref refid="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" kindref="member">av_dynarray2_add()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="537" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="537" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_dynarray2_add</definition>
+        <argsstring>(void **tab_ptr, int *nb_ptr, size_t elem_size, const uint8_t *elem_data)</argsstring>
+        <name>av_dynarray2_add</name>
+        <param>
+          <type>void **</type>
+          <declname>tab_ptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>elem_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an element of size <computeroutput>elem_size</computeroutput> to a dynamic array.</para>
+<para>The array is reallocated when its number of elements reaches powers of 2. Therefore, the amortized cost of adding an element is constant.</para>
+<para>In case of success, the pointer to the array is updated in order to point to the new grown array, and the number pointed to by <computeroutput>nb_ptr</computeroutput> is incremented. In case of failure, the array is freed, <computeroutput>*tab_ptr</computeroutput> is set to <computeroutput>NULL</computeroutput> and <computeroutput>*nb_ptr</computeroutput> is set to 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">tab_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the array to grow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">nb_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the number of elements in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes of an element in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data of the element to add. If <computeroutput>NULL</computeroutput>, the space of the newly added element is allocated but left uninitialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the data of the element to copy in the newly allocated space </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add()</ref>, <ref refid="group__lavu__mem__dynarray_1ga5e3735b4568e78fffd7c4ea2f793996e" kindref="member">av_dynarray_add_nofree()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" line="562" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mem.h" declline="562" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utilities to make an array grow when needed.</para>
+<para>Sometimes, the programmer would want to have an array that can grow when needed. The libavutil dynamic array utilities fill that need.</para>
+<para>libavutil supports two systems of appending elements onto a dynamically allocated array, the first one storing the pointer to the value in the array, and the second storing the value directly. In both systems, the caller is responsible for maintaining a variable containing the length of the array, as well as freeing of the array after use.</para>
+<para>The first system stores pointers to values in a block of dynamically allocated memory. Since only pointers are stored, the function does not need to know the size of the type. Both <ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add()</ref> and <ref refid="group__lavu__mem__dynarray_1ga5e3735b4568e78fffd7c4ea2f793996e" kindref="member">av_dynarray_add_nofree()</ref> implement this system.</para>
+<para><programlisting><codeline><highlight class="normal">type<sp/>**array<sp/>=<sp/>NULL;<sp/></highlight><highlight class="comment">//&lt;<sp/>an<sp/>array<sp/>of<sp/>pointers<sp/>to<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>nb<sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>a<sp/>variable<sp/>to<sp/>keep<sp/>track<sp/>of<sp/>the<sp/>length<sp/>of<sp/>the<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">type<sp/>to_be_added<sp/><sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">type<sp/>to_be_added2<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add</ref>(&amp;array,<sp/>&amp;nb,<sp/>&amp;to_be_added);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nb<sp/>==<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__dynarray_1ga385b582522cedf5a88ce2cf158c396c9" kindref="member">av_dynarray_add</ref>(&amp;array,<sp/>&amp;nb,<sp/>&amp;to_be_added2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nb<sp/>==<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>nb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>&amp;to_be_added<sp/><sp/>==<sp/>array[0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>&amp;to_be_added2<sp/>==<sp/>array[1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep</ref>(&amp;array);</highlight></codeline>
+</programlisting></para>
+<para>The second system stores the value directly in a block of memory. As a result, the function has to know the size of the type. <ref refid="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" kindref="member">av_dynarray2_add()</ref> implements this mechanism.</para>
+<para><programlisting><codeline><highlight class="normal">type<sp/>*array<sp/>=<sp/>NULL;<sp/></highlight><highlight class="comment">//&lt;<sp/>an<sp/>array<sp/>of<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>nb<sp/><sp/><sp/><sp/>=<sp/>0;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>a<sp/>variable<sp/>to<sp/>keep<sp/>track<sp/>of<sp/>the<sp/>length<sp/>of<sp/>the<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">type<sp/>to_be_added<sp/><sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">type<sp/>to_be_added2<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">type<sp/>*addr<sp/>=<sp/><ref refid="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" kindref="member">av_dynarray2_add</ref>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)&amp;array,<sp/>&amp;nb,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*array),<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!addr)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal">memcpy(addr,<sp/>&amp;to_be_added,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(to_be_added));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Shortcut<sp/>of<sp/>the<sp/>above.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">type<sp/>*addr<sp/>=<sp/><ref refid="group__lavu__mem__dynarray_1ga3065fcfabfeff13806c455b7e56300b0" kindref="member">av_dynarray2_add</ref>((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)&amp;array,<sp/>&amp;nb,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*array),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)&amp;to_be_added2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!addr)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>AVERROR(ENOMEM);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>nb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>to_be_added<sp/><sp/>==<sp/>array[0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>to_be_added2<sp/>==<sp/>array[1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__lavu__mem__funcs_1ga0cc84043ea2167ad005c86e11d0bcdba" kindref="member">av_freep</ref>(&amp;array);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

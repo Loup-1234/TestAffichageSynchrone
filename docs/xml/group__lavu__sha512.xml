@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__sha512" kind="group">
+    <compoundname>lavu_sha512</compoundname>
+    <title>SHA-512</title>
+    <innerfile refid="sha512_8h">sha512.h</innerfile>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__lavu__sha512_1gaa90af4540d2b03a1a122e1d6a8678efe" prot="public" static="no" extern="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int av_sha512_size</definition>
+        <argsstring></argsstring>
+        <name>av_sha512_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" line="53" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" declline="53" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__sha512_1ga19bf6cb027437b17b4af1f0dbb3957e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVSHA512 *</type>
+        <definition>struct AVSHA512 * av_sha512_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_sha512_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVSHA512 context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" line="60" column="15" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" declline="60" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sha512_1ga3cd6e2e5e591440905380dd345058516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_sha512_init</definition>
+        <argsstring>(struct AVSHA512 *context, int bits)</argsstring>
+        <name>av_sha512_init</name>
+        <param>
+          <type>struct AVSHA512 *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize SHA-2 512 hashing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the function context (of size av_sha512_size) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits in digest (224, 256, 384 or 512 bits) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>zero if initialization succeeded, -1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" line="69" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" declline="69" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sha512_1gabe477fe98668457a66b177062bb98d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_sha512_update</definition>
+        <argsstring>(struct AVSHA512 *context, const uint8_t *data, size_t len)</argsstring>
+        <name>av_sha512_update</name>
+        <param>
+          <type>struct AVSHA512 *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update hash value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hash function context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data to update hash with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" line="78" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sha512_1ga445bbd692a0e005d30a09d85f2ffbc69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_sha512_final</definition>
+        <argsstring>(struct AVSHA512 *context, uint8_t *digest)</argsstring>
+        <name>av_sha512_final</name>
+        <param>
+          <type>struct AVSHA512 *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>digest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish hashing and output digest value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hash function context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>digest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer where output digest value is stored </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" line="86" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/sha512.h" declline="86" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SHA-512 (Secure Hash Algorithm) hash function implementations.</para>
+<para>This module supports the following SHA-2 hash functions:</para>
+<para><itemizedlist>
+<listitem><para>SHA-512/224: 224 bits</para>
+</listitem><listitem><para>SHA-512/256: 256 bits</para>
+</listitem><listitem><para>SHA-384: 384 bits</para>
+</listitem><listitem><para>SHA-512: 512 bits</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="see"><para>For SHA-1, SHA-256, and variants thereof, see <ref refid="group__lavu__sha" kindref="compound">SHA</ref>. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

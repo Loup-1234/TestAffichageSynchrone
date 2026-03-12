@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_film_grain_a_o_m_params" kind="struct" language="C++" prot="public">
+    <compoundname>AVFilmGrainAOMParams</compoundname>
+    <includes refid="film__grain__params_8h" local="no">film_grain_params.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1afe6f2963d8542e365e8d624642c838f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::num_y_points</definition>
+        <argsstring></argsstring>
+        <name>num_y_points</name>
+        <qualifiedname>AVFilmGrainAOMParams::num_y_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of points, and the scale and value for each point of the piecewise linear scaling function for the uma plane. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="49" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1aea216ca7386c9adc8aad67c37669d16e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVFilmGrainAOMParams::y_points[14][2]</definition>
+        <argsstring>[14][2]</argsstring>
+        <name>y_points</name>
+        <qualifiedname>AVFilmGrainAOMParams::y_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="50" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a2a9ffe4ad9e50755a2d00befe0a98c1a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::chroma_scaling_from_luma</definition>
+        <argsstring></argsstring>
+        <name>chroma_scaling_from_luma</name>
+        <qualifiedname>AVFilmGrainAOMParams::chroma_scaling_from_luma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals whether to derive the chroma scaling function from the luma. Not equivalent to copying the luma values and scales. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a755fa0aa10ce6d1a1a1cb7bf621380fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::num_uv_points[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>num_uv_points</name>
+        <qualifiedname>AVFilmGrainAOMParams::num_uv_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If chroma_scaling_from_luma is set to 0, signals the chroma scaling function parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="62" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a9f3be6cbd20bfde01609d801c4a23626" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVFilmGrainAOMParams::uv_points[2][10][2]</definition>
+        <argsstring>[2][10][2]</argsstring>
+        <name>uv_points</name>
+        <qualifiedname>AVFilmGrainAOMParams::uv_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="63" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a3841d0f9a7a3e38b03f067f340f55861" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::scaling_shift</definition>
+        <argsstring></argsstring>
+        <name>scaling_shift</name>
+        <qualifiedname>AVFilmGrainAOMParams::scaling_shift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the shift applied to the chroma components. For AV1, its within [8; 11] and determines the range and quantization of the film grain. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="69" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a84e2704e112186dadbabbedac0a4f8c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::ar_coeff_lag</definition>
+        <argsstring></argsstring>
+        <name>ar_coeff_lag</name>
+        <qualifiedname>AVFilmGrainAOMParams::ar_coeff_lag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the auto-regression lag. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1af641986b607993ffe627b76c95640644" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t AVFilmGrainAOMParams::ar_coeffs_y[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>ar_coeffs_y</name>
+        <qualifiedname>AVFilmGrainAOMParams::ar_coeffs_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Luma auto-regression coefficients. The number of coefficients is given by 2 * ar_coeff_lag * (ar_coeff_lag + 1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="80" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1aa6873498e2baff1d553f832e3b2f7faf" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t AVFilmGrainAOMParams::ar_coeffs_uv[2][25]</definition>
+        <argsstring>[2][25]</argsstring>
+        <name>ar_coeffs_uv</name>
+        <qualifiedname>AVFilmGrainAOMParams::ar_coeffs_uv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Chroma auto-regression coefficients. The number of coefficients is given by 2 * ar_coeff_lag * (ar_coeff_lag + 1) + !!num_y_points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="86" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a8fc51a36ad8f5f5aaa6c8a943351a36f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::ar_coeff_shift</definition>
+        <argsstring></argsstring>
+        <name>ar_coeff_shift</name>
+        <qualifiedname>AVFilmGrainAOMParams::ar_coeff_shift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the range of the auto-regressive coefficients. Values of 6, 7, 8 and so on represent a range of [-2, 2), [-1, 1), [-0.5, 0.5) and so on. For AV1 must be between 6 and 9. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="93" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a43cb8295c434f35879f08e0717123aa0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::grain_scale_shift</definition>
+        <argsstring></argsstring>
+        <name>grain_scale_shift</name>
+        <qualifiedname>AVFilmGrainAOMParams::grain_scale_shift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals the down shift applied to the generated gaussian numbers during synthesis. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="99" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1aba2786909f13c22e939827501e109a0d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::uv_mult[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>uv_mult</name>
+        <qualifiedname>AVFilmGrainAOMParams::uv_mult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the luma/chroma multipliers for the index to the component scaling function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="105" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a55b1391991f88f4c246a145a9fa9a336" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::uv_mult_luma[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>uv_mult_luma</name>
+        <qualifiedname>AVFilmGrainAOMParams::uv_mult_luma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="106" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a87de827beedda4567454e9907785f39c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::uv_offset[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>uv_offset</name>
+        <qualifiedname>AVFilmGrainAOMParams::uv_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset used for component scaling function. For AV1 its a 9-bit value with a range [-256, 255] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="112" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a7ba402ee8ead9502dd989218cc30affe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::overlap_flag</definition>
+        <argsstring></argsstring>
+        <name>overlap_flag</name>
+        <qualifiedname>AVFilmGrainAOMParams::overlap_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals whether to overlap film grain blocks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="117" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_film_grain_a_o_m_params_1a3826c5b74eb8a5d6e2d98c069824db6c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVFilmGrainAOMParams::limit_output_range</definition>
+        <argsstring></argsstring>
+        <name>limit_output_range</name>
+        <qualifiedname>AVFilmGrainAOMParams::limit_output_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals to clip to limited color levels after film grain application. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="122" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure describes how to handle film grain synthesis for AOM codecs.</para>
+<para><simplesect kind="note"><para>The struct must be allocated as part of <ref refid="struct_a_v_film_grain_params" kindref="compound">AVFilmGrainParams</ref> using av_film_grain_params_alloc(). Its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" line="44" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h" bodystart="44" bodyend="123"/>
+    <listofallmembers>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a84e2704e112186dadbabbedac0a4f8c6" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>ar_coeff_lag</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a8fc51a36ad8f5f5aaa6c8a943351a36f" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>ar_coeff_shift</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1aa6873498e2baff1d553f832e3b2f7faf" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>ar_coeffs_uv</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1af641986b607993ffe627b76c95640644" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>ar_coeffs_y</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a2a9ffe4ad9e50755a2d00befe0a98c1a" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>chroma_scaling_from_luma</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a43cb8295c434f35879f08e0717123aa0" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>grain_scale_shift</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a3826c5b74eb8a5d6e2d98c069824db6c" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>limit_output_range</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a755fa0aa10ce6d1a1a1cb7bf621380fe" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>num_uv_points</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1afe6f2963d8542e365e8d624642c838f5" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>num_y_points</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a7ba402ee8ead9502dd989218cc30affe" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>overlap_flag</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a3841d0f9a7a3e38b03f067f340f55861" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>scaling_shift</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1aba2786909f13c22e939827501e109a0d" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>uv_mult</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a55b1391991f88f4c246a145a9fa9a336" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>uv_mult_luma</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a87de827beedda4567454e9907785f39c" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>uv_offset</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1a9f3be6cbd20bfde01609d801c4a23626" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>uv_points</name></member>
+      <member refid="struct_a_v_film_grain_a_o_m_params_1aea216ca7386c9adc8aad67c37669d16e" prot="public" virt="non-virtual"><scope>AVFilmGrainAOMParams</scope><name>y_points</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

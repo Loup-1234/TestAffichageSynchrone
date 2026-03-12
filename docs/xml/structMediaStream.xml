@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structMediaStream" kind="struct" language="C++" prot="public">
+    <compoundname>MediaStream</compoundname>
+    <includes refid="raymedia_8h" local="no">raymedia.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMediaStream_1a229d0a2df1d270778656404fc754e5f4" prot="public" static="no" mutable="no">
+        <type>Texture</type>
+        <definition>Texture MediaStream::videoTexture</definition>
+        <argsstring></argsstring>
+        <name>videoTexture</name>
+        <qualifiedname>MediaStream::videoTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="50" column="19" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaStream_1aadcba798591a71224930b5ec2b6e21f7" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream MediaStream::audioStream</definition>
+        <argsstring></argsstring>
+        <name>audioStream</name>
+        <qualifiedname>MediaStream::audioStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="51" column="19" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaStream_1a3e051b5a2f369038ec6ab566d36a5b8e" prot="public" static="no" mutable="no">
+        <type><ref refid="structMediaContext" kindref="compound">MediaContext</ref> *</type>
+        <definition>MediaContext* MediaStream::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <qualifiedname>MediaStream::ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="52" column="18" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores video and/or audio data from a movie file. Usage:<orderedlist>
+<listitem><para>Initialize with LoadMedia() / LoadMediaEx()</para>
+</listitem><listitem><para>Call UpdateMedia() each frame</para>
+</listitem><listitem><para>Access videoTexture and audioStream for playback</para>
+</listitem><listitem><para>Free with UnloadMedia() </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>Buffer</label>
+        <link refid="structBuffer"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+      <node id="2">
+        <label>MediaContext</label>
+        <link refid="structMediaContext"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>streams</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>audioOutputBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MediaStream</label>
+        <link refid="structMediaStream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PacketQueue</label>
+        <link refid="structPacketQueue"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>StreamDataContext</label>
+        <link refid="structStreamDataContext"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>pendingPackets</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" line="48" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.h" bodystart="49" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structMediaStream_1aadcba798591a71224930b5ec2b6e21f7" prot="public" virt="non-virtual"><scope>MediaStream</scope><name>audioStream</name></member>
+      <member refid="structMediaStream_1a3e051b5a2f369038ec6ab566d36a5b8e" prot="public" virt="non-virtual"><scope>MediaStream</scope><name>ctx</name></member>
+      <member refid="structMediaStream_1a229d0a2df1d270778656404fc754e5f4" prot="public" virt="non-virtual"><scope>MediaStream</scope><name>videoTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="container__fifo_8h" kind="file" language="C++">
+    <compoundname>container_fifo.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h</label>
+        <link refid="container__fifo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="container__fifo_8h_1a8836840c6e59636f656f047d12928c3e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVContainerFifoFlags</name>
+        <enumvalue id="container__fifo_8h_1a8836840c6e59636f656f047d12928c3ea22ced7218b3c219a471391ab944e4356" prot="public">
+          <name>AV_CONTAINER_FIFO_FLAG_REF</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Signal to av_container_fifo_write() that it should make a new reference to data in src rather than consume its contents.</para>
+<para><simplesect kind="note"><para>you must handle this flag manually in your own fifo_transfer() callback </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="container__fifo_8h_1a8836840c6e59636f656f047d12928c3eade557ce56111c6c1e8f2af649310233f" prot="public">
+          <name>AV_CONTAINER_FIFO_FLAG_USER</name>
+          <initializer>= (1 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This and all higher bits in flags may be set to any value by the caller and are guaranteed to be passed through to the fifo_transfer() callback and not be interpreted by AVContainerFifo code. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="31" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" bodystart="31" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="container__fifo_8h_1a4be45c99f003c104eee68d05610434f3" prot="public" static="no">
+        <type>struct AVContainerFifo</type>
+        <definition>typedef struct AVContainerFifo AVContainerFifo</definition>
+        <argsstring></argsstring>
+        <name>AVContainerFifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AVContainerFifo is a FIFO for &quot;containers&quot; - dynamically allocated reusable structs (e.g. <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> or <ref refid="struct_a_v_packet" kindref="compound">AVPacket</ref>). AVContainerFifo uses an internal pool of such containers to avoid allocating and freeing them repeatedly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="29" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="container__fifo_8h_1ac2b7d8c16041171064656fe1595893a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVContainerFifo *</type>
+        <definition>AVContainerFifo * av_container_fifo_alloc</definition>
+        <argsstring>(void *opaque, void *(*container_alloc)(void *opaque), void(*container_reset)(void *opaque, void *obj), void(*container_free)(void *opaque, void *obj), int(*fifo_transfer)(void *opaque, void *dst, void *src, unsigned flags), unsigned flags)</argsstring>
+        <name>av_container_fifo_alloc</name>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>void *(*)(void *opaque)</type>
+          <declname>container_alloc</declname>
+        </param>
+        <param>
+          <type>void(*)(void *opaque, void *obj)</type>
+          <declname>container_reset</declname>
+        </param>
+        <param>
+          <type>void(*)(void *opaque, void *obj)</type>
+          <declname>container_free</declname>
+        </param>
+        <param>
+          <type>int(*)(void *opaque, void *dst, void *src, unsigned flags)</type>
+          <declname>fifo_transfer</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a new AVContainerFifo for the container type defined by provided callbacks.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opaque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user data that will be passed to the callbacks provided to this function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container_alloc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allocate a new container instance and return a pointer to it, or NULL on failure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container_reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reset the provided container instance to a clean state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container_free</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>free the provided container instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fifo_transfer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer the contents of container src to dst. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currently unused</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly allocated AVContainerFifo, or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="65" column="1" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="65" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1afd49065542d8888f1bd64aebf6c95a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVContainerFifo *</type>
+        <definition>AVContainerFifo * av_container_fifo_alloc_avframe</definition>
+        <argsstring>(unsigned flags)</argsstring>
+        <name>av_container_fifo_alloc_avframe</name>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVContainerFifo instance for AVFrames.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currently unused </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="77" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="77" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1a7e70f9296d3fdf7e0ea25a1d09a5b182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_container_fifo_free</definition>
+        <argsstring>(AVContainerFifo **cf)</argsstring>
+        <name>av_container_fifo_free</name>
+        <param>
+          <type>AVContainerFifo **</type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a AVContainerFifo and everything in it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="82" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1a95e8ee3273a9db3a695909d097c83311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_container_fifo_write</definition>
+        <argsstring>(AVContainerFifo *cf, void *obj, unsigned flags)</argsstring>
+        <name>av_container_fifo_write</name>
+        <param>
+          <type>AVContainerFifo *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the contents of obj to the FIFO.</para>
+<para>The fifo_transfer() callback previously provided to av_container_fifo_alloc() will be called with obj as src in order to perform the actual transfer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="90" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="90" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1ae35d791f46d0c7a420128e7e9b714e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_container_fifo_read</definition>
+        <argsstring>(AVContainerFifo *cf, void *obj, unsigned flags)</argsstring>
+        <name>av_container_fifo_read</name>
+        <param>
+          <type>AVContainerFifo *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the next available object from the FIFO into obj.</para>
+<para>The fifo_read() callback previously provided to av_container_fifo_alloc() will be called with obj as dst in order to perform the actual transfer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="98" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="98" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1a8303dedf405e9a6733dda503e3c398db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_container_fifo_peek</definition>
+        <argsstring>(AVContainerFifo *cf, void **pobj, size_t offset)</argsstring>
+        <name>av_container_fifo_peek</name>
+        <param>
+          <type>AVContainerFifo *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>pobj</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access objects stored in the FIFO without retrieving them. The fifo_transfer() callback will NOT be invoked and the FIFO state will not be modified.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pobj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the object stored in the FIFO will be written here on success. The object remains owned by the FIFO and the caller may only access it as long as the FIFO is not modified. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the object to retrieve - 0 is the next item that would be read, 1 the one after, etc. Must be smaller than av_container_fifo_can_read().</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success, a pointer was written into pobj </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AVERROR(EINVAL)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid offset value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="115" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="115" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1a9ad60476d59b928696edcba4851b0856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_container_fifo_drain</definition>
+        <argsstring>(AVContainerFifo *cf, size_t nb_elems)</argsstring>
+        <name>av_container_fifo_drain</name>
+        <param>
+          <type>AVContainerFifo *</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb_elems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discard the specified number of elements from the FIFO.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements to discard, MUST NOT be larger than av_fifo_can_read(f) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="123" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="123" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="container__fifo_8h_1afcfa217122fd93ccd43b3e40a9da043b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t av_container_fifo_can_read</definition>
+        <argsstring>(const AVContainerFifo *cf)</argsstring>
+        <name>av_container_fifo_can_read</name>
+        <param>
+          <type>const AVContainerFifo *</type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of objects available for reading </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" line="128" column="8" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h" declline="128" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_CONTAINER_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_CONTAINER_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVContainerFifo<sp/>AVContainerFifo;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVContainerFifoFlags<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CONTAINER_FIFO_FLAG_REF<sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CONTAINER_FIFO_FLAG_USER<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">AVContainerFifo*</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">av_container_fifo_alloc(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>(*container_alloc)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>(*container_reset)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>(*container_free)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>(*fifo_transfer)<sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*opaque,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dst,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags),</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">AVContainerFifo<sp/>*av_container_fifo_alloc_avframe(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_container_fifo_free(AVContainerFifo<sp/>**cf);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_container_fifo_write(AVContainerFifo<sp/>*cf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_container_fifo_read(AVContainerFifo<sp/>*cf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_container_fifo_peek(AVContainerFifo<sp/>*cf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**pobj,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_container_fifo_drain(AVContainerFifo<sp/>*cf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nb_elems);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>av_container_fifo_can_read(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AVContainerFifo<sp/>*cf);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AVCODEC_CONTAINER_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/container_fifo.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_i_o_context" kind="struct" language="C++" prot="public">
+    <compoundname>AVIOContext</compoundname>
+    <includes refid="avio_8h" local="no">avio.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a25d3b039ac00850a25d7b772566db6a8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVIOContext::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVIOContext::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A class for private options.</para>
+<para>If this <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref> is created by <ref refid="avio_8h_1ade8a63980569494c99593ebf0d1e891b" kindref="member">avio_open2()</ref>, av_class is set and passes the options down to protocols.</para>
+<para>If this <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref> is manually allocated, then av_class may be set by the caller.</para>
+<para>warning <ndash/> this field can be NULL, be sure to not pass this <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref> to any av_opt_* functions in that case. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="173" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a901e8fd2b978d40957c4ed0b77c2daf0" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVIOContext::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>AVIOContext::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start of the buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="225" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a0204148f407d72becba822b90e8ce9a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <qualifiedname>AVIOContext::buffer_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum buffer size </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="226" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a3500915a7434270c42dffc80fafffa2d" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVIOContext::buf_ptr</definition>
+        <argsstring></argsstring>
+        <name>buf_ptr</name>
+        <qualifiedname>AVIOContext::buf_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current position in the buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="227" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a0683d1a134b647c54f6d087d152c9a64" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVIOContext::buf_end</definition>
+        <argsstring></argsstring>
+        <name>buf_end</name>
+        <qualifiedname>AVIOContext::buf_end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End of the data, may be less than buffer+buffer_size if the read function returned less data than requested, e.g. for streams where no more data has been received yet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="228" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1afa97c079a10a48588f7b55f9dfff1e47" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AVIOContext::opaque</definition>
+        <argsstring></argsstring>
+        <name>opaque</name>
+        <qualifiedname>AVIOContext::opaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A private pointer, passed to the read/write/seek/... functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="232" column="10" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a9be0423e0c66d11d8e0ace043e3aec08" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVIOContext::read_packet) (void *opaque, uint8_t *buf, int buf_size)</definition>
+        <argsstring>)(void *opaque, uint8_t *buf, int buf_size)</argsstring>
+        <name>read_packet</name>
+        <qualifiedname>AVIOContext::read_packet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="234" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a7659d666926d2fefe5513b1459c3e60b" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVIOContext::write_packet) (void *opaque, const uint8_t *buf, int buf_size)</definition>
+        <argsstring>)(void *opaque, const uint8_t *buf, int buf_size)</argsstring>
+        <name>write_packet</name>
+        <qualifiedname>AVIOContext::write_packet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="235" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a4cda0cd632c90d13a546f663287e6cf5" prot="public" static="no" mutable="no">
+        <type>int64_t(*</type>
+        <definition>int64_t(* AVIOContext::seek) (void *opaque, int64_t offset, int whence)</definition>
+        <argsstring>)(void *opaque, int64_t offset, int whence)</argsstring>
+        <name>seek</name>
+        <qualifiedname>AVIOContext::seek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="236" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a7158ec9b44d75704ea5c2fa5ac28fd50" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVIOContext::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <qualifiedname>AVIOContext::pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position in the file of the current buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="237" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1aa9214f54c01f07076e0a0718b2e9c27b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::eof_reached</definition>
+        <argsstring></argsstring>
+        <name>eof_reached</name>
+        <qualifiedname>AVIOContext::eof_reached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>true if was unable to read due to error or eof </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="238" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1afb903b1d9614bfb59e8cc5213de3777b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <qualifiedname>AVIOContext::error</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contains the error code or 0 if no error happened </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="239" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1aab6ff8baf51038f1557e817717baccba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::write_flag</definition>
+        <argsstring></argsstring>
+        <name>write_flag</name>
+        <qualifiedname>AVIOContext::write_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>true if open for writing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="240" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1aca19990941933d7573a485851c6b798e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::max_packet_size</definition>
+        <argsstring></argsstring>
+        <name>max_packet_size</name>
+        <qualifiedname>AVIOContext::max_packet_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="241" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a49a9413b9447d88f98450d119dcc476c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::min_packet_size</definition>
+        <argsstring></argsstring>
+        <name>min_packet_size</name>
+        <qualifiedname>AVIOContext::min_packet_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to buffer at least this amount of data before flushing it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="242" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a949cd6dbd89e2d5d59f5c768754004ca" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long AVIOContext::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <qualifiedname>AVIOContext::checksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="244" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a10cbe217c46aeb653d360a9391aff310" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVIOContext::checksum_ptr</definition>
+        <argsstring></argsstring>
+        <name>checksum_ptr</name>
+        <qualifiedname>AVIOContext::checksum_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="245" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a7ff26703ccfb39cdd38fd49f5a95796c" prot="public" static="no" mutable="no">
+        <type>unsigned long(*</type>
+        <definition>unsigned long(* AVIOContext::update_checksum) (unsigned long checksum, const uint8_t *buf, unsigned int size)</definition>
+        <argsstring>)(unsigned long checksum, const uint8_t *buf, unsigned int size)</argsstring>
+        <name>update_checksum</name>
+        <qualifiedname>AVIOContext::update_checksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="246" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1ae3658a91428df0cfa2b834f6bd7d7bd4" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVIOContext::read_pause) (void *opaque, int pause)</definition>
+        <argsstring>)(void *opaque, int pause)</argsstring>
+        <name>read_pause</name>
+        <qualifiedname>AVIOContext::read_pause</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pause or resume playback for network streaming protocols - e.g. MMS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="250" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1ac2e538dd7f6a73cbc77e6ffdf3f11882" prot="public" static="no" mutable="no">
+        <type>int64_t(*</type>
+        <definition>int64_t(* AVIOContext::read_seek) (void *opaque, int stream_index, int64_t timestamp, int flags)</definition>
+        <argsstring>)(void *opaque, int stream_index, int64_t timestamp, int flags)</argsstring>
+        <name>read_seek</name>
+        <qualifiedname>AVIOContext::read_seek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seek to a given timestamp in stream with the specified stream_index. Needed for some network streaming protocols which don&apos;t support seeking to byte position. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="256" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a0e3c41c290b38923880b9cccb669bf78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::seekable</definition>
+        <argsstring></argsstring>
+        <name>seekable</name>
+        <qualifiedname>AVIOContext::seekable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of AVIO_SEEKABLE_ flags or 0 when the stream is not seekable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="261" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1af719be70947f5f8eebaa5f8ac58fd306" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::direct</definition>
+        <argsstring></argsstring>
+        <name>direct</name>
+        <qualifiedname>AVIOContext::direct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>avio_read and avio_write should if possible be satisfied directly instead of going through a buffer, and avio_seek will always call the underlying seek function directly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="268" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a574dffd7a2101c2b41fb5fd051f501a0" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVIOContext::protocol_whitelist</definition>
+        <argsstring></argsstring>
+        <name>protocol_whitelist</name>
+        <qualifiedname>AVIOContext::protocol_whitelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of allowed protocols. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="273" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a7ff42016848ad2bb5219539e8f1289a5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVIOContext::protocol_blacklist</definition>
+        <argsstring></argsstring>
+        <name>protocol_blacklist</name>
+        <qualifiedname>AVIOContext::protocol_blacklist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;,&apos; separated list of disallowed protocols. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="278" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a7a3c7c4a9a42a9f90a129315eb90eefd" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* AVIOContext::write_data_type) (void *opaque, const uint8_t *buf, int buf_size, enum AVIODataMarkerType type, int64_t time)</definition>
+        <argsstring>)(void *opaque, const uint8_t *buf, int buf_size, enum AVIODataMarkerType type, int64_t time)</argsstring>
+        <name>write_data_type</name>
+        <qualifiedname>AVIOContext::write_data_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A callback that is used instead of write_packet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="283" column="5" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a434053350677c5d2bed3678c79545411" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVIOContext::ignore_boundary_point</definition>
+        <argsstring></argsstring>
+        <name>ignore_boundary_point</name>
+        <qualifiedname>AVIOContext::ignore_boundary_point</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set, don&apos;t call write_data_type separately for AVIO_DATA_MARKER_BOUNDARY_POINT, but ignore them and treat them as AVIO_DATA_MARKER_UNKNOWN (to avoid needlessly small chunks of data returned from the callback). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="290" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a51e82bc4929c1041fa7942003c5e1191" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* AVIOContext::buf_ptr_max</definition>
+        <argsstring></argsstring>
+        <name>buf_ptr_max</name>
+        <qualifiedname>AVIOContext::buf_ptr_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum reached position before a backward seek in the write buffer, used keeping track of already written data for a later flush. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="296" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a2685da68190c842c028ec161ff2b563e" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVIOContext::bytes_read</definition>
+        <argsstring></argsstring>
+        <name>bytes_read</name>
+        <qualifiedname>AVIOContext::bytes_read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read-only statistic of bytes read for this <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="301" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_i_o_context_1a84b791b19690ce1f5cc27b88d832af27" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t AVIOContext::bytes_written</definition>
+        <argsstring></argsstring>
+        <name>bytes_written</name>
+        <qualifiedname>AVIOContext::bytes_written</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read-only statistic of bytes written for this <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="306" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Bytestream IO Context. New public fields can be added with minor version bumps. Removal, reordering and changes to existing public fields require a major version bump. sizeof(AVIOContext) must not be used outside libav*.</para>
+<para><simplesect kind="note"><para>None of the function pointers in <ref refid="struct_a_v_i_o_context" kindref="compound">AVIOContext</ref> should be called directly, they should only be set by the client application when implementing custom I/O. Normally these are set to the function pointers specified in <ref refid="avio_8h_1aa0b13300bb6b469beb1bda153d99b92b" kindref="member">avio_alloc_context()</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AVIOContext</label>
+        <link refid="struct_a_v_i_o_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" line="160" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h" bodystart="160" bodyend="307"/>
+    <listofallmembers>
+      <member refid="struct_a_v_i_o_context_1a25d3b039ac00850a25d7b772566db6a8" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>av_class</name></member>
+      <member refid="struct_a_v_i_o_context_1a0683d1a134b647c54f6d087d152c9a64" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>buf_end</name></member>
+      <member refid="struct_a_v_i_o_context_1a3500915a7434270c42dffc80fafffa2d" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>buf_ptr</name></member>
+      <member refid="struct_a_v_i_o_context_1a51e82bc4929c1041fa7942003c5e1191" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>buf_ptr_max</name></member>
+      <member refid="struct_a_v_i_o_context_1a901e8fd2b978d40957c4ed0b77c2daf0" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>buffer</name></member>
+      <member refid="struct_a_v_i_o_context_1a0204148f407d72becba822b90e8ce9a6" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>buffer_size</name></member>
+      <member refid="struct_a_v_i_o_context_1a2685da68190c842c028ec161ff2b563e" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>bytes_read</name></member>
+      <member refid="struct_a_v_i_o_context_1a84b791b19690ce1f5cc27b88d832af27" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>bytes_written</name></member>
+      <member refid="struct_a_v_i_o_context_1a949cd6dbd89e2d5d59f5c768754004ca" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>checksum</name></member>
+      <member refid="struct_a_v_i_o_context_1a10cbe217c46aeb653d360a9391aff310" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>checksum_ptr</name></member>
+      <member refid="struct_a_v_i_o_context_1af719be70947f5f8eebaa5f8ac58fd306" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>direct</name></member>
+      <member refid="struct_a_v_i_o_context_1aa9214f54c01f07076e0a0718b2e9c27b" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>eof_reached</name></member>
+      <member refid="struct_a_v_i_o_context_1afb903b1d9614bfb59e8cc5213de3777b" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>error</name></member>
+      <member refid="struct_a_v_i_o_context_1a434053350677c5d2bed3678c79545411" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>ignore_boundary_point</name></member>
+      <member refid="struct_a_v_i_o_context_1aca19990941933d7573a485851c6b798e" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>max_packet_size</name></member>
+      <member refid="struct_a_v_i_o_context_1a49a9413b9447d88f98450d119dcc476c" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>min_packet_size</name></member>
+      <member refid="struct_a_v_i_o_context_1afa97c079a10a48588f7b55f9dfff1e47" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>opaque</name></member>
+      <member refid="struct_a_v_i_o_context_1a7158ec9b44d75704ea5c2fa5ac28fd50" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>pos</name></member>
+      <member refid="struct_a_v_i_o_context_1a7ff42016848ad2bb5219539e8f1289a5" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>protocol_blacklist</name></member>
+      <member refid="struct_a_v_i_o_context_1a574dffd7a2101c2b41fb5fd051f501a0" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>protocol_whitelist</name></member>
+      <member refid="struct_a_v_i_o_context_1a9be0423e0c66d11d8e0ace043e3aec08" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>read_packet</name></member>
+      <member refid="struct_a_v_i_o_context_1ae3658a91428df0cfa2b834f6bd7d7bd4" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>read_pause</name></member>
+      <member refid="struct_a_v_i_o_context_1ac2e538dd7f6a73cbc77e6ffdf3f11882" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>read_seek</name></member>
+      <member refid="struct_a_v_i_o_context_1a4cda0cd632c90d13a546f663287e6cf5" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>seek</name></member>
+      <member refid="struct_a_v_i_o_context_1a0e3c41c290b38923880b9cccb669bf78" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>seekable</name></member>
+      <member refid="struct_a_v_i_o_context_1a7ff26703ccfb39cdd38fd49f5a95796c" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>update_checksum</name></member>
+      <member refid="struct_a_v_i_o_context_1a7a3c7c4a9a42a9f90a129315eb90eefd" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>write_data_type</name></member>
+      <member refid="struct_a_v_i_o_context_1aab6ff8baf51038f1557e817717baccba" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>write_flag</name></member>
+      <member refid="struct_a_v_i_o_context_1a7659d666926d2fefe5513b1459c3e60b" prot="public" virt="non-virtual"><scope>AVIOContext</scope><name>write_packet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

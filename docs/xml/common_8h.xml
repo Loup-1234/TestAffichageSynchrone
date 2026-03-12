@@ -1,0 +1,2264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includes local="no">errno.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="error_8h" local="yes">error.h</includes>
+    <includes refid="macros_8h" local="yes">macros.h</includes>
+    <includes refid="libavutil_2version_8h" local="yes">version.h</includes>
+    <includes refid="mem_8h" local="yes">mem.h</includes>
+    <includedby refid="avutil_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="14">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mem.h</label>
+        <link refid="mem_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>errno.h</label>
+      </node>
+      <node id="3">
+        <label>inttypes.h</label>
+      </node>
+      <node id="4">
+        <label>limits.h</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="12">
+        <label>stddef.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h</label>
+        <link refid="avdct_8h_source"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_desc.h</label>
+        <link refid="codec__desc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="35">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</label>
+        <link refid="opt_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="37">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/timestamp.h</label>
+        <link refid="timestamp_8h"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="common_8h_1aa79ca71ef110a498d8275cbf7aa75a93" prot="public" static="no">
+        <name>RSHIFT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a) &gt; 0 ? ((a) + ((1&lt;&lt;(b))&gt;&gt;1))&gt;&gt;(b) : ((a) + ((1&lt;&lt;(b))&gt;&gt;1)-1)&gt;&gt;(b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="56" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a7a2a86492a286d6d20678da1dbb00525" prot="public" static="no">
+        <name>ROUNDED_DIV</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>(((a)&gt;=0 ? (a) + ((b)&gt;&gt;1) : (a) - ((b)&gt;&gt;1))/(b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="58" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a5d13452b0fac0d41b08ea2e49ea6eaa5" prot="public" static="no">
+        <name>AV_CEIL_RSHIFT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>                                                       (!av_builtin_constant_p(b) ? -((-(a)) &gt;&gt; (b)) \
+                                                       : ((a) + (1&lt;&lt;(b)) - 1) &gt;&gt; (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="60" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="60" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a33703f1a958afda17362487ed065ee0c" prot="public" static="no">
+        <name>FF_CEIL_RSHIFT</name>
+        <initializer>AV_CEIL_RSHIFT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="63" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a5117194af5289224bceaaa5466586d8f" prot="public" static="no">
+        <name>FFUDIV</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>(((a)&gt;0 ?(a):(a)-(b)+1) / (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="65" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1aa0241c1e04e45d7be1b388d83ab57f22" prot="public" static="no">
+        <name>FFUMOD</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a)-(b)*FFUDIV(a,b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="66" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ad6d88940cfc29c13a3e51ded211fc242" prot="public" static="no">
+        <name>FFABS</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &gt;= 0 ? (a) : (-(a)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute value, Note, INT_MIN / INT64_MIN result in undefined behavior as they are not representable as absolute values of their type. This is the same as with *abs() <simplesect kind="see"><para><ref refid="common_8h_1a4752e34ce9cae031c792b625b0736d97" kindref="member">FFNABS()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="74" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1af5e4ff7761996bc901e59bd59756268d" prot="public" static="no">
+        <name>FFSIGN</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &gt; 0 ? 1 : -1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="75" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a4752e34ce9cae031c792b625b0736d97" prot="public" static="no">
+        <name>FFNABS</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &lt;= 0 ? (a) : (-(a)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Negative Absolute value. this works for all integers of all types. As with many macros, this evaluates its argument twice, it thus must not have a sideeffect, that is FFNABS(x++) has undefined behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="83" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a608dd97c9d29ba17f4bd63c4330c0b66" prot="public" static="no">
+        <name>FFABSU</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &lt;= 0 ? -(unsigned)(a) : (unsigned)(a))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unsigned Absolute value. This takes the absolute value of a signed int and returns it as a unsigned. This also works with INT_MIN which would otherwise not be representable As with many macros, this evaluates its argument twice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="91" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ae286f4cf6f51b2d110f8834a96295e7c" prot="public" static="no">
+        <name>FFABS64U</name>
+        <param><defname>a</defname></param>
+        <initializer>((a) &lt;= 0 ? -(uint64_t)(a) : (uint64_t)(a))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="92" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ad8ae31130e2aa3aa309436a7b718d7ee" prot="public" static="no">
+        <name>av_ceil_log2</name>
+        <initializer>av_ceil_log2_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="97" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a7861a7769a98d5c7fe278c506daf0ceb" prot="public" static="no">
+        <name>av_clip</name>
+        <initializer>av_clip_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="100" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ad0cd39edf94abca965c5708f93357ccb" prot="public" static="no">
+        <name>av_clip64</name>
+        <initializer>av_clip64_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="103" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1aab62819faf803c8710ea14b4e55f8d52" prot="public" static="no">
+        <name>av_clip_uint8</name>
+        <initializer>av_clip_uint8_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="106" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a3b360439a2f726b4e9fbf71eb27a77e0" prot="public" static="no">
+        <name>av_clip_int8</name>
+        <initializer>av_clip_int8_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="109" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ab0da1f871ef2c19ae9bf13b3512b539e" prot="public" static="no">
+        <name>av_clip_uint16</name>
+        <initializer>av_clip_uint16_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="112" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a8bb6f82e8d7118fef06e10e0176a2f33" prot="public" static="no">
+        <name>av_clip_int16</name>
+        <initializer>av_clip_int16_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="115" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a84d8f79473188fbae4b59d279f8627bb" prot="public" static="no">
+        <name>av_clipl_int32</name>
+        <initializer>av_clipl_int32_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="118" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a05f6cd05c120778f1054e9230b0bd334" prot="public" static="no">
+        <name>av_clip_intp2</name>
+        <initializer>av_clip_intp2_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="121" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ab7340dc72d553d96b6303d904e84a87b" prot="public" static="no">
+        <name>av_clip_uintp2</name>
+        <initializer>av_clip_uintp2_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="124" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a874575db478f5974004920ee36f8f9ac" prot="public" static="no">
+        <name>av_sat_add32</name>
+        <initializer>av_sat_add32_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="127" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a3f28488b2e113bbdd007621335600887" prot="public" static="no">
+        <name>av_sat_dadd32</name>
+        <initializer>av_sat_dadd32_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="130" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1affb1099ae548502f4a9d2dff1f92124b" prot="public" static="no">
+        <name>av_sat_sub32</name>
+        <initializer>av_sat_sub32_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="133" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a733baa72e68d481e4d55feabbfd3a0a1" prot="public" static="no">
+        <name>av_sat_dsub32</name>
+        <initializer>av_sat_dsub32_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="136" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a6ea3c4ecd634f7b733a41198352b4e29" prot="public" static="no">
+        <name>av_sat_add64</name>
+        <initializer>av_sat_add64_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="139" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a5d85b711f2ef58b47fb806690156323e" prot="public" static="no">
+        <name>av_sat_sub64</name>
+        <initializer>av_sat_sub64_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="142" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ac491d482d7668d1359601f33117f495d" prot="public" static="no">
+        <name>av_clipf</name>
+        <initializer>av_clipf_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="145" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a3abb81c18ea92773bed933c856b2e1b1" prot="public" static="no">
+        <name>av_clipd</name>
+        <initializer>av_clipd_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="148" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1aab372af23c28419f3ff0ff710e3eb8a1" prot="public" static="no">
+        <name>av_zero_extend</name>
+        <initializer>av_zero_extend_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="151" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a52fa38792604d10693d3a810201ba663" prot="public" static="no">
+        <name>av_popcount</name>
+        <initializer>av_popcount_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="154" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a457699c0c4bf8ceda581ad2efe54cb42" prot="public" static="no">
+        <name>av_popcount64</name>
+        <initializer>av_popcount64_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="157" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a2c4939720b11c27cf01387493edba4e1" prot="public" static="no">
+        <name>av_parity</name>
+        <initializer>av_parity_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="160" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a2b7addf97d98ac1f867895db965d4726" prot="public" static="no">
+        <name>av_mod_uintp2</name>
+        <initializer>av_mod_uintp2_c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="302" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a1a2fd8cd42afb00c9f69562f52b1ae4b" prot="public" static="no">
+        <name>GET_UTF8</name>
+        <param><defname>val</defname></param>
+        <param><defname>GET_BYTE</defname></param>
+        <param><defname>ERROR</defname></param>
+        <initializer>    val= (uint8_t)(GET_BYTE);\
+    {\
+        uint32_t top = (val &amp; 128) &gt;&gt; 1;\
+        if ((val &amp; 0xc0) == 0x80 || val &gt;= 0xFE)\
+            {ERROR}\
+        while (val &amp; top) {\
+            unsigned int tmp = (uint8_t)(GET_BYTE) - 128;\
+            if(tmp&gt;&gt;6)\
+                {ERROR}\
+            val= (val&lt;&lt;6) + tmp;\
+            top &lt;&lt;= 5;\
+        }\
+        val &amp;= (top &lt;&lt; 1) - 1;\
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a UTF-8 character (up to 4 bytes) to its 32-bit UCS-4 encoded form.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output value, must be an lvalue of type uint32_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GET_BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression reading one byte from the input. Evaluated up to 7 times (4 for the currently assigned Unicode range). With a memory buffer input, this could be *ptr++, or if you want to make sure that *ptr stops at the end of a NULL terminated string then *ptr ? *ptr++ : 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to be evaluated on invalid input, typically a goto statement.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>ERROR should not contain a loop control statement which could interact with the internal while loop, and should force an exit from the macro code (e.g. through a goto or a return) in order to prevent undefined results. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="488" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="488" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a2665137b6cc64bb5cf491ba9f9dbd215" prot="public" static="no">
+        <name>GET_UTF16</name>
+        <param><defname>val</defname></param>
+        <param><defname>GET_16BIT</defname></param>
+        <param><defname>ERROR</defname></param>
+        <initializer>    val = (uint16_t)(GET_16BIT);\
+    {\
+        unsigned int hi = val - 0xD800;\
+        if (hi &lt; 0x800) {\
+            val = (uint16_t)(GET_16BIT) - 0xDC00;\
+            if (val &gt; 0x3FFU || hi &gt; 0x3FFU)\
+                {ERROR}\
+            val += (hi&lt;&lt;10) + 0x10000;\
+        }\
+    }\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a UTF-16 character (2 or 4 bytes) to its 32-bit UCS-4 encoded form.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output value, must be an lvalue of type uint32_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GET_16BIT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression returning two bytes of UTF-16 data converted to native byte order. Evaluated one or two times. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to be evaluated on invalid input, typically a goto statement. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="513" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="513" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ac6a994fe28410a8d14f70f0992db4f42" prot="public" static="no">
+        <name>PUT_UTF8</name>
+        <param><defname>val</defname></param>
+        <param><defname>tmp</defname></param>
+        <param><defname>PUT_BYTE</defname></param>
+        <initializer>    {\
+        int bytes, shift;\
+        uint32_t in = val;\
+        if (in &lt; 0x80) {\
+            tmp = in;\
+            PUT_BYTE\
+        } else {\
+            bytes = (av_log2(in) + 4) / 5;\
+            shift = (bytes - 1) * 6;\
+            tmp = (256 - (256 &gt;&gt; bytes)) | (in &gt;&gt; shift);\
+            PUT_BYTE\
+            while (shift &gt;= 6) {\
+                shift -= 6;\
+                tmp = 0x80 | ((in &gt;&gt; shift) &amp; 0x3f);\
+                PUT_BYTE\
+            }\
+        }\
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a 32-bit Unicode character to its UTF-8 encoded form (up to 4 bytes long). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an input-only argument and should be of type uint32_t. It holds a UCS-4 encoded Unicode character that is to be converted to UTF-8. If val is given as a function it is executed only once. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a temporary variable and should be of type uint8_t. It represents an intermediate value during conversion that is to be output by PUT_BYTE. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PUT_BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>writes the converted UTF-8 bytes to any proper destination. It could be a function or a statement, and uses tmp as the input byte. For example, PUT_BYTE could be &quot;*output++ = tmp;&quot; PUT_BYTE will be executed up to 4 times for values in the valid UTF-8 range and up to 7 times in the general case, depending on the length of the converted Unicode character. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="541" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="541" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a6486c4a216b16b4d2615c23d8429cd6b" prot="public" static="no">
+        <name>PUT_UTF16</name>
+        <param><defname>val</defname></param>
+        <param><defname>tmp</defname></param>
+        <param><defname>PUT_16BIT</defname></param>
+        <initializer>    {\
+        uint32_t in = val;\
+        if (in &lt; 0x10000) {\
+            tmp = in;\
+            PUT_16BIT\
+        } else {\
+            tmp = 0xD800 | ((in - 0x10000) &gt;&gt; 10);\
+            PUT_16BIT\
+            tmp = 0xDC00 | ((in - 0x10000) &amp; 0x3FF);\
+            PUT_16BIT\
+        }\
+    }\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a 32-bit Unicode character to its UTF-16 encoded form (2 or 4 bytes). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an input-only argument and should be of type uint32_t. It holds a UCS-4 encoded Unicode character that is to be converted to UTF-16. If val is given as a function it is executed only once. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a temporary variable and should be of type uint16_t. It represents an intermediate value during conversion that is to be output by PUT_16BIT. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PUT_16BIT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>writes the converted UTF-16 data to any proper destination in desired endianness. It could be a function or a statement, and uses tmp as the input byte. For example, PUT_BYTE could be &quot;*output++ = tmp;&quot; PUT_BYTE will be executed 1 or 2 times depending on input character. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="575" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="575" bodyend="588"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="common_8h_1a10e72d08c6a66c91cf7218532631684e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_const int</type>
+        <definition>av_const int av_log2</definition>
+        <argsstring>(unsigned v)</argsstring>
+        <name>av_log2</name>
+        <param>
+          <type>unsigned</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="164" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" declline="164" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a8a1d3f387b1eab65327453f6a8e7e9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_const int</type>
+        <definition>av_const int av_log2_16bit</definition>
+        <argsstring>(unsigned v)</argsstring>
+        <name>av_log2_16bit</name>
+        <param>
+          <type>unsigned</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="168" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" declline="168" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a465f39d69c5a5fe0e070b6ec4d0fed29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_clip_c</definition>
+        <argsstring>(int a, int amin, int amax)</argsstring>
+        <name>av_clip_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer value into the amin-amax range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="178" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="178" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1aa4ed7e144d5b8397cff8656e9c786cb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int64_t</type>
+        <definition>static av_always_inline av_const int64_t av_clip64_c</definition>
+        <argsstring>(int64_t a, int64_t amin, int64_t amax)</argsstring>
+        <name>av_clip64_c</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>amin</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>amax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed 64bit integer value into the amin-amax range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="195" column="42" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="195" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a8deed4a1ec39d0b1ab82d1f0e590a6f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const uint8_t</type>
+        <definition>static av_always_inline av_const uint8_t av_clip_uint8_c</definition>
+        <argsstring>(int a)</argsstring>
+        <name>av_clip_uint8_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer value into the 0-255 range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="210" column="42" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="210" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a3091e5b3f2a340c3ddb29f6733fb2a4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int8_t</type>
+        <definition>static av_always_inline av_const int8_t av_clip_int8_c</definition>
+        <argsstring>(int a)</argsstring>
+        <name>av_clip_int8_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer value into the -128,127 range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="221" column="41" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a70a9a6b77373c47c48ef93511edaf9ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const uint16_t</type>
+        <definition>static av_always_inline av_const uint16_t av_clip_uint16_c</definition>
+        <argsstring>(int a)</argsstring>
+        <name>av_clip_uint16_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer value into the 0-65535 range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="232" column="43" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1aae95fa7073f1caa097951161985240f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int16_t</type>
+        <definition>static av_always_inline av_const int16_t av_clip_int16_c</definition>
+        <argsstring>(int a)</argsstring>
+        <name>av_clip_int16_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer value into the -32768,32767 range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="243" column="42" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="243" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1ae245fb123a6e2a664c4806c034421e1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int32_t</type>
+        <definition>static av_always_inline av_const int32_t av_clipl_int32_c</definition>
+        <argsstring>(int64_t a)</argsstring>
+        <name>av_clipl_int32_c</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed 64-bit integer value into the -2147483648,2147483647 range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="254" column="42" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1ad24148f23ca385e16b14885f52360abe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_clip_intp2_c</definition>
+        <argsstring>(int a, int p)</argsstring>
+        <name>av_clip_intp2_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer into the -(2^p),(2^p-1) range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit position to clip at </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="266" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="266" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a867dba37c785d27d42b272aa968efda8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const unsigned</type>
+        <definition>static av_always_inline av_const unsigned av_clip_uintp2_c</definition>
+        <argsstring>(int a, int p)</argsstring>
+        <name>av_clip_uintp2_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a signed integer to an unsigned power of two range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit position to clip at </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="280" column="43" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="280" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1ad46a283c76db67cfe6e97f9c00e7bc4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const unsigned</type>
+        <definition>static av_always_inline av_const unsigned av_zero_extend_c</definition>
+        <argsstring>(unsigned a, unsigned p)</argsstring>
+        <name>av_zero_extend_c</name>
+        <param>
+          <type>unsigned</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear high bits from an unsigned integer starting with specific bit position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit position to clip at. Must be between 0 and 31. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="292" column="43" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="292" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1ad985f97e3b32a09f8648685cc4da9ad6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>attribute_deprecated av_always_inline av_const unsigned</type>
+        <definition>static attribute_deprecated av_always_inline av_const unsigned av_mod_uintp2_c</definition>
+        <argsstring>(unsigned a, unsigned p)</argsstring>
+        <name>av_mod_uintp2_c</name>
+        <param>
+          <type>unsigned</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="305" column="43" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="305" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a2ff75b1bf7fd1a261dd2f2919e8d23e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int</type>
+        <definition>static av_always_inline int av_sat_add32_c</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>av_sat_add32_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two signed 32-bit values with saturation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sum with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="318" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1af235b48678850832493ac21160ff8458" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int</type>
+        <definition>static av_always_inline int av_sat_dadd32_c</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>av_sat_dadd32_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a doubled value to another value with saturation at both stages.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value doubled and added to a </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sum sat(a + sat(2*b)) with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="330" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="330" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a7b11597cb0ad86f94f6f442f242cdfe1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int</type>
+        <definition>static av_always_inline int av_sat_sub32_c</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>av_sat_sub32_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract two signed 32-bit values with saturation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>difference with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="342" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a587c5fbf7350330807f887ca3b4b97e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int</type>
+        <definition>static av_always_inline int av_sat_dsub32_c</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>av_sat_dsub32_c</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract a doubled value from another value with saturation at both stages.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value doubled and subtracted from a </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>difference sat(a - sat(2*b)) with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="354" column="29" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a7dc055df9c43596b9c59aff5f4abd6d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int64_t</type>
+        <definition>static av_always_inline int64_t av_sat_add64_c</definition>
+        <argsstring>(int64_t a, int64_t b)</argsstring>
+        <name>av_sat_add64_c</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two signed 64-bit values with saturation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sum with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="366" column="33" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="366" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a0a617a173ac5dcf764f5f0872c3258c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline int64_t</type>
+        <definition>static av_always_inline int64_t av_sat_sub64_c</definition>
+        <argsstring>(int64_t a, int64_t b)</argsstring>
+        <name>av_sat_sub64_c</name>
+        <param>
+          <type>int64_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract two signed 64-bit values with saturation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>difference with signed saturation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="385" column="33" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="385" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a7d5a6331d8708d4516aeab2413f86392" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const float</type>
+        <definition>static av_always_inline av_const float av_clipf_c</definition>
+        <argsstring>(float a, float amin, float amax)</argsstring>
+        <name>av_clipf_c</name>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a float value into the amin-amax range. If a is nan or -inf amin will be returned. If a is +inf amax will be returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="407" column="40" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="407" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a9a257b0d07c767325ee48b5e16e0b97f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const double</type>
+        <definition>static av_always_inline av_const double av_clipd_c</definition>
+        <argsstring>(double a, double amin, double amax)</argsstring>
+        <name>av_clipd_c</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>amin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>amax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clip a double value into the amin-amax range. If a is nan or -inf amin will be returned. If a is +inf amax will be returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value of the clip range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>clipped value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="424" column="41" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="424" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1ad94b463be296690fc9c096d55203b42b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_ceil_log2_c</definition>
+        <argsstring>(int x)</argsstring>
+        <name>av_ceil_log2_c</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute ceil(log2(x)). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value used to compute ceil(log2(x)) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed ceiling of log2(x) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="436" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="436" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a73ced2c040c8e53f58a6073c3f3927b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_popcount_c</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>av_popcount_c</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count number of bits set to one in x <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to count bits of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bits set to one in x </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="446" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="446" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1a1016d46d60ca2d27d8ab2af5f0f7c57a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_popcount64_c</definition>
+        <argsstring>(uint64_t x)</argsstring>
+        <name>av_popcount64_c</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count number of bits set to one in x <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to count bits of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bits set to one in x </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="460" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="460" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="common_8h_1aed51dfa317ec3988d6bb7734f19d5cba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline av_const int</type>
+        <definition>static av_always_inline av_const int av_parity_c</definition>
+        <argsstring>(uint32_t v)</argsstring>
+        <name>av_parity_c</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" line="465" column="38" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h" bodystart="465" bodyend="468"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>common internal and external API header </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2006<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)<sp/>&amp;&amp;<sp/>!defined(__STDC_CONSTANT_MACROS)<sp/>&amp;&amp;<sp/>!defined(UINT64_C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>missing<sp/>-D__STDC_CONSTANT_MACROS<sp/>/<sp/>#define<sp/>__STDC_CONSTANT_MACROS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="error_8h" kindref="compound">error.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="macros_8h" kindref="compound">macros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavutil_2version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_AV_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;intmath.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&quot;internal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mem_8h" kindref="compound">mem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAVE_AV_CONFIG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//rounded<sp/>division<sp/>&amp;<sp/>shift</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RSHIFT(a,b)<sp/>((a)<sp/>&gt;<sp/>0<sp/>?<sp/>((a)<sp/>+<sp/>((1&lt;&lt;(b))&gt;&gt;1))&gt;&gt;(b)<sp/>:<sp/>((a)<sp/>+<sp/>((1&lt;&lt;(b))&gt;&gt;1)-1)&gt;&gt;(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>assume<sp/>b&gt;0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROUNDED_DIV(a,b)<sp/>(((a)&gt;=0<sp/>?<sp/>(a)<sp/>+<sp/>((b)&gt;&gt;1)<sp/>:<sp/>(a)<sp/>-<sp/>((b)&gt;&gt;1))/(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fast<sp/>a/(1&lt;&lt;b)<sp/>rounded<sp/>toward<sp/>+inf.<sp/>Assume<sp/>a&gt;=0<sp/>and<sp/>b&gt;=0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_CEIL_RSHIFT(a,b)<sp/>(!av_builtin_constant_p(b)<sp/>?<sp/>-((-(a))<sp/>&gt;&gt;<sp/>(b))<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>((a)<sp/>+<sp/>(1&lt;&lt;(b))<sp/>-<sp/>1)<sp/>&gt;&gt;<sp/>(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Backwards<sp/>compat.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF_CEIL_RSHIFT<sp/>AV_CEIL_RSHIFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFUDIV(a,b)<sp/>(((a)&gt;0<sp/>?(a):(a)-(b)+1)<sp/>/<sp/>(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFUMOD(a,b)<sp/>((a)-(b)*FFUDIV(a,b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="common_8h_1ad6d88940cfc29c13a3e51ded211fc242" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFABS(a)<sp/>((a)<sp/>&gt;=<sp/>0<sp/>?<sp/>(a)<sp/>:<sp/>(-(a)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFSIGN(a)<sp/>((a)<sp/>&gt;<sp/>0<sp/>?<sp/>1<sp/>:<sp/>-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="common_8h_1a4752e34ce9cae031c792b625b0736d97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFNABS(a)<sp/>((a)<sp/>&lt;=<sp/>0<sp/>?<sp/>(a)<sp/>:<sp/>(-(a)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="common_8h_1a608dd97c9d29ba17f4bd63c4330c0b66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFABSU(a)<sp/>((a)<sp/>&lt;=<sp/>0<sp/>?<sp/>-(unsigned)(a)<sp/>:<sp/>(unsigned)(a))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFABS64U(a)<sp/>((a)<sp/>&lt;=<sp/>0<sp/>?<sp/>-(uint64_t)(a)<sp/>:<sp/>(uint64_t)(a))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>misc<sp/>math<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_ceil_log2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_ceil_log2<sp/><sp/><sp/><sp/><sp/>av_ceil_log2_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_clip_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_clip64_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_uint8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_uint8<sp/><sp/><sp/><sp/>av_clip_uint8_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_int8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_int8<sp/><sp/><sp/><sp/><sp/>av_clip_int8_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_uint16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_uint16<sp/><sp/><sp/>av_clip_uint16_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_int16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_int16<sp/><sp/><sp/><sp/>av_clip_int16_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clipl_int32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clipl_int32<sp/><sp/><sp/>av_clipl_int32_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_intp2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_intp2<sp/><sp/><sp/><sp/>av_clip_intp2_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clip_uintp2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clip_uintp2<sp/><sp/><sp/>av_clip_uintp2_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_add32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_add32<sp/><sp/><sp/><sp/><sp/>av_sat_add32_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_dadd32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_dadd32<sp/><sp/><sp/><sp/>av_sat_dadd32_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_sub32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_sub32<sp/><sp/><sp/><sp/><sp/>av_sat_sub32_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_dsub32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_dsub32<sp/><sp/><sp/><sp/>av_sat_dsub32_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_add64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_add64<sp/><sp/><sp/><sp/><sp/>av_sat_add64_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_sat_sub64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_sat_sub64<sp/><sp/><sp/><sp/><sp/>av_sat_sub64_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clipf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clipf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_clipf_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_clipd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_clipd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_clipd_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_zero_extend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_zero_extend<sp/><sp/><sp/>av_zero_extend_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_popcount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_popcount<sp/><sp/><sp/><sp/><sp/><sp/>av_popcount_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_popcount64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_popcount64<sp/><sp/><sp/><sp/>av_popcount64_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_parity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_parity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>av_parity_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_log2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_log2(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_log2_16bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_log2_16bit(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_clip_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amax)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_AV_CONFIG_H)<sp/>&amp;&amp;<sp/>defined(ASSERT_LEVEL)<sp/>&amp;&amp;<sp/>ASSERT_LEVEL<sp/>&gt;=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amin<sp/>&gt;<sp/>amax)<sp/>abort();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(a<sp/>&lt;<sp/>amin)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amin;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&gt;<sp/>amax)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amax;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>int64_t<sp/>av_clip64_c(int64_t<sp/>a,<sp/>int64_t<sp/>amin,<sp/>int64_t<sp/>amax)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_AV_CONFIG_H)<sp/>&amp;&amp;<sp/>defined(ASSERT_LEVEL)<sp/>&amp;&amp;<sp/>ASSERT_LEVEL<sp/>&gt;=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amin<sp/>&gt;<sp/>amax)<sp/>abort();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(a<sp/>&lt;<sp/>amin)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amin;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&gt;<sp/>amax)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amax;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>uint8_t<sp/>av_clip_uint8_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a&amp;(~0xFF))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(~a)&gt;&gt;31;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>int8_t<sp/>av_clip_int8_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((a+0x80U)<sp/>&amp;<sp/>~0xFF)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a&gt;&gt;31)<sp/>^<sp/>0x7F;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>uint16_t<sp/>av_clip_uint16_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a&amp;(~0xFFFF))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(~a)&gt;&gt;31;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>int16_t<sp/>av_clip_int16_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((a+0x8000U)<sp/>&amp;<sp/>~0xFFFF)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a&gt;&gt;31)<sp/>^<sp/>0x7FFF;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/>int32_t<sp/>av_clipl_int32_c(int64_t<sp/>a)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((a+UINT64_C(0x80000000))<sp/>&amp;<sp/>~UINT64_C(0xFFFFFFFF))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)((a&gt;&gt;63)<sp/>^<sp/>0x7FFFFFFF);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)a;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_clip_intp2_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)a<sp/>+<sp/>(1U<sp/>&lt;&lt;<sp/>p))<sp/>&amp;<sp/>~((2U<sp/>&lt;&lt;<sp/>p)<sp/>-<sp/>1))</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a<sp/>&gt;&gt;<sp/>31)<sp/>^<sp/>((1<sp/>&lt;&lt;<sp/>p)<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>av_clip_uintp2_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&amp;<sp/>~((1U&lt;&lt;p)<sp/>-<sp/>1))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(~a)<sp/>&gt;&gt;<sp/>31<sp/>&amp;<sp/>((1U&lt;&lt;p)<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>a;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>av_zero_extend_c(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_AV_CONFIG_H)<sp/>&amp;&amp;<sp/>defined(ASSERT_LEVEL)<sp/>&amp;&amp;<sp/>ASSERT_LEVEL<sp/>&gt;=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>&gt;<sp/>31)<sp/>abort();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&amp;<sp/>((1U<sp/>&lt;&lt;<sp/>p)<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>FF_API_MOD_UINTP2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>av_mod_uintp2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>av_mod_uintp2<sp/>av_mod_uintp2_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal">attribute_deprecated</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>av_mod_uintp2_c(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_zero_extend_c(a,<sp/>p);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_sat_add32_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_clipl_int32((int64_t)a<sp/>+<sp/>b);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_sat_dadd32_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_sat_add32(a,<sp/>av_sat_add32(b,<sp/>b));</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_sat_sub32_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_clipl_int32((int64_t)a<sp/>-<sp/>b);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_sat_dsub32_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_sat_sub32(a,<sp/>av_sat_add32(b,<sp/>b));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>int64_t<sp/>av_sat_add64_c(int64_t<sp/>a,<sp/>int64_t<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined(__INTEL_COMPILER)<sp/>&amp;&amp;<sp/>AV_GCC_VERSION_AT_LEAST(5,1))<sp/>||<sp/>AV_HAS_BUILTIN(__builtin_add_overflow)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>tmp;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!__builtin_add_overflow(a,<sp/>b,<sp/>&amp;tmp)<sp/>?<sp/>tmp<sp/>:<sp/>(tmp<sp/>&lt;<sp/>0<sp/>?<sp/>INT64_MAX<sp/>:<sp/>INT64_MIN);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>s<sp/>=<sp/>a+(uint64_t)b;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((int64_t)(a^b<sp/>|<sp/>~s^b)<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INT64_MAX<sp/>^<sp/>(b<sp/>&gt;&gt;<sp/>63);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>int64_t<sp/>av_sat_sub64_c(int64_t<sp/>a,<sp/>int64_t<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined(__INTEL_COMPILER)<sp/>&amp;&amp;<sp/>AV_GCC_VERSION_AT_LEAST(5,1))<sp/>||<sp/>AV_HAS_BUILTIN(__builtin_sub_overflow)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/>tmp;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!__builtin_sub_overflow(a,<sp/>b,<sp/>&amp;tmp)<sp/>?<sp/>tmp<sp/>:<sp/>(tmp<sp/>&lt;<sp/>0<sp/>?<sp/>INT64_MAX<sp/>:<sp/>INT64_MIN);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>a<sp/>&gt;=<sp/>INT64_MAX<sp/>+<sp/>b)</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INT64_MAX;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>a<sp/>&lt;=<sp/>INT64_MIN<sp/>+<sp/>b)</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INT64_MIN;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>-<sp/>b;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>av_clipf_c(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amax)</highlight></codeline>
+<codeline lineno="408"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_AV_CONFIG_H)<sp/>&amp;&amp;<sp/>defined(ASSERT_LEVEL)<sp/>&amp;&amp;<sp/>ASSERT_LEVEL<sp/>&gt;=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amin<sp/>&gt;<sp/>amax)<sp/>abort();</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FFMIN(FFMAX(a,<sp/>amin),<sp/>amax);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>av_clipd_c(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amax)</highlight></codeline>
+<codeline lineno="425"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_AV_CONFIG_H)<sp/>&amp;&amp;<sp/>defined(ASSERT_LEVEL)<sp/>&amp;&amp;<sp/>ASSERT_LEVEL<sp/>&gt;=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amin<sp/>&gt;<sp/>amax)<sp/>abort();</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FFMIN(FFMAX(a,<sp/>amin),<sp/>amax);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_ceil_log2_c(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="437"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_log2((x<sp/>-<sp/>1U)<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_popcount_c(uint32_t<sp/>x)</highlight></codeline>
+<codeline lineno="447"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>(x<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0x55555555;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>(x<sp/>&amp;<sp/>0x33333333)<sp/>+<sp/>((x<sp/>&gt;&gt;<sp/>2)<sp/>&amp;<sp/>0x33333333);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>(x<sp/>+<sp/>(x<sp/>&gt;&gt;<sp/>4))<sp/>&amp;<sp/>0x0F0F0F0F;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>x<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x<sp/>+<sp/>(x<sp/>&gt;&gt;<sp/>16))<sp/>&amp;<sp/>0x3F;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_popcount64_c(uint64_t<sp/>x)</highlight></codeline>
+<codeline lineno="461"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_popcount((uint32_t)x)<sp/>+<sp/>av_popcount((uint32_t)(x<sp/>&gt;&gt;<sp/>32));</highlight></codeline>
+<codeline lineno="463"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>av_always_inline<sp/>av_const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_parity_c(uint32_t<sp/>v)</highlight></codeline>
+<codeline lineno="466"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>av_popcount(v)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488" refid="common_8h_1a1a2fd8cd42afb00c9f69562f52b1ae4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_UTF8(val,<sp/>GET_BYTE,<sp/>ERROR)\</highlight></codeline>
+<codeline lineno="489"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>val=<sp/>(uint8_t)(GET_BYTE);\</highlight></codeline>
+<codeline lineno="490"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="491"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>top<sp/>=<sp/>(val<sp/>&amp;<sp/>128)<sp/>&gt;&gt;<sp/>1;\</highlight></codeline>
+<codeline lineno="492"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((val<sp/>&amp;<sp/>0xc0)<sp/>==<sp/>0x80<sp/>||<sp/>val<sp/>&gt;=<sp/>0xFE)\</highlight></codeline>
+<codeline lineno="493"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{ERROR}\</highlight></codeline>
+<codeline lineno="494"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>while<sp/>(val<sp/>&amp;<sp/>top)<sp/>{\</highlight></codeline>
+<codeline lineno="495"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>int<sp/>tmp<sp/>=<sp/>(uint8_t)(GET_BYTE)<sp/>-<sp/>128;\</highlight></codeline>
+<codeline lineno="496"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(tmp&gt;&gt;6)\</highlight></codeline>
+<codeline lineno="497"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{ERROR}\</highlight></codeline>
+<codeline lineno="498"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val=<sp/>(val&lt;&lt;6)<sp/>+<sp/>tmp;\</highlight></codeline>
+<codeline lineno="499"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>top<sp/>&lt;&lt;=<sp/>5;\</highlight></codeline>
+<codeline lineno="500"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="501"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>(top<sp/>&lt;&lt;<sp/>1)<sp/>-<sp/>1;\</highlight></codeline>
+<codeline lineno="502"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="common_8h_1a2665137b6cc64bb5cf491ba9f9dbd215" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_UTF16(val,<sp/>GET_16BIT,<sp/>ERROR)\</highlight></codeline>
+<codeline lineno="514"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>(uint16_t)(GET_16BIT);\</highlight></codeline>
+<codeline lineno="515"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="516"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>int<sp/>hi<sp/>=<sp/>val<sp/>-<sp/>0xD800;\</highlight></codeline>
+<codeline lineno="517"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(hi<sp/>&lt;<sp/>0x800)<sp/>{\</highlight></codeline>
+<codeline lineno="518"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/>(uint16_t)(GET_16BIT)<sp/>-<sp/>0xDC00;\</highlight></codeline>
+<codeline lineno="519"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(val<sp/>&gt;<sp/>0x3FFU<sp/>||<sp/>hi<sp/>&gt;<sp/>0x3FFU)\</highlight></codeline>
+<codeline lineno="520"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{ERROR}\</highlight></codeline>
+<codeline lineno="521"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>+=<sp/>(hi&lt;&lt;10)<sp/>+<sp/>0x10000;\</highlight></codeline>
+<codeline lineno="522"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="523"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="524"><highlight class="preprocessor"></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541" refid="common_8h_1ac6a994fe28410a8d14f70f0992db4f42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PUT_UTF8(val,<sp/>tmp,<sp/>PUT_BYTE)\</highlight></codeline>
+<codeline lineno="542"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="543"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>bytes,<sp/>shift;\</highlight></codeline>
+<codeline lineno="544"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>in<sp/>=<sp/>val;\</highlight></codeline>
+<codeline lineno="545"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(in<sp/>&lt;<sp/>0x80)<sp/>{\</highlight></codeline>
+<codeline lineno="546"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>in;\</highlight></codeline>
+<codeline lineno="547"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_BYTE\</highlight></codeline>
+<codeline lineno="548"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{\</highlight></codeline>
+<codeline lineno="549"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bytes<sp/>=<sp/>(av_log2(in)<sp/>+<sp/>4)<sp/>/<sp/>5;\</highlight></codeline>
+<codeline lineno="550"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift<sp/>=<sp/>(bytes<sp/>-<sp/>1)<sp/>*<sp/>6;\</highlight></codeline>
+<codeline lineno="551"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>(256<sp/>-<sp/>(256<sp/>&gt;&gt;<sp/>bytes))<sp/>|<sp/>(in<sp/>&gt;&gt;<sp/>shift);\</highlight></codeline>
+<codeline lineno="552"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_BYTE\</highlight></codeline>
+<codeline lineno="553"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>while<sp/>(shift<sp/>&gt;=<sp/>6)<sp/>{\</highlight></codeline>
+<codeline lineno="554"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift<sp/>-=<sp/>6;\</highlight></codeline>
+<codeline lineno="555"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>0x80<sp/>|<sp/>((in<sp/>&gt;&gt;<sp/>shift)<sp/>&amp;<sp/>0x3f);\</highlight></codeline>
+<codeline lineno="556"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_BYTE\</highlight></codeline>
+<codeline lineno="557"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="558"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="559"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575" refid="common_8h_1a6486c4a216b16b4d2615c23d8429cd6b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PUT_UTF16(val,<sp/>tmp,<sp/>PUT_16BIT)\</highlight></codeline>
+<codeline lineno="576"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="577"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>in<sp/>=<sp/>val;\</highlight></codeline>
+<codeline lineno="578"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(in<sp/>&lt;<sp/>0x10000)<sp/>{\</highlight></codeline>
+<codeline lineno="579"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>in;\</highlight></codeline>
+<codeline lineno="580"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_16BIT\</highlight></codeline>
+<codeline lineno="581"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{\</highlight></codeline>
+<codeline lineno="582"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>0xD800<sp/>|<sp/>((in<sp/>-<sp/>0x10000)<sp/>&gt;&gt;<sp/>10);\</highlight></codeline>
+<codeline lineno="583"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_16BIT\</highlight></codeline>
+<codeline lineno="584"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>0xDC00<sp/>|<sp/>((in<sp/>-<sp/>0x10000)<sp/>&amp;<sp/>0x3FF);\</highlight></codeline>
+<codeline lineno="585"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUT_16BIT\</highlight></codeline>
+<codeline lineno="586"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="587"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="588"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_COMMON_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/common.h"/>
+  </compounddef>
+</doxygen>

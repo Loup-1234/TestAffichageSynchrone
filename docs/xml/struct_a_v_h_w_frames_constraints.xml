@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_h_w_frames_constraints" kind="struct" language="C++" prot="public">
+    <compoundname>AVHWFramesConstraints</compoundname>
+    <includes refid="hwcontext_8h" local="no">hwcontext.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1a4258bbe81f927b76b7ca5af44ba7ef6b" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+        <definition>enum AVPixelFormat* AVHWFramesConstraints::valid_hw_formats</definition>
+        <argsstring></argsstring>
+        <name>valid_hw_formats</name>
+        <qualifiedname>AVHWFramesConstraints::valid_hw_formats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of possible values for format in the hw_frames_ctx, terminated by AV_PIX_FMT_NONE. This member will always be filled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="449" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1aabea88093c6f85d6185ffb0852a2217f" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+        <definition>enum AVPixelFormat* AVHWFramesConstraints::valid_sw_formats</definition>
+        <argsstring></argsstring>
+        <name>valid_sw_formats</name>
+        <qualifiedname>AVHWFramesConstraints::valid_sw_formats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of possible values for sw_format in the hw_frames_ctx, terminated by AV_PIX_FMT_NONE. Can be NULL if this information is not known. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="456" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1af220776925452091085139081d5d7251" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesConstraints::min_width</definition>
+        <argsstring></argsstring>
+        <name>min_width</name>
+        <qualifiedname>AVHWFramesConstraints::min_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The minimum size of frames in this hw_frames_ctx. (Zero if not known.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="462" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1a3f1aec6d1c90f77837875c2a3598be46" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesConstraints::min_height</definition>
+        <argsstring></argsstring>
+        <name>min_height</name>
+        <qualifiedname>AVHWFramesConstraints::min_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="463" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1a34e06e3397af2b83de9d78f893bf4168" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesConstraints::max_width</definition>
+        <argsstring></argsstring>
+        <name>max_width</name>
+        <qualifiedname>AVHWFramesConstraints::max_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum size of frames in this hw_frames_ctx. (INT_MAX if not known / no limit.) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="469" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_h_w_frames_constraints_1af5d3a683727f7b92abca7b7114d4e15c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVHWFramesConstraints::max_height</definition>
+        <argsstring></argsstring>
+        <name>max_height</name>
+        <qualifiedname>AVHWFramesConstraints::max_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="470" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct describes the constraints on hardware frames attached to a given device with a hardware-specific configuration. This is returned by av_hwdevice_get_hwframe_constraints() and must be freed by av_hwframe_constraints_free() after use. </para>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" line="444" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h" bodystart="444" bodyend="471"/>
+    <listofallmembers>
+      <member refid="struct_a_v_h_w_frames_constraints_1af5d3a683727f7b92abca7b7114d4e15c" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>max_height</name></member>
+      <member refid="struct_a_v_h_w_frames_constraints_1a34e06e3397af2b83de9d78f893bf4168" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>max_width</name></member>
+      <member refid="struct_a_v_h_w_frames_constraints_1a3f1aec6d1c90f77837875c2a3598be46" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>min_height</name></member>
+      <member refid="struct_a_v_h_w_frames_constraints_1af220776925452091085139081d5d7251" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>min_width</name></member>
+      <member refid="struct_a_v_h_w_frames_constraints_1a4258bbe81f927b76b7ca5af44ba7ef6b" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>valid_hw_formats</name></member>
+      <member refid="struct_a_v_h_w_frames_constraints_1aabea88093c6f85d6185ffb0852a2217f" prot="public" virt="non-virtual"><scope>AVHWFramesConstraints</scope><name>valid_sw_formats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

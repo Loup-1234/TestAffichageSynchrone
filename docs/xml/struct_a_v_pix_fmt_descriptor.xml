@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_pix_fmt_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVPixFmtDescriptor</compoundname>
+    <includes refid="pixdesc_8h" local="no">pixdesc.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1a10736c3f1288eb87b23ede3ffdefb435" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVPixFmtDescriptor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>AVPixFmtDescriptor::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="70" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1ae83de203f97288c9f4070212a5eac5de" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVPixFmtDescriptor::nb_components</definition>
+        <argsstring></argsstring>
+        <name>nb_components</name>
+        <qualifiedname>AVPixFmtDescriptor::nb_components</qualifiedname>
+        <briefdescription>
+<para>The number of components each pixel has, (1-4) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="71" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1a4abca4534188ff94627e88c0d8362058" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVPixFmtDescriptor::log2_chroma_w</definition>
+        <argsstring></argsstring>
+        <name>log2_chroma_w</name>
+        <qualifiedname>AVPixFmtDescriptor::log2_chroma_w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount to shift the luma width right to find the chroma width. For YV12 this is 1 for example. chroma_width = AV_CEIL_RSHIFT(luma_width, log2_chroma_w) The note above is needed to ensure rounding up. This value only refers to the chroma components. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="80" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1abea8ed308fe00644fc066a00018afa95" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVPixFmtDescriptor::log2_chroma_h</definition>
+        <argsstring></argsstring>
+        <name>log2_chroma_h</name>
+        <qualifiedname>AVPixFmtDescriptor::log2_chroma_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount to shift the luma height right to find the chroma height. For YV12 this is 1 for example. chroma_height= AV_CEIL_RSHIFT(luma_height, log2_chroma_h) The note above is needed to ensure rounding up. This value only refers to the chroma components. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="89" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1a5047d1e6b045f637345dbc305bf4357d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVPixFmtDescriptor::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVPixFmtDescriptor::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combination of AV_PIX_FMT_FLAG_... flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="94" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1a17569c9349766c3b5201b33f84f19a25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_component_descriptor" kindref="compound">AVComponentDescriptor</ref></type>
+        <definition>AVComponentDescriptor AVPixFmtDescriptor::comp[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>comp</name>
+        <qualifiedname>AVPixFmtDescriptor::comp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameters that describe how pixels are packed. If the format has 1 or 2 components, then luma is 0. If the format has 3 or 4 components: if the RGB flag is set then 0 is red, 1 is green and 2 is blue; otherwise 0 is luma, 1 is chroma-U and 2 is chroma-V.</para>
+<para>If present, the Alpha channel is always the last component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="105" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_pix_fmt_descriptor_1a85163c36645d2f372a4e98b314fa964b" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AVPixFmtDescriptor::alias</definition>
+        <argsstring></argsstring>
+        <name>alias</name>
+        <qualifiedname>AVPixFmtDescriptor::alias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alternative comma-separated names. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="110" column="16" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Descriptor that unambiguously describes how the bits of a pixel are stored in the up to 4 data planes of an image. It also stores the subsampling factors and number of components.</para>
+<para><simplesect kind="note"><para>This is separate of the colorspace (RGB, YCbCr, YPbPr, JPEG-style YUV and all the YUV variants) <ref refid="struct_a_v_pix_fmt_descriptor" kindref="compound">AVPixFmtDescriptor</ref> just stores how values are stored not what these values represent. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVComponentDescriptor</label>
+        <link refid="struct_a_v_component_descriptor"/>
+      </node>
+      <node id="1">
+        <label>AVPixFmtDescriptor</label>
+        <link refid="struct_a_v_pix_fmt_descriptor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>comp</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" line="69" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/pixdesc.h" bodystart="69" bodyend="111"/>
+    <listofallmembers>
+      <member refid="struct_a_v_pix_fmt_descriptor_1a85163c36645d2f372a4e98b314fa964b" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>alias</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1a17569c9349766c3b5201b33f84f19a25" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>comp</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1a5047d1e6b045f637345dbc305bf4357d" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>flags</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1abea8ed308fe00644fc066a00018afa95" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>log2_chroma_h</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1a4abca4534188ff94627e88c0d8362058" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>log2_chroma_w</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1a10736c3f1288eb87b23ede3ffdefb435" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>name</name></member>
+      <member refid="struct_a_v_pix_fmt_descriptor_1ae83de203f97288c9f4070212a5eac5de" prot="public" virt="non-virtual"><scope>AVPixFmtDescriptor</scope><name>nb_components</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

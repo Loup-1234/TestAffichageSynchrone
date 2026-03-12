@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_vk_frame" kind="struct" language="C++" prot="public">
+    <compoundname>AVVkFrame</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1af816af80883ad4e7f7e0b92069b14721" prot="public" static="no" mutable="no">
+        <type>VkImage</type>
+        <definition>VkImage AVVkFrame::img[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>img</name>
+        <qualifiedname>AVVkFrame::img</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vulkan images to which the memory is bound to. May be one for multiplane formats, or multiple. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="307" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a1ed9121a069584a7a2c3c0fcdffcdbfa" prot="public" static="no" mutable="no">
+        <type>VkImageTiling</type>
+        <definition>VkImageTiling AVVkFrame::tiling</definition>
+        <argsstring></argsstring>
+        <name>tiling</name>
+        <qualifiedname>AVVkFrame::tiling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tiling for the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="312" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1aee75c3f6f575c5d9380cfcc4b1264338" prot="public" static="no" mutable="no">
+        <type>VkDeviceMemory</type>
+        <definition>VkDeviceMemory AVVkFrame::mem[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>mem</name>
+        <qualifiedname>AVVkFrame::mem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory backing the images. Either one, or as many as there are planes in the sw_format. In case of having multiple VkImages, but one memory, the offset field will indicate the bound offset for each image. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="320" column="20" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a0f5b937247d6cbbda0ac9ee3e8f1ac15" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AVVkFrame::size[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>size</name>
+        <qualifiedname>AVVkFrame::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="321" column="12" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a43d7899beecc50b826219190d175964b" prot="public" static="no" mutable="no">
+        <type>VkMemoryPropertyFlagBits</type>
+        <definition>VkMemoryPropertyFlagBits AVVkFrame::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AVVkFrame::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OR&apos;d flags for all memory allocated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="326" column="30" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a08867f694acf386d6f459c8499d66ab6" prot="public" static="no" mutable="no">
+        <type>VkAccessFlagBits</type>
+        <definition>VkAccessFlagBits AVVkFrame::access[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>access</name>
+        <qualifiedname>AVVkFrame::access</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updated after every barrier. One per VkImage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="331" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a17b01c3777e45a37ded5a5d99e188a1c" prot="public" static="no" mutable="no">
+        <type>VkImageLayout</type>
+        <definition>VkImageLayout AVVkFrame::layout[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>layout</name>
+        <qualifiedname>AVVkFrame::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="332" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a2879b0cac663bb604635a2bfb6d06fea" prot="public" static="no" mutable="no">
+        <type>VkSemaphore</type>
+        <definition>VkSemaphore AVVkFrame::sem[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>sem</name>
+        <qualifiedname>AVVkFrame::sem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronization timeline semaphores, one for each VkImage. Must not be freed manually. Must be waited on at every submission using the value in sem_value, and must be signalled at every submission, using an incremented value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="340" column="17" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a74b8cce7fe20d11d96b390ed2a05ad04" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AVVkFrame::sem_value[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>sem_value</name>
+        <qualifiedname>AVVkFrame::sem_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Up to date semaphore value at which each image becomes accessible. One per VkImage. Clients must wait on this value when submitting a command queue, and increment it when signalling. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="348" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a9f76026dce756dc1134df7771829a5c3" prot="public" static="no" mutable="no">
+        <type>struct AVVkFrameInternal *</type>
+        <definition>struct AVVkFrameInternal* AVVkFrame::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <qualifiedname>AVVkFrame::internal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="353" column="28" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1ac8f8dd7bed0584060231d957795f0273" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t AVVkFrame::offset[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>offset</name>
+        <qualifiedname>AVVkFrame::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describes the binding offset of each image to the VkDeviceMemory. One per VkImage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="359" column="15" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_vk_frame_1a3f88db0a7ea4abd706090145b55bdcf2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AVVkFrame::queue_family[AV_NUM_DATA_POINTERS]</definition>
+        <argsstring>[AV_NUM_DATA_POINTERS]</argsstring>
+        <name>queue_family</name>
+        <qualifiedname>AVVkFrame::queue_family</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue family of the images. Must be VK_QUEUE_FAMILY_IGNORED if the image was allocated with the CONCURRENT concurrency option. One per VkImage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="366" column="14" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" line="302" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h" bodystart="302" bodyend="367"/>
+    <listofallmembers>
+      <member refid="struct_a_v_vk_frame_1a08867f694acf386d6f459c8499d66ab6" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>access</name></member>
+      <member refid="struct_a_v_vk_frame_1a43d7899beecc50b826219190d175964b" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>flags</name></member>
+      <member refid="struct_a_v_vk_frame_1af816af80883ad4e7f7e0b92069b14721" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>img</name></member>
+      <member refid="struct_a_v_vk_frame_1a9f76026dce756dc1134df7771829a5c3" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>internal</name></member>
+      <member refid="struct_a_v_vk_frame_1a17b01c3777e45a37ded5a5d99e188a1c" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>layout</name></member>
+      <member refid="struct_a_v_vk_frame_1aee75c3f6f575c5d9380cfcc4b1264338" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>mem</name></member>
+      <member refid="struct_a_v_vk_frame_1ac8f8dd7bed0584060231d957795f0273" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>offset</name></member>
+      <member refid="struct_a_v_vk_frame_1a3f88db0a7ea4abd706090145b55bdcf2" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>queue_family</name></member>
+      <member refid="struct_a_v_vk_frame_1a2879b0cac663bb604635a2bfb6d06fea" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>sem</name></member>
+      <member refid="struct_a_v_vk_frame_1a74b8cce7fe20d11d96b390ed2a05ad04" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>sem_value</name></member>
+      <member refid="struct_a_v_vk_frame_1a0f5b937247d6cbbda0ac9ee3e8f1ac15" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>size</name></member>
+      <member refid="struct_a_v_vk_frame_1a1ed9121a069584a7a2c3c0fcdffcdbfa" prot="public" virt="non-virtual"><scope>AVVkFrame</scope><name>tiling</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

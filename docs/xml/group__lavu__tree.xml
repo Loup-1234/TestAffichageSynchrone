@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__tree" kind="group">
+    <compoundname>lavu_tree</compoundname>
+    <title>AVTree</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__lavu__tree_1gabad004dcf19a9d481793c03cabda5984" prot="public" static="no" extern="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int av_tree_node_size</definition>
+        <argsstring></argsstring>
+        <name>av_tree_node_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="45" column="18" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="45" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__tree_1gafab839218031805b252bc8190c94065b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct AVTreeNode *</type>
+        <definition>struct AVTreeNode * av_tree_node_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_tree_node_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an AVTreeNode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="50" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="50" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__tree_1ga1ce07d7fe428946286aad96d77dcdb56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_tree_find</definition>
+        <argsstring>(const struct AVTreeNode *root, void *key, int(*cmp)(const void *key, const void *b), void *next[2])</argsstring>
+        <name>av_tree_find</name>
+        <param>
+          <type>const struct AVTreeNode *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int(*)(const void *key, const void *b)</type>
+          <declname>cmp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>next</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find an element. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the root node of the tree </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If next is not NULL, then next[0] will contain the previous element and next[1] the next element. If either does not exist, then the corresponding entry in next is unchanged. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compare function used to compare elements in the tree, API identical to that of Standard C&apos;s qsort It is guaranteed that the first and only the first argument to cmp() will be the key parameter to <ref refid="group__lavu__tree_1ga1ce07d7fe428946286aad96d77dcdb56" kindref="member">av_tree_find()</ref>, thus it could if the user wants, be a different type (like an opaque context). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An element with cmp(key, elem) == 0 or NULL if no such element exists in the tree. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="66" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__tree_1ga38d25f261bb10c12eb5bc0a1e96f2d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * av_tree_insert</definition>
+        <argsstring>(struct AVTreeNode **rootp, void *key, int(*cmp)(const void *key, const void *b), struct AVTreeNode **next)</argsstring>
+        <name>av_tree_insert</name>
+        <param>
+          <type>struct AVTreeNode **</type>
+          <declname>rootp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int(*)(const void *key, const void *b)</type>
+          <declname>cmp</declname>
+        </param>
+        <param>
+          <type>struct AVTreeNode **</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert or remove an element.</para>
+<para>If *next is NULL, then the supplied element will be removed if it exists. If *next is non-NULL, then the supplied element will be inserted, unless it already exists in the tree.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rootp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a pointer to the root node of the tree; note that the root node can change during insertions, this is required to keep the tree balanced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the element key to insert in the tree </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used to allocate and free AVTreeNodes. For insertion the user must set it to an allocated and zeroed object of at least av_tree_node_size bytes size. <ref refid="group__lavu__tree_1ga38d25f261bb10c12eb5bc0a1e96f2d67" kindref="member">av_tree_insert()</ref> will set it to NULL if it has been consumed. For deleting elements *next is set to NULL by the user and <ref refid="group__lavu__tree_1ga38d25f261bb10c12eb5bc0a1e96f2d67" kindref="member">av_tree_insert()</ref> will set it to the AVTreeNode which was used for the removed element. This allows the use of flat arrays, which have lower overhead compared to many malloced elements. You might want to define a function like: <programlisting><codeline><highlight class="normal">void<sp/>*tree_insert(struct<sp/>AVTreeNode<sp/>**rootp,<sp/>void<sp/>*key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*cmp)(void<sp/>*key,<sp/>const<sp/>void<sp/>*b),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AVTreeNode<sp/>**next)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!*next)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*next<sp/>=<sp/>av_mallocz(av_tree_node_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>av_tree_insert(rootp,<sp/>key,<sp/>cmp,<sp/>next);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>*tree_remove(struct<sp/>AVTreeNode<sp/>**rootp,<sp/>void<sp/>*key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*cmp)(void<sp/>*key,<sp/>const<sp/>void<sp/>*b,<sp/>AVTreeNode<sp/>**next))</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>av_freep(next);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>av_tree_insert(rootp,<sp/>key,<sp/>cmp,<sp/>next);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compare function used to compare elements in the tree, API identical to that of Standard C&apos;s qsort </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If no insertion happened, the found element; if an insertion or removal happened, then either key or NULL will be returned. Which one it is depends on the tree state and the implementation. You should make no assumptions that it&apos;s one or the other in the code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="113" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__tree_1gae2f16a7b3895fd776696cd9eccd6c26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_tree_destroy</definition>
+        <argsstring>(struct AVTreeNode *t)</argsstring>
+        <name>av_tree_destroy</name>
+        <param>
+          <type>struct AVTreeNode *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="117" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="117" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__tree_1ga1c7cce17e3ab55eb07c6ad8739ff58d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_tree_enumerate</definition>
+        <argsstring>(struct AVTreeNode *t, void *opaque, int(*cmp)(void *opaque, void *elem), int(*enu)(void *opaque, void *elem))</argsstring>
+        <name>av_tree_enumerate</name>
+        <param>
+          <type>struct AVTreeNode *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>opaque</declname>
+        </param>
+        <param>
+          <type>int(*)(void *opaque, void *elem)</type>
+          <declname>cmp</declname>
+        </param>
+        <param>
+          <type>int(*)(void *opaque, void *elem)</type>
+          <declname>enu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply enu(opaque, &amp;elem) to all the elements in the tree in a given range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a comparison function that returns &lt; 0 for an element below the range, &gt; 0 for an element above the range and == 0 for an element inside the range</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The cmp function should use the same ordering used to construct the tree. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" line="129" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tree.h" declline="129" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Low-complexity tree container</para>
+<para>Insertion, removal, finding equal, largest which is smaller than and smallest which is larger than, all have O(log n) worst-case complexity. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

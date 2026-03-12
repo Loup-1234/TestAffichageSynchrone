@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_stream_group_tile_grid" kind="struct" language="C++" prot="public">
+    <compoundname>AVStreamGroupTileGrid</compoundname>
+    <includes refid="avformat_8h" local="no">avformat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a9fafd54debc25aaa841e15397771419c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> *</type>
+        <definition>const AVClass* AVStreamGroupTileGrid::av_class</definition>
+        <argsstring></argsstring>
+        <name>av_class</name>
+        <qualifiedname>AVStreamGroupTileGrid::av_class</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="952" column="19" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="952" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a58ec58a60b82b52df461547a286a3767" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVStreamGroupTileGrid::nb_tiles</definition>
+        <argsstring></argsstring>
+        <name>nb_tiles</name>
+        <qualifiedname>AVStreamGroupTileGrid::nb_tiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of tiles in the grid.</para>
+<para>Must be &gt; 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="959" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="959" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::coded_width</definition>
+        <argsstring></argsstring>
+        <name>coded_width</name>
+        <qualifiedname>AVStreamGroupTileGrid::coded_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the canvas.</para>
+<para>Must be &gt; 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="966" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="966" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::coded_height</definition>
+        <argsstring></argsstring>
+        <name>coded_height</name>
+        <qualifiedname>AVStreamGroupTileGrid::coded_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the canvas.</para>
+<para>Must be &gt; 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="972" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="972" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1abadd27f8dcc18e9a1ba15725eba2dbc1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int AVStreamGroupTileGrid::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <qualifiedname>AVStreamGroupTileGrid::idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the stream in the group this tile references.</para>
+<para>Must be &lt; <ref refid="struct_a_v_stream_group_1a75c06164e99a41e514dcb5c222b2bdaa" kindref="member">nb_streams</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="990" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1ab9212421ea0727694fdf818fa0e339ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::horizontal</definition>
+        <argsstring></argsstring>
+        <name>horizontal</name>
+        <qualifiedname>AVStreamGroupTileGrid::horizontal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in pixels from the left edge of the canvas where the tile should be placed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="995" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1af45962eb98f7c01275390176cd662d2c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::vertical</definition>
+        <argsstring></argsstring>
+        <name>vertical</name>
+        <qualifiedname>AVStreamGroupTileGrid::vertical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in pixels from the top edge of the canvas where the tile should be placed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1000" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct_a_v_stream_group_tile_grid" kindref="compound">AVStreamGroupTileGrid</ref> *</type>
+        <definition>struct AVStreamGroupTileGrid * AVStreamGroupTileGrid::offsets</definition>
+        <argsstring></argsstring>
+        <name>offsets</name>
+        <qualifiedname>AVStreamGroupTileGrid::offsets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="struct_a_v_stream_group_tile_grid_1a58ec58a60b82b52df461547a286a3767" kindref="member">nb_tiles</ref> sized array of offsets in pixels from the topleft edge of the canvas, indicating where each stream should be placed. It must be allocated with the <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref> family of functions.</para>
+<para><itemizedlist>
+<listitem><para>demuxing: set by libavformat, must not be modified by the caller.</para>
+</listitem><listitem><para>muxing: set by the caller before <ref refid="group__lavf__encoding_1ga18b7b10bb5b94c4842de18166bc677cb" kindref="member">avformat_write_header()</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>Freed by libavformat in <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1001" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a738b457b1beae882f28bbec84ac3f16b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AVStreamGroupTileGrid::background[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>background</name>
+        <qualifiedname>AVStreamGroupTileGrid::background</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pixel value per channel in RGBA format used if no pixel of any tile is located at a particular pixel location.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__picture_1ga58595f4ce6255e7b147b4b48ac9d96a4" kindref="member">av_image_fill_color()</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="parseutils_8h_1a4be8779c7c2afd9c57c8b962bea76d03" kindref="member">av_parse_color()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1010" column="13" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a750ff7723497db21b95336aa8c2838a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::horizontal_offset</definition>
+        <argsstring></argsstring>
+        <name>horizontal_offset</name>
+        <qualifiedname>AVStreamGroupTileGrid::horizontal_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in pixels from the left edge of the canvas where the actual image meant for presentation starts.</para>
+<para>This field must be &gt;= 0 and &lt; <ref refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" kindref="member">coded_width</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1018" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1adc25c5591ab3c51e87034a417a15d28a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::vertical_offset</definition>
+        <argsstring></argsstring>
+        <name>vertical_offset</name>
+        <qualifiedname>AVStreamGroupTileGrid::vertical_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset in pixels from the top edge of the canvas where the actual image meant for presentation starts.</para>
+<para>This field must be &gt;= 0 and &lt; <ref refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" kindref="member">coded_height</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1025" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a2747775a9af6acc4c61a9d2b1ba7e2f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>AVStreamGroupTileGrid::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of the final image for presentation.</para>
+<para>Must be &gt; 0 and &lt;= (<ref refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" kindref="member">coded_width</ref> - <ref refid="struct_a_v_stream_group_tile_grid_1a750ff7723497db21b95336aa8c2838a9" kindref="member">horizontal_offset</ref>). When it&apos;s not equal to (<ref refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" kindref="member">coded_width</ref> - <ref refid="struct_a_v_stream_group_tile_grid_1a750ff7723497db21b95336aa8c2838a9" kindref="member">horizontal_offset</ref>), the result of (<ref refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" kindref="member">coded_width</ref> - width - <ref refid="struct_a_v_stream_group_tile_grid_1a750ff7723497db21b95336aa8c2838a9" kindref="member">horizontal_offset</ref>) is the amount amount of pixels to be cropped from the right edge of the final image before presentation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1036" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a3ae48fee743fba656da6347110866a8c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>AVStreamGroupTileGrid::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Height of the final image for presentation.</para>
+<para>Must be &gt; 0 and &lt;= (<ref refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" kindref="member">coded_height</ref> - <ref refid="struct_a_v_stream_group_tile_grid_1adc25c5591ab3c51e87034a417a15d28a" kindref="member">vertical_offset</ref>). When it&apos;s not equal to (<ref refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" kindref="member">coded_height</ref> - <ref refid="struct_a_v_stream_group_tile_grid_1adc25c5591ab3c51e87034a417a15d28a" kindref="member">vertical_offset</ref>), the result of (<ref refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" kindref="member">coded_height</ref> - height - <ref refid="struct_a_v_stream_group_tile_grid_1adc25c5591ab3c51e87034a417a15d28a" kindref="member">vertical_offset</ref>) is the amount amount of pixels to be cropped from the bottom edge of the final image before presentation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1046" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1af2694bce41413eaa45b32c96af96b048" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_packet_side_data" kindref="compound">AVPacketSideData</ref> *</type>
+        <definition>AVPacketSideData* AVStreamGroupTileGrid::coded_side_data</definition>
+        <argsstring></argsstring>
+        <name>coded_side_data</name>
+        <qualifiedname>AVStreamGroupTileGrid::coded_side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional data associated with the grid.</para>
+<para>Should be allocated with <ref refid="group__lavc__packet__side__data_1ga2219eb0b5a6ca929d564efb7d7c22a36" kindref="member">av_packet_side_data_new()</ref> or <ref refid="group__lavc__packet__side__data_1ga7a0fb092dc581c328a296281332d0c8c" kindref="member">av_packet_side_data_add()</ref>, and will be freed by <ref refid="group__lavf__core_1gac2990b13b68e831a408fce8e1d0d6445" kindref="member">avformat_free_context()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1054" column="22" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_stream_group_tile_grid_1a060ee87b8093bbe25e8b0c902d508227" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVStreamGroupTileGrid::nb_coded_side_data</definition>
+        <argsstring></argsstring>
+        <name>nb_coded_side_data</name>
+        <qualifiedname>AVStreamGroupTileGrid::nb_coded_side_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of entries in <ref refid="struct_a_v_stream_group_tile_grid_1af2694bce41413eaa45b32c96af96b048" kindref="member">coded_side_data</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="1059" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_stream_group_tile_grid" kindref="compound">AVStreamGroupTileGrid</ref> holds information on how to combine several independent images on a single canvas for presentation.</para>
+<para>The output should be a <ref refid="struct_a_v_stream_group_tile_grid_1a738b457b1beae882f28bbec84ac3f16b" kindref="member">background</ref> colored <ref refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" kindref="member">coded_width</ref> x <ref refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" kindref="member">coded_height</ref> canvas where a <ref refid="struct_a_v_stream_group_tile_grid_1a58ec58a60b82b52df461547a286a3767" kindref="member">nb_tiles</ref> amount of tiles are placed in the order they appear in the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offsets</ref> array, at the exact offset described for them. In particular, if two or more tiles overlap, the image with higher index in the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offsets</ref> array takes priority. Note that a single image may be used multiple times, i.e. multiple entries in <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offsets</ref> may have the same value of idx.</para>
+<para>The following is an example of a simple grid with 3 rows and 4 columns:</para>
+<para>+<mdash/>+<mdash/>+<mdash/>+<mdash/>+ | 0 | 1 | 2 | 3 | +<mdash/>+<mdash/>+<mdash/>+<mdash/>+ | 4 | 5 | 6 | 7 | +<mdash/>+<mdash/>+<mdash/>+<mdash/>+ | 8 | 9 |10 |11 | +<mdash/>+<mdash/>+<mdash/>+<mdash/>+</para>
+<para>Assuming all tiles have a dimension of 512x512, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> of the topleft pixel of the first <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group is &quot;0,0&quot;, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> of the topleft pixel of the second <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group is &quot;512,0&quot;, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> of the topleft pixel of the fifth <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group is &quot;0,512&quot;, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref>, of the topleft pixel of the sixth <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group is &quot;512,512&quot;, etc.</para>
+<para>The following is an example of a canvas with overlapping tiles:</para>
+<para>+--------<mdash/>+ | %%%%% | |***%%3%%@| |**0%%%%%2@| |***##1@@| | ##### | +--------<mdash/>+</para>
+<para>Assuming a canvas with size 1024x1024 and all tiles with a dimension of 512x512, a possible <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> for the topleft pixel of the first <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group would be 0x256, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> for the topleft pixel of the second <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group would be 256x512, the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> for the topleft pixel of the third <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group would be 512x256, and the <ref refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" kindref="member">offset</ref> for the topleft pixel of the fourth <ref refid="struct_a_v_stream_group_1af2206426b3905571825c0274f3ab7bc6" kindref="member">stream</ref> in the group would be 256x0.</para>
+<para>sizeof(AVStreamGroupTileGrid) is not a part of the ABI and may only be allocated by <ref refid="group__lavf__core_1ga393d5e94f3c964292a5e2ba9fbcda30a" kindref="member">avformat_stream_group_create()</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AVClass</label>
+        <link refid="struct_a_v_class"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>option</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>child_class_iterate</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVOption</label>
+        <link refid="struct_a_v_option"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AVOptionArrayDef</label>
+        <link refid="struct_a_v_option_array_def"/>
+      </node>
+      <node id="6">
+        <label>AVPacketSideData</label>
+        <link refid="struct_a_v_packet_side_data"/>
+      </node>
+      <node id="4">
+        <label>AVRational</label>
+        <link refid="struct_a_v_rational"/>
+      </node>
+      <node id="1">
+        <label>AVStreamGroupTileGrid</label>
+        <link refid="struct_a_v_stream_group_tile_grid"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>av_class</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>coded_side_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" line="951" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h" bodystart="951" bodyend="1060"/>
+    <listofallmembers>
+      <member refid="struct_a_v_stream_group_tile_grid_1a9fafd54debc25aaa841e15397771419c" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>av_class</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a738b457b1beae882f28bbec84ac3f16b" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>background</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1af0204c78a00eccc0cffc9282b7acf503" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>coded_height</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1af2694bce41413eaa45b32c96af96b048" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>coded_side_data</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a48d426414b42d74d34465428cc5be651" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>coded_width</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a3ae48fee743fba656da6347110866a8c" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>height</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1ab9212421ea0727694fdf818fa0e339ca" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>horizontal</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a750ff7723497db21b95336aa8c2838a9" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>horizontal_offset</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1abadd27f8dcc18e9a1ba15725eba2dbc1" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>idx</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a060ee87b8093bbe25e8b0c902d508227" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>nb_coded_side_data</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a58ec58a60b82b52df461547a286a3767" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>nb_tiles</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a6354d41d3199b24e7dc2b496d98f21d0" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>offsets</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1af45962eb98f7c01275390176cd662d2c" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>vertical</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1adc25c5591ab3c51e87034a417a15d28a" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>vertical_offset</name></member>
+      <member refid="struct_a_v_stream_group_tile_grid_1a2747775a9af6acc4c61a9d2b1ba7e2f5" prot="public" virt="non-virtual"><scope>AVStreamGroupTileGrid</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

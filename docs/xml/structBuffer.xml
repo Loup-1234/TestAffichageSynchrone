@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structBuffer" kind="struct" language="C++" prot="public">
+    <compoundname>Buffer</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBuffer_1a94ce0ed03c44f57ed15cd6779cfc3de9" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Buffer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Buffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="131" column="9" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBuffer_1a0c8eac480676021820092b63603ce44a" prot="public" static="no" mutable="no">
+        <type><ref refid="structBufferState" kindref="compound">BufferState</ref></type>
+        <definition>BufferState Buffer::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>Buffer::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="132" column="13" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="132" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Buffer</label>
+        <link refid="structBuffer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="129" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="130" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structBuffer_1a94ce0ed03c44f57ed15cd6779cfc3de9" prot="public" virt="non-virtual"><scope>Buffer</scope><name>data</name></member>
+      <member refid="structBuffer_1a0c8eac480676021820092b63603ce44a" prot="public" virt="non-virtual"><scope>Buffer</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

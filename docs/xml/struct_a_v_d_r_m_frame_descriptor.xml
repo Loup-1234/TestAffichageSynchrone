@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="struct_a_v_d_r_m_frame_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>AVDRMFrameDescriptor</compoundname>
+    <includes refid="hwcontext__drm_8h" local="no">hwcontext_drm.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_v_d_r_m_frame_descriptor_1a5a11bc1854bb6cee2f5b0f9d514d0c4f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDRMFrameDescriptor::nb_objects</definition>
+        <argsstring></argsstring>
+        <name>nb_objects</name>
+        <qualifiedname>AVDRMFrameDescriptor::nb_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of DRM objects making up this frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="137" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_frame_descriptor_1a0a757137c80a528953645ab11f31e6b7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_d_r_m_object_descriptor" kindref="compound">AVDRMObjectDescriptor</ref></type>
+        <definition>AVDRMObjectDescriptor AVDRMFrameDescriptor::objects[AV_DRM_MAX_PLANES]</definition>
+        <argsstring>[AV_DRM_MAX_PLANES]</argsstring>
+        <name>objects</name>
+        <qualifiedname>AVDRMFrameDescriptor::objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of objects making up the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="141" column="27" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_frame_descriptor_1a228800d9ce195e776833e58ee307a6ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVDRMFrameDescriptor::nb_layers</definition>
+        <argsstring></argsstring>
+        <name>nb_layers</name>
+        <qualifiedname>AVDRMFrameDescriptor::nb_layers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of layers in the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="145" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_v_d_r_m_frame_descriptor_1ad19d258e1771ef833d7e3bd873b91906" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_v_d_r_m_layer_descriptor" kindref="compound">AVDRMLayerDescriptor</ref></type>
+        <definition>AVDRMLayerDescriptor AVDRMFrameDescriptor::layers[AV_DRM_MAX_PLANES]</definition>
+        <argsstring>[AV_DRM_MAX_PLANES]</argsstring>
+        <name>layers</name>
+        <qualifiedname>AVDRMFrameDescriptor::layers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of layers in the frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="149" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DRM frame descriptor.</para>
+<para>This is used as the data pointer for AV_PIX_FMT_DRM_PRIME frames. It is also used by user-allocated frame pools - allocating in <ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref> must return AVBufferRefs which contain an object of this type.</para>
+<para>The fields of this structure should be set such it can be imported directly by EGL using the EGL_EXT_image_dma_buf_import and EGL_EXT_image_dma_buf_import_modifiers extensions. (Note that the exact layout of a particular format may vary between platforms - we only specify that the same platform should be able to import it.)</para>
+<para>The total number of planes must not exceed AV_DRM_MAX_PLANES, and the order of the planes by increasing layer index followed by increasing plane index must be the same as the order which would be used for the data pointers in the equivalent software format. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AVDRMFrameDescriptor</label>
+        <link refid="struct_a_v_d_r_m_frame_descriptor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>objects</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>layers</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AVDRMLayerDescriptor</label>
+        <link refid="struct_a_v_d_r_m_layer_descriptor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>planes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AVDRMObjectDescriptor</label>
+        <link refid="struct_a_v_d_r_m_object_descriptor"/>
+      </node>
+      <node id="4">
+        <label>AVDRMPlaneDescriptor</label>
+        <link refid="struct_a_v_d_r_m_plane_descriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" line="133" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_drm.h" bodystart="133" bodyend="150"/>
+    <listofallmembers>
+      <member refid="struct_a_v_d_r_m_frame_descriptor_1ad19d258e1771ef833d7e3bd873b91906" prot="public" virt="non-virtual"><scope>AVDRMFrameDescriptor</scope><name>layers</name></member>
+      <member refid="struct_a_v_d_r_m_frame_descriptor_1a228800d9ce195e776833e58ee307a6ec" prot="public" virt="non-virtual"><scope>AVDRMFrameDescriptor</scope><name>nb_layers</name></member>
+      <member refid="struct_a_v_d_r_m_frame_descriptor_1a5a11bc1854bb6cee2f5b0f9d514d0c4f" prot="public" virt="non-virtual"><scope>AVDRMFrameDescriptor</scope><name>nb_objects</name></member>
+      <member refid="struct_a_v_d_r_m_frame_descriptor_1a0a757137c80a528953645ab11f31e6b7" prot="public" virt="non-virtual"><scope>AVDRMFrameDescriptor</scope><name>objects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

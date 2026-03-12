@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavc__misc__pixfmt" kind="group">
+    <compoundname>lavc_misc_pixfmt</compoundname>
+    <title>Pixel formats</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavc__misc__pixfmt_1ga9bb07f91a7c87cba19a44ebdcf5bde63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int avcodec_pix_fmt_to_codec_tag</definition>
+        <argsstring>(enum AVPixelFormat pix_fmt)</argsstring>
+        <name>avcodec_pix_fmt_to_codec_tag</name>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>pix_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a value representing the fourCC code associated to the pixel format pix_fmt, or 0 if no associated fourCC code can be found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2876" column="14" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2876" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc__pixfmt_1ga9e74b43a3433ccfe836814f0a6371aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat avcodec_find_best_pix_fmt_of_list</definition>
+        <argsstring>(const enum AVPixelFormat *pix_fmt_list, enum AVPixelFormat src_pix_fmt, int has_alpha, int *loss_ptr)</argsstring>
+        <name>avcodec_find_best_pix_fmt_of_list</name>
+        <param>
+          <type>const enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+          <declname>pix_fmt_list</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+          <declname>src_pix_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>has_alpha</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>loss_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find the best pixel format to convert to given a certain source pixel format. When converting from one pixel format to another, information loss may occur. For example, when converting from RGB24 to GRAY, the color information will be lost. Similarly, other losses occur when converting from some formats to other formats. avcodec_find_best_pix_fmt_of_2() searches which of the given pixel formats should be used to suffer the least amount of loss. The pixel formats from which it chooses one, are determined by the pix_fmt_list parameter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pix_fmt_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AV_PIX_FMT_NONE terminated array of pixel formats to choose from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_pix_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source pixel format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">has_alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the source pixel format alpha channel is used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">loss_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of flags informing you what kind of losses will occur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The best pixel format to convert to or -1 if none was found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2895" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2895" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavc__misc__pixfmt_1ga2d16136bf8844295b2f8ea17c386d833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref></type>
+        <definition>enum AVPixelFormat avcodec_default_get_format</definition>
+        <argsstring>(struct AVCodecContext *s, const enum AVPixelFormat *fmt)</argsstring>
+        <name>avcodec_default_get_format</name>
+        <param>
+          <type>struct <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const enum <ref refid="pixfmt_8h_1a9a8e335cf3be472042bc9f0cf80cd4c5" kindref="member">AVPixelFormat</ref> *</type>
+          <declname>fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" line="2899" column="19" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h" declline="2899" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions for working with pixel formats. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

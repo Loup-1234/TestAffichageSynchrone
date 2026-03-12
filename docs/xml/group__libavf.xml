@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__libavf" kind="group">
+    <compoundname>libavf</compoundname>
+    <title>libavformat</title>
+    <innerfile refid="avformat_8h">avformat.h</innerfile>
+    <innerfile refid="libavformat_2version_8h">version.h</innerfile>
+    <innerfile refid="libavformat_2version__major_8h">version_major.h</innerfile>
+    <innergroup refid="group__lavf__decoding">Demuxing</innergroup>
+    <innergroup refid="group__lavf__encoding">Muxing</innergroup>
+    <innergroup refid="group__lavf__io">I/O Read/Write</innergroup>
+    <innergroup refid="group__lavf__codec">Demuxers</innergroup>
+    <innergroup refid="group__lavf__protos">I/O Protocols</innergroup>
+    <innergroup refid="group__lavf__internal">Internal</innergroup>
+    <innergroup refid="group__metadata__api">Public Metadata API</innergroup>
+    <innergroup refid="group__lavf__core">Core functions</innergroup>
+    <innergroup refid="group__lavf__misc">Utility functions</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>I/O and Muxing/Demuxing Library</para>
+<para>Libavformat (lavf) is a library for dealing with various media container formats. Its main two purposes are demuxing - i.e. splitting a media file into component streams, and the reverse process of muxing - writing supplied data in a specified container format. It also has an <ref refid="group__lavf__io" kindref="compound">I/O module</ref> which supports a number of protocols for accessing the data (e.g. file, tcp, http and others). Unless you are absolutely sure you won&apos;t use libavformat&apos;s network capabilities, you should also call <ref refid="group__lavf__core_1ga84542023693d61e8564c5d457979c932" kindref="member">avformat_network_init()</ref>.</para>
+<para>A supported input format is described by an <ref refid="struct_a_v_input_format" kindref="compound">AVInputFormat</ref> struct, conversely an output format is described by <ref refid="struct_a_v_output_format" kindref="compound">AVOutputFormat</ref>. You can iterate over all input/output formats using the av_demuxer_iterate / <ref refid="group__lavf__core_1ga8065a9f6d686610bd8dba40a154bfba1" kindref="member">av_muxer_iterate()</ref> functions. The protocols layer is not part of the public API, so you can only get the names of supported protocols with the <ref refid="avio_8h_1a8650292e381eb84d0c232fe50d217ef5" kindref="member">avio_enum_protocols()</ref> function.</para>
+<para>Main lavf structure used for both muxing and demuxing is <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>, which exports all information about the file being read or written. As with most Libavformat structures, its size is not part of public ABI, so it cannot be allocated on stack or directly with <ref refid="group__lavu__mem__funcs_1gaba88a97429de6874c1a0b64381034b98" kindref="member">av_malloc()</ref>. To create an <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>, use <ref refid="group__lavf__core_1gab000638c284e97ad0be2bdb11ce33c36" kindref="member">avformat_alloc_context()</ref> (some functions, like <ref refid="group__lavf__decoding_1gac05d61a2b492ae3985c658f34622c19d" kindref="member">avformat_open_input()</ref> might do that for you).</para>
+<para>Most importantly an <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> contains: <itemizedlist>
+<listitem><para>the <ref refid="struct_a_v_format_context_1a6c01f25ef062e0398b0b55dd337246ed" kindref="member">input</ref> or <ref refid="struct_a_v_format_context_1a37ba86cd5630097cdae01afbc2b40743" kindref="member">output</ref> format. It is either autodetected or set by user for input; always set by user for output. </para>
+</listitem>
+<listitem><para>an <ref refid="struct_a_v_format_context_1acfefb6b6cf21e87a0dcbd1a547ba2348" kindref="member">array</ref> of AVStreams, which describe all elementary streams stored in the file. AVStreams are typically referred to using their index in this array. </para>
+</listitem>
+<listitem><para>an <ref refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" kindref="member">I/O context</ref>. It is either opened by lavf or set by user for input, always set by user for output (unless you are dealing with an AVFMT_NOFILE format).</para>
+</listitem>
+</itemizedlist>
+</para>
+<sect1 id="group__libavf_1lavf_options">
+<title>Passing options to (de)muxers</title><para>It is possible to configure lavf muxers and demuxers using the <ref refid="group__avoptions" kindref="compound">AVOptions</ref> mechanism. Generic (format-independent) libavformat options are provided by <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref>, they can be examined from a user program by calling <ref refid="group__opt__mng_1gafbe418a443aa11838ac10318df5d96f7" kindref="member">av_opt_next()</ref> / <ref refid="group__opt__mng_1ga9ad3a0b722a9815f15e3df512290d618" kindref="member">av_opt_find()</ref> on an allocated <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> (or its <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> from <ref refid="group__lavf__core_1gaee1ff1d03f39701790ce034febf7a3b6" kindref="member">avformat_get_class()</ref>). Private (format-specific) options are provided by <ref refid="struct_a_v_format_context_1ac4c0777e54085af2f3f1b27130e2b21b" kindref="member">AVFormatContext.priv_data</ref> if and only if <ref refid="struct_a_v_input_format_1afaac829559ad9e07618c01a51d8a4c5f" kindref="member">AVInputFormat.priv_class</ref> / <ref refid="struct_a_v_output_format_1ae030463c5c08de99f8c9e727c822ca87" kindref="member">AVOutputFormat.priv_class</ref> of the corresponding format struct is non-NULL. Further options may be provided by the <ref refid="struct_a_v_format_context_1a1e7324262b6b78522e52064daaa7bc87" kindref="member">I/O context</ref>, if its <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> is non-NULL, and the protocols layer. See the discussion on nesting in <ref refid="group__avoptions" kindref="compound">AVOptions</ref> documentation to learn how to access those.</para>
+</sect1>
+<sect1 id="group__libavf_1urls">
+<title>urls</title><para>URL strings in libavformat are made of a scheme/protocol, a &apos;:&apos;, and a scheme specific string. URLs without a scheme and &apos;:&apos; used for local files are supported but deprecated. &quot;file:&quot; should be used for local files.</para>
+<para>It is important that the scheme string is not taken from untrusted sources without checks.</para>
+<para>Note that some schemes/protocols are quite powerful, allowing access to both local and remote files, parts of them, concatenations of them, local audio and video devices and so on. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

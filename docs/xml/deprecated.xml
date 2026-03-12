@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Liste des éléments obsolètes</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Membre <ref refid="group__libvlc__audio_1ga71ba4b367ca67e278d0242a2b6f208fa" kindref="member">libvlc_audio_output_device_count</ref>  (<ref refid="group__libvlc__core_1ga316d739a80da4678206c79f4d6c2e284" kindref="member">libvlc_instance_t</ref> *p_instance, const char *psz_audio_output)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000009"/>Use <ref refid="group__libvlc__audio_1ga73dc101899a2b3cea1d329bbdb6f0904" kindref="member">libvlc_audio_output_device_list_get()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__audio_1gabc477585dda5c2511f098ba44f5a0596" kindref="member">libvlc_audio_output_device_id</ref>  (<ref refid="group__libvlc__core_1ga316d739a80da4678206c79f4d6c2e284" kindref="member">libvlc_instance_t</ref> *p_instance, const char *psz_audio_output, int i_device)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000011"/>Use <ref refid="group__libvlc__audio_1ga73dc101899a2b3cea1d329bbdb6f0904" kindref="member">libvlc_audio_output_device_list_get()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__audio_1ga2e16408ed8ef32bc99edf17106ae319f" kindref="member">libvlc_audio_output_device_longname</ref>  (<ref refid="group__libvlc__core_1ga316d739a80da4678206c79f4d6c2e284" kindref="member">libvlc_instance_t</ref> *p_instance, const char *psz_output, int i_device)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000010"/>Use <ref refid="group__libvlc__audio_1ga73dc101899a2b3cea1d329bbdb6f0904" kindref="member">libvlc_audio_output_device_list_get()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__discoverer_1gada3ac49cb52ab41d04c3e062c9c06132" kindref="member">libvlc_media_discoverer_event_manager</ref>  (libvlc_media_discoverer_t *p_mdis)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000018"/>Useless, media_discoverer events are only triggered when calling <ref refid="group__libvlc__media__discoverer_1ga31e18ef76173c234f92db50ad8a432a6" kindref="member">libvlc_media_discoverer_start()</ref> and <ref refid="group__libvlc__media__discoverer_1ga25c2376dff90e2ce2d4614a1c71b3da3" kindref="member">libvlc_media_discoverer_stop()</ref>. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__discoverer_1gae57f800acbbfb9bc8ec09c5361536309" kindref="member">libvlc_media_discoverer_localized_name</ref>  (libvlc_media_discoverer_t *p_mdis)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000017"/>Useless, use <ref refid="group__libvlc__media__discoverer_1ga9a4676e452daa2fd4b5eb371542afc29" kindref="member">libvlc_media_discoverer_list_get()</ref> to get the longname of the service discovery. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__discoverer_1gae2ac9d8725a369ef2bdf474bcc5a745a" kindref="member">libvlc_media_discoverer_new_from_name</ref>  (<ref refid="group__libvlc__core_1ga316d739a80da4678206c79f4d6c2e284" kindref="member">libvlc_instance_t</ref> *p_inst, const char *psz_name)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000016"/>Use <ref refid="group__libvlc__media__discoverer_1ga133ffcc4fa1b81903856853763df7c22" kindref="member">libvlc_media_discoverer_new()</ref> and <ref refid="group__libvlc__media__discoverer_1ga31e18ef76173c234f92db50ad8a432a6" kindref="member">libvlc_media_discoverer_start()</ref>.  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media_1ga2102c151df0ab66d6158a80b7734f0f9" kindref="member">libvlc_media_get_tracks_info</ref>  (libvlc_media_t *p_md, <ref refid="structlibvlc__media__track__info__t" kindref="compound">libvlc_media_track_info_t</ref> **tracks)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000015"/>Use <ref refid="group__libvlc__media_1ga33f5fef54e3750ab55744007e0e80f02" kindref="member">libvlc_media_tracks_get()</ref> instead </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media_1gab0c6af5b4ceb5887f63129f1cfb49b71" kindref="member">libvlc_media_is_parsed</ref>  (libvlc_media_t *p_md)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000014"/>This can return true in case of failure. Use <ref refid="group__libvlc__media_1gaab7e8c3c12145e7262d55a4a9fef707d" kindref="member">libvlc_media_get_parsed_status()</ref> instead </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media_1ga4b71084fb35b3dd8cc6457a4d27baf0c" kindref="member">libvlc_media_parse</ref>  (libvlc_media_t *p_md)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000012"/>This function could block indefinitely. Use <ref refid="group__libvlc__media_1ga55f5a33e22aa32e17a9bb75decd1497b" kindref="member">libvlc_media_parse_with_options()</ref> instead </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media_1gae7cedd70494f7110df5ce8e704ffb9d4" kindref="member">libvlc_media_parse_async</ref>  (libvlc_media_t *p_md)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000013"/>You can&apos;t be sure to receive the libvlc_MediaParsedChanged event (you can wait indefinitely for this event). Use <ref refid="group__libvlc__media_1ga55f5a33e22aa32e17a9bb75decd1497b" kindref="member">libvlc_media_parse_with_options()</ref> instead </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__player_1ga356f9411f2ff9397ec932a021112405a" kindref="member">libvlc_media_player_get_agl</ref>  (libvlc_media_player_t *p_mi)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000003"/>Use <ref refid="group__libvlc__media__player_1gaa9327d659b0d30ea89a9e7ee711567b0" kindref="member">libvlc_media_player_get_nsobject()</ref> instead  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__player_1gafbcb776feeacdd4482b3a45f36abbb7a" kindref="member">libvlc_media_player_get_fps</ref>  (libvlc_media_player_t *p_mi)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Consider using <ref refid="group__libvlc__media_1ga33f5fef54e3750ab55744007e0e80f02" kindref="member">libvlc_media_tracks_get()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__player_1gab15aa2437c8aba7d48299d60570a9e06" kindref="member">libvlc_media_player_set_agl</ref>  (libvlc_media_player_t *p_mi, uint32_t drawable)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>Use <ref refid="group__libvlc__media__player_1ga46c26a395b496e48917101198acc31f6" kindref="member">libvlc_media_player_set_nsobject()</ref> instead  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__event_1gga284c010ecde8abca7d3f262392f62fc6a6b2cbed64671177a0cb88e0022ff4815" kindref="member">libvlc_MediaDiscovererEnded</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000021"/>Useless event, it will be triggered only when calling <ref refid="group__libvlc__media__discoverer_1ga25c2376dff90e2ce2d4614a1c71b3da3" kindref="member">libvlc_media_discoverer_stop()</ref>  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__event_1gga284c010ecde8abca7d3f262392f62fc6a7512a72a4d0c149f84cf1bce3217d948" kindref="member">libvlc_MediaDiscovererStarted</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000020"/>Useless event, it will be triggered only when calling <ref refid="group__libvlc__media__discoverer_1ga31e18ef76173c234f92db50ad8a432a6" kindref="member">libvlc_media_discoverer_start()</ref>  </para>
+</listitem>
+<varlistentry><term>Groupe <ref refid="group__libvlc__playlist" kindref="compound">libvlc_playlist</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000019"/>Use <ref refid="group__libvlc__media__list" kindref="compound">LibVLC media list</ref> instead.</para>
+<para></para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__video_1ga7029d7efb13ca0d5b709c7fcecdd233e" kindref="member">libvlc_toggle_teletext</ref>  (libvlc_media_player_t *p_mi)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000008"/>use <ref refid="group__libvlc__video_1gac734df7211ebf2a80d09d2566c96240b" kindref="member">libvlc_video_set_teletext()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__media__player_1ga952b5c8fffa72a993f0ea61bf5b5711c" kindref="member">libvlc_track_description_release</ref>  (<ref refid="structlibvlc__track__description__t" kindref="compound">libvlc_track_description_t</ref> *p_track_description)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Use <ref refid="group__libvlc__media__player_1gaffdae51d73f23127456631b87457beb2" kindref="member">libvlc_track_description_list_release()</ref> instead  </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__video_1gaacb14ac1ff0ec4fa8e47de4a57ebd7a3" kindref="member">libvlc_video_get_height</ref>  (libvlc_media_player_t *p_mi)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000005"/>Use <ref refid="group__libvlc__video_1ga3cb7efa452da1f718013da0f169396a7" kindref="member">libvlc_video_get_size()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__video_1gad585bfac7ed2b59f2e84c43e6459a76a" kindref="member">libvlc_video_get_width</ref>  (libvlc_media_player_t *p_mi)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000006"/>Use <ref refid="group__libvlc__video_1ga3cb7efa452da1f718013da0f169396a7" kindref="member">libvlc_video_get_size()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__libvlc__video_1ga2cd4c1e571a55b588ef2cb1847c16c9b" kindref="member">libvlc_video_set_subtitle_file</ref>  (libvlc_media_player_t *p_mi, const char *psz_subtitle)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000007"/>Use <ref refid="group__libvlc__media__player_1gad7f50e13e7b96667bb0a37383c1d4c03" kindref="member">libvlc_media_player_add_slave()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Membre <ref refid="group__transport_1ga9af3f3f7c70c35b701425a03da101fbf" kindref="member">vlc_tls_SocketOpen</ref>  (int fd)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000022"/>This function is transitional. Do not use it directly. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="deprecated"/>
+  </compounddef>
+</doxygen>

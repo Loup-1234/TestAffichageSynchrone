@@ -1,0 +1,738 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="exif_8h" kind="file" language="C++">
+    <compoundname>exif.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="buffer_8h" local="yes">libavutil/buffer.h</includes>
+    <includes refid="dict_8h" local="yes">libavutil/dict.h</includes>
+    <includes refid="rational_8h" local="yes">libavutil/rational.h</includes>
+    <includes refid="libavcodec_2version__major_8h" local="yes">version_major.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h</label>
+        <link refid="exif_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>version_major.h</label>
+        <link refid="libavcodec_2version__major_8h"/>
+      </node>
+      <node id="8">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4">
+        <label>libavutil/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>libavutil/dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>libavutil/rational.h</label>
+        <link refid="rational_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_exif_metadata" prot="public">AVExifMetadata</innerclass>
+    <innerclass refid="struct_a_v_exif_entry" prot="public">AVExifEntry</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="exif_8h_1a809ec459d0ece1152b65b9de54718419" prot="public" static="no">
+        <name>AV_EXIF_FLAG_RECURSIVE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Also check subdirectories. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="150" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVTiffDataType</name>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aaebd6f71c59ca5adb62341068bf5c3131" prot="public">
+          <name>AV_TIFF_BYTE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa0e19c544ba3bdc95e854133a1a23ca04" prot="public">
+          <name>AV_TIFF_STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa2f1f0fb95d08805f28202d0b9df1f110" prot="public">
+          <name>AV_TIFF_SHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aaaf1f6bfd4be9f4337b982af2eac0a919" prot="public">
+          <name>AV_TIFF_LONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aaabd5da03b932e3efae2d1bd04ebf1f58" prot="public">
+          <name>AV_TIFF_RATIONAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa1bedf58039526322987f807cad722f1c" prot="public">
+          <name>AV_TIFF_SBYTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aaf70cb9f60e42e2bb9662a3318cd806a5" prot="public">
+          <name>AV_TIFF_UNDEFINED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa8f1dfddd0ec7ef63837f8d2220e1f018" prot="public">
+          <name>AV_TIFF_SSHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa07fc2c51b2467a1dbdbaae9930fc0d95" prot="public">
+          <name>AV_TIFF_SLONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa54ef976e6f0f7feb224ba0540f98a843" prot="public">
+          <name>AV_TIFF_SRATIONAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aa0ff420b917ef08183c3f8961d87fd0fc" prot="public">
+          <name>AV_TIFF_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aac98a6be9a82cc4a4dac5a583ebed4b09" prot="public">
+          <name>AV_TIFF_DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1a43cb6cef275c91590bbd2d463716f02aabe2d04aedfdce4a6a4a8adac0123f1a5" prot="public">
+          <name>AV_TIFF_IFD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data type identifiers for TIFF tags </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="42" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="42" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVExifHeaderMode</name>
+        <enumvalue id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a30d9c405cb18268a6d31a650d3378e64" prot="public">
+          <name>AV_EXIF_TIFF_HEADER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The TIFF header starts with 0x49492a00, or 0x4d4d002a. This one is used internally by FFmpeg. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a8f74d52273e216cfed4bb043442cdd04" prot="public">
+          <name>AV_EXIF_ASSUME_LE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>skip the TIFF header, assume little endian </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a457fe3e097390fd5773f0bc37d7d41d3" prot="public">
+          <name>AV_EXIF_ASSUME_BE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>skip the TIFF header, assume big endian </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633afb6d976fb32017c914e4c52c9dc1a2af" prot="public">
+          <name>AV_EXIF_T_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The first four bytes point to the actual start, then it&apos;s AV_EXIF_TIFF_HEADER </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a0fe34e580a2f58a57991e9ff07960bf7" prot="public">
+          <name>AV_EXIF_EXIF00</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The first six bytes contain &quot;Exif\0\0&quot;, then it&apos;s AV_EXIF_TIFF_HEADER </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="58" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="58" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="exif_8h_1a2ef323497656ef187429e622b9aa395c" prot="public" static="no">
+        <type>struct AVExifEntry</type>
+        <definition>typedef struct AVExifEntry AVExifEntry</definition>
+        <argsstring></argsstring>
+        <name>AVExifEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="74" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="exif_8h_1ab7eda7a57862a1d3fec272d4aeb196fe" prot="public" static="no">
+        <type>struct AVExifMetadata</type>
+        <definition>typedef struct AVExifMetadata AVExifMetadata</definition>
+        <argsstring></argsstring>
+        <name>AVExifMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="83" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="exif_8h_1a8e2a3e0b94065bfcdd5776f0461302cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_exif_get_tag_name</definition>
+        <argsstring>(uint16_t id)</argsstring>
+        <name>av_exif_get_tag_name</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the tag name associated with the provided tag ID. If the tag ID is unknown, NULL is returned.</para>
+<para>For example, av_exif_get_tag_name(0x112) returns &quot;Orientation&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="125" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="125" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1ad5e714436d03971b8e945b19241ea2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t av_exif_get_tag_id</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>av_exif_get_tag_id</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the tag ID associated with the provided tag string name. If the tag name is unknown, a negative number is returned. Otherwise it always fits inside a uint16_t integer.</para>
+<para>For example, av_exif_get_tag_id(&quot;Orientation&quot;) returns 274 (0x0112). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="134" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="134" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a48a985f81c577c8981eff3bc71ffc7ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_set_entry</definition>
+        <argsstring>(void *logctx, AVExifMetadata *ifd, uint16_t id, enum AVTiffDataType type, uint32_t count, const uint8_t *ifd_lead, uint32_t ifd_offset, const void *value)</argsstring>
+        <name>av_exif_set_entry</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" kindref="member">AVTiffDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>ifd_lead</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ifd_offset</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an entry to the provided EXIF metadata struct. If one already exists with the provided ID, it will set the existing one to have the other information provided. Otherwise, it will allocate a new entry.</para>
+<para>This function reallocates ifd-&gt;entries using av_realloc and allocates (using av_malloc) a new value member of the entry, then copies the contents of value into that buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="144" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="144" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a0be51aeeaec329949e7243fd6ae62758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_get_entry</definition>
+        <argsstring>(void *logctx, AVExifMetadata *ifd, uint16_t id, int flags, AVExifEntry **value)</argsstring>
+        <name>av_exif_get_entry</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref> **</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an entry with the tagged ID from the EXIF metadata struct. A pointer to the entry will be written into *value.</para>
+<para>If the entry was present and returned successfully, a positive number is returned. If the entry was not found, *value is left untouched and zero is returned. If an error occurred, a negative number is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="160" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="160" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1aede14c2e5278105c73f1b714197f53af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_remove_entry</definition>
+        <argsstring>(void *logctx, AVExifMetadata *ifd, uint16_t id, int flags)</argsstring>
+        <name>av_exif_remove_entry</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove an entry from the provided EXIF metadata struct.</para>
+<para>If the entry was present and removed successfully, a positive number is returned. If the entry was not found, zero is returned. If an error occurred, a negative number is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="169" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="169" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a81b4f866d3d9f28fedfed007d56f8708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_parse_buffer</definition>
+        <argsstring>(void *logctx, const uint8_t *data, size_t size, AVExifMetadata *ifd, enum AVExifHeaderMode header_mode)</argsstring>
+        <name>av_exif_parse_buffer</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" kindref="member">AVExifHeaderMode</ref></type>
+          <declname>header_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decodes the EXIF data provided in the buffer and writes it into the struct *ifd. If this function succeeds, the IFD is owned by the caller and must be cleared after use by calling <ref refid="exif_8h_1a67d0c4719a7294508a64b806da74e3f2" kindref="member">av_exif_free()</ref>; If this function fails and returns a negative value, it will call av_exif_free(ifd) before returning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="178" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="178" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1ac9661ea9af0031d9579107ea5e6f13a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_write</definition>
+        <argsstring>(void *logctx, const AVExifMetadata *ifd, AVBufferRef **buffer, enum AVExifHeaderMode header_mode)</argsstring>
+        <name>av_exif_write</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" kindref="member">AVExifHeaderMode</ref></type>
+          <declname>header_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a buffer using av_malloc of an appropriate size and writes the EXIF data represented by ifd into that buffer.</para>
+<para>Upon error, *buffer will be NULL. The buffer becomes owned by the caller upon success. The *buffer argument must be NULL before calling. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="188" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="188" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a67d0c4719a7294508a64b806da74e3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_exif_free</definition>
+        <argsstring>(AVExifMetadata *ifd)</argsstring>
+        <name>av_exif_free</name>
+        <param>
+          <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frees all resources associated with the given EXIF metadata struct. Does not free the pointer passed itself, in case it is stack-allocated. The pointer passed to this function must be freed by the caller, if it is heap-allocated. Passing NULL is permitted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="196" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="196" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a5ebd8de8160ff2655027b645ae3db097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_ifd_to_dict</definition>
+        <argsstring>(void *logctx, const AVExifMetadata *ifd, AVDictionary **metadata)</argsstring>
+        <name>av_exif_ifd_to_dict</name>
+        <param>
+          <type>void *</type>
+          <declname>logctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <param>
+          <type>AVDictionary **</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recursively reads all tags from the IFD and stores them in the provided metadata dictionary. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="202" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="202" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1aa3904417116c6e51fb62b4a2d0034d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+        <definition>AVExifMetadata * av_exif_clone_ifd</definition>
+        <argsstring>(const AVExifMetadata *ifd)</argsstring>
+        <name>av_exif_clone_ifd</name>
+        <param>
+          <type>const <ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref> *</type>
+          <declname>ifd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a duplicate of the provided EXIF metadata struct. The caller owns the duplicate and must free it with av_exif_free. Returns NULL if the duplication process failed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="209" column="16" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="209" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a71eb7b27e6d0a0c4691ff743bc2a5993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_matrix_to_orientation</definition>
+        <argsstring>(const int32_t *matrix)</argsstring>
+        <name>av_exif_matrix_to_orientation</name>
+        <param>
+          <type>const int32_t *</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a display matrix used by AV_FRAME_DATA_DISPLAYMATRIX into an orientation constant used by EXIF&apos;s orientation tag.</para>
+<para>Returns an EXIF orientation between 1 and 8 (inclusive) depending on the rotation and flip factors. Returns 0 if the matrix is singular. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="218" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="218" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="exif_8h_1a91e72707ca392d888dcbfd8d60bfc540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_exif_orientation_to_matrix</definition>
+        <argsstring>(int32_t *matrix, int orientation)</argsstring>
+        <name>av_exif_orientation_to_matrix</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an orientation constant used by EXIF&apos;s orientation tag into a display matrix used by AV_FRAME_DATA_DISPLAYMATRIX.</para>
+<para>Returns 0 on success and negative if the orientation is invalid, i.e. not between 1 and 8 (inclusive). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" line="227" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h" declline="227" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>EXIF metadata parser <simplesect kind="author"><para>Thilo Borgmann &lt;thilo.borgmann <emphasis>at</emphasis> mail.de&gt; </para>
+</simplesect>
+<simplesect kind="author"><para>Leo Izen <ulink url="mailto:leo.izen@gmail.com">leo.izen@gmail.com</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>EXIF<sp/>metadata<sp/>parser</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2013<sp/>Thilo<sp/>Borgmann<sp/>&lt;thilo.borgmann<sp/>_at_<sp/>mail.de&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2024-2025<sp/>Leo<sp/>Izen<sp/>&lt;leo.izen@gmail.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVCODEC_EXIF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVCODEC_EXIF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buffer_8h" kindref="compound">libavutil/buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dict_8h" kindref="compound">libavutil/dict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rational_8h" kindref="compound">libavutil/rational.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavcodec_2version__major_8h" kindref="compound">version_major.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" kindref="member">AVTiffDataType</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_BYTE<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_STRING,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_SHORT,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_LONG,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_RATIONAL,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_SBYTE,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_UNDEFINED,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_SSHORT,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_SLONG,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_SRATIONAL,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_FLOAT,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_DOUBLE,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TIFF_IFD,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" kindref="member">AVExifHeaderMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a30d9c405cb18268a6d31a650d3378e64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a30d9c405cb18268a6d31a650d3378e64" kindref="member">AV_EXIF_TIFF_HEADER</ref>,</highlight></codeline>
+<codeline lineno="65" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a8f74d52273e216cfed4bb043442cdd04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a8f74d52273e216cfed4bb043442cdd04" kindref="member">AV_EXIF_ASSUME_LE</ref>,</highlight></codeline>
+<codeline lineno="67" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a457fe3e097390fd5773f0bc37d7d41d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a457fe3e097390fd5773f0bc37d7d41d3" kindref="member">AV_EXIF_ASSUME_BE</ref>,</highlight></codeline>
+<codeline lineno="69" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633afb6d976fb32017c914e4c52c9dc1a2af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633afb6d976fb32017c914e4c52c9dc1a2af" kindref="member">AV_EXIF_T_OFF</ref>,</highlight></codeline>
+<codeline lineno="71" refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a0fe34e580a2f58a57991e9ff07960bf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633a0fe34e580a2f58a57991e9ff07960bf7" kindref="member">AV_EXIF_EXIF00</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref><sp/><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="struct_a_v_exif_metadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>array<sp/>of<sp/>EXIF<sp/>metadata<sp/>entries<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref><sp/>*entries;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>entries<sp/>in<sp/>this<sp/>array<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>size<sp/>of<sp/>the<sp/>buffer,<sp/>used<sp/>for<sp/>av_fast_realloc<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="struct_a_v_exif_entry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>id;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" kindref="member">AVTiffDataType</ref><sp/>type;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>count;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>These<sp/>are<sp/>for<sp/>IFD-style<sp/>MakerNote</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>entries<sp/>which<sp/>occur<sp/>after<sp/>a<sp/>fixed</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>offset<sp/>rather<sp/>than<sp/>at<sp/>the<sp/>start<sp/>of</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>entry.<sp/>The<sp/>ifd_lead<sp/>field<sp/>contains</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>leading<sp/>bytes<sp/>which<sp/>typically</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>identify<sp/>the<sp/>type<sp/>of<sp/>MakerNote.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ifd_offset;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*ifd_lead;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>An<sp/>array<sp/>of<sp/>entries<sp/>of<sp/>size<sp/>count</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Unless<sp/>it&apos;s<sp/>an<sp/>IFD,<sp/>in<sp/>which<sp/>case</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>it&apos;s<sp/>not<sp/>an<sp/>array<sp/>and<sp/>count<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/>*sint;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>*uint;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*dbl;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*ubytes;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>*sbytes;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_rational" kindref="compound">AVRational</ref><sp/>*rat;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>ifd;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>value;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="exif_8h_1a8e2a3e0b94065bfcdd5776f0461302cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="exif_8h_1a8e2a3e0b94065bfcdd5776f0461302cd" kindref="member">av_exif_get_tag_name</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="exif_8h_1ad5e714436d03971b8e945b19241ea2c1" refkind="member"><highlight class="normal">int32_t<sp/><ref refid="exif_8h_1ad5e714436d03971b8e945b19241ea2c1" kindref="member">av_exif_get_tag_id</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="exif_8h_1a48a985f81c577c8981eff3bc71ffc7ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a48a985f81c577c8981eff3bc71ffc7ad" kindref="member">av_exif_set_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a43cb6cef275c91590bbd2d463716f02a" kindref="member">AVTiffDataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*ifd_lead,<sp/>uint32_t<sp/>ifd_offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="exif_8h_1a809ec459d0ece1152b65b9de54718419" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_EXIF_FLAG_RECURSIVE<sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="exif_8h_1a0be51aeeaec329949e7243fd6ae62758" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a0be51aeeaec329949e7243fd6ae62758" kindref="member">av_exif_get_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/><ref refid="struct_a_v_exif_entry" kindref="compound">AVExifEntry</ref><sp/>**value);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="exif_8h_1aede14c2e5278105c73f1b714197f53af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1aede14c2e5278105c73f1b714197f53af" kindref="member">av_exif_remove_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/>uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="exif_8h_1a81b4f866d3d9f28fedfed007d56f8708" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a81b4f866d3d9f28fedfed007d56f8708" kindref="member">av_exif_parse_buffer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" kindref="member">AVExifHeaderMode</ref><sp/>header_mode);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="exif_8h_1ac9661ea9af0031d9579107ea5e6f13a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1ac9661ea9af0031d9579107ea5e6f13a0" kindref="member">av_exif_write</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref><sp/>**buffer,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1aed53f65916ad5b1ac55c6b70f42c9633" kindref="member">AVExifHeaderMode</ref><sp/>header_mode);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="exif_8h_1a67d0c4719a7294508a64b806da74e3f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a67d0c4719a7294508a64b806da74e3f2" kindref="member">av_exif_free</ref>(<ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="exif_8h_1a5ebd8de8160ff2655027b645ae3db097" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a5ebd8de8160ff2655027b645ae3db097" kindref="member">av_exif_ifd_to_dict</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*logctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd,<sp/>AVDictionary<sp/>**metadata);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="exif_8h_1aa3904417116c6e51fb62b4a2d0034d64" refkind="member"><highlight class="normal"><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*<ref refid="exif_8h_1aa3904417116c6e51fb62b4a2d0034d64" kindref="member">av_exif_clone_ifd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_exif_metadata" kindref="compound">AVExifMetadata</ref><sp/>*ifd);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="exif_8h_1a71eb7b27e6d0a0c4691ff743bc2a5993" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a71eb7b27e6d0a0c4691ff743bc2a5993" kindref="member">av_exif_matrix_to_orientation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/>*matrix);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="exif_8h_1a91e72707ca392d888dcbfd8d60bfc540" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="exif_8h_1a91e72707ca392d888dcbfd8d60bfc540" kindref="member">av_exif_orientation_to_matrix</ref>(int32_t<sp/>*matrix,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>orientation);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVCODEC_EXIF_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/exif.h"/>
+  </compounddef>
+</doxygen>

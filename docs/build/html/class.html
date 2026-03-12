@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation de la Classe &mdash; Documentation ClassSynchroniseurMultiVideo </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d1a510d7"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Documentation de ClassSynchroniseurMultiVideo" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ClassSynchroniseurMultiVideo
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table des matières:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation de la Classe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv423SynchroniseurMultiVideo"><code class="docutils literal notranslate"><span class="pre">SynchroniseurMultiVideo</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideoD0Ev"><code class="docutils literal notranslate"><span class="pre">~SynchroniseurMultiVideo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo17configurerAnalyseEddi"><code class="docutils literal notranslate"><span class="pre">configurerAnalyse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6vectorI6stringERK6string"><code class="docutils literal notranslate"><span class="pre">genererVideoSynchronisee()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6stringRK6vectorI6stringERK6string"><code class="docutils literal notranslate"><span class="pre">genererVideoSynchronisee()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4NK23SynchroniseurMultiVideo13extraireAudioERK6stringRK6string"><code class="docutils literal notranslate"><span class="pre">extraireAudio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4NK23SynchroniseurMultiVideo16calculerDecalageERK6vectorIfERK6vectorIfE"><code class="docutils literal notranslate"><span class="pre">calculerDecalage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4NK23SynchroniseurMultiVideo12genererVideoERK6vectorI9InfoVideoERK6stringRK6string"><code class="docutils literal notranslate"><span class="pre">genererVideo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo25FREQUENCE_ECHANTILLONNAGEE"><code class="docutils literal notranslate"><span class="pre">FREQUENCE_ECHANTILLONNAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo12dureeAnalyseE"><code class="docutils literal notranslate"><span class="pre">dureeAnalyse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo17plageRechercheMaxE"><code class="docutils literal notranslate"><span class="pre">plageRechercheMax</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo14pasDePrecisionE"><code class="docutils literal notranslate"><span class="pre">pasDePrecision</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo13HAUTEUR_CIBLEE"><code class="docutils literal notranslate"><span class="pre">HAUTEUR_CIBLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo13LARGEUR_CIBLEE"><code class="docutils literal notranslate"><span class="pre">LARGEUR_CIBLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo14TEMP_AUDIO_REFE"><code class="docutils literal notranslate"><span class="pre">TEMP_AUDIO_REF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo16TEMP_AUDIO_CIBLEE"><code class="docutils literal notranslate"><span class="pre">TEMP_AUDIO_CIBLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo16chargerAudioBrutERK6string"><code class="docutils literal notranslate"><span class="pre">chargerAudioBrut()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideoE"><code class="docutils literal notranslate"><span class="pre">SynchroniseurMultiVideo::InfoVideo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideo6cheminE"><code class="docutils literal notranslate"><span class="pre">chemin</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideo14retardSecondesE"><code class="docutils literal notranslate"><span class="pre">retardSecondes</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ClassSynchroniseurMultiVideo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Documentation de la Classe</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/class.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="documentation-de-la-classe">
+<h1>Documentation de la Classe<a class="headerlink" href="#documentation-de-la-classe" title="Lien vers cette rubrique"></a></h1>
+<p>Cette section détaille la classe principale de la bibliothèque.</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv423SynchroniseurMultiVideo">
+<span id="_CPPv323SynchroniseurMultiVideo"></span><span id="_CPPv223SynchroniseurMultiVideo"></span><span id="SynchroniseurMultiVideo"></span><span class="target" id="class_synchroniseur_multi_video"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SynchroniseurMultiVideo</span></span></span><a class="headerlink" href="#_CPPv423SynchroniseurMultiVideo" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Classe permettant de synchroniser plusieurs vidéos basées sur leur piste audio. </p>
+<p>Cette classe analyse les pistes audio de plusieurs fichiers vidéo pour déterminer le décalage temporel entre elles et générer une vidéo synchronisée (par exemple, une vue mosaïque). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideoD0Ev">
+<span id="_CPPv3N23SynchroniseurMultiVideoD0Ev"></span><span id="_CPPv2N23SynchroniseurMultiVideoD0Ev"></span><span id="SynchroniseurMultiVideo::~SynchroniseurMultiVideo"></span><span class="target" id="class_synchroniseur_multi_video_1a3eb3d7a7d856da575313caca3a50ede6"></span><span class="sig-name descname"><span class="n"><span class="pre">~SynchroniseurMultiVideo</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideoD0Ev" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Destructeur de la classe <a class="reference internal" href="#class_synchroniseur_multi_video"><span class="std std-ref">SynchroniseurMultiVideo</span></a>. </p>
+<p>Supprime les fichiers temporaires créés lors de l’analyse audio. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo17configurerAnalyseEddi">
+<span id="_CPPv3N23SynchroniseurMultiVideo17configurerAnalyseEddi"></span><span id="_CPPv2N23SynchroniseurMultiVideo17configurerAnalyseEddi"></span><span id="SynchroniseurMultiVideo::configurerAnalyse__double.double.i"></span><span class="target" id="class_synchroniseur_multi_video_1aea0b12defc20b15d719881b622ed1844"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">configurerAnalyse</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">duree</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">plage</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pas</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo17configurerAnalyseEddi" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Configure les paramètres d’analyse. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>duree</strong> – Durée de l’audio à analyser (en secondes). </p></li>
+<li><p><strong>plage</strong> – Plage de recherche maximale (en secondes). </p></li>
+<li><p><strong>pas</strong> – Pas de précision (1 pour précision maximale). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6vectorI6stringERK6string">
+<span id="_CPPv3NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6vectorI6stringERK6string"></span><span id="_CPPv2NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6vectorI6stringERK6string"></span><span id="SynchroniseurMultiVideo::genererVideoSynchronisee__vector:string:CR.stringCRC"></span><span class="target" id="class_synchroniseur_multi_video_1a7357c5321c0e861d83b1eb4199d18d3c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">genererVideoSynchronisee</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichiersEntree</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierSortie</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6vectorI6stringERK6string" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Génère une vidéo synchronisée à partir de plusieurs fichiers d’entrée. </p>
+<p>Orchestre le processus complet : extraction audio, calcul des décalages, et génération de la vidéo finale avec FFmpeg.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fichiersEntree</strong> – Liste des chemins des fichiers vidéo à synchroniser. </p></li>
+<li><p><strong>fichierSortie</strong> – Chemin du fichier vidéo de sortie. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>true si la génération a réussi, false sinon. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6stringRK6vectorI6stringERK6string">
+<span id="_CPPv3NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6stringRK6vectorI6stringERK6string"></span><span id="_CPPv2NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6stringRK6vectorI6stringERK6string"></span><span id="SynchroniseurMultiVideo::genererVideoSynchronisee__stringCR.vector:string:CR.stringCRC"></span><span class="target" id="class_synchroniseur_multi_video_1a9adfef940b9ce010c08b424ea6ccc153"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">genererVideoSynchronisee</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierAudioRef</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichiersVideo</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierSortie</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23SynchroniseurMultiVideo24genererVideoSynchroniseeERK6stringRK6vectorI6stringERK6string" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Génère une vidéo synchronisée en utilisant un fichier audio externe comme référence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fichierAudioRef</strong> – Chemin du fichier audio de référence. </p></li>
+<li><p><strong>fichiersVideo</strong> – Liste des chemins des fichiers vidéo à synchroniser. </p></li>
+<li><p><strong>fichierSortie</strong> – Chemin du fichier vidéo de sortie. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>true si la génération a réussi, false sinon. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23SynchroniseurMultiVideo13extraireAudioERK6stringRK6string">
+<span id="_CPPv3NK23SynchroniseurMultiVideo13extraireAudioERK6stringRK6string"></span><span id="_CPPv2NK23SynchroniseurMultiVideo13extraireAudioERK6stringRK6string"></span><span id="SynchroniseurMultiVideo::extraireAudio__stringCR.stringCRC"></span><span class="target" id="class_synchroniseur_multi_video_1ad01aa92a00c9e32225821ed998625356"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">extraireAudio</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierVideo</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierAudioSortie</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23SynchroniseurMultiVideo13extraireAudioERK6stringRK6string" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Extrait la piste audio d’un fichier vidéo vers un fichier brut. </p>
+<p>Utilise FFmpeg pour extraire l’audio, le convertir en mono, float 32-bit little-endian, à la fréquence d’échantillonnage définie.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fichierVideo</strong> – Chemin du fichier vidéo source. </p></li>
+<li><p><strong>fichierAudioSortie</strong> – Chemin du fichier audio de sortie (format brut). </p></li>
+</ul>
+</dd>
+<dt class="field-even">Déclenche<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">runtime_error</span></span></span> – Si l’extraction échoue. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23SynchroniseurMultiVideo16calculerDecalageERK6vectorIfERK6vectorIfE">
+<span id="_CPPv3NK23SynchroniseurMultiVideo16calculerDecalageERK6vectorIfERK6vectorIfE"></span><span id="_CPPv2NK23SynchroniseurMultiVideo16calculerDecalageERK6vectorIfERK6vectorIfE"></span><span id="SynchroniseurMultiVideo::calculerDecalage__vector:float:CR.vector:float:CRC"></span><span class="target" id="class_synchroniseur_multi_video_1a9e181c1d47add84084f6806ee46ac740"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculerDecalage</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ref</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cible</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23SynchroniseurMultiVideo16calculerDecalageERK6vectorIfERK6vectorIfE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Calcule le décalage temporel entre deux signaux audio. </p>
+<p>Utilise une méthode de corrélation croisée simplifiée pour estimer le décalage temporel entre le signal de référence et le signal cible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ref</strong> – Vecteur des échantillons de l’audio de référence. </p></li>
+<li><p><strong>cible</strong> – Vecteur des échantillons de l’audio à synchroniser. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>Le décalage en secondes (positif ou négatif). Retourne 0.0 en cas d’erreur. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23SynchroniseurMultiVideo12genererVideoERK6vectorI9InfoVideoERK6stringRK6string">
+<span id="_CPPv3NK23SynchroniseurMultiVideo12genererVideoERK6vectorI9InfoVideoERK6stringRK6string"></span><span id="_CPPv2NK23SynchroniseurMultiVideo12genererVideoERK6vectorI9InfoVideoERK6stringRK6string"></span><span id="SynchroniseurMultiVideo::genererVideo__vector:InfoVideo:CR.stringCR.stringCRC"></span><span class="target" id="class_synchroniseur_multi_video_1ad6c510a208a85645e2f98eca3d04ab56"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">genererVideo</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideoE" title="SynchroniseurMultiVideo::InfoVideo"><span class="n"><span class="pre">InfoVideo</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">listeVideos</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierSortie</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fichierAudioRef</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23SynchroniseurMultiVideo12genererVideoERK6vectorI9InfoVideoERK6stringRK6string" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Exécute la commande FFmpeg pour générer la vidéo finale. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listeVideos</strong> – Liste des vidéos à assembler. </p></li>
+<li><p><strong>fichierSortie</strong> – Chemin du fichier de sortie. </p></li>
+<li><p><strong>fichierAudioRef</strong> – Chemin du fichier audio de référence (optionnel). </p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>true si succès, false sinon. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo25FREQUENCE_ECHANTILLONNAGEE">
+<span id="_CPPv3N23SynchroniseurMultiVideo25FREQUENCE_ECHANTILLONNAGEE"></span><span id="_CPPv2N23SynchroniseurMultiVideo25FREQUENCE_ECHANTILLONNAGEE"></span><span id="SynchroniseurMultiVideo::FREQUENCE_ECHANTILLONNAGE__iC"></span><span class="target" id="class_synchroniseur_multi_video_1a7511e956c6e9a93ac30d9aa5bffddcd7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FREQUENCE_ECHANTILLONNAGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">44100</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo25FREQUENCE_ECHANTILLONNAGEE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Fréquence d’échantillonnage audio utilisée pour l’analyse (en Hz). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo12dureeAnalyseE">
+<span id="_CPPv3N23SynchroniseurMultiVideo12dureeAnalyseE"></span><span id="_CPPv2N23SynchroniseurMultiVideo12dureeAnalyseE"></span><span id="SynchroniseurMultiVideo::dureeAnalyse__double"></span><span class="target" id="class_synchroniseur_multi_video_1a8fc3737857ff19b76198a893569cf123"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dureeAnalyse</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">60.0</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo12dureeAnalyseE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Durée de l’audio à extraire pour l’analyse (en secondes). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo17plageRechercheMaxE">
+<span id="_CPPv3N23SynchroniseurMultiVideo17plageRechercheMaxE"></span><span id="_CPPv2N23SynchroniseurMultiVideo17plageRechercheMaxE"></span><span id="SynchroniseurMultiVideo::plageRechercheMax__double"></span><span class="target" id="class_synchroniseur_multi_video_1a66558ca7e4ce4fa01de5aa5cc17ca2f5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">plageRechercheMax</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">30.0</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo17plageRechercheMaxE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Plage de recherche maximale pour le décalage (en secondes). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo14pasDePrecisionE">
+<span id="_CPPv3N23SynchroniseurMultiVideo14pasDePrecisionE"></span><span id="_CPPv2N23SynchroniseurMultiVideo14pasDePrecisionE"></span><span id="SynchroniseurMultiVideo::pasDePrecision__i"></span><span class="target" id="class_synchroniseur_multi_video_1af8bc8bd03e2026644f14f5ea70ccb600"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pasDePrecision</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo14pasDePrecisionE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Pas de précision pour l’analyse (plus petit = plus précis). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo13HAUTEUR_CIBLEE">
+<span id="_CPPv3N23SynchroniseurMultiVideo13HAUTEUR_CIBLEE"></span><span id="_CPPv2N23SynchroniseurMultiVideo13HAUTEUR_CIBLEE"></span><span id="SynchroniseurMultiVideo::HAUTEUR_CIBLE__iC"></span><span class="target" id="class_synchroniseur_multi_video_1af2a98bcabb273ce73a91d0eaf823118d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAUTEUR_CIBLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">480</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo13HAUTEUR_CIBLEE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Hauteur cible pour le redimensionnement des vidéos (en pixels). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo13LARGEUR_CIBLEE">
+<span id="_CPPv3N23SynchroniseurMultiVideo13LARGEUR_CIBLEE"></span><span id="_CPPv2N23SynchroniseurMultiVideo13LARGEUR_CIBLEE"></span><span id="SynchroniseurMultiVideo::LARGEUR_CIBLE__iC"></span><span class="target" id="class_synchroniseur_multi_video_1a687bb3c77831902a828778bc51b4d54a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LARGEUR_CIBLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">854</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo13LARGEUR_CIBLEE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Largeur cible pour le redimensionnement des vidéos (en pixels). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo14TEMP_AUDIO_REFE">
+<span id="_CPPv3N23SynchroniseurMultiVideo14TEMP_AUDIO_REFE"></span><span id="_CPPv2N23SynchroniseurMultiVideo14TEMP_AUDIO_REFE"></span><span id="SynchroniseurMultiVideo::TEMP_AUDIO_REF__stringC"></span><span class="target" id="class_synchroniseur_multi_video_1a05ebb0fdcb6976829b6ef1bdbe5a26c3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TEMP_AUDIO_REF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;temp_ref.raw&quot;</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo14TEMP_AUDIO_REFE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Nom du fichier temporaire pour l’audio de référence. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo16TEMP_AUDIO_CIBLEE">
+<span id="_CPPv3N23SynchroniseurMultiVideo16TEMP_AUDIO_CIBLEE"></span><span id="_CPPv2N23SynchroniseurMultiVideo16TEMP_AUDIO_CIBLEE"></span><span id="SynchroniseurMultiVideo::TEMP_AUDIO_CIBLE__stringC"></span><span class="target" id="class_synchroniseur_multi_video_1a11aa2d54a8fcce4aa1ca0d589bacf29f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TEMP_AUDIO_CIBLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;temp_cible.raw&quot;</span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo16TEMP_AUDIO_CIBLEE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Nom du fichier temporaire pour l’audio cible. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-functions">Private Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo16chargerAudioBrutERK6string">
+<span id="_CPPv3N23SynchroniseurMultiVideo16chargerAudioBrutERK6string"></span><span id="_CPPv2N23SynchroniseurMultiVideo16chargerAudioBrutERK6string"></span><span id="SynchroniseurMultiVideo::chargerAudioBrut__stringCR"></span><span class="target" id="class_synchroniseur_multi_video_1adb3588161f27c337e443fb99fa92ba59"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">chargerAudioBrut</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nomFichier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo16chargerAudioBrutERK6string" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Charge des données audio brutes depuis un fichier. </p>
+<p>Lit un fichier binaire contenant des échantillons audio au format float.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nomFichier</strong> – Chemin du fichier audio brut. </p>
+</dd>
+<dt class="field-even">Déclenche<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">runtime_error</span></span></span> – Si le fichier ne peut pas être ouvert ou lu. </p>
+</dd>
+<dt class="field-odd">Renvoie<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Un vecteur de flottants représentant les échantillons audio. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo9InfoVideoE">
+<span id="_CPPv3N23SynchroniseurMultiVideo9InfoVideoE"></span><span id="_CPPv2N23SynchroniseurMultiVideo9InfoVideoE"></span><span id="SynchroniseurMultiVideo::InfoVideo"></span><span class="target" id="struct_synchroniseur_multi_video_1_1_info_video"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InfoVideo</span></span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideoE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Structure stockant les informations relatives à une vidéo. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo9InfoVideo6cheminE">
+<span id="_CPPv3N23SynchroniseurMultiVideo9InfoVideo6cheminE"></span><span id="_CPPv2N23SynchroniseurMultiVideo9InfoVideo6cheminE"></span><span id="SynchroniseurMultiVideo::InfoVideo::chemin__string"></span><span class="target" id="struct_synchroniseur_multi_video_1_1_info_video_1a63ce9ff1a9c54f78ff70dc3adc8ddc98"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">chemin</span></span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideo6cheminE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Chemin d’accès au fichier vidéo. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23SynchroniseurMultiVideo9InfoVideo14retardSecondesE">
+<span id="_CPPv3N23SynchroniseurMultiVideo9InfoVideo14retardSecondesE"></span><span id="_CPPv2N23SynchroniseurMultiVideo9InfoVideo14retardSecondesE"></span><span id="SynchroniseurMultiVideo::InfoVideo::retardSecondes__double"></span><span class="target" id="struct_synchroniseur_multi_video_1_1_info_video_1a17e98b077524572f7e2befda3f29126c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">retardSecondes</span></span></span><a class="headerlink" href="#_CPPv4N23SynchroniseurMultiVideo9InfoVideo14retardSecondesE" title="Lien vers cette définition"></a><br /></dt>
+<dd><p>Retard calculé en secondes par rapport à la vidéo de référence. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="index.html" class="btn btn-neutral float-left" title="Documentation de ClassSynchroniseurMultiVideo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2026, Loup_1234.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

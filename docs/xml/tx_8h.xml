@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="tx_8h" kind="file" language="C++">
+    <compoundname>tx.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h</label>
+        <link refid="tx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_complex_float" prot="public">AVComplexFloat</innerclass>
+    <innerclass refid="struct_a_v_complex_double" prot="public">AVComplexDouble</innerclass>
+    <innerclass refid="struct_a_v_complex_int32" prot="public">AVComplexInt32</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVTXType</name>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a509a931512e54b278f81f2a42659475b" prot="public">
+          <name>AV_TX_FLOAT_FFT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard complex to complex FFT with sample data type of <ref refid="struct_a_v_complex_float" kindref="compound">AVComplexFloat</ref>, <ref refid="struct_a_v_complex_double" kindref="compound">AVComplexDouble</ref> or <ref refid="struct_a_v_complex_int32" kindref="compound">AVComplexInt32</ref>, for each respective variant.</para>
+<para>Output is not 1/len normalized. Scaling currently unsupported. The stride parameter must be set to the size of a single sample in bytes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0aba81e92ce81f86ed81ee7bd9434fb709" prot="public">
+          <name>AV_TX_DOUBLE_FFT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a4805dd76051354ca19c752157f7bef91" prot="public">
+          <name>AV_TX_INT32_FFT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a5482e8e85ef7eed549adfef2bb411623" prot="public">
+          <name>AV_TX_FLOAT_MDCT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Standard MDCT with a sample data type of float, double or int32_t, respectively. For the float and int32 variants, the scale type is &apos;float&apos;, while for the double variant, it&apos;s &apos;double&apos;. If scale is NULL, 1.0 will be used as a default.</para>
+<para>Length is the frame size, not the window size (which is 2x frame). For forward transforms, the stride specifies the spacing between each sample in the output array in bytes. The input must be a flat array.</para>
+<para>For inverse transforms, the stride specifies the spacing between each sample in the input array in bytes. The output must be a flat array.</para>
+<para>NOTE: the inverse transform is half-length, meaning the output will not contain redundant data. This is what most codecs work with. To do a full inverse transform, set the AV_TX_FULL_IMDCT flag on init. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a2de39ba7047f756df0479bd77b3001e6" prot="public">
+          <name>AV_TX_DOUBLE_MDCT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0af487d175368e7f3a8bc6881da706fb1f" prot="public">
+          <name>AV_TX_INT32_MDCT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0ab40a731c9a28856b65d90df1f8724810" prot="public">
+          <name>AV_TX_FLOAT_RDFT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Real to complex and complex to real DFTs. For the float and int32 variants, the scale type is &apos;float&apos;, while for the double variant, it&apos;s a &apos;double&apos;. If scale is NULL, 1.0 will be used as a default.</para>
+<para>For forward transforms (R2C), stride must be the spacing between two samples in bytes. For inverse transforms, the stride must be set to the spacing between two complex values in bytes.</para>
+<para>The forward transform performs a real-to-complex DFT of N samples to N/2+1 complex values.</para>
+<para>The inverse transform performs a complex-to-real DFT of N/2+1 complex values to N real samples. The output is not normalized, but can be made so by setting the scale value to 1.0/len. NOTE: the inverse transform always overwrites the input. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a891ef79072884e996bf82f950a285b92" prot="public">
+          <name>AV_TX_DOUBLE_RDFT</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a7301fab04afb57caf18170d1c104abc1" prot="public">
+          <name>AV_TX_INT32_RDFT</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0ae087960657739eef03a173b3c81fa1f2" prot="public">
+          <name>AV_TX_FLOAT_DCT</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Real to real (DCT) transforms.</para>
+<para>The forward transform is a DCT-II. The inverse transform is a DCT-III.</para>
+<para>The input array is always overwritten. DCT-III requires that the input be padded with 2 extra samples. Stride must be set to the spacing between two samples in bytes. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a61822f62918b8bab8348abbe38ca831f" prot="public">
+          <name>AV_TX_DOUBLE_DCT</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0af992a140a05e5a8ed050c75cf48206ca" prot="public">
+          <name>AV_TX_INT32_DCT</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a506d6c7a89755f70a72fcd6531f73db8" prot="public">
+          <name>AV_TX_FLOAT_DCT_I</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Discrete Cosine Transform I</para>
+<para>The forward transform is a DCT-I. The inverse transform is a DCT-I multiplied by 2/(N + 1).</para>
+<para>The input array is always overwritten. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a285d793cb8a2d9d840c3e57eff57ff29" prot="public">
+          <name>AV_TX_DOUBLE_DCT_I</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a773f89463f8af73116a7d447f2c82b35" prot="public">
+          <name>AV_TX_INT32_DCT_I</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a399d3805cd584b07f71b81400bdc3baf" prot="public">
+          <name>AV_TX_FLOAT_DST_I</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Discrete Sine Transform I</para>
+<para>The forward transform is a DST-I. The inverse transform is a DST-I multiplied by 2/(N + 1).</para>
+<para>The input array is always overwritten. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0ab56ea6f5421351e56acba914ea4103ef" prot="public">
+          <name>AV_TX_DOUBLE_DST_I</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a43a175dba611a871542849652656f853" prot="public">
+          <name>AV_TX_INT32_DST_I</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a9e5d60f8411afe2d6045735639cf6fb0a050031707d88a075958ffaad3e0e60cc" prot="public">
+          <name>AV_TX_NB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="39" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" bodystart="39" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="enum" id="tx_8h_1a27b8498c7b564471d223874cb84b8302" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVTXFlags</name>
+        <enumvalue id="tx_8h_1a27b8498c7b564471d223874cb84b8302aabcc522a15b104f6b29515db890b6780" prot="public">
+          <name>AV_TX_INPLACE</name>
+          <initializer>= 1ULL &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allows for in-place transformations, where input == output. May be unsupported or slower for some transform types. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a27b8498c7b564471d223874cb84b8302a8414d744cebf4ad78c3a16b66109f25b" prot="public">
+          <name>AV_TX_UNALIGNED</name>
+          <initializer>= 1ULL &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Relaxes alignment requirement for the in and out arrays of av_tx_fn(). May be slower with certain transform types. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a27b8498c7b564471d223874cb84b8302a336c937be6eb17b25e4572ff9355a920" prot="public">
+          <name>AV_TX_FULL_IMDCT</name>
+          <initializer>= 1ULL &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Performs a full inverse MDCT rather than leaving out samples that can be derived through symmetry. Requires an output array of &apos;len&apos; floats, rather than the usual &apos;len/2&apos; floats. Ignored for all transforms but inverse MDCTs. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a27b8498c7b564471d223874cb84b8302a9602203b9cc0650c2b381f8763f73dd4" prot="public">
+          <name>AV_TX_REAL_TO_REAL</name>
+          <initializer>= 1ULL &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Perform a real to half-complex RDFT. Only the real, or imaginary coefficients will be output, depending on the flag used. Only available for forward RDFTs. Output array must have enough space to hold N complex values (regular size for a real to complex transform). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tx_8h_1a27b8498c7b564471d223874cb84b8302a8f74760dbd580ca4fa02c8a155d15e23" prot="public">
+          <name>AV_TX_REAL_TO_IMAGINARY</name>
+          <initializer>= 1ULL &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags for av_tx_init() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="156" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" bodystart="156" bodyend="186"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tx_8h_1ad52e394091e2cfe7115c99868a4ea652" prot="public" static="no">
+        <type>struct AVTXContext</type>
+        <definition>typedef struct AVTXContext AVTXContext</definition>
+        <argsstring></argsstring>
+        <name>AVTXContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="25" column="26" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tx_8h_1ae55212d0729e53e5e3b536e03be8a877" prot="public" static="no">
+        <type>struct AVComplexFloat</type>
+        <definition>typedef struct AVComplexFloat AVComplexFloat</definition>
+        <argsstring></argsstring>
+        <name>AVComplexFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="29" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tx_8h_1a8f0834ee9dc7e55d902c1635e08fbcea" prot="public" static="no">
+        <type>struct AVComplexDouble</type>
+        <definition>typedef struct AVComplexDouble AVComplexDouble</definition>
+        <argsstring></argsstring>
+        <name>AVComplexDouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="33" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tx_8h_1ab13aabb634fc7d00158712c8431de170" prot="public" static="no">
+        <type>struct AVComplexInt32</type>
+        <definition>typedef struct AVComplexInt32 AVComplexInt32</definition>
+        <argsstring></argsstring>
+        <name>AVComplexInt32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="37" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tx_8h_1ad00328aab6affff0139f065963256550" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* av_tx_fn) (AVTXContext *s, void *out, void *in, ptrdiff_t stride)</definition>
+        <argsstring>)(AVTXContext *s, void *out, void *in, ptrdiff_t stride)</argsstring>
+        <name>av_tx_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function pointer to a function to perform the transform.</para>
+<para><simplesect kind="note"><para>Using a different context than the one allocated during av_tx_init() is not allowed.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transform context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input or output stride in bytes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The out and in arrays must be aligned to the maximum required by the CPU architecture unless the AV_TX_UNALIGNED flag was set in av_tx_init(). The stride must follow the constraints the transform type has specified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="151" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="tx_8h_1aa601adb1dc77a099ea416befb62daae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_tx_init</definition>
+        <argsstring>(AVTXContext **ctx, av_tx_fn *tx, enum AVTXType type, int inv, int len, const void *scale, uint64_t flags)</argsstring>
+        <name>av_tx_init</name>
+        <param>
+          <type>AVTXContext **</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>av_tx_fn *</type>
+          <declname>tx</declname>
+        </param>
+        <param>
+          <type>enum AVTXType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a transform context with the given configuration (i)MDCTs with an odd length are currently not supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context to allocate, will be NULL on error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the transform function pointer to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type the type of transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to do an inverse or a forward transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the transform in samples </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the value to scale the output if supported by type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a bitmask of AVTXFlags or 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="202" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" declline="202" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="tx_8h_1a73b66589b101e98f383720e220c7c261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_tx_uninit</definition>
+        <argsstring>(AVTXContext **ctx)</argsstring>
+        <name>av_tx_uninit</name>
+        <param>
+          <type>AVTXContext **</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Frees a context and sets *ctx to NULL, does nothing when *ctx == NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" line="208" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h" declline="208" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_TX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_TX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVTXContext<sp/>AVTXContext;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="struct_a_v_complex_float" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_complex_float" kindref="compound">AVComplexFloat</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>re,<sp/>im;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><ref refid="struct_a_v_complex_float" kindref="compound">AVComplexFloat</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_a_v_complex_double" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_complex_double" kindref="compound">AVComplexDouble</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>re,<sp/>im;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/><ref refid="struct_a_v_complex_double" kindref="compound">AVComplexDouble</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_a_v_complex_int32" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_complex_int32" kindref="compound">AVComplexInt32</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>re,<sp/>im;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/><ref refid="struct_a_v_complex_int32" kindref="compound">AVComplexInt32</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVTXType<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_FFT<sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_FFT<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_FFT<sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_MDCT<sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_MDCT<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_MDCT<sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_RDFT<sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_RDFT<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_RDFT<sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_DCT<sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_DCT<sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_DCT<sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_DCT_I<sp/><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_DCT_I<sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_DCT_I<sp/><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FLOAT_DST_I<sp/><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_DOUBLE_DST_I<sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INT32_DST_I<sp/><sp/>=<sp/>17,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>part<sp/>of<sp/>the<sp/>API,<sp/>do<sp/>not<sp/>use<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_NB,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*av_tx_fn)(AVTXContext<sp/>*s,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*in,<sp/>ptrdiff_t<sp/>stride);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVTXFlags<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_INPLACE<sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_UNALIGNED<sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_FULL_IMDCT<sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_REAL_TO_REAL<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_TX_REAL_TO_IMAGINARY<sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_tx_init(AVTXContext<sp/>**ctx,<sp/>av_tx_fn<sp/>*tx,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVTXType<sp/>type,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inv,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*scale,<sp/>uint64_t<sp/>flags);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_tx_uninit(AVTXContext<sp/>**ctx);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_TX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tx.h"/>
+  </compounddef>
+</doxygen>

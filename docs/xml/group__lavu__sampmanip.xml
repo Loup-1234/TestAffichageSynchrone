@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__sampmanip" kind="group">
+    <compoundname>lavu_sampmanip</compoundname>
+    <title>Samples manipulation</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__sampmanip_1ga673254a62fa75dab3211caf17c73c6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_samples_fill_arrays</definition>
+        <argsstring>(uint8_t **audio_data, int *linesize, const uint8_t *buf, int nb_channels, int nb_samples, enum AVSampleFormat sample_fmt, int align)</argsstring>
+        <name>av_samples_fill_arrays</name>
+        <param>
+          <type>uint8_t **</type>
+          <declname>audio_data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>linesize</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_samples</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill plane data pointers and linesize for samples with sample format sample_fmt.</para>
+<para>The audio_data array is filled with the pointers to the samples data planes: for planar, set the start point of each channel&apos;s data within the buffer, for packed, set the start point of the entire buffer only.</para>
+<para>The value pointed to by linesize is set to the aligned size of each channel&apos;s data buffer for planar layout, or to the aligned size of the buffer for all channels for packed layout.</para>
+<para>The buffer in buf must be big enough to contain all the samples (use <ref refid="group__lavu__sampfmts_1gaa7368bc4e3a366b688e81938ed55eb06" kindref="member">av_samples_get_buffer_size()</ref> to compute its minimum size), otherwise the audio_data pointers will point to invalid data.</para>
+<para><simplesect kind="see"><para>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> The documentation for <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> describes the data layout.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">audio_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to be filled with the pointer for each channel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calculated linesize, may be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pointer to a buffer containing the samples </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of channels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of samples in a single channel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sample format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size alignment (0 = default, 1 = no alignment) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>minimum size in bytes required for the buffer on success, or a negative error code on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" line="198" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" declline="198" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_samples_alloc</definition>
+        <argsstring>(uint8_t **audio_data, int *linesize, int nb_channels, int nb_samples, enum AVSampleFormat sample_fmt, int align)</argsstring>
+        <name>av_samples_alloc</name>
+        <param>
+          <type>uint8_t **</type>
+          <declname>audio_data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>linesize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_samples</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a samples buffer for nb_samples samples, and fill data pointers and linesize accordingly. The allocated samples buffer can be freed by using av_freep(&amp;audio_data[0]) Allocated data will be initialized to silence.</para>
+<para><simplesect kind="see"><para>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> The documentation for <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref> describes the data layout.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">audio_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to be filled with the pointer for each channel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">linesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aligned size for audio buffer(s), may be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of audio channels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples per channel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sample format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer size alignment (0 = default, 1 = no alignment) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;=0 on success or a negative error code on failure </para>
+</simplesect>
+<xrefsect id="todo_1_todo000004"><xreftitle>A faire</xreftitle><xrefdescription><para>return the size of the allocated buffer in case of success at the next bump </para>
+</xrefdescription></xrefsect><simplesect kind="see"><para><ref refid="group__lavu__sampmanip_1ga673254a62fa75dab3211caf17c73c6eb" kindref="member">av_samples_fill_arrays()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__sampmanip_1gae8b9f22f2f659d023f111390d9545273" kindref="member">av_samples_alloc_array_and_samples()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" line="223" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" declline="223" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sampmanip_1gae8b9f22f2f659d023f111390d9545273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_samples_alloc_array_and_samples</definition>
+        <argsstring>(uint8_t ***audio_data, int *linesize, int nb_channels, int nb_samples, enum AVSampleFormat sample_fmt, int align)</argsstring>
+        <name>av_samples_alloc_array_and_samples</name>
+        <param>
+          <type>uint8_t ***</type>
+          <declname>audio_data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>linesize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_samples</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a data pointers array, samples buffer for nb_samples samples, and fill data pointers and linesize accordingly.</para>
+<para>This is the same as <ref refid="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" kindref="member">av_samples_alloc()</ref>, but also allocates the data pointers array.</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__sampmanip_1ga4db4c77f928d32c7d8854732f50b8c04" kindref="member">av_samples_alloc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" line="235" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" declline="235" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sampmanip_1gabd511e1a989de02e7cb174a1169f2951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_samples_copy</definition>
+        <argsstring>(uint8_t *const *dst, uint8_t *const *src, int dst_offset, int src_offset, int nb_samples, int nb_channels, enum AVSampleFormat sample_fmt)</argsstring>
+        <name>av_samples_copy</name>
+        <param>
+          <type>uint8_t *const *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint8_t *const *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy samples from src to dst.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination array of pointers to data planes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source array of pointers to data planes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset in samples at which the data will be written to dst </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset in samples at which the data will be read from src </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to be copied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of audio channels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>audio sample format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" line="249" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" declline="249" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__sampmanip_1gabcb166e22938c7d93c2d609529c458bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_samples_set_silence</definition>
+        <argsstring>(uint8_t *const *audio_data, int offset, int nb_samples, int nb_channels, enum AVSampleFormat sample_fmt)</argsstring>
+        <name>av_samples_set_silence</name>
+        <param>
+          <type>uint8_t *const *</type>
+          <declname>audio_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_channels</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__sampfmts_1gaf9a51ca15301871723577c730b5865c5" kindref="member">AVSampleFormat</ref></type>
+          <declname>sample_fmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill an audio buffer with silence.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>audio_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of pointers to data planes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset in samples at which to start filling </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to fill </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of audio channels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>audio sample format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" line="262" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/samplefmt.h" declline="262" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions that manipulate audio samples </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

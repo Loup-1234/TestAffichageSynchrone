@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="hwcontext__dxva2_8h" kind="file" language="C++">
+    <compoundname>hwcontext_dxva2.h</compoundname>
+    <includes local="no">d3d9.h</includes>
+    <includes local="no">dxva2api.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h</label>
+        <link refid="hwcontext__dxva2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>d3d9.h</label>
+      </node>
+      <node id="3">
+        <label>dxva2api.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_a_v_d_x_v_a2_device_context" prot="public">AVDXVA2DeviceContext</innerclass>
+    <innerclass refid="struct_a_v_d_x_v_a2_frames_context" prot="public">AVDXVA2FramesContext</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hwcontext__dxva2_8h_1a22a58a4b3a32466d0821069376594fd4" prot="public" static="no">
+        <type>struct AVDXVA2DeviceContext</type>
+        <definition>typedef struct AVDXVA2DeviceContext AVDXVA2DeviceContext</definition>
+        <argsstring></argsstring>
+        <name>AVDXVA2DeviceContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_device_context_1a46055b48d1a40445d775b4ae24f77f20" kindref="member">AVHWDeviceContext.hwctx</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="41" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hwcontext__dxva2_8h_1a5c8b318eff5fb80540fca1b6c4872033" prot="public" static="no">
+        <type>struct AVDXVA2FramesContext</type>
+        <definition>typedef struct AVDXVA2FramesContext AVDXVA2FramesContext</definition>
+        <argsstring></argsstring>
+        <name>AVDXVA2FramesContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct is allocated as <ref refid="struct_a_v_h_w_frames_context_1a54e38c3e4355321e23e0f4c7411cb8ee" kindref="member">AVHWFramesContext.hwctx</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h" line="73" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An API-specific header for AV_HWDEVICE_TYPE_DXVA2.</para>
+<para>Only fixed-size pools are supported.</para>
+<para>For user-allocated pools, <ref refid="struct_a_v_h_w_frames_context_1ad67ff3a5828a611d1b1cddd64fc1de71" kindref="member">AVHWFramesContext.pool</ref> must return AVBufferRefs with the data pointer set to a pointer to IDirect3DSurface9. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_HWCONTEXT_DXVA2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_HWCONTEXT_DXVA2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d9.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dxva2api.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="struct_a_v_d_x_v_a2_device_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_x_v_a2_device_context" kindref="compound">AVDXVA2DeviceContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>IDirect3DDeviceManager9<sp/>*devmgr;</highlight></codeline>
+<codeline lineno="41" refid="hwcontext__dxva2_8h_1a22a58a4b3a32466d0821069376594fd4" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_x_v_a2_device_context" kindref="compound">AVDXVA2DeviceContext</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="struct_a_v_d_x_v_a2_frames_context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_d_x_v_a2_frames_context" kindref="compound">AVDXVA2FramesContext</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="struct_a_v_d_x_v_a2_frames_context_1abc67fe5747f160bf1f0bb98a506057ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_v_d_x_v_a2_frames_context_1abc67fe5747f160bf1f0bb98a506057ba" kindref="member">surface_type</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="struct_a_v_d_x_v_a2_frames_context_1a2025b21fc7ec906713c525a702fd6eb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IDirect3DSurface9<sp/>**<ref refid="struct_a_v_d_x_v_a2_frames_context_1a2025b21fc7ec906713c525a702fd6eb7" kindref="member">surfaces</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_surfaces;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_a_v_d_x_v_a2_frames_context_1afcac8ee4311bbced10a5abd138f89bf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IDirectXVideoDecoder<sp/>*<ref refid="struct_a_v_d_x_v_a2_frames_context_1afcac8ee4311bbced10a5abd138f89bf7" kindref="member">decoder_to_release</ref>;</highlight></codeline>
+<codeline lineno="73" refid="hwcontext__dxva2_8h_1a5c8b318eff5fb80540fca1b6c4872033" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_a_v_d_x_v_a2_frames_context" kindref="compound">AVDXVA2FramesContext</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_HWCONTEXT_DXVA2_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_dxva2.h"/>
+  </compounddef>
+</doxygen>

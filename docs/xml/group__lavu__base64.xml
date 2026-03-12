@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__base64" kind="group">
+    <compoundname>lavu_base64</compoundname>
+    <title>Base64</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__base64_1gac8837266968329642080627f3aec9ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_base64_decode</definition>
+        <argsstring>(uint8_t *out, const char *in, int out_size)</argsstring>
+        <name>av_base64_decode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode a base64-encoded string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer for decoded data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>null-terminated input string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the out buffer, must be at least 3/4 of the length of in, that is <ref refid="group__lavu__base64_1ga91e6771f201fdb7bfaeb4ccb95f1b252" kindref="member">AV_BASE64_DECODE_SIZE(strlen(in))</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bytes written, or a negative value in case of invalid input </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" line="42" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" declline="42" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__base64_1ga1be788d32678cb896ca7ec86fea324b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * av_base64_encode</definition>
+        <argsstring>(char *out, int out_size, const uint8_t *in, int in_size)</argsstring>
+        <name>av_base64_encode</name>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode data to base64 and null-terminate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer for encoded data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the out buffer (including the null terminator), must be at least <ref refid="group__lavu__base64_1gaa79f39ca3f737b662ae6711d2cbecd20" kindref="member">AV_BASE64_SIZE(in_size)</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input buffer containing the data to encode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in bytes of the in buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>out or NULL in case of error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" line="60" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" declline="60" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__base64_1ga91e6771f201fdb7bfaeb4ccb95f1b252" prot="public" static="no">
+        <name>AV_BASE64_DECODE_SIZE</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) * 3LL / 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the output size in bytes needed to decode a base64 string with length x to a data buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" line="48" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__base64_1gaa79f39ca3f737b662ae6711d2cbecd20" prot="public" static="no">
+        <name>AV_BASE64_SIZE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((x)+2) / 3 * 4 + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the output size needed to base64-encode x bytes to a null-terminated string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" line="66" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/base64.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,767 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="log_8h" kind="file" language="C++">
+    <compoundname>log.h</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <includes refid="libavutil_2version_8h" local="yes">version.h</includes>
+    <includedby refid="avcodec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</includedby>
+    <includedby refid="bsf_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</includedby>
+    <includedby refid="codec_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</includedby>
+    <includedby refid="avdevice_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</includedby>
+    <includedby refid="avfilter_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</includedby>
+    <includedby refid="avformat_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</includedby>
+    <includedby refid="avio_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h</includedby>
+    <includedby refid="avassert_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avassert.h</includedby>
+    <includedby refid="avutil_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</includedby>
+    <includedby refid="hwcontext_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</includedby>
+    <includedby refid="opt_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</includedby>
+    <includedby refid="swscale_8h" local="yes">C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="6">
+        <label>libavutil/avconfig.h</label>
+        <link refid="avconfig_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>version.h</label>
+        <link refid="libavutil_2version_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdarg.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avcodec.h</label>
+        <link refid="avcodec_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/avdct.h</label>
+        <link refid="avdct_8h_source"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/bsf.h</label>
+        <link refid="bsf_8h_source"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec.h</label>
+        <link refid="codec_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_desc.h</label>
+        <link refid="codec__desc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_id.h</label>
+        <link refid="codec__id_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/codec_par.h</label>
+        <link refid="codec__par_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/mediacodec.h</label>
+        <link refid="mediacodec_8h_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/vdpau.h</label>
+        <link refid="vdpau_8h"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavcodec/videotoolbox.h</label>
+        <link refid="videotoolbox_8h"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavdevice/avdevice.h</label>
+        <link refid="avdevice_8h"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/avfilter.h</label>
+        <link refid="avfilter_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersink.h</label>
+        <link refid="buffersink_8h"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavfilter/buffersrc.h</label>
+        <link refid="buffersrc_8h"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avformat.h</label>
+        <link refid="avformat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavformat/avio.h</label>
+        <link refid="avio_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/ambient_viewing_environment.h</label>
+        <link refid="ambient__viewing__environment_8h_source"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avassert.h</label>
+        <link refid="avassert_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/avutil.h</label>
+        <link refid="avutil_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/detection_bbox.h</label>
+        <link refid="detection__bbox_8h_source"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/downmix_info.h</label>
+        <link refid="downmix__info_8h"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/film_grain_params.h</label>
+        <link refid="film__grain__params_8h_source"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h</label>
+        <link refid="frame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_metadata.h</label>
+        <link refid="hdr__dynamic__metadata_8h_source"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hdr_dynamic_vivid_metadata.h</label>
+        <link refid="hdr__dynamic__vivid__metadata_8h_source"/>
+      </node>
+      <node id="30">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext.h</label>
+        <link refid="hwcontext_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_amf.h</label>
+        <link refid="hwcontext__amf_8h_source"/>
+      </node>
+      <node id="33">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_opencl.h</label>
+        <link refid="hwcontext__opencl_8h"/>
+      </node>
+      <node id="34">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_videotoolbox.h</label>
+        <link refid="hwcontext__videotoolbox_8h"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/hwcontext_vulkan.h</label>
+        <link refid="hwcontext__vulkan_8h"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/iamf.h</label>
+        <link refid="iamf_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/mastering_display_metadata.h</label>
+        <link refid="mastering__display__metadata_8h_source"/>
+      </node>
+      <node id="39">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/opt.h</label>
+        <link refid="opt_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/stereo3d.h</label>
+        <link refid="stereo3d_8h"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h</label>
+        <link refid="tdrdi_8h"/>
+      </node>
+      <node id="41">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/timestamp.h</label>
+        <link refid="timestamp_8h"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_enc_params.h</label>
+        <link refid="video__enc__params_8h_source"/>
+      </node>
+      <node id="19">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/video_hint.h</label>
+        <link refid="video__hint_8h_source"/>
+      </node>
+      <node id="37">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswresample/swresample.h</label>
+        <link refid="swresample_8h"/>
+      </node>
+      <node id="38">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libswscale/swscale.h</label>
+        <link refid="swscale_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_v_class" prot="public">AVClass</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="log_8h_1ad0e526bec7e5efded0893bfed967fe94" prot="public" static="no">
+        <name>AV_IS_INPUT_DEVICE</name>
+        <param><defname>category</defname></param>
+        <initializer>    (((category) == AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT) || \
+     ((category) == AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT) || \
+     ((category) == AV_CLASS_CATEGORY_DEVICE_INPUT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="59" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a95810fbec46199cb25ccddae6b900bd8" prot="public" static="no">
+        <name>AV_IS_OUTPUT_DEVICE</name>
+        <param><defname>category</defname></param>
+        <initializer>    (((category) == AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT) || \
+     ((category) == AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT) || \
+     ((category) == AV_CLASS_CATEGORY_DEVICE_OUTPUT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="64" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <member refid="group__lavu__log__constants_1ga11e329935b59b83ca722b66674f37fd4" kind="define"><name>AV_LOG_QUIET</name></member>
+      <member refid="group__lavu__log__constants_1ga09623098406ba81d130824ac742d146e" kind="define"><name>AV_LOG_PANIC</name></member>
+      <member refid="group__lavu__log__constants_1ga96970a2980bf6ad28cd403e7dc52d6c5" kind="define"><name>AV_LOG_FATAL</name></member>
+      <member refid="group__lavu__log__constants_1gaffe151ff4cd8a24b2e77ac8d9616c85c" kind="define"><name>AV_LOG_ERROR</name></member>
+      <member refid="group__lavu__log__constants_1ga85b57516ca703cc47d9bbe5f4658c716" kind="define"><name>AV_LOG_WARNING</name></member>
+      <member refid="group__lavu__log__constants_1gad172eacfed8653e454c6fdcbe53baab3" kind="define"><name>AV_LOG_INFO</name></member>
+      <member refid="group__lavu__log__constants_1ga9b58b28e2d429b930b69db19877f76a8" kind="define"><name>AV_LOG_VERBOSE</name></member>
+      <member refid="group__lavu__log__constants_1ga5b7221c3afd06848486776bd834a58a5" kind="define"><name>AV_LOG_DEBUG</name></member>
+      <member refid="group__lavu__log__constants_1ga030300ea4843c53b2fe178a434964b39" kind="define"><name>AV_LOG_TRACE</name></member>
+      <member refid="group__lavu__log__constants_1gad87b54332d00f280bf5db0fd2f56f340" kind="define"><name>AV_LOG_MAX_OFFSET</name></member>
+      <member refid="group__lavu__log_1ga7ff5a41a9e5e2969f1b125d4bb6ce536" kind="define"><name>AV_LOG_C</name></member>
+      <member refid="group__lavu__log_1ga6cdf5cd331b17e80e8308124f05a6db8" kind="define"><name>AV_LOG_SKIP_REPEATED</name></member>
+      <member refid="group__lavu__log_1ga8b447fa5f9d7e243be4634878ed1a0ca" kind="define"><name>AV_LOG_PRINT_LEVEL</name></member>
+      <member refid="group__lavu__log_1ga1941d4236fc5230923fab3355b32055d" kind="define"><name>AV_LOG_PRINT_TIME</name></member>
+      <member refid="group__lavu__log_1ga006cc576486999d5c5a879e0e38803d4" kind="define"><name>AV_LOG_PRINT_DATETIME</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVClassCategory</name>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a71af9d0d8f60e47a7a83046e27dadefa" prot="public">
+          <name>AV_CLASS_CATEGORY_NA</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a0b907bb25d241484062534be320001d1" prot="public">
+          <name>AV_CLASS_CATEGORY_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a922ed45f6aaa6e0bdcdcdcfa20e5f6a4" prot="public">
+          <name>AV_CLASS_CATEGORY_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a25e15ba6dba2dcd767d69c04eaa38a59" prot="public">
+          <name>AV_CLASS_CATEGORY_MUXER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a86a70f4c26b01f85c4c23433322eec2c" prot="public">
+          <name>AV_CLASS_CATEGORY_DEMUXER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9ae22f8fa66b02cff95fb04ec963713a4c" prot="public">
+          <name>AV_CLASS_CATEGORY_ENCODER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9af24522b3c299ba8b85a5a00574d43b2b" prot="public">
+          <name>AV_CLASS_CATEGORY_DECODER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a78b8da9853ff87127b31ceb9a78f3a37" prot="public">
+          <name>AV_CLASS_CATEGORY_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a2aa971aa717aa1f2b812ed1358ff7fbf" prot="public">
+          <name>AV_CLASS_CATEGORY_BITSTREAM_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a2852542cb189f4d25e470ee67e09ff6a" prot="public">
+          <name>AV_CLASS_CATEGORY_SWSCALER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9acf18a1d69313a920e4a5229c86de8e1c" prot="public">
+          <name>AV_CLASS_CATEGORY_SWRESAMPLER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9afeb224bcde370ac758adb8e42afb93a7" prot="public">
+          <name>AV_CLASS_CATEGORY_HWDEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a6facbfe512802ca4b03378f5c4bd2aa2" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a73fb8c6b471b22685e8d2836f25ca6c7" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a4acd911842413e1bd9e1387f7b6b5e4b" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9aacba77c66d969c8dbd8b9597e9b98869" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a47ac8b5cb587a90463644ccab01ce71b" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9ace341ef5b34a656419e6ae61474334e1" prot="public">
+          <name>AV_CLASS_CATEGORY_DEVICE_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1aeb1c06cc3e47a029ca6afeac782ac8f9a6500b5dc52e5485b497c3f7228ce637f" prot="public">
+          <name>AV_CLASS_CATEGORY_NB</name>
+          <briefdescription>
+<para>not part of ABI/API </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="28" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="28" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="log_8h_1ad15c31c96cfca435cf2f60324f26bdf4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVClassStateFlags</name>
+        <enumvalue id="log_8h_1ad15c31c96cfca435cf2f60324f26bdf4a5abe30f2ac0946233b9b0387145e3fed" prot="public">
+          <name>AV_CLASS_STATE_INITIALIZED</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Object initialization has finished and it is now in the &apos;runtime&apos; stage. This affects e.g. what options can be set on the object (only AV_OPT_FLAG_RUNTIME_PARAM options can be set on initialized objects). </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="50" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" bodystart="50" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="log_8h_1a56f1ed7b1ab5801b834afc119af7f338" prot="public" static="no">
+        <type>struct AVClass</type>
+        <definition>typedef struct AVClass AVClass</definition>
+        <argsstring></argsstring>
+        <name>AVClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Describe the class of an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> context structure. That is an arbitrary struct of which the first field is a pointer to an <ref refid="struct_a_v_class" kindref="compound">AVClass</ref> struct (e.g. <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref>, <ref refid="struct_a_v_format_context" kindref="compound">AVFormatContext</ref> etc.). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h" line="177" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__log_1gabd386ffd4b27637cf34e98d5d1a6e8ae" kind="function"><name>av_log</name></member>
+      <member refid="group__lavu__log_1gaf2d7ec50a1d2ceb6395062b46fd4dac5" kind="function"><name>av_log_once</name></member>
+      <member refid="group__lavu__log_1ga5e764a9f07a7c3267ceeaa2cf7b571a9" kind="function"><name>av_vlog</name></member>
+      <member refid="group__lavu__log_1gae8ada5cc5722548d8698650b05207904" kind="function"><name>av_log_get_level</name></member>
+      <member refid="group__lavu__log_1ga1fd32c74db581e3e2e7f35d277bb1e24" kind="function"><name>av_log_set_level</name></member>
+      <member refid="group__lavu__log_1ga14034761faf581a8b9ed6ef19b313708" kind="function"><name>av_log_set_callback</name></member>
+      <member refid="group__lavu__log_1ga5bd132d2e4ac6f9843ef6d8e3c05050a" kind="function"><name>av_log_default_callback</name></member>
+      <member refid="group__lavu__log_1ga1e2d13acd5bf1c5790faa60edae84cf0" kind="function"><name>av_default_item_name</name></member>
+      <member refid="group__lavu__log_1ga796896ca6a991fda200e8363777aeea3" kind="function"><name>av_default_get_category</name></member>
+      <member refid="group__lavu__log_1gaed9e57ccba2adc41864f54f47dfcccec" kind="function"><name>av_log_format_line</name></member>
+      <member refid="group__lavu__log_1ga0c595c96d63711069accb9c60549e84f" kind="function"><name>av_log_format_line2</name></member>
+      <member refid="group__lavu__log_1gaf8143cc9a7cd364af1ff525c6181c0ce" kind="function"><name>av_log_set_flags</name></member>
+      <member refid="group__lavu__log_1ga86a29f38fba2fdb9579d5fa3bbf6f8bf" kind="function"><name>av_log_get_flags</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>copyright<sp/>(c)<sp/>2006<sp/>Michael<sp/>Niedermayer<sp/>&lt;michaelni@gmx.at&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libavutil_2version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_NA<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_INPUT,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_OUTPUT,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_MUXER,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEMUXER,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_ENCODER,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DECODER,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_FILTER,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_BITSTREAM_FILTER,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_SWSCALER,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_SWRESAMPLER,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_HWDEVICE,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT<sp/>=<sp/>40,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_OUTPUT,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_DEVICE_INPUT,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_CATEGORY_NB<sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}AVClassCategory;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AVClassStateFlags<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>AV_CLASS_STATE_INITIALIZED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_IS_INPUT_DEVICE(category)<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_INPUT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_IS_OUTPUT_DEVICE(category)<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>((category)<sp/>==<sp/>AV_CLASS_CATEGORY_DEVICE_OUTPUT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="struct_a_v_class" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_class" kindref="compound">AVClass</ref><sp/>{</highlight></codeline>
+<codeline lineno="81" refid="struct_a_v_class_1aa8883e113a3f2965abd008f7667db7eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_a_v_class_1aa8883e113a3f2965abd008f7667db7eb" kindref="member">class_name</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="struct_a_v_class_1ae0e990b19ebbcf05e7ec6cbe24b885f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>(*item_name)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ctx);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct_a_v_class_1a75207076350fd2342191bc2091699f00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_option" kindref="compound">AVOption</ref><sp/>*<ref refid="struct_a_v_class_1a75207076350fd2342191bc2091699f00" kindref="member">option</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="struct_a_v_class_1a7859d861c0924aa74d848f93253c263a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class_1a7859d861c0924aa74d848f93253c263a" kindref="member">version</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="struct_a_v_class_1afbde6320c22278fac43732f7410b66e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class_1afbde6320c22278fac43732f7410b66e7" kindref="member">log_level_offset_offset</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="struct_a_v_class_1a88948c8a7c6515181771615a54a808bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class_1a88948c8a7c6515181771615a54a808bf" kindref="member">parent_log_context_offset</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="struct_a_v_class_1a5fc161d93a0d65a608819da20b7203ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>AVClassCategory<sp/><ref refid="struct_a_v_class_1a5fc161d93a0d65a608819da20b7203ba" kindref="member">category</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="struct_a_v_class_1a511382185d3206043d5d37c1007f199c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>AVClassCategory<sp/>(*<ref refid="struct_a_v_class_1a511382185d3206043d5d37c1007f199c" kindref="member">get_category</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ctx);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="struct_a_v_class_1a1f25d6b76f5a8b474cc1cb16aa5ed5df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="struct_a_v_class_1a1f25d6b76f5a8b474cc1cb16aa5ed5df" kindref="member">query_ranges</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_option_ranges" kindref="compound">AVOptionRanges</ref><sp/>**,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct_a_v_class_1a44dca198ce11fcd2a2b7488a927e4a46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>(*child_next)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*prev);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_v_class" kindref="compound">AVClass</ref>*<sp/>(*child_class_iterate)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**iter);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="struct_a_v_class_1a5a079212da74c6b33ea6469be16b9db5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_v_class_1a5a079212da74c6b33ea6469be16b9db5" kindref="member">state_flags_offset</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/><ref refid="struct_a_v_class" kindref="compound">AVClass</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="group__lavu__log__constants_1ga11e329935b59b83ca722b66674f37fd4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_QUIET<sp/><sp/><sp/><sp/>-8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="group__lavu__log__constants_1ga09623098406ba81d130824ac742d146e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_PANIC<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group__lavu__log__constants_1ga96970a2980bf6ad28cd403e7dc52d6c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_FATAL<sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="group__lavu__log__constants_1gaffe151ff4cd8a24b2e77ac8d9616c85c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_ERROR<sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="group__lavu__log__constants_1ga85b57516ca703cc47d9bbe5f4658c716" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_WARNING<sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="group__lavu__log__constants_1gad172eacfed8653e454c6fdcbe53baab3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_INFO<sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="group__lavu__log__constants_1ga9b58b28e2d429b930b69db19877f76a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_VERBOSE<sp/><sp/>40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="group__lavu__log__constants_1ga5b7221c3afd06848486776bd834a58a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_DEBUG<sp/><sp/><sp/><sp/>48</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="group__lavu__log__constants_1ga030300ea4843c53b2fe178a434964b39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_TRACE<sp/><sp/><sp/><sp/>56</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_MAX_OFFSET<sp/>(AV_LOG_TRACE<sp/>-<sp/>AV_LOG_QUIET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="group__lavu__log_1ga7ff5a41a9e5e2969f1b125d4bb6ce536" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_C(x)<sp/>((x)<sp/>&lt;&lt;<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="group__lavu__log_1gabd386ffd4b27637cf34e98d5d1a6e8ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1gabd386ffd4b27637cf34e98d5d1a6e8ae" kindref="member">av_log</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*avcl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...)<sp/>av_printf_format(3,<sp/>4);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="group__lavu__log_1gaf2d7ec50a1d2ceb6395062b46fd4dac5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1gaf2d7ec50a1d2ceb6395062b46fd4dac5" kindref="member">av_log_once</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>avcl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initial_level,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>subsequent_level,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*state,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...)<sp/>av_printf_format(5,<sp/>6);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="group__lavu__log_1ga5e764a9f07a7c3267ceeaa2cf7b571a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1ga5e764a9f07a7c3267ceeaa2cf7b571a9" kindref="member">av_vlog</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*avcl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>va_list<sp/>vl);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="group__lavu__log_1gae8ada5cc5722548d8698650b05207904" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1gae8ada5cc5722548d8698650b05207904" kindref="member">av_log_get_level</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="group__lavu__log_1ga1fd32c74db581e3e2e7f35d277bb1e24" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1ga1fd32c74db581e3e2e7f35d277bb1e24" kindref="member">av_log_set_level</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="group__lavu__log_1ga14034761faf581a8b9ed6ef19b313708" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1ga14034761faf581a8b9ed6ef19b313708" kindref="member">av_log_set_callback</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>va_list));</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="group__lavu__log_1ga5bd132d2e4ac6f9843ef6d8e3c05050a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1ga5bd132d2e4ac6f9843ef6d8e3c05050a" kindref="member">av_log_default_callback</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*avcl,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_list<sp/>vl);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362" refid="group__lavu__log_1ga1e2d13acd5bf1c5790faa60edae84cf0" refkind="member"><highlight class="normal">const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__lavu__log_1ga1e2d13acd5bf1c5790faa60edae84cf0" kindref="member">av_default_item_name</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ctx);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">AVClassCategory<sp/>av_default_get_category(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="group__lavu__log_1gaed9e57ccba2adc41864f54f47dfcccec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1gaed9e57ccba2adc41864f54f47dfcccec" kindref="member">av_log_format_line</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>va_list<sp/>vl,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*print_prefix);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="group__lavu__log_1ga0c595c96d63711069accb9c60549e84f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__log_1ga0c595c96d63711069accb9c60549e84f" kindref="member">av_log_format_line2</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>va_list<sp/>vl,</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*print_prefix);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400" refid="group__lavu__log_1ga6cdf5cd331b17e80e8308124f05a6db8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_SKIP_REPEATED<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408" refid="group__lavu__log_1ga8b447fa5f9d7e243be4634878ed1a0ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_PRINT_LEVEL<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="group__lavu__log_1ga1941d4236fc5230923fab3355b32055d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_PRINT_TIME<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418" refid="group__lavu__log_1ga006cc576486999d5c5a879e0e38803d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AV_LOG_PRINT_DATETIME<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>av_log_set_flags(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arg);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>av_log_get_flags(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_LOG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/log.h"/>
+  </compounddef>
+</doxygen>

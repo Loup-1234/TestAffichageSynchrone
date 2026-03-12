@@ -1,0 +1,1549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__frame" kind="group">
+    <compoundname>lavu_frame</compoundname>
+    <title>AVFrame</title>
+    <innerfile refid="frame_8h">frame.h</innerfile>
+    <innerclass refid="struct_a_v_frame_side_data" prot="public">AVFrameSideData</innerclass>
+    <innerclass refid="struct_a_v_side_data_descriptor" prot="public">AVSideDataDescriptor</innerclass>
+    <innerclass refid="struct_a_v_region_of_interest" prot="public">AVRegionOfInterest</innerclass>
+    <innerclass refid="struct_a_v_frame" prot="public">AVFrame</innerclass>
+    <innergroup refid="group__lavu__frame__flags">AV_FRAME_FLAGS</innergroup>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVFrameSideDataType</name>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3de91a03b453c956b7274a2392d9a437" prot="public">
+          <name>AV_FRAME_DATA_PANSCAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The data is the <ref refid="struct_a_v_pan_scan" kindref="compound">AVPanScan</ref> struct defined in libavcodec. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4848fd3952b4c2e1c1b85acb628c78a6" prot="public">
+          <name>AV_FRAME_DATA_A53_CC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ATSC A53 Part 4 Closed Captions. A53 CC bitstream is stored as uint8_t in AVFrameSideData.data. The number of bytes of CC data is AVFrameSideData.size. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcacec681d6146e8bd4c61b2e1cc88354a8" prot="public">
+          <name>AV_FRAME_DATA_STEREO3D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stereoscopic 3d metadata. The data is the <ref refid="struct_a_v_stereo3_d" kindref="compound">AVStereo3D</ref> struct defined in <ref refid="stereo3d_8h" kindref="compound">libavutil/stereo3d.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaa69ea5c11a5431bfff9e565714dafe41" prot="public">
+          <name>AV_FRAME_DATA_MATRIXENCODING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The data is the AVMatrixEncoding enum defined in <ref refid="channel__layout_8h" kindref="compound">libavutil/channel_layout.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca71819257ea0bedb7e0740a0ce60e404a" prot="public">
+          <name>AV_FRAME_DATA_DOWNMIX_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Metadata relevant to a downmix procedure. The data is the <ref refid="struct_a_v_downmix_info" kindref="compound">AVDownmixInfo</ref> struct defined in <ref refid="downmix__info_8h" kindref="compound">libavutil/downmix_info.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca66f46a9df9fcb8cf212e0693465794e1" prot="public">
+          <name>AV_FRAME_DATA_REPLAYGAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ReplayGain information in the form of the <ref refid="struct_a_v_replay_gain" kindref="compound">AVReplayGain</ref> struct. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3e01b882b6fa04724076067d6d9f8b69" prot="public">
+          <name>AV_FRAME_DATA_DISPLAYMATRIX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This side data contains a 3x3 transformation matrix describing an affine transformation that needs to be applied to the frame for correct presentation.</para>
+<para>See <ref refid="display_8h" kindref="compound">libavutil/display.h</ref> for a detailed description of the data. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9aabf5c0b8abc7064bfcc59485e54aea" prot="public">
+          <name>AV_FRAME_DATA_AFD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Active Format Description data consisting of a single byte as specified in ETSI TS 101 154 using AVActiveFormatDescription enum. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf50d0ed0a9a4517341c221be03a06c42" prot="public">
+          <name>AV_FRAME_DATA_MOTION_VECTORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Motion vectors exported by some codecs (on demand through the export_mvs flag set in the libavcodec <ref refid="struct_a_v_codec_context" kindref="compound">AVCodecContext</ref> flags2 option). The data is the <ref refid="struct_a_v_motion_vector" kindref="compound">AVMotionVector</ref> struct defined in <ref refid="motion__vector_8h_source" kindref="compound">libavutil/motion_vector.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6b0b1ee4315f322922710f65d02a146b" prot="public">
+          <name>AV_FRAME_DATA_SKIP_SAMPLES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Recommends skipping the specified number of samples. This is exported only if the &quot;skip_manual&quot; <ref refid="struct_a_v_option" kindref="compound">AVOption</ref> is set in libavcodec. This has the same format as AV_PKT_DATA_SKIP_SAMPLES. <programlisting><codeline><highlight class="normal">u32le<sp/>number<sp/>of<sp/>samples<sp/>to<sp/>skip<sp/>from<sp/>start<sp/>of<sp/>this<sp/>packet</highlight></codeline>
+<codeline><highlight class="normal">u32le<sp/>number<sp/>of<sp/>samples<sp/>to<sp/>skip<sp/>from<sp/>end<sp/>of<sp/>this<sp/>packet</highlight></codeline>
+<codeline><highlight class="normal">u8<sp/><sp/><sp/><sp/>reason<sp/>for<sp/>start<sp/>skip</highlight></codeline>
+<codeline><highlight class="normal">u8<sp/><sp/><sp/><sp/>reason<sp/>for<sp/>end<sp/><sp/><sp/>skip<sp/>(0=padding<sp/>silence,<sp/>1=convergence)</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca51023c847159dcc08776f9dcee5e0c90" prot="public">
+          <name>AV_FRAME_DATA_AUDIO_SERVICE_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This side data must be associated with an audio frame and corresponds to enum <ref refid="defs_8h_1adcff0a5957a99f6fdf1eec9d5a3fdfaf" kindref="member">AVAudioServiceType</ref> defined in <ref refid="avcodec_8h" kindref="compound">avcodec.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca6e305f92e325fbd219527452048f16cb" prot="public">
+          <name>AV_FRAME_DATA_MASTERING_DISPLAY_METADATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mastering display metadata associated with a video frame. The payload is an <ref refid="struct_a_v_mastering_display_metadata" kindref="compound">AVMasteringDisplayMetadata</ref> type and contains information about the mastering display color volume. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca03982b828a1069c895d16cda4b3e9fd4" prot="public">
+          <name>AV_FRAME_DATA_GOP_TIMECODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The GOP timecode in 25 bit timecode format. Data format is 64-bit integer. This is set on the first frame of a GOP that has a temporal reference of 0. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca12806c5fd4b37dca88312c61965f33e8" prot="public">
+          <name>AV_FRAME_DATA_SPHERICAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The data represents the <ref refid="struct_a_v_spherical_mapping" kindref="compound">AVSphericalMapping</ref> structure defined in <ref refid="spherical_8h" kindref="compound">libavutil/spherical.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca311f0afd2dded92ef68ae00f7711aa2d" prot="public">
+          <name>AV_FRAME_DATA_CONTENT_LIGHT_LEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Content light level (based on CTA-861.3). This payload contains data in the form of the <ref refid="struct_a_v_content_light_metadata" kindref="compound">AVContentLightMetadata</ref> struct. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca8ef8866b8c04c54c630479bc163196ae" prot="public">
+          <name>AV_FRAME_DATA_ICC_PROFILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The data contains an ICC profile as an opaque octet buffer following the format described by ISO 15076-1 with an optional name defined in the metadata key entry &quot;name&quot;. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca9f4e4ed5a874d1089ec07c384b81bb70" prot="public">
+          <name>AV_FRAME_DATA_S12M_TIMECODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Timecode which conforms to SMPTE ST 12-1. The data is an array of 4 uint32_t where the first uint32_t describes how many (1-3) of the other timecodes are used. The timecode format is described in the documentation of <ref refid="timecode_8h_1ae3045b65cc54f72e9d53d3c97a5f4da5" kindref="member">av_timecode_get_smpte_from_framenum()</ref> function in <ref refid="timecode_8h" kindref="compound">libavutil/timecode.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca624c3831cce31e4fcd3d2dc77c10b226" prot="public">
+          <name>AV_FRAME_DATA_DYNAMIC_HDR_PLUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HDR dynamic metadata associated with a video frame. The payload is an <ref refid="struct_a_v_dynamic_h_d_r_plus" kindref="compound">AVDynamicHDRPlus</ref> type and contains information for color volume transform - application 4 of SMPTE 2094-40:2016 standard. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcaf525ec92d2c5a78d44950bc3f29972aa" prot="public">
+          <name>AV_FRAME_DATA_REGIONS_OF_INTEREST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Regions Of Interest, the data is an array of <ref refid="struct_a_v_region_of_interest" kindref="compound">AVRegionOfInterest</ref> type, the number of array element is implied by AVFrameSideData.size / <ref refid="struct_a_v_region_of_interest_1a5c75595b7003be167ed674bf565654db" kindref="member">AVRegionOfInterest.self_size</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca807dbafb2944aa9be03d787d05a00ed1" prot="public">
+          <name>AV_FRAME_DATA_VIDEO_ENC_PARAMS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Encoding parameters for a video frame, as described by <ref refid="struct_a_v_video_enc_params" kindref="compound">AVVideoEncParams</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca4f2dcaee18e5ffed8ff4ab1cc3b326aa" prot="public">
+          <name>AV_FRAME_DATA_SEI_UNREGISTERED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>User data unregistered metadata associated with a video frame. This is the H.26[45] UDU SEI message, and shouldn&apos;t be used for any other purpose The data is stored as uint8_t in AVFrameSideData.data which is 16 bytes of uuid_iso_iec_11578 followed by AVFrameSideData.size - 16 bytes of user_data_payload_byte. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7858862e9cea434d72603c9cbf3f18c6" prot="public">
+          <name>AV_FRAME_DATA_FILM_GRAIN_PARAMS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Film grain parameters for a frame, described by <ref refid="struct_a_v_film_grain_params" kindref="compound">AVFilmGrainParams</ref>. Must be present for every frame which should have film grain applied.</para>
+<para>May be present multiple times, for example when there are multiple alternative parameter sets for different video signal characteristics. The user should select the most appropriate set for the application. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca835a1d022b9a056b1664633051a70084" prot="public">
+          <name>AV_FRAME_DATA_DETECTION_BBOXES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bounding boxes for object detection and classification, as described by <ref refid="struct_a_v_detection_b_box_header" kindref="compound">AVDetectionBBoxHeader</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcabee059bcc539a78f52f60f4cc67bb366" prot="public">
+          <name>AV_FRAME_DATA_DOVI_RPU_BUFFER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dolby Vision RPU raw data, suitable for passing to x265 or other libraries. Array of uint8_t, with NAL emulation bytes intact. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca09f6f2010793a80251acebf166036392" prot="public">
+          <name>AV_FRAME_DATA_DOVI_METADATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Parsed Dolby Vision metadata, suitable for passing to a software implementation. The payload is the <ref refid="struct_a_v_d_o_v_i_metadata" kindref="compound">AVDOVIMetadata</ref> struct defined in <ref refid="dovi__meta_8h" kindref="compound">libavutil/dovi_meta.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca17d5e6a551f7f455d58669c51baa0e73" prot="public">
+          <name>AV_FRAME_DATA_DYNAMIC_HDR_VIVID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HDR Vivid dynamic metadata associated with a video frame. The payload is an <ref refid="struct_a_v_dynamic_h_d_r_vivid" kindref="compound">AVDynamicHDRVivid</ref> type and contains information for color volume transform - CUVA 005.1-2021. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca3cf626a91057faf08bc0df39d1e8d390" prot="public">
+          <name>AV_FRAME_DATA_AMBIENT_VIEWING_ENVIRONMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ambient viewing environment metadata, as defined by H.274. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bcad832bf1563f5eafaa92c34f10c3984fa" prot="public">
+          <name>AV_FRAME_DATA_VIDEO_HINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Provide encoder-specific hinting information about changed/unchanged portions of a frame. It can be used to pass information about which macroblocks can be skipped because they didn&apos;t change from the corresponding ones in the previous frame. This could be useful for applications which know this information in advance to speed up encoding. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca135f55ad6a09843a1a76fa4711a46225" prot="public">
+          <name>AV_FRAME_DATA_LCEVC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Raw LCEVC payload data, as a uint8_t array, with NAL emulation bytes intact. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca1221f015c50d13221836656b01870cad" prot="public">
+          <name>AV_FRAME_DATA_VIEW_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This side data must be associated with a video frame. The presence of this side data indicates that the video stream is composed of multiple views (e.g. stereoscopic 3D content, cf. H.264 Annex H or H.265 Annex G). The data is an int storing the view ID. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca7139570f49a5c7e2866673ebdd2e8c89" prot="public">
+          <name>AV_FRAME_DATA_3D_REFERENCE_DISPLAYS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>This side data contains information about the reference display width(s) and reference viewing distance(s) as well as information about the corresponding reference stereo pair(s), i.e., the pair(s) of views to be displayed for the viewer&apos;s left and right eyes on the reference display at the reference viewing distance. The payload is the <ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref> struct defined in <ref refid="tdrdi_8h" kindref="compound">libavutil/tdrdi.h</ref>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1ggae01fa7e427274293aacdf2adc17076bca07e410bb65178326c8874bf6a29d49be" prot="public">
+          <name>AV_FRAME_DATA_EXIF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Extensible image file format metadata. The payload is a buffer containing EXIF metadata, starting with either 49 49 2a 00, or 4d 4d 00 2a. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="49" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="49" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__frame_1ga612627d8f03d52317992979dfa151d76" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVActiveFormatDescription</name>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76a0e9a49946d70eb6ca77cf937ed1a342c" prot="public">
+          <name>AV_AFD_SAME</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76ab118e63239595dceb50deea7351dc1cb" prot="public">
+          <name>AV_AFD_4_3</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76ad8f8850e69a05765363a4a833adc97d8" prot="public">
+          <name>AV_AFD_16_9</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76a0da920de1ba63c73fabe1b9878477a13" prot="public">
+          <name>AV_AFD_14_9</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76a65edb00603a0d7fdb37cecac94b62cc5" prot="public">
+          <name>AV_AFD_4_3_SP_14_9</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76a488ce7ad4833c96497000dd03b8f0b55" prot="public">
+          <name>AV_AFD_16_9_SP_14_9</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga612627d8f03d52317992979dfa151d76aac53fd979d24b22c0673d1a0bc59e304" prot="public">
+          <name>AV_AFD_SP_4_3</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="265" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="265" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AVSideDataProps</name>
+        <enumvalue id="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a14eb5241a0829dae8c498e543efddcd4" prot="public">
+          <name>AV_SIDE_DATA_PROP_GLOBAL</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The side data type can be used in stream-global structures. Side data types without this property are only meaningful on per-frame basis. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4afe5a7db8886a9b16966ce8a911479b7a" prot="public">
+          <name>AV_SIDE_DATA_PROP_MULTI</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Multiple instances of this side data type can be meaningfully present in a single side data array. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a65f8eca536c38b5164f7ce1b59395d45" prot="public">
+          <name>AV_SIDE_DATA_PROP_SIZE_DEPENDENT</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Side data depends on the video dimensions. Side data with this property loses its meaning when rescaling or cropping the image, unless either recomputed or adjusted to the new resolution. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a8accfbdd336b39c3c290251d8ea4e456" prot="public">
+          <name>AV_SIDE_DATA_PROP_COLOR_DEPENDENT</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Side data depends on the video color space. Side data with this property loses its meaning when changing the video color encoding, e.g. by adapting to a different set of primaries or transfer characteristics. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lavu__frame_1gga2158cb5dc01d422ee1d9a22c64a71de4a3a95a7b99d26de3c17a1e67e3935b141" prot="public">
+          <name>AV_SIDE_DATA_PROP_CHANNEL_DEPENDENT</name>
+          <initializer>= (1 &lt;&lt; 4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Side data depends on the channel layout. Side data with this property loses its meaning when downmixing or upmixing, unless either recomputed or adjusted to the new layout. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="290" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="290" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lavu__frame_1ga433befa4fa4a74d3d9db1cdd36f07e69" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <enumvalue id="group__lavu__frame_1gga433befa4fa4a74d3d9db1cdd36f07e69a8df6ec39909b8d97c0a6d2d8465d2e0f" prot="public">
+          <name>AV_FRAME_CROP_UNALIGNED</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Apply the maximum possible cropping, even if it requires setting the <ref refid="struct_a_v_frame_1a1d0f65014a8d1bf78cec8cbed2304992" kindref="member">AVFrame.data</ref>[] entries to unaligned pointers. Passing unaligned data to FFmpeg API is generally not allowed, and causes undefined behavior (such as crashes). You can pass unaligned data only to FFmpeg APIs that are explicitly documented to accept it. Use this flag only if you absolutely know what you are doing. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags for frame cropping. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="993" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="993" bodyend="1003"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__frame_1ga1b8cd016bc806e5420ffe97edc140d12" prot="public" static="no">
+        <type>struct AVFrameSideData</type>
+        <definition>typedef struct AVFrameSideData AVFrameSideData</definition>
+        <argsstring></argsstring>
+        <name>AVFrameSideData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure to hold side data for an <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref>.</para>
+<para>sizeof(AVFrameSideData) is not a part of the public ABI, so new fields may be added to the end with a minor bump. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="288" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__frame_1gaac9bdc2153d20d51eb842a8f23d5afe2" prot="public" static="no">
+        <type>struct AVSideDataDescriptor</type>
+        <definition>typedef struct AVSideDataDescriptor AVSideDataDescriptor</definition>
+        <argsstring></argsstring>
+        <name>AVSideDataDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This struct describes the properties of a side data type. Its instance corresponding to a given type can be obtained from <ref refid="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" kindref="member">av_frame_side_data_desc()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="340" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__frame_1ga47b64dcbdc8b7a3d2469ed0e14654a5f" prot="public" static="no">
+        <type>struct AVRegionOfInterest</type>
+        <definition>typedef struct AVRegionOfInterest AVRegionOfInterest</definition>
+        <argsstring></argsstring>
+        <name>AVRegionOfInterest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure describing a single Region Of Interest.</para>
+<para>When multiple regions are defined in a single side-data block, they should be ordered from most to least important - some encoders are only capable of supporting a limited number of distinct regions, so will have to truncate the list.</para>
+<para>When overlapping regions are defined, the first region containing a given area of the frame applies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="396" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__frame_1gadb9d87a8956751b4fd71791105d65c52" prot="public" static="no">
+        <type>struct AVFrame</type>
+        <definition>typedef struct AVFrame AVFrame</definition>
+        <argsstring></argsstring>
+        <name>AVFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure describes decoded (raw) audio or video data.</para>
+<para><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> must be allocated using <ref refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" kindref="member">av_frame_alloc()</ref>. Note that this only allocates the <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> itself, the buffers for the data must be managed through other means (see below). <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> must be freed with <ref refid="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" kindref="member">av_frame_free()</ref>.</para>
+<para><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> is typically allocated once and then reused multiple times to hold different data (e.g. a single <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> to hold frames received from a decoder). In such a case, <ref refid="group__lavu__frame_1ga0a2b687f9c1c5ed0089b01fd61227108" kindref="member">av_frame_unref()</ref> will free any references held by the frame and reset it to its original clean state before it is reused again.</para>
+<para>The data described by an <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> is usually reference counted through the <ref refid="group__lavu__buffer_1ga501d49df442180d584f255aa97b2549d" kindref="member">AVBuffer</ref> API. The underlying buffer references are stored in <ref refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" kindref="member">AVFrame.buf</ref> / <ref refid="struct_a_v_frame_1a254a144d113ceedc003ec1547cc5bd54" kindref="member">AVFrame.extended_buf</ref>. An <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> is considered to be reference counted if at least one reference is set, i.e. if <ref refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" kindref="member">AVFrame.buf</ref>[0] != NULL. In such a case, every single data plane must be contained in one of the buffers in <ref refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" kindref="member">AVFrame.buf</ref> or <ref refid="struct_a_v_frame_1a254a144d113ceedc003ec1547cc5bd54" kindref="member">AVFrame.extended_buf</ref>. There may be a single buffer for all the data, or one separate buffer for each plane, or anything in between.</para>
+<para>sizeof(AVFrame) is not a part of the public ABI, so new fields may be added to the end with a minor bump.</para>
+<para>Fields can be accessed through AVOptions, the name string used, matches the C structure field name for fields accessible through AVOptions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="783" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+        <definition>AVFrame * av_frame_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>av_frame_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate an <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> and set its fields to default values. The resulting struct must be freed using <ref refid="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" kindref="member">av_frame_free()</ref>.</para>
+<para><simplesect kind="return"><para>An <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> filled with default values or NULL on failure.</para>
+</simplesect>
+<simplesect kind="note"><para>this only allocates the <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> itself, not the data buffers. Those must be allocated through other means, e.g. with <ref refid="group__lavu__frame_1ga6b1acbfa82c79bf7fd78d868572f0ceb" kindref="member">av_frame_get_buffer()</ref> or manually. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="796" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="796" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga979d73f3228814aee56aeca0636e37cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_free</definition>
+        <argsstring>(AVFrame **frame)</argsstring>
+        <name>av_frame_free</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> **</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the frame and any dynamically allocated objects in it, e.g. extended_data. If the frame is reference counted, it will be unreferenced first.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame to be freed. The pointer will be set to NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="805" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="805" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_ref</definition>
+        <argsstring>(AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>av_frame_ref</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up a new reference to the data described by the source frame.</para>
+<para>Copy frame properties from src to dst and create a new reference for each <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> from src.</para>
+<para>If src is not reference counted, new buffers are allocated and the data is copied.</para>
+<para><simplesect kind="warning"><para>: dst MUST have been either unreferenced with av_frame_unref(dst), or newly allocated with <ref refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" kindref="member">av_frame_alloc()</ref> before calling this function, or undefined behavior will occur.</para>
+</simplesect>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="822" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="822" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga2a85f06e2b9f44a1de63032cad51e922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_replace</definition>
+        <argsstring>(AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>av_frame_replace</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure the destination frame refers to the same data described by the source frame, either by creating a new reference for each <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> from src if they differ from those in dst, by allocating new buffers and copying data if src is not reference counted, or by unrefencing it if src is empty.</para>
+<para>Frame properties on dst will be replaced by those from src.</para>
+<para><simplesect kind="return"><para>0 on success, a negative AVERROR on error. On error, dst is unreferenced. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="835" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="835" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gadb917e6f2b61717390baf2009fe66c06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+        <definition>AVFrame * av_frame_clone</definition>
+        <argsstring>(const AVFrame *src)</argsstring>
+        <name>av_frame_clone</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new frame that references the same data as src.</para>
+<para>This is a shortcut for <ref refid="group__lavu__frame_1gac778d9609ac0c42d0a9445e549de172e" kindref="member">av_frame_alloc()</ref>+<ref refid="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" kindref="member">av_frame_ref()</ref>.</para>
+<para><simplesect kind="return"><para>newly created <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> on success, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="844" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="844" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga0a2b687f9c1c5ed0089b01fd61227108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_unref</definition>
+        <argsstring>(AVFrame *frame)</argsstring>
+        <name>av_frame_unref</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unreference all the buffers referenced by frame and reset the frame fields. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="849" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="849" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga709e62bc2917ffd84c5c0f4e1dfc48f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_move_ref</definition>
+        <argsstring>(AVFrame *dst, AVFrame *src)</argsstring>
+        <name>av_frame_move_ref</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move everything contained in src to dst and reset src.</para>
+<para><simplesect kind="warning"><para>: dst is not unreferenced, but directly overwritten without reading or deallocating its contents. Call av_frame_unref(dst) manually before calling this function to ensure that no memory is leaked. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="858" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="858" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga6b1acbfa82c79bf7fd78d868572f0ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_get_buffer</definition>
+        <argsstring>(AVFrame *frame, int align)</argsstring>
+        <name>av_frame_get_buffer</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate new buffer(s) for audio or video data.</para>
+<para>The following fields must be set on frame before calling this function:<itemizedlist>
+<listitem><para>format (pixel format for video, sample format for audio)</para>
+</listitem><listitem><para>width and height for video</para>
+</listitem><listitem><para>nb_samples and ch_layout for audio</para>
+</listitem></itemizedlist>
+</para>
+<para>This function will fill <ref refid="struct_a_v_frame_1a1d0f65014a8d1bf78cec8cbed2304992" kindref="member">AVFrame.data</ref> and <ref refid="struct_a_v_frame_1a4a64d05cc676bfa8e18bf22d16c8a51f" kindref="member">AVFrame.buf</ref> arrays and, if necessary, allocate and fill <ref refid="struct_a_v_frame_1afca04d808393822625e09b5ba91c6756" kindref="member">AVFrame.extended_data</ref> and <ref refid="struct_a_v_frame_1a254a144d113ceedc003ec1547cc5bd54" kindref="member">AVFrame.extended_buf</ref>. For planar formats, one buffer will be allocated for each plane.</para>
+<para><simplesect kind="warning"><para>: if frame already has been allocated, calling this function will leak memory. In addition, undefined behavior can occur in certain cases.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame in which to store the new buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required buffer size and data pointer alignment. If equal to 0, alignment will be chosen automatically for the current CPU. It is highly recommended to pass 0 here unless you know what you are doing.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative AVERROR on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="884" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="884" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga3ba755bada5c3c8883361ef43fb5fb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_is_writable</definition>
+        <argsstring>(AVFrame *frame)</argsstring>
+        <name>av_frame_is_writable</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the frame data is writable.</para>
+<para><simplesect kind="return"><para>A positive value if the frame data is writable (which is true if and only if each of the underlying buffers has only one reference, namely the one stored in this frame). Return 0 otherwise.</para>
+</simplesect>
+If 1 is returned the answer is valid until <ref refid="group__lavu__buffer_1ga8a684b77a72519dd1e907457898626f1" kindref="member">av_buffer_ref()</ref> is called on any of the underlying AVBufferRefs (e.g. through <ref refid="group__lavu__frame_1ga88b0ecbc4eb3453eef3fbefa3bddeb7c" kindref="member">av_frame_ref()</ref> or directly).</para>
+<para><simplesect kind="see"><para><ref refid="group__lavu__frame_1gadd5417c06f5a6b419b0dbd8f0ff363fd" kindref="member">av_frame_make_writable()</ref>, <ref refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kindref="member">av_buffer_is_writable()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="898" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="898" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gadd5417c06f5a6b419b0dbd8f0ff363fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_make_writable</definition>
+        <argsstring>(AVFrame *frame)</argsstring>
+        <name>av_frame_make_writable</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure that the frame data is writable, avoiding data copy if possible.</para>
+<para>Do nothing if the frame is writable, allocate new buffers and copy the data if it is not. Non-refcounted frames behave as non-writable, i.e. a copy is always made.</para>
+<para><simplesect kind="return"><para>0 on success, a negative AVERROR on error.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lavu__frame_1ga3ba755bada5c3c8883361ef43fb5fb7a" kindref="member">av_frame_is_writable()</ref>, <ref refid="group__lavu__buffer_1ga060be34ace567ae378fd0a786e847053" kindref="member">av_buffer_is_writable()</ref>, <ref refid="group__lavu__buffer_1ga9c2a1be1b7bb80eec8613fdb62a19074" kindref="member">av_buffer_make_writable()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="912" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="912" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gaec4e92f6e1e75ffaf76e07586fb0c9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_copy</definition>
+        <argsstring>(AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>av_frame_copy</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the frame data from src to dst.</para>
+<para>This function does not allocate anything, dst must be already initialized and allocated with the same parameters as src.</para>
+<para>This function only copies the frame data (i.e. the contents of the data / extended data arrays), not any other properties.</para>
+<para><simplesect kind="return"><para>&gt;= 0 on success, a negative AVERROR on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="925" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="925" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gab9b275b114ace0db95c5796bc71f3012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_copy_props</definition>
+        <argsstring>(AVFrame *dst, const AVFrame *src)</argsstring>
+        <name>av_frame_copy_props</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy only &quot;metadata&quot; fields from src to dst.</para>
+<para>Metadata for the purpose of this function are those fields that do not affect the data layout in the buffers. E.g. pts, sample rate (for audio) or sample aspect ratio (for video), but not width/height or channel layout. Side data is also copied. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="935" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="935" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gaffbf089810dcaeebc6455144dab84567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+        <definition>AVBufferRef * av_frame_get_plane_buffer</definition>
+        <argsstring>(const AVFrame *frame, int plane)</argsstring>
+        <name>av_frame_get_plane_buffer</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the buffer reference a given data plane is stored in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame to get the plane&apos;s buffer from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the data plane of interest in frame-&gt;extended_data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the buffer reference that contains the plane or NULL if the input frame is not valid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="946" column="13" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="946" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga9e0cf2909ab6d787845ab6326cd3fb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>AVFrameSideData * av_frame_new_side_data</definition>
+        <argsstring>(AVFrame *frame, enum AVFrameSideDataType type, size_t size)</argsstring>
+        <name>av_frame_new_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new side data to a frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a frame to which the side data should be added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the added side data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the side data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly added side data on success, NULL on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="957" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="957" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gab2aafcdaafcb1d3e7ce2d0d6f733546a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>AVFrameSideData * av_frame_new_side_data_from_buf</definition>
+        <argsstring>(AVFrame *frame, enum AVFrameSideDataType type, AVBufferRef *buf)</argsstring>
+        <name>av_frame_new_side_data_from_buf</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new side data to a frame from an existing <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a frame to which the side data should be added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of the added side data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> to add as side data. The ownership of the reference is transferred to the frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly added side data on success, NULL on error. On failure the frame is unchanged and the <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> remains owned by the caller. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="973" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="973" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga0e3085c5a7aa8e8867ec6322983d3bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>AVFrameSideData * av_frame_get_side_data</definition>
+        <argsstring>(const AVFrame *frame, enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_get_side_data</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a pointer to the side data of a given type on success, NULL if there is no side data with such type in this frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="981" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="981" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga132d6c01d0a21e5b48b96cd7c988de91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_remove_side_data</definition>
+        <argsstring>(AVFrame *frame, enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_remove_side_data</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove and free all side data instances of the given type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="987" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="987" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gaea6d378ff15d984d4eb67b462b7d70b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_apply_cropping</definition>
+        <argsstring>(AVFrame *frame, int flags)</argsstring>
+        <name>av_frame_apply_cropping</name>
+        <param>
+          <type><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crop the given video <ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> according to its crop_left/crop_top/crop_right/ crop_bottom fields. If cropping is successful, the function will adjust the data pointers and the width/height fields, and set the crop fields to 0.</para>
+<para>In all cases, the cropping boundaries will be rounded to the inherent alignment of the pixel format. In some cases, such as for opaque hwaccel formats, the left/top cropping is ignored. The crop fields are set to 0 even if the cropping was rounded or ignored.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame which should be cropped </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some combination of AV_FRAME_CROP_* flags, or 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&gt;= 0 on success, a negative AVERROR on error. If the cropping fields were invalid, AVERROR(ERANGE) is returned, and nothing is changed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1021" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1021" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gaff674f7f4b25bdacf32fc8f3174138ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * av_frame_side_data_name</definition>
+        <argsstring>(enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_side_data_name</name>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a string identifying the side data type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1026" column="12" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1026" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gad5311600e275f85cee3fb21997e6f4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_side_data_descriptor" kindref="compound">AVSideDataDescriptor</ref> *</type>
+        <definition>const AVSideDataDescriptor * av_frame_side_data_desc</definition>
+        <argsstring>(enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_side_data_desc</name>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>side data descriptor corresponding to a given side data type, NULL when not available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1032" column="28" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1032" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga286128e06e77eb1525859970bccc0bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_side_data_free</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd)</argsstring>
+        <name>av_frame_side_data_free</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free all side data entries and their contents, then zeroes out the values which the pointers are pointing to.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to array of side data to free. Will be set to NULL upon return. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an integer containing the number of entries in the array. Will be set to 0 upon return. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1043" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1043" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga0b06737fb259ca0ba295c4307c470601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>AVFrameSideData * av_frame_side_data_new</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd, enum AVFrameSideDataType type, size_t size, unsigned int flags)</argsstring>
+        <name>av_frame_side_data_new</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add new side data entry to an array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to array of side data to which to add another entry, or to NULL in order to start a new array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an integer containing the number of entries in the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the added side data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the side data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some combination of AV_FRAME_SIDE_DATA_FLAG_* flags, or 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly added side data on success, NULL on error. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_UNIQUE being set, entries of matching <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref> will be removed before the addition is attempted. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_REPLACE being set, if an entry of the same type already exists, it will be replaced instead. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1078" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1078" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga66aec0fe237e1eda2ca6409fa56fac2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>AVFrameSideData * av_frame_side_data_add</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd, enum AVFrameSideDataType type, AVBufferRef **buf, unsigned int flags)</argsstring>
+        <name>av_frame_side_data_add</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> **</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new side data entry to an array from an existing <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to array of side data to which to add another entry, or to NULL in order to start a new array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an integer containing the number of entries in the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the added side data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> to add to the array. On success, the function takes ownership of the <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref> and *buf is set to NULL, unless AV_FRAME_SIDE_DATA_FLAG_NEW_REF is set in which case the ownership will remain with the caller. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some combination of AV_FRAME_SIDE_DATA_FLAG_* flags, or 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>newly added side data on success, NULL on error. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_UNIQUE being set, entries of matching <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref> will be removed before the addition is attempted. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_REPLACE being set, if an entry of the same type already exists, it will be replaced instead. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1104" column="17" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1104" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gada6f618b4b43c51d5816dbe0d0acf0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int av_frame_side_data_clone</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd, const AVFrameSideData *src, unsigned int flags)</argsstring>
+        <name>av_frame_side_data_clone</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new side data entry to an array based on existing side data, taking a reference towards the contained <ref refid="struct_a_v_buffer_ref" kindref="compound">AVBufferRef</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to array of side data to which to add another entry, or to NULL in order to start a new array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an integer containing the number of entries in the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>side data to be cloned, with a new reference utilized for the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some combination of AV_FRAME_SIDE_DATA_FLAG_* flags, or 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>negative error code on failure, &gt;=0 on success. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_UNIQUE being set, entries of matching <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref> will be removed before the addition is attempted. </para>
+</simplesect>
+<simplesect kind="note"><para>In case of AV_FRAME_SIDE_DATA_FLAG_REPLACE being set, if an entry of the same type already exists, it will be replaced instead. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1127" column="5" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1127" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>const AVFrameSideData * av_frame_side_data_get_c</definition>
+        <argsstring>(const AVFrameSideData *const *sd, const int nb_sd, enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_side_data_get_c</name>
+        <param>
+          <type>const <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *const *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a side data entry of a specific type from an array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of side data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_sd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer containing the number of entries in the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of side data to be queried</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the side data of a given type on success, NULL if there is no side data with such type in this set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1140" column="23" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1140" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1gafca60a503a1c0fa125e0bf6a89230ed0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *</type>
+        <definition>static const AVFrameSideData * av_frame_side_data_get</definition>
+        <argsstring>(AVFrameSideData *const *sd, const int nb_sd, enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_side_data_get</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> *const *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper around <ref refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" kindref="member">av_frame_side_data_get_c()</ref> to workaround the limitation that for any type T the conversion from T * const * to const T * const * is not performed automatically in C. <simplesect kind="see"><para><ref refid="group__lavu__frame_1ga9eac042c6e899ad7377a2b2ec4ee0624" kindref="member">av_frame_side_data_get_c()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1151" column="23" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="1151" bodyend="1157"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga8da197d8b787c10ff455a1dc9ae570df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_side_data_remove</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd, enum AVFrameSideDataType type)</argsstring>
+        <name>av_frame_side_data_remove</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="group__lavu__frame_1gae01fa7e427274293aacdf2adc17076bc" kindref="member">AVFrameSideDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove and free all side data instances of the given type from an array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1162" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1162" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__frame_1ga83094313d4561ecbbcfbe0f9c9ed9be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void av_frame_side_data_remove_by_props</definition>
+        <argsstring>(AVFrameSideData ***sd, int *nb_sd, int props)</argsstring>
+        <name>av_frame_side_data_remove_by_props</name>
+        <param>
+          <type><ref refid="struct_a_v_frame_side_data" kindref="compound">AVFrameSideData</ref> ***</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>nb_sd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove and free all side data instances that match any of the given side data properties. (See enum <ref refid="group__lavu__frame_1ga2158cb5dc01d422ee1d9a22c64a71de4" kindref="member">AVSideDataProps</ref>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1169" column="6" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" declline="1169" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__frame_1gafbda17a9176996d64c06ddb3cc435dc9" prot="public" static="no">
+        <name>AV_FRAME_SIDE_DATA_FLAG_UNIQUE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove existing entries before adding new ones. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1048" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame_1ga3973b2fba408a994cf796ff5f5fa91a7" prot="public" static="no">
+        <name>AV_FRAME_SIDE_DATA_FLAG_REPLACE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Don&apos;t add a new entry if another of the same type exists. Applies only for side data types without the AV_SIDE_DATA_PROP_MULTI prop. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1053" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lavu__frame_1ga649a4cc3a2f61d845ea4b0497f3273a7" prot="public" static="no">
+        <name>AV_FRAME_SIDE_DATA_FLAG_NEW_REF</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new reference to the passed in buffer instead of taking ownership of it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" line="1058" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/frame.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_a_v_frame" kindref="compound">AVFrame</ref> is an abstraction for reference-counted raw multimedia data. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

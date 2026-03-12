@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="fr">
+  <compounddef id="structMediaContext" kind="struct" language="C++" prot="public">
+    <compoundname>MediaContext</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMediaContext_1ab892106bd6703ba7b70777041590c0d3" prot="public" static="no" mutable="no">
+        <type>AVFormatContext *</type>
+        <definition>AVFormatContext* MediaContext::formatContext</definition>
+        <argsstring></argsstring>
+        <name>formatContext</name>
+        <qualifiedname>MediaContext::formatContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="168" column="17" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a94d1da600f42bcef1268140dd4be7653" prot="public" static="no" mutable="no">
+        <type><ref refid="structStreamDataContext" kindref="compound">StreamDataContext</ref></type>
+        <definition>StreamDataContext MediaContext::streams[STREAM_COUNT]</definition>
+        <argsstring>[STREAM_COUNT]</argsstring>
+        <name>streams</name>
+        <qualifiedname>MediaContext::streams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="169" column="19" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a81b82c8ee7b79211614dd72fc370e5e0" prot="public" static="no" mutable="no">
+        <type>struct SwsContext *</type>
+        <definition>struct SwsContext* MediaContext::swsContext</definition>
+        <argsstring></argsstring>
+        <name>swsContext</name>
+        <qualifiedname>MediaContext::swsContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="172" column="18" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1ab4e7f895e4ee5db8e4431c8180c8f2a2" prot="public" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image MediaContext::videoOutputImage</definition>
+        <argsstring></argsstring>
+        <name>videoOutputImage</name>
+        <qualifiedname>MediaContext::videoOutputImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="173" column="7" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a86666a64afacb0f68fdaa1f880f1126e" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MediaContext::alignedRgbData[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>alignedRgbData</name>
+        <qualifiedname>MediaContext::alignedRgbData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="174" column="9" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a63416d01b4662ac0b446b77ff12a7f2c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaContext::alignedRgbLinesize[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>alignedRgbLinesize</name>
+        <qualifiedname>MediaContext::alignedRgbLinesize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="175" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a5ec0de4a7f3bbea303313d42d74e9efd" prot="public" static="no" mutable="no">
+        <type>struct SwrContext *</type>
+        <definition>struct SwrContext* MediaContext::swrContext</definition>
+        <argsstring></argsstring>
+        <name>swrContext</name>
+        <qualifiedname>MediaContext::swrContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="178" column="18" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a0f9aba9daf1b05011095447afda3ae62" prot="public" static="no" mutable="no">
+        <type><ref refid="structBuffer" kindref="compound">Buffer</ref></type>
+        <definition>Buffer MediaContext::audioOutputBuffer</definition>
+        <argsstring></argsstring>
+        <name>audioOutputBuffer</name>
+        <qualifiedname>MediaContext::audioOutputBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="179" column="8" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a81b2e16a8f79d42cfcd8a8a1d280119c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaContext::audioOutputFmt</definition>
+        <argsstring></argsstring>
+        <name>audioOutputFmt</name>
+        <qualifiedname>MediaContext::audioOutputFmt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="180" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a4ab752f71e7630a42795790b803e451e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaContext::audioMaxUpdateSize</definition>
+        <argsstring></argsstring>
+        <name>audioMaxUpdateSize</name>
+        <qualifiedname>MediaContext::audioMaxUpdateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="181" column="5" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1aeb1446447542ba812ccc1cbd59192f8f" prot="public" static="no" mutable="no">
+        <type>AVPacket *</type>
+        <definition>AVPacket* MediaContext::avPacket</definition>
+        <argsstring></argsstring>
+        <name>avPacket</name>
+        <qualifiedname>MediaContext::avPacket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="184" column="10" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1ac80583183d7c6bd6f482bac355a4e419" prot="public" static="no" mutable="no">
+        <type>AVFrame *</type>
+        <definition>AVFrame* MediaContext::avFrame</definition>
+        <argsstring></argsstring>
+        <name>avFrame</name>
+        <qualifiedname>MediaContext::avFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="185" column="9" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1ad6678ae2a3a9f08c740dcb093fbeec50" prot="public" static="no" mutable="no">
+        <type>MediaState</type>
+        <definition>MediaState MediaContext::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>MediaContext::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="188" column="12" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a28d1151a7a7fd222f97df538271eb8d5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MediaContext::timePos</definition>
+        <argsstring></argsstring>
+        <name>timePos</name>
+        <qualifiedname>MediaContext::timePos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="189" column="8" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMediaContext_1a62513f28a4bae43263471eb9912aba5f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MediaContext::loopPlay</definition>
+        <argsstring></argsstring>
+        <name>loopPlay</name>
+        <qualifiedname>MediaContext::loopPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="190" column="6" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>Buffer</label>
+        <link refid="structBuffer"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>BufferState</label>
+        <link refid="structBufferState"/>
+      </node>
+      <node id="1">
+        <label>MediaContext</label>
+        <link refid="structMediaContext"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>streams</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>audioOutputBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PacketQueue</label>
+        <link refid="structPacketQueue"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StreamDataContext</label>
+        <link refid="structStreamDataContext"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pendingPackets</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" line="166" column="1" bodyfile="/home/loup/CLionProjects/ClassSynchroniseurMultiVideo/include/raymedia/raymedia.c" bodystart="167" bodyend="191"/>
+    <listofallmembers>
+      <member refid="structMediaContext_1a86666a64afacb0f68fdaa1f880f1126e" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>alignedRgbData</name></member>
+      <member refid="structMediaContext_1a63416d01b4662ac0b446b77ff12a7f2c" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>alignedRgbLinesize</name></member>
+      <member refid="structMediaContext_1a4ab752f71e7630a42795790b803e451e" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>audioMaxUpdateSize</name></member>
+      <member refid="structMediaContext_1a0f9aba9daf1b05011095447afda3ae62" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>audioOutputBuffer</name></member>
+      <member refid="structMediaContext_1a81b2e16a8f79d42cfcd8a8a1d280119c" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>audioOutputFmt</name></member>
+      <member refid="structMediaContext_1ac80583183d7c6bd6f482bac355a4e419" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>avFrame</name></member>
+      <member refid="structMediaContext_1aeb1446447542ba812ccc1cbd59192f8f" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>avPacket</name></member>
+      <member refid="structMediaContext_1ab892106bd6703ba7b70777041590c0d3" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>formatContext</name></member>
+      <member refid="structMediaContext_1a62513f28a4bae43263471eb9912aba5f" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>loopPlay</name></member>
+      <member refid="structMediaContext_1ad6678ae2a3a9f08c740dcb093fbeec50" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>state</name></member>
+      <member refid="structMediaContext_1a94d1da600f42bcef1268140dd4be7653" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>streams</name></member>
+      <member refid="structMediaContext_1a5ec0de4a7f3bbea303313d42d74e9efd" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>swrContext</name></member>
+      <member refid="structMediaContext_1a81b82c8ee7b79211614dd72fc370e5e0" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>swsContext</name></member>
+      <member refid="structMediaContext_1a28d1151a7a7fd222f97df538271eb8d5" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>timePos</name></member>
+      <member refid="structMediaContext_1ab4e7f895e4ee5db8e4431c8180c8f2a2" prot="public" virt="non-virtual"><scope>MediaContext</scope><name>videoOutputImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__adler32" kind="group">
+    <compoundname>lavu_adler32</compoundname>
+    <title>Adler-32</title>
+    <innerfile refid="adler32_8h">adler32.h</innerfile>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__adler32_1gaa1fc34ecef1c15fc65876c3a713ae7f4" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t AVAdler</definition>
+        <argsstring></argsstring>
+        <name>AVAdler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/adler32.h" line="42" column="18" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/adler32.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__adler32_1gac5c83e7d8c8cba8534f9b8ccbab072a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AVAdler</type>
+        <definition>AVAdler av_adler32_update</definition>
+        <argsstring>(AVAdler adler, const uint8_t *buf, size_t len) av_pure</argsstring>
+        <name>av_adler32_update</name>
+        <param>
+          <type>AVAdler</type>
+          <declname>adler</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the Adler32 checksum of a buffer.</para>
+<para>Passing the return value to a subsequent <ref refid="group__lavu__adler32_1gac5c83e7d8c8cba8534f9b8ccbab072a1" kindref="member">av_adler32_update()</ref> call allows the checksum of multiple buffers to be calculated as though they were concatenated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial checksum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to input buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of input buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>updated checksum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/adler32.h" line="56" column="9" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/adler32.h" declline="56" declcolumn="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Adler-32 hash function implementation. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="group__lavu__video__3d__reference__displays__info" kind="group">
+    <compoundname>lavu_video_3d_reference_displays_info</compoundname>
+    <title>3D Reference Displays Information</title>
+    <innerfile refid="tdrdi_8h">tdrdi.h</innerfile>
+    <innerclass refid="struct_a_v3_d_reference_displays_info" prot="public">AV3DReferenceDisplaysInfo</innerclass>
+    <innerclass refid="struct_a_v3_d_reference_display" prot="public">AV3DReferenceDisplay</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__lavu__video__3d__reference__displays__info_1gaa0599facf2d339a3798679ae6ae48d86" prot="public" static="no">
+        <type>struct AV3DReferenceDisplaysInfo</type>
+        <definition>typedef struct AV3DReferenceDisplaysInfo AV3DReferenceDisplaysInfo</definition>
+        <argsstring></argsstring>
+        <name>AV3DReferenceDisplaysInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure describes information about the reference display width(s) and reference viewing distance(s) as well as information about the corresponding reference stereo pair(s). See section G.14.3.2.3 of ITU-T H.265 for more information.</para>
+<para><simplesect kind="note"><para>The struct must be allocated with <ref refid="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" kindref="member">av_tdrdi_alloc()</ref> and its size is not a part of the public ABI. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="90" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__lavu__video__3d__reference__displays__info_1ga2254fb090a813e4f27c77ab6c9763571" prot="public" static="no">
+        <type>struct AV3DReferenceDisplay</type>
+        <definition>typedef struct AV3DReferenceDisplay AV3DReferenceDisplay</definition>
+        <argsstring></argsstring>
+        <name>AV3DReferenceDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data structure for single deference display information. It is allocated as a part of <ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref> and should be retrieved with av_tdrdi_get_display().</para>
+<para>sizeof(AV3DReferenceDisplay) is not a part of the ABI and new fields may be added to it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="142" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__lavu__video__3d__reference__displays__info_1gad155446607de0ef57306cc65996ec88a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>av_always_inline <ref refid="struct_a_v3_d_reference_display" kindref="compound">AV3DReferenceDisplay</ref> *</type>
+        <definition>static av_always_inline AV3DReferenceDisplay * av_tdrdi_get_display</definition>
+        <argsstring>(AV3DReferenceDisplaysInfo *tdrdi, unsigned int idx)</argsstring>
+        <name>av_tdrdi_get_display</name>
+        <param>
+          <type><ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref> *</type>
+          <declname>tdrdi</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="145" column="1" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="145" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lavu__video__3d__reference__displays__info_1ga11763da11ec8c9e915484c50a9e0576e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref> *</type>
+        <definition>AV3DReferenceDisplaysInfo * av_tdrdi_alloc</definition>
+        <argsstring>(unsigned int nb_displays, size_t *size)</argsstring>
+        <name>av_tdrdi_alloc</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>nb_displays</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate a <ref refid="struct_a_v3_d_reference_displays_info" kindref="compound">AV3DReferenceDisplaysInfo</ref> structure and initialize its fields to default values.</para>
+<para><simplesect kind="return"><para>the newly allocated struct or NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="158" column="27" declfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" declline="158" declcolumn="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__lavu__video__3d__reference__displays__info_1gaba5fc73f72c9172044043daed26c503f" prot="public" static="no">
+        <name>AV_TDRDI_MAX_NUM_REF_DISPLAY</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" line="43" column="9" bodyfile="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/tdrdi.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The 3D Reference Displays Information describes information about the reference display width(s) and reference viewing distance(s) as well as information about the corresponding reference stereo pair(s). </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

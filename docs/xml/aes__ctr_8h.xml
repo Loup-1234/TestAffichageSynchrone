@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="fr">
+  <compounddef id="aes__ctr_8h" kind="file" language="C++">
+    <compoundname>aes_ctr.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="attributes_8h" local="yes">attributes.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h</label>
+        <link refid="aes__ctr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <member refid="group__lavu__aes__ctr_1ga97028740606e579d336c51f7523ce2bf" kind="define"><name>AES_CTR_KEY_SIZE</name></member>
+      <member refid="group__lavu__aes__ctr_1ga0eb5971619f6b5631a2fe795f046d8d3" kind="define"><name>AES_CTR_IV_SIZE</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__lavu__aes__ctr_1ga1bb3a25bb42767fce2c4bc9ea94013a5" kind="function"><name>av_aes_ctr_alloc</name></member>
+      <member refid="group__lavu__aes__ctr_1ga37ef9fcf05bf94767b2bf18edca7ffda" kind="function"><name>av_aes_ctr_init</name></member>
+      <member refid="group__lavu__aes__ctr_1ga651580f87845fc3ba201abeecb5442e6" kind="function"><name>av_aes_ctr_free</name></member>
+      <member refid="group__lavu__aes__ctr_1ga5349eb4f428e432e09617c18195014d8" kind="function"><name>av_aes_ctr_crypt</name></member>
+      <member refid="group__lavu__aes__ctr_1gae4bb4bb038d0afeca34904bf32c47c34" kind="function"><name>av_aes_ctr_get_iv</name></member>
+      <member refid="group__lavu__aes__ctr_1ga93eb462d10972d618f3c7a3a945240eb" kind="function"><name>av_aes_ctr_set_random_iv</name></member>
+      <member refid="group__lavu__aes__ctr_1ga1d5f73ba7cd7ea7c09b21218c39951f9" kind="function"><name>av_aes_ctr_set_iv</name></member>
+      <member refid="group__lavu__aes__ctr_1ga5048a65b4d63738e454bd02751fe56e9" kind="function"><name>av_aes_ctr_set_full_iv</name></member>
+      <member refid="group__lavu__aes__ctr_1ga6c61a46cb240ef27f4c8f458255f6152" kind="function"><name>av_aes_ctr_increment_iv</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AES-CTR<sp/>cipher</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015<sp/>Eran<sp/>Kornblau<sp/>&lt;erankor<sp/>at<sp/>gmail<sp/>dot<sp/>com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>FFmpeg.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>FFmpeg<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>FFmpeg;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AVUTIL_AES_CTR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AVUTIL_AES_CTR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="attributes_8h" kindref="compound">attributes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AES_CTR_KEY_SIZE<sp/>(16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AES_CTR_IV_SIZE<sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVAESCTR;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="group__lavu__aes__ctr_1ga1bb3a25bb42767fce2c4bc9ea94013a5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AVAESCTR<sp/>*<ref refid="group__lavu__aes__ctr_1ga1bb3a25bb42767fce2c4bc9ea94013a5" kindref="member">av_aes_ctr_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="group__lavu__aes__ctr_1ga37ef9fcf05bf94767b2bf18edca7ffda" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga37ef9fcf05bf94767b2bf18edca7ffda" kindref="member">av_aes_ctr_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*key);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="group__lavu__aes__ctr_1ga651580f87845fc3ba201abeecb5442e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga651580f87845fc3ba201abeecb5442e6" kindref="member">av_aes_ctr_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group__lavu__aes__ctr_1ga5349eb4f428e432e09617c18195014d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga5349eb4f428e432e09617c18195014d8" kindref="member">av_aes_ctr_crypt</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a,<sp/>uint8_t<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group__lavu__aes__ctr_1gae4bb4bb038d0afeca34904bf32c47c34" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/><ref refid="group__lavu__aes__ctr_1gae4bb4bb038d0afeca34904bf32c47c34" kindref="member">av_aes_ctr_get_iv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group__lavu__aes__ctr_1ga93eb462d10972d618f3c7a3a945240eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga93eb462d10972d618f3c7a3a945240eb" kindref="member">av_aes_ctr_set_random_iv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group__lavu__aes__ctr_1ga1d5f73ba7cd7ea7c09b21218c39951f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga1d5f73ba7cd7ea7c09b21218c39951f9" kindref="member">av_aes_ctr_set_iv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>iv);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="group__lavu__aes__ctr_1ga5048a65b4d63738e454bd02751fe56e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga5048a65b4d63738e454bd02751fe56e9" kindref="member">av_aes_ctr_set_full_iv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>iv);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="group__lavu__aes__ctr_1ga6c61a46cb240ef27f4c8f458255f6152" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__lavu__aes__ctr_1ga6c61a46cb240ef27f4c8f458255f6152" kindref="member">av_aes_ctr_increment_iv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>AVAESCTR<sp/>*a);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AVUTIL_AES_CTR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ahumeaub/Desktop/CLionProject/ClassSynchroniseurMultiVideo/include/ffmpeg/include/libavutil/aes_ctr.h"/>
+  </compounddef>
+</doxygen>
