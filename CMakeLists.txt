@@ -6,25 +6,33 @@ project(TestAffichageSynchrone)
 
 set(CMAKE_CXX_STANDARD 23)
 
-include(FetchContent)
+if (WIN32) # WINDOWS
 
-FetchContent_Declare(
-        raylib
-        GIT_REPOSITORY https://github.com/raysan5/raylib.git
-        GIT_TAG 5.0
-)
+    include(FetchContent)
 
-FetchContent_MakeAvailable(raylib)
-
-set(RAYGUI_HEADER_PATH "${CMAKE_CURRENT_SOURCE_DIR}/include/raygui.h")
-
-if(NOT EXISTS "${RAYGUI_HEADER_PATH}")
-    message(STATUS "Téléchargement de raygui.h (version 4.0) depuis GitHub...")
-    file(DOWNLOAD
-            "https://raw.githubusercontent.com/raysan5/raygui/4.0/src/raygui.h"
-            "${RAYGUI_HEADER_PATH}"
+    FetchContent_Declare(
+            raylib
+            GIT_REPOSITORY https://github.com/raysan5/raylib.git
+            GIT_TAG 5.0
     )
-endif()
+
+    FetchContent_MakeAvailable(raylib)
+
+    set(RAYGUI_HEADER_PATH "${CMAKE_CURRENT_SOURCE_DIR}/include/raygui.h")
+
+    if(NOT EXISTS "${RAYGUI_HEADER_PATH}")
+        message(STATUS "Téléchargement de raygui.h (version 4.0) depuis GitHub...")
+        file(DOWNLOAD
+                "https://raw.githubusercontent.com/raysan5/raygui/4.0/src/raygui.h"
+                "${RAYGUI_HEADER_PATH}"
+        )
+    endif()
+
+else () # LINUX
+
+    find_package(raylib CONFIG REQUIRED)
+
+endif ()
 
 set(SOURCE_FILES
         src/main.cpp
